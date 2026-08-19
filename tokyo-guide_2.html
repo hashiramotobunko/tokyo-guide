@@ -128,7 +128,7 @@
 
 <header>
   <div class="header-label">Personal Guide — Tokyo & Beyond</div>
-  <h1>Tetsuya's Picks<br><em>for the Fellow Wanderers </em></h1>
+  <h1>Tetsuya's Picks<br><em>for Fellow Wanderers</em></h1>
   <div class="header-meta">Curated from years of local knowledge &nbsp;·&nbsp; Updated 2025</div>
   <div class="city-tabs" id="cityTabs"></div>
 </header>
@@ -145,7 +145,6 @@ const DATA = {
   "Tokyo": {
     note: "Koenji · Sangenjaya · Daikanyama · Shinjuku · Ginza · Roppongi and beyond",
     places: [
-      { name:"bar dop", area:"Koenji", cat:"Bar" , url:"https://www.google.com/maps/place/bar+dop/data=!4m2!3m1!1s0x6018f38c047eee2f:0x78dbdc2fa6d73f51" },
       { name:"高円寺 焼肉ここち", en:"Yakiniku Kokochi", area:"Koenji", cat:"Yakiniku", url:"https://www.google.com/maps/place/%E9%AB%98%E5%86%86%E5%AF%BA+%E7%84%BC%E8%82%89%E3%81%93%E3%81%93%E3%81%A1+%E5%B8%82%E5%A0%B4%E5%BA%97/data=!4m2!3m1!1s0x6018f394e2275a77:0xd4123f9df7c9920" },
       { name:"酒坐愛次郎", en:"Sakuza Aijiro", area:"Koenji", cat:"Izakaya", url:"https://www.google.com/maps/place/%E9%85%92%E5%9D%90%E6%84%9B%E6%AC%A1%E9%83%8E/data=!4m2!3m1!1s0x6018f39a8ba33e1d:0xec125109fce1e196" },
       { name:"スナック シャンテ", en:"Snack Shante", area:"Koenji", cat:"Bar", url:"https://www.google.com/maps/place/%E3%82%B9%E3%83%8A%E3%83%83%E3%82%AF+%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%86/data=!4m2!3m1!1s0x6018f3eb69aade91:0x6fbaa20b340c814c" },
@@ -201,7 +200,7 @@ const DATA = {
       { name:"室町 砂場", en:"Muromachi Sunaba (soba, 1872)", area:"Nihonbashi", cat:"Soba", url:"https://www.google.com/maps/place/%E5%AE%A4%E7%94%BA+%E7%A0%82%E5%A0%B4/data=!4m2!3m1!1s0x60188c001583a9af:0x8f1ba22155d7b9d0" },
       { name:"眠庵", en:"Nemuruan", area:"Kanda", cat:"Soba", url:"https://www.google.com/maps/place/%E7%9C%A0%E5%BA%B5/data=!4m2!3m1!1s0x60188c02e4b7a863:0x6416f5f0ce09c23d" },
       { name:"そば処かめや 神田東口店", en:"Soba Kameya Kanda", area:"Kanda", cat:"Soba", url:"https://www.google.com/maps/place/%E3%81%9D%E3%81%B0%E5%87%A6%E3%81%8B%E3%82%81%E3%82%84+%E7%A5%9E%E7%94%B0%E6%9D%B1%E5%8F%A3%E5%BA%97/data=!4m2!3m1!1s0x60188c01f3118919:0x86955066972b2212" },
-      { name:"石ばし", en:"Ishibashi (unagi, est. 1910, Michelin star)", area:"Edogawabashi", cat:"Unagi", url:"https://www.google.com/maps/search/%E7%9F%B3%E3%81%B0%E3%81%97+%E6%B1%9F%E6%88%B8%E5%B7%9D%E6%A9%8B+%E3%81%86%E3%81%AA%E3%81%8E" },
+      { name:"石ばし", en:"Ishibashi (unagi, est. 1910, Michelin star)", area:"Edogawabashi", cat:"Unagi", url:"https://www.google.com/maps/search/?api=1&query=35.709277,139.738451" },
       { name:"うなぎ 尾花", en:"Unagi Obana (legendary)", area:"Minami-Senju", cat:"Unagi", url:"https://www.google.com/maps/place/%E3%81%86%E3%81%AA%E3%81%8E+%E5%B0%BE%E8%8A%B1/data=!4m2!3m1!1s0x60188ef4421d1ed1:0x75da5e39a74ffcbb" },
       { name:"五代目 野田岩", en:"Nodaiwa (unagi, est. 1800s)", area:"Azabu", cat:"Unagi", url:"https://www.google.com/maps/place/%E4%BA%94%E4%BB%A3%E7%9B%AE+%E9%87%8E%E7%94%B0%E5%B2%A9+%E9%BA%BB%E5%B8%83%E9%A3%AF%E5%80%89%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x60188bbd2e0de3ad:0xaf851dc1ac96e866" },
       { name:"うなぎ はし本", en:"Unagi Hashimoto", area:"Kagurazaka", cat:"Unagi", url:"https://www.google.com/maps/place/%E3%81%86%E3%81%AA%E3%81%8E+%E3%81%AF%E3%81%97%E6%9C%AC/data=!4m2!3m1!1s0x60188c54972f0bf7:0xef81159d64b3e4c1" },
@@ -212,7 +211,7 @@ const DATA = {
       { name:"山里 (New Otani)", en:"Yamazato Kaiseki", area:"Akasaka", cat:"Kaiseki", url:"https://www.google.com/maps/place/%E5%B1%B1%E9%87%8C/data=!4m2!3m1!1s0x60188b9036239a4d:0x81c12ad0bf3ec256" },
       { name:"赤坂四川飯店", en:"Akasaka Szechwan Restaurant", area:"Akasaka", cat:"Chinese", url:"https://www.google.com/maps/place/%E8%B5%A4%E5%9D%82%E5%9B%9B%E5%B7%9D%E9%A3%AF%E5%BA%97/data=!4m2!3m1!1s0x60188c7bd675d259:0xca762ce2422b7e80" },
       { name:"中国飯店 富麗華", en:"China Restaurant Fureika", area:"Azabu", cat:"Chinese", url:"https://www.google.com/maps/place/%E4%B8%AD%E5%9B%BD%E9%A3%AF%E5%BA%97+%E5%AF%8C%E9%BA%97%E8%8F%AF/data=!4m2!3m1!1s0x60188bbd2e0de3ad:0xeac82dcaaa738c75" },
-      { name:"桃花林 (New Otani)", en:"Toka-rin Chinese", area:"Akasaka", cat:"Chinese", url:"https://www.google.com/maps/place/%E6%A1%83%E8%8A%B1%E6%9E%97/data=!4m2!3m1!1s0x601d86f1a0765775:0xb1e6b2bff62784e" },
+      { name:"桃花林 (New Otani)", en:"Toka-rin Chinese", area:"Akasaka", cat:"Chinese", url:"https://www.google.com/maps/search/?api=1&query=35.6809135,139.7339748" },
       { name:"名代 亀戸餃子 本店", en:"Kameido Gyoza (legend)", area:"Kameido", cat:"Chinese / Gyoza", url:"https://www.google.com/maps/place/%E5%90%8D%E4%BB%A3+%E4%BA%80%E6%88%B8%E9%A4%83%E5%AD%90+%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x601888c4fe5306b7:0xfde1f9995dbaf0c7" },
       { name:"東京国立博物館", en:"Tokyo National Museum", area:"Ueno", cat:"Museum", url:"https://www.google.com/maps/place/%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8/data=!4m2!3m1!1s0x60188e8314d77d11:0x232fd618bd4977dd" },
       { name:"国立西洋美術館", en:"National Museum of Western Art", area:"Ueno", cat:"Museum", url:"https://www.google.com/maps/place/%E5%9B%BD%E7%AB%8B%E8%A5%BF%E6%B4%8B%E7%BE%8E%E8%A1%93%E9%A4%A8/data=!4m2!3m1!1s0x60188e9cfa41cc7f:0xbb23dcd494e13c8b" },
@@ -230,13 +229,12 @@ const DATA = {
       { name:"丸善 丸の内本店", en:"Maruzen Bookstore", area:"Marunouchi", cat:"Shopping", url:"https://www.google.com/maps/place/%E4%B8%B8%E5%96%84/data=!4m2!3m1!1s0x60188e8aa5c86fa1:0x8a960e5ba43f1bf3" },
       { name:"早稲田大学", en:"Waseda University Campus", area:"Waseda", cat:"Sightseeing", url:"https://www.google.com/maps/place/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6/data=!4m2!3m1!1s0x60188d1a4869b805:0x11e214c5de0808a8" },
       { name:"東京大学（正門）", en:"University of Tokyo", area:"Hongo", cat:"Sightseeing", url:"https://www.google.com/maps/place/%E6%9D%B1%E5%A4%A7%E6%AD%A3%E9%96%80/data=!4m2!3m1!1s0x60188dfbc6a2ae6f:0xeb07d24041f5f4f" },
-      { name:"とんかつ とんき 目黒本店", en:"Tonki (tonkatsu, est. 1939)", area:"Meguro", cat:"Tonkatsu", url:"https://www.google.com/maps/search/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4+%E3%81%A8%E3%82%93%E3%81%8D+%E7%9B%AE%E9%BB%92" },
-      { name:"とんかつ ぽん多本家", en:"Ponta Honke (tonkatsu, est. 1905)", area:"Ueno", cat:"Tonkatsu", url:"https://www.google.com/maps/search/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4+%E3%81%BD%E3%82%93%E5%A4%9A%E6%9C%AC%E5%AE%B6+%E4%B8%8A%E9%87%8E" },
-      { name:"ラーメン大将 参宮橋店", en:"Ramen Taisho Sangubashi", area:"Sangubashi", cat:"Ramen", url:"https://www.google.com/maps/search/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E5%A4%A7%E5%B0%86+%E5%8F%82%E5%AE%AE%E6%A9%8B" },
-      { name:"ラーメン王 渋谷", en:"Ramen Oh Shibuya", area:"Shibuya", cat:"Ramen", url:"https://www.google.com/maps/search/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E7%8E%8B+%E6%B8%8B%E8%B0%B7" },
-      { name:"中華そば 多賀野", en:"Chuka Soba Takano (Michelin Bib, shoyu)", area:"Ebara-Nakanobu", cat:"Ramen", url:"https://www.google.com/maps/search/%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0+%E5%A4%9A%E8%B3%80%E9%87%8E+%E8%8D%8F%E5%8E%9F%E4%B8%AD%E5%BB%B6" },
+      { name:"とんかつ とんき 目黒本店", en:"Tonki (tonkatsu, est. 1939)", area:"Meguro", cat:"Tonkatsu", url:"https://www.google.com/maps/search/?api=1&query=35.6336055,139.7142684" },
+      { name:"とんかつ ぽん多本家", en:"Ponta Honke (tonkatsu, est. 1905)", area:"Ueno", cat:"Tonkatsu", url:"https://www.google.com/maps/search/?api=1&query=35.7054109,139.7733376" },
+      { name:"ラーメン王 後楽本舗", en:"Ramen Oh Kouraku Honpo", area:"Shibuya", cat:"Ramen", url:"https://www.google.com/maps/search/?api=1&query=35.6586568,139.698546" },
+      { name:"中華そば 多賀野", en:"Chuka Soba Takano (Michelin Bib, shoyu)", area:"Ebara-Nakanobu", cat:"Ramen", url:"https://www.google.com/maps/search/?api=1&query=35.6097123,139.711543" },
+      { name:"ラーメン道楽", en:"Ramen Doraku (Sangubashi, tonkotsu)", area:"Sangubashi", cat:"Ramen", url:"https://www.google.com/maps/search/?api=1&query=35.6813604,139.6930808" },
       { name:"慶應義塾大学", en:"Keio University Campus", area:"Mita", cat:"Sightseeing", url:"https://www.google.com/maps/place/%E6%85%B6%E6%87%89%E7%BE%A9%E5%A1%BE%E5%A4%A7%E5%AD%A6/data=!4m2!3m1!1s0x60188bb019af22ef:0x5df1bbe84d05a9d4" },
-      // SHINJUKU
       { name:"Spincoaster Music Bar Shinjuku", area:"Shinjuku", cat:"Bar / Music", url:"https://www.google.com/maps/place/Spincoaster+Music+Bar+Shinjuku/data=!4m2!3m1!1s0x60188ccfb0d40001:0x88dc9f01112c722d" },
       { name:"中華料理 岐阜屋", en:"Chinese Gifuya (Omoide Yokocho)", area:"Shinjuku", cat:"Chinese", url:"https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86+%E5%B2%90%E9%98%9C%E5%B1%8B/data=!4m2!3m1!1s0x60188d9b710cdc53:0x39925c7a9a2bc0f9" },
       { name:"そば処かめや 新宿店", en:"Soba Kameya", area:"Shinjuku", cat:"Soba", url:"https://www.google.com/maps/place/%E3%81%9D%E3%81%B0%E5%87%A6%E3%81%8B%E3%82%81%E3%82%84+%E6%96%B0%E5%AE%BF%E5%BA%97/data=!4m2!3m1!1s0x60188cd71a7b03d5:0x8875d537353f6e9" },
@@ -244,27 +242,23 @@ const DATA = {
       { name:"新宿西口 思い出横丁", en:"Omoide Yokocho (Memory Lane)", area:"Shinjuku", cat:"Sightseeing", url:"https://www.google.com/maps/place/%E6%96%B0%E5%AE%BF%E8%A5%BF%E5%8F%A3+%E6%80%9D%E3%81%84%E5%87%BA%E6%A8%AA%E4%B8%81/data=!4m2!3m1!1s0x60188cd7058ad73f:0x908f55935cc13cd3" },
       { name:"勝浦 よろず萬べぇ", en:"Katsuura Yorozu Manbee", area:"Shinjuku", cat:"Izakaya", url:"https://www.google.com/maps/place/%E5%8B%9D%E6%B5%A6+%E3%82%88%E3%82%8D%E3%81%9A%E8%90%AC%E3%81%B9%E3%81%87/data=!4m2!3m1!1s0x60188ccf582832f9:0xb7def7f7d3860093" },
       { name:"よもだそば 新宿西口", en:"Yomodasoba (stand soba)", area:"Shinjuku", cat:"Soba", url:"https://www.google.com/maps/place/%E3%82%88%E3%82%82%E3%81%A0%E3%81%9D%E3%81%B0+%E6%96%B0%E5%AE%BF%E8%A5%BF%E5%8F%A31%E5%8F%B7%E5%BA%97/data=!4m2!3m1!1s0x60188d6013d5e82b:0x39d6a933881e29a7" },
-      // GINZA
       { name:"鮨おちあい", en:"Sushi Ochiai", area:"Ginza", cat:"Sushi", url:"https://www.google.com/maps/place/%E9%AE%A8%E3%81%8A%E3%81%A1%E3%81%82%E3%81%84/data=!4m2!3m1!1s0x60188be7bd250bd3:0x3b87ee0735d21987" },
       { name:"日本酒mekkemon", en:"Sake Bar Mekkemon", area:"Ginza", cat:"Bar / Sake", url:"https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E9%85%92mekkemon+(%E3%82%81%E3%81%A3%E3%81%91%E3%82%82%E3%82%93)/data=!4m2!3m1!1s0x60188ba4ac861705:0x2aaaf28a33dbc54" },
       { name:"おおよそ", en:"Oyoso", area:"Ginza", cat:"Izakaya", url:"https://www.google.com/maps/place/%E3%81%8A%E3%81%8A%E3%82%88%E3%81%9D/data=!4m2!3m1!1s0x60188be7b93b3e55:0x2cfeaebb19da5960" },
       { name:"銀座 こびき", en:"Ginza Kobiki", area:"Ginza", cat:"Japanese", url:"https://www.google.com/maps/place/%E9%8A%80%E5%BA%A7+%E3%81%93%E3%81%B3%E3%81%8D/data=!4m2!3m1!1s0x60188be762f279ad:0x5b37e2de57b56fc4" },
       { name:"蕎麦割烹 橙", en:"Soba Kappo Daidai", area:"Ginza", cat:"Soba", url:"https://www.google.com/maps/place/%E8%95%8E%E9%BA%A6%E5%89%B2%E7%83%B9+%E6%A9%99/data=!4m2!3m1!1s0x60188b1f1e02ae2d:0xe7ce6e0bc4aa95be" },
-      // ROPPONGI
       { name:"香妃園", en:"Kohien (Chinese)", area:"Roppongi", cat:"Chinese", url:"https://www.google.com/maps/place/%E9%A6%99%E5%A6%83%E5%9C%92/data=!4m2!3m1!1s0x60188b9d244b3e0b:0x49c4032456b8ed19" },
       { name:"Bauhaus Roppongi", area:"Roppongi", cat:"Live House", url:"https://www.google.com/maps/place/Bauhaus+Roppongi/data=!4m2!3m1!1s0x60188b9d0de5a613:0xf51e5d0aac60e3c7" },
       { name:"日本料理 明寂", en:"Nihon Ryori Meijaku", area:"Roppongi", cat:"Japanese", url:"https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86+%E6%98%8E%E5%AF%82/data=!4m2!3m1!1s0x60188bafdd271bc7:0xdf2f943915f9a662" },
       { name:"ヒカリモノ 鮨とツマミ", en:"Hikarimono Sushi & Snacks", area:"Roppongi", cat:"Sushi", url:"https://www.google.com/maps/place/%E3%83%92%E3%82%AB%E3%83%AA%E3%83%A2%E3%83%8E+%E9%AE%A8%E3%81%A8%E3%83%84%E3%83%9E%E3%83%9F+%E5%85%AD%E6%9C%AC%E6%9C%A8/data=!4m2!3m1!1s0x60188bebcee02321:0xe6bae90c9b1080cb" },
-      // GOTANDA / OSAKI
       { name:"Soul Music BAR Ali-Ollie!!!!", area:"Gotanda", cat:"Bar / Music", url:"https://www.google.com/maps/place/Soul+Music+BAR+Ali-Ollie!!!!/data=!4m2!3m1!1s0x60188afa311bb259:0x7ef4f764bf36e1ae" },
       { name:"VIGO", area:"Gotanda", cat:"Bar", url:"https://www.google.com/maps/place/VIGO/data=!4m2!3m1!1s0x60188b61f72ea763:0xea53dc1b809ea40f" },
       { name:"ブルーザスリー 表参道", en:"Blue za Three", area:"Gotanda / Osaki", cat:"Bar", url:"https://www.google.com/maps/place/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B6%E3%82%B9%E3%83%AA%E3%83%BC+%E8%A1%A8%E5%8F%82%E9%81%93/data=!4m2!3m1!1s0x60188d457a3c6ce9:0x6771342dd1a8194a" },
       { name:"クラフトビール チョップス", en:"Craft Beer CHOPS", area:"Gotanda / Osaki", cat:"Bar", url:"https://www.google.com/maps/place/%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%83%93%E3%83%BC%E3%83%AB+%E3%83%81%E3%83%A7%E3%83%83%E3%83%97%E3%82%B9+%2F+CRAFT+BEER+%26+BBQ+BEEF+-+CHOPS/data=!4m2!3m1!1s0x60188b4a52ba6dc3:0x27aed6e04c8da100" },
       { name:"立ち飲みビストロシンサンテ", en:"Bistro Shinsante", area:"Gotanda / Osaki", cat:"Bar", url:"https://www.google.com/maps/place/%E7%AB%8B%E3%81%A1%E9%A3%B2%E3%81%BF%E3%83%93%E3%82%B9%E3%83%88%E3%83%AD%E3%82%B7%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%86/data=!4m2!3m1!1s0x60188b1ea8a84ecd:0x9b906e6edcd3dff6" },
-      { name:"炭トマ 五反田店", en:"Sumitoma Gotanda", area:"Gotanda / Osaki", cat:"Izakaya", url:"https://www.google.com/maps/search/35.6251838,139.7238903" },
+      { name:"炭トマ 五反田店", en:"Sumitoma Gotanda", area:"Gotanda / Osaki", cat:"Izakaya", url:"https://www.google.com/maps/search/?api=1&query=35.6251838,139.7238903" },
       { name:"酒場それがし", en:"Sakaba Soregashi", area:"Gotanda / Osaki", cat:"Izakaya", url:"https://www.google.com/maps/place/%E9%85%92%E5%A0%B4%E3%81%9D%E3%82%8C%E3%81%8C%E3%81%97/data=!4m2!3m1!1s0x60188afac3293197:0x86fb0563b596ab9d" },
       { name:"らふ 五反田 おばんざい", en:"Rafu Gotanda Obanzai", area:"Gotanda / Osaki", cat:"Japanese", url:"https://www.google.com/maps/place/%E3%82%89%E3%81%B5+%E4%BA%94%E5%8F%8D%E7%94%B0+%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84/data=!4m2!3m1!1s0x60188b3dee81ced3:0xa468a4f6050c050b" },
-      // SHIBUYA
       { name:"Hi-Fi Disco Bar Chaos", area:"Shibuya", cat:"Bar / Music", url:"https://www.google.com/maps/place/Hi-Fi+Disco+Bar+Chaos/data=!4m2!3m1!1s0x60188d918804255b:0x39102c0807b79bec" },
       { name:"マザー", en:"Mother (Shimokitazawa)", area:"Shibuya", cat:"Bar / Music", url:"https://www.google.com/maps/place/%E3%83%9E%E3%82%B6%E3%83%BC/data=!4m2!3m1!1s0x6018f3696c2f9c97:0xda32b71d3e332a2d" },
       { name:"RINN", area:"Shibuya", cat:"Bar", url:"https://www.google.com/maps/place/RINN/data=!4m2!3m1!1s0x60188b14e1286bc3:0xbbc8a762fc95daef" },
@@ -272,17 +266,13 @@ const DATA = {
       { name:"THE MUSIC BAR -CAVE SHIBUYA-", area:"Shibuya", cat:"Bar / Music", url:"https://www.google.com/maps/place/THE+MUSIC+BAR+-CAVE+SHIBUYA-/data=!4m2!3m1!1s0x60188dc190c39e49:0xf1a7ffe95f92120c" },
       { name:"ガシラ", en:"Gashira", area:"Shibuya", cat:"Izakaya", url:"https://www.google.com/maps/place/%E3%82%AC%E3%82%B7%E3%83%A9/data=!4m2!3m1!1s0x60188b55e08172a5:0xe8c3838e76e96da5" },
       { name:"THE BELCOMO", area:"Shibuya", cat:"Hotel", url:"https://www.google.com/maps/place/THE+BELCOMO/data=!4m2!3m1!1s0x60188d555ab83475:0xad62452bc6a62b18" },
-      // SHIMBASHI
       { name:"とり徹 新橋", en:"Toritoru Shimbashi", area:"Shimbashi", cat:"Yakitori", url:"https://www.google.com/maps/place/%E3%81%A8%E3%82%8A%E5%BE%B9+%E6%96%B0%E6%A9%8B/data=!4m2!3m1!1s0x60188b996bbdf38b:0xdea997cff5bd1951" },
-      // AKASAKA additional
       { name:"白碗竹筷樓 赤坂店", en:"Hakuwan Chikushiro (Chinese)", area:"Akasaka", cat:"Chinese", url:"https://www.google.com/maps/place/%E7%99%BD%E7%A2%97%E7%AB%B9%E7%AD%B7%E6%A8%93+%E8%B5%A4%E5%9D%82%E5%BA%97/data=!4m2!3m1!1s0x60188c7f166dab0d:0x407061f10f51692" },
       { name:"會水庵", en:"Kaisuian (Kaiseki)", area:"Akasaka", cat:"Kaiseki", url:"https://www.google.com/maps/place/%E6%9C%83%E6%B0%B4%E5%BA%B5/data=!4m2!3m1!1s0x60188b81a65a57a9:0x2638da477def670c" },
       { name:"Wakiya 一笑美茶樓", en:"Wakiya Chinese", area:"Akasaka", cat:"Chinese", url:"https://www.google.com/maps/place/Wakiya+%E4%B8%80%E7%AC%91%E7%BE%8E%E8%8C%B6%E6%A8%93/data=!4m2!3m1!1s0x60188b817132936f:0x664af97b94d6e3a3" },
       { name:"バー 門", en:"Bar Mon", area:"Akasaka", cat:"Bar", url:"https://www.google.com/maps/place/%E3%83%90%E3%83%BC+%E9%96%80/data=!4m2!3m1!1s0x60188ca9a55c462f:0x149c1d70e27dc0c4" },
-      // TAMACHI / MITA
       { name:"蕎麦切 砥喜和", en:"Soba-kiri Tokiwa", area:"Tamachi / Mita", cat:"Soba", url:"https://www.google.com/maps/place/%E8%95%8E%E9%BA%A6%E5%88%87+%E7%A0%A5%E5%96%9C%E5%92%8C/data=!4m2!3m1!1s0x60188b9229d972d5:0x8efc43e9a72965bc" },
       { name:"田町 鳥心", en:"Tamachi Torishin", area:"Tamachi / Mita", cat:"Yakitori", url:"https://www.google.com/maps/place/%E7%94%B0%E7%94%BA+%E9%B3%A5%E5%BF%83/data=!4m2!3m1!1s0x60188bb126b633a9:0x59e2352a70737a99" },
-      // KIYOSUMI-SHIRAKAWA
       { name:"米本珈琲 清澄白河", en:"Yonemoto Coffee Kiyosumi", area:"Kiyosumi-Shirakawa", cat:"Café", url:"https://www.google.com/maps/place/%E7%B1%B3%E6%9C%AC%E7%8F%88%E7%90%B2+FLAG+SHIP+%E6%B8%85%E6%BE%84%E7%99%BD%E6%B2%B3%E5%BA%97+YONEMOTO+COFFEE+FLAGSHIP+KIYOSUMI/data=!4m2!3m1!1s0x601889cff8911821:0x1ad8b9745ec9bf4" },
       { name:"The Cream of the Crop Coffee", area:"Kiyosumi-Shirakawa", cat:"Café", url:"https://www.google.com/maps/place/The+Cream+of+the+Crop+Coffee/data=!4m2!3m1!1s0x6018891cc1941acd:0x6ece2b7d877073b5" },
       { name:"First Crop Coffee Japan Roastery", area:"Kiyosumi-Shirakawa", cat:"Café", url:"https://www.google.com/maps/place/First+Crop+Coffee+Japan+Roastery/data=!4m2!3m1!1s0x60188900727c9657:0x2b433b13ed06d66a" },
@@ -292,60 +282,48 @@ const DATA = {
       { name:"実用洋食 七福", en:"Yoshoku Shichifuku", area:"Kiyosumi-Shirakawa", cat:"Japanese", url:"https://www.google.com/maps/place/%E5%AE%9F%E7%94%A8%E6%B4%8B%E9%A3%9F+%E4%B8%83%E7%A6%8F/data=!4m2!3m1!1s0x601889188b208e97:0x22e3ce1fdee096e3" },
       { name:"山の上", en:"Yama no Ue", area:"Kiyosumi-Shirakawa", cat:"Izakaya", url:"https://www.google.com/maps/place/%E5%B1%B1%E3%81%AE%E4%B8%8A/data=!4m2!3m1!1s0x601889e376dee39b:0x84f3cb091fe89fb9" },
       { name:"レ・デリッツェ・デル・モンド", en:"Le Delizie del Mondo (Italian)", area:"Kiyosumi-Shirakawa", cat:"Italian", url:"https://www.google.com/maps/place/%E3%83%AC%E3%83%BB%E3%83%87%E3%83%AA%E3%83%83%E3%83%84%E3%82%A7%E3%83%BB%E3%83%87%E3%83%AB%E3%83%BB%E3%83%A2%E3%83%B3%E3%83%89/data=!4m2!3m1!1s0x601889178badde1d:0x5edbcad7b5afd579" },
-      // MUSASHI-KOSUGI (銭湯)
       { name:"鈴の湯", en:"Suzu-no-yu (sento)", area:"Musashi-Kosugi", cat:"Sento / Sauna", url:"https://www.google.com/maps/place/%E9%88%B4%E3%81%AE%E6%B9%AF/data=!4m2!3m1!1s0x6018f5c2d1127f7b:0xad5299a436b06587" },
       { name:"橘湯", en:"Tachibana-yu (sento)", area:"Musashi-Kosugi", cat:"Sento / Sauna", url:"https://www.google.com/maps/place/%E6%A9%98%E6%B9%AF/data=!4m2!3m1!1s0x60185f8fd430d567:0x38c8b4a987f00fba" },
       { name:"今井湯", en:"Imai-yu (sento)", area:"Musashi-Kosugi", cat:"Sento / Sauna", url:"https://www.google.com/maps/place/%E4%BB%8A%E4%BA%95%E6%B9%AF/data=!4m2!3m1!1s0x6018f57e77fe1085:0xcd1e2461aca8b3b7" },
-      // UGUISUDANI
       { name:"焼肉 鶯谷園", en:"Yakiniku Uguisudanien", area:"Uguisudani", cat:"Yakiniku", url:"https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E9%B6%AF%E8%B0%B7%E5%9C%92/data=!4m2!3m1!1s0x60188e843febb589:0x572ecf899a1ca32" },
       { name:"とんかつ とん平", en:"Tonkatsu Tonpei", area:"Uguisudani", cat:"Tonkatsu", url:"https://www.google.com/maps/place/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4+%E3%81%A8%E3%82%93%E5%B9%B3/data=!4m2!3m1!1s0x60188e84fec190f9:0x2f6a7ce7b024e85e" },
-      // KOENJI additional
       { name:"安酒楽", en:"Yasuzakura", area:"Koenji", cat:"Bar", url:"https://www.google.com/maps/place/%E5%AE%89%E9%85%92%E6%A5%BD/data=!4m2!3m1!1s0x6018f3e901acbc47:0xca5fe1348825b68b" },
       { name:"中華料理 太陽軒", en:"Chinese Taiyoken", area:"Koenji", cat:"Chinese", url:"https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86+%E5%A4%AA%E9%99%BD%E8%BB%92/data=!4m2!3m1!1s0x6018f27e070a2b5f:0x6e4de385ab6f3d45" },
       { name:"ミレチンクエチェント(1500)", en:"Millecinquecento Bar", area:"Koenji", cat:"Bar", url:"https://www.google.com/maps/place/%E3%83%9F%E3%83%AC%E3%83%81%E3%83%B3%E3%82%AF%E3%82%A8%E3%83%81%E3%82%A7%E3%83%B3%E3%83%88(1500)/data=!4m2!3m1!1s0x6018f39ad1d6cec9:0x27110f8ee749ff8e" },
       { name:"えもり", en:"Emori", area:"Koenji", cat:"Bar", url:"https://www.google.com/maps/place/%E3%81%88%E3%82%82%E3%82%8A/data=!4m2!3m1!1s0x6018f3cfdd8827bd:0x1c686b016f86012" },
       { name:"ULTIMO", area:"Koenji", cat:"Bar / Music", url:"https://www.google.com/maps/place/ULTIMO/data=!4m2!3m1!1s0x6018f30056259113:0xfb20e3a3a37fcfb8" },
-      { name:"水口食堂", en:"Mizuguchi Shokudo", area:"Koenji", cat:"Japanese", url:"" },
-      { name:"ラーメン大将", en:"Ramen Taisho", area:"Koenji", cat:"Ramen", url:"" },
-      // NINGYOCHO area
+      { name:"水口食堂", en:"Mizuguchi Shokudo", area:"Asakusa", cat:"Japanese", url:"https://www.google.com/maps/search/?api=1&query=35.7135352,139.7937557" },
       { name:"一天張", en:"Ittenhari", area:"Ningyocho", cat:"Izakaya", url:"https://www.google.com/maps/place/%E4%B8%80%E5%A4%A9%E5%BC%B5/data=!4m2!3m1!1s0x60188918b12d3523:0x37784c292e3580d4" },
       { name:"そよいち", en:"Soyoichi", area:"Ningyocho", cat:"Japanese", url:"https://www.google.com/maps/place/%E3%81%9D%E3%82%88%E3%81%84%E3%81%A1/data=!4m2!3m1!1s0x60188950197382cb:0x18a71b289695a1b7" },
       { name:"人形町 梅田", en:"Ningyocho Umeda", area:"Ningyocho", cat:"Japanese", url:"https://www.google.com/maps/place/%E4%BA%BA%E5%BD%A2%E7%94%BA+%E6%A2%85%E7%94%B0/data=!4m2!3m1!1s0x60188951a2233655:0xf0e02d68adaa6717" },
-      // YOYOGI-UEHARA additional
       { name:"ナドヤノカッテ", en:"Nadoya no Katte", area:"Yoyogi-Uehara", cat:"Izakaya", url:"https://www.google.com/maps/place/%E3%83%8A%E3%83%89%E3%83%A4%E3%83%8E%E3%82%AB%E3%83%83%E3%83%86/data=!4m2!3m1!1s0x6018f36fd56d2b7f:0x98ffe56e834f133e" },
       { name:"REI 代々木上原", en:"REI Yoyogi-Uehara", area:"Yoyogi-Uehara", cat:"Bar", url:"https://www.google.com/maps/place/REI+%E4%BB%A3%E3%80%85%E6%9C%A8%E4%B8%8A%E5%8E%9F/data=!4m2!3m1!1s0x6018f36ffb1f83b9:0x9a42e39cdb60a4c2" },
       { name:"代々木上原 方程式", en:"Hoteishi", area:"Yoyogi-Uehara", cat:"Izakaya", url:"https://www.google.com/maps/place/%E4%BB%A3%E3%80%85%E6%9C%A8%E4%B8%8A%E5%8E%9F+%E6%96%B9%E7%A8%8B%E5%BC%8F/data=!4m2!3m1!1s0x6018f3e5071ea991:0xebb4da03f0bf4b11" },
       { name:"ESOLA 代々木上原総本店", area:"Yoyogi-Uehara", cat:"Bar", url:"https://www.google.com/maps/place/ESOLA+%E4%BB%A3%E3%80%85%E6%9C%A8%E4%B8%8A%E5%8E%9F%E7%B7%8F%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x6018f34815cd201d:0xfe42e177c65a79ce" },
       { name:"富ヶ谷スプリングス", en:"Tomigaya Springs (sento)", area:"Yoyogi-Uehara", cat:"Sento / Sauna", url:"https://www.google.com/maps/place/%E5%AF%8C%E3%83%B6%E8%B0%B7%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9/data=!4m2!3m1!1s0x6018f3c6efbabc01:0x905917650cf5a25" },
-      // KAGURAZAKA area
       { name:"江戸川ばし たいやき浪花家", en:"Taiyaki Naniwa-ya", area:"Kagurazaka", cat:"Sweets", url:"https://www.google.com/maps/place/%E6%B1%9F%E6%88%B8%E5%B7%9D%E3%81%B0%E3%81%97+%E3%81%9F%E3%81%84%E3%82%84%E3%81%8D%E6%B5%AA%E8%8A%B1%E5%AE%B6/data=!4m2!3m1!1s0x60188c555da966df:0xc6916fb481cba29b" },
       { name:"江戸川 石ばし", en:"Edogawa Ishibashi", area:"Kagurazaka", cat:"Japanese", url:"https://www.google.com/maps/place/%E6%B1%9F%E6%88%B8%E5%B7%9D+%E7%9F%B3%E3%81%B0%E3%81%97/data=!4m2!3m1!1s0x60188c530aac738f:0x4ff8b8cd1062daa5" },
-      // OMOTESANDO / AOYAMA additional
       { name:"中華料理 新雅", en:"Chinese Shinga", area:"Omotesando", cat:"Chinese", url:"https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86+%E6%96%B0%E9%9B%85/data=!4m2!3m1!1s0x60188daab8a458d9:0xf5351d67e9d91b8d" },
       { name:"malca", area:"Omotesando", cat:"Café", url:"https://www.google.com/maps/place/malca/data=!4m2!3m1!1s0x60188d3ba7522241:0xf23783302b0e31e" },
       { name:"i2 cafe", area:"Omotesando", cat:"Café", url:"https://www.google.com/maps/place/i2+cafe/data=!4m2!3m1!1s0x60188d7715216845:0x1b30699259ff3414" },
       { name:"Rossi", area:"Omotesando", cat:"Italian", url:"https://www.google.com/maps/place/Rossi/data=!4m2!3m1!1s0x60188daef26a69bb:0x6a4185fb773a3249" },
       { name:"KAWAKAMI-AN TOKYO 川上庵", en:"Kawakami-an (soba)", area:"Omotesando", cat:"Soba", url:"https://www.google.com/maps/place/KAWAKAMI-AN+TOKYO+%E5%B7%9D%E4%B8%8A%E5%BA%B5+%E6%9D%B1%E4%BA%AC/data=!4m2!3m1!1s0x60188d4169ec769b:0xeec427b217de7777" },
       { name:"misola", area:"Aoyama", cat:"Café", url:"https://www.google.com/maps/place/misola/data=!4m2!3m1!1s0x60188c9e3657cced:0xcc14826a4c149ef0" },
-      // EBISU additional
       { name:"セイリンシューズ", en:"Seirin Shoes", area:"Ebisu", cat:"Shopping", url:"https://www.google.com/maps/place/%E3%82%BB%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA/data=!4m2!3m1!1s0x60188b43e841832f:0x2fe8cdc4390da51b" },
       { name:"A10", area:"Ebisu", cat:"Bar", url:"https://www.google.com/maps/place/A10/data=!4m2!3m1!1s0x60188b8d0bbc998d:0xdbdb6eb72400c38f" },
       { name:"とんかつ梛", en:"Tonkatsu Nagi", area:"Ebisu", cat:"Tonkatsu", url:"https://www.google.com/maps/place/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4%E6%A2%9B/data=!4m2!3m1!1s0x60188b47702dff1f:0x96efe5b5e7361f25" },
-      // AZABU additional
       { name:"えんらい", en:"Enrai (Chinese)", area:"Azabu", cat:"Chinese", url:"https://www.google.com/maps/place/%E3%81%88%E3%82%93%E3%82%89%E3%81%84/data=!4m2!3m1!1s0x60188bff95fc4b99:0x2de4cda0721a8a9d" },
-      // SANGENJAYA additional
       { name:"パザパ", en:"Pazapa", area:"Sangenjaya", cat:"Bar", url:"https://www.google.com/maps/place/%E3%83%91%E3%82%B6%E3%83%91/data=!4m2!3m1!1s0x60188ced899ea07b:0x70351123d1c1f1f0" },
-      // SHINJUKU additional
       { name:"三ん寅", en:"Santora", area:"Shinjuku", cat:"Izakaya", url:"https://www.google.com/maps/place/%E4%B8%89%E3%82%93%E5%AF%85/data=!4m2!3m1!1s0x60188df613bee125:0xe702c3eaba1f3b3b" },
-      // MARUNOUCHI additional
       { name:"二の丸庭園", en:"Ninomaru Garden (Imperial Palace)", area:"Marunouchi", cat:"Sightseeing", url:"https://www.google.com/maps/place/%E4%BA%8C%E3%81%AE%E4%B8%B8%E5%BA%AD%E5%9C%92/data=!4m2!3m1!1s0x60188c13425af13d:0xcddc54b9602f548d" },
-      // UENO additional
       { name:"上野動物園", en:"Ueno Zoo", area:"Ueno", cat:"Sightseeing", url:"https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E5%8B%95%E7%89%A9%E5%9C%92/data=!4m2!3m1!1s0x60188c28f7766d7f:0x76b8b5efa1988ef4" },
-      { name:"ぽん多本家", en:"Ponta Honke (tonkatsu, est. 1905)", area:"Ueno", cat:"Tonkatsu", url:"" },
-      // MEGURO
-      { name:"とんかつ とんき 目黒本店", en:"Tonkatsu Tonki Meguro (legendary)", area:"Meguro", cat:"Tonkatsu", url:"" },
-      // KANDA additional
       { name:"クロサワ楽器 お茶の水", en:"Kurosawa Gakki Ochanomizu", area:"Kanda", cat:"Shopping", url:"https://www.google.com/maps/place/%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%AF%E6%A5%BD%E5%99%A8+%E3%81%8A%E8%8C%B6%E3%81%AE%E6%B0%B4%E9%A7%85%E5%89%8D%E5%BA%97+Ochanomizu-Ekimae/data=!4m2!3m1!1s0x60188c19e5502d1d:0xa7aa8d1e3a3307ab" },
+    ]
+  },
+  "Yokohama": {
+    note: "A short trip out for legendary ramen",
+    places: [
+      { name:"ラーメン大将 本店", en:"Ramen Taisho Honten (Yokohama Honmoku)", area:"Honmoku", cat:"Ramen", url:"https://www.google.com/maps/search/?api=1&query=35.4177314,139.6527274" },
     ]
   },
   "Kyoto": {
@@ -374,7 +352,7 @@ const DATA = {
       { name:"蕎麦 ろうじな", en:"Soba Rojina", area:"Sakyo", cat:"Soba", url:"https://www.google.com/maps/place/%E8%95%8E%E9%BA%A6+%E3%82%8D%E3%81%86%E3%81%98%E3%81%AA/data=!4m2!3m1!1s0x60010900733ea559:0xf1914c89ab7287d2" },
       { name:"そば 酒 まつもと", en:"Soba & Sake Matsumoto", area:"Higashiyama", cat:"Soba", url:"https://www.google.com/maps/place/%E3%81%9D%E3%81%B0+%E9%85%92+%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8/data=!4m2!3m1!1s0x60010895acd06669:0x6a492dc338dc9958" },
       { name:"本家 第一旭 本店", en:"Daiichiasahi Ramen (open 5am)", area:"Shimogyo", cat:"Ramen", url:"https://www.google.com/maps/place/%E6%9C%AC%E5%AE%B6+%E7%AC%AC%E4%B8%80%E6%97%AD+%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x600108b1f3db0001:0xa5ed2c875338968b" },
-      { name:"元祖らーめん大栄", en:"Ganso Ramen Daiei (shoyu, huge chashu)", area:"Kamigyo", cat:"Ramen", url:"https://www.google.com/maps/search/%E5%85%83%E7%A5%96%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%A4%A7%E6%A0%84+%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA%E6%B2%B3%E5%8E%9F%E7%94%BA%E4%B8%B8%E5%A4%AA%E7%94%BA%E4%B8%8A%E3%83%AB%E5%87%BA%E6%B0%B4%E7%94%BA275" },
+      { name:"元祖らーめん大栄", en:"Ganso Ramen Daiei (shoyu, huge chashu)", area:"Sakyo", cat:"Ramen", url:"https://www.google.com/maps/search/?api=1&query=35.018668,135.7722442" },
       { name:"にこみ 鈴や", en:"Nikomi Suzuya", area:"Nakagyo", cat:"Japanese", url:"https://www.google.com/maps/place/%E3%81%AB%E3%81%93%E3%81%BF+%E9%88%B4%E3%82%84/data=!4m2!3m1!1s0x60010883f78baea9:0x566057bdeedb8e7a" },
       { name:"GINZA MUSIC BAR KYOTO", area:"Nakagyo", cat:"Bar / Music", url:"https://www.google.com/maps/place/GINZA+MUSIC+BAR+KYOTO/data=!4m2!3m1!1s0x600109fb6e64b019:0x8d7c3058f030a299" },
       { name:"遊亀", en:"Yuki (sake bar)", area:"Higashiyama", cat:"Bar / Sake", url:"https://www.google.com/maps/place/%E9%81%8A%E4%BA%80/data=!4m2!3m1!1s0x600108c1c3556f23:0x3df74e16372826e4" },
@@ -422,7 +400,7 @@ const DATA = {
     ]
   },
   "Ise & Others": {
-    note: "Ise Shrines · Hokkaido · Nagoya · Toyama · Kumamoto",
+    note: "Beyond the big cities",
     places: [
       { name:"二見興玉神社", en:"Futami Okitama Shrine", area:"Ise", cat:"Shrine / Temple", url:"https://www.google.com/maps/place/%E4%BA%8C%E8%A6%8B%E8%88%88%E7%8E%89%E7%A5%9E%E7%A4%BE/data=!4m2!3m1!1s0x6004578074c15005:0x6998153103f04925" },
       { name:"豊受大神宮（伊勢神宮 外宮）", en:"Geku — Outer Shrine of Ise Jingu", area:"Ise", cat:"Shrine / Temple", url:"https://www.google.com/maps/place/%E8%B1%8A%E5%8F%97%E5%A4%A7%E7%A5%9E%E5%AE%AE%EF%BC%88%E4%BC%8A%E5%8B%A2%E7%A5%9E%E5%AE%AE+%E5%A4%96%E5%AE%AE%EF%BC%89/data=!4m2!3m1!1s0x60045a8448dc91ef:0xa4ae3d71f472dbc7" },
@@ -433,7 +411,7 @@ const DATA = {
       { name:"吟チロリ", en:"Gin Chirori (Toyama sake bar)", area:"Toyama", cat:"Bar / Sake", url:"https://www.google.com/maps/place/%E5%90%9F%E3%83%81%E3%83%AD%E3%83%AA/data=!4m2!3m1!1s0x5ff7918cf3518403:0xa3e2b3bd97ae0b3d" },
       { name:"水前寺五郎八(いろは)", en:"Suizenji Gorohachi Iroha", area:"Kumamoto", cat:"Izakaya", url:"https://www.google.com/maps/place/%E6%B0%B4%E5%89%8D%E5%AF%BA%E4%BA%94%E9%83%8E%E5%85%AB(%E3%81%84%E3%82%8D%E3%81%AF)/data=!4m2!3m1!1s0x3540f394c523b9c1:0x3238d13881bbe4e6" },
     ]
-  }
+  },
 };
 
 // ============================================================
