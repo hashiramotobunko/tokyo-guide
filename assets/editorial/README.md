@@ -1,8 +1,15 @@
-# Encounter Japan / Editorial illustrations
-These are original vector visual interpretations of Tokyo's city-pop-era urban culture and Showa commercial-illustration sensibility. They do not imitate any individual artist or reproduce existing artworks.
+# Encounter Japan — original editorial vector artwork
 
-- `night-street.svg`: imaginary metropolitan record-bar street at blue hour
-- `day-bookshop.svg`: imaginary bookshop and coffee street scene
-- **Neither depicts a real listed venue.** Label visibly as `Editorial illustration · not a venue photograph`.
-- No licensed maps photos, storefront photographs, third-party logos, copyrighted album sleeves, or claim of accurate venue appearance.
-- For the approved photographic-detail generated PNGs in the chat, see separately provided local production-assets package. This PR currently uses self-contained, text-based vector art because the GitHub connection cannot upload binary PNG/AVIF assets directly in the present runtime.
+The Draft PR uses three original, self-contained SVG visual interpretations of urban Japan. The approach borrows general ideas from late-Showa commercial illustration and city-pop-era visual culture, but does **not** copy a single known artist's composition, technique or signature.
+
+| Asset | Editorial subject | Intended use |
+|---|---|---|
+| `night-street.svg` | Imaginary Tokyo record-bar street at dusk | Homepage hero / Tokyo night theme |
+| `day-bookshop.svg` | Imaginary books-and-coffee street | Books, culture, daytime editorial feature |
+| `rooftop-citypop.svg` | Imaginary city rooftop lounge with skyline and vinyl | Second visual feature |
+
+**These are artworks, not photographs of listed shops.** The page must label them visibly as editorial illustration, and the alt text must not state or imply a venue's actual appearance. No Google Maps imagery, restaurant-owned photos, third-party logos, album-art reproductions or exact storefront facsimiles are embedded.
+
+The owner approved a separate set of high-resolution AI-generated city-pop images visible in the local reviewed artifact `ENCOUNTER_JAPAN_CITYPOP_TESTED_PREVIEW_2026-10-23.zip`. They are **not the same art as the SVGs above** and have not been uploaded to GitHub via this connector; do not claim otherwise.
+
+When replacing SVGs with optimized high-resolution WebP/JPEG/AVIF, retain source attribution, alt text, image aspect/size, crop review, mobile loading QA and clear illustrations-vs-real-store distinction. Avoid copying individual Showa illustrators.
