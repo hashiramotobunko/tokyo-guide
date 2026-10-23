@@ -102,9 +102,9 @@ test('all four visitor tools have real screen elements and handlers',()=>{
  assert.ok(script.includes("ejAreaSelect.addEventListener('change'"));
  assert.ok(script.includes("ejRegionSelect.addEventListener('change'"));
 });
-test('the route collection contains nine real stop lists',()=>{
+test('the route collection contains ten real stop lists',()=>{
  const routes=vm.runInNewContext('('+declaration('EJ_ROUTES')+')');
- assert.equal(routes.length,9);
+ assert.equal(routes.length,10);
  assert.ok(routes.every(x=>x.city&&x.area&&x.theme&&x.stops.length>=3));
  for(const r of routes)for(const name of r.stops)
    assert.ok(data[r.city].places.some(p=>p.name===name),r.id+': '+name);
@@ -113,7 +113,7 @@ test('the practical-information pilot has explicit sources',()=>{
  for(const name of ['東京国立博物館','国立西洋美術館','清水寺']){
   assert.ok(source.includes('"'+name+'":{'),name);
  }
- assert.ok(source.includes('2026-10-23'));
- assert.ok(source.includes('Not independently verified'));
+ assert.ok(source.includes('2026-10-24'));
+ assert.ok(source.includes('not been checked'));
  assert.ok(source.includes('Official visitor information'));
 });
