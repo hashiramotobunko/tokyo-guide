@@ -1230,14 +1230,20 @@ const EJ_NOTES={
  "甘味どころ ぎをん 小森":{en:"Gion Komori serves traditional Japanese sweets in a machiya that was formerly a teahouse.",source:"https://www.kyoto-kankou.or.jp/info_search/7745"}
 };
 const EJ_ROUTES=[
- {id:"jimbocho",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Three invitations rather than a prescribed order.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
- {id:"shibuya",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three entries from our Shibuya music-bar collection. Follow the music rather than a fixed schedule. Confirm each venue individually before visiting.",stops:["Hi-Fi Disco Bar Chaos","MUSIC BAR BOUNCE","THE MUSIC BAR -CAVE SHIBUYA-"]},
- {id:"higashiyama",city:"Kyoto",area:"Higashiyama",eyebrow:"KYOTO / STAGE, SHRINE, SWEETS",title:"Higashiyama in different registers",intro:"The temple, shrine, theater and sweet shop reveal distinct sides of eastern Kyoto. This is a thematic selection, not a verified one-day walking route.",stops:["清水寺","八坂神社","南座","甘味どころ ぎをん 小森"]}
+ {id:"jimbocho",theme:"coffee",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Three invitations rather than a prescribed order.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
+ {id:"shibuya",theme:"night",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three entries from our Shibuya music-bar collection. Follow the music rather than a fixed schedule. Confirm each venue individually before visiting.",stops:["Hi-Fi Disco Bar Chaos","MUSIC BAR BOUNCE","THE MUSIC BAR -CAVE SHIBUYA-"]},
+ {id:"higashiyama",theme:"culture",city:"Kyoto",area:"Higashiyama",eyebrow:"KYOTO / STAGE, SHRINE, SWEETS",title:"Higashiyama in different registers",intro:"The temple, shrine, theater and sweet shop reveal distinct sides of eastern Kyoto. This is a thematic selection, not a verified one-day walking route.",stops:["清水寺","八坂神社","南座","甘味どころ ぎをん 小森"]},
+ {id:"ueno",city:"Tokyo",area:"Ueno",theme:"culture",eyebrow:"TOKYO / MUSEUMS & OPEN AIR",title:"Ueno, beyond the museum doors",intro:"Three museums and a park from the address book. Visit sequence, admission and opening hours are not verified.",stops:["東京国立博物館","国立西洋美術館","東京都美術館","不忍池"]},
+ {id:"kiyosumi",city:"Tokyo",area:"Kiyosumi-Shirakawa",theme:"coffee",eyebrow:"TOKYO / COFFEE & FOOD",title:"Kiyosumi, a slower morning",intro:"Two coffee addresses and a yoshoku stop, grouped for exploration rather than as a tested walking loop.",stops:["米本珈琲 清澄白河","First Crop Coffee Japan Roastery","実用洋食 七福"]},
+ {id:"harajuku",city:"Tokyo",area:"Harajuku",theme:"culture",eyebrow:"TOKYO / SHRINE & STREETS",title:"Harajuku, different tempos",intro:"A shrine precinct, a shopping street and food stops. Check entrances and hours yourself.",stops:["明治神宮","竹下通り","瑞穂","THE GREAT BURGER"]},
+ {id:"ebisu",city:"Tokyo",area:"Ebisu",theme:"night",eyebrow:"TOKYO / MUSIC",title:"Ebisu on the record",intro:"Music-focused venues from the guide. Opening times, entry and walking transfers are unconfirmed.",stops:["Spincoaster Music Bar Ebisu","ソウルソニックブギー恵比寿","SOUND BAR MOD'Z"]},
+ {id:"koenji",city:"Tokyo",area:"Koenji",theme:"night",eyebrow:"TOKYO / FOOD & BARS",title:"Koenji, stay a little longer",intro:"Eating and drinking stops as a thematic shortlist. Not a checked evening itinerary.",stops:["中華料理 七面鳥","日本酒あさって","bar dop","立呑み きど藤"]},
+ {id:"shinjuku",city:"Tokyo",area:"Shinjuku",theme:"coffee",eyebrow:"TOKYO / ALLEYS & FOOD",title:"Shinjuku, the smaller streets",intro:"An alley and food stops from the guide. Route order and business hours require checks.",stops:["新宿西口 思い出横丁","そば処かめや 新宿店","中華料理 岐阜屋","四文屋 思い出横丁店"]}
 ];
 function ejHTML(x){return String(x).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;")}
 function ejRenderRoutes(){
  const root=document.getElementById("ej-field-list");if(!root)return;
- root.innerHTML=EJ_ROUTES.map(route=>'<article class="ej-route" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>DRAFT / UNVERIFIED WALKING ROUTE</span></div><h3>'+ejHTML(route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p><ol class="ej-route-stops">'+route.stops.map((name,index)=>{
+ root.innerHTML=EJ_ROUTES.map(route=>'<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>DRAFT / UNVERIFIED WALKING ROUTE</span></div><h3>'+ejHTML(route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p><ol class="ej-route-stops">'+route.stops.map((name,index)=>{
  const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
  const note=EJ_NOTES[name];
  return '<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong><small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
@@ -1264,6 +1270,7 @@ function ejPersist(){
  });
 }
 
+function ejCityForPlace(p){return Object.keys(DATA).find(c=>DATA[c].places.includes(p))||"Japan";}
 function card(p) {
   return `<div class="place-card">
     <div class="place-name">${p.name}</div>
@@ -1275,6 +1282,13 @@ function card(p) {
       <span class="tag-cat">· ${p.cat}</span>
     </div>
     <a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>
+    <details class="ej-essentials"><summary>Visitor essentials <span aria-hidden="true">＋</span></summary><dl>
+    <div><dt>Location</dt><dd>${ejHTML(p.area)} · ${ejHTML(ejCityForPlace(p))}</dd></div>
+    <div><dt>Directions</dt><dd><a href="${ejHTML(p.url)}" target="_blank" rel="noopener noreferrer">Check Google Maps ↗</a></dd></div>
+    <div><dt>Price / reservation</dt><dd>Not independently verified. Confirm with the venue.</dd></div>
+    <div><dt>Hours / languages</dt><dd>Check directly before visiting.</dd></div>
+    ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
+    </dl></details>
     <button type="button" class="ej-fav" data-fav="${encodeURIComponent(p.url)}" aria-pressed="${ejSaved.has(p.url) ? 'true':'false'}">${ejSaved.has(p.url) ? 'Saved ✓':'Save this place +'}</button>
   </div>`;
 }
