@@ -468,6 +468,10 @@ footer small{width:100%;opacity:.7}
 .ej-visitor-shortcuts button:hover{background:#ff5900;border-color:#ff5900}
 .ej-visitor-verified .ej-info-caveat{font-size:12px;color:#555;line-height:1.55;margin-top:18px}
 
+
+.ej-route-neighborhood{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;display:block;margin:0 0 22px}
+.ej-route-neighborhood select{display:block;width:min(390px,100%);min-height:46px;margin-top:8px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font:500 16px Arial,sans-serif;padding:10px}
+
 </style>
 </head>
 <body>
@@ -550,7 +554,9 @@ footer small{width:100%;opacity:.7}
 <button type="button" data-route-choice="Osaka" aria-pressed="false">Osaka</button>
 <button type="button" data-route-choice="night" aria-pressed="false">Music & night</button>
 <button type="button" data-route-choice="coffee" aria-pressed="false">Food & coffee</button>
-</div><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · unverified</p><div class="ej-field-list" id="ej-field-list"></div></section>
+<button type="button" data-route-choice="culture" aria-pressed="false">Art & heritage</button>
+<button type="button" data-route-choice="food" aria-pressed="false">Food-led walks</button>
+</div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · unverified</p><div class="ej-field-list" id="ej-field-list"></div></section>
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
@@ -1328,7 +1334,7 @@ function ejRouteGoogleMapsURL(route){
 
 function ejRenderRoutes(){
  const root=document.getElementById("ej-field-list");if(!root)return;
- root.innerHTML=EJ_ROUTES.map(route=>'<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>DRAFT / UNVERIFIED WALKING ROUTE</span></div><h3>'+ejHTML(route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p><ol class="ej-route-stops">'+route.stops.map((name,index)=>{
+ root.innerHTML=EJ_ROUTES.map(route=>'<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>DRAFT / UNVERIFIED WALKING ROUTE</span></div><h3>'+ejHTML(route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p><ol class="ej-route-stops">'+route.stops.map((name,index)=>{
  const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
  const note=EJ_NOTES[name];
  return '<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong><small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
@@ -1889,17 +1895,32 @@ document.getElementById('ej-reset-all').addEventListener('click',()=>{
  if(fb){fb.setAttribute('aria-pressed','false');fb.textContent='Show saved places ↗';}
  ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
 });
-document.getElementById('ej-route-options').addEventListener('click',e=>{
- const button=e.target.closest('button[data-route-choice]');if(!button)return;
- const choice=button.dataset.routeChoice;
- document.querySelectorAll('#ej-route-options button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
- let count=0;
+
+let ejRouteChoice='all',ejRouteArea='';
+const ejRouteAreaSelect=document.getElementById('ej-route-area');
+function ejApplyRouteFilters(){
+ const matching=EJ_ROUTES.filter(r=>ejRouteChoice==='all'||r.city===ejRouteChoice||r.theme===ejRouteChoice);
+ const areas=[...new Set(matching.map(r=>r.area))].sort();
+ ejRouteAreaSelect.replaceChildren(new Option('All neighborhoods ('+matching.length+')',''));
+ for(const area of areas)ejRouteAreaSelect.add(new Option(area,area));
+ if(!areas.includes(ejRouteArea))ejRouteArea='';
+ ejRouteAreaSelect.value=ejRouteArea;
+ let n=0;
  document.querySelectorAll('#ej-field-list .ej-route').forEach(article=>{
-   article.hidden=choice!=='all'&&article.dataset.routeCity!==choice&&article.dataset.routeTheme!==choice;
-   if(!article.hidden)count++;
+  const good=(ejRouteChoice==='all'||article.dataset.routeCity===ejRouteChoice||article.dataset.routeTheme===ejRouteChoice)&&(!ejRouteArea||article.dataset.routeArea===ejRouteArea);
+  article.hidden=!good;if(good)n++;
  });
- document.getElementById('ej-route-status').textContent=count+' route ideas · confirm walking order and venue details';
+ document.getElementById('ej-route-status').textContent=n+' route ideas · verify walking order, times and opening hours';
+}
+document.getElementById('ej-route-options').addEventListener('click',e=>{
+ const b=e.target.closest('button[data-route-choice]');if(!b)return;
+ ejRouteChoice=b.dataset.routeChoice;
+ document.querySelectorAll('#ej-route-options button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+ ejApplyRouteFilters();
 });
+ejRouteAreaSelect.addEventListener('change',()=>{ejRouteArea=ejRouteAreaSelect.value;ejApplyRouteFilters()});
+ejApplyRouteFilters();
+
 document.addEventListener('click',e=>{
  const button=e.target.closest('[data-share-route]');if(!button)return;
  const url=new URL(location.href);url.hash='route-'+button.dataset.shareRoute;
