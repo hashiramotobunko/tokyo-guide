@@ -1055,6 +1055,7 @@ const typeOf = p => { const t = CAT_TYPE[p.cat]; if (!t) { console.warn('[tokyo-
 /* Saves only an address's existing Google Maps URL. No account, server or data collection. */
 const EJ_FAV_STORAGE_KEY='encounter-japan-saved-v1';
 let ejSaved=new Set();
+let ejSavedOnly=false;
 try{const v=JSON.parse(localStorage.getItem(EJ_FAV_STORAGE_KEY)||'[]');if(Array.isArray(v))ejSaved=new Set(v.filter(x=>typeof x==='string').slice(0,526));}catch(_){}
 function ejPersist(){
  try{localStorage.setItem(EJ_FAV_STORAGE_KEY,JSON.stringify([...ejSaved]));}catch(_){}
@@ -1373,7 +1374,7 @@ if(ejURL.searchParams.has('saved')){
   ejSaved=new Set(ids.map(x=>{try{return decodeURIComponent(x)}catch(_){return ''}}).filter(x=>ejValidURLs.has(x)));
   ejPersist();
 }
-let ejSavedOnly=false;
+
 document.addEventListener('click',e=>{
  const b=e.target.closest('.ej-fav');
  if(b){
