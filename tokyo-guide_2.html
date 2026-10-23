@@ -372,6 +372,45 @@ footer small{width:100%;opacity:.7}
  .ej-nav-social{display:none}
 }
 
+
+/* City-pop art direction / revision 03: bold cover composition, not a travel-directory grid */
+@media (min-width: 1001px) {
+ .ej-hero-art {
+   width: 48%;
+   right: 1.5%;
+   top: 9%;
+   height: 74%;
+   transform: rotate(-2.2deg);
+   box-shadow: 24px 28px 0 #ff5900;
+ }
+ .ej-hero-main { padding-top: clamp(110px, 13vh, 195px); z-index: 4; }
+ .ej-hero h1 { font-size: clamp(110px, 13.5vw, 233px); line-height: .78; }
+ .ej-line-one, .ej-line-two, .ej-line-three { text-shadow: 1.5px 1.5px 0 #fff, -1.5px -1.5px 0 #fff; }
+ .ej-after-title { position: relative; z-index: 6; margin-top: 26px; }
+ .ej-story-photo { width: 103%; margin-left: -2%; }
+ .ej-story-copy { transform: translate(-3%, 2%); }
+ .ej-second-photo { width: 44%; right: 3.5%; transform: rotate(-4deg); }
+ .ej-second-big { max-width: 77%; }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+ .ej-hero-art { width: 48%; right: 3%; top: 13%; height: 66%; transform: rotate(-3deg); }
+ .ej-hero-main { z-index: 4; }
+ .ej-hero h1 { font-size: clamp(92px, 13.2vw, 140px); }
+ .ej-second-big { max-width: 89%; }
+}
+@media (max-width: 700px) {
+ .ej-hero-art { top: 298px; right: 7%; width: 62%; height: 295px; transform: rotate(-3deg); box-shadow: 11px 13px 0 #ff5900; }
+ .ej-hero-main { z-index: 4; }
+ .ej-hero h1 { font-size: clamp(62px, 13.8vw, 101px); line-height: .84; }
+ .ej-hero-art img { object-position: 64% 47%; }
+ .ej-story-photo { width: 88%; }
+ .ej-second-photo { transform: rotate(-3deg); }
+}
+@media (max-width: 360px) {
+ .ej-hero-art { width: 60%; height: 264px; top: 296px; }
+ .ej-hero h1 { font-size: clamp(55px, 13vw, 66px); }
+}
+
 </style>
 </head>
 <body>
