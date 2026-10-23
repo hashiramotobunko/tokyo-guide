@@ -1,0 +1,39 @@
+name: Encounter Japan editorial checks
+on:
+  pull_request:
+    paths:
+      - 'tokyo-guide_2.html'
+      - 'tests/**'
+      - 'assets/editorial/**'
+      - '.github/workflows/editorial-checks.yml'
+  workflow_dispatch:
+jobs:
+  static-qa:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source, nine routes and assets
+        run: node --test tests/editorial-smoke.mjs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test tooling
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Serve editorial preview
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/encounter-preview.log 2>&1 &
+          sleep 2
+          curl --fail http://127.0.0.1:8765/tokyo-guide_2.html -o /dev/null
+      - name: Check discovery, mood, routes, essentials and screenshots
+        run: node tests/visitor-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: encounter-japan-browser-review
+          path: artifacts/
+          retention-days: 7
+          if-no-files-found: ignore
