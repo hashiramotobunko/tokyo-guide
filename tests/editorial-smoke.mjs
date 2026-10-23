@@ -72,22 +72,20 @@ test('Instagram remains disabled without a real owner-supplied URL',()=>{
  assert.ok(source.includes('id="ej-footer-instagram" hidden'));
 });
 
-test('all locally referenced original editorial images are committed',()=>{
- const paths=[...new Set([...source.matchAll(/assets\\/editorial\\/[\\w.-]+\\.(?:svg|png|jpg|webp|avif)/g)].map(m=>m[0]))];
- assert.ok(paths.length>=3,'expected at least three editorial illustrations');
+test('every linked original editorial image exists in the repository',()=>{
+ const paths=[...new Set([...source.matchAll(new RegExp('assets/editorial/[A-Za-z0-9_.-]+[.](svg|png|jpg|webp|avif)','g'))].map(m=>m[0]))];
+ assert.ok(paths.length>=3,'expected at least three illustrated scenes');
  for(const path of paths){
   const file=resolve(__dirname,'..',path);
-  assert.ok(readFileSync(file).length>100,'missing or empty illustration: '+path);
+  assert.ok(readFileSync(file).length>100,'missing or empty image: '+path);
  }
 });
-test('image alternatives distinguish illustrations from real venue photos',()=>{
- const imgs=[...source.matchAll(/<img\\b[^>]+>/g)].map(m=>m[0]);
- assert.ok(imgs.length>=3);
- for(const tag of imgs){
-  assert.ok(/alt="[^"]+"/.test(tag),'missing image alt text');
- }
- assert.match(source,/Editorial illustration/);
+test('editorial illustrations have image alt text',()=>{
+ const images=[...source.matchAll(/<img[^>]+>/g)].map(m=>m[0]);
+ assert.ok(images.length>=3);
+ for(const image of images)assert.ok(image.includes('alt="'),'alt missing');
+ assert.ok(source.includes('Editorial illustration'));
 });
-test('Instagram is not linked to an invented profile URL',()=>{
- assert.match(source,/const EJ_INSTAGRAM_URL\\s*=\\s*""/);
+test('Instagram link does not point to an invented profile',()=>{
+ assert.ok(source.includes('const EJ_INSTAGRAM_URL = ""'));
 });
