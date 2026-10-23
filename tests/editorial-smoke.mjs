@@ -49,7 +49,7 @@ test('removed duplicate names stay excluded',()=>{
 });
 test('route stops resolve to real source entries',()=>{
  const routes=vm.runInNewContext('('+declaration('EJ_ROUTES')+')');
- assert.equal(routes.length,9);
+ assert.equal(routes.length,10);
  for(const r of routes){assert.ok(data[r.city],r.city);for(const stop of r.stops)assert.ok(data[r.city].places.some(p=>p.name===stop),r.id+': '+stop)}
 });
 test('editorial sources and URL-navigation routines are present',()=>{
