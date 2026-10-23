@@ -71,3 +71,23 @@ test('Instagram remains disabled without a real owner-supplied URL',()=>{
  assert.ok(source.includes('id="ej-nav-social" hidden'));
  assert.ok(source.includes('id="ej-footer-instagram" hidden'));
 });
+
+test('all locally referenced original editorial images are committed',()=>{
+ const paths=[...new Set([...source.matchAll(/assets\\/editorial\\/[\\w.-]+\\.(?:svg|png|jpg|webp|avif)/g)].map(m=>m[0]))];
+ assert.ok(paths.length>=3,'expected at least three editorial illustrations');
+ for(const path of paths){
+  const file=resolve(__dirname,'..',path);
+  assert.ok(readFileSync(file).length>100,'missing or empty illustration: '+path);
+ }
+});
+test('image alternatives distinguish illustrations from real venue photos',()=>{
+ const imgs=[...source.matchAll(/<img\\b[^>]+>/g)].map(m=>m[0]);
+ assert.ok(imgs.length>=3);
+ for(const tag of imgs){
+  assert.ok(/alt="[^"]+"/.test(tag),'missing image alt text');
+ }
+ assert.match(source,/Editorial illustration/);
+});
+test('Instagram is not linked to an invented profile URL',()=>{
+ assert.match(source,/const EJ_INSTAGRAM_URL\\s*=\\s*""/);
+});
