@@ -459,6 +459,15 @@ footer small{width:100%;opacity:.7}
 .ej-route-status{font-size:12px;color:#444;font-weight:850;margin:-10px 0 30px}
 @media(max-width:700px){.ej-route-actions{display:flex;flex-direction:column;align-items:stretch}.ej-route-actions>*{width:100%}}
 
+
+/* Practical visitor info sourced per venue, linked to the matching results */
+.ej-visitor-verified{margin:27px 0;padding:25px 0;border-top:2px solid #111}
+.ej-visitor-verified strong{font-size:16px;line-height:1.35}
+.ej-visitor-shortcuts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.ej-visitor-shortcuts button{background:#fff;color:#111;padding:11px 13px;border:1px solid #999;min-height:44px;font-size:12px;font-weight:850;cursor:pointer}
+.ej-visitor-shortcuts button:hover{background:#ff5900;border-color:#ff5900}
+.ej-visitor-verified .ej-info-caveat{font-size:12px;color:#555;line-height:1.55;margin-top:18px}
+
 </style>
 </head>
 <body>
@@ -545,7 +554,14 @@ footer small{width:100%;opacity:.7}
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong>Official visitor details, researched for six destinations</strong><div class="ej-visitor-shortcuts">
+<button type="button" data-find-venue="東京国立博物館" data-find-city="Tokyo">Tokyo National Museum ↗</button>
+<button type="button" data-find-venue="東京都美術館" data-find-city="Tokyo">Tokyo Metropolitan Art Museum ↗</button>
+<button type="button" data-find-venue="国立西洋美術館" data-find-city="Tokyo">National Museum of Western Art ↗</button>
+<button type="button" data-find-venue="明治神宮" data-find-city="Tokyo">Meiji Jingu ↗</button>
+<button type="button" data-find-venue="通天閣" data-find-city="Osaka">Tsutenkaku Tower ↗</button>
+<button type="button" data-find-venue="清水寺" data-find-city="Kyoto">Kiyomizu-dera ↗</button>
+</div><p class="ej-info-caveat">For the other listed places, only verified location and Maps links are provided; prices and reservation policies are not inferred.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
  <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
@@ -1246,19 +1262,34 @@ const EJ_NOTES={
    Checked 2026-10-23. Not live data; viewers should reconfirm before visiting. */
 const EJ_PRACTICAL={
  "東京国立博物館":{
-   fee:"TNM Collection: adults ¥1,000; university students ¥500. Special exhibitions extra.",
-   hours:"09:30–17:00; Fridays and Saturdays until 20:00, subject to special closures.",
-   access:"About a 10-minute walk from JR Ueno (Park Exit) or Uguisudani.",
-   source:"https://www.tnm.jp/modules/r_free_page/index.php?id=113",checked:"2026-10-23"},
+   fee:"TNM Collection: adults ¥1,000; university students ¥500. Special exhibitions cost extra.",
+   hours:"09:30–17:00. Friday and Saturday usually until 20:00; special openings and closures vary.",
+   access:"About 10 minutes on foot from JR Ueno (Park Exit) or Uguisudani.",
+   source:"https://www.tnm.jp/modules/r_free_page/index.php?id=113",checked:"2026-10-24"},
  "国立西洋美術館":{
-   fee:"Permanent collection: adults ¥500; university students ¥250. Special exhibitions extra.",
-   hours:"09:30–17:30; Fridays and Saturdays until 20:00. Last entry 30 minutes before closing.",
+   fee:"Permanent collection: adults ¥500; university students ¥250; special exhibitions may be different.",
+   hours:"09:30–17:30; Fridays and Saturdays until 20:00. Last admission 30 minutes before closing.",
    access:"7-7 Ueno-koen, Taito-ku, Tokyo.",
-   source:"https://www.nmwa.go.jp/en/visit/",checked:"2026-10-23"},
+   source:"https://www.nmwa.go.jp/en/visit/",checked:"2026-10-24"},
+ "東京都美術館":{
+   fee:"Museum entry is free. Admission to individual exhibitions varies.",
+   hours:"09:30–17:30; Friday until 20:00 during special exhibitions. Seasonal closures apply.",
+   access:"7 minutes on foot from JR Ueno Station, Park Exit.",
+   source:"https://www.tobikan.jp/guide/",checked:"2026-10-24"},
  "清水寺":{
-   hours:"Opens at 06:00; closing depends on season and special night-viewing dates.",
-   access:"Enter via Kiyomizu-zaka or Chawan-zaka. Map services may suggest routes with no entry.",
-   source:"https://www.kiyomizudera.or.jp/access/",checked:"2026-10-23"}
+   hours:"Opens at 06:00. Closing time varies seasonally and for evening events.",
+   access:"Approach via Kiyomizu-zaka or Chawan-zaka. Some streets have steep slopes.",
+   source:"https://www.kiyomizudera.or.jp/en/faq/",checked:"2026-10-24"},
+ "明治神宮":{
+   hours:"Gates open at sunrise and close at sunset; October gates are usually 05:40–16:40. Consult the monthly timetable.",
+   access:"A forested shrine precinct near Harajuku and Yoyogi; consult the official access map for entrances.",
+   source:"https://www.meijijingu.or.jp/sanpai/2.php",checked:"2026-10-24"},
+ "通天閣":{
+   fee:"General observation deck: adults ¥1,500; children ¥800. Additional experiences cost extra.",
+   hours:"General observation deck: 09:00–21:45, last admission 21:15. Changes possible.",
+   reservation:"A timed admission reservation is required. Check the official ticket guidance; advance booking is recommended.",
+   access:"About 3 minutes on foot from Ebisucho Station or 6 minutes from Shin-Imamiya.",
+   source:"https://www.tsutenkaku.co.jp/annai/",checked:"2026-10-24"}
 };
 function ejPracticalField(p,key,label){
  const info=EJ_PRACTICAL[p.name];if(!info?.[key])return '';
@@ -1342,10 +1373,8 @@ function card(p) {
     ${ejPracticalField(p,'fee','Admission / price')}
     ${ejPracticalField(p,'hours','Opening hours')}
     ${ejPracticalField(p,'access','Access')}
-    <div><dt>Reservation</dt><dd>Not independently verified. Check with the venue.</dd></div>
-    ${!EJ_PRACTICAL[p.name]?.fee ? '<div><dt>Price</dt><dd>Not independently verified.</dd></div>' : ''}
-    ${!EJ_PRACTICAL[p.name]?.hours ? '<div><dt>Hours</dt><dd>Check current opening hours before visiting.</dd></div>' : ''}
-    <div><dt>Languages</dt><dd>Not independently verified.</dd></div>
+    ${ejPracticalField(p,'reservation','Booking / tickets')}
+    ${!EJ_PRACTICAL[p.name] ? '<div><dt>Before you go</dt><dd>Prices, opening times, reservations and language support have not been checked. Verify with the venue before visiting.</dd></div>' : '<div><dt>Before you go</dt><dd>Official information was checked on the stated date, but may change. Confirm directly before travel.</dd></div>'}
     ${ejPracticalCitation(p)}
     ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
     </dl></details>
@@ -1793,6 +1822,14 @@ document.querySelectorAll('[data-explore-type]').forEach(button=>button.addEvent
   ejRefreshAll();
  }finally{ejRestoring=false}
  ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+}));
+document.querySelectorAll('[data-find-venue]').forEach(button=>button.addEventListener('click',()=>{
+ const city=button.dataset.findCity,venue=button.dataset.findVenue;
+ if(!ejChangeCity(city))return;
+ ejDiscovery.q=venue;ejSearchBox.value=venue;ejMood='';ejSavedOnly=false;
+ const st=STATE[city];st.areas=[];st.cats=[];st.types=[];
+ ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+ document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
 }));
 document.querySelectorAll('[data-walk-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.walkCity,button.dataset.walkArea)));
 document.querySelectorAll('[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
