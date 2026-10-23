@@ -1350,6 +1350,23 @@ function renderActiveTags(cityKey, el) {
 // ============================================================
 // MAIN FILTER + RENDER ENGINE
 // ============================================================
+
+/* All mood filters are derived from known, objective category fields only.
+   An "After dark" group does not assert individual venue opening times. */
+const EJ_MOOD_CATEGORIES={
+ night:/^(Bar|Bar \/|Izakaya|Live House|Restaurant \/ Bar)/,
+ coffee:/^(Café|Bakery|Sweets)/,
+ culture:/^(Museum|Temple|Shrine|Landmark|Monument|Sightseeing|Event Venue)/,
+ food:/^(Sushi|Soba|Ramen|Tsukemen|Udon|Unagi|Yakitori|Yakiniku|Tonkatsu|Tempura|Sukiyaki|Japanese|Kaiseki|Jingisukan|Diner \/ Teishoku|Yoshoku)/,
+ shop:/^(Shopping|Shopping Street)/,
+ slow:/^(Onsen|Sento|Park & Garden)/
+};
+let ejMood='';
+function ejMoodMatches(p){return !ejMood||Boolean(EJ_MOOD_CATEGORIES[ejMood]?.test(p.cat));}
+function ejMoodButtonState(){
+ document.querySelectorAll('[data-mood]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mood===ejMood)));
+}
+
 const ejDiscovery={q:(new URLSearchParams(location.search).get('q')||'').trim()};
 function applyFilters(cityKey, places, els) {
   const s = STATE[cityKey];
@@ -1358,6 +1375,7 @@ function applyFilters(cityKey, places, els) {
   if (s.cats.length)  filtered = filtered.filter(p => s.cats.includes(p.cat));
   if (s.areas.length) filtered = filtered.filter(p => s.areas.includes(p.area));
   if(ejDiscovery.q){const q=ejDiscovery.q.toLocaleLowerCase();filtered=filtered.filter(p=>[p.name,p.en||'',p.area,p.cat,EJ_NOTES[p.name]?.en||''].join(' ').toLocaleLowerCase().includes(q));}
+  if(ejMood)filtered=filtered.filter(ejMoodMatches);
   if(ejSavedOnly)filtered=filtered.filter(p=>ejSaved.has(p.url));
 
   // Update result count in stats bar
@@ -1655,9 +1673,10 @@ function ejRefreshAll(){Object.entries(DATA).forEach(([city,v])=>{if(ejViewRefs[
 function ejSyncURL(push=false){
  if(ejRestoring)return;
  const u=new URL(location.href),city=ejCurrentCity(),st=STATE[city];
- for(const k of ['city','q','area','cat','type','sort','dir'])u.searchParams.delete(k);
+ for(const k of ['city','q','area','cat','type','sort','dir','mood'])u.searchParams.delete(k);
  if(city!==Object.keys(DATA)[0])u.searchParams.set('city',city);
  if(ejDiscovery.q)u.searchParams.set('q',ejDiscovery.q);
+ if(ejMood)u.searchParams.set('mood',ejMood);
  if(st.areas.length)u.searchParams.set('area',st.areas.join('|'));
  if(st.cats.length)u.searchParams.set('cat',st.cats.join('|'));
  if(st.types.length)u.searchParams.set('type',st.types.join('|'));
@@ -1671,6 +1690,8 @@ function ejRestoreURL(){
  try{
   const p=new URLSearchParams(location.search),city=DATA[p.get('city')]?p.get('city'):Object.keys(DATA)[0];
   ejDiscovery.q=(p.get('q')||'').trim();ejSearchBox.value=ejDiscovery.q;
+  ejMood=Object.hasOwn(EJ_MOOD_CATEGORIES,p.get('mood'))?p.get('mood'):'';
+  ejMoodButtonState();
   Object.values(STATE).forEach(st=>{st.areas=[];st.cats=[];st.types=[]});
   const st=STATE[city],places=DATA[city].places;
   const areas=new Set(places.map(p=>p.area)),cats=new Set(places.map(p=>p.cat));
@@ -1679,7 +1700,7 @@ function ejRestoreURL(){
   st.types=(p.get('type')||'').split('|').filter(v=>TYPE_ORDER.includes(v));
   st.sort=['cat','area','name'].includes(p.get('sort'))?p.get('sort'):'cat';
   st.dir=p.get('dir')==='desc'?'desc':'asc';
-  ejChangeCity(city);ejRefreshAll();
+  ejChangeCity(city);ejRefreshAll();ejUpdateLocationControls();
   ejViewRefs[city]?.sortBtns.forEach(b=>{const a=b.dataset.sort===st.sort;b.classList.toggle('active',a);b.querySelector('.arr').textContent=a?(st.dir==='asc'?'↑':'↓'):'↕';});
  }finally{ejRestoring=false}
 }
@@ -1716,7 +1737,77 @@ document.querySelectorAll('[data-explore-type]').forEach(button=>button.addEvent
 document.querySelectorAll('[data-walk-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.walkCity,button.dataset.walkArea)));
 document.querySelectorAll('[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
 addEventListener('popstate',ejRestoreURL);
+
+/* Region + area dropdowns wired into the same filter state as the chips and share URL. */
+const ejRegionSelect=document.getElementById('ej-region-select');
+const ejAreaSelect=document.getElementById('ej-area-select');
+const ejFilterMessage=document.getElementById('ej-filter-message');
+function ejUpdateLocationControls(){
+ const city=ejCurrentCity();const st=STATE[city]||{areas:[]};
+ if(!ejRegionSelect.options.length){
+   Object.entries(DATA).forEach(([region,info])=>{
+     const o=new Option(region+' · '+info.places.length,region);
+     ejRegionSelect.add(o);
+   });
+ }
+ ejRegionSelect.value=city;
+ const areas=Array.from(new Set(DATA[city].places.map(p=>p.area))).sort((a,b)=>a.localeCompare(b,'en'));
+ ejAreaSelect.replaceChildren();
+ ejAreaSelect.add(new Option('Every neighborhood · '+DATA[city].places.length,''));
+ for(const area of areas){
+   const n=DATA[city].places.filter(p=>p.area===area).length;
+   ejAreaSelect.add(new Option(area+' · '+n,area));
+ }
+ ejAreaSelect.value=st.areas.length===1?st.areas[0]:'';
+ ejFilterMessage.textContent='Showing '+city+(st.areas.length?' / '+st.areas.join(', '):' / all neighborhoods')+(ejMood?' / '+ejMood.replaceAll('-',' '):'')+'. Combine filters or search Japanese and English names.';
+}
+ejRegionSelect.addEventListener('change',()=>{
+ const city=ejRegionSelect.value;
+ if(!DATA[city])return;
+ ejRestoring=true;
+ try{
+  ejChangeCity(city);
+  STATE[city].areas=[];STATE[city].cats=[];STATE[city].types=[];
+  ejRefreshAll();ejUpdateLocationControls();
+ }finally{ejRestoring=false}
+ ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+});
+ejAreaSelect.addEventListener('change',()=>{
+ const city=ejCurrentCity();
+ STATE[city].areas=ejAreaSelect.value?[ejAreaSelect.value]:[];
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+document.getElementById('ej-mood-list').addEventListener('click',e=>{
+ const button=e.target.closest('button[data-mood]');if(!button)return;
+ const next=button.dataset.mood;
+ if(next&&!EJ_MOOD_CATEGORIES[next])return;
+ ejMood=ejMood===next?'':next;
+ ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+document.getElementById('ej-reset-all').addEventListener('click',()=>{
+ const city=ejCurrentCity();const st=STATE[city];
+ st.areas=[];st.cats=[];st.types=[];st.sort='cat';st.dir='asc';
+ ejMood='';ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;
+ const fb=document.getElementById('ej-show-favs');
+ if(fb){fb.setAttribute('aria-pressed','false');fb.textContent='Show saved places ↗';}
+ ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+document.getElementById('ej-route-options').addEventListener('click',e=>{
+ const button=e.target.closest('button[data-route-choice]');if(!button)return;
+ const choice=button.dataset.routeChoice;
+ document.querySelectorAll('#ej-route-options button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ document.querySelectorAll('#ej-field-list .ej-route').forEach(article=>{
+   article.hidden=choice!=='all'&&article.dataset.routeCity!==choice&&article.dataset.routeTheme!==choice;
+ });
+});
+document.addEventListener('click',e=>{
+ if(e.target.closest('#cityTabs .city-tab,.chip[data-type="area"],.clear-link,.active-tag,.reset-all')){
+  // Existing chip listeners have already updated STATE; this observer only refreshes dropdowns.
+  ejUpdateLocationControls();
+ }
+});
 ejRestoreURL();
+
 
 
 /* Optional Instagram link: configure only after the owner supplies the actual profile URL. */
