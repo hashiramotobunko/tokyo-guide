@@ -16,9 +16,9 @@ Make this a distinctly authored independent Japan culture publication, not a res
 - Draft PR #1 is **a design/prototype**, NOT production publication.
 - Current main branch is one legacy HTML page with a 526-entry dataset; it is *not* the Claude standalone preview.
 - Branch now includes experimental photographic editorial feature sections using licensed CC0 city images, with source links and clear non-venue context.
-- Adds a browser-local saved-address list and link sharing; needs mobile/functional browser QA.
-- Contains draft walking prompts; *not yet* researched full itineraries.
-- English introductions for all 526 entries, sourced practical details, SEO detail routes, and AI concierge are **not implemented**.
+- Adds a browser-local saved-address list and compact link sharing, plus shareable region, area, category, type, search and sort state; needs mobile/functional browser QA.
+- Adds three themed editorial stop collections for Jimbocho, Shibuya and Higashiyama. Stops match approved inventory; route order and transfers are still unverified.
+- Six venue-specific English introductions now have source links; **the remaining 520**, sourced practical details, SEO detail routes and AI concierge are **not implemented**.
 - Do not merge or deploy this branch before visual, accessibility, and functionality acceptance tests.
 
 ## Quality gates before production
