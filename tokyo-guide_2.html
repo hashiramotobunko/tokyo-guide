@@ -1432,8 +1432,9 @@ const ejValidURLs=new Set(ejAllPlaces.map(p=>p.url));
 const ejURL=new URL(location.href);
 if(ejURL.searchParams.has('saved')){
   const raw=ejURL.searchParams.get('saved')||'';
-  const ids=raw.split('|').filter(Boolean).slice(0,40);
-  ejSaved=new Set(ids.map(x=>{try{return decodeURIComponent(x)}catch(_){return ''}}).filter(x=>ejValidURLs.has(x)));
+  const compact=/^\d+(,\d+)*$/.test(raw);
+  const urls=compact?raw.split(',').slice(0,40).map(i=>ejAllPlaces[Number(i)]?.url):raw.split('|').filter(Boolean).slice(0,40).map(x=>{try{return decodeURIComponent(x)}catch(_){return ''}});
+  ejSaved=new Set(urls.filter(x=>ejValidURLs.has(x)));
   ejPersist();
 }
 
@@ -1469,7 +1470,8 @@ document.getElementById('ej-share-favs')?.addEventListener('click',async()=>{
  const status=document.getElementById('ej-share-status');
  const u=new URL(location.href);
  if(ejSaved.size>40){status.textContent='Sharing is limited to 40 places. Please reduce the list.';return}
- u.searchParams.set('saved',[...ejSaved].map(encodeURIComponent).join('|'));
+ const positions=ejAllPlaces.flatMap((p,i)=>ejSaved.has(p.url)?[i]:[]);
+ u.searchParams.set('saved',positions.join(','));
  // Current page URL is shared; it is not a standalone itinerary.
  try{await navigator.clipboard.writeText(u.href);status.textContent='Link copied. Anyone with this link can open your saved list.'}
  catch(_){status.textContent=u.href;}
@@ -1498,12 +1500,14 @@ function ejRefreshAll(){Object.entries(DATA).forEach(([city,v])=>{if(ejViewRefs[
 function ejSyncURL(push=false){
  if(ejRestoring)return;
  const u=new URL(location.href),city=ejCurrentCity(),st=STATE[city];
- for(const k of ['city','q','area','cat','type'])u.searchParams.delete(k);
+ for(const k of ['city','q','area','cat','type','sort','dir'])u.searchParams.delete(k);
  if(city!==Object.keys(DATA)[0])u.searchParams.set('city',city);
  if(ejDiscovery.q)u.searchParams.set('q',ejDiscovery.q);
  if(st.areas.length)u.searchParams.set('area',st.areas.join('|'));
  if(st.cats.length)u.searchParams.set('cat',st.cats.join('|'));
  if(st.types.length)u.searchParams.set('type',st.types.join('|'));
+ if(st.sort!=='cat')u.searchParams.set('sort',st.sort);
+ if(st.dir!=='asc')u.searchParams.set('dir',st.dir);
  const next=u.pathname+u.search+u.hash;
  if(next!==location.pathname+location.search+location.hash)history[push?'pushState':'replaceState']({},'',next);
 }
@@ -1518,7 +1522,10 @@ function ejRestoreURL(){
   st.areas=(p.get('area')||'').split('|').filter(v=>areas.has(v));
   st.cats=(p.get('cat')||'').split('|').filter(v=>cats.has(v));
   st.types=(p.get('type')||'').split('|').filter(v=>TYPE_ORDER.includes(v));
+  st.sort=['cat','area','name'].includes(p.get('sort'))?p.get('sort'):'cat';
+  st.dir=p.get('dir')==='desc'?'desc':'asc';
   ejChangeCity(city);ejRefreshAll();
+  ejViewRefs[city]?.sortBtns.forEach(b=>{const a=b.dataset.sort===st.sort;b.classList.toggle('active',a);b.querySelector('.arr').textContent=a?(st.dir==='asc'?'↑':'↓'):'↕';});
  }finally{ejRestoring=false}
 }
 function ejBrowseArea(city,area){
