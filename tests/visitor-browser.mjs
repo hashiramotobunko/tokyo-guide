@@ -12,7 +12,7 @@ try{
    const errors=[];
    page.on('pageerror',err=>errors.push(err.message));
    await page.goto('http://127.0.0.1:8765/tokyo-guide_2.html',{waitUntil:'domcontentloaded'});
-   await page.locator('#ej-region-select option').first().waitFor();
+   await page.waitForFunction(() => document.querySelectorAll('#ej-region-select option').length >= 15);
    const dims=await page.evaluate(()=>({windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth}));
    assert.ok(dims.docWidth<=dims.windowWidth+1,'Horizontal overflow at '+width+': '+JSON.stringify(dims));
    assert.deepEqual(errors,[],'Script exceptions at '+width);
