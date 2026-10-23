@@ -31,7 +31,7 @@ const cardMapCount=(source.match(/https:\/\/www\.google\.com\/maps\/place\//g)||
 test('JavaScript parses',()=>assert.doesNotThrow(()=>new vm.Script(script)));
 test('all 526 approved places have usable location data',()=>{
  assert.equal(all.length,526);
- assert.ok(all.every(p=>p.name&&p.area&&p.cat&&/^https:\/\/www\.google\.com\/maps\/place\//.test(p.url)));
+ assert.ok(all.every(p=>p.name&&p.area&&p.cat&&/^https:\/\/www\.google\.com\/maps\/(?:place\/|search\/\?api=1&query=)/.test(p.url)));
  assert.equal(new Set(all.map(p=>p.url)).size,526);
 });
 test('region and area selectors are genuinely connected to the filters',()=>{
