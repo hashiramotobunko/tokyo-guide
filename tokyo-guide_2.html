@@ -411,6 +411,43 @@ footer small{width:100%;opacity:.7}
  .ej-hero h1 { font-size: clamp(55px, 13vw, 66px); }
 }
 
+
+/* Four visitor tools, editorial but genuinely usable */
+.ej-feature-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:35px 7% 80px;background:#fff}
+.ej-feature-nav a{display:flex;flex-direction:column;gap:9px;min-width:0;color:#111;text-decoration:none;border-top:2px solid #111;padding:22px 12px 25px}
+.ej-feature-nav a:hover,.ej-feature-nav a:focus-visible{background:#ffe3d3}
+.ej-feature-nav small{font-size:10px;color:#f50;font-weight:900;letter-spacing:.08em}
+.ej-feature-nav strong{font-size:clamp(19px,2.2vw,35px);letter-spacing:-.055em;line-height:1.07}
+.ej-feature-nav span{font-size:12px;color:#666}
+.ej-visitor{display:grid;grid-template-columns:1fr 1fr;gap:7%;background:#f5f4f0;padding:115px 7%;color:#111}
+.ej-visitor h2{font:900 clamp(84px,11vw,180px)/.77 Impact,"Arial Black",sans-serif;letter-spacing:-.075em;margin:35px 0}
+.ej-visitor h2 em{font-style:normal;color:#ff5900}.ej-visitor-copy{padding-top:55px}
+.ej-visitor-copy>p{font-size:18px;line-height:1.55;max-width:600px}
+.ej-visitor-copy dl{margin-top:30px}.ej-visitor-copy dl>div{display:grid;grid-template-columns:35% 1fr;gap:14px;padding:20px 0;border-top:1px solid #999;font-size:13px;line-height:1.5}
+.ej-visitor-copy dt{font-weight:900}.ej-visitor-copy dd{margin:0;color:#444}
+.ej-visitor-copy>a{border-bottom:2px solid #ff5900;text-decoration:none;color:#111;font-weight:900;display:inline-block;margin-top:15px}
+.ej-discovery{padding:28px 0 38px}
+.ej-two-selects{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:min(850px,100%)}
+.ej-two-selects label{font-size:11px;font-weight:900;letter-spacing:.08em;display:block;text-transform:uppercase}
+.ej-two-selects select{margin-top:10px;display:block;width:100%;min-width:0;min-height:49px;padding:10px 12px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font-size:16px}
+#ej-filter-message{font-size:12px;color:#555;line-height:1.5;margin:20px 0 27px}
+.ej-mood{border-top:2px solid #111;padding:25px 0}
+.ej-mood-list,.ej-route-options{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0}
+.ej-mood-list button,.ej-route-options button{background:#fff;color:#111;border:1px solid #888;border-radius:0;cursor:pointer;padding:13px 17px;min-height:46px;font-size:13px;font-weight:900;text-align:left}
+.ej-mood-list button small{font-size:10px;font-weight:500;display:block;margin-top:7px}
+.ej-mood-list button[aria-pressed=true],.ej-route-options button[aria-pressed=true],.ej-mood-list button:hover,.ej-route-options button:hover{background:#ff5900;border-color:#ff5900}
+.ej-reset-all{background:transparent;border:0;border-bottom:2px solid #ff5900;cursor:pointer;padding:12px 0 4px;font-weight:900}
+.ej-route-options{margin:0 0 37px}
+.ej-route[hidden]{display:none!important}
+.ej-essentials{border-top:1px solid #aaa;margin-top:10px;font-size:12px;color:#111}
+.ej-essentials summary{display:flex;align-items:center;justify-content:space-between;cursor:pointer;min-height:46px;font-weight:850;list-style:none}
+.ej-essentials summary::-webkit-details-marker{display:none}
+.ej-essentials dl{margin:0 0 10px}.ej-essentials dl>div{display:grid;grid-template-columns:100px 1fr;border-top:1px dotted #bbb;padding:10px 0;gap:7px;line-height:1.5}
+.ej-essentials dt{font-weight:850}.ej-essentials dd{margin:0;color:#444}
+.ej-essentials a{color:#111;text-underline-offset:4px}
+@media(max-width:850px){.ej-feature-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.ej-visitor{grid-template-columns:1fr 1fr;gap:4%;padding:65px 5%}.ej-visitor h2{font-size:clamp(70px,10vw,105px)}}
+@media(max-width:700px){.ej-feature-nav{padding:15px 5% 48px}.ej-feature-nav a{padding:15px 5px}.ej-feature-nav strong{font-size:19px}.ej-visitor{display:block;padding:55px 6%}.ej-visitor-copy{padding-top:10px}.ej-visitor h2{font-size:clamp(80px,18vw,125px)}.ej-two-selects{grid-template-columns:1fr}.ej-visitor-copy dl>div{grid-template-columns:1fr}.ej-mood-list button{padding:12px}.ej-route-options button{padding:11px;font-size:12px}}
+
 </style>
 </head>
 <body>
@@ -439,7 +476,14 @@ footer small{width:100%;opacity:.7}
     <div class="ej-intro-body"><p>For the long lunches. The back streets. The small places that stay with you.</p><span class="ej-intro-num">526<br><small>SELECTED PLACES</small></span></div>
   </section>
   
-  <section class="ej-story" id="stories" aria-labelledby="ej-story-title">
+  
+<nav class="ej-feature-nav" aria-label="Travel planning">
+<a href="#browse"><small>01 / SEARCH</small><strong>Find a neighborhood</strong><span>Region · area · name</span></a>
+<a href="#fieldnotes"><small>02 / WALKS</small><strong>Follow an idea</strong><span>Theme · local addresses</span></a>
+<a href="#visitor-info"><small>03 / DETAILS</small><strong>Plan your visit</strong><span>Directions · booking · access</span></a>
+<a href="#mood"><small>04 / MOOD</small><strong>Go by feeling</strong><span>Food · music · culture</span></a>
+</nav>
+<section class="ej-story" id="stories" aria-labelledby="ej-story-title">
     <div class="ej-story-photo">
       <img src="assets/editorial/day-bookshop.svg" alt="Original editorial illustration of an imagined Tokyo bookshop and café street, not a listed venue" loading="lazy" decoding="async" width="1040" height="1310">
       <span class="ej-photo-credit">Editorial illustration · imagined Tokyo scene</span>
@@ -479,7 +523,22 @@ footer small{width:100%;opacity:.7}
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / THREE POSSIBLE DAYS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>These are ways into a neighborhood, not instructions to follow. All selections use real addresses. Walking transfers, operating hours and accessibility have not been route-verified.</p><a href="#browse">Search all places ↗</a></div><div class="ej-field-list" id="ej-field-list"></div></section>
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / THREE POSSIBLE DAYS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>These are ways into a neighborhood, not instructions to follow. All selections use real addresses. Walking transfers, operating hours and accessibility have not been route-verified.</p><a href="#browse">Search all places ↗</a></div><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+<button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
+<button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
+<button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
+<button type="button" data-route-choice="night" aria-pressed="false">Music & night</button>
+<button type="button" data-route-choice="coffee" aria-pressed="false">Food & coffee</button>
+</div><div class="ej-field-list" id="ej-field-list"></div></section>
+
+<section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
+ <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p>
+ <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
+ <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
+ <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
+ <a href="#browse">Check a place ↗</a></div>
+</section>
 <div class="ej-myedit" aria-live="polite">
     <div><span class="ej-overline">MAKE IT YOURS</span><h2>YOUR<br><i>EDIT.</i></h2><p>Keep addresses you want to revisit. Saved in this browser, unless you choose to share.</p></div>
     <div class="ej-myedit-actions"><span id="ej-fav-count">0 places saved</span><button id="ej-show-favs" type="button" aria-pressed="false">Show saved places ↗</button><button id="ej-share-favs" type="button">Share your edit ↗</button><span class="ej-share-status" id="ej-share-status" role="status"></span></div>
@@ -488,7 +547,21 @@ footer small{width:100%;opacity:.7}
     <div class="ej-browse-identity"><span class="ej-overline">THE ADDRESS BOOK</span><h2>Find<br>your<br><em>place.</em></h2></div>
     <label class="ej-search-label" for="ej-search">Search in the selected region</label>
     <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="A name, a neighborhood, an idea…" aria-label="Search places in the selected region">
-    <div class="city-tabs" id="cityTabs" aria-label="Select region"></div>
+    
+<section class="ej-discovery" aria-label="Region, area and theme search">
+ <div class="ej-two-selects"><label>Region<select id="ej-region-select" aria-label="Region"></select></label><label>Neighborhood / area<select id="ej-area-select" aria-label="Neighborhood"></select></label></div>
+ <p id="ej-filter-message" aria-live="polite">Combine neighborhood, keyword and theme to find a place.</p>
+ <div class="ej-mood" id="mood"><p class="ej-overline">GO BY FEELING / EDITORIAL CATEGORIES</p><div class="ej-mood-list" id="ej-mood-list" role="group" aria-label="Themes">
+ <button type="button" data-mood="" aria-pressed="true">Everything</button>
+ <button type="button" data-mood="night" aria-pressed="false">After dark <small>Bars · music</small></button>
+ <button type="button" data-mood="coffee" aria-pressed="false">Coffee & something sweet <small>Cafés · bakeries</small></button>
+ <button type="button" data-mood="culture" aria-pressed="false">Art & heritage <small>Museums · temples</small></button>
+ <button type="button" data-mood="food" aria-pressed="false">Japanese food <small>Local food genres</small></button>
+ <button type="button" data-mood="shop" aria-pressed="false">Style & design <small>Shopping</small></button>
+ <button type="button" data-mood="slow" aria-pressed="false">Take it slow <small>Parks · baths</small></button>
+ </div></div><button id="ej-reset-all" class="ej-reset-all" type="button">Clear filters ↺</button>
+</section>
+<div class="city-tabs" id="cityTabs" aria-label="Select region"></div>
   </div>
 </header>
 <main id="mainContent"></main>
