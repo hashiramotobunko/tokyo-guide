@@ -8,7 +8,7 @@ This is **not a request to copy Eizin Suzuki or any other individual illustrator
 
 ## Implemented in this draft PR
 
-- Current source includes independently drawn `assets/editorial/night-street.svg` and `assets/editorial/day-bookshop.svg`, each expressly labeled an imagined scene.
+- Current source includes independently drawn `assets/editorial/night-street.svg`, `assets/editorial/day-bookshop.svg` and `assets/editorial/rooftop-citypop.svg`, each expressly labeled an imagined scene. The third art piece now provides a distinct illustration for the second editorial story.
 - Hero, editorial stories, and themed walking panels integrate those SVG assets.
 - The hero and page compositions received a further magazine-cover composition pass, reducing the symmetrical pitch-deck feel. Responsive CSS overrides cover desktop, tablet, and narrow mobile widths.
 - Data not touched: approved **526 names** and **526 Google Maps destination URLs** remain unchanged.
@@ -31,8 +31,8 @@ Do not label any artwork as an authentic exterior, a real menu item, a current e
 ## Verification status
 
 - Static parity: 526 entries and 526 Google Maps URL occurrences maintained after the CSS-only PR change.
-- The local ZIP includes three raster illustration assets and a 526-link HTML preview.
-- Browser QA for 320 / 390 / 1280 widths was **attempted but blocked by browser sandbox restrictions** (ERR_BLOCKED_BY_ADMINISTRATOR). No claim of real-browser visual acceptance.
+- The tested local ZIP `ENCOUNTER_JAPAN_CITYPOP_TESTED_PREVIEW_2026-10-23.zip` includes three raster illustration assets and a 526-link HTML preview, plus browser QA results and comparative screenshots. In that **local copy**, 320, 390, 768 and 1280px had no horizontal overflow and no page-level JS errors when rendered via injected content with History APIs stubbed for the sandbox; searching 多賀野, 0 results, reset and switching to Kyoto were confirmed at 390px. This QA **does not verify GitHub's separate SVG implementation**.
+- Direct navigation to a sandbox/local URL is blocked (ERR_BLOCKED_BY_ADMINISTRATOR), but a **rendered browser QA workaround succeeded on the separate local image-preview HTML** using `page.set_content` and inline images. The exact GitHub SVG version has **not been independently rendered in a browser** here.
 - A separate QA pass is required after the raster files are committed; check mobile overflow, visual readability, source loading, asset compression, alternate text, and accessibility.
 - Instagram is still waiting for an actual authorized account URL.
 
