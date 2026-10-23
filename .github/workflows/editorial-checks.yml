@@ -1,0 +1,18 @@
+name: Encounter Japan editorial checks
+on:
+  pull_request:
+    paths:
+      - 'tokyo-guide_2.html'
+      - 'tests/**'
+      - 'assets/editorial/**'
+      - '.github/workflows/editorial-checks.yml'
+  workflow_dispatch:
+jobs:
+  static-qa:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source, nine routes and assets
+        run: node --test tests/editorial-smoke.mjs
