@@ -343,6 +343,35 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
 @media(max-width:950px){.ej-field-notes{grid-template-columns:35% 65%;gap:2%;padding:80px 5%}.ej-field-intro h2{font-size:clamp(65px,9vw,105px)}.ej-route h3{font-size:clamp(33px,5vw,58px)}}
 @media(max-width:700px){.ej-field-notes{display:block;padding:60px 6% 70px}.ej-field-intro{position:static;margin-bottom:60px}.ej-field-intro h2{font-size:clamp(85px,17vw,125px);margin:25px 0}.ej-route:nth-child(n){margin-left:0;margin-bottom:25px;padding:30px 0}.ej-route h3{font-size:clamp(33px,8vw,58px)}.ej-route-top{display:block}.ej-route-top span{display:block}.ej-route-stop{display:block}.ej-route-links{flex-direction:row;align-items:flex-start;margin:15px 0 0 27px}}
 
+
+/* Encounter Japan editorial illustration edition: light, line, and atmosphere. */
+.ej-hero-art{overflow:hidden;box-shadow:18px 22px 0 #ff5900;transform:rotate(3deg);isolation:isolate}
+.ej-hero-art:before{display:none}
+.ej-hero-art img{width:100%;height:100%;object-fit:cover;object-position:58% 50%;display:block}
+.ej-hero-art figcaption{position:absolute;bottom:0;left:0;right:0;background:#111;color:#fff;font-size:10px;letter-spacing:.08em;line-height:1.25;padding:13px 15px;text-transform:uppercase;z-index:2}
+.ej-story-photo{transform:rotate(-3deg) translate(0,0)}
+.ej-story-photo img{object-position:50% 45%}
+.ej-second-photo img{object-position:50% 50%}
+.ej-photo-credit{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.07em;line-height:1.3;padding:10px 13px}
+.ej-walks-cards .ej-walk:nth-child(1){background:linear-gradient(90deg,rgba(245,242,226,.84),rgba(245,242,226,.9)),url("assets/editorial/day-bookshop.svg") 57% 31%/cover;color:#111}
+.ej-walks-cards .ej-walk:nth-child(2){background:linear-gradient(90deg,rgba(25,38,67,.74),rgba(25,38,67,.6)),url("assets/editorial/night-street.svg") 68% 45%/cover;color:#fff;border-color:#111}
+.ej-walks-cards .ej-walk:nth-child(3){background:#ffe5d0;color:#111}
+.ej-walks-cards .ej-walk strong{text-shadow:0 1px 0 rgba(255,255,255,.2)}
+.ej-nav-social{font-size:12px;font-weight:900;white-space:nowrap}
+.ej-nav-social a,.ej-footer-instagram a{color:inherit;text-decoration:none;border-bottom:2px solid #ff5900;padding-bottom:6px}
+footer{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:25px}
+footer small{width:100%;opacity:.7}
+@media(max-width:700px){
+ .ej-hero-art{box-shadow:9px 13px 0 #ff5900}
+ .ej-hero-art figcaption{padding:10px;font-size:9px}
+ .ej-nav-social{font-size:11px}
+ .ej-story-photo{height:min(85vw,470px)}
+}
+@media(max-width:360px){
+ .ej-hero-art figcaption{font-size:8px}
+ .ej-nav-social{display:none}
+}
+
 </style>
 </head>
 <body>
@@ -351,7 +380,7 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
   <nav class="ej-nav" aria-label="Main navigation">
     <a class="ej-wordmark" href="#top" aria-label="Encounter Japan — top">encounter<span>.</span><small>JAPAN</small></a>
     <span class="ej-nav-note">Independent places / Japan</span>
-    <a class="ej-nav-find" href="#browse">Find a place <span aria-hidden="true">↗</span></a>
+    <a class="ej-nav-find" href="#browse">Find a place <span aria-hidden="true">↗</span></a><span class="ej-nav-social" id="ej-nav-social" hidden></span>
   </nav>
   <section class="ej-hero" id="top" aria-labelledby="ej-hero-title">
     <div class="ej-side-type" aria-hidden="true">TAKE ANOTHER LOOK</div>
@@ -363,7 +392,7 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
         <p class="ej-deck">The places you remember aren't always the ones you planned to find.</p>
       </div>
     </div>
-    <div class="ej-poster" aria-hidden="true"><span class="ej-poster-over">BE<br>CURIOUS.</span><span class="ej-poster-small">A DIFFERENT KIND OF GUIDE<br>TO JAPAN</span></div>
+    <figure class="ej-poster ej-hero-art"><img src="assets/editorial/night-street.svg" alt="An imagined Tokyo record-bar street at sunset, in original city-pop-inspired illustration" width="1440" height="1080" decoding="async"><figcaption>Editorial illustration · not an actual venue</figcaption></figure>
     <a class="ej-scroll" href="#browse">See the places <span aria-hidden="true">↓</span></a>
   </section>
   <section class="ej-intro" aria-label="Explore the guide">
@@ -373,8 +402,8 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
   
   <section class="ej-story" id="stories" aria-labelledby="ej-story-title">
     <div class="ej-story-photo">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Night_life_in_Tokyo%2C_Japan_%2854412959018%29.jpg?width=1400" alt="Street photography of Udagawacho, Tokyo at night; not a photograph of a recommended business" loading="lazy">
-      <a class="ej-photo-credit" href="https://commons.wikimedia.org/wiki/File:Night_life_in_Tokyo,_Japan_(54412959018).jpg" target="_blank" rel="noopener noreferrer">Tokyo street photo / Romain Guy / CC0 ↗</a>
+      <img src="assets/editorial/day-bookshop.svg" alt="Original editorial illustration of an imagined Tokyo bookshop and café street, not a listed venue" loading="lazy" decoding="async" width="1040" height="1310">
+      <span class="ej-photo-credit">Editorial illustration · imagined Tokyo scene</span>
     </div>
     <div class="ej-story-copy">
       <span class="ej-overline">01 / NOT THE POSTCARD</span>
@@ -387,8 +416,8 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
   </section>
   <section class="ej-second-story" aria-label="Street editorial">
     <div class="ej-second-photo">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Walk_in_Shibuya.jpg?width=960" loading="lazy" alt="Street photograph made in Shibuya; independent city photo, not a photograph of a recommended venue">
-      <a class="ej-photo-credit" href="https://commons.wikimedia.org/wiki/File:Walk_in_Shibuya.jpg" target="_blank" rel="noopener noreferrer">Shibuya street photo / Syced / CC0 ↗</a>
+      <img src="assets/editorial/night-street.svg" loading="lazy" decoding="async" width="1440" height="1080" alt="Graphic editorial illustration of an imagined Tokyo night street and record bar; not an actual listed business">
+      <span class="ej-photo-credit">Editorial illustration · imagined Tokyo scene</span>
     </div>
     <p class="ej-overline">LOOK CLOSER / TOKYO</p>
     <p class="ej-second-big">THE CITY<br>BETWEEN<br><em>DESTINATIONS.</em></p>
@@ -425,7 +454,7 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
 </header>
 <main id="mainContent"></main>
 
-<footer>All locations link directly to Google Maps &nbsp;·&nbsp; Compiled by Tetsuya Hashiramoto</footer>
+<footer><span>All locations link directly to Google Maps · Curated by Tetsuya Hashiramoto</span><span class="ej-footer-instagram" id="ej-footer-instagram" hidden></span><small>Illustrations are interpretive artworks, not photographs of the listed locations.</small></footer>
 
 <script>
 // ============================================================
@@ -1562,6 +1591,18 @@ document.querySelectorAll('[data-walk-city]').forEach(button=>button.addEventLis
 document.querySelectorAll('[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
 addEventListener('popstate',ejRestoreURL);
 ejRestoreURL();
+
+
+/* Optional Instagram link: configure only after the owner supplies the actual profile URL. */
+const EJ_INSTAGRAM_URL = "";
+if(/^https:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9_.]+\/?$/.test(EJ_INSTAGRAM_URL)){
+ for(const id of ['ej-nav-social','ej-footer-instagram']){
+  const target=document.getElementById(id); if(!target)continue;
+  const link=document.createElement('a');link.href=EJ_INSTAGRAM_URL;link.target='_blank';
+  link.rel='noopener noreferrer';link.textContent='INSTAGRAM ↗';
+  target.appendChild(link);target.hidden=false;
+ }
+}
 
 </script>
 </body>
