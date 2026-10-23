@@ -472,6 +472,7 @@ footer small{width:100%;opacity:.7}
 .ej-route-neighborhood{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;display:block;margin:0 0 22px}
 .ej-route-neighborhood select{display:block;width:min(390px,100%);min-height:46px;margin-top:8px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font:500 16px Arial,sans-serif;padding:10px}
 
+.ej-feature-index{padding:42px 7% 58px;background:#fff;color:#111;border-top:2px solid #111}.ej-feature-label{font-size:11px;font-weight:900;letter-spacing:.13em;margin-bottom:24px}.ej-feature-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #111;border-bottom:1px solid #111}.ej-feature-links a{position:relative;color:#111;text-decoration:none;display:flex;flex-direction:column;min-height:175px;padding:22px 18px;border-right:1px solid #aaa}.ej-feature-links a:last-child{border:0}.ej-feature-links span{font-size:12px;font-weight:900;color:#e95000}.ej-feature-links strong{font-size:clamp(21px,2vw,32px);line-height:1.1;letter-spacing:-.05em;margin:21px 0 8px}.ej-feature-links small{font-size:12px;color:#555;line-height:1.4}.ej-feature-links b{position:absolute;right:12px;top:16px;color:#e95000}.ej-feature-links a:hover,.ej-feature-links a:focus-visible{background:#ffebdf}#browse,#fieldnotes,#visitor-info,#mood{scroll-margin-top:20px}@media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(2,minmax(0,1fr))}.ej-feature-links a{border-bottom:1px solid #aaa}.ej-feature-links a:nth-child(2){border-right:0}.ej-feature-links a:nth-child(n+3){border-bottom:0}}@media(max-width:520px){.ej-feature-index{padding:25px 5% 35px}.ej-feature-links a{min-height:147px;padding:16px 10px}.ej-feature-links strong{font-size:21px}.ej-feature-links small{font-size:11px}}
 </style>
 </head>
 <body>
@@ -495,7 +496,7 @@ footer small{width:100%;opacity:.7}
     <figure class="ej-poster ej-hero-art"><img src="assets/editorial/night-street.svg" alt="An imagined Tokyo record-bar street at sunset, in original city-pop-inspired illustration" width="1440" height="1080" decoding="async"><figcaption>Editorial illustration · not an actual venue</figcaption></figure>
     <a class="ej-scroll" href="#browse">See the places <span aria-hidden="true">↓</span></a>
   </section>
-  <section class="ej-intro" aria-label="Explore the guide">
+  <nav class="ej-feature-index" aria-label="Four ways to use the guide"><p class="ej-feature-label">USE THE GUIDE / FOUR WAYS IN</p><div class="ej-feature-links"><a href="#browse"><span>01</span><strong>Find a neighborhood</strong><small>Regions · areas · search</small><b>↗</b></a><a href="#fieldnotes"><span>02</span><strong>Take a walk</strong><small>Curated route ideas · draft</small><b>↗</b></a><a href="#visitor-info"><span>03</span><strong>Before you go</strong><small>Price · booking · access</small><b>↗</b></a><a href="#mood"><span>04</span><strong>Go by feeling</strong><small>Nightlife · coffee · culture</small><b>↗</b></a></div></nav><section class="ej-intro" aria-label="Explore the guide">
     <p class="ej-overline">Make your own way</p>
     <div class="ej-intro-body"><p>For the long lunches. The back streets. The small places that stay with you.</p><span class="ej-intro-num">526<br><small>SELECTED PLACES</small></span></div>
   </section>
@@ -547,7 +548,7 @@ footer small{width:100%;opacity:.7}
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / THREE POSSIBLE DAYS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>These are ways into a neighborhood, not instructions to follow. All selections use real addresses. Walking transfers, operating hours and accessibility have not been route-verified.</p><a href="#browse">Search all places ↗</a></div><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each theme brings together real addresses from our guide. Walking order, transfers, opening hours and accessibility remain unverified.</p><a href="#browse">Search all places ↗</a></div><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
 <button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
 <button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
 <button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
