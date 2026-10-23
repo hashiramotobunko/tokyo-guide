@@ -1229,6 +1229,34 @@ const EJ_NOTES={
  "南座":{en:"Minamiza is Kyoto’s historic theater, linked to centuries of kabuki performance and the city’s traditional performing arts.",source:"https://www.kyoto-kankou.or.jp/info_search/3696"},
  "甘味どころ ぎをん 小森":{en:"Gion Komori serves traditional Japanese sweets in a machiya that was formerly a teahouse.",source:"https://www.kyoto-kankou.or.jp/info_search/7745"}
 };
+
+/* Traveller information, field by field from official sources.
+   Checked 2026-10-23. Not live data; viewers should reconfirm before visiting. */
+const EJ_PRACTICAL={
+ "東京国立博物館":{
+   fee:"TNM Collection: adults ¥1,000; university students ¥500. Special exhibitions extra.",
+   hours:"09:30–17:00; Fridays and Saturdays until 20:00, subject to special closures.",
+   access:"About a 10-minute walk from JR Ueno (Park Exit) or Uguisudani.",
+   source:"https://www.tnm.jp/modules/r_free_page/index.php?id=113",checked:"2026-10-23"},
+ "国立西洋美術館":{
+   fee:"Permanent collection: adults ¥500; university students ¥250. Special exhibitions extra.",
+   hours:"09:30–17:30; Fridays and Saturdays until 20:00. Last entry 30 minutes before closing.",
+   access:"7-7 Ueno-koen, Taito-ku, Tokyo.",
+   source:"https://www.nmwa.go.jp/en/visit/",checked:"2026-10-23"},
+ "清水寺":{
+   hours:"Opens at 06:00; closing depends on season and special night-viewing dates.",
+   access:"Enter via Kiyomizu-zaka or Chawan-zaka. Map services may suggest routes with no entry.",
+   source:"https://www.kiyomizudera.or.jp/access/",checked:"2026-10-23"}
+};
+function ejPracticalField(p,key,label){
+ const info=EJ_PRACTICAL[p.name];if(!info?.[key])return '';
+ return '<div><dt>'+ejHTML(label)+'</dt><dd>'+ejHTML(info[key])+'</dd></div>';
+}
+function ejPracticalCitation(p){
+ const info=EJ_PRACTICAL[p.name];if(!info)return '';
+ return '<div><dt>Verified source</dt><dd><a href="'+ejHTML(info.source)+'" target="_blank" rel="noopener noreferrer">Official visitor information ↗</a> · Checked '+ejHTML(info.checked)+'</dd></div>';
+}
+
 const EJ_ROUTES=[
  {id:"jimbocho",theme:"coffee",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Three invitations rather than a prescribed order.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
  {id:"shibuya",theme:"night",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three entries from our Shibuya music-bar collection. Follow the music rather than a fixed schedule. Confirm each venue individually before visiting.",stops:["Hi-Fi Disco Bar Chaos","MUSIC BAR BOUNCE","THE MUSIC BAR -CAVE SHIBUYA-"]},
@@ -1285,8 +1313,14 @@ function card(p) {
     <details class="ej-essentials"><summary>Visitor essentials <span aria-hidden="true">＋</span></summary><dl>
     <div><dt>Location</dt><dd>${ejHTML(p.area)} · ${ejHTML(ejCityForPlace(p))}</dd></div>
     <div><dt>Directions</dt><dd><a href="${ejHTML(p.url)}" target="_blank" rel="noopener noreferrer">Check Google Maps ↗</a></dd></div>
-    <div><dt>Price / reservation</dt><dd>Not independently verified. Confirm with the venue.</dd></div>
-    <div><dt>Hours / languages</dt><dd>Check directly before visiting.</dd></div>
+    ${ejPracticalField(p,'fee','Admission / price')}
+    ${ejPracticalField(p,'hours','Opening hours')}
+    ${ejPracticalField(p,'access','Access')}
+    <div><dt>Reservation</dt><dd>Not independently verified. Check with the venue.</dd></div>
+    ${!EJ_PRACTICAL[p.name]?.fee ? '<div><dt>Price</dt><dd>Not independently verified.</dd></div>' : ''}
+    ${!EJ_PRACTICAL[p.name]?.hours ? '<div><dt>Hours</dt><dd>Check current opening hours before visiting.</dd></div>' : ''}
+    <div><dt>Languages</dt><dd>Not independently verified.</dd></div>
+    ${ejPracticalCitation(p)}
     ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
     </dl></details>
     <button type="button" class="ej-fav" data-fav="${encodeURIComponent(p.url)}" aria-pressed="${ejSaved.has(p.url) ? 'true':'false'}">${ejSaved.has(p.url) ? 'Saved ✓':'Save this place +'}</button>
