@@ -23,10 +23,15 @@ Status: **Draft branch only**, checked 2026-10-23
 
 These links substantiate concise editorial copy, **not** real-time operating status.
 
-## Photograph source ledger
-- Tokyo nightlife city photograph: https://commons.wikimedia.org/wiki/File:Night_life_in_Tokyo,_Japan_(54412959018).jpg — Romain Guy, CC0.
-- Walking in Shibuya city photograph: https://commons.wikimedia.org/wiki/File:Walk_in_Shibuya.jpg — Syced, CC0.
-- Both serve as independent editorial street photography. Neither is presented as a venue photograph.
+## Original illustration asset ledger
+- `assets/editorial/night-street.svg` — original vector illustration of a **fictional** Tokyo record-bar street, late-Showa/city-pop sensibility. Used for the hero, secondary story, and Shibuya walking-idea card. Not a photograph of a recommended business.
+- `assets/editorial/day-bookshop.svg` — original vector illustration of a **fictional** city bookshop and cafe, used for the first editorial story and Jimbocho card.
+- Both are included as text-based SVGs in the draft PR. The earlier CC0 photos were removed from the HTML; the site no longer loads third-party photograph URLs for these sections.
+- The owner's approved **raster** city-pop illustrations have been preserved separately in `ENCOUNTER_JAPAN_CITYPOP_ART_ASSETS_2026-10-23.zip`. They are **not uploaded to the repository** due to the current connector's binary-file transfer limit. For exact reproduction, upload the optimized AVIF images using a native git workflow and replace the SVG sources after visual review.
+- Illustrator inspirations refer to an **era and general visual vocabulary**, not imitation of a specific living illustrator.
+
+## Instagram
+- A validated, optional profile link mechanism is included in header and footer. Since no owner-confirmed Instagram handle/URL was provided, `EJ_INSTAGRAM_URL` is empty and **no clickable link is shown**. Supply the real profile URL before enabling it.
 
 ## Not yet verified
 - Real-world walking routes: transitions, sequence, walking times, entrance restrictions, business hours and accessibility.
