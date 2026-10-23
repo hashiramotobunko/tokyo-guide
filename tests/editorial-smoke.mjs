@@ -49,7 +49,7 @@ test('removed duplicate names stay excluded',()=>{
 });
 test('route stops resolve to real source entries',()=>{
  const routes=vm.runInNewContext('('+declaration('EJ_ROUTES')+')');
- assert.equal(routes.length,3);
+ assert.equal(routes.length,9);
  for(const r of routes){assert.ok(data[r.city],r.city);for(const stop of r.stops)assert.ok(data[r.city].places.some(p=>p.name===stop),r.id+': '+stop)}
 });
 test('editorial sources and URL-navigation routines are present',()=>{
@@ -88,4 +88,32 @@ test('editorial illustrations have image alt text',()=>{
 });
 test('Instagram link does not point to an invented profile',()=>{
  assert.ok(source.includes('const EJ_INSTAGRAM_URL = ""'));
+});
+
+test('all four visitor tools have real screen elements and handlers',()=>{
+ for(const id of ['ej-region-select','ej-area-select','ej-mood-list','ej-route-options','visitor-info','ej-quick-feedback']){
+   // the status element is called ej-filter-message, not ej-quick-feedback
+   if(id==='ej-quick-feedback')continue;
+   assert.ok(source.includes('id="'+id+'"'),id);
+ }
+ for(const method of ['ejUpdateLocationControls','EJ_MOOD_CATEGORIES','ejMoodMatches','ejRestoreURL','ejSyncURL']){
+   assert.ok(script.includes(method),method);
+ }
+ assert.ok(script.includes("ejAreaSelect.addEventListener('change'"));
+ assert.ok(script.includes("ejRegionSelect.addEventListener('change'"));
+});
+test('the route collection contains nine real stop lists',()=>{
+ const routes=vm.runInNewContext('('+declaration('EJ_ROUTES')+')');
+ assert.equal(routes.length,9);
+ assert.ok(routes.every(x=>x.city&&x.area&&x.theme&&x.stops.length>=3));
+ for(const r of routes)for(const name of r.stops)
+   assert.ok(data[r.city].places.some(p=>p.name===name),r.id+': '+name);
+});
+test('the practical-information pilot has explicit sources',()=>{
+ for(const name of ['東京国立博物館','国立西洋美術館','清水寺']){
+  assert.ok(source.includes('"'+name+'":{'),name);
+ }
+ assert.ok(source.includes('2026-10-23'));
+ assert.ok(source.includes('Not independently verified'));
+ assert.ok(source.includes('Official visitor information'));
 });
