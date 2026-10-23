@@ -1488,58 +1488,73 @@ cityTabsEl.addEventListener('click', e => {
 });
 
 ejRenderRoutes();
-/* Art-directed discovery enhancements. Original DATA and filters untouched. */
-(function(){
- const search=document.getElementById('ej-search');
- if(search){
-   search.addEventListener('input',function(){
-     const term=search.value.trim().toLocaleLowerCase();
-     document.querySelectorAll('.city-section').forEach((sec,i)=>{
-       sec.querySelectorAll('.place-card').forEach(card=>{
-         const match=card.textContent.toLocaleLowerCase().includes(term);
-         card.hidden=!match;
-       });
-       sec.querySelectorAll('.group-block').forEach(block=>{
-         const visible=[...block.querySelectorAll('.place-card')].some(card=>!card.hidden);
-         block.hidden=!visible;
-       });
-     });
-   });
- }
- function switchToCity(name){
-   const tab=[...document.querySelectorAll('.city-tab')].find(x=>x.dataset.city===name);
-   if(tab)tab.click();
- }
- document.querySelectorAll('[data-explore-type]').forEach(button=>{
-   button.addEventListener('click',()=>{
-     switchToCity('Tokyo');
-     const sec=document.querySelector('.city-section.active');
-     if(!sec)return;
-     const type=button.dataset.exploreType;
-     const chips=[...sec.querySelectorAll('.type-chip')];
-     const matching=chips.find(c=>c.dataset.val===type);
-     const active=chips.filter(c=>c.classList.contains('active'));
-     active.forEach(c=>c.click());
-     if(matching&&!matching.classList.contains('active'))matching.click();
-     document.getElementById('browse').scrollIntoView({behavior:'smooth'});
-   });
- });
- document.querySelectorAll('[data-walk-city]').forEach(button=>{
-   button.addEventListener('click',()=>{
-     switchToCity(button.dataset.walkCity);
-     const sec=document.querySelector('.city-section.active');
-     if(sec){
-       const chips=[...sec.querySelectorAll('.chip[data-type="area"]')];
-       const active=chips.filter(c=>c.classList.contains('active'));
-       active.forEach(c=>c.click());
-       const area=button.dataset.walkArea;
-       const matching=chips.find(c=>c.dataset.val===area);
-       if(matching&&!matching.classList.contains('active'))matching.click();
-     }
-     document.getElementById('browse').scrollIntoView({behavior:'smooth'});
-   });
- });
-})();
+
+/* Integrated search and deep links — all filtering uses the 526-item source DATA. */
+const ejSearchBox=document.getElementById('ej-search');
+let ejRestoring=false;
+function ejCurrentCity(){return document.querySelector('#cityTabs .city-tab.active')?.dataset.city||Object.keys(DATA)[0]}
+function ejChangeCity(city){const tab=[...cityTabsEl.querySelectorAll('.city-tab')].find(x=>x.dataset.city===city);if(tab){tab.click();return true}return false}
+function ejRefreshAll(){Object.entries(DATA).forEach(([city,v])=>{if(ejViewRefs[city])applyFilters(city,v.places,ejViewRefs[city]);})}
+function ejSyncURL(push=false){
+ if(ejRestoring)return;
+ const u=new URL(location.href),city=ejCurrentCity(),st=STATE[city];
+ for(const k of ['city','q','area','cat','type'])u.searchParams.delete(k);
+ if(city!==Object.keys(DATA)[0])u.searchParams.set('city',city);
+ if(ejDiscovery.q)u.searchParams.set('q',ejDiscovery.q);
+ if(st.areas.length)u.searchParams.set('area',st.areas.join('|'));
+ if(st.cats.length)u.searchParams.set('cat',st.cats.join('|'));
+ if(st.types.length)u.searchParams.set('type',st.types.join('|'));
+ const next=u.pathname+u.search+u.hash;
+ if(next!==location.pathname+location.search+location.hash)history[push?'pushState':'replaceState']({},'',next);
+}
+function ejRestoreURL(){
+ ejRestoring=true;
+ try{
+  const p=new URLSearchParams(location.search),city=DATA[p.get('city')]?p.get('city'):Object.keys(DATA)[0];
+  ejDiscovery.q=(p.get('q')||'').trim();ejSearchBox.value=ejDiscovery.q;
+  Object.values(STATE).forEach(st=>{st.areas=[];st.cats=[];st.types=[]});
+  const st=STATE[city],places=DATA[city].places;
+  const areas=new Set(places.map(p=>p.area)),cats=new Set(places.map(p=>p.cat));
+  st.areas=(p.get('area')||'').split('|').filter(v=>areas.has(v));
+  st.cats=(p.get('cat')||'').split('|').filter(v=>cats.has(v));
+  st.types=(p.get('type')||'').split('|').filter(v=>TYPE_ORDER.includes(v));
+  ejChangeCity(city);ejRefreshAll();
+ }finally{ejRestoring=false}
+}
+function ejBrowseArea(city,area){
+ ejRestoring=true;
+ try{
+  if(!ejChangeCity(city))return;
+  const st=STATE[city];st.cats=[];st.types=[];st.areas=area?[area]:[];
+  ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;
+  const b=document.getElementById('ej-show-favs');
+  if(b){b.setAttribute('aria-pressed','false');b.textContent='Show saved places ↗';}
+  ejRefreshAll();
+ }finally{ejRestoring=false}
+ ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+}
+ejSearchBox.value=ejDiscovery.q;
+ejSearchBox.addEventListener('input',()=>{ejDiscovery.q=ejSearchBox.value.trim();ejRefreshAll();ejSyncURL(false)});
+document.addEventListener('click',e=>{
+ if(ejRestoring)return;
+ if(e.target.closest('#cityTabs .city-tab,.type-chip,.chip[data-type],.clear-link,.sort-btn,.active-tag .x,.reset-all'))ejSyncURL(true);
+});
+document.querySelectorAll('[data-explore-type]').forEach(button=>button.addEventListener('click',()=>{
+ ejRestoring=true;
+ try{
+  ejChangeCity('Tokyo');
+  const st=STATE.Tokyo;st.types=[button.dataset.exploreType];st.areas=[];st.cats=[];
+  ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;
+  const b=document.getElementById('ej-show-favs');
+  if(b){b.setAttribute('aria-pressed','false');b.textContent='Show saved places ↗';}
+  ejRefreshAll();
+ }finally{ejRestoring=false}
+ ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+}));
+document.querySelectorAll('[data-walk-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.walkCity,button.dataset.walkArea)));
+document.querySelectorAll('[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
+addEventListener('popstate',ejRestoreURL);
+ejRestoreURL();
 
 </script>
 </body>
