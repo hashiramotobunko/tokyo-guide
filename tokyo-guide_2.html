@@ -313,6 +313,36 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
 .ej-second-big{font-size:57px}
 }
 
+
+/* Source-backed field notes: asymmetric editorial treatment */
+.ej-field-notes{background:#fff;display:grid;grid-template-columns:40% 60%;gap:3%;padding:120px 7% 145px;border-top:1px solid #111}
+.ej-field-intro{position:sticky;top:35px;align-self:start}
+.ej-field-intro h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(98px,11vw,175px);letter-spacing:-.075em;line-height:.78;margin:45px 0}
+.ej-field-intro h2 em{font-style:normal;color:#ff5900}
+.ej-field-intro>p:not(.ej-overline){font-size:16px;line-height:1.65;max-width:350px;margin-bottom:25px}
+.ej-field-intro>a{color:#111;font-weight:900;text-decoration:none;border-bottom:2px solid #ff5900}
+.ej-field-list{min-width:0}
+.ej-route{padding:32px 0 58px;border-top:2px solid #111;margin-bottom:60px}
+.ej-route:nth-child(2){margin-left:8%}.ej-route:nth-child(3){margin-left:-5%}
+.ej-route-top{display:flex;gap:15px;justify-content:space-between;font-size:10px;line-height:1.4;font-weight:800;letter-spacing:.075em}
+.ej-route-top span:last-child{color:#df5200;text-align:right}
+.ej-route h3{font-size:clamp(36px,4.6vw,78px);font-weight:900;letter-spacing:-.06em;line-height:1.06;margin:32px 0 22px}
+.ej-route-intro{font-size:15px;line-height:1.65;max-width:550px;margin-bottom:24px}
+.ej-route-stops{list-style:none;padding:0}
+.ej-route-stop{border-top:1px solid #aaa;padding:17px 0;display:flex;gap:20px;justify-content:space-between}
+.ej-route-stop>div:first-child{min-width:0}
+.ej-route-number{font-weight:900;color:#ff5900;font-size:12px;margin-right:12px}
+.ej-route-stop strong{font-size:17px;font-weight:900}
+.ej-route-stop small{display:block;margin:8px 0 6px 27px;color:#555;font-size:11px}
+.ej-route-stop p{font-size:13px;line-height:1.5;margin:8px 0 0 27px;color:#333}
+.ej-route-links{display:flex;flex-direction:column;align-items:flex-end;min-width:110px;gap:12px}
+.ej-route-links a{color:#111;text-decoration:none;font-size:11px;font-weight:800;border-bottom:1px solid #ff5900}
+.ej-route-explore{padding:14px 22px;background:#ff5900;border:0;cursor:pointer;font-weight:900;margin-top:20px}
+.ej-editorial-desc{font-size:13px;line-height:1.5;color:#222;margin-top:9px}
+.ej-editorial-source{font-size:11px;font-weight:800;color:#555;text-decoration:none;border-bottom:1px solid #ff5900;margin-top:5px;align-self:start}
+@media(max-width:950px){.ej-field-notes{grid-template-columns:35% 65%;gap:2%;padding:80px 5%}.ej-field-intro h2{font-size:clamp(65px,9vw,105px)}.ej-route h3{font-size:clamp(33px,5vw,58px)}}
+@media(max-width:700px){.ej-field-notes{display:block;padding:60px 6% 70px}.ej-field-intro{position:static;margin-bottom:60px}.ej-field-intro h2{font-size:clamp(85px,17vw,125px);margin:25px 0}.ej-route:nth-child(n){margin-left:0;margin-bottom:25px;padding:30px 0}.ej-route h3{font-size:clamp(33px,8vw,58px)}.ej-route-top{display:block}.ej-route-top span{display:block}.ej-route-stop{display:block}.ej-route-links{flex-direction:row;align-items:flex-start;margin:15px 0 0 27px}}
+
 </style>
 </head>
 <body>
@@ -381,7 +411,8 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
     </div>
   </section>
   
-  <div class="ej-myedit" aria-live="polite">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / THREE POSSIBLE DAYS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>These are ways into a neighborhood, not instructions to follow. All selections use real addresses. Walking transfers, operating hours and accessibility have not been route-verified.</p><a href="#browse">Search all places ↗</a></div><div class="ej-field-list" id="ej-field-list"></div></section>
+<div class="ej-myedit" aria-live="polite">
     <div><span class="ej-overline">MAKE IT YOURS</span><h2>YOUR<br><i>EDIT.</i></h2><p>Keep addresses you want to revisit. Saved in this browser, unless you choose to share.</p></div>
     <div class="ej-myedit-actions"><span id="ej-fav-count">0 places saved</span><button id="ej-show-favs" type="button" aria-pressed="false">Show saved places ↗</button><button id="ej-share-favs" type="button">Share your edit ↗</button><span class="ej-share-status" id="ej-share-status" role="status"></span></div>
   </div>
@@ -1047,6 +1078,31 @@ const STATE = {};
 // RENDER CARD
 // ============================================================
 const CAT_TYPE = {"Activity": "Do", "Bakery": "Eat & Drink", "Bakery / Café": "Eat & Drink", "Bar": "Eat & Drink", "Bar / Music": "Eat & Drink", "Bar / Sake": "Eat & Drink", "Bar / Whisky": "Eat & Drink", "Bar / Wine": "Eat & Drink", "Burger": "Eat & Drink", "Café": "Eat & Drink", "Café / Hotel Bar": "Eat & Drink", "Café / Tea": "Eat & Drink", "Chinese": "Eat & Drink", "Chinese / Gyoza": "Eat & Drink", "Curry": "Eat & Drink", "Diner / Teishoku": "Eat & Drink", "Event Venue": "Do", "Hotel": "Stay", "Indian": "Eat & Drink", "Italian": "Eat & Drink", "Izakaya": "Eat & Drink", "Japanese": "Eat & Drink", "Jingisukan": "Eat & Drink", "Kaiseki": "Eat & Drink", "Landmark": "See", "Live House": "Eat & Drink", "Monument": "See", "Museum": "See", "Onsen": "Bathe", "Park & Garden": "See", "Ramen": "Eat & Drink", "Restaurant / Bar": "Eat & Drink", "Sento": "Bathe", "Shopping": "Shop", "Shopping Street": "Shop", "Shrine": "See", "Sightseeing": "See", "Soba": "Eat & Drink", "Steak": "Eat & Drink", "Street Food": "Eat & Drink", "Sukiyaki / Shabu": "Eat & Drink", "Sushi": "Eat & Drink", "Sweets": "Eat & Drink", "Temple": "See", "Temple / Shrine": "See", "Tempura": "Eat & Drink", "Thai": "Eat & Drink", "Tonkatsu": "Eat & Drink", "Tsukemen": "Eat & Drink", "Udon": "Eat & Drink", "Unagi": "Eat & Drink", "Yakiniku": "Eat & Drink", "Yakitori": "Eat & Drink", "Yoshoku": "Eat & Drink", "Bistro / French": "Eat & Drink"};
+
+/* Source-backed English introductions. These editorial notes do not mutate DATA. */
+const EJ_NOTES={
+ "MAIDENS SHOP JIMBOCHO":{en:"A fashion and vintage-focused outpost in Kanda Sarugakucho, with a coffee stand inside. Its concept brings contemporary designers together with older objects and clothing.",source:"https://maidens-shop.jp/2026/03/06/177/"},
+ "MIZUNO TOKYO":{en:"Mizuno’s flagship in Kanda-Ogawamachi brings together equipment and clothing for running, baseball, golf and many other sports.",source:"https://jpn.mizuno.com/shop/globalflag_tokyo_en"},
+ "三燈舎":{en:"Santosham is a South Indian kitchen centered on Kerala-style meals and tiffin. Its name is Malayalam for happiness.",source:"https://santosham.tokyo/about"},
+ "清水寺":{en:"At Kiyomizu-dera, the celebrated stage belongs to the temple’s religious life: a place of worship, not simply a viewpoint.",source:"https://www.kiyomizudera.or.jp/en/learn/"},
+ "南座":{en:"Minamiza is Kyoto’s historic theater, linked to centuries of kabuki performance and the city’s traditional performing arts.",source:"https://www.kyoto-kankou.or.jp/info_search/3696"},
+ "甘味どころ ぎをん 小森":{en:"Gion Komori serves traditional Japanese sweets in a machiya that was formerly a teahouse.",source:"https://www.kyoto-kankou.or.jp/info_search/7745"}
+};
+const EJ_ROUTES=[
+ {id:"jimbocho",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Three invitations rather than a prescribed order.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
+ {id:"shibuya",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three entries from our Shibuya music-bar collection. Follow the music rather than a fixed schedule. Confirm each venue individually before visiting.",stops:["Hi-Fi Disco Bar Chaos","MUSIC BAR BOUNCE","THE MUSIC BAR -CAVE SHIBUYA-"]},
+ {id:"higashiyama",city:"Kyoto",area:"Higashiyama",eyebrow:"KYOTO / STAGE, SHRINE, SWEETS",title:"Higashiyama in different registers",intro:"The temple, shrine, theater and sweet shop reveal distinct sides of eastern Kyoto. This is a thematic selection, not a verified one-day walking route.",stops:["清水寺","八坂神社","南座","甘味どころ ぎをん 小森"]}
+];
+function ejHTML(x){return String(x).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;")}
+function ejRenderRoutes(){
+ const root=document.getElementById("ej-field-list");if(!root)return;
+ root.innerHTML=EJ_ROUTES.map(route=>'<article class="ej-route" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>DRAFT / UNVERIFIED WALKING ROUTE</span></div><h3>'+ejHTML(route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p><ol class="ej-route-stops">'+route.stops.map((name,index)=>{
+ const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
+ const note=EJ_NOTES[name];
+ return '<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong><small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
+ }).join('')+'</ol><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button></article>').join("");
+}
+
 const TYPE_ORDER = ['Eat & Drink','See','Bathe','Shop','Do','Stay'];
 const TYPE_EMOJI = {'Eat & Drink':'\ud83c\udf74','See':'\u26e9\ufe0f','Bathe':'\u2668\ufe0f','Shop':'\ud83d\udecd\ufe0f','Do':'\ud83c\udfaf','Stay':'\ud83c\udfe8'};
 const typeOf = p => { const t = CAT_TYPE[p.cat]; if (!t) { console.warn('[tokyo-guide] Unknown category (treated as Eat & Drink):', p.cat, '-', p.name); return 'Eat & Drink'; } return t; };
@@ -1072,6 +1128,7 @@ function card(p) {
     <div class="place-name">${p.name}</div>
     ${p.en ? `<div class="place-en">${p.en}</div>` : ''}
     ${p.desc ? `<div class="place-desc">${p.desc}</div>` : ''}
+    ${EJ_NOTES[p.name] ? `<p class="ej-editorial-desc">${ejHTML(EJ_NOTES[p.name].en)}</p><a class="ej-editorial-source" href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">Official source ↗</a>` : ''}
     <div class="place-tags">
       <span class="tag-area">📍 ${p.area}</span>
       <span class="tag-cat">· ${p.cat}</span>
@@ -1425,6 +1482,7 @@ cityTabsEl.addEventListener('click', e => {
   document.getElementById('sec-' + idx).classList.add('active');
 });
 
+ejRenderRoutes();
 /* Art-directed discovery enhancements. Original DATA and filters untouched. */
 (function(){
  const search=document.getElementById('ej-search');
