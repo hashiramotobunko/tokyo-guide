@@ -1,0 +1,61 @@
+// Run: node --test tests/editorial-smoke.mjs
+// Read-only regression checks; no network traffic and no deployment.
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+import test from 'node:test';
+const __dirname=dirname(fileURLToPath(import.meta.url));
+const source=readFileSync(resolve(__dirname,'../tokyo-guide_2.html'),'utf8');
+const script=source.match(/<script>([\s\S]*?)<\/script>/)?.[1]||'';
+function declaration(name){
+ const begin=source.indexOf('const '+name+'=');
+ if(begin<0)throw new Error(name+' declaration not found');
+ const open=source.indexOf('[',begin);if(open<0)throw Error('array not found');
+ let depth=0,quote=null,escaped=false;
+ for(let i=open;i<source.length;i++){
+  const c=source[i];
+  if(quote){if(escaped){escaped=false;continue}if(c==='\\'){escaped=true;continue}if(c===quote)quote=null;continue}
+  if(c==='"'||c==="'"){quote=c;continue}
+  if(c==='[')depth++; if(c===']'&&!--depth)return source.slice(open,i+1);
+ }
+ throw Error('unclosed array '+name);
+}
+function dataObject(){
+ const begin=source.indexOf('const DATA = {');assert.notEqual(begin,-1);
+ const start=source.indexOf('{',begin);
+ let depth=0,quote=null,escaped=false;
+ for(let i=start;i<source.length;i++){
+  const c=source[i];
+  if(quote){if(escaped){escaped=false;continue}if(c==='\\'){escaped=true;continue}if(c===quote)quote=null;continue}
+  if(c==='"'||c==="'"){quote=c;continue}
+  if(c==='{')depth++;else if(c==='}'&&!--depth)return source.slice(start,i+1);
+ }
+ throw Error('DATA declaration not closed');
+}
+const data=vm.runInNewContext('('+dataObject()+')');
+const places=Object.values(data).flatMap(city=>city.places);
+test('source JS parses',()=>assert.doesNotThrow(()=>new vm.Script(script)));
+test('the full 526-place list remains available',()=>assert.equal(places.length,526));
+test('each original listing has a Maps link',()=>{
+ assert.ok(places.every(p=>typeof p.name==='string'&&p.name&&/^https:\/\/www\.google\.com\/maps\//.test(p.url)));
+});
+test('removed duplicate names stay excluded',()=>{
+ const names=places.map(p=>p.name);
+ assert.ok(!names.includes('富ヶ谷スプリングス'));
+ assert.ok(names.includes('中華そば 多賀野'));
+ assert.ok(names.includes('Freehouse THE YEAST'));
+});
+test('route stops resolve to real source entries',()=>{
+ const routes=vm.runInNewContext('('+declaration('EJ_ROUTES')+')');
+ assert.equal(routes.length,3);
+ for(const r of routes){assert.ok(data[r.city],r.city);for(const stop of r.stops)assert.ok(data[r.city].places.some(p=>p.name===stop),r.id+': '+stop)}
+});
+test('editorial sources and URL-navigation routines are present',()=>{
+ assert.ok(source.includes('const EJ_NOTES='));
+ assert.ok(script.includes('function ejSyncURL('));
+ assert.ok(script.includes("addEventListener('popstate',ejRestoreURL)"));
+ assert.ok(source.includes('UNVERIFIED WALKING ROUTE'));
+ assert.ok(source.includes('ej-editorial-source'));
+});
