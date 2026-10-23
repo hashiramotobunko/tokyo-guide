@@ -129,17 +129,179 @@
   .type-chip:hover { border-color: var(--black); }
   .type-chip.active { background: var(--black); color: var(--white); border-color: var(--black); }
   .type-chip.dimmed { opacity: 0.3; }
+
+/* Encounter Japan — experimental fashion art direction, feature branch only */
+:root{--ej-ink:#111;--ej-orange:#ff5900;--ej-paper:#fff;--ej-grey:#666}
+html{scroll-behavior:smooth}
+body{background:var(--ej-paper);color:var(--ej-ink);font-family:Arial,"Helvetica Neue","Hiragino Kaku Gothic ProN",sans-serif}
+.ej-header{background:#fff;color:#111;padding:0;overflow:clip}
+.ej-nav{height:88px;display:flex;align-items:center;gap:28px;max-width:1600px;margin:auto;padding:0 clamp(22px,5vw,88px);position:relative;z-index:10}
+.ej-wordmark{font-weight:900;font-size:clamp(25px,3vw,41px);letter-spacing:-.095em;color:#111;text-decoration:none;line-height:1;white-space:nowrap}
+.ej-wordmark span{color:var(--ej-orange)}.ej-wordmark small{font-size:10px;letter-spacing:.16em;margin-left:9px;vertical-align:middle}
+.ej-nav-note{margin-left:auto;font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:#777}
+.ej-nav-find{font-size:12px;font-weight:800;color:#111;text-decoration:none;border-bottom:2px solid var(--ej-orange);padding-bottom:7px;white-space:nowrap}
+.ej-hero{height:min(830px,calc(100svh - 88px));min-height:640px;position:relative;isolation:isolate;background:#fff;max-width:1920px;margin:auto}
+.ej-hero-main{position:absolute;inset:0 auto auto 4%;width:min(92%,1440px);z-index:2;padding-top:clamp(100px,12vh,160px);pointer-events:none}
+.ej-mini{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-left:7%;color:#333}
+.ej-hero h1{font-family:Impact,"Arial Black","Helvetica Neue",sans-serif;font-weight:900;font-size:clamp(102px,16vw,290px);letter-spacing:-.075em;line-height:.77;text-transform:uppercase;color:#111;margin-top:38px}
+.ej-hero h1 span{display:block;width:max-content;max-width:100%}
+.ej-line-one{position:relative;z-index:2}.ej-line-two{color:var(--ej-orange);transform:translateX(33%) rotate(-5deg);position:relative;z-index:4}
+.ej-line-three{transform:translateX(2%);position:relative;z-index:4}
+.ej-period{color:var(--ej-orange)}
+.ej-poster{position:absolute;width:35%;height:76%;right:3.2%;top:7.5%;background:#141414;color:#fff;z-index:1;transform:rotate(3deg);display:flex;flex-direction:column;justify-content:space-between;padding:25px;overflow:hidden}
+.ej-poster::before{content:"";position:absolute;left:-30%;right:-30%;top:42%;height:18%;background:var(--ej-orange);transform:rotate(-29deg)}
+.ej-poster-over{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(55px,7.4vw,140px);line-height:.76;letter-spacing:-.06em;z-index:1;margin-top:auto;transform:rotate(-8deg) translateY(-23px)}
+.ej-poster-small{font-size:11px;letter-spacing:.16em;line-height:1.4;position:relative;z-index:1}
+.ej-side-type{position:absolute;top:27%;left:-36px;writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.19em;font-weight:800;font-size:11px;z-index:3}
+.ej-after-title{margin:30px 0 0 8%;max-width:570px;position:relative;z-index:6}
+.ej-jp{font-size:18px;letter-spacing:.07em;font-weight:700;color:#111;padding:10px 13px 9px 0;background:#fff;display:table}
+.ej-deck{margin-top:6px;font-size:15px;line-height:1.5;width:340px;max-width:100%;background:#fff;padding:8px 9px 9px 0}
+.ej-scroll{position:absolute;right:5%;bottom:6%;z-index:6;color:#111;text-decoration:none;border-bottom:2px solid var(--ej-orange);font-size:12px;font-weight:800}
+.ej-intro{padding:100px 7% 130px;background:#fff;max-width:1700px;margin:auto}
+.ej-overline{font-size:11px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#111}
+.ej-intro-body{display:flex;justify-content:space-between;align-items:start;gap:7vw}
+.ej-intro-body>p{font-weight:900;line-height:.99;letter-spacing:-.06em;font-size:clamp(37px,6.4vw,116px);max-width:1140px}
+.ej-intro-num{font-size:clamp(68px,9vw,150px);line-height:.8;font-family:Impact,"Arial Black",sans-serif;color:var(--ej-orange);text-align:right;white-space:nowrap;transform:rotate(8deg)}
+.ej-intro-num small{display:block;font-family:Arial,sans-serif;color:#111;font-size:11px;letter-spacing:.11em;margin-top:15px;transform:rotate(-8deg)}
+.ej-trails{padding:70px max(24px,8%) 95px;background:#151515;color:#fff}
+.ej-trails-head{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.15em;font-weight:800;color:#aaa;margin-bottom:28px}
+.ej-trails-list{display:grid;grid-template-columns:1fr;gap:0}
+.ej-trail{appearance:none;background:transparent;border:0;border-bottom:1px solid #444;color:#fff;display:grid;grid-template-columns:55px 1fr 35px;align-items:center;text-align:left;padding:19px 0;cursor:pointer;gap:15px}
+.ej-trail>span:nth-child(2){font-size:clamp(37px,5.8vw,102px);font-weight:900;letter-spacing:-.072em;line-height:1.02}
+.ej-trail-index{font-weight:700;font-size:13px;color:var(--ej-orange)}
+.ej-trail>span:last-child{font-size:30px;color:var(--ej-orange);align-self:start}
+.ej-trail:hover>span:nth-child(2),.ej-trail:focus-visible>span:nth-child(2){font-style:italic;color:var(--ej-orange)}
+.ej-walks{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:145px max(24px,7%) 165px;background:#fff;max-width:1700px;margin:auto}
+.ej-walks-text h2{font-size:clamp(80px,10vw,160px);font-family:Impact,"Arial Black",sans-serif;line-height:.79;letter-spacing:-.075em;margin:46px 0 44px;text-transform:uppercase}
+.ej-walks-text h2 em{font-weight:900;color:var(--ej-orange);font-style:normal;margin-left:11%}
+.ej-walks-text>p:last-child{max-width:310px;font-size:15px;line-height:1.6}
+.ej-walks-cards{display:flex;flex-direction:column;gap:26px;padding-top:45px;align-items:flex-start}
+.ej-walk{border:2px solid #111;background:#fff;display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:30px;cursor:pointer;min-width:65%;min-height:170px;transition:transform .2s ease}
+.ej-walk small{font-size:10px;font-weight:800;letter-spacing:.15em}
+.ej-walk strong{font-size:clamp(35px,4vw,67px);letter-spacing:-.06em;line-height:1.1;margin:25px 0 12px}
+.ej-walk span{font-size:12px}
+.ej-walk:nth-child(1){align-self:flex-end;background:var(--ej-orange);transform:rotate(3deg);width:90%;margin-right:4%}
+.ej-walk:nth-child(2){transform:rotate(-5deg);width:70%}
+.ej-walk:nth-child(3){align-self:center;transform:rotate(2deg);width:83%}
+.ej-walk:hover,.ej-walk:focus-visible{transform:rotate(0deg) translateY(-6px)}
+.ej-browse{padding:100px max(20px,7%) 45px;background:#f5f5f2}
+.ej-browse-identity{display:flex;align-items:end;gap:6vw}
+.ej-browse-identity h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(95px,14vw,210px);line-height:.72;letter-spacing:-.065em;text-transform:uppercase;margin:20px 0 50px}
+.ej-browse-identity h2 em{font-style:normal;color:var(--ej-orange);margin-left:12%}
+.ej-search-label{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin:18px 0}
+.ej-search{display:block;width:min(920px,100%);font-family:inherit;font-size:clamp(18px,2.3vw,28px);padding:18px 4px;border:0;border-bottom:2px solid #111;border-radius:0;outline-offset:6px;background:transparent;color:#111}
+.ej-search::placeholder{color:#666}
+.city-tabs{display:flex;flex-wrap:wrap;gap:5px;margin-top:42px;padding-top:26px;border-top:1px solid #c5c5c5}
+.city-tab{border:1px solid #aaa;color:#222;background:transparent;font-size:12px;letter-spacing:.02em;padding:11px 15px;font-weight:800}
+.city-tab.active,.city-tab:hover{background:var(--ej-orange);border-color:var(--ej-orange);color:#111}
+main{max-width:100%;padding:65px max(20px,7%) 90px;background:#fff}
+.city-header{border:0;display:block;margin-bottom:35px}
+.city-name{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(66px,10vw,150px);letter-spacing:-.065em;text-transform:uppercase;line-height:1}
+.city-note{font-size:13px;margin-top:16px}
+.stats-bar{background:transparent;border:0;border-top:2px solid #111;border-bottom:1px solid #aaa;padding:20px 0;margin-bottom:30px}
+.stat-num{font-family:Impact,"Arial Black",sans-serif;font-size:38px;font-weight:800}
+.type-row{gap:7px}.type-chip{font-size:11px;padding:11px 13px;border:1px solid #999}.type-chip.active{background:#111}
+.filter-panel{border:0;background:transparent;grid-template-columns:1fr 1fr;gap:25px}
+.filter-col{padding:0}.filter-col+.filter-col{border:0}
+.filter-col-title{font-weight:800;color:#111}
+.chip{padding:8px 11px;background:transparent;border:1px solid #bbb}
+.chip.active{background:var(--ej-orange);border-color:var(--ej-orange);color:#111}
+.group-label{font-size:14px;color:#111;font-weight:850;margin:32px 0 18px}
+.place-grid{background:transparent;border:0;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px}
+.place-card{background:#fff;padding:22px 6px 28px;border-bottom:1px solid #222;min-height:145px;position:relative;transition:transform .2s}
+.place-card:nth-child(5n+2){transform:translateY(16px)}
+.place-card:nth-child(11n+4){transform:translateY(-9px)}
+.place-card:hover{background:#fff}.place-name{font-size:clamp(17px,1.7vw,27px);font-weight:900;letter-spacing:-.04em;line-height:1.2}
+.place-en{font-size:13px}.place-desc{font-size:13px;line-height:1.5}
+.place-tags{margin-top:14px}.tag-area,.tag-cat{font-size:11px;color:#444}
+.place-map{font-size:12px;font-weight:850;letter-spacing:0;color:#111;border-color:#111}
+.place-map:hover{color:var(--ej-orange);border-color:var(--ej-orange)}
+footer{background:#111;color:#eee;text-align:left;font-size:11px;padding:60px max(20px,7%);border:0}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--ej-orange);outline-offset:4px}
+@media(max-width:1000px){
+.ej-hero{height:690px;min-height:690px}.ej-hero h1{font-size:clamp(90px,14.3vw,150px)}
+.ej-hero-main{padding-top:125px}.ej-line-two{transform:translateX(22%) rotate(-4deg)}.ej-poster{width:42%;height:73%;top:10%}
+.ej-walks{grid-template-columns:1fr 1fr}.ej-walks-text h2{font-size:clamp(65px,10vw,100px)}
+.place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+.ej-nav{height:67px;padding:0 18px}.ej-wordmark{font-size:30px}.ej-nav-note{display:none}.ej-nav-find{margin-left:auto}
+.ej-hero{height:700px;min-height:700px}.ej-hero-main{padding:85px 0 0 5%;width:95%}.ej-hero h1{font-size:clamp(65px,14.2vw,105px);margin-top:45px;line-height:.85}
+.ej-line-two{transform:translateX(21%) rotate(-5deg)}.ej-line-three{transform:translateX(0)}
+.ej-poster{width:58%;height:310px;top:287px;right:6%;transform:rotate(4deg);padding:14px}
+.ej-poster-over{font-size:clamp(38px,10vw,72px);line-height:.8}
+.ej-after-title{margin:35px 0 0 0;max-width:70%}.ej-jp{font-size:13px}.ej-deck{font-size:13px;line-height:1.4}
+.ej-mini{font-size:9px;margin-left:0}.ej-scroll{bottom:30px;right:6%}.ej-side-type{display:none}
+.ej-intro{padding:75px 6% 75px}.ej-intro-body{display:block}.ej-intro-body>p{font-size:clamp(43px,8vw,75px)}.ej-intro-num{font-size:90px;margin:45px 0 0 auto}
+.ej-trails{padding:55px 6% 65px}.ej-trail{grid-template-columns:29px 1fr 20px;gap:10px}
+.ej-trail>span:nth-child(2){font-size:clamp(34px,8vw,55px)}.ej-trail>span:last-child{font-size:19px}
+.ej-walks{display:block;padding:85px 7% 110px}.ej-walks-text h2{font-size:clamp(78px,16vw,120px)}.ej-walks-cards{padding-top:55px}
+.ej-walk{min-height:150px}.ej-walk strong{font-size:45px}
+.ej-browse{padding:70px 6% 30px}.ej-browse-identity h2{font-size:clamp(90px,18vw,155px)}
+main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
+.place-grid{grid-template-columns:1fr}.place-card:nth-child(n){transform:none}
+.filter-panel{grid-template-columns:1fr;gap:22px}.filter-col+.filter-col{border:0}
+.stats-bar{gap:14px}.stat-num{font-size:32px}.city-note{font-size:12px}
+}
+@media(max-width:360px){
+.ej-hero{height:680px;min-height:680px}.ej-hero h1{font-size:clamp(55px,13.5vw,67px)}
+.ej-after-title{max-width:72%}.ej-poster{top:285px;width:57%;height:280px}
+.ej-wordmark small{display:none}
+.ej-browse-identity h2{font-size:78px}
+.ej-trail>span:nth-child(2){font-size:29px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
 </style>
 </head>
 <body>
 
-<header>
-  <div class="header-label">Personal Guide — Tokyo & Beyond</div>
-  <h1>Tetsuya's Picks<br><em>for Fellow Wanderers</em></h1>
-  <div class="header-meta">Curated from years of local knowledge &nbsp;·&nbsp; Updated October 2026</div>
-  <div class="city-tabs" id="cityTabs"></div>
+<header class="ej-header">
+  <nav class="ej-nav" aria-label="Main navigation">
+    <a class="ej-wordmark" href="#top" aria-label="Encounter Japan — top">encounter<span>.</span><small>JAPAN</small></a>
+    <span class="ej-nav-note">Independent places / Japan</span>
+    <a class="ej-nav-find" href="#browse">Find a place <span aria-hidden="true">↗</span></a>
+  </nav>
+  <section class="ej-hero" id="top" aria-labelledby="ej-hero-title">
+    <div class="ej-side-type" aria-hidden="true">TAKE ANOTHER LOOK</div>
+    <div class="ej-hero-main">
+      <p class="ej-mini">An independent address book. Not a checklist.</p>
+      <h1 id="ej-hero-title"><span class="ej-line-one">BEYOND</span><span class="ej-line-two">THE</span><span class="ej-line-three">OBVIOUS<span class="ej-period">.</span></span></h1>
+      <div class="ej-after-title">
+        <p class="ej-jp" lang="ja">誰もが知る定番の、その先へ。</p>
+        <p class="ej-deck">The places you remember aren't always the ones you planned to find.</p>
+      </div>
+    </div>
+    <div class="ej-poster" aria-hidden="true"><span class="ej-poster-over">BE<br>CURIOUS.</span><span class="ej-poster-small">A DIFFERENT KIND OF GUIDE<br>TO JAPAN</span></div>
+    <a class="ej-scroll" href="#browse">See the places <span aria-hidden="true">↓</span></a>
+  </section>
+  <section class="ej-intro" aria-label="Explore the guide">
+    <p class="ej-overline">Make your own way</p>
+    <div class="ej-intro-body"><p>For the long lunches. The back streets. The small places that stay with you.</p><span class="ej-intro-num">526<br><small>SELECTED PLACES</small></span></div>
+  </section>
+  <section class="ej-trails" aria-label="Browse by interest">
+    <div class="ej-trails-head"><span>GO BY FEELING</span><span>01 / 03</span></div>
+    <div class="ej-trails-list">
+      <button class="ej-trail" type="button" data-explore-type="Eat & Drink"><span class="ej-trail-index">01</span><span>Eat your way through.</span><span aria-hidden="true">↗</span></button>
+      <button class="ej-trail" type="button" data-explore-type="See"><span class="ej-trail-index">02</span><span>Look a little closer.</span><span aria-hidden="true">↗</span></button>
+      <button class="ej-trail" type="button" data-explore-type="Shop"><span class="ej-trail-index">03</span><span>Find something different.</span><span aria-hidden="true">↗</span></button>
+    </div>
+  </section>
+  <section class="ej-walks" aria-label="Walking route ideas">
+    <div class="ej-walks-text"><span class="ej-overline">ON FOOT / IDEAS, NOT ITINERARIES</span><h2>Take the<br><em>long way.</em></h2><p>Neighborhood ideas from the guide. Stops, distances and opening hours have not been route-verified.</p></div>
+    <div class="ej-walks-cards">
+      <button type="button" class="ej-walk" data-walk-city="Tokyo" data-walk-area="Jimbocho"><small>DRAFT 01 / TOKYO</small><strong>Jimbocho</strong><span>Books, food, and wandering ↗</span></button>
+      <button type="button" class="ej-walk" data-walk-city="Tokyo" data-walk-area="Shibuya"><small>DRAFT 02 / TOKYO</small><strong>Shibuya</strong><span>The streets between stops ↗</span></button>
+      <button type="button" class="ej-walk" data-walk-city="Kyoto" data-walk-area=""><small>DRAFT 03 / KYOTO</small><strong>Kyoto</strong><span>Follow your own route ↗</span></button>
+    </div>
+  </section>
+  <div class="ej-browse" id="browse">
+    <div class="ej-browse-identity"><span class="ej-overline">THE ADDRESS BOOK</span><h2>Find<br>your<br><em>place.</em></h2></div>
+    <label class="ej-search-label" for="ej-search">Search in the selected region</label>
+    <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="A name, a neighborhood, an idea…" aria-label="Search places in the selected region">
+    <div class="city-tabs" id="cityTabs" aria-label="Select region"></div>
+  </div>
 </header>
-
 <main id="mainContent"></main>
 
 <footer>All locations link directly to Google Maps &nbsp;·&nbsp; Compiled by Tetsuya Hashiramoto</footer>
@@ -1103,6 +1265,60 @@ cityTabsEl.addEventListener('click', e => {
   const idx = [...cityTabsEl.children].indexOf(tab);
   document.getElementById('sec-' + idx).classList.add('active');
 });
+
+/* Art-directed discovery enhancements. Original DATA and filters untouched. */
+(function(){
+ const search=document.getElementById('ej-search');
+ if(search){
+   search.addEventListener('input',function(){
+     const term=search.value.trim().toLocaleLowerCase();
+     document.querySelectorAll('.city-section').forEach((sec,i)=>{
+       sec.querySelectorAll('.place-card').forEach(card=>{
+         const match=card.textContent.toLocaleLowerCase().includes(term);
+         card.hidden=!match;
+       });
+       sec.querySelectorAll('.group-block').forEach(block=>{
+         const visible=[...block.querySelectorAll('.place-card')].some(card=>!card.hidden);
+         block.hidden=!visible;
+       });
+     });
+   });
+ }
+ function switchToCity(name){
+   const tab=[...document.querySelectorAll('.city-tab')].find(x=>x.dataset.city===name);
+   if(tab)tab.click();
+ }
+ document.querySelectorAll('[data-explore-type]').forEach(button=>{
+   button.addEventListener('click',()=>{
+     switchToCity('Tokyo');
+     const sec=document.querySelector('.city-section.active');
+     if(!sec)return;
+     const type=button.dataset.exploreType;
+     const chips=[...sec.querySelectorAll('.type-chip')];
+     const matching=chips.find(c=>c.dataset.val===type);
+     const active=chips.filter(c=>c.classList.contains('active'));
+     active.forEach(c=>c.click());
+     if(matching&&!matching.classList.contains('active'))matching.click();
+     document.getElementById('browse').scrollIntoView({behavior:'smooth'});
+   });
+ });
+ document.querySelectorAll('[data-walk-city]').forEach(button=>{
+   button.addEventListener('click',()=>{
+     switchToCity(button.dataset.walkCity);
+     const sec=document.querySelector('.city-section.active');
+     if(sec){
+       const chips=[...sec.querySelectorAll('.chip[data-type="area"]')];
+       const active=chips.filter(c=>c.classList.contains('active'));
+       active.forEach(c=>c.click());
+       const area=button.dataset.walkArea;
+       const matching=chips.find(c=>c.dataset.val===area);
+       if(matching&&!matching.classList.contains('active'))matching.click();
+     }
+     document.getElementById('browse').scrollIntoView({behavior:'smooth'});
+   });
+ });
+})();
+
 </script>
 </body>
 </html>
