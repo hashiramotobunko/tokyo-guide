@@ -252,6 +252,67 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
+
+/* Encounter Japan V2 editorial overlay */
+.ej-story{position:relative;min-height:880px;background:#fff;padding:95px max(20px,7%) 110px;display:grid;grid-template-columns:57% 43%;align-items:center;overflow:hidden}
+.ej-story-photo{height:670px;width:100%;position:relative;transform:rotate(-2.5deg) translate(15px,5px);background:#ddd;z-index:1}
+.ej-story-photo img,.ej-second-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.ej-photo-credit{position:absolute;bottom:0;left:0;color:#fff;background:rgba(0,0,0,.8);text-decoration:none;padding:10px 14px;font-size:10px;line-height:1.2;max-width:100%}
+.ej-story-copy{position:relative;z-index:3;margin-left:-19%;align-self:center;padding-top:60px;pointer-events:none}
+.ej-story-copy h2{font-family:Impact,"Arial Black",Arial,sans-serif;font-weight:900;font-size:clamp(100px,11.3vw,230px);letter-spacing:-.08em;line-height:.79;color:#111;margin:35px 0 45px;text-shadow:2px 2px 0 #fff,-2px -2px 0 #fff}
+.ej-story-copy h2 i{font-style:normal;color:#ff5900;font-size:.74em;letter-spacing:-.09em}
+.ej-story-bottom{margin:10px 0 0 auto;max-width:380px;padding:24px 24px 24px 34px;background:#fff;pointer-events:auto}
+.ej-story-bottom p{font-size:16px;line-height:1.5}.ej-story-bottom a{display:inline-block;font-weight:900;margin-top:22px;text-decoration:none;border-bottom:2px solid #ff5900;font-size:13px}
+.ej-second-story{position:relative;padding:50px max(20px,7%) 150px;min-height:850px;overflow:hidden;background:#f3f2ef}
+.ej-second-photo{width:37%;height:650px;position:absolute;right:9%;top:65px;transform:rotate(5deg);background:#aaa}
+.ej-second-story>.ej-overline{position:relative;z-index:3;padding-top:90px}
+.ej-second-big{position:relative;z-index:3;font-family:Impact,"Arial Black",Arial,sans-serif;font-size:clamp(82px,10.5vw,195px);line-height:.78;letter-spacing:-.074em;font-weight:900;margin-top:35px;text-shadow:2px 2px #f3f2ef,-2px -2px #f3f2ef;pointer-events:none}
+.ej-second-big em{font-style:normal;color:#ff5900;font-size:.72em}
+.ej-second-foot{position:relative;z-index:3;font-size:16px;max-width:360px;line-height:1.55;background:#f3f2ef;padding:20px 15px 15px 0;margin:70px 0 0 12%}
+.ej-myedit{display:flex;justify-content:space-between;align-items:end;gap:35px;background:#151515;color:#fff;padding:75px max(20px,7%) 100px}
+.ej-myedit>div:first-child{max-width:660px}
+.ej-myedit h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(90px,11vw,180px);letter-spacing:-.075em;line-height:.78;margin:27px 0 30px}
+.ej-myedit h2 i{font-style:normal;color:#ff5900}
+.ej-myedit p{font-size:15px;line-height:1.5;max-width:350px}
+.ej-myedit .ej-overline{color:#eee}
+.ej-myedit-actions{display:flex;flex-direction:column;align-items:stretch;gap:12px;width:min(100%,340px)}
+#ej-fav-count{font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:15px}
+.ej-myedit-actions button{font-weight:900;font-size:14px;padding:16px 17px;background:transparent;color:#fff;border:1px solid #eee;text-align:left;cursor:pointer}
+.ej-myedit-actions button:hover,.ej-myedit-actions button[aria-pressed=true]{background:#ff5900;color:#111;border-color:#ff5900}
+.ej-share-status{font-size:11px;line-height:1.4;min-height:1em;color:#ddd}
+.ej-fav{margin-top:11px;border:1px solid #111;background:#fff;padding:7px 11px;font-weight:800;font-size:11px;text-align:left;cursor:pointer;min-height:34px}
+.ej-fav[aria-pressed=true]{background:#ff5900;border-color:#ff5900}
+.place-card[hidden],.group-block[hidden]{display:none!important}
+@media (max-width:1000px){
+.ej-story{grid-template-columns:58% 42%;min-height:680px}.ej-story-photo{height:500px}
+.ej-story-copy h2{font-size:clamp(75px,11vw,142px)}
+.ej-second-story{min-height:700px}.ej-second-photo{height:500px}
+}
+@media (max-width:700px){
+.ej-story{display:block;padding:45px 6% 70px;min-height:0}
+.ej-story-photo{width:85%;height:450px;margin-left:3%;transform:rotate(-3deg);z-index:1}
+.ej-story-copy{margin:-65px 0 0 5%;padding-top:0}
+.ej-story-copy h2{font-size:clamp(85px,17vw,145px);margin:22px 0 25px}
+.ej-story-copy h2 i{font-size:.68em}
+.ej-story-bottom{margin-left:2%;max-width:90%;padding:15px 18px 22px;background:#fff}
+.ej-second-story{min-height:830px;padding:40px 6% 70px}
+.ej-second-photo{top:45px;right:7%;width:74%;height:540px}
+.ej-second-story>.ej-overline{padding-top:370px}
+.ej-second-big{font-size:clamp(60px,13vw,95px);margin-top:18px}
+.ej-second-big em{font-size:.73em}
+.ej-second-foot{margin:38px 0 0 0;max-width:85%}
+.ej-myedit{display:block;padding:65px 6% 70px}
+.ej-myedit h2{font-size:clamp(85px,18vw,135px)}
+.ej-myedit-actions{margin-top:45px}
+}
+@media (max-width:360px){
+.ej-story-photo{height:390px}
+.ej-story-copy h2{font-size:78px}
+.ej-second-story{min-height:730px}.ej-second-photo{height:430px}
+.ej-second-story>.ej-overline{padding-top:290px}
+.ej-second-big{font-size:57px}
+}
+
 </style>
 </head>
 <body>
@@ -279,6 +340,30 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
     <p class="ej-overline">Make your own way</p>
     <div class="ej-intro-body"><p>For the long lunches. The back streets. The small places that stay with you.</p><span class="ej-intro-num">526<br><small>SELECTED PLACES</small></span></div>
   </section>
+  
+  <section class="ej-story" id="stories" aria-labelledby="ej-story-title">
+    <div class="ej-story-photo">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Night_life_in_Tokyo%2C_Japan_%2854412959018%29.jpg?width=1400" alt="Street photography of Udagawacho, Tokyo at night; not a photograph of a recommended business" loading="lazy">
+      <a class="ej-photo-credit" href="https://commons.wikimedia.org/wiki/File:Night_life_in_Tokyo,_Japan_(54412959018).jpg" target="_blank" rel="noopener noreferrer">Tokyo street photo / Romain Guy / CC0 ↗</a>
+    </div>
+    <div class="ej-story-copy">
+      <span class="ej-overline">01 / NOT THE POSTCARD</span>
+      <h2 id="ej-story-title">THE<br>BEST<br>PART<br>IS THE<br><i>DETOUR.</i></h2>
+      <div class="ej-story-bottom">
+        <p>The place you planned is only the beginning. A different street, a second stop, a reason to stay out a little longer.</p>
+        <a href="#browse">Find your own way <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="ej-second-story" aria-label="Street editorial">
+    <div class="ej-second-photo">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Walk_in_Shibuya.jpg?width=960" loading="lazy" alt="Street photograph made in Shibuya; independent city photo, not a photograph of a recommended venue">
+      <a class="ej-photo-credit" href="https://commons.wikimedia.org/wiki/File:Walk_in_Shibuya.jpg" target="_blank" rel="noopener noreferrer">Shibuya street photo / Syced / CC0 ↗</a>
+    </div>
+    <p class="ej-overline">LOOK CLOSER / TOKYO</p>
+    <p class="ej-second-big">THE CITY<br>BETWEEN<br><em>DESTINATIONS.</em></p>
+    <p class="ej-second-foot">Not a top-ten list. A collection of real addresses worth looking at twice.</p>
+  </section>
   <section class="ej-trails" aria-label="Browse by interest">
     <div class="ej-trails-head"><span>GO BY FEELING</span><span>01 / 03</span></div>
     <div class="ej-trails-list">
@@ -295,6 +380,11 @@ main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
       <button type="button" class="ej-walk" data-walk-city="Kyoto" data-walk-area=""><small>DRAFT 03 / KYOTO</small><strong>Kyoto</strong><span>Follow your own route ↗</span></button>
     </div>
   </section>
+  
+  <div class="ej-myedit" aria-live="polite">
+    <div><span class="ej-overline">MAKE IT YOURS</span><h2>YOUR<br><i>EDIT.</i></h2><p>Keep addresses you want to revisit. Saved in this browser, unless you choose to share.</p></div>
+    <div class="ej-myedit-actions"><span id="ej-fav-count">0 places saved</span><button id="ej-show-favs" type="button" aria-pressed="false">Show saved places ↗</button><button id="ej-share-favs" type="button">Share your edit ↗</button><span class="ej-share-status" id="ej-share-status" role="status"></span></div>
+  </div>
   <div class="ej-browse" id="browse">
     <div class="ej-browse-identity"><span class="ej-overline">THE ADDRESS BOOK</span><h2>Find<br>your<br><em>place.</em></h2></div>
     <label class="ej-search-label" for="ej-search">Search in the selected region</label>
@@ -961,6 +1051,21 @@ const TYPE_ORDER = ['Eat & Drink','See','Bathe','Shop','Do','Stay'];
 const TYPE_EMOJI = {'Eat & Drink':'\ud83c\udf74','See':'\u26e9\ufe0f','Bathe':'\u2668\ufe0f','Shop':'\ud83d\udecd\ufe0f','Do':'\ud83c\udfaf','Stay':'\ud83c\udfe8'};
 const typeOf = p => { const t = CAT_TYPE[p.cat]; if (!t) { console.warn('[tokyo-guide] Unknown category (treated as Eat & Drink):', p.cat, '-', p.name); return 'Eat & Drink'; } return t; };
 
+
+/* Saves only an address's existing Google Maps URL. No account, server or data collection. */
+const EJ_FAV_STORAGE_KEY='encounter-japan-saved-v1';
+let ejSaved=new Set();
+try{const v=JSON.parse(localStorage.getItem(EJ_FAV_STORAGE_KEY)||'[]');if(Array.isArray(v))ejSaved=new Set(v.filter(x=>typeof x==='string').slice(0,526));}catch(_){}
+function ejPersist(){
+ try{localStorage.setItem(EJ_FAV_STORAGE_KEY,JSON.stringify([...ejSaved]));}catch(_){}
+ const n=document.getElementById('ej-fav-count');if(n)n.textContent=ejSaved.size+' places saved';
+ document.querySelectorAll('.ej-fav').forEach(b=>{
+  let key;try{key=decodeURIComponent(b.dataset.fav)}catch(_){key=''}
+  const isSaved=ejSaved.has(key);b.setAttribute('aria-pressed',String(isSaved));
+  b.textContent=isSaved?'Saved ✓':'Save this place +';
+ });
+}
+
 function card(p) {
   return `<div class="place-card">
     <div class="place-name">${p.name}</div>
@@ -970,7 +1075,8 @@ function card(p) {
       <span class="tag-area">📍 ${p.area}</span>
       <span class="tag-cat">· ${p.cat}</span>
     </div>
-    <a class="place-map" href="${p.url}" target="_blank">${mapIcon} Open in Maps</a>
+    <a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>
+    <button type="button" class="ej-fav" data-fav="${encodeURIComponent(p.url)}" aria-pressed="${ejSaved.has(p.url) ? 'true':'false'}">${ejSaved.has(p.url) ? 'Saved ✓':'Save this place +'}</button>
   </div>`;
 }
 
@@ -1046,6 +1152,7 @@ function applyFilters(cityKey, places, els) {
 
   els.contentEl.innerHTML = renderContent(filtered, s.sort, s.dir);
   renderActiveTags(cityKey, els.activeTagsEl);
+  if (typeof ejSavedOnly !== 'undefined' && ejSavedOnly) ejApplySavedFilter();
 }
 
 function updateDimming(cityKey, allPlaces, filtered, els) {
@@ -1254,6 +1361,57 @@ Object.keys(DATA).forEach((city, idx) => {
     applyFilters(key, places, els);
   });
 });
+
+
+/* A small, private address-book layer: local favorites and explicit link sharing. */
+const ejAllPlaces=Object.values(DATA).flatMap(c=>c.places);
+const ejValidURLs=new Set(ejAllPlaces.map(p=>p.url));
+const ejURL=new URL(location.href);
+if(ejURL.searchParams.has('saved')){
+  const raw=ejURL.searchParams.get('saved')||'';
+  const ids=raw.split('|').filter(Boolean).slice(0,40);
+  ejSaved=new Set(ids.map(x=>{try{return decodeURIComponent(x)}catch(_){return ''}}).filter(x=>ejValidURLs.has(x)));
+  ejPersist();
+}
+let ejSavedOnly=false;
+document.addEventListener('click',e=>{
+ const b=e.target.closest('.ej-fav');
+ if(b){
+   let url;try{url=decodeURIComponent(b.dataset.fav)}catch(_){return}
+   if(!ejValidURLs.has(url))return;
+   if(ejSaved.has(url))ejSaved.delete(url);else ejSaved.add(url);
+   ejPersist();
+   if(ejSavedOnly)ejApplySavedFilter();
+ }
+});
+function ejApplySavedFilter(){
+ document.querySelectorAll('.city-section').forEach(sec=>{
+   sec.querySelectorAll('.place-card').forEach(c=>{
+     const b=c.querySelector('.ej-fav');
+     let url='';try{url=decodeURIComponent(b?.dataset.fav||'')}catch(_){}
+     c.hidden=ejSavedOnly&&!ejSaved.has(url);
+   });
+   sec.querySelectorAll('.group-block').forEach(group=>{
+     group.hidden=ejSavedOnly&&![...group.querySelectorAll('.place-card')].some(c=>!c.hidden);
+   });
+ });
+}
+document.getElementById('ej-show-favs')?.addEventListener('click',e=>{
+ ejSavedOnly=!ejSavedOnly;
+ e.currentTarget.setAttribute('aria-pressed',String(ejSavedOnly));
+ e.currentTarget.textContent=ejSavedOnly?'Show all places ↗':'Show saved places ↗';
+ ejApplySavedFilter();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('ej-share-favs')?.addEventListener('click',async()=>{
+ const status=document.getElementById('ej-share-status');
+ const u=new URL(location.href);
+ if(ejSaved.size>40){status.textContent='Sharing is limited to 40 places. Please reduce the list.';return}
+ u.searchParams.set('saved',[...ejSaved].map(encodeURIComponent).join('|'));
+ // Current page URL is shared; it is not a standalone itinerary.
+ try{await navigator.clipboard.writeText(u.href);status.textContent='Link copied. Anyone with this link can open your saved list.'}
+ catch(_){status.textContent=u.href;}
+});
+ejPersist();
 
 // City tab switching
 cityTabsEl.addEventListener('click', e => {
