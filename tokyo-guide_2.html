@@ -1195,12 +1195,15 @@ function renderActiveTags(cityKey, el) {
 // ============================================================
 // MAIN FILTER + RENDER ENGINE
 // ============================================================
+const ejDiscovery={q:(new URLSearchParams(location.search).get('q')||'').trim()};
 function applyFilters(cityKey, places, els) {
   const s = STATE[cityKey];
   let filtered = places;
   if (s.types.length) filtered = filtered.filter(p => s.types.includes(typeOf(p)));
   if (s.cats.length)  filtered = filtered.filter(p => s.cats.includes(p.cat));
   if (s.areas.length) filtered = filtered.filter(p => s.areas.includes(p.area));
+  if(ejDiscovery.q){const q=ejDiscovery.q.toLocaleLowerCase();filtered=filtered.filter(p=>[p.name,p.en||'',p.area,p.cat,EJ_NOTES[p.name]?.en||''].join(' ').toLocaleLowerCase().includes(q));}
+  if(ejSavedOnly)filtered=filtered.filter(p=>ejSaved.has(p.url));
 
   // Update result count in stats bar
   els.countEl.textContent = `Showing ${filtered.length} of ${places.length}`;
@@ -1210,7 +1213,7 @@ function applyFilters(cityKey, places, els) {
 
   els.contentEl.innerHTML = renderContent(filtered, s.sort, s.dir);
   renderActiveTags(cityKey, els.activeTagsEl);
-  if (typeof ejSavedOnly !== 'undefined' && ejSavedOnly) ejApplySavedFilter();
+
 }
 
 function updateDimming(cityKey, allPlaces, filtered, els) {
@@ -1247,6 +1250,7 @@ function updateDimming(cityKey, allPlaces, filtered, els) {
 // ============================================================
 // BUILD SECTIONS
 // ============================================================
+const ejViewRefs=Object.create(null);
 const cityTabsEl = document.getElementById('cityTabs');
 const mainEl = document.getElementById('mainContent');
 
@@ -1340,6 +1344,7 @@ Object.keys(DATA).forEach((city, idx) => {
     sortBtns:     [...sec.querySelectorAll(`#sort-${idx} .sort-btn`)],
   };
 
+  ejViewRefs[key]=els;
   // Initial render
   applyFilters(key, places, els);
 
@@ -1439,7 +1444,7 @@ document.addEventListener('click',e=>{
    if(!ejValidURLs.has(url))return;
    if(ejSaved.has(url))ejSaved.delete(url);else ejSaved.add(url);
    ejPersist();
-   if(ejSavedOnly)ejApplySavedFilter();
+   if(ejSavedOnly)ejRefreshAll();
  }
 });
 function ejApplySavedFilter(){
@@ -1458,7 +1463,7 @@ document.getElementById('ej-show-favs')?.addEventListener('click',e=>{
  ejSavedOnly=!ejSavedOnly;
  e.currentTarget.setAttribute('aria-pressed',String(ejSavedOnly));
  e.currentTarget.textContent=ejSavedOnly?'Show all places ↗':'Show saved places ↗';
- ejApplySavedFilter();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+ ejRefreshAll();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
 });
 document.getElementById('ej-share-favs')?.addEventListener('click',async()=>{
  const status=document.getElementById('ej-share-status');
