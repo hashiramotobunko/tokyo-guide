@@ -446,7 +446,7 @@ footer small{width:100%;opacity:.7}
 .ej-essentials dt{font-weight:850}.ej-essentials dd{margin:0;color:#444}
 .ej-essentials a{color:#111;text-underline-offset:4px}
 @media(max-width:850px){.ej-feature-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.ej-visitor{grid-template-columns:1fr 1fr;gap:4%;padding:65px 5%}.ej-visitor h2{font-size:clamp(70px,10vw,105px)}}
-@media(max-width:700px){.ej-feature-nav{padding:15px 5% 48px}.ej-feature-nav a{padding:15px 5px}.ej-feature-nav strong{font-size:19px}.ej-visitor{display:block;padding:55px 6%}.ej-visitor-copy{padding-top:10px}.ej-visitor h2{font-size:clamp(80px,18vw,125px)}.ej-two-selects{grid-template-columns:1fr}.ej-visitor-copy dl>div{grid-template-columns:1fr}.ej-mood-list button{padding:12px}.ej-route-options button{padding:11px;font-size:12px}}
+@media(max-width:700px){.ej-feature-nav{padding:15px 5% 48px}.ej-feature-nav a{padding:15px 5px}.ej-feature-nav strong{font-size:19px}.ej-visitor{display:block;padding:55px 6%}.ej-visitor-copy{padding-top:10px}.ej-visitor h2{font-size:clamp(44px,13vw,90px)}.ej-two-selects{grid-template-columns:1fr}.ej-visitor-copy dl>div{grid-template-columns:1fr}.ej-mood-list button{padding:12px}.ej-route-options button{padding:11px;font-size:12px}}
 
 </style>
 </head>
@@ -1743,15 +1743,15 @@ function ejBrowseArea(city,area){
  try{
   if(!ejChangeCity(city))return;
   const st=STATE[city];st.cats=[];st.types=[];st.areas=area?[area]:[];
-  ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;
+  ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;ejMood='';ejMoodButtonState();
   const b=document.getElementById('ej-show-favs');
   if(b){b.setAttribute('aria-pressed','false');b.textContent='Show saved places ↗';}
   ejRefreshAll();
  }finally{ejRestoring=false}
- ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+ ejSyncURL(true);ejUpdateLocationControls();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
 }
 ejSearchBox.value=ejDiscovery.q;
-ejSearchBox.addEventListener('input',()=>{ejDiscovery.q=ejSearchBox.value.trim();ejRefreshAll();ejSyncURL(false)});
+ejSearchBox.addEventListener('input',()=>{ejDiscovery.q=ejSearchBox.value.trim();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(false)});
 document.addEventListener('click',e=>{
  if(ejRestoring)return;
  if(e.target.closest('#cityTabs .city-tab,.type-chip,.chip[data-type],.clear-link,.sort-btn,.active-tag .x,.reset-all'))ejSyncURL(true);
