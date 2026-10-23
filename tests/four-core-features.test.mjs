@@ -31,5 +31,5 @@ test('theme / mood selections use the actual category filter',()=>{
  assert.ok(html.includes('if(ejMood)filtered=filtered.filter(ejMoodMatches)'));
 });
 test('the original approved 526 source entries are present',()=>{
- assert.equal((html.match(/\\bname\\s*:\\s*"/g)||[]).length,526);
+ assert.equal((html.split('name:"').length-1),526);
 });
