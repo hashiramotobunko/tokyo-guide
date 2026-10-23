@@ -59,3 +59,15 @@ test('editorial sources and URL-navigation routines are present',()=>{
  assert.ok(source.includes('UNVERIFIED WALKING ROUTE'));
  assert.ok(source.includes('ej-editorial-source'));
 });
+
+test('city-pop visual asset references and captions',()=>{
+ assert.ok(source.includes('assets/editorial/night-street.svg'));
+ assert.ok(source.includes('assets/editorial/day-bookshop.svg'));
+ assert.ok(source.includes('Editorial illustration'));
+ assert.ok(!source.includes('commons.wikimedia.org'));
+});
+test('Instagram remains disabled without a real owner-supplied URL',()=>{
+ assert.ok(source.includes('const EJ_INSTAGRAM_URL = ""'));
+ assert.ok(source.includes('id="ej-nav-social" hidden'));
+ assert.ok(source.includes('id="ej-footer-instagram" hidden'));
+});
