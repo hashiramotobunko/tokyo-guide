@@ -3545,6 +3545,79 @@
    ]
   },
   {
+   "key": "Tokyo|0x60188ccb0c5f48e9:0xc955c63b807f59e4",
+   "name": "昇龍",
+   "city": "Tokyo",
+   "nameEn": "Shoryu (Chinese, Yoyogi)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No Yoyogi listing found; the well-known Shoryu in Ueno Ameyoko is a different shop and was not used."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188ea009ce894d:0xc0b6fe93092bcf8c",
+   "name": "ぽん多本家",
+   "city": "Tokyo",
+   "nameEn": "Ponta Honke (tonkatsu, since 1905)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Tue–Sat 11:00–14:00 (L.O. 13:45) and 16:30–20:20 (L.O. 19:45); Sun and holidays dinner from 16:00 (Gnavi, OMAKASE).",
+     "src": "https://gurunavi.com/ja/g608200/rev/rst/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays (open on holiday Mondays, closed the next day per one listing; another says Tuesday).",
+     "src": "https://omakaseje.com/ja/restaurants/dc419614",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "3-23-3 Ueno; about 3 min from JR Okachimachi south exit. Tel 03-3831-2351.",
+     "src": "https://gurunavi.com/ja/g608200/rev/rst/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188d12a036deb9:0x81f86416f05055ec",
    "name": "東洋文庫ミュージアム",
    "city": "Tokyo",
@@ -3851,6 +3924,208 @@
      "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cdb568a6c15:0x4c84ac4975ce203",
+   "name": "世界堂 新宿本店",
+   "city": "Tokyo",
+   "nameEn": "Sekaido Shinjuku main store (art supplies)",
+   "website": "https://www.sekaido.co.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:30–20:00 (travel listings).",
+     "src": "https://www.gltjp.com/ja/review/item/5004/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Open year-round except New Year (listings).",
+     "src": "https://www.gltjp.com/ja/review/item/5004/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "3-1-1 Shinjuku; about 1 min from Shinjuku-sanchome exit C4, 7 min from JR Shinjuku east exit. Tel 03-5379-1111.",
+     "src": "https://www.gltjp.com/ja/review/item/5004/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "language",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f32cd7dab227:0x2cd8a394ca8e7d96",
+   "name": "パークハイアット 東京",
+   "city": "Tokyo",
+   "nameEn": "Park Hyatt Tokyo",
+   "website": "https://www.hyatt.com/park-hyatt/tyoph-park-hyatt-tokyo",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "Reopened 9 Dec 2025 after a full renovation that began May 2024; the 1F Delicatessen fully reopened 3 Aug 2026 (press release).",
+     "src": "https://prtimes.jp/main/html/rd/p/000000176.000012816.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official site blocked automated reading (403)."
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b57a2b85795:0x8548635f1933c70e",
+   "name": "ヒルトン東京",
+   "city": "Tokyo",
+   "nameEn": "Hilton Tokyo",
+   "website": "https://www.hilton.com/en/hotels/tyohitw-hilton-tokyo/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "6-6-2 Nishi-Shinjuku; underground passage from Nishi-Shinjuku (Marunouchi line, exit C8, about 2 min) and Tochomae (Oedo line, 3–5 min); about 10 min on foot from Shinjuku west exit; free shuttle from Keio Dept. Store bus stop 21 (booking-site listings).",
+     "src": "https://travel.yahoo.co.jp/00000029/access/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "Check-in 15:00–24:00, check-out 11:00 (hotel FAQ quoted by booking site).",
+     "src": "https://travel.yahoo.co.jp/00000029/access/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f2b50bf85b35:0x3491f11a22677da0",
+   "name": "康まる",
+   "city": "Tokyo",
+   "nameEn": "Yasumaru (izakaya, Nakano)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f2b58404fcdd:0xcc21e885ffa8f501",
+   "name": "晴れときどき",
+   "city": "Tokyo",
+   "nameEn": "Hare Tokidoki (izakaya, Nakano)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f2b56e74d325:0x1d7e06a18238b3f4",
+   "name": "手打ちそば 山商",
+   "city": "Tokyo",
+   "nameEn": "Teuchi Soba Yamasho",
+   "website": "",
+   "fields": [
+    {
+     "t": "address",
+     "v": "4-27-27 Higashi-Nakano, Nakano-ku (media table).",
+     "src": "https://macaro-ni.jp/91224?page=2",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The only hours table found was garbled."
     }
    ]
   },
@@ -4464,6 +4739,51 @@
    ]
   },
   {
+   "key": "Tokyo|0x60188d6bb603a7df:0x93e9fccd7878efc",
+   "name": "とらや 赤坂店",
+   "city": "Tokyo",
+   "nameEn": "Toraya Akasaka",
+   "website": "https://www.toraya-group.co.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Shop 9:00–18:00 (from 9:30 at weekends and holidays); tearoom 11:00–17:30 (L.O. 17:00) — travel listing.",
+     "src": "https://www.gltjp.com/ja/directory/item/14497/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "The 6th of each month except December (listing).",
+     "src": "https://www.gltjp.com/ja/directory/item/14497/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "4-9-22 Akasaka; about 7 min from Akasaka-mitsuke exit A. Tel 03-3408-2331. Shop on 2F, tearoom 3F, gallery in the basement (rebuilt 2018).",
+     "src": "https://www.gltjp.com/ja/directory/item/14497/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188c9a0eb42e39:0x5a174085841c5258",
    "name": "明治神宮野球場",
    "city": "Tokyo",
@@ -4491,6 +4811,154 @@
     },
     {
      "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c8371d2d919:0xae0234e7d054e9d4",
+   "name": "シェイク シャック 外苑いちょう並木",
+   "city": "Tokyo",
+   "nameEn": "Shake Shack Gaien Icho Namiki",
+   "website": "https://www.shakeshack.jp/",
+   "fields": [
+    {
+     "t": "address",
+     "v": "2-1-15 Kita-Aoyama (opening-day coverage, 2015).",
+     "src": "https://www.fashion-press.net/news/15412",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Only 2015 opening hours (11:00–22:00) were found; not recorded as current."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c9b6039748d:0x902af7403070a9ae",
+   "name": "ロイヤルガーデンカフェ青山",
+   "city": "Tokyo",
+   "nameEn": "Royal Garden Cafe Aoyama",
+   "website": "http://www.royal-gardencafe.com/store-menu/aoyama.html",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Mon–Fri 11:00–22:00; Sat, Sun and holidays 9:00–22:00 (morning menu until 10:45 at weekends).",
+     "src": "http://www.royal-gardencafe.com/store-menu/aoyama.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "An October 2026 hours-change notice is posted without details."
+    },
+    {
+     "t": "reservation",
+     "v": "Reservations accepted from 18:00; before that, seating is first come. Tel 03-5414-6170; online booking available.",
+     "src": "http://www.royal-gardencafe.com/store-menu/aoyama.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "2-1-19 Kita-Aoyama; adjacent Jingu Gaien car park (¥100/hour, max 2 hours).",
+     "src": "http://www.royal-gardencafe.com/store-menu/aoyama.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cb94deaa84f:0x5e0c7c798e940fdf",
+   "name": "お食事処 asatte北参道店",
+   "city": "Tokyo",
+   "nameEn": "Oshokujidokoro asatte, Kita-Sando",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "11:30–15:00 and 18:00–23:00 (san-tatsu).",
+     "alt": "11:30–16:00 (L.O. 15:30) and 18:00–22:30 (L.O. 22:00) (Kinarino).",
+     "src": "https://san-tatsu.jp/spots/144618/",
+     "st": "media",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Sundays, holidays and year-end.",
+     "src": "https://san-tatsu.jp/spots/144618/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "3-2-8 Sendagaya. Tel 03-6434-9451. Lunch is a single ¥1,000 daily set (2023 TV listing).",
+     "src": "https://san-tatsu.jp/spots/144618/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cbb4f61a00d:0x3c053f7049fce720",
+   "name": "海の宮",
+   "city": "Tokyo",
+   "nameEn": "Umi no Miya (Japanese)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
      "v": "",
      "src": "",
      "st": "",
@@ -5052,6 +5520,42 @@
    ]
   },
   {
+   "key": "Tokyo|0x60188be2ad359e17:0x49acc8effdd551cb",
+   "name": "タイごはん 泉州屋台",
+   "city": "Tokyo",
+   "nameEn": "Senshu Yatai (Thai)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Weekday lunch 11:00–14:00 until sold out; Friday evening is a booked course (listings).",
+     "src": "https://retty.me/restaurant/100001538557/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 3–7 min from Shibakoen Station (sources differ). Tel 03-3434-8180.",
+     "src": "https://agora-web.jp/?p=534504",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x6018f38c047eee2f:0x78dbdc2fa6d73f51",
    "name": "bar dop",
    "city": "Tokyo",
@@ -5102,6 +5606,34 @@
      "src": "https://bar-dop.com/access.html",
      "st": "official",
      "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x601d86f1a0765775:0xb1e6b2bff62784e",
+   "name": "桃花林",
+   "city": "Tokyo",
+   "nameEn": "Toh-Ka-Lin (The Okura Tokyo)",
+   "website": "https://theokuratokyo.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Search returned other Okura branches only; the Toranomon restaurant page was not retrieved."
+    },
+    {
+     "t": "reservation",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -5225,6 +5757,294 @@
    ]
   },
   {
+   "key": "Tokyo|0x60188d96293e5dd7:0xd173e2eecf50dcbd",
+   "name": "表参道／外苑前 ゲイバー Bar TRY ME",
+   "city": "Tokyo",
+   "nameEn": "Bar TRY ME",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188dedf694e669:0x5274295b366ceef4",
+   "name": "The Top.",
+   "city": "Tokyo",
+   "nameEn": "The Top. (rooftop bar, The Aoyama Grand Hotel)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "17:30–23:00 (food L.O. 22:00, drinks 22:30); operates April to end of November (Time Out).",
+     "src": "https://www.timeout.jp/tokyo/ja/%E3%83%90%E3%83%BC/the-top-aoyama",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "20F The Aoyama Grand Hotel, 2-14-4 Kita-Aoyama; about 3 min from Gaienmae, 8 min from Omotesando.",
+     "src": "https://www.timeout.jp/tokyo/ja/%E3%83%90%E3%83%BC/the-top-aoyama",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ],
+   "flags": [
+    "seasonal-apr-nov"
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b6436b93573:0x22532d02bbcb9225",
+   "name": "赤い部屋",
+   "city": "Tokyo",
+   "nameEn": "Akai Heya (bar, Ginza)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188e97967d7c2f:0xcc3393afb1ef0b21",
+   "name": "珍々軒",
+   "city": "Tokyo",
+   "nameEn": "Chinchinken (Ameyoko Chinese, since 1948)",
+   "website": "",
+   "fields": [
+    {
+     "t": "address",
+     "v": "6-12-2 Ueno; tel 03-3832-3988 (2023 TV listing).",
+     "src": "https://www.tv-tokyo.co.jp/adomachi/backnumber/20231223/144517.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Founded 1948; tanmen, liver-nira and a pepper-free fried rice are the draws; weekday queues (TV listing).",
+     "src": "https://www.tv-tokyo.co.jp/adomachi/backnumber/20231223/144517.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b304acb79d9:0x12b1a335febfca5e",
+   "name": "蕎麦おさめ",
+   "city": "Tokyo",
+   "nameEn": "Soba Osame",
+   "website": "",
+   "fields": [
+    {
+     "t": "tip",
+     "v": "Listings describe a renovated century-old house in Mejiro, successor to a Nishi-Azabu shop.",
+     "src": "https://omakaseje.com/ja/restaurants/aq960210",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "This guide lists it under Ochiai; sources say Mejiro."
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d1553413fb3:0x15e961e08d4a823",
+   "name": "焼鳥山香",
+   "city": "Tokyo",
+   "nameEn": "Yakitori Yamaka (Kagurazaka)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "reservation",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f394e2275a77:0xd4123f9df7c9920",
+   "name": "高円寺 焼肉ここち",
+   "city": "Tokyo",
+   "nameEn": "Koenji Yakiniku Kokochi",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Market branch (inside Daiichi Market): Wed–Fri 17:00–24:00, Sat 13:30–24:00, Sun 13:30–21:00 (Hitosara); main shop hours not found.",
+     "src": "https://hitosara.com/0031627660/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Two branches exist; the listing here may refer to the main shop in Koenji-kita 2-chome."
+    },
+    {
+     "t": "closed",
+     "v": "Market branch: Mondays and Tuesdays (Hitosara).",
+     "src": "https://hitosara.com/0031627660/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f39a8ba33e1d:0xec125109fce1e196",
+   "name": "酒坐愛次郎",
+   "city": "Tokyo",
+   "nameEn": "Sakagura Aijiro (izakaya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "17:00–24:00 (food L.O. 23:00, drinks 23:30) — directory.",
+     "src": "https://savorjapan.com/0020008536",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Sundays (open on Sunday and closed Monday when Monday is a holiday).",
+     "src": "https://savorjapan.com/0020008536",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "Koenji J Bldg 2F, 4-28-7 Koenji-minami; about 1 min from JR Koenji. Budget about ¥6,000.",
+     "src": "https://epark.jp/gourmet/list/sta_3049/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f3eb69aade91:0x6fbaa20b340c814c",
+   "name": "スナック シャンテ",
+   "city": "Tokyo",
+   "nameEn": "Snack Chante (Koenji)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x6018f27c30ba7a53:0x26cd930385735f22",
    "name": "立呑み きど藤",
    "city": "Tokyo",
@@ -5260,6 +6080,34 @@
     },
     {
      "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f3b8b93cfde1:0xeeec119e0f4bef4a",
+   "name": "わにわ",
+   "city": "Tokyo",
+   "nameEn": "Waniwa (izakaya, Koenji)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
      "v": "",
      "src": "",
      "st": "",
@@ -5322,6 +6170,486 @@
      "chk": "2026-10-27",
      "by": "manual-web",
      "note": "A feature mentioned the building may limit how long the bar can stay; unconfirmed — check before a special trip."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f2880a6d8613:0xf88b6a71258c591",
+   "name": "山形料理と地酒 まら",
+   "city": "Tokyo",
+   "nameEn": "Mara (Yamagata cooking and sake)",
+   "website": "",
+   "fields": [
+    {
+     "t": "access",
+     "v": "South of Koenji Station near Koenji Chuo Park (2022 TV listing); the sister shop Koara in Nakano-Shimbashi keeps 17:00–24:00.",
+     "src": "https://www.tv-tokyo.co.jp/adomachi/backnumber/20221015/143235.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f27d0c674c01:0x1d0751c3ad8aafbf",
+   "name": "KULZ BAR",
+   "city": "Tokyo",
+   "nameEn": "KULZ BAR",
+   "website": "",
+   "fields": [
+    {
+     "t": "access",
+     "v": "About 3 min from JR Koenji; budget ¥2,000–3,000 (Hot Pepper listing).",
+     "src": "https://www.hotpepper.jp/SA11/Y060/U027/bgn7/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f4992b2a2d07:0xd69b434e1331f004",
+   "name": "赤鬼",
+   "city": "Tokyo",
+   "nameEn": "Akaoni (sake izakaya)",
+   "website": "https://akaoni39.com/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Mon–Fri 17:30–23:30 (L.O. 22:00); Sat–Sun 17:00–23:30; holidays 17:00–23:00 (Tabelog).",
+     "alt": "Sundays and holidays 17:00–23:00 (Oggi).",
+     "src": "https://tabelog.com/tokyo/A1317/A131706/13001382/",
+     "st": "aggregator",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Year-end and New Year only (Tabelog).",
+     "src": "https://tabelog.com/tokyo/A1317/A131706/13001382/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "2-15-3 Sangenjaya; about 5 min from the station. More than 100 kinds of sake (media).",
+     "src": "https://oggi.jp/6040503",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f5e9e1092e55:0x3973c1793566f359",
+   "name": "ジンギスカン羊はち",
+   "city": "Tokyo",
+   "nameEn": "Jingisukan Hitsujihachi (Sangenjaya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "address",
+     "v": "Sancha Dining Bldg 1F, 2-14-1 Sangenjaya; about 4 min from the station. Tel 050-5600-8955 (directory).",
+     "src": "https://ssl.tabelog.com/en/tokyo/A1317/A131706/13288611/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Only the Koenji branch's hours were found."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f5b552927b05:0x6886a2b75c02c7f4",
+   "name": "ing SANGENJAYA",
+   "city": "Tokyo",
+   "nameEn": "ing SANGENJAYA (bar)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f51a066b14d7:0xe9a4d882c218fddb",
+   "name": "赤星 三軒茶屋店",
+   "city": "Tokyo",
+   "nameEn": "Akaboshi Sangenjaya (izakaya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name (not to be confused with Akaoni)."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cf2862b1143:0xcd4b0d0a232a89c1",
+   "name": "たまる",
+   "city": "Tokyo",
+   "nameEn": "Tamaru (izakaya, Yotsuya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cf27c1981e5:0x3dbc6c029849ff0e",
+   "name": "タキギヤ",
+   "city": "Tokyo",
+   "nameEn": "Takigiya (izakaya, Yotsuya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "tip",
+     "v": "Listed as 酒肴 タキギヤ among Yotsuya izakaya on Gnavi; details not shown.",
+     "src": "https://r.gnavi.co.jp/4g50hbfm0000/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f368da376ba9:0xbf88ec8cad92e7f",
+   "name": "バールアリメンターリダニエラ",
+   "city": "Tokyo",
+   "nameEn": "Bar Alimentari Daniela",
+   "website": "",
+   "fields": [
+    {
+     "t": "tip",
+     "v": "Italian bar in a Setagaya residential street; sister of Ras Folina (Roppongi) and Emilia (Gaienmae) per a food log.",
+     "src": "https://foodle.pro/restaurants/tokyo/bar-alimentari-daniela",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f3689b822667:0x142b1d31e2f5ebac",
+   "name": "JazzHaus POSY",
+   "city": "Tokyo",
+   "nameEn": "Jazz Haus POSY",
+   "website": "",
+   "fields": [
+    {
+     "t": "tip",
+     "v": "Jazz bar opened in 1973 in Daizawa; ring the buzzer at the door to be let in; about 6–9 min from Shimokitazawa south exit (media).",
+     "src": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f340670d0c59:0xe9984baa0ba700bc",
+   "name": "とんかつ処 向陽亭",
+   "city": "Tokyo",
+   "nameEn": "Tonkatsu Koyotei",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f49f5256b1ab:0x60bbd545aefad201",
+   "name": "ラムジンギスカン羊々",
+   "city": "Tokyo",
+   "nameEn": "Lamb Jingisukan Yoyo (Setagaya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Only same-named Sapporo and Minato shops surfaced; not used."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cf2921eb463:0x64835e33a64f96c2",
+   "name": "道しるべ",
+   "city": "Tokyo",
+   "nameEn": "Michishirube (Araki-cho)",
+   "website": "",
+   "fields": [
+    {
+     "t": "closed",
+     "v": "Sundays (2013 TV listing; opened November 2012).",
+     "src": "https://www.tv-tokyo.co.jp/adomachi/backnumber/20130216/85635.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Dated source; current status not confirmed."
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ],
+   "flags": [
+    "status-unconfirmed-old-source"
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f47137ffab2b:0x3a6f55ecbacf7af6",
+   "name": "ランブロア",
+   "city": "Tokyo",
+   "nameEn": "L'Ambroisie? (bar, Setagaya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b589a78a3bd:0x2c8434769002deea",
+   "name": "DOLCE TACUBO 代官山",
+   "city": "Tokyo",
+   "nameEn": "DOLCE TACUBO",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "11:00–19:00, closing when sold out (Tabelog); mostly pre-order.",
+     "src": "https://tabelog.com/tokyo/A1303/A130303/13266450/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Irregular (Tabelog).",
+     "src": "https://tabelog.com/tokyo/A1303/A130303/13266450/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "Cellaza Daikanyama 1F, 2-15-9 Ebisu-nishi; about 4 min from Daikanyama. Opened 16 Dec 2021.",
+     "src": "https://tabelog.com/tokyo/A1303/A130303/13266450/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b4139187a7f:0x9516ff7194ae0722",
+   "name": "TACUBO",
+   "city": "Tokyo",
+   "nameEn": "TACUBO (wood-fire Italian)",
+   "website": "",
+   "fields": [
+    {
+     "t": "reservation",
+     "v": "Omakase course only, fully reserved (Retty).",
+     "src": "https://retty.me/restaurant/100001272527/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Sundays (open Sunday and closed Monday when Monday is a holiday) — Retty.",
+     "src": "https://retty.me/restaurant/100001272527/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Eight-seat counter facing the wood fire plus two private rooms, in a quiet Ebisu street (Tabelog).",
+     "src": "https://tabelog.com/tokyo/A1303/A130303/13109940/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     }
    ]
   },
@@ -5495,6 +6823,669 @@
     },
     {
      "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b41676b600b:0xc5228286e07fdf76",
+   "name": "ほの字 恵比寿店",
+   "city": "Tokyo",
+   "nameEn": "Honoji Ebisu (izakaya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Mon–Fri 11:30–14:30 and 17:30–23:00; Sat, Sun and holidays 16:00–23:00 (Hot Pepper).",
+     "alt": "Lunch 11:30–14:30 every day (Retty).",
+     "src": "https://www.hotpepper.jp/strJ000139812/",
+     "st": "aggregator",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "None (both listings). Tel 03-3770-8381.",
+     "src": "https://www.hotpepper.jp/strJ000139812/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b415b63c9bd:0x44cb0ebd3e04d8a8",
+   "name": "登川",
+   "city": "Tokyo",
+   "nameEn": "Nobukawa (eel, Ebisu)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "reservation",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b4fb08d8a73:0xb13ab26efaf494e6",
+   "name": "リストランテASO",
+   "city": "Tokyo",
+   "nameEn": "Ristorante ASO (Hiramatsu)",
+   "website": "https://www.hiramatsurestaurant.jp/aso/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Lunch 12:00–15:30 (L.O. 13:30); dinner 18:00–22:30 (L.O. 20:00).",
+     "src": "https://www.hiramatsurestaurant.jp/aso/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Wednesdays (next day if a holiday).",
+     "src": "https://www.hiramatsurestaurant.jp/aso/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Online via TableCheck or by phone 03-3770-3690.",
+     "src": "https://www.hiramatsurestaurant.jp/aso/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "29-3 Sarugakucho, Shibuya-ku (Daikanyama).",
+     "src": "https://www.hiramatsurestaurant.jp/aso/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Listed under Ebisu in this guide; the address is Daikanyama."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188dd1711a955f:0xb79cf267239df9bb",
+   "name": "all day place shibuya",
+   "city": "Tokyo",
+   "nameEn": "all day place shibuya (hotel, café & bar)",
+   "website": "https://uds-hotels.com/en/all-day-place",
+   "fields": [
+    {
+     "t": "access",
+     "v": "1-17-1 Shibuya; about 1 min from Tokyo Metro Shibuya exit B1, 5 min from JR Shibuya Miyamasuzaka exit (operator UDS page).",
+     "src": "https://uds-hotels.com/en/all-day-place",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Opened 27 Apr 2022; smart check-in without a traditional front desk; café with house-roasted coffee and a pizza-led menu (media).",
+     "src": "https://rurubu.jp/andmore/article/16449",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Café hours and standard check-in time not found."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b5ff62dc42d:0xfdbac226db214c98",
+   "name": "TWO ROOMS",
+   "city": "Tokyo",
+   "nameEn": "TWO ROOMS Grill | Bar",
+   "website": "https://www.tworooms.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Lunch 11:30–14:30 (L.O.), brunch to 15:00, café 14:30–17:00, dinner 18:00–21:30 (L.O.), late session 22:00–26:00; same every day including holidays.",
+     "src": "https://www.tworooms.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Online via TableCheck; private rooms by phone 03-3498-0002.",
+     "src": "https://www.tworooms.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "AO Building 5F, 3-11-7 Kita-Aoyama; about 1 min from Omotesando exit B2 toward Shibuya.",
+     "src": "https://www.tworooms.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Terrace table charge ¥1,000 per person on Friday and Saturday after 18:00.",
+     "src": "https://www.tworooms.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c9fc9437937:0x644df1ecb7868141",
+   "name": "鳥政",
+   "city": "Tokyo",
+   "nameEn": "Torimasa (yakitori, Minami-Aoyama)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Lunch 11:30–14:00 (weekdays only per a 2020 review); dinner 17:00–23:00 (2022 article).",
+     "src": "https://www.fashionsnap.com/article/2022-11-26/torimasa/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Sundays (2022 article).",
+     "src": "https://www.fashionsnap.com/article/2022-11-26/torimasa/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "3-13-2 Minami-Aoyama; no reservations, takeout available (2020 review).",
+     "src": "https://www.fashionsnap.com/article/2022-11-26/torimasa/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c9ebc94e1bf:0xd88031451a190fe6",
+   "name": "THE AOYAMA GRAND HOTEL",
+   "city": "Tokyo",
+   "nameEn": "The Aoyama Grand Hotel",
+   "website": "https://aoyamagrand.com/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "2-14-4 Kita-Aoyama; about 3 min from Gaienmae exit 3 (Ginza line).",
+     "src": "https://aoyamagrand.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Restaurants (The Belcomo, Shikaku, Tonkatsu Junchan, Rossi, The Top., Sushi Kanesaka) book via TableCheck. The hotel has posted a notice about unauthorised access to reservation data.",
+     "src": "https://aoyamagrand.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Check-in/out not on the top page."
+    }
+   ],
+   "flags": [
+    "data-breach-notice"
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188dd5bf52349d:0xa8955a8ed93a6f5e",
+   "name": "LA & LE",
+   "city": "Tokyo",
+   "nameEn": "LA & LE (restaurant bar, Aoyama)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188dbf0f111c99:0x98b99f181307f08c",
+   "name": "SummerFall Tap Cocktails",
+   "city": "Tokyo",
+   "nameEn": "SummerFall TAP COCKTAILS (Shibuya)",
+   "website": "",
+   "fields": [
+    {
+     "t": "address",
+     "v": "42-4 Udagawacho; opened 30 Oct 2025; 20 taps of sparkling-sake cocktails from ¥900 (press coverage).",
+     "src": "https://www.walkerplus.com/article/1303057/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d9ab2fbcbbf:0xb83f74393a44013",
+   "name": "Wine Salon KNOT",
+   "city": "Tokyo",
+   "nameEn": "Wine Salon KNOT (Aoyama)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name in Aoyama."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f316dc982f23:0xcbc257dc1c948425",
+   "name": "すしとおばんざい ゑんがわ",
+   "city": "Tokyo",
+   "nameEn": "Sushi to Obanzai Engawa",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "reservation",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f337fe9d6035:0x423102a810d07cd2",
+   "name": "すし 久遠",
+   "city": "Tokyo",
+   "nameEn": "Sushi Kuon (Yoyogi-Uehara)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Only a same-named Akasaka shop surfaced; not used."
+    },
+    {
+     "t": "reservation",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f363abf44e5b:0x6fe264ef9086906d",
+   "name": "BAR CORRYVRECKAN",
+   "city": "Tokyo",
+   "nameEn": "BAR CORRYVRECKAN (whisky bar)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f34832c7ca9b:0x9b9eded1c02dad04",
+   "name": "炭火串焼 ふく",
+   "city": "Tokyo",
+   "nameEn": "Sumibi Kushiyaki Fuku",
+   "website": "",
+   "fields": [
+    {
+     "t": "tip",
+     "v": "Charcoal skewer specialist on the Yoyogi-Uehara station street since 2003; skewers about ¥300 each, ordered singly; about 3 min from the station (Retty).",
+     "src": "https://retty.me/restaurant/100000008221/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f347f0ad2db9:0x249053188148717c",
+   "name": "酒場まるしゑ",
+   "city": "Tokyo",
+   "nameEn": "Sakaba Marushie",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f337d1542195:0xda92b4b62b30b429",
+   "name": "朝日屋",
+   "city": "Tokyo",
+   "nameEn": "Asahiya (soba, Nishihara)",
+   "website": "",
+   "fields": [
+    {
+     "t": "address",
+     "v": "3-25-4 Nishihara; tel 03-3466-0336; described as the oldest restaurant in Yoyogi-Uehara (2021 TV listing).",
+     "src": "https://www.tv-tokyo.co.jp/adomachi/backnumber/20211204/142348.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c3f0abec06b:0x3a5d2382b1814f20",
+   "name": "水道橋 スタンドヒーロー",
+   "city": "Tokyo",
+   "nameEn": "Stand Hero Suidobashi",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "17:00–23:30 L.O. (Saturday to 22:30 L.O.) — media; an Oct 2023 log says 17:00–23:00.",
+     "src": "https://www.inshokuten.com/foodist/article/7089/lead/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Sundays and holidays.",
+     "src": "https://www.inshokuten.com/foodist/article/7089/lead/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "2-21-9 Kanda-Misakicho; about 2 min from Suidobashi; budget about ¥3,000.",
+     "src": "https://aumo.jp/articles/19466",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d241e4c444d:0x2fda7ecb59d4a71f",
+   "name": "イタリアン カルミネ",
+   "city": "Tokyo",
+   "nameEn": "Carmine (Italian, Kagurazaka)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Lunch 11:30–15:00; dinner 18:00–23:00 (Ekiten).",
+     "src": "https://www.ekiten.jp/shop_90245/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "None listed (Ekiten).",
+     "src": "https://www.ekiten.jp/shop_90245/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Saikucho, Shinjuku-ku; about 4 min from Ushigome-Kagurazaka.",
+     "src": "https://www.ekiten.jp/shop_90245/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d767718472f:0x1aceae57eaff9edb",
+   "name": "中華そば くおん",
+   "city": "Tokyo",
+   "nameEn": "Chuka Soba Kuon",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No listing found under this name."
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b8124ae498d:0x8afb859692734ebe",
+   "name": "室町砂場 赤坂店",
+   "city": "Tokyo",
+   "nameEn": "Muromachi Sunaba Akasaka (soba)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Monday–Saturday 11:30–19:30 (L.O. 19:00) — Gnavi.",
+     "src": "https://r.gnavi.co.jp/g212300/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 1 min from Akasaka exit 6 (Chiyoda line). Tel 03-3583-7670. Summer closure 14–17 Aug 2026 with the main shop.",
+     "src": "https://r.gnavi.co.jp/g212300/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
      "v": "",
      "src": "",
      "st": "",
