@@ -473,6 +473,44 @@ footer small{width:100%;opacity:.7}
 .ej-route-neighborhood select{display:block;width:min(390px,100%);min-height:46px;margin-top:8px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font:500 16px Arial,sans-serif;padding:10px}
 
 .ej-feature-index{padding:42px 7% 58px;background:#fff;color:#111;border-top:2px solid #111}.ej-feature-label{font-size:11px;font-weight:900;letter-spacing:.13em;margin-bottom:24px}.ej-feature-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #111;border-bottom:1px solid #111}.ej-feature-links a{position:relative;color:#111;text-decoration:none;display:flex;flex-direction:column;min-height:175px;padding:22px 18px;border-right:1px solid #aaa}.ej-feature-links a:last-child{border:0}.ej-feature-links span{font-size:12px;font-weight:900;color:#e95000}.ej-feature-links strong{font-size:clamp(21px,2vw,32px);line-height:1.1;letter-spacing:-.05em;margin:21px 0 8px}.ej-feature-links small{font-size:12px;color:#555;line-height:1.4}.ej-feature-links b{position:absolute;right:12px;top:16px;color:#e95000}.ej-feature-links a:hover,.ej-feature-links a:focus-visible{background:#ffebdf}#browse,#fieldnotes,#visitor-info,#mood{scroll-margin-top:20px}@media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(2,minmax(0,1fr))}.ej-feature-links a{border-bottom:1px solid #aaa}.ej-feature-links a:nth-child(2){border-right:0}.ej-feature-links a:nth-child(n+3){border-bottom:0}}@media(max-width:520px){.ej-feature-index{padding:25px 5% 35px}.ej-feature-links a{min-height:147px;padding:16px 10px}.ej-feature-links strong{font-size:21px}.ej-feature-links small{font-size:11px}}
+/* Encounter Japan issue 002 — asymmetric editorial layout and functional discovery.
+   This layer never writes to or transforms the 526-record DATA source. */
+.ej-feature-links{grid-template-columns:repeat(12,minmax(0,1fr));border:0;gap:10px;align-items:stretch}
+.ej-feature-links a{min-height:154px;border:1px solid #111!important;padding:24px;transition:transform .2s ease,background .2s ease}
+.ej-feature-links a:nth-child(1){grid-column:span 5;background:#fff0e4;transform:translateY(-8px)}
+.ej-feature-links a:nth-child(2){grid-column:span 7;background:#f7f6f4}
+.ej-feature-links a:nth-child(3){grid-column:span 7;background:#101b31;color:#fff}
+.ej-feature-links a:nth-child(3) small{color:#e7b3a7}
+.ej-feature-links a:nth-child(4){grid-column:span 5;background:#ff5900;transform:translateY(9px)}
+.ej-feature-links a:nth-child(4) span,.ej-feature-links a:nth-child(4) b{color:#111}
+.ej-feature-links a:hover{transform:translate(0,-4px)!important;background:#ffe0c7}
+.ej-feature-index{border-bottom:0;padding-bottom:72px}
+.ej-mixtape{position:relative;display:grid;grid-template-columns:42% 1fr;background:#fce8d5;color:#111;margin:0 6% 90px;min-height:480px}
+.ej-mixtape-art{overflow:hidden;margin:35px 0 -26px 8%;background:#f56d45;transform:rotate(-2deg);box-shadow:14px 14px 0 #101b31}
+.ej-mixtape-art img{display:block;width:100%;height:100%;object-fit:cover;max-height:610px}
+.ej-mixtape-copy{padding:7% 8% 7% 14%;align-self:center;display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.ej-mixtape-copy h2{font-size:clamp(58px,8vw,140px);font-weight:950;letter-spacing:-.085em;line-height:.78;margin:0}
+.ej-mixtape-copy h2 em{color:#ff5900;font-style:normal}
+.ej-mixtape-copy p{max-width:430px;font-size:clamp(16px,2vw,22px);line-height:1.45;margin:12px 0}
+.ej-mixtape-copy a{color:#111;font-size:13px;font-weight:900;text-underline-offset:5px}
+.ej-mixtape-copy small{font-size:10px;letter-spacing:.07em;color:#56514f;margin-top:35px}
+.ej-field-art{width:min(460px,100%);margin:36px 0 0;transform:rotate(2deg);box-shadow:10px 10px 0 #ff5900}
+.ej-field-art img{display:block;width:100%;height:auto}
+.ej-field-art figcaption{font-size:10px;background:#101b31;color:#fff;padding:9px;letter-spacing:.06em}
+.ej-discovery-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:13px 0 5px;padding:14px 0;border-top:1px solid #111}
+.ej-discovery-feedback span{font-weight:900;font-size:15px}
+.ej-discovery-feedback button{border:0;background:#ff5900;color:#111;font:900 13px Arial,sans-serif;padding:12px 17px;min-height:44px;cursor:pointer}
+.ej-discovery-feedback button:disabled{background:#ddd;cursor:not-allowed}
+.ej-field-provenance{display:block;margin-top:7px;font-size:10px;line-height:1.5;color:#5e5e5e}
+.ej-field-provenance a{font-weight:900}
+.ej-route{scroll-margin-top:20px}
+.ej-route:nth-child(3n + 2){border-left:6px solid #ff5900}
+.ej-route:nth-child(3n + 1){border-left:6px solid #192a48}
+.ej-route:nth-child(3n){border-left:6px solid #f7b09c}
+.ej-route:has(a:focus-visible){outline:3px solid #ff5900;outline-offset:3px}
+@media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(12,minmax(0,1fr))}.ej-feature-links a:nth-child(n){grid-column:span 6;transform:none}.ej-mixtape{margin:0 5% 60px;grid-template-columns:45% 1fr}.ej-mixtape-copy h2{font-size:clamp(51px,8vw,86px)}}
+@media(max-width:600px){.ej-feature-index{padding:20px 5% 30px}.ej-feature-links{gap:8px}.ej-feature-links a:nth-child(n){grid-column:span 6;min-height:153px;padding:15px 12px}.ej-feature-links strong{font-size:19px}.ej-feature-links small{font-size:10px}.ej-mixtape{display:block;margin:10px 5% 65px}.ej-mixtape-art{margin:0 13% 0 5%;transform:translateY(-15px) rotate(-2deg);height:250px;box-shadow:8px 8px 0 #101b31}.ej-mixtape-copy{padding:23px 7% 37px}.ej-mixtape-copy h2{font-size:72px}.ej-mixtape-copy small{margin-top:13px}.ej-field-art{display:none}.ej-discovery-feedback{flex-direction:column;align-items:stretch}.ej-discovery-feedback button{width:100%}.ej-route{border-left-width:4px!important}}
+@media(prefers-reduced-motion:reduce){.ej-feature-links a{transition:none}.ej-feature-links a:hover{transform:none!important}}
 </style>
 </head>
 <body>
@@ -502,12 +540,6 @@ footer small{width:100%;opacity:.7}
   </section>
   
   
-<nav class="ej-feature-nav" aria-label="Travel planning">
-<a href="#browse"><small>01 / SEARCH</small><strong>Find a neighborhood</strong><span>Region · area · name</span></a>
-<a href="#fieldnotes"><small>02 / WALKS</small><strong>Follow an idea</strong><span>Theme · local addresses</span></a>
-<a href="#visitor-info"><small>03 / DETAILS</small><strong>Plan your visit</strong><span>Directions · booking · access</span></a>
-<a href="#mood"><small>04 / MOOD</small><strong>Go by feeling</strong><span>Food · music · culture</span></a>
-</nav>
 <section class="ej-story" id="stories" aria-labelledby="ej-story-title">
     <div class="ej-story-photo">
       <img src="assets/editorial/day-bookshop.svg" alt="Original editorial illustration of an imagined Tokyo bookshop and café street, not a listed venue" loading="lazy" decoding="async" width="1040" height="1310">
@@ -531,7 +563,8 @@ footer small{width:100%;opacity:.7}
     <p class="ej-second-big">THE CITY<br>BETWEEN<br><em>DESTINATIONS.</em></p>
     <p class="ej-second-foot">Not a top-ten list. A collection of real addresses worth looking at twice.</p>
   </section>
-  <section class="ej-trails" aria-label="Browse by interest">
+  <section class="ej-mixtape" aria-labelledby="ej-mixtape-title"><div class="ej-mixtape-art"><img src="assets/editorial/the-detour-issue.svg" loading="lazy" decoding="async" width="880" height="1040" alt="Original illustrated fictional record-shop interior with graphic vinyl and orange light; not a real shop"></div><div class="ej-mixtape-copy"><span class="ej-overline">ENCOUNTER / ISSUE 002</span><h2 id="ej-mixtape-title">GO<br>OFF<br><em>SCRIPT.</em></h2><p>An address can start a story. Take the long way, make a second stop, and leave room for what you did not expect.</p><a href="#fieldnotes">Browse the walking ideas ↗</a><small>Editorial illustration · imagined location</small></div></section>
+<section class="ej-trails" aria-label="Browse by interest">
     <div class="ej-trails-head"><span>GO BY FEELING</span><span>01 / 03</span></div>
     <div class="ej-trails-list">
       <button class="ej-trail" type="button" data-explore-type="Eat & Drink"><span class="ej-trail-index">01</span><span>Eat your way through.</span><span aria-hidden="true">↗</span></button>
@@ -548,7 +581,7 @@ footer small{width:100%;opacity:.7}
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each theme brings together real addresses from our guide. Walking order, transfers, opening hours and accessibility remain unverified.</p><a href="#browse">Search all places ↗</a></div><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each theme brings together real addresses from our guide. Walking order, transfers, opening hours and accessibility remain unverified.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original city-pop abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
 <button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
 <button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
 <button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
@@ -561,7 +594,7 @@ footer small{width:100%;opacity:.7}
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong>Official visitor details, researched for six destinations</strong><div class="ej-visitor-shortcuts">
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong>Source-recorded visitor details for six destinations</strong><div class="ej-visitor-shortcuts">
 <button type="button" data-find-venue="東京国立博物館" data-find-city="Tokyo">Tokyo National Museum ↗</button>
 <button type="button" data-find-venue="東京都美術館" data-find-city="Tokyo">Tokyo Metropolitan Art Museum ↗</button>
 <button type="button" data-find-venue="国立西洋美術館" data-find-city="Tokyo">National Museum of Western Art ↗</button>
@@ -580,8 +613,8 @@ footer small{width:100%;opacity:.7}
   </div>
   <div class="ej-browse" id="browse">
     <div class="ej-browse-identity"><span class="ej-overline">THE ADDRESS BOOK</span><h2>Find<br>your<br><em>place.</em></h2></div>
-    <label class="ej-search-label" for="ej-search">Search in the selected region</label>
-    <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="A name, a neighborhood, an idea…" aria-label="Search places in the selected region">
+    <label class="ej-search-label" for="ej-search">Find a name, street or kind of place</label>
+    <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="Try Ueno, coffee or a Japanese name…" aria-label="Search places in the selected region">
     
 <section class="ej-discovery" aria-label="Region, area and theme search">
  <div class="ej-two-selects"><label>Region<select id="ej-region-select" aria-label="Region"></select></label><label>Neighborhood / area<select id="ej-area-select" aria-label="Neighborhood"></select></label></div>
@@ -594,7 +627,7 @@ footer small{width:100%;opacity:.7}
  <button type="button" data-mood="food" aria-pressed="false">Japanese food <small>Local food genres</small></button>
  <button type="button" data-mood="shop" aria-pressed="false">Style & design <small>Shopping</small></button>
  <button type="button" data-mood="slow" aria-pressed="false">Take it slow <small>Parks · baths</small></button>
- </div></div><button id="ej-reset-all" class="ej-reset-all" type="button">Clear filters ↺</button>
+ </div></div><button id="ej-reset-all" class="ej-reset-all" type="button">Clear filters ↺</button><div class="ej-discovery-feedback"><span id="ej-discovery-count" role="status" aria-live="polite">Browse curated places</span><button type="button" id="ej-jump-results">See matching places ↓</button></div>
 </section>
 <div class="city-tabs" id="cityTabs" aria-label="Select region"></div>
   </div>
@@ -1298,13 +1331,20 @@ const EJ_PRACTICAL={
    access:"About 3 minutes on foot from Ebisucho Station or 6 minutes from Shin-Imamiya.",
    source:"https://www.tsutenkaku.co.jp/annai/",checked:"2026-10-24"}
 };
+/* Each published practical claim has its own source/date/status record.
+   The 2026-10-24 entries have not been re-verified live in this update. */
+const EJ_PRACTICAL_FIELDS=Object.fromEntries(Object.entries(EJ_PRACTICAL).map(([name,info])=>[
+ name,Object.fromEntries(['fee','hours','access','reservation'].filter(key=>typeof info[key]==='string').map(key=>[
+  key,{value:info[key],source:info.source,checked:info.checked,status:'source-recorded'}
+ ]))
+]));
 function ejPracticalField(p,key,label){
- const info=EJ_PRACTICAL[p.name];if(!info?.[key])return '';
- return '<div><dt>'+ejHTML(label)+'</dt><dd>'+ejHTML(info[key])+'</dd></div>';
+ const f=EJ_PRACTICAL_FIELDS[p.name]?.[key];if(!f)return '';
+ return '<div><dt>'+ejHTML(label)+'</dt><dd>'+ejHTML(f.value)+'<span class="ej-field-provenance"><a href="'+ejHTML(f.source)+'" target="_blank" rel="noopener noreferrer">Source ↗</a> · recorded '+ejHTML(f.checked)+' · recheck before visiting</span></dd></div>';
 }
 function ejPracticalCitation(p){
  const info=EJ_PRACTICAL[p.name];if(!info)return '';
- return '<div><dt>Verified source</dt><dd><a href="'+ejHTML(info.source)+'" target="_blank" rel="noopener noreferrer">Official visitor information ↗</a> · Checked '+ejHTML(info.checked)+'</dd></div>';
+ return '<div><dt>Recorded source</dt><dd><a href="'+ejHTML(info.source)+'" target="_blank" rel="noopener noreferrer">Official visitor information ↗</a> · Checked '+ejHTML(info.checked)+'</dd></div>';
 }
 
 const EJ_ROUTES=[
@@ -1339,7 +1379,7 @@ function ejRenderRoutes(){
  const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
  const note=EJ_NOTES[name];
  return '<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong><small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
- }).join('')+'</ol><div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Check all stops in Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div><p class="ej-route-caution">Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before traveling.</p></article>').join("");
+ }).join('')+'</ol><div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Preview stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div><p class="ej-route-caution">Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before traveling.</p></article>').join("");
 }
 
 const TYPE_ORDER = ['Eat & Drink','See','Bathe','Shop','Do','Stay'];
@@ -1393,7 +1433,7 @@ function card(p) {
 // RENDER CONTENT (grouped by sort key)
 // ============================================================
 function renderContent(places, sort, dir) {
-  if (!places.length) return `<div class="empty">No places match the selected filters.</div>`;
+  if (!places.length) return `<div class="empty">Nothing here yet. Try another neighborhood, theme or keyword; use “Clear filters” above to start fresh.</div>`;
 
   const mul = dir === 'asc' ? 1 : -1;
 
@@ -1813,6 +1853,9 @@ function ejBrowseArea(city,area){
  ejSyncURL(true);ejUpdateLocationControls();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
 }
 ejSearchBox.value=ejDiscovery.q;
+document.getElementById('ej-jump-results')?.addEventListener('click',()=>{
+ document.querySelector('.city-section.active .city-header')?.scrollIntoView({behavior:'smooth',block:'start'});
+});
 ejSearchBox.addEventListener('input',()=>{ejDiscovery.q=ejSearchBox.value.trim();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(false)});
 document.addEventListener('click',e=>{
  if(ejRestoring)return;
@@ -1839,7 +1882,7 @@ document.querySelectorAll('[data-find-venue]').forEach(button=>button.addEventLi
  document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
 }));
 document.querySelectorAll('[data-walk-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.walkCity,button.dataset.walkArea)));
-document.querySelectorAll('[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
+document.querySelectorAll('button.ej-route-explore[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
 addEventListener('popstate',ejRestoreURL);
 
 /* Region + area dropdowns wired into the same filter state as the chips and share URL. */
@@ -1863,7 +1906,11 @@ function ejUpdateLocationControls(){
    ejAreaSelect.add(new Option(area+' · '+n,area));
  }
  ejAreaSelect.value=st.areas.length===1?st.areas[0]:'';
- ejFilterMessage.textContent='Showing '+city+(st.areas.length?' / '+st.areas.join(', '):' / all neighborhoods')+(ejMood?' / '+ejMood.replaceAll('-',' '):'')+'. Combine filters or search Japanese and English names.';
+ const visible=document.querySelector('.city-section.active');const count=visible?.querySelectorAll('.place-card').length||0;
+ const counter=document.getElementById('ej-discovery-count'),jump=document.getElementById('ej-jump-results');
+ if(counter)counter.textContent=count+' matching places · '+city;
+ if(jump){jump.textContent=count?'Explore '+count+' results ↓':'No matches — adjust filters ↑';jump.disabled=!count;}
+ ejFilterMessage.textContent=(st.areas.length?st.areas.join(', '):'All neighborhoods')+' in '+city+(ejMood?' · '+ejMood.replaceAll('-',' '):'')+'. Search in Japanese or English; source details appear when available.';
 }
 ejRegionSelect.addEventListener('change',()=>{
  const city=ejRegionSelect.value;
