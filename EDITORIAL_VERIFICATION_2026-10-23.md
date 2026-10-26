@@ -43,3 +43,15 @@ These links substantiate concise editorial copy, **not** real-time operating sta
 2. Check the English descriptions against source links and validate route selections on a map.
 3. Run `node --test tests/editorial-smoke.mjs` to perform read-only syntax/data and route-reference checks.
 4. After browser QA and editorial review, decide whether to merge. **Do not merge or deploy without owner authorization.**
+
+## 2026-10-26 follow-on editorial verification (Draft)
+These are fixed, source-checked English introductions; they do not confirm today's access, prices, reservations, exhibitions, or opening hours.
+
+| Listing | Fixed editorial fact checked | Official source |
+|---|---|---|
+| 東京国立博物館 | 1872 origins and 1882 move to Ueno | https://www.tnm.jp/modules/r_free_page/index.php?id=143&lang=en |
+| 国立西洋美術館 | Le Corbusier's 1959 main building and forecourt | https://www.nmwa.go.jp/en/about/building.html |
+| 東京都美術館 | 1926 establishment and exhibitions | https://www.tobikan.jp/en/ |
+| 明治神宮 | 1920 founding, forest and seasonal schedule | https://www.meijijingu.or.jp/en/about/ |
+
+English intros now have ten editorial records, not 526. The separate practical visitor data remains limited to the original six pilot destinations, with field-level source/date labels and a prompt to recheck. All ten walking ideas remain **DRAFT**; no ground-truth walking distances or hours have been asserted.
