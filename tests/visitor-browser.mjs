@@ -68,6 +68,30 @@ try{
       report[width].interactions={japaneseSearch:shown,nightResult:night,kyotoHigashiyama:11,visitorEssentials:true,fieldProvenance:true,routeFilter:true,routeCardDoesNotHijackSearch:true};
       await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
       await page.screenshot({path:`${out}/390-routes.png`,fullPage:false});
+      // Route cards must show map-estimated legs, per-stop status chips and sourced details from the data layer.
+      await page.locator('#ej-route-options button[data-route-choice="all"]').click().catch(()=>{});
+      const ueno=page.locator('#route-ueno');
+      await ueno.evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+      assert.equal(await ueno.locator('.ej-route-leg').count(),3,'Ueno route needs three walking legs');
+      assert.ok((await ueno.locator('.ej-route-check').textContent()).includes('not yet'),'Route summary must say it was not walked');
+      assert.ok(await ueno.locator('.ej-chip-official').count()>=3,'Ueno stops should show official hour chips');
+      assert.ok(await ueno.locator('.ej-route-notes a[href^="https://"]').count()>=3,'Background facts must link sources');
+      await ueno.locator('.ej-stop-details summary').first().click();
+      assert.ok(await ueno.locator('.ej-stop-details[open] .ej-field-provenance a[href^="https://"]').count()>0,'Stop details must cite a source');
+      assert.ok((await page.locator('#fieldnotes').textContent()).includes('NOT FIELD-WALKED'));
+      await page.screenshot({path:`${out}/390-route-detail.png`,fullPage:false});
+      // Visitor essentials shortcuts are generated from the data layer and reach a researched listing.
+      const shortcuts=await page.locator('#ej-visitor-shortcuts button').count();
+      assert.ok(shortcuts>=30,'Expected generated shortcuts for researched places, got '+shortcuts);
+      await page.locator('#ej-visitor-shortcuts button[data-find-venue="自由軒 難波本店"]').click();
+      await page.locator('.city-section.active .ej-essentials summary').first().click();
+      const ess=page.locator('.city-section.active .ej-essentials[open]').first();
+      assert.ok(await ess.locator('.ej-ess-row[data-stat="official"]').count()>=2,'Jiyuken should show official rows');
+      assert.ok((await ess.textContent()).includes('as checked'),'Time-sensitive rows must say when they were checked');
+      assert.equal(await ess.locator('.ej-ess-row[data-stat="unverified"]').count(),0,'Unverified fields must not render as rows');
+      await ess.evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+      await page.screenshot({path:`${out}/390-essentials.png`,fullPage:false});
+      report[width].dataLayer={legs:3,shortcuts,officialRows:true};
    }
    if(width===1280){
      await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
@@ -77,6 +101,17 @@ try{
      // Capture the start of the section, not whichever middle route Playwright scrolled to.
      await page.locator('#fieldnotes').evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
      await page.screenshot({path:`${out}/1280-routes.png`,fullPage:false});
+     const namba=page.locator('#route-namba');
+     await namba.evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+     assert.equal(await namba.locator('.ej-route-stop').count(),3);
+     assert.equal(await namba.locator('.ej-route-leg').count(),2);
+     await page.screenshot({path:`${out}/1280-route-detail.png`,fullPage:false});
+     await page.locator('#visitor-info').evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+     await page.screenshot({path:`${out}/1280-visitor.png`,fullPage:false});
+     // Keyboard: the first generated shortcut is reachable and operable by keyboard.
+     await page.locator('#ej-visitor-shortcuts button').first().focus();
+     await page.keyboard.press('Enter');
+     assert.ok(await page.locator('.city-section.active .place-card').count()>=1);
      await page.locator('.ej-mixtape').scrollIntoViewIfNeeded();
      await page.locator('.ej-mixtape img').evaluate(async img=>{img.loading='eager';await img.decode();});
      await page.screenshot({path:`${out}/1280-editorial.png`,fullPage:false});

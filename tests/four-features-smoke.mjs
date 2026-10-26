@@ -68,12 +68,18 @@ test('themed search is category based and has six filters',()=>{
  assert.ok(script.includes("ejSyncURL(true)"));
 });
 test('practical data is attributed and unknown values are not presented as facts',()=>{
- for(const key of ['東京国立博物館','東京都美術館','国立西洋美術館','明治神宮','通天閣','清水寺'])assert.ok(source.includes('"'+key+'":{'),key);
- assert.ok(source.includes('data-find-venue="通天閣"'));
+ // Practical records now live in data/visitor-essentials.js and attach by city + Google Maps place id.
+ const layer=readFileSync(resolve(here,'..','data','visitor-essentials.js'),'utf8');
+ const w={};vm.runInNewContext(layer,{window:w});
+ const names=new Set(w.EJ_ESSENTIALS_V1.records.map(r=>r.name));
+ for(const key of ['東京国立博物館','東京都美術館','国立西洋美術館','明治神宮','通天閣','清水寺'])assert.ok(names.has(key),key);
+ assert.ok(source.includes('<script src="data/visitor-essentials.js"></script>'));
+ assert.ok(source.includes('id="ej-visitor-shortcuts"')&&script.includes('function ejRenderVisitorShortcuts('));
  assert.ok(source.includes('ejPracticalCitation'));
  assert.ok(source.includes('Checked '));
  assert.ok(source.includes('not been checked'));
- assert.ok(source.includes('ejPracticalField(p,'));
+ assert.ok(script.includes('function ejEssentialsBlock('));
+ assert.ok(script.includes("f.stat==='unverified'"),'unverified fields must be handled explicitly');
 });
 test('all four feature areas are reachable from the editorial navigation',()=>{
  for(const anchor of ['#browse','#fieldnotes','#visitor-info','#mood'])assert.ok(source.includes('href="'+anchor+'"'));

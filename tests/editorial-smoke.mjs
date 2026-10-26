@@ -109,11 +109,13 @@ test('the route collection contains ten real stop lists',()=>{
  for(const r of routes)for(const name of r.stops)
    assert.ok(data[r.city].places.some(p=>p.name===name),r.id+': '+name);
 });
-test('the practical-information pilot has explicit sources',()=>{
+test('the practical-information layer has explicit, dated sources',()=>{
+ const w={};vm.runInNewContext(readFileSync(resolve(__dirname,'../data/visitor-essentials.js'),'utf8'),{window:w});
+ const byName=Object.fromEntries(w.EJ_ESSENTIALS_V1.records.map(r=>[r.name,r]));
  for(const name of ['東京国立博物館','国立西洋美術館','清水寺']){
-  assert.ok(source.includes('"'+name+'":{'),name);
+  assert.ok(byName[name],name);
+  assert.ok(byName[name].fields.some(f=>f.stat==='official'&&/^https:/.test(f.src)&&/^\d{4}-\d{2}-\d{2}$/.test(f.chk)),name+' needs a dated official field');
  }
- assert.ok(source.includes('2026-10-24'));
  assert.ok(source.includes('not been checked'));
  assert.ok(source.includes('Official visitor information'));
 });
