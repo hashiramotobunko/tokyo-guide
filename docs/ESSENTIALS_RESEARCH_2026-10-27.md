@@ -22,19 +22,19 @@ The page loads the two data files as plain scripts, so double-clicking `tokyo-gu
 
 Nothing is inferred from venue type. Google Maps category or hours were **not** used as a source.
 
-## Counts (2026-10-27)
+## Counts (2026-10-27, after batch 3 commit 37fc88b)
 | Measure | Count |
 |---|---|
-| Listings processed (researched) | 36 of 526 (35 route stops + Tsutenkaku) |
-| Records with at least one official field | 19 |
-| Records with secondary information only | 13 |
-| Records with nothing confirmable | 4 (Yonemoto Coffee, Soul Sonic Boogie, MOD'Z, bar dop) |
-| Fields recorded | 165 (official 80 · secondary 43 · conflict 4 · unverified 36 · not applicable 2) |
-| Official website found | 23 of 36 |
-| Conflicting-source fields | 4 (First Crop hours, Spincoaster cover, Kameya hours, Ootako hours) |
-| Not started | 490 |
+| Listings processed (researched) | 371 of 526 (batch 1: 36 route stops + Tsutenkaku; batch 2: all 101 museums, temples, shrines, landmarks, parks, baths and venues; batch 3: 234 of 389 food, drink and shop listings) |
+| Records with at least one official field | 139 |
+| Records with secondary information only | 143 |
+| Records with nothing confirmable (every field unverified) | 89 — mostly small bars, izakaya and neighbourhood eateries whose official pages could not be reached (domain not found, 404, 429 rate limiting) or that have no web presence |
+| Fields recorded | 1,246 (official 451 · secondary 312 · conflict 31 · unverified 437 · not applicable 15) |
+| Official website found | 170 of 371 |
+| Records with a conflicting-source field | 30 (both values stored, shown as "Sources disagree") |
+| Not started | 155 (Tokyo 87, Hokkaido 28, Kyoto 21, Osaka 14, other prefectures 5 or fewer each) |
 
-Re-verification of the eight pre-existing records (TNM, NMWA, Tobikan, Kiyomizu, Meiji Jingu, Tsutenkaku, MAIDENS, Mizuno): all re-read on 2026-10-27. Changes found: TNM now lists card/e-money payment and a security-screening notice; NMWA lists a 2027 collection closure; Tobikan's HTML guide was unavailable (503) so its hours come from the museum's access PDF; Kiyomizu's regular closing time (18:00 / 18:30) was found on the open-hours notice; Meiji Jingu's November gate times were added.
+Re-verification of the 36 batch-1 records on 2026-10-27: Yonemoto Coffee (official 7:30–20:00), MOD'Z (official, closed Sun) and bar dop (official 19:00–2:00) moved from unverified to official; Soul Sonic Boogie, Ootako, Kameya, First Crop and Spincoaster keep both disagreeing values as `conflict`; Tobikan's HTML guide was still 503 so its hours come from the museum's own access PDF; TNM now lists card/e-money payment and a security-screening notice; NMWA lists a 2027 collection closure; Kiyomizu's regular closing time (18:00 / 18:30) and Meiji Jingu's November gate times were added.
 
 ## Flags for the owner
 | Place | Flag |
@@ -47,10 +47,16 @@ Re-verification of the eight pre-existing records (TNM, NMWA, Tobikan, Kiyomizu,
 | 瑞穂 | Hours come from a 2022 article |
 | 本家大たこ 道頓堀本店 | Opening time differs between listings |
 | 自由軒 | Tempozan branch closed 27 Sep 2026 (the listed Namba shop is unaffected) |
-No closure or relocation suspicion was found for any of the 36 researched listings.
+| Wakiya 一笑美茶樓 | Official notice: temporarily closed for rebuilding from 16 Oct 2026 |
+| 道頓堀グリコサイン | Sign renewal works announced from Dec 2026 |
+| 東京ミッドタウン | Official notice: facility closure 21–23 Nov 2026 |
+| 青山グランドホテル (川上庵の建物) | Official data-breach notice on the hotel site |
+| 思い出横丁の各店 | Association listings dated 2021; treated as secondary |
+| 成蔵 / 不二 / étéco / BAKER Aoyagi / 分とく山 / 秋本 / 明寂 / おさめ / ASO | Official address is in a neighbouring area to the one the listing is filed under (南阿佐ヶ谷 / 池尻大橋 / 池ノ上 / 東北沢 / 南麻布 / 麹町 / 西麻布 / 目白 / 代官山); listing left unchanged, flagged for the owner |
+Apart from the Wakiya rebuilding closure above, no closure or relocation suspicion was found among the 371 researched listings; no listing was removed or edited.
 
-## Resuming the remaining 490
-1. `data/research-ledger.json` → take rows with `status:"not-started"`, lowest `batch` first (batch 2 = 101 museums, temples, shrines, landmarks, parks, baths, venues; batch 3 = 389 food, drink and shops).
+## Resuming the remaining 155
+1. `data/research-ledger.json` → take rows with `status:"not-started"`, lowest `batch` first (batch 2 is complete; the 155 left are all batch 3 food, drink and shop listings).
 2. For each: find the official site (search engine, then the venue's own SNS), read hours / closed days / fees / booking / payment / access / language / accessibility / notices; record one field per item with its URL and today's date; mark `unverified` where nothing is found and `conflict` where sources disagree.
-3. Append the record to `data/visitor-essentials.js`, run `node scripts/build_research_ledger.mjs`, then `node --test tests/*.test.mjs tests/*smoke.mjs`.
+3. Put the records in a batch JSON and run `node scripts/add_essentials_records.mjs batch.json` (merges into `data/visitor-essentials.json`, regenerates `data/visitor-essentials.js` and the ledger), then `node --test tests/*.test.mjs tests/*smoke.mjs`.
 4. Never edit `const DATA`; never delete a listing — a suspected closure is a `flags` entry on the record.

@@ -8,16 +8,16 @@ Scope: the ten DRAFT routes (35 stops) in `tokyo-guide_2.html`. Machine-readable
 | ① Official name and address | Official site or association page where one exists; otherwise dated directory listing | Recorded per stop in `data/visitor-essentials.js` |
 | ② Google Maps URL points to the right venue | Each listing's **existing** Maps link was opened in a browser; the resolved place name and coordinates were recorded (`mapsResolved`, `lat`, `lon`) | 35/35 resolved to the intended venue |
 | ③ Same-name / moved / in-building confusion | Address compared with the official page; notes recorded (e.g. Santosham is 2F of the Komuro Bldg; Mizuho's Waseda namesake is unrelated; The Great Burger's Shibuya Stream branch is a different shop) | No mismatches found |
-| ④⑥ Walking route and distance | OSRM (OpenStreetMap foot profile) between the resolved coordinates; minutes = distance ÷ 80 m/min; 5 legs cross-checked with the Google Maps walking preview | Map estimates only |
+| ④⑥ Walking route and distance | OSRM (OpenStreetMap foot profile) between the resolved coordinates; distance stored per leg; **all 24 legs** read on the Google Maps walking preview and the preview minutes stored as `gmin` / `gchk` | Map estimates only |
 | ⑤ Stop order | All permutations compared on OSRM distance, then opening windows applied | 4 routes reordered (below) |
 | ⑦ Steps, slopes, closures | Only what official pages state (Kiyomizu slopes and no-step route; Takeshita bollards 11:00–18:00; Kiyomizu street closure 8:00–19:00). Not surveyed. | Partial |
 | ⑧ Same-day feasibility by hours | Opening windows from the essentials layer | See per-route notes |
 | ⑨ Accessibility | Official statements only (Kiyomizu, Minamiza, NMWA, Meiji Jingu wheelchairs, Ueno Park parking) | 6 stops with official info |
 | ⑩ Editorial meaning | Written per route (`whyWalk`, `whyTogether`, `culture` with sources) | Done |
 
-**Nothing was walked on the ground.** Every route stays `fieldVerified:false` and is labelled “DRAFT · MAP-CHECKED · NOT FIELD-WALKED”. Google Maps was used manually through its normal web interface (one page per listing, five direction previews); no scraping or unofficial API.
+**Nothing was walked on the ground.** Every route stays `fieldVerified:false` and is labelled “DRAFT · MAP-CHECKED · NOT FIELD-WALKED”. Google Maps was used manually through its normal web interface (one page per listing, one direction preview per leg: 24 previews); no scraping or unofficial API.
 
-Google Maps walking-preview spot checks (read from the preview, 2026-10-27): Kiyomizu-dera → Yasaka 19 min; TNM → Shinobazu Pond 13 min; Meiji Jingu (Honden) → Takeshita St 19 min; CAVE → Chaos 17 min; Ebisubashi → Jiyuken 6 min. OSRM distances for the same legs: 1,993 m / 1,500 m / 2,671 m / 1,292 m (two legs) / 1,019 m.
+Google Maps walking-preview minutes per leg (read from the preview, 2026-10-27): Jimbocho 9+3; Shibuya 14+3; Higashiyama 19+8+6; Ueno 6+6+11; Kiyosumi 1+5; Harajuku 21+2+10; Ebisu 4+6; Koenji 3+6+7; Shinjuku 1+1+1; Namba 6+3. Route cards show these minutes next to the OSRM distance, labelled as a map check only.
 
 ## Per-route results
 | Route (city / area) | Stops | OSRM total | Order | Hours official / any | Access info | Open issues |
@@ -40,5 +40,5 @@ Every stop's existing Google Maps link resolved to the expected venue. Resolved 
 
 ## Still open
 - On-foot verification of all ten sequences (stairs, crossings, night access, actual minutes).
-- Official hours for 13 stops (see table), accessibility for 29 stops.
+- Official hours for 18 of 35 stops (17 have official hours, 31 have hours from some source); accessibility information for 29 stops.
 - A Japanese-speaking phone check for the eight small bars/shops with no web presence.
