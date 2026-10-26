@@ -9,6 +9,80 @@ window.EJ_ESSENTIALS_V1 = {
  "method": "Manual web research by the editor (official site first, then dated secondary sources). No automated scraping of Google Maps; destination identity confirmed by opening each listing's existing Google Maps link.",
  "records": [
   {
+   "key": "Tokyo|0x6019243ca0adcb79:0x5abecb2c4f2cd978",
+   "name": "青梅ゴルフ倶楽部",
+   "city": "Tokyo",
+   "nameEn": "Ome Golf Club",
+   "website": "",
+   "fields": [
+    {
+     "t": "closed",
+     "v": "First Monday of each month (may change Jul–Dec), 31 Dec and 1 Jan (booking site).",
+     "src": "https://reserve.golfdigest.co.jp/golf-course/detail/360501",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official domain did not resolve."
+    },
+    {
+     "t": "access",
+     "v": "1-490 Negabu, Ome; nearest JR Higashi-Ome with a club bus; about 7 km from Ome IC.",
+     "src": "https://reserve.golfdigest.co.jp/golf-course/detail/360501",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b741846e493:0x7e175b3bc37b14ab",
+   "name": "健康マラソン時計塔",
+   "city": "Tokyo",
+   "nameEn": "Imperial Palace runners' clock tower (Sakuradamon)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Street monument."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188d6afa810db3:0x59c0a3b3a839689c",
    "name": "三燈舎",
    "city": "Tokyo",
@@ -72,6 +146,216 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Tokyo|0x60188bf16c840001:0xd836abfffa0bad15",
+   "name": "皇居外苑",
+   "city": "Tokyo",
+   "nameEn": "Kokyo Gaien National Garden",
+   "website": "https://www.env.go.jp/garden/kokyogaien/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Open at all times; access may be restricted during state events for security. Rest facilities 10:00–16:00; some public toilets are locked at night.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "No closing days (security exception applies).",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Wheelchair loans and written-communication tools are available; vehicles carrying wheelchair users may be allowed into the Nanko car park by prior arrangement.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Fully smoke-free since April 2020; no bicycle parking; drones, ball games and plant collecting prohibited; commercial photography needs a permit.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Station access is on a separate ministry page that could not be read."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188bbe135743b3:0xee3b158505f63c95",
+   "name": "桜田門",
+   "city": "Tokyo",
+   "nameEn": "Sakurada-mon Gate",
+   "website": "https://www.env.go.jp/garden/kokyogaien/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Part of Kokyo Gaien National Garden, which is open at all times (security restrictions possible). The statement is for the garden as a whole.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Sakuradamon Station (Yurakucho line) exit 5 is about 1 min from the Ministry of Justice red-brick building opposite the gate (ministry page).",
+     "src": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c08ff09e7ef:0xeaea5e2756b206ff",
+   "name": "大手門",
+   "city": "Tokyo",
+   "nameEn": "Ote-mon Gate (East Gardens entrance)",
+   "website": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Opens with the East Gardens: 9:00–16:30 in October (entry until 16:00), 9:00–16:00 November–February; longer in spring and summer.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays and Fridays; 28 Dec–3 Jan (East Gardens closures).",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 5 min from Otemachi Station exit C13a; 15 min from JR Tokyo Station Marunouchi North Exit.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b0042aaab0f:0xd24c1e32451d9e80",
+   "name": "行幸通り",
+   "city": "Tokyo",
+   "nameEn": "Gyoko-dori Avenue",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Public avenue between Tokyo Station and the Palace."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188bf979712903:0x710fa891148d8b9a",
+   "name": "東京駅丸の内駅前広場",
+   "city": "Tokyo",
+   "nameEn": "Tokyo Station Marunouchi Square",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Public square."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188d51dd8637f7:0x96e78274a1151f6",
    "name": "MAIDENS SHOP JIMBOCHO",
    "city": "Tokyo",
@@ -108,6 +392,426 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188ccbbe3d8c67:0x9d905d555ff62071",
+   "name": "東京乗馬倶楽部",
+   "city": "Tokyo",
+   "nameEn": "Tokyo Riding Club",
+   "website": "https://www.tokyo-rc.or.jp/",
+   "fields": [
+    {
+     "t": "closed",
+     "v": "Mondays (next non-holiday weekday if Monday is a holiday).",
+     "src": "https://www.tokyo-rc.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Trial riding and visitor plans exist; ride reservations open one week ahead at 11:00 by phone (03-3320-6860).",
+     "src": "https://www.tokyo-rc.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 2 min from Odakyu Sangubashi Station (two stops from Shinjuku).",
+     "src": "https://www.tokyo-rc.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cc96dcfffff:0x78eb92c680962890",
+   "name": "全日本弓道連盟 中央道場",
+   "city": "Tokyo",
+   "nameEn": "All Nippon Kyudo Federation Central Dojo",
+   "website": "https://www.kyudo.jp/schedule/chuoshinsa/overview.html",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "The federation publishes the dojo's overview and schedule of use; public opening is not described.",
+     "src": "https://www.kyudo.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cc963c8d41d:0xfebf16ff398d39f1",
+   "name": "明治神宮 至誠館",
+   "city": "Tokyo",
+   "nameEn": "Meiji Jingu Shiseikan Martial Arts Hall",
+   "website": "https://www.meijijingu.or.jp/shiseikan/",
+   "fields": [
+    {
+     "t": "reservation",
+     "v": "Training hall with an admission guide for students; beginner intake for kyudo announced on the official page. Spectator access is not stated.",
+     "src": "https://www.meijijingu.or.jp/shiseikan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Inside the Meiji Jingu grounds (1-1 Yoyogi Kamizonocho); about 10 min on foot from any shrine entrance to the central precinct.",
+     "src": "https://www.meijijingu.or.jp/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cb579f4c22b:0x62ff6efc447ae032",
+   "name": "国立オリンピック記念青少年総合センター",
+   "city": "Tokyo",
+   "nameEn": "National Olympics Memorial Youth Center",
+   "website": "https://nyc.niye.go.jp/",
+   "fields": [
+    {
+     "t": "reservation",
+     "v": "Facilities are used by registered groups via an application form (group numbers take about two weeks); individual overnight stays are booked separately. Reception 9:00–15:00 except closed days.",
+     "src": "https://nyc.niye.go.jp/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "3-1 Yoyogi Kamizonocho, Shibuya-ku 151-0052.",
+     "src": "https://nyc.niye.go.jp/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d080884d8cd:0x800997af0671e00c",
+   "name": "ペダリコ（代々木公園サイクリングセンター）",
+   "city": "Tokyo",
+   "nameEn": "pedalico Yoyogi Park Cycling Centre",
+   "website": "https://www.tokyo-park.or.jp/park/yoyogi/",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "A temporary closure of the pedalico cycling centre was announced by the park on 21 Oct 2026 (details not given).",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ],
+   "flags": [
+    "temporary-closure-announced"
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d07279b7eb9:0xfd6263394db99d1e",
+   "name": "十四烈士の碑",
+   "city": "Tokyo",
+   "nameEn": "Monument to the Fourteen Martyrs (Yoyogi Park)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Inside Yoyogi Park, open at all times.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The park page does not describe the monument itself."
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cb31a82247b:0x942542c36a1b3b20",
+   "name": "日本航空発始之地",
+   "city": "Tokyo",
+   "nameEn": "Birthplace of Japanese Aviation monument (Yoyogi Park)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Inside Yoyogi Park, open at all times.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The park page does not describe the monument itself."
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cb479620a33:0x34bcc78ce7f8bf3e",
+   "name": "代々木公園",
+   "city": "Tokyo",
+   "nameEn": "Yoyogi Park",
+   "website": "https://www.tokyo-park.or.jp/park/yoyogi/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Open at all times; service centre and facilities close at year-end.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free (some facilities charge).",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 3 min from JR Harajuku, Yoyogi-koen (Chiyoda line) or Meiji-jingumae; 6 min from Odakyu Yoyogi-Hachiman. Paid parking, 65 spaces.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Service centre 03-3469-6081. The pedalico cycling centre announced a temporary closure on 21 Oct 2026.",
+     "src": "https://www.tokyo-park.or.jp/park/yoyogi/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f3510abfcf29:0x447d943f8a75b1f8",
+   "name": "東京大学 駒場キャンパス",
+   "city": "Tokyo",
+   "nameEn": "University of Tokyo, Komaba Campus",
+   "website": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "Campus visits are open but groups of 15 or more must register online; no entry on entrance-exam days; no visitor parking. Komaba and Hongo have separate visitor rules.",
+     "src": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free to walk the campus.",
+     "src": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Gate hours not stated."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f3456ed19147:0x236126b2642edb51",
+   "name": "旧前田家本邸 洋館",
+   "city": "Tokyo",
+   "nameEn": "Former Maeda Family Residence, Western-style House",
+   "website": "https://www.city.meguro.tokyo.jp/shougaigakushuu/bunkasports/rekishibunkazai/kyumaeda.html",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–16:00.",
+     "src": "https://www.city.meguro.tokyo.jp/shougaigakushuu/bunkasports/rekishibunkazai/kyumaeda.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays and Tuesdays (open if a holiday); 29 Dec–3 Jan.",
+     "src": "https://www.city.meguro.tokyo.jp/shougaigakushuu/bunkasports/rekishibunkazai/kyumaeda.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.city.meguro.tokyo.jp/shougaigakushuu/bunkasports/rekishibunkazai/kyumaeda.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "4-3-55 Komaba, Meguro-ku (Komaba Park); about 8 min from Komaba-Todaimae (Keio Inokashira line). Office 03-3466-5150.",
+     "src": "https://www.city.meguro.tokyo.jp/shougaigakushuu/bunkasports/rekishibunkazai/kyumaeda.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
      "v": "",
      "src": "",
      "st": "",
@@ -173,6 +877,642 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Tokyo|0x60188d12a036deb9:0x81f86416f05055ec",
+   "name": "東洋文庫ミュージアム",
+   "city": "Tokyo",
+   "nameEn": "Toyo Bunko Museum",
+   "website": "https://toyo-bunko.or.jp/museum/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "10:00–17:00, entry until 16:30.",
+     "src": "https://toyo-bunko.or.jp/museum/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Tuesdays (open on holiday Tuesdays, closed the next weekday); year-end, exhibition changes.",
+     "src": "https://toyo-bunko.or.jp/museum/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "General ¥1,000; 65+ ¥900; university ¥800; high school ¥700; junior high and under free; disability ¥500 (one companion ¥500).",
+     "src": "https://toyo-bunko.or.jp/museum/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "2-28-21 Honkomagome, Bunkyo-ku. About 8 min from Komagome (JR Yamanote / Namboku exit 2); 7 min from Sengoku exit A4 (Mita line).",
+     "src": "https://toyo-bunko.or.jp/museum/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188dbdf73e4461:0x7648774313f66fe5",
+   "name": "六義園",
+   "city": "Tokyo",
+   "nameEn": "Rikugien Garden",
+   "website": "https://www.tokyo-park.or.jp/park/rikugien/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–17:00, last entry 16:30; extended during some events.",
+     "src": "https://www.tokyo-park.or.jp/park/rikugien/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "29 Dec–1 Jan.",
+     "src": "https://www.tokyo-park.or.jp/park/rikugien/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "General ¥300; 65+ ¥150; elementary children and Tokyo junior-high students free; disability-certificate holders plus one companion free. Free on 4 May and 1 Oct.",
+     "src": "https://www.tokyo-park.or.jp/park/rikugien/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Transit IC and other e-money, major credit cards and QR payments accepted.",
+     "src": "https://www.tokyo-park.or.jp/park/rikugien/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "6-16-3 Honkomagome, Bunkyo-ku.",
+     "src": "https://www.tokyo-park.or.jp/park/rikugien/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Station details sit in a part of the page that could not be read."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c4646de5005:0x1b220216ae23c25e",
+   "name": "小石川後楽園",
+   "city": "Tokyo",
+   "nameEn": "Koishikawa Korakuen Garden",
+   "website": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–17:00, last entry 16:30; extended during some events.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "29 Dec–1 Jan.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "General ¥300; 65+ ¥150; elementary children and Tokyo junior-high students free; disability-certificate holders plus one companion free. Free on 4 May and 1 Oct.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Transit IC and other e-money, major credit cards and QR payments accepted at the gate.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "East gate: 5 min from JR Suidobashi West Exit, 6 min from Korakuen exit 2, 8 min from Toei Suidobashi exit A2. West gate: 3 min from Oedo-line Iidabashi exit C3. No parking.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Wheelchair-accessible route and barrier-free map published (PDF); accessible toilet and a folding care bed at the East gate.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "language",
+     "v": "Free English garden guides on Saturdays at 10:30 and 13:30 (suspended July–August).",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Night viewing 13–24 Nov 2026 (18:00–21:00) and autumn foliage period 21 Nov–6 Dec 2026. Pets not allowed; preschool children must be accompanied.",
+     "src": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c4782eed4f3:0x5058b288249e640e",
+   "name": "東京ドーム",
+   "city": "Tokyo",
+   "nameEn": "Tokyo Dome",
+   "website": "https://www.tokyo-dome.co.jp/dome/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "1-3-61 Koraku, Bunkyo-ku. From JR Suidobashi (West or East Exit), Tokyo Metro Korakuen, or Toei Mita line Suidobashi exit A2; a barrier-free route is published from the JR East Exit and exit A2. Walking minutes are not stated.",
+     "src": "https://www.tokyo-dome.co.jp/dome/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Parking is very crowded on holidays and event days; public transport recommended.",
+     "src": "https://www.tokyo-dome.co.jp/dome/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Event venue."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "A barrier-free route page exists but was not read."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d89aadfca4d:0xd846ee769ca6898e",
+   "name": "MUFGスタジアム（国立競技場）",
+   "city": "Tokyo",
+   "nameEn": "Japan National Stadium",
+   "website": "https://jns-e.com/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "10-1 Kasumigaokamachi, Shinjuku-ku. About 1 min from Kokuritsu-Kyogijo exit A2 (Oedo line); 5 min from JR Sendagaya or Shinanomachi; 9 min from Gaienmae exit 3.",
+     "src": "https://jns-e.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Operated since April 2025 by Japan National Stadium Entertainment; stadium tours are advertised on the operator's site (details not stated on the page read). An official app with mobile ordering launched 19 Oct 2026.",
+     "src": "https://jns-e.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Event venue; tour hours not read."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f2b568d9492f:0xf0bee087b5e3be17",
+   "name": "松本湯",
+   "city": "Tokyo",
+   "nameEn": "Matsumoto-yu (sento)",
+   "website": "https://matsumoto-yu.com/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "14:00–24:00 Monday–Saturday; Sundays 8:00–12:00 and 15:00–24:00.",
+     "src": "https://matsumoto-yu.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Thursdays (open on holiday Thursdays, closed the next day).",
+     "src": "https://matsumoto-yu.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥600; junior-high ¥300; ages 6–11 ¥200; under 6 ¥100. Sauna ¥500 extra. Face towel ¥50, bath towel ¥100.",
+     "src": "https://matsumoto-yu.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Credit cards and e-money such as Suica and PayPay.",
+     "src": "https://matsumoto-yu.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "5-29-12 Higashi-Nakano. About 8 min from JR Higashi-Nakano east exit; 3 min from Ochiai exit 3 (Tozai line); 8 min from Seibu Shimo-Ochiai.",
+     "src": "https://matsumoto-yu.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Tattoos permitted; shampoo and body soap provided; no accommodation.",
+     "src": "https://matsumoto-yu.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f2c98b965925:0xaa3f1c2caa89d0ab",
+   "name": "アクア東中野",
+   "city": "Tokyo",
+   "nameEn": "Aqua Higashi-Nakano (sento)",
+   "website": "https://www.aqua-higashinakano1010.com/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "15:00–24:00.",
+     "src": "https://www.aqua-higashinakano1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays (next day if a holiday).",
+     "src": "https://www.aqua-higashinakano1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥600; junior-high ¥500; elementary ¥200; preschool ¥100. Sauna ¥500 extra (adults), bath towel included; preschoolers cannot use the sauna.",
+     "src": "https://www.aqua-higashinakano1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "4-9-22 Higashi-Nakano. About 2 min from JR Higashi-Nakano East Exit 2; 5 min from Oedo-line Higashi-Nakano A1 or Ochiai exit 2b.",
+     "src": "https://www.aqua-higashinakano1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188e9822404bfb:0x6f65f3c536670490",
+   "name": "寿湯",
+   "city": "Tokyo",
+   "nameEn": "Kotobuki-yu (sento, Higashi-Ueno)",
+   "website": "",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "Bath ¥550; sauna ¥350 extra on weekdays, ¥450 at weekends and holidays; towel set ¥100 (media article).",
+     "src": "https://www.nap-camp.com/mag/75113",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "No official site found."
+    },
+    {
+     "t": "hours",
+     "v": "11:00–25:30 (sauna directory listings, 2021–2023).",
+     "src": "https://onsen.nifty.com/ueno-tokyo-onsen/onsen007554/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f4ab8aab6931:0x2dc60dfc93b2fd97",
+   "name": "文化浴泉",
+   "city": "Tokyo",
+   "nameEn": "Bunka Yokusen (sento)",
+   "website": "https://bunkayokusen1010.com/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Monday, Tuesday, Thursday, Friday 14:00–25:00; Saturday and Sunday 10:00–24:00.",
+     "src": "https://bunkayokusen1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Wednesdays; a summer closure in mid-August.",
+     "src": "https://bunkayokusen1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Reopened after renovation on 7 Mar 2023; busy over New Year when neighbouring baths close.",
+     "src": "https://bunkayokusen1010.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c2acac1c13b:0x23941711c439d23f",
+   "name": "谷中霊園",
+   "city": "Tokyo",
+   "nameEn": "Yanaka Cemetery",
+   "website": "https://www.tokyo-park.or.jp/reien/yanaka/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "About 6 min on foot from JR / Keisei Nippori; management office 8:30–17:30, closed 29 Dec–3 Jan (Tokyo Metropolitan Government document).",
+     "src": "https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/000007722",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Management office 03-3821-4456; the grave of Tokugawa Yoshinobu lies in the adjoining Kan'ei-ji cemetery.",
+     "src": "https://www.kotsu.metro.tokyo.jp/pickup_information/pickup/pdf/pickup_202112.pdf",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d005d62fb8b:0x7503a6ae43defb0d",
+   "name": "東京藝術大学大学美術館",
+   "city": "Tokyo",
+   "nameEn": "The University Art Museum, Tokyo University of the Arts",
+   "website": "https://museum.geidai.ac.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Vary by exhibition; closed between exhibitions (check the exhibition listing).",
+     "src": "https://museum.geidai.ac.jp/information/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Set per exhibition.",
+     "src": "https://museum.geidai.ac.jp/information/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "12-8 Ueno Park. About 10 min from JR Ueno Park Exit or Nezu exit 1; 15 min from Keisei Ueno or Tokyo Metro Ueno exit 7. No parking.",
+     "src": "https://museum.geidai.ac.jp/information/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d19e560332b:0x7e96ff8acef2f53a",
+   "name": "東京芸術大学 上野キャンパス 赤レンガ１号館",
+   "city": "Tokyo",
+   "nameEn": "Tokyo University of the Arts, Red Brick Building No. 1",
+   "website": "",
+   "fields": [
+    {
+     "t": "access",
+     "v": "On the Ueno campus: about 10 min from JR Ueno Park Exit (university museum access page).",
+     "src": "https://museum.geidai.ac.jp/information/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Campus building; public opening not stated."
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188c20944ac5a3:0x58638bc622e5b86a",
    "name": "不忍池",
    "city": "Tokyo",
@@ -227,6 +1567,272 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Tokyo|0x60188c69973527f1:0x1150138c6d50f20",
+   "name": "大村益次郎像",
+   "city": "Tokyo",
+   "nameEn": "Statue of Omura Masujiro (Yasukuni Shrine)",
+   "website": "https://www.yasukuni.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Inside the Yasukuni Shrine precinct: gates open 6:00, close 17:00 (Jan, Feb, Nov, Dec) or 18:00 (Mar–Oct).",
+     "src": "https://www.yasukuni.or.jp/precincts/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 5 min from Kudanshita Station exit 1.",
+     "src": "https://www.yasukuni.or.jp/access.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188bf14f2d21f9:0xb0e118ba4e4e5f87",
+   "name": "楠木正成公像",
+   "city": "Tokyo",
+   "nameEn": "Kusunoki Masashige Statue (Kokyo Gaien)",
+   "website": "https://www.env.go.jp/garden/kokyogaien/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Stands in Kokyo Gaien National Garden, which is open at all times (security restrictions possible).",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "The garden asks runners not to use the pavements around the statue because of pedestrian traffic.",
+     "src": "https://www.env.go.jp/garden/kokyogaien/2_guide/kokyomaehiroba_wadakurafunsuikouen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188bf09e4ea919:0xff4be92edd7478cc",
+   "name": "議事堂前 銀杏並木",
+   "city": "Tokyo",
+   "nameEn": "Ginkgo avenue in front of the National Diet",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Public street."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b000e66b1c1:0x95d4fdaf23eeb45d",
+   "name": "都立日比谷高校正門（旧村井吉兵衛邸表門）",
+   "city": "Tokyo",
+   "nameEn": "Hibiya High School main gate (former Murai residence gate)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "School gate viewed from the street."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x601fa6c4e4114317:0xef431afda2747c8f",
+   "name": "日枝神社",
+   "city": "Tokyo",
+   "nameEn": "Hie Shrine",
+   "website": "https://www.hiejinja.net/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates 6:00–17:00; amulet and goshuin office 8:00–16:00; prayer reception and treasure hall 9:00–16:00.",
+     "src": "https://www.hiejinja.net/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 3 min from Akasaka exit 2 (Chiyoda line) or Tameike-sanno exit 7 (Namboku and Ginza lines); 5 min from Kokkai-gijidomae exit 5; 8 min from Akasaka-mitsuke exit 11. Parking available.",
+     "src": "https://www.hiejinja.net/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "2-10-5 Nagatacho, Chiyoda-ku 100-0014. Tel 03-3581-2471.",
+     "src": "https://www.hiejinja.net/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The escalator on the Sanno-bashi approach is not described on the official pages read."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c7e121ee92b:0x5761574668b96c9",
+   "name": "豊川稲荷東京別院",
+   "city": "Tokyo",
+   "nameEn": "Toyokawa Inari Tokyo Betsuin",
+   "website": "https://toyokawainari-tokyo.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates 6:00–20:00, no closing days (listing dated October 2025).",
+     "src": "https://www.walkerplus.com/spot/ar0313s30782/data.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official site could not be loaded (TLS error)."
+    },
+    {
+     "t": "fee",
+     "v": "Precinct free (listings).",
+     "src": "https://rurubu.jp/andmore/article/22532",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1-4-7 Moto-Akasaka; about 5–7 min from Akasaka-mitsuke exit B (listings differ on minutes).",
+     "src": "https://www.walkerplus.com/spot/ar0313s30782/data.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c9a0eb42e39:0x5a174085841c5258",
+   "name": "明治神宮野球場",
+   "city": "Tokyo",
+   "nameEn": "Meiji Jingu Stadium",
+   "website": "https://www.jingu-stadium.com/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "3-1 Kasumigaokamachi, Shinjuku-ku. About 5 min from Gaienmae exit 3 (Ginza line); 12 min from JR Shinanomachi or Kokuritsu-Kyogijo exit A2 (Oedo line); 15 min from JR Sendagaya.",
+     "src": "https://www.jingu-stadium.com/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Opens for games and events only."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188cbaf1de5995:0xc2becc88ea4e7eb5",
    "name": "竹下通り",
    "city": "Tokyo",
@@ -269,6 +1875,128 @@ window.EJ_ESSENTIALS_V1 = {
      "chk": "2026-10-27",
      "by": "manual-web",
      "note": "Public street."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188cbb44148d5b:0xc0625df2fd2a8e82",
+   "name": "東郷神社",
+   "city": "Tokyo",
+   "nameEn": "Togo Shrine",
+   "website": "https://togojinja.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates open 6:00 (April–October) or 6:30 (November–March) and close 17:00; 1–3 January until 18:00.",
+     "src": "https://togojinja.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 3 min from JR Harajuku Takeshita exit; about 5 min from Meiji-jingumae exit 5. Takeshita Street is crowded; the shrine asks visitors to follow its marked route. Paid parking 6:45–24:00.",
+     "src": "https://togojinja.or.jp/access",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "1-5-3 Jingumae, Shibuya-ku 150-0001.",
+     "src": "https://togojinja.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d8b2a8b607b:0xa6d657194d2247",
+   "name": "東郷記念館",
+   "city": "Tokyo",
+   "nameEn": "Togo Kinenkan (banquet hall in the Togo Shrine grounds)",
+   "website": "https://togojinja.or.jp/",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "The shrine's site carries a notice that a lawsuit has been filed concerning the operation of Togo Kinenkan (headline only, 2026). Check the current status before planning a visit.",
+     "src": "https://togojinja.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Within the Togo Shrine grounds: about 3 min from JR Harajuku Takeshita exit.",
+     "src": "https://togojinja.or.jp/access",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Private event venue; no public hours found."
+    }
+   ],
+   "flags": [
+    "operation-dispute-reported"
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d2e878cbd75:0x2ba7eeac3d17b982",
+   "name": "水交神社 鳥居",
+   "city": "Tokyo",
+   "nameEn": "Suiko Shrine torii (Togo Shrine grounds)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Within the Togo Shrine grounds: gates 6:00/6:30–17:00 (shrine site).",
+     "src": "https://togojinja.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The shrine site does not describe the torii itself."
+    },
+    {
+     "t": "access",
+     "v": "About 3 min from JR Harajuku Takeshita exit (Togo Shrine access page).",
+     "src": "https://togojinja.or.jp/access",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     }
    ]
   },
@@ -327,6 +2055,335 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Tokyo|0x60188c680dae43d5:0xb5e754e6bf88ce90",
+   "name": "靖國神社",
+   "city": "Tokyo",
+   "nameEn": "Yasukuni Shrine",
+   "website": "https://www.yasukuni.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates open 6:00; close 17:00 in January, February, November and December, 18:00 March–October. Hours may change for festivals.",
+     "src": "https://www.yasukuni.or.jp/precincts/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 5 min from Kudanshita Station exit 1 (Tozai, Hanzomon, Shinjuku lines); about 10 min from JR Iidabashi (West Exit) or Ichigaya. Parking 8:00–22:00, paid except for formal worshippers.",
+     "src": "https://www.yasukuni.or.jp/access.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "3-1-1 Kudankita, Chiyoda-ku 102-8246. Tel 03-3261-8326.",
+     "src": "https://www.yasukuni.or.jp/precincts/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Formal worship (正式参拝) runs about 40 minutes at set times (2 pm most months, 11 am in July and August); group worship needs advance application.",
+     "src": "https://www.yasukuni.or.jp/precincts/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Grounds admission not stated (the museum charges separately)."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x601889004dbccbaf:0x9aa072b051baea03",
+   "name": "木場の角乗",
+   "city": "Tokyo",
+   "nameEn": "Kiba no Kakunori (log-rolling performance)",
+   "website": "https://www.city.koto.lg.jp/103020/bunkasports/bunka/minzoku/6359.html",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "A Koto City intangible folk cultural property performed at the Koto Citizens' Festival (central festival, mid-October, Kiba Park) and shown on film at the January folk-arts gathering; 2026 festival dates were 17–18 October. Contact: Koto City cultural properties section 03-3647-9819.",
+     "src": "https://www.city.koto.lg.jp/103020/bunkasports/bunka/minzoku/6359.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free to watch at the festival (listing).",
+     "src": "https://rurubu.jp/andmore/spot/20000065",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Annual event, not a venue."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188ddec973a031:0xeeb1eede2dcb876",
+   "name": "遊就館",
+   "city": "Tokyo",
+   "nameEn": "Yushukan Museum",
+   "website": "https://www.yasukuni.or.jp/yusyukan/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–16:30, entry until 30 minutes before closing. Hours may change for festivals.",
+     "src": "https://www.yasukuni.or.jp/yusyukan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Open year-round except a few days of cleaning in late June and late December (announced on the site).",
+     "src": "https://www.yasukuni.or.jp/yusyukan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥1,000; university students ¥500; junior-high and high-school students ¥300; elementary pupils free; disability-certificate holders plus one carer free; groups of 20+ 20% off.",
+     "src": "https://www.yasukuni.or.jp/yusyukan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Two wheelchairs at the entrance reception; elevator and wheelchair slope; accessible toilets on each floor; service dogs admitted.",
+     "src": "https://www.yasukuni.or.jp/yusyukan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "language",
+     "v": "English captions were added to the permanent exhibits in January 2025; films are Japanese only.",
+     "src": "https://www.yasukuni.or.jp/yusyukan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "No photography in the exhibition rooms except the entrance hall and Grand Exhibition Hall; children under school age must be accompanied.",
+     "src": "https://www.yasukuni.or.jp/yusyukan/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188900360608cb:0xc639c7c235db70c6",
+   "name": "横綱力士碑",
+   "city": "Tokyo",
+   "nameEn": "Yokozuna Monument (Tomioka Hachimangu)",
+   "website": "",
+   "fields": [
+    {
+     "t": "access",
+     "v": "In the Tomioka Hachimangu precinct; about 3 min from Tokyo Metro Monzen-Nakacho (travel listing).",
+     "src": "https://rurubu.jp/andmore/article/17624",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188911e0485d2b:0x9fbb1c28c26c66e6",
+   "name": "富岡八幡宮",
+   "city": "Tokyo",
+   "nameEn": "Tomioka Hachimangu Shrine",
+   "website": "http://www.tomiokahachimangu.or.jp/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "1-20-3 Tomioka, Koto-ku; about 3 min from Tokyo Metro Monzen-Nakacho, 6 min from the Toei station (travel listing).",
+     "src": "https://rurubu.jp/andmore/spot/80011529",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The official site refused connections on 2026-10-27."
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Regular kanjin sumo began in these grounds in 1684; the Yokozuna monument stands in the precinct (travel listing).",
+     "src": "https://rurubu.jp/andmore/article/17624",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188e95e87e855d:0x214435b365c89bf3",
+   "name": "かっぱ橋道具街",
+   "city": "Tokyo",
+   "nameEn": "Kappabashi Kitchen Town",
+   "website": "https://www.kappabashi.or.jp/",
+   "fields": [
+    {
+     "t": "language",
+     "v": "The street association site has English, Chinese and Korean versions and a member-shop map.",
+     "src": "https://www.kappabashi.or.jp/",
+     "st": "association",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "Association office: 3-18-2 Matsugaya, Taito-ku.",
+     "src": "https://www.kappabashi.or.jp/",
+     "st": "association",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "The 41st Kappabashi Dogu Matsuri (tool festival) was held in early October 2026; shop opening status is updated bimonthly on the site.",
+     "src": "https://www.kappabashi.or.jp/",
+     "st": "association",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Shop hours vary; not stated street-wide."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188ec130fbdd3d:0x5135221a7fa19dbc",
+   "name": "仲見世商店街",
+   "city": "Tokyo",
+   "nameEn": "Nakamise Shopping Street",
+   "website": "https://www.asakusa-nakamise.jp/",
+   "fields": [
+    {
+     "t": "language",
+     "v": "The association site has an English index page.",
+     "src": "https://www.asakusa-nakamise.jp/e-index.html",
+     "st": "association",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Shop hours vary; not stated on the association pages read."
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x6018f38c047eee2f:0x78dbdc2fa6d73f51",
    "name": "bar dop",
    "city": "Tokyo",
@@ -377,6 +2434,69 @@ window.EJ_ESSENTIALS_V1 = {
      "src": "https://bar-dop.com/access.html",
      "st": "official",
      "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188bf4a0df5807:0x9aad51cde0a82c96",
+   "name": "法務省",
+   "city": "Tokyo",
+   "nameEn": "Ministry of Justice Red-Brick Building (Legal History Exhibition Room)",
+   "website": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Exhibition room Monday–Friday 10:00–18:00 (entry until 17:30); on the third Friday it closes at 16:00 for cleaning.",
+     "src": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Saturdays, Sundays, public holidays and 29 Dec–3 Jan; occasional maintenance closures.",
+     "src": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Not needed for individuals; school and group visits must apply in advance.",
+     "src": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 1 min from Sakuradamon Station exit 5 (Yurakucho line); about 3 min from Kasumigaseki exit A1 (Marunouchi and Hibiya lines).",
+     "src": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -937,6 +3057,561 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Tokyo|0x60188e9ceba15bf1:0x89884580e40b3eca",
+   "name": "国立科学博物館",
+   "city": "Tokyo",
+   "nameEn": "National Museum of Nature and Science",
+   "website": "https://www.kahaku.go.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–17:00, entry until 16:30. Special exhibitions keep their own hours.",
+     "src": "https://www.kahaku.go.jp/riyou/nyukan-annai/index.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays (Tuesday if Monday or Sunday is a holiday); 28 Dec–1 Jan; a fumigation closure around June. Open every day in August.",
+     "src": "https://www.kahaku.go.jp/riyou/nyukan-annai/index.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Permanent exhibitions: general and university students ¥630; under 18 and 65+ free; disability-certificate holders plus one carer free. Special exhibitions charged separately.",
+     "src": "https://www.kahaku.go.jp/riyou/nyukan-annai/index.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Major credit cards, transit IC and other e-money, UnionPay, PayPay and Alipay at the permanent-exhibition counter; e-tickets via Asoview.",
+     "src": "https://www.kahaku.go.jp/riyou/nyukan-annai/index.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "7-20 Ueno Park. 5 min from JR Ueno Park Exit; 10 min from Tokyo Metro Ueno (Park Exit) or Keisei Ueno.",
+     "src": "https://www.kahaku.go.jp/riyou/access.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Two wheelchairs and two strollers lent at the entrance desk (first come); accessible toilets on most floors; wheelchair lifts on some exhibition floors; service dogs admitted; stretchers cannot use the elevators.",
+     "src": "https://www.kahaku.go.jp/riyou/kannai-guide/accessibility.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Not required for general admission; advance e-tickets optional.",
+     "src": "https://www.kahaku.go.jp/riyou/nyukan-annai/index.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b7bf6ceeb3f:0x4025f2eaf2aa9d18",
+   "name": "国立新美術館",
+   "city": "Tokyo",
+   "nameEn": "The National Art Center, Tokyo",
+   "website": "https://www.nact.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "10:00–18:00, entry until 30 minutes before closing; some exhibitions open later on certain days.",
+     "src": "https://www.nact.jp/information/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Tuesdays (open on holiday Tuesdays, closed the next weekday).",
+     "src": "https://www.nact.jp/information/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "7-22-2 Roppongi. Directly connected to Nogizaka Station exit 6 (Chiyoda line); about 4 min from Roppongi exit 7 (Oedo line) or 5 min from exit 4a (Hibiya line). No parking.",
+     "src": "https://www.nact.jp/information/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "15 wheelchairs and 11 strollers lent free at the 1F information desk; wheelchair-accessible elevators; multipurpose toilets on every floor; barrier-free entry via Nogizaka exit 6; free admission for disability-certificate holders plus one companion.",
+     "src": "https://www.nact.jp/information/barrierfree/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Each exhibition sets its own admission; building-entry policy not stated on the pages read."
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188934e1ee6539:0xc641f2f12c4bbd3",
+   "name": "江戸東京博物館",
+   "city": "Tokyo",
+   "nameEn": "Edo-Tokyo Museum",
+   "website": "https://www.edo-tokyo-museum.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:30–17:30; Saturdays until 19:30; entry until 30 minutes before closing. Fridays 6, 13, 20 and 27 Nov 2026 until 20:00.",
+     "src": "https://www.edo-tokyo-museum.or.jp/information/hours/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays (next day if a holiday) and year-end/New Year.",
+     "src": "https://www.edo-tokyo-museum.or.jp/information/hours/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Permanent exhibition: general ¥800; 65+ ¥400; university ¥480; high school ¥300; junior high and under free; disability-certificate holders plus two companions free. Special exhibitions priced separately (set tickets available).",
+     "src": "https://www.edo-tokyo-museum.or.jp/information/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Counter: cash, transit IC, credit cards, e-money, QR codes. Online (Webket): Visa, Mastercard, JCB, AMEX, PayPay. No refunds or date changes.",
+     "src": "https://www.edo-tokyo-museum.or.jp/information/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1-4-1 Yokoami, Sumida-ku. About 1 min from Oedo-line Ryogoku exit A3/A4; about 3 min from JR Ryogoku West Exit.",
+     "src": "https://www.edo-tokyo-museum.or.jp/information/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Wheelchairs and strollers lent on 1F, 5F and 6F; accessible toilets on several floors; service dogs admitted; priority parking free for certificate holders; audio and tactile guides for the permanent exhibition.",
+     "src": "https://www.edo-tokyo-museum.or.jp/information/accessibility/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Reopened after a long renovation; the permanent exhibition passed one million visitors in October 2026.",
+     "src": "https://www.edo-tokyo-museum.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018893554b8eb19:0x70237cc76b1dfa74",
+   "name": "両国国技館",
+   "city": "Tokyo",
+   "nameEn": "Ryogoku Kokugikan (Sumo Museum)",
+   "website": "https://www.sumo.or.jp/KokugikanSumoMuseum/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Sumo Museum 10:00–16:30 (entry until 16:00) outside tournaments; from 12:30 during Tokyo tournaments (official leaflet, January 2026).",
+     "src": "https://sumo.or.jp/pdf/sumo_museum/260111_leaflet.pdf",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Museum free; a tournament ticket is required on tournament days (official leaflet).",
+     "src": "https://sumo.or.jp/pdf/sumo_museum/260111_leaflet.pdf",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1-3-28 Yokoami, Sumida-ku; about 1 min from JR Ryogoku West Exit, about 5 min from Oedo-line Ryogoku exit A4 (official leaflet).",
+     "src": "https://sumo.or.jp/pdf/sumo_museum/260111_leaflet.pdf",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Closing days change with exhibitions; the museum's HTML page returned an error on 2026-10-27."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c13425af13d:0xa31b000a35db03f9",
+   "name": "皇居東御苑",
+   "city": "Tokyo",
+   "nameEn": "Imperial Palace East Gardens",
+   "website": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–16:30 in October (entry until 16:00); 9:00–16:00 November–February (entry until 15:30); 9:00–17:00 March–14 April and September; 9:00–18:00 15 April–August.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays and Fridays; 28 Dec–3 Jan; event days. National holidays other than the Emperor's Birthday are open (a holiday Monday opens and the following Tuesday closes).",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free; no advance reservation required.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Enter by Ote-mon (about 5 min from Otemachi exit C13a, 10 min from Nijubashimae exit 6, 15 min from JR Tokyo Marunouchi North Exit), Hirakawa-mon or Kitahanebashi-mon (about 5 min from Takebashi exit 1a).",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Admission guidelines (PDF) govern prohibited acts; photography rules are on a separate page.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c1ecc161bed:0xf397e4b6bf417c8b",
+   "name": "神田神社（神田明神）",
+   "city": "Tokyo",
+   "nameEn": "Kanda Myojin Shrine",
+   "website": "https://www.kandamyoujin.or.jp/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "2-16-2 Sotokanda. About 5 min from JR Ochanomizu (Hijiribashi exit), Marunouchi-line Ochanomizu exit 1, Shin-Ochanomizu exit B1 or Suehirocho; 7 min from Akihabara (Electric Town exit). A few parking spaces for worshippers.",
+     "src": "https://www.kandamyoujin.or.jp/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Individual prayers (ご祈祷) are accepted at any time without reservation.",
+     "src": "https://www.kandamyoujin.or.jp/sanpai/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Grounds and amulet-counter hours not found on the pages read."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188e818f384bb3:0x37e58f8927830467",
+   "name": "寛永寺",
+   "city": "Tokyo",
+   "nameEn": "Kan'ei-ji Temple",
+   "website": "https://kaneiji.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gate open 9:00–17:00 for the Konpon Chudo and temple office.",
+     "src": "https://kaneiji.jp/access",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "1-14-11 Ueno Sakuragi, Taito-ku 110-0002.",
+     "src": "https://kaneiji.jp/access",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188d1a4869b805:0x11e214c5de0808a8",
+   "name": "早稲田大学",
+   "city": "Tokyo",
+   "nameEn": "Waseda University, Waseda Campus",
+   "website": "https://www.waseda.jp/top/access/waseda-campus",
+   "fields": [
+    {
+     "t": "access",
+     "v": "1-6-1 Nishi-Waseda. About 5 min from Waseda Station (Tozai line or Tokyo Sakura Tram); 17 min from Nishi-Waseda; 20 min from Takadanobaba; Toei bus 学02 to the main gate.",
+     "src": "https://www.waseda.jp/top/access/waseda-campus",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Pedestrians have priority on campus; bicycles and motorcycles are not allowed; vehicles need prior permission. A barrier-free map and a VR campus tour are published.",
+     "src": "https://www.waseda.jp/top/access/waseda-campus",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188dfbc6a2ae6f:0xeb07d24041f5f4f",
+   "name": "東京大学（正門）",
+   "city": "Tokyo",
+   "nameEn": "University of Tokyo, Hongo Campus Main Gate",
+   "website": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "Hongo campus is open to visitors; groups of 15+ register online; closed to visitors on entrance-exam days (17–18 Jan and 25–26 Feb 2026); no visitor parking. The Akamon gate is under seismic repair until about September 2027.",
+     "src": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free to walk the campus.",
+     "src": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ],
+   "flags": [
+    "akamon-under-repair-until-2027"
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188bb019af22ef:0x5df1bbe84d05a9d4",
+   "name": "慶應義塾大学",
+   "city": "Tokyo",
+   "nameEn": "Keio University, Mita Campus",
+   "website": "https://www.keio.ac.jp/ja/maps/mita.html",
+   "fields": [
+    {
+     "t": "access",
+     "v": "2-15-45 Mita, Minato-ku. About 7 min from Mita Station exit A3 (Asakusa and Mita lines); 8 min from JR Tamachi (Mita exit) or Akabanebashi (Oedo line). The approach roads are slopes; the Akabanebashi route is described as mostly flat.",
+     "src": "https://www.keio.ac.jp/ja/maps/mita.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "The interior of the Mita Enzetsukan (Important Cultural Property) cannot be visited; a separate campus-visit page governs tours.",
+     "src": "https://www.keio.ac.jp/ja/maps/mita.html",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x60188d9b710cdc53:0x39925c7a9a2bc0f9",
    "name": "中華料理 岐阜屋",
    "city": "Tokyo",
@@ -1120,6 +3795,51 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188b9d0de5a613:0xf51e5d0aac60e3c7",
+   "name": "Bauhaus Roppongi",
+   "city": "Tokyo",
+   "nameEn": "Bauhaus Roppongi (rock live bar)",
+   "website": "https://rockbarbauhaus.com/",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "Reopened since May 2022 after relocation; online reservation form on the official site.",
+     "src": "https://rockbarbauhaus.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "Monday–Saturday 18:00–1:00 (gourmet-site listing, undated).",
+     "src": "https://www.hotpepper.jp/strJ000000856/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
      "v": "",
      "src": "",
      "st": "",
@@ -1451,6 +4171,196 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Tokyo|0x6018f5c2d1127f7b:0xad5299a436b06587",
+   "name": "鈴の湯",
+   "city": "Tokyo",
+   "nameEn": "Suzu no Yu (Musashi-Kosugi sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Only an unnamed ward listing of Nakahara bathhouses (Feb 2025) was found; not attributable to this bathhouse."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60185f8fd430d567:0x38c8b4a987f00fba",
+   "name": "橘湯",
+   "city": "Tokyo",
+   "nameEn": "Tachibana-yu (Musashi-Kosugi sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x6018f57e77fe1085:0xcd1e2461aca8b3b7",
+   "name": "今井湯",
+   "city": "Tokyo",
+   "nameEn": "Imai-yu (Musashi-Kosugi sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c13425af13d:0xcddc54b9602f548d",
+   "name": "二の丸庭園",
+   "city": "Tokyo",
+   "nameEn": "Ninomaru Garden (Imperial Palace East Gardens)",
+   "website": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Inside the East Gardens: 9:00–16:30 in October (entry until 16:00), 9:00–16:00 Nov–Feb, longer in spring and summer.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays and Fridays; 28 Dec–3 Jan.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Free.",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Via Ote-mon (about 5 min from Otemachi exit C13a) or Hirakawa-mon / Kitahanebashi-mon (about 5 min from Takebashi exit 1a).",
+     "src": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Tokyo|0x60188c28f7766d7f:0x76b8b5efa1988ef4",
+   "name": "上野動物園",
+   "city": "Tokyo",
+   "nameEn": "Ueno Zoo",
+   "website": "https://www.tokyo-zoo.net/zoo/ueno/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:30–17:00, last entry 16:00 (Tokyo Metropolitan Government notice, May 2026).",
+     "src": "https://www.metro.tokyo.lg.jp/documents/d/tosei/20260514_12_01",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays (next day if a holiday) plus year-end; one-off closures are announced on the zoo site.",
+     "src": "https://www.metro.tokyo.lg.jp/documents/d/tosei/20260514_12_01",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "General ¥600; 65+ ¥300; junior-high students ¥200; elementary and younger free. Free on 1 Oct (Tokyo Citizens' Day).",
+     "src": "https://www.metro.tokyo.lg.jp/documents/d/tosei/20260514_12_01",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Ikenohata Gate open for entry since 1 Feb 2026; partial path closures in the bear area late Oct–mid Nov 2026.",
+     "src": "https://www.tokyo-zoo.net/zoo/ueno/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Tokyo|0x6018f2884ec5c24b:0xf73b054681a40912",
    "name": "中華料理 七面鳥",
    "city": "Tokyo",
@@ -1552,6 +4462,123 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Kyoto|0x6001a820c0eb46bd:0xee4272b1c22645f",
+   "name": "金閣寺",
+   "city": "Kyoto",
+   "nameEn": "Kinkaku-ji (Rokuon-ji)",
+   "website": "https://www.shokoku-ji.jp/kinkakuji/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–17:00.",
+     "src": "https://www.shokoku-ji.jp/kinkakuji/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults (high school and above) ¥500; elementary and junior-high students ¥300; no group discount.",
+     "src": "https://www.shokoku-ji.jp/kinkakuji/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Cash and cashless (including おまいりPay) for admission; amulets and goshuin cash only.",
+     "src": "https://www.shokoku-ji.jp/kinkakuji/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1 Kinkakuji-cho, Kita-ku. City bus to the Kinkakuji-michi stop (routes 12, 59, 205, M1). Paid parking 8:40–17:10.",
+     "src": "https://www.shokoku-ji.jp/kinkakuji/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600109050b426fe1:0x258aca1ce888abc9",
+   "name": "銀閣寺",
+   "city": "Kyoto",
+   "nameEn": "Ginkaku-ji (Jisho-ji)",
+   "website": "https://www.shokoku-ji.jp/ginkakuji/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "8:30–17:00 from 1 March to 30 November; 9:00–16:30 from 1 December to end of February.",
+     "src": "https://www.shokoku-ji.jp/ginkakuji/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "2 Ginkakuji-cho, Sakyo-ku; city bus to the Ginkakuji-michi stop.",
+     "src": "https://www.shokoku-ji.jp/ginkakuji/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "The viewing point, Benzaiten, Sosentei site and Ochanoi are marked not accessible to wheelchairs or strollers.",
+     "src": "https://www.shokoku-ji.jp/ginkakuji/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Autumn special opening 1 Nov–5 Dec 2026; cashless おまいりPay accepted.",
+     "src": "https://www.shokoku-ji.jp/ginkakuji/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Kyoto|0x600108d385dcfb07:0x62af658650c434ba",
    "name": "清水寺",
    "city": "Kyoto",
@@ -1625,6 +4652,60 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Kyoto|0x600108dc414283b9:0x609373abd0eaf97c",
+   "name": "知恩院",
+   "city": "Kyoto",
+   "nameEn": "Chion-in",
+   "website": "https://www.chion-in.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates 6:00–16:00; reception from 9:00. Yuzen-en 9:00–16:00; Hojo garden 9:00–15:50.",
+     "src": "https://www.chion-in.or.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Grounds: no fee stated. Yuzen-en ¥300 / Hojo garden ¥400 / combined ¥500 (children half); disability-certificate holders free.",
+     "src": "https://www.chion-in.or.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "City bus 206 from Kyoto Station to Chion-in-mae (about 23 min) then 5 min on foot; subway to Higashiyama Station then 8 min; 15 min on foot from Hankyu Kyoto-Kawaramachi, 20 min from Keihan Gion-Shijo. Visitors are asked not to drive.",
+     "src": "https://www.chion-in.or.jp/guide/access.php",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Assistance dogs allowed; a free shuttle runs from the Sanmon area to the Mieido 9:00–16:00 (break 13:00–14:00). Elevator details not stated.",
+     "src": "https://www.chion-in.or.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Autumn illumination 17 Nov–6 Dec 2026 (¥800 adults, ¥400 children). No smoking, no tripods or drones, no photography inside halls.",
+     "src": "https://www.chion-in.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Kyoto|0x60010879a010eca9:0xc77ac89d5a241ae9",
    "name": "八坂神社",
    "city": "Kyoto",
@@ -1667,6 +4748,553 @@ window.EJ_ESSENTIALS_V1 = {
      "chk": "2026-10-27",
      "by": "manual-web",
      "note": "Admission not stated on the official pages checked (third-party sites say free)."
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600109217397fbfd:0x38b339a4c7e7004d",
+   "name": "南禅寺",
+   "city": "Kyoto",
+   "nameEn": "Nanzen-ji",
+   "website": "https://www.nanzenji.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "8:40–17:00 (1 Mar–30 Nov); 8:40–16:30 (1 Dec–28 Feb); reception closes 20 minutes earlier.",
+     "src": "https://www.nanzenji.or.jp/about_rinzaishu/visit",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "General visits refused 28–31 Dec; open at New Year.",
+     "src": "https://www.nanzenji.or.jp/about_rinzaishu/visit",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Hojo garden ¥600 / Sanmon ¥600 / Nanzen-in ¥500 (adults); high-school and child rates lower; disability-certificate holders plus one companion free.",
+     "src": "https://www.nanzenji.or.jp/about_rinzaishu/visit",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Many steps and slopes in the precinct; wheelchair users are asked to come with a helper.",
+     "src": "https://www.nanzenji.or.jp/about_rinzaishu/visit",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Nanzen-in visits were suspended per a January 2026 notice; a shoe-bag rule applies when entering buildings.",
+     "src": "https://nanzenji.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x6001091ada6f787d:0x62ef00e72d5d2003",
+   "name": "法然院",
+   "city": "Kyoto",
+   "nameEn": "Honen-in",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Grounds 6:00–16:00; the halls are closed except special openings on 1–7 April and 1–7 November (travel listings).",
+     "src": "https://www.jalan.net/kankou/spt_guide000000185739/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The official site could not be loaded (certificate error)."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x6001a82a301cbaa7:0xe1ab173e46d78542",
+   "name": "龍安寺",
+   "city": "Kyoto",
+   "nameEn": "Ryoan-ji",
+   "website": "https://www.ryoanji.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "8:00–17:00 March–November; 8:30–16:30 December–February (travel listings, 2025).",
+     "src": "https://banzokubiology.com/ryoanji-time/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "The official site could not be loaded (TLS error)."
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥600; high school ¥500; elementary and junior high ¥300 (listings).",
+     "alt": "Adults and high school ¥500 (older Jorudan listing).",
+     "src": "https://www.walkerplus.com/event/ar0726e154659/data.html",
+     "st": "media",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600107d40a2b9b0b:0x106b8759906a2f2f",
+   "name": "元離宮二条城",
+   "city": "Kyoto",
+   "nameEn": "Nijo Castle",
+   "website": "https://nijo-jocastle.city.kyoto.lg.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "8:45–16:00 entry, castle closes 17:00; Ninomaru Palace reception 8:45–16:10; Honmaru Palace 9:30–16:00 by advance web ticket.",
+     "src": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Castle 29–31 Dec. Ninomaru Palace: Tuesdays in Jan, Jul, Aug, Dec and 26–28 Dec, 1–3 Jan. Honmaru Palace: 3rd Monday and the next day each month.",
+     "src": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Admission ¥800 (junior/senior high ¥400, elementary ¥300); admission + Ninomaru Palace ¥1,300; Honmaru Palace ¥1,000 extra. Disability-certificate holders plus one carer free.",
+     "src": "https://nijo-jocastle.city.kyoto.lg.jp/admission/fee/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Honmaru Palace requires a timed web ticket; web tickets for general admission are sold via asoview.",
+     "src": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Wheelchair loan listed among services.",
+     "src": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "No photography inside the palaces; no eating outside designated areas; drones prohibited. Address 541 Nijojo-cho, Nakagyo-ku.",
+     "src": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x60014892900d9fad:0x62c711aa6c6015c1",
+   "name": "東福寺",
+   "city": "Kyoto",
+   "nameEn": "Tofuku-ji",
+   "website": "https://tofukuji.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–16:00 (Apr–Oct and 1–13 Nov); Tsutenkyo from 8:30 in the autumn period 14 Nov–6 Dec; 9:00–15:30 from 7 Dec to 31 Mar.",
+     "src": "https://tofukuji.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Tsutenkyo & Kaisando ¥600 (children ¥300); Hojo garden ¥500 (¥600 from 1 Nov), combined ¥1,000 outside autumn; autumn period priced higher with no combined ticket. Disability-certificate holders plus one companion free.",
+     "src": "https://tofukuji.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "No re-entry; no eating, tripods or sketching in the grounds; pets not allowed. Autumn special openings and booked night/early-morning viewings in Nov–Dec 2026.",
+     "src": "https://tofukuji.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "15-778 Honmachi, Higashiyama-ku.",
+     "src": "https://tofukuji.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x6001086d76f895d7:0x99e04406adf29aa8",
+   "name": "相国寺",
+   "city": "Kyoto",
+   "nameEn": "Shokoku-ji",
+   "website": "https://www.shokoku-ji.jp/",
+   "fields": [
+    {
+     "t": "notice",
+     "v": "Autumn special viewing 26 Sep–15 Dec 2026; regular viewing outside special periods is not described.",
+     "src": "https://www.shokoku-ji.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Imadegawa-dori Karasuma Higashi-iru, Kamigyo-ku; city bus to Karasuma-Imadegawa or Doshisha-mae.",
+     "src": "https://www.shokoku-ji.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x6001075300916977:0xec14f8e82496283d",
+   "name": "渡月橋",
+   "city": "Kyoto",
+   "nameEn": "Togetsukyo Bridge (Arashiyama)",
+   "website": "",
+   "fields": [
+    {
+     "t": "access",
+     "v": "About 3 min on foot from Randen Arashiyama Station; no admission; no parking (regional magazine).",
+     "src": "https://www.walkerplus.com/article/166215/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Public bridge."
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x6001a9f5c1515dcf:0x95b9251e85d96323",
+   "name": "大覚寺",
+   "city": "Kyoto",
+   "nameEn": "Daikaku-ji",
+   "website": "https://www.daikakuji.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–17:00, reception until 16:30 (travel listings).",
+     "src": "https://rurubu.jp/andmore/spot/80027272/koyo",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official site returned 503 on 2026-10-27."
+    },
+    {
+     "t": "fee",
+     "v": "From 1 Apr 2026: halls area adults ¥800 / students ¥400; Osawa Pond area adults ¥500 / students ¥100 (event listings).",
+     "src": "https://www.walkerplus.com/event/ar0726e562411/price.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600107ed7bf0e06d:0x5b26fec16c2eee1a",
+   "name": "北野天満宮",
+   "city": "Kyoto",
+   "nameEn": "Kitano Tenmangu Shrine",
+   "website": "https://kitanotenmangu.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates 7:00–17:00; amulet office 9:00–16:30 (to 20:00 during the Momiji-en illumination); prayers 9:00–16:00.",
+     "src": "https://kitanotenmangu.or.jp/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Grounds: not stated. Momiji-en (autumn garden) 2026: adults ¥1,500, elementary ¥700; night illumination 13 Nov–6 Dec until 20:00.",
+     "src": "https://kitanotenmangu.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "City bus 50 from Kyoto Station to Kitano Tenmangu-mae (about 35 min); 5 min on foot from Keifuku Kitano-Hakubaicho. No parking on the 25th (market day).",
+     "src": "https://kitanotenmangu.or.jp/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600108ca8f9b80b3:0xaa2b01ebdb651688",
+   "name": "三十三間堂",
+   "city": "Kyoto",
+   "nameEn": "Sanjusangen-do",
+   "website": "https://www.sanjusangendo.jp/",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "Adults ¥600; junior and senior high ¥400; elementary ¥300; disability-certificate holders and one helper half price (2026 travel listing).",
+     "src": "https://www.airtrip.jp/travel-column/20653",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official site could not be loaded (certificate error)."
+    },
+    {
+     "t": "hours",
+     "v": "8:30–17:00 (1 Apr–15 Nov, reception until 16:30); 9:00–16:00 (16 Nov–31 Mar).",
+     "alt": "8:00–17:00 (another listing).",
+     "src": "https://www.airtrip.jp/travel-column/20653",
+     "st": "media",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "No photography inside the hall (listings).",
+     "src": "https://www.veltra.com/jp/yokka/article/sanjusangen-do/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600108a75314e2a3:0xf4e42caa95cddc94",
+   "name": "西本願寺",
+   "city": "Kyoto",
+   "nameEn": "Nishi Hongwanji",
+   "website": "https://www.hongwanji.kyoto/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Gates open 5:30 and close 17:00 on the day checked (the temple's daily schedule; times may change by season).",
+     "src": "https://www.hongwanji.kyoto/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Anyone may visit; no admission fee is stated.",
+     "src": "https://www.hongwanji.kyoto/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Free 30-minute precinct tours led by priests four times daily (10:00, 11:30, 13:45, 15:30), no booking; language not stated.",
+     "src": "https://www.hongwanji.kyoto/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "Horikawa-dori Hanayacho-sagaru, Shimogyo-ku. Tel 075-371-5181.",
+     "src": "https://www.hongwanji.kyoto/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     },
     {
      "t": "accessibility",
@@ -1745,6 +5373,105 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Kyoto|0x600108ba1add88f5:0xb51c556954ec8f8",
+   "name": "サウナの梅湯",
+   "city": "Kyoto",
+   "nameEn": "Sauna no Umeyu (sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "From ¥550 (sauna directory).",
+     "src": "https://sauna-ikitai.com/kyoto/%E4%BA%AC%E9%83%BD%E5%B8%82",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "6:00–26:00 (directory snapshot).",
+     "src": "https://sauna-ikitai.com/kyoto/%E4%BA%AC%E9%83%BD%E5%B8%82",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Thursdays (directory snapshot).",
+     "src": "https://sauna-ikitai.com/kyoto/%E4%BA%AC%E9%83%BD%E5%B8%82",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x60010620e1ee8e51:0x5b22d7b2d0356f24",
+   "name": "五香湯",
+   "city": "Kyoto",
+   "nameEn": "Gokoyu (sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "From ¥550 (sauna directory).",
+     "src": "https://sauna-ikitai.com/kyoto/%E4%BA%AC%E9%83%BD%E5%B8%82",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x6001089e63991127:0x5a7e5f53c0fb216",
+   "name": "白山湯 高辻店",
+   "city": "Kyoto",
+   "nameEn": "Hakusan-yu Takatsuji (sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "From ¥550 (sauna directory).",
+     "src": "https://sauna-ikitai.com/kyoto/%E4%BA%AC%E9%83%BD%E5%B8%82",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "15:00–24:00 (directory).",
+     "src": "https://sauna-ikitai.com/kyoto/%E4%BA%AC%E9%83%BD%E5%B8%82",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Kyoto|0x600108ea46fd2a0d:0x9c6f11fa56390db3",
    "name": "甘味どころ ぎをん 小森",
    "city": "Kyoto",
@@ -1787,6 +5514,145 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600108652e05500d:0xbb9ad3d40026f822",
+   "name": "京都仙洞御所",
+   "city": "Kyoto",
+   "nameEn": "Kyoto Sento Imperial Palace",
+   "website": "https://sankan.kunaicho.go.jp/",
+   "fields": [
+    {
+     "t": "reservation",
+     "v": "Guided tours only, by advance application to the Imperial Household Agency with a limited same-day quota; tours about 60 min; participants must be 18 or older (travel guides).",
+     "alt": "Under-18s admitted if accompanied by an adult over 20 (another guide).",
+     "src": "https://www.fun-japan.jp/tw/articles/8713",
+     "st": "media",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official guide page could not be fetched; confirm on sankan.kunaicho.go.jp or 075-211-1215."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600109c7d7660d4d:0x729e62296b00aae2",
+   "name": "修学院離宮",
+   "city": "Kyoto",
+   "nameEn": "Shugakuin Imperial Villa",
+   "website": "https://sankan.kunaicho.go.jp/",
+   "fields": [
+    {
+     "t": "reservation",
+     "v": "Guided tours only by advance application with a same-day quota; about 80 min and 3 km of walking; closed Mondays (next weekday if a holiday) and 28 Dec–4 Jan (Keihan guide).",
+     "src": "https://www.keihan.co.jp/kanei/spot/life.php",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official guide page could not be fetched; confirm on sankan.kunaicho.go.jp."
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x60010f85a550e185:0x6b532de4205ab12e",
+   "name": "通天橋",
+   "city": "Kyoto",
+   "nameEn": "Tsutenkyo Bridge (Tofuku-ji)",
+   "website": "https://tofukuji.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Same as Tofuku-ji: 9:00–16:00 most of the year, from 8:30 during 14 Nov–6 Dec, 9:00–15:30 in winter.",
+     "src": "https://tofukuji.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Tsutenkyo & Kaisando ticket ¥600 adults / ¥300 children outside autumn; higher in the autumn period.",
+     "src": "https://tofukuji.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Photography on Tsutenkyo and Gaunkyo may be restricted in autumn crowds; Gaunkyo must be crossed on foot, not cycled.",
+     "src": "https://tofukuji.jp/guide/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Kyoto|0x600108562446b2bb:0x17026e2b02f706d9",
+   "name": "京都大学 吉田キャンパス",
+   "city": "Kyoto",
+   "nameEn": "Kyoto University, Yoshida Campus",
+   "website": "https://www.kyoto-u.ac.jp/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "About 15 min on foot east of Keihan Demachiyanagi to the main campus (20 min to the Yoshida-South and North areas); city buses stop at Kyodai-Seimon-mae and Hyakumanben (university guide 2026).",
+     "src": "https://www.kyoto-u.ac.jp/sites/default/files/inline-files/KU2026_page_90_94-036c0c25556bb346146c2d57a2f037c0.pdf",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Clock Tower Centennial Hall opening hours not found."
     }
    ]
   },
@@ -1854,6 +5720,62 @@ window.EJ_ESSENTIALS_V1 = {
    ]
   },
   {
+   "key": "Osaka|0x6000e0cd5c283afd:0xf01d07d5ca11e41",
+   "name": "大阪城",
+   "city": "Osaka",
+   "nameEn": "Osaka Castle Main Tower",
+   "website": "https://www.osakacastle.net/",
+   "fields": [
+    {
+     "t": "reservation",
+     "v": "Admission tickets can be bought in advance through the castle's online reservation site.",
+     "src": "https://www.osakacastle.net/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥1,200; high-school and university students ¥600; junior high and under free (fee doubled in April 2025) — travel guides.",
+     "src": "https://watabi.org/articles/osaka-castle-guide",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Not found on the official top page."
+    },
+    {
+     "t": "hours",
+     "v": "9:00–18:00, last entry 17:30 (travel guides, 2026).",
+     "alt": "9:00–17:00 (2024 article).",
+     "src": "https://www.jeepe.jp/ja/articles/osaka-castle-guide-1206",
+     "st": "media",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "28 Dec–1 Jan (travel guides).",
+     "src": "https://watabi.org/articles/osaka-castle-guide",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 15–20 min on foot from Tanimachi 4-chome, Tenmabashi, Morinomiya, JR Osakajo-koen or Osakajo-kitazume (travel guides).",
+     "src": "https://watabi.org/articles/osaka-castle-guide",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
    "key": "Osaka|0x6000e71384192677:0x936dd85479565f3c",
    "name": "戎橋",
    "city": "Osaka",
@@ -1889,6 +5811,145 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "accessibility",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Osaka|0x6000e71493ce71e9:0x5b59203ed8fd29bf",
+   "name": "グリコサイン",
+   "city": "Osaka",
+   "nameEn": "Glico Sign (Dotonbori)",
+   "website": "https://www.glico.com/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Lit from sunset to 24:00 (Glico press release for the 6th-generation sign, October 2014; the same figure is repeated in 2026 reporting).",
+     "src": "https://www.glico.com/assets/files/20141023+NR%E3%82%B0%E3%83%AA%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E7%82%B9%E7%81%AF%E5%BC%8F__1.pdf",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Media report that the 6th-generation sign comes down at the end of November 2026 for renewal, with a 7th generation due in spring 2027 — expect scaffolding or no sign in between.",
+     "src": "https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "The 6th sign (20 × 10.38 m, about 144,000 LEDs) was unveiled 23 Oct 2014; the first went up in 1935.",
+     "src": "https://www.glico.com/assets/files/20141023+NR%E3%82%B0%E3%83%AA%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E7%82%B9%E7%81%AF%E5%BC%8F__1.pdf",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Best seen from Ebisubashi Bridge: about 3 min from Namba / Osaka-Namba exit 14 (Osaka Info).",
+     "src": "https://osaka-info.jp/experience/ja/osaka/spot/551",
+     "st": "tourism-board",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "n-a",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ],
+   "flags": [
+    "sign-renewal-from-dec-2026"
+   ]
+  },
+  {
+   "key": "Osaka|0x6000e6dba42a1cef:0xa135ef22a79f6eb2",
+   "name": "大阪天満宮",
+   "city": "Osaka",
+   "nameEn": "Osaka Tenmangu Shrine",
+   "website": "https://osakatemmangu.or.jp/",
+   "fields": [
+    {
+     "t": "address",
+     "v": "2-1-8 Tenjinbashi, Kita-ku, Osaka 530-0041. Tel 06-6353-0025.",
+     "src": "https://osakatemmangu.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Photography in the precinct follows a published policy (PDF); the 25 Oct 2026 yabusame was cancelled.",
+     "src": "https://osakatemmangu.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Osaka|0x6000e6926f5c4759:0xa43c19ec877d7fb5",
+   "name": "新梅田食道街",
+   "city": "Osaka",
+   "nameEn": "Shin-Umeda Shokudogai",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Varies by shop; mostly about 11:00–23:00 (regional listing, 2026).",
+     "src": "https://summer.walkerplus.com/odekake/detail/ar0727s559244/data.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Official site domain did not resolve."
+    },
+    {
+     "t": "tip",
+     "v": "Founded in 1950 with 18 shops, now about 100; address 9-26 Kakuda-cho, Kita-ku.",
+     "src": "https://summer.walkerplus.com/odekake/detail/ar0727s559244/data.html",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
      "v": "",
      "src": "",
      "st": "",
@@ -1996,6 +6057,545 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Mie|0x6004578074c15005:0x6998153103f04925",
+   "name": "二見興玉神社",
+   "city": "Mie",
+   "nameEn": "Futami Okitama Shrine (Meoto Iwa)",
+   "website": "https://futamiokitamajinja.or.jp/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "575 Futamicho-e, Ise; about 15 min on foot from JR Futaminoura; CAN bus to Meoto-iwa Higashiguchi then 5 min. Several nearby car parks (5–15 min).",
+     "src": "https://futamiokitamajinja.or.jp/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "Enquiries 9:00–16:00; grounds hours not stated.",
+     "src": "https://futamiokitamajinja.or.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Mie|0x60045a8448dc91ef:0xa4ae3d71f472dbc7",
+   "name": "豊受大神宮（伊勢神宮 外宮）",
+   "city": "Mie",
+   "nameEn": "Ise Jingu Geku (Toyouke Daijingu)",
+   "website": "https://www.isejingu.or.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "5:00–17:00 in October–December; 5:00–18:00 January–April and September; 5:00–19:00 May–August. New Year hours differ.",
+     "src": "https://www.isejingu.or.jp/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Barrier-free routes are marked on the official Geku precinct map.",
+     "src": "https://www.isejingu.or.jp/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Mie Kotsu buses (routes 51, 55) and the CAN bus link Geku and Naiku; park-and-ride operates in peak periods. Walking minutes from Iseshi Station not stated.",
+     "src": "https://www.isejingu.or.jp/access/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Mie|0x60045a714446fdfd:0x4f1a14ef2d80ac06",
+   "name": "倭姫宮",
+   "city": "Mie",
+   "nameEn": "Yamatohime-no-miya (Ise Jingu betsugu)",
+   "website": "https://www.isejingu.or.jp/about/outerbetsugu/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "5 Kusube-cho, Ise; about 7 min on foot from Kintetsu Isuzugawa Station.",
+     "src": "https://www.isejingu.or.jp/about/outerbetsugu/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "Betsugu follow the Jingu visiting hours: 5:00–17:00 Oct–Dec, 5:00–18:00 Jan–Apr and Sep, 5:00–19:00 May–Aug.",
+     "src": "https://www.isejingu.or.jp/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Amulets and goshuin at the guard house (宿衛屋).",
+     "src": "https://www.isejingu.or.jp/about/outerbetsugu/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Mie|0x60043a166bb485ff:0xfad10f908a745cea",
+   "name": "皇大神宮別宮 瀧原宮",
+   "city": "Mie",
+   "nameEn": "Takihara-no-miya (Ise Jingu betsugu)",
+   "website": "https://www.isejingu.or.jp/about/outerbetsugu/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "872 Takihara, Taiki-cho; about 20 min on foot from JR Takihara Station.",
+     "src": "https://www.isejingu.or.jp/about/outerbetsugu/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "Betsugu follow the Jingu visiting hours: 5:00–17:00 Oct–Dec, 5:00–18:00 Jan–Apr and Sep, 5:00–19:00 May–Aug.",
+     "src": "https://www.isejingu.or.jp/visit/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Worship Takihara-no-miya first, then Takihara-narabi-no-miya; the approach runs through centuries-old cedars.",
+     "src": "https://www.isejingu.or.jp/about/outerbetsugu/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Hokkaido|0x5f0ce6155136352d:0x1f97ddf60727c795",
+   "name": "旭川 大黒湯",
+   "city": "Hokkaido",
+   "nameEn": "Daikoku-yu (Asahikawa sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "From ¥610 (sauna directory).",
+     "src": "https://sauna-ikitai.com/sento?page=51",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "Opens 14:00 (sauna directory); closing time not shown.",
+     "src": "https://sauna-ikitai.com/sento?page=51",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Hokkaido|0x5f0ce616df206b29:0xf283568292426d22",
+   "name": "天然温泉みなぴりかの湯",
+   "city": "Hokkaido",
+   "nameEn": "Minapirika no Yu (Hotel WBF Grande Asahikawa)",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "Day-use 13:00–23:00 (reception until 22:00).",
+     "alt": "10:00–23:00 (another listing).",
+     "src": "https://yuru-to.net/detail.php?oid=2764",
+     "st": "aggregator",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Day-use adults ¥1,500 (listing).",
+     "src": "https://yuru-to.net/detail.php?oid=2764",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Open year-round (listing).",
+     "src": "https://yuru-to.net/detail.php?oid=2764",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "address",
+     "v": "10-3-3 Miyashita-dori, Asahikawa.",
+     "src": "https://yuru-to.net/detail.php?oid=2764",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Hokkaido|0x5f0ce637e7723ff9:0x5e1a33369814c4b0",
+   "name": "金の湯",
+   "city": "Hokkaido",
+   "nameEn": "Kin no Yu (Asahikawa sento)",
+   "website": "",
+   "fields": [
+    {
+     "t": "fee",
+     "v": "From ¥490 (sauna directory, listed as ニュー金の湯).",
+     "src": "https://sauna-ikitai.com/sento?page=51",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Only a listing named ニュー金の湯 was found; confirm it is the same bathhouse."
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Hokkaido|0x5f0b293b0e60d45b:0x2aa910932acb61e5",
+   "name": "北海道大学農学部植物園博物館（旧開拓使札幌博物場）",
+   "city": "Hokkaido",
+   "nameEn": "Hokkaido University Botanic Garden & Museum",
+   "website": "https://www.hokudai.ac.jp/fsc/bg/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "9:00–16:00, entry until 15:30 (garden page; the museum is inside the garden).",
+     "src": "https://www.hokudai.ac.jp/fsc/bg/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Mondays (next day if a holiday).",
+     "src": "https://www.hokudai.ac.jp/fsc/bg/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "High school and above ¥420; elementary and junior high ¥300; preschool free.",
+     "src": "https://www.hokudai.ac.jp/fsc/bg/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "The old greenhouse is closed indefinitely; groups should phone two weeks ahead.",
+     "src": "https://www.hokudai.ac.jp/fsc/bg/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Hokkaido|0x5f0b299f007507ad:0xbb215d6e0de69db7",
+   "name": "北海道庁",
+   "city": "Hokkaido",
+   "nameEn": "Former Hokkaido Government Office (Red Brick Office)",
+   "website": "https://www.hokkaido-redbrick.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "8:45–21:00, last entry 20:30.",
+     "src": "https://www.hokkaido-redbrick.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "15 Nov 2026 and 29 Dec–3 Jan.",
+     "src": "https://www.hokkaido-redbrick.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "General ¥300; university and high school ¥200; junior high and under free; disability-certificate holders free. Octagonal tower ¥1,200; guided tour ¥500.",
+     "src": "https://www.hokkaido-redbrick.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Credit cards, transit IC and QR payments accepted.",
+     "src": "https://www.hokkaido-redbrick.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 8 min on foot from JR Sapporo Station (Nishi-dori south exit). No visitor car parking.",
+     "src": "https://www.hokkaido-redbrick.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Ramp at the B1 south entrance with an intercom for entry.",
+     "src": "https://www.hokkaido-redbrick.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "tip",
+     "v": "Reopened 25 Jul 2025 after renovation (Hokkaido Government portal).",
+     "src": "https://www.pref.hokkaido.lg.jp/sm/zsk/fm/akarengarenewal/top.html",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Hokkaido|0x5f0b298530a7cfd5:0x2ad2065307072ffd",
+   "name": "狸小路",
+   "city": "Hokkaido",
+   "nameEn": "Tanukikoji Shopping Street",
+   "website": "https://www.tanukikoji.or.jp/",
+   "fields": [
+    {
+     "t": "access",
+     "v": "About 5 min on foot from Odori Station, 3 min from Susukino Station; spans Minami 2–3-jo Nishi 1–7-chome.",
+     "src": "https://www.tanukikoji.or.jp/access/",
+     "st": "association",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Shop hours vary; not stated street-wide."
+    }
+   ]
+  },
+  {
+   "key": "Nagano|0x5ff7cde8b18f7601:0xb7658b58fba748ce",
+   "name": "白馬塩の道温泉 倉下の湯",
+   "city": "Nagano",
+   "nameEn": "Kurashita no Yu",
+   "website": "",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "10:00–20:30 (closes 21:00), open year-round (travel listing).",
+     "src": "https://www.mapple.net/region/a0306060500_g05050000/spot/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥600; children (3 to elementary) ¥300 (travel listing).",
+     "src": "https://www.mapple.net/region/a0306060500_g05050000/spot/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ]
+  },
+  {
+   "key": "Nagano|0x5ff7cdd27c05c09b:0xa4a8d04af81faf05",
+   "name": "天然水素温泉 おびなたの湯",
+   "city": "Nagano",
+   "nameEn": "Obinata no Yu (summer-only open-air bath)",
+   "website": "https://hakuba-happo-onsen.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "12:00–18:00, reception until 17:30; operates 25 Apr–31 Oct 2026 only.",
+     "src": "https://hakuba-happo-onsen.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 10 min by car from Hakuba Station.",
+     "src": "https://hakuba-happo-onsen.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥650, children ¥300 (travel listing).",
+     "src": "https://www.mapple.net/region/a0306060500_g05050000/spot/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    }
+   ],
+   "flags": [
+    "seasonal-closed-nov-apr"
+   ]
+  },
+  {
+   "key": "Nagano|0x5ff7cdfd72cc68eb:0x8994a316bcdd9f23",
+   "name": "白馬八方温泉 八方の湯",
+   "city": "Nagano",
+   "nameEn": "Hakuba Happo Onsen Happo no Yu",
+   "website": "https://hakuba-happo-onsen.jp/",
+   "fields": [
+    {
+     "t": "hours",
+     "v": "10:00–21:00, reception until 20:30.",
+     "src": "https://hakuba-happo-onsen.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "No closing days; open year-round.",
+     "src": "https://hakuba-happo-onsen.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "About 10 min on foot from the Happo-one gondola station; 5 min by car from Hakuba Station.",
+     "src": "https://hakuba-happo-onsen.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "fee",
+     "v": "Adults ¥800, children ¥400 (travel listing).",
+     "alt": "Adults ¥850, children ¥500 (another listing).",
+     "src": "https://www.mapple.net/region/a0306060500_g05050000/spot/",
+     "st": "media",
+     "stat": "conflict",
+     "chk": "2026-10-27",
+     "by": "manual-web",
+     "note": "Not stated on the official page read."
     }
    ]
   }
