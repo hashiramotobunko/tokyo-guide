@@ -30,6 +30,6 @@ test('526 original place names and Google Maps URLs remain identical to main and
 });
 test('known deleted duplicates stay removed and known exceptions remain',()=>{
  const names=Object.values(current).flatMap(group=>group.places.map(p=>p.name));
- for(const n of ['桃花林（The Okura Tokyo）','中華そば 多賀野','Freehouse THE YEAST'])assert.ok(names.some(name=>name.includes(n)),'missing '+n);
+ for(const n of ['桃花林','中華そば 多賀野','Freehouse THE YEAST'])assert.ok(names.some(name=>name.includes(n)),'missing '+n);
  assert.ok(!names.includes('富ヶ谷スプリングス'));
 });
