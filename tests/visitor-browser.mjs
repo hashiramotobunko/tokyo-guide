@@ -38,6 +38,20 @@ try{
       await page.locator('#ej-area-select').selectOption('Higashiyama');
       assert.equal(await page.locator('.city-section.active .place-card').count(),11);
       assert.equal(new URL(page.url()).searchParams.get('area'),'Higashiyama');
+      // Deep-link state survives a reload; back/forward returns to the selected neighborhood.
+      const kyotoLink=page.url();
+      await page.reload({waitUntil:'domcontentloaded'});
+      assert.equal(await page.locator('#ej-region-select').inputValue(),'Kyoto');
+      assert.equal(await page.locator('#ej-area-select').inputValue(),'Higashiyama');
+      assert.equal(page.url(),kyotoLink);
+      await page.locator('#ej-area-select').selectOption('');
+      assert.equal(new URL(page.url()).searchParams.get('area'),null);
+      await page.goBack({waitUntil:'domcontentloaded'});
+      assert.equal(await page.locator('#ej-area-select').inputValue(),'Higashiyama');
+      await page.goForward({waitUntil:'domcontentloaded'});
+      assert.equal(await page.locator('#ej-area-select').inputValue(),'');
+      await page.goBack({waitUntil:'domcontentloaded'});
+      assert.equal(await page.locator('#ej-area-select').inputValue(),'Higashiyama');
       await page.locator('.city-section.active .ej-essentials summary').first().click();
       assert.ok(await page.locator('.city-section.active .ej-essentials[open]').count()>0);
       await page.locator('#ej-route-options button[data-route-choice="Kyoto"]').click();
@@ -60,6 +74,8 @@ try{
      await page.locator('.ej-field-art img').evaluate(async img=>{img.loading='eager';await img.decode();});
      const overlap=await page.evaluate(()=>{const left=document.querySelector('.ej-field-intro')?.getBoundingClientRect(),right=document.querySelector('.ej-field-content')?.getBoundingClientRect();return {leftRight:left?.right,rightLeft:right?.left}});
      assert.ok(overlap.leftRight<=overlap.rightLeft+1,'Route column overlaps the editorial intro: '+JSON.stringify(overlap));
+     // Capture the start of the section, not whichever middle route Playwright scrolled to.
+     await page.locator('#fieldnotes').evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
      await page.screenshot({path:`${out}/1280-routes.png`,fullPage:false});
      await page.locator('.ej-mixtape').scrollIntoViewIfNeeded();
      await page.locator('.ej-mixtape img').evaluate(async img=>{img.loading='eager';await img.decode();});
