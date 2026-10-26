@@ -55,3 +55,13 @@ These are fixed, source-checked English introductions; they do not confirm today
 | 明治神宮 | 1920 founding, forest and seasonal schedule | https://www.meijijingu.or.jp/en/about/ |
 
 English intros now have ten editorial records, not 526. The separate practical visitor data remains limited to the original six pilot destinations, with field-level source/date labels and a prompt to recheck. All ten walking ideas remain **DRAFT**; no ground-truth walking distances or hours have been asserted.
+
+## 2026-10-26 first practical-info expansion (Draft)
+Two original listings now have individually attributed practical hour/access fields on top of the six pilot entries (eight total):
+
+| Place | Source-recorded fields | Current published source checked |
+|---|---|---|
+| MAIDENS SHOP JIMBOCHO | Store address, weekday/weekend business hours; excludes special closures | https://maidens-shop.jp/store-info/ |
+| MIZUNO TOKYO | Store address, listed hours, Jimbocho Exit A5 access; excludes holiday closures | https://jpn.mizuno.com/shop/globalflag_tokyo_en |
+
+Checked 2026-10-26. These are publication snapshots, not live guarantees. MAIDENS' launch article and current store-info page differ on weekdays; the later store-info schedule (12:00–19:00 weekdays) was used. No unverified admission or booking assertions were added.
