@@ -14,8 +14,10 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
-      - name: Check source, nine routes and assets
-        run: node --test tests/editorial-smoke.mjs
+        with:
+          fetch-depth: 0
+      - name: Check original data, source, routes and accessibility hooks
+        run: node --test tests/data-guard.test.mjs tests/four-core-features.test.mjs tests/four-features-smoke.mjs tests/editorial-smoke.mjs
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
