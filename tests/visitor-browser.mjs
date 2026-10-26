@@ -24,6 +24,9 @@ try{
    if(width===390){
       await page.locator('#ej-search').fill('多賀野');
       const shown=await page.locator('.city-section.active .place-card').count();
+      assert.match(await page.locator('#ej-discovery-count').textContent(),/1 matching place/);
+      await page.locator('#ej-jump-results').click();
+      assert.equal(await page.locator('.city-section.active .place-card').count(),1);
       assert.equal(shown,1,'Japanese search should find 多賀野');
       await page.locator('#ej-reset-all').click();
       await page.locator('#ej-mood-list button[data-mood="night"]').click();
@@ -39,9 +42,24 @@ try{
       assert.ok(await page.locator('.city-section.active .ej-essentials[open]').count()>0);
       await page.locator('#ej-route-options button[data-route-choice="Kyoto"]').click();
       assert.equal(await page.locator('#ej-field-list .ej-route:not([hidden])').count(),1);
-      report[width].interactions={japaneseSearch:shown,nightResult:night,kyotoHigashiyama:11,visitorEssentials:true,routeFilter:true};
+      // Sharing a route must not clear the active search via its parent article.
+      await page.locator('#ej-search').fill('南座');
+      await page.locator('#ej-field-list .ej-route:not([hidden]) .ej-route-share').click();
+      assert.equal(await page.locator('#ej-search').inputValue(),'南座','Route controls must not hijack search');
+      await page.locator('[data-find-venue="清水寺"]').click();
+      await page.locator('.city-section.active .ej-essentials summary').first().click();
+      assert.ok(await page.locator('.city-section.active .ej-field-provenance').count()>0,'Practical field must show individual source metadata');
+      await page.locator('#visitor-info').scrollIntoViewIfNeeded();
+      await page.screenshot({path:`${out}/390-visitor.png`,fullPage:false});
+      report[width].interactions={japaneseSearch:shown,nightResult:night,kyotoHigashiyama:11,visitorEssentials:true,fieldProvenance:true,routeFilter:true,routeCardDoesNotHijackSearch:true};
       await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
       await page.screenshot({path:`${out}/390-routes.png`,fullPage:false});
+   }
+   if(width===1280){
+     await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
+     await page.screenshot({path:`${out}/1280-routes.png`,fullPage:false});
+     await page.locator('.ej-mixtape').scrollIntoViewIfNeeded();
+     await page.screenshot({path:`${out}/1280-editorial.png`,fullPage:false});
    }
    await page.close();
  }
