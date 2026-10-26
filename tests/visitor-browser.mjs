@@ -57,8 +57,12 @@ try{
    }
    if(width===1280){
      await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
+     await page.locator('.ej-field-art img').evaluate(async img=>{await img.decode();});
+     const overlap=await page.evaluate(()=>{const left=document.querySelector('.ej-field-intro')?.getBoundingClientRect(),right=document.querySelector('.ej-field-content')?.getBoundingClientRect();return {leftRight:left?.right,rightLeft:right?.left}});
+     assert.ok(overlap.leftRight<=overlap.rightLeft+1,'Route column overlaps the editorial intro: '+JSON.stringify(overlap));
      await page.screenshot({path:`${out}/1280-routes.png`,fullPage:false});
      await page.locator('.ej-mixtape').scrollIntoViewIfNeeded();
+     await page.locator('.ej-mixtape img').evaluate(async img=>{await img.decode();});
      await page.screenshot({path:`${out}/1280-editorial.png`,fullPage:false});
    }
    await page.close();
