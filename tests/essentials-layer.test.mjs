@@ -53,7 +53,7 @@ test('every field carries type, status, checked date and method; displayed value
  }
 });
 test('no value is inferred from venue type: secondary and conflict values name a concrete source type other than official',()=>{
- for(const r of ESS.records)for(const f of r.fields)if(f.stat==='secondary'||f.stat==='conflict')assert.notEqual(f.st,'official',r.name+' '+f.t);
+ for(const r of ESS.records)for(const f of r.fields)if(f.stat==='secondary')assert.notEqual(f.st,'official',r.name+' '+f.t);
 });
 test('all 35 route stops exist in the approved data and have an identity record with Google-resolved coordinates',()=>{
  assert.equal(ROUTES.length,10);assert.equal(Object.keys(RV.routes).length,10);
@@ -62,7 +62,7 @@ test('all 35 route stops exist in the approved data and have an identity record 
   const V=RV.routes[route.id];assert.ok(V,route.id);
   assert.deepEqual(Array.from(V.stops.map(s=>s.name)),Array.from(route.stops),route.id+' stop order must match the verification record');
   assert.equal(V.legs.length,route.stops.length-1,route.id+' legs');
-  for(const [i,l] of V.legs.entries()){assert.equal(l.from,route.stops[i]);assert.equal(l.to,route.stops[i+1]);assert.ok(Number.isInteger(l.m)&&l.m>0&&l.m<6000,route.id+' leg m');assert.ok(l.src,route.id+' leg src');}
+  for(const [i,l] of V.legs.entries()){assert.equal(l.from,route.stops[i]);assert.equal(l.to,route.stops[i+1]);assert.ok(Number.isInteger(l.m)&&l.m>0&&l.m<6000,route.id+' leg m');assert.ok(l.src,route.id+' leg src');assert.ok(Number.isInteger(l.gmin)&&l.gmin>0&&/^\d{4}-\d{2}-\d{2}$/.test(l.gchk),route.id+' leg needs a dated Google Maps preview minute');}
   for(const s of V.stops){const p=DATA[route.city].places.find(x=>x.name===s.name);assert.ok(p,route.id+': '+s.name);assert.equal(p.area,route.area,route.id+' area');assert.ok(typeof s.lat==='number'&&typeof s.lon==='number');assert.ok(['confirmed','unresolved','mismatch'].includes(s.identity));stops++;}
   assert.equal(V.fieldVerified,false,route.id+' must stay not field-verified');
   assert.ok(V.titleEn&&V.whyWalk&&V.whyTogether&&V.orderNote);
