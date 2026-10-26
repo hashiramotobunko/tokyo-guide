@@ -95,3 +95,20 @@ test('unverified items are counted, not displayed as facts, in the page logic',(
  assert.ok(html.includes('Not yet confirmed: '));
  assert.ok(html.includes('as checked '));
 });
+
+test('ledger file matches a fresh rebuild of the data layer (no drift)',async()=>{
+ const {execFileSync}=await import('node:child_process');
+ const {mkdtempSync,copyFileSync,readFileSync:rf}=await import('node:fs');const os=await import('node:os');const path=await import('node:path');
+ // Rebuild into a temp copy of the repo files the builder reads, then compare rows ignoring the generated date.
+ const tmp=mkdtempSync(path.join(os.tmpdir(),'ej-ledger-'));
+ for(const d of ['data','scripts'])execFileSync('mkdir',['-p',path.join(tmp,d)]);
+ copyFileSync(new URL('tokyo-guide_2.html',root),path.join(tmp,'tokyo-guide_2.html'));
+ copyFileSync(new URL('data/visitor-essentials.js',root),path.join(tmp,'data','visitor-essentials.js'));
+ copyFileSync(new URL('data/route-verification.js',root),path.join(tmp,'data','route-verification.js'));
+ copyFileSync(new URL('data/research-ledger.json',root),path.join(tmp,'data','research-ledger.json'));
+ copyFileSync(new URL('scripts/build_research_ledger.mjs',root),path.join(tmp,'scripts','build_research_ledger.mjs'));
+ execFileSync(process.execPath,[path.join(tmp,'scripts','build_research_ledger.mjs')],{stdio:'ignore'});
+ const fresh=JSON.parse(rf(path.join(tmp,'data','research-ledger.json'),'utf8'));
+ assert.deepEqual(fresh.rows,ledger.rows,'run node scripts/build_research_ledger.mjs and commit data/research-ledger.json');
+ const a={...fresh.summary,generated:''},b={...ledger.summary,generated:''};assert.deepEqual(a,b);
+});

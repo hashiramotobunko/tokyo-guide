@@ -6,6 +6,8 @@ import { dirname, resolve } from 'node:path';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import test from 'node:test';
+// The CI workflow lists test files explicitly; importing the data-layer suite here runs it in the same job without a workflow change.
+import './essentials-layer.test.mjs';
 const __dirname=dirname(fileURLToPath(import.meta.url));
 const source=readFileSync(resolve(__dirname,'../tokyo-guide_2.html'),'utf8');
 const script=source.match(/<script>([\s\S]*?)<\/script>/)?.[1]||'';
