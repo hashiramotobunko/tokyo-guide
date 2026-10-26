@@ -511,6 +511,14 @@ footer small{width:100%;opacity:.7}
 @media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(12,minmax(0,1fr))}.ej-feature-links a:nth-child(n){grid-column:span 6;transform:none}.ej-mixtape{margin:0 5% 60px;grid-template-columns:45% 1fr}.ej-mixtape-copy h2{font-size:clamp(51px,8vw,86px)}}
 @media(max-width:600px){.ej-feature-index{padding:20px 5% 30px}.ej-feature-links{gap:8px}.ej-feature-links a:nth-child(n){grid-column:span 6;min-height:153px;padding:15px 12px}.ej-feature-links strong{font-size:19px}.ej-feature-links small{font-size:10px}.ej-mixtape{display:block;margin:10px 5% 65px}.ej-mixtape-art{margin:0 13% 0 5%;transform:translateY(-15px) rotate(-2deg);height:250px;box-shadow:8px 8px 0 #101b31}.ej-mixtape-copy{padding:23px 7% 37px}.ej-mixtape-copy h2{font-size:72px}.ej-mixtape-copy small{margin-top:13px}.ej-field-art{display:none}.ej-discovery-feedback{flex-direction:column;align-items:stretch}.ej-discovery-feedback button{width:100%}.ej-route{border-left-width:4px!important}}
 @media(prefers-reduced-motion:reduce){.ej-feature-links a{transition:none}.ej-feature-links a:hover{transform:none!important}}
+/* Keep filters and route cards in ONE second grid column; do not auto-place each child. */
+.ej-field-notes{grid-template-columns:minmax(0,39%) minmax(0,58%);gap:3%;align-items:start}
+.ej-field-intro{position:relative;top:auto;min-width:0}
+.ej-field-intro h2{font-size:clamp(58px,7vw,106px);margin:35px 0}
+.ej-field-content{min-width:0;max-width:100%}
+.ej-route{min-width:0}
+@media(max-width:950px){.ej-field-notes{grid-template-columns:minmax(0,34%) minmax(0,64%);gap:2%}.ej-field-intro h2{font-size:clamp(49px,6.7vw,76px)}}
+@media(max-width:700px){.ej-field-notes{display:block}.ej-field-intro{position:static}.ej-field-intro h2{font-size:clamp(70px,15vw,108px)}}
 </style>
 </head>
 <body>
@@ -581,7 +589,7 @@ footer small{width:100%;opacity:.7}
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each theme brings together real addresses from our guide. Walking order, transfers, opening hours and accessibility remain unverified.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original city-pop abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each theme brings together real addresses from our guide. Walking order, transfers, opening hours and accessibility remain unverified.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original city-pop abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
 <button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
 <button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
 <button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
@@ -590,7 +598,7 @@ footer small{width:100%;opacity:.7}
 <button type="button" data-route-choice="coffee" aria-pressed="false">Food & coffee</button>
 <button type="button" data-route-choice="culture" aria-pressed="false">Art & heritage</button>
 <button type="button" data-route-choice="food" aria-pressed="false">Food-led walks</button>
-</div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · unverified</p><div class="ej-field-list" id="ej-field-list"></div></section>
+</div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · unverified</p><div class="ej-field-list" id="ej-field-list"></div></div></section>
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
