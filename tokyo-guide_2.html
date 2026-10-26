@@ -519,6 +519,27 @@ footer small{width:100%;opacity:.7}
 .ej-route{min-width:0}
 @media(max-width:950px){.ej-field-notes{grid-template-columns:minmax(0,34%) minmax(0,64%);gap:2%}.ej-field-intro h2{font-size:clamp(49px,6.7vw,76px)}}
 @media(max-width:700px){.ej-field-notes{display:block}.ej-field-intro{position:static}.ej-field-intro h2{font-size:clamp(70px,15vw,108px)}}
+.ej-route-brief{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;max-width:760px;margin:0 0 22px}
+.ej-route-brief p{font-size:14px;line-height:1.6;color:#222;margin:0}.ej-route-brief b{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin-bottom:6px}
+.ej-route-check{border:2px solid #111;padding:12px 16px 14px;margin:0 0 26px;max-width:640px;display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;font-size:12px}
+.ej-route-check>div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dotted #bbb;padding:6px 0}.ej-route-check dt{color:#333}.ej-route-check dd{margin:0;font-weight:900;white-space:nowrap}
+.ej-route-check-head{grid-column:1/-1;font-size:10px;letter-spacing:.1em;font-weight:900;color:#df5200;border:0!important;padding-bottom:2px!important}
+.ej-route-leg{list-style:none;font-size:11px;font-weight:800;color:#555;padding:5px 0 5px 27px;border-top:1px dashed #ccc}
+.ej-route-en{display:block;margin:4px 0 0 27px;font-size:12px;color:#444;font-style:normal}
+.ej-route-idnote{color:#555!important;font-size:12px!important}
+.ej-chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0 27px}
+.ej-chip{font-size:10px;font-weight:900;letter-spacing:.04em;padding:4px 8px;border:1px solid #111;background:#fff}
+.ej-chip-official{background:#ff5900;border-color:#ff5900}.ej-chip-conflict{border-style:dashed;color:#b23b00}.ej-chip-unchecked{color:#777;border-color:#bbb}
+.ej-stop-details{margin:10px 0 0 27px;font-size:12px;max-width:640px}.ej-stop-details summary{cursor:pointer;font-weight:850;min-height:40px;display:flex;align-items:center;gap:8px;list-style:none}.ej-stop-details summary::-webkit-details-marker{display:none}
+.ej-stop-details dl{margin:0}
+.ej-ess-row{display:grid;grid-template-columns:110px 1fr;gap:7px;border-top:1px dotted #bbb;padding:9px 0;line-height:1.5;font-size:12px}.ej-ess-row dt{font-weight:850}.ej-ess-row dd{margin:0;color:#333}
+.ej-ess-alt,.ej-ess-note{display:block;color:#555;font-size:11px;margin-top:4px}.ej-ess-alt{color:#b23b00}
+.ej-field-provenance{display:block;font-size:10.5px;color:#555;margin-top:5px;line-height:1.7}.ej-field-provenance a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none}.ej-field-provenance i{font-style:normal;color:#777}
+.ej-stat{display:inline-block;font-style:normal;font-size:9.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid #111;margin-right:4px;color:#111;background:#fff}
+.ej-stat-official{background:#ff5900;border-color:#ff5900}.ej-stat-conflict{border-style:dashed;color:#b23b00}
+.ej-route-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 22px;max-width:980px}.ej-route-notes h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:0 0 8px}.ej-route-notes ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.55;color:#222}.ej-route-notes li{margin-bottom:6px}.ej-route-notes a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none;font-size:11px;white-space:nowrap}
+.ej-visitor-legend{font-size:11px;color:#444;margin:10px 0 0;line-height:2.1}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
+@media(max-width:700px){.ej-route-brief,.ej-route-check,.ej-route-notes{grid-template-columns:1fr}.ej-ess-row,.ej-essentials dl>div.ej-ess-row{grid-template-columns:1fr}.ej-route-check dd{white-space:normal;text-align:right}.ej-chips,.ej-stop-details,.ej-route-leg,.ej-route-en{margin-left:0;padding-left:0}}
 </style>
 </head>
 <body>
@@ -589,7 +610,7 @@ footer small{width:100%;opacity:.7}
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each theme brings together real addresses from our guide. Walking order, transfers, opening hours and accessibility remain unverified.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original city-pop abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each route brings together real addresses from our guide. Every stop is matched to its map pin, distances are estimated on the map, and hours or access are cited where we found them. No route has been walked on the ground for the guide yet.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original city-pop abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
 <button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
 <button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
 <button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
@@ -598,18 +619,11 @@ footer small{width:100%;opacity:.7}
 <button type="button" data-route-choice="coffee" aria-pressed="false">Food & coffee</button>
 <button type="button" data-route-choice="culture" aria-pressed="false">Art & heritage</button>
 <button type="button" data-route-choice="food" aria-pressed="false">Food-led walks</button>
-</div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · unverified</p><div class="ej-field-list" id="ej-field-list"></div></div></section>
+</div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · map-checked drafts</p><div class="ej-field-list" id="ej-field-list"></div></div></section>
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong>Source-recorded visitor details for eight destinations</strong><div class="ej-visitor-shortcuts">
-<button type="button" data-find-venue="MAIDENS SHOP JIMBOCHO" data-find-city="Tokyo">MAIDENS SHOP JIMBOCHO ↗</button><button type="button" data-find-venue="MIZUNO TOKYO" data-find-city="Tokyo">MIZUNO TOKYO ↗</button><button type="button" data-find-venue="東京国立博物館" data-find-city="Tokyo">Tokyo National Museum ↗</button>
-<button type="button" data-find-venue="東京都美術館" data-find-city="Tokyo">Tokyo Metropolitan Art Museum ↗</button>
-<button type="button" data-find-venue="国立西洋美術館" data-find-city="Tokyo">National Museum of Western Art ↗</button>
-<button type="button" data-find-venue="明治神宮" data-find-city="Tokyo">Meiji Jingu ↗</button>
-<button type="button" data-find-venue="通天閣" data-find-city="Osaka">Tsutenkaku Tower ↗</button>
-<button type="button" data-find-venue="清水寺" data-find-city="Kyoto">Kiyomizu-dera ↗</button>
-</div><p class="ej-info-caveat">For the remaining 518 places, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span><span class="ej-stat ej-stat-secondary">Secondary source</span><span class="ej-stat ej-stat-conflict">Sources disagree</span> Unchecked items are listed as unconfirmed, never shown as facts.</p><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
  <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
@@ -643,7 +657,8 @@ footer small{width:100%;opacity:.7}
 <main id="mainContent"></main>
 
 <footer><span>All locations link directly to Google Maps · Curated by Tetsuya Hashiramoto</span><span class="ej-footer-instagram" id="ej-footer-instagram" hidden></span><small>Illustrations are interpretive artworks, not photographs of the listed locations.</small></footer>
-
+<script src="data/visitor-essentials.js"></script>
+<script src="data/route-verification.js"></script>
 <script>
 // ============================================================
 // DATA
@@ -1310,74 +1325,73 @@ const EJ_NOTES={
  "明治神宮":{en:"Established in 1920, Meiji Jingu stands within a large forest in the middle of Tokyo. Its seasonal gate schedule is worth checking before setting out.",source:"https://www.meijijingu.or.jp/en/about/"}
 };
 
-/* Traveller information, field by field from official sources.
-   Checked 2026-10-23. Not live data; viewers should reconfirm before visiting. */
-const EJ_PRACTICAL={
- "東京国立博物館":{
-   fee:"TNM Collection: adults ¥1,000; university students ¥500. Special exhibitions cost extra.",
-   hours:"09:30–17:00. Friday and Saturday usually until 20:00; special openings and closures vary.",
-   access:"About 10 minutes on foot from JR Ueno (Park Exit) or Uguisudani.",
-   source:"https://www.tnm.jp/modules/r_free_page/index.php?id=113",checked:"2026-10-24"},
- "国立西洋美術館":{
-   fee:"Permanent collection: adults ¥500; university students ¥250; special exhibitions may be different.",
-   hours:"09:30–17:30; Fridays and Saturdays until 20:00. Last admission 30 minutes before closing.",
-   access:"7-7 Ueno-koen, Taito-ku, Tokyo.",
-   source:"https://www.nmwa.go.jp/en/visit/",checked:"2026-10-24"},
- "東京都美術館":{
-   fee:"Museum entry is free. Admission to individual exhibitions varies.",
-   hours:"09:30–17:30; Friday until 20:00 during special exhibitions. Seasonal closures apply.",
-   access:"7 minutes on foot from JR Ueno Station, Park Exit.",
-   source:"https://www.tobikan.jp/guide/",checked:"2026-10-24"},
- "清水寺":{
-   hours:"Opens at 06:00. Closing time varies seasonally and for evening events.",
-   access:"Approach via Kiyomizu-zaka or Chawan-zaka. Some streets have steep slopes.",
-   source:"https://www.kiyomizudera.or.jp/en/faq/",checked:"2026-10-24"},
- "明治神宮":{
-   hours:"Gates open at sunrise and close at sunset; October gates are usually 05:40–16:40. Consult the monthly timetable.",
-   access:"A forested shrine precinct near Harajuku and Yoyogi; consult the official access map for entrances.",
-   source:"https://www.meijijingu.or.jp/sanpai/2.php",checked:"2026-10-24"},
- "通天閣":{
-   fee:"General observation deck: adults ¥1,500; children ¥800. Additional experiences cost extra.",
-   hours:"General observation deck: 09:00–21:45, last admission 21:15. Changes possible.",
-   reservation:"A timed admission reservation is required. Check the official ticket guidance; advance booking is recommended.",
-   access:"About 3 minutes on foot from Ebisucho Station or 6 minutes from Shin-Imamiya.",
-   source:"https://www.tsutenkaku.co.jp/annai/",checked:"2026-10-24"},
- "MAIDENS SHOP JIMBOCHO":{
-   hours:"Current published store schedule: Monday–Friday 12:00–19:00; Saturday–Sunday 11:00–19:00. Check for exceptions.",
-   access:"2-2-14 Kanda Sarugakucho, Chiyoda-ku, Tokyo.",
-   source:"https://maidens-shop.jp/store-info/",checked:"2026-10-26"},
- "MIZUNO TOKYO":{
-   hours:"Published store hours: 11:00–20:00. Check closures and holiday dates with the store.",
-   access:"3-1 Kandaogawamachi, Chiyoda-ku, Tokyo. Official access: about 6 minutes from Jimbocho Station Exit A5.",
-   source:"https://jpn.mizuno.com/shop/globalflag_tokyo_en",checked:"2026-10-26"}
-};
-/* Each published practical claim has its own source/date/status record.
-   The 2026-10-24 entries have not been re-verified live in this update. */
-const EJ_PRACTICAL_FIELDS=Object.fromEntries(Object.entries(EJ_PRACTICAL).map(([name,info])=>[
- name,Object.fromEntries(['fee','hours','access','reservation'].filter(key=>typeof info[key]==='string').map(key=>[
-  key,{value:info[key],source:info.source,checked:info.checked,status:'source-recorded'}
- ]))
-]));
-function ejPracticalField(p,key,label){
- const f=EJ_PRACTICAL_FIELDS[p.name]?.[key];if(!f)return '';
- return '<div><dt>'+ejHTML(label)+'</dt><dd>'+ejHTML(f.value)+'<span class="ej-field-provenance"><a href="'+ejHTML(f.source)+'" target="_blank" rel="noopener noreferrer">Source ↗</a> · recorded '+ejHTML(f.checked)+' · recheck before visiting</span></dd></div>';
+/* Visitor essentials come from the independent data layer in data/visitor-essentials.js (window.EJ_ESSENTIALS_V1).
+   Every displayed value keeps its own source URL, source type, verification status and checked date.
+   Fields marked unverified carry no value and are never shown as facts. Records attach to the 526 listings
+   by city + Google Maps place id (ejPlaceKey), never by name alone, so same-name venues cannot collide. */
+const EJ_ESSENTIALS_META=(typeof window!=='undefined'&&window.EJ_ESSENTIALS_V1)||{version:'',records:[]};
+const EJ_ESSENTIALS_DATA=Array.isArray(EJ_ESSENTIALS_META.records)?EJ_ESSENTIALS_META.records:[];
+function ejPlaceKey(city,p){const m=String(p.url||'').match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/);return city+'|'+(m?m[1]:'name:'+p.name)}
+const EJ_ESSENTIALS_BY_KEY=Object.fromEntries(EJ_ESSENTIALS_DATA.map(r=>[r.key,r]));
+function ejEssentialsFor(p){return EJ_ESSENTIALS_BY_KEY[ejPlaceKey(ejCityForPlace(p),p)]||null}
+/* Name-keyed view kept for older checks; display always resolves through the place key. */
+const EJ_PRACTICAL=Object.fromEntries(EJ_ESSENTIALS_DATA.map(r=>[r.name,r]));
+const EJ_FIELD_LABEL={hours:'Opening hours',closed:'Closed',fee:'Admission / price',reservation:'Booking / tickets',payment:'Payment',access:'Access',address:'Address',language:'Language',accessibility:'Step-free & access needs',notice:'Good to know',tip:'Worth knowing',website:'Website',name:'Official name'};
+const EJ_FIELD_ORDER=['hours','closed','fee','reservation','payment','access','address','accessibility','language','notice','tip'];
+const EJ_TIME_SENSITIVE=new Set(['hours','closed','fee','reservation','payment']);
+const EJ_STAT_LABEL={official:'Official source',secondary:'Secondary source',conflict:'Sources disagree'};
+const EJ_SOURCE_TYPE={official:'official site',government:'public authority','tourism-board':'tourism board',association:'local association','reservation-platform':'official booking page',media:'media listing',aggregator:'directory listing','review-site':'review site',osm:'OpenStreetMap'};
+function ejShownFields(rec){return rec?rec.fields.filter(f=>f.v&&(f.stat==='official'||f.stat==='secondary'||f.stat==='conflict')):[]}
+function ejUncheckedTypes(rec){return rec?rec.fields.filter(f=>f.stat==='unverified').map(f=>EJ_FIELD_LABEL[f.t]||f.t):[]}
+function ejProvenance(f){
+ const parts=['<b class="ej-stat ej-stat-'+ejHTML(f.stat)+'">'+ejHTML(EJ_STAT_LABEL[f.stat]||f.stat)+'</b>'];
+ if(f.src)parts.push('<a href="'+ejHTML(f.src)+'" target="_blank" rel="noopener noreferrer">Source ↗</a>'+(EJ_SOURCE_TYPE[f.st]?' <i>'+ejHTML(EJ_SOURCE_TYPE[f.st])+'</i>':''));
+ parts.push(EJ_TIME_SENSITIVE.has(f.t)?'as checked '+ejHTML(f.chk)+' · may have changed':'checked '+ejHTML(f.chk));
+ return '<span class="ej-field-provenance">'+parts.join(' · ')+'</span>';
+}
+function ejFieldRow(f){
+ return '<div class="ej-ess-row" data-stat="'+ejHTML(f.stat)+'" data-field="'+ejHTML(f.t)+'"><dt>'+ejHTML(EJ_FIELD_LABEL[f.t]||f.t)+'</dt><dd>'+ejHTML(f.v)+(f.alt?'<span class="ej-ess-alt">Another source says: '+ejHTML(f.alt)+'</span>':'')+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f)+'</dd></div>';
+}
+function ejPracticalField(p,type){
+ const rec=ejEssentialsFor(p);if(!rec)return '';
+ return ejShownFields(rec).filter(f=>f.t===type).map(ejFieldRow).join('');
 }
 function ejPracticalCitation(p){
- const info=EJ_PRACTICAL[p.name];if(!info)return '';
- return '<div><dt>Recorded source</dt><dd><a href="'+ejHTML(info.source)+'" target="_blank" rel="noopener noreferrer">Official visitor information ↗</a> · Checked '+ejHTML(info.checked)+'</dd></div>';
+ const rec=ejEssentialsFor(p);if(!rec)return '';
+ const shown=ejShownFields(rec);const latest=rec.fields.map(f=>f.chk).sort().pop()||EJ_ESSENTIALS_META.version;
+ const unchecked=ejUncheckedTypes(rec);
+ return '<div class="ej-ess-row ej-ess-summary"><dt>Recorded source</dt><dd>'+(rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official visitor information ↗</a> · ':'')+shown.length+' checked item'+(shown.length===1?'':'s')+' · Checked '+ejHTML(latest)+(unchecked.length?'<span class="ej-ess-note">Not yet confirmed: '+ejHTML(unchecked.join(' · '))+'</span>':'')+'</dd></div>';
+}
+function ejEssentialsBlock(p){
+ const rec=ejEssentialsFor(p);
+ if(!rec)return '<div><dt>Before you go</dt><dd>Prices, opening times, reservations and language support have not been checked for this place. Verify with the venue before visiting.</dd></div>';
+ const shown=ejShownFields(rec);
+ const rows=EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('');
+ const status=shown.length?'<div><dt>Before you go</dt><dd>Each line below names its source and the date it was read. Time-sensitive details are shown as they stood on that date; reconfirm before travel.</dd></div>':'<div><dt>Before you go</dt><dd>We looked for official information on '+ejHTML(EJ_ESSENTIALS_META.version)+' and could not confirm hours, prices or access. Nothing is assumed from the venue type; check directly.</dd></div>';
+ return status+rows+ejPracticalCitation(p);
+}
+function ejRenderVisitorShortcuts(){
+ const box=document.getElementById('ej-visitor-shortcuts');if(!box)return;
+ const all=Object.entries(DATA).flatMap(([city,{places}])=>places.map(p=>({city,p,rec:ejEssentialsFor(p)}))).filter(x=>x.rec);
+ const totalPlaces=Object.values(DATA).reduce((a,c)=>a+c.places.length,0);
+ const withInfo=all.filter(x=>ejShownFields(x.rec).length);
+ const official=all.filter(x=>x.rec.fields.some(f=>f.stat==='official'&&f.v)).length;
+ const sum=document.getElementById('ej-visitor-summary');if(sum)sum.textContent='Source-recorded visitor details for '+withInfo.length+' destinations ('+official+' with official sources) · '+all.length+' of '+totalPlaces+' places researched so far';
+ const cav=document.getElementById('ej-info-caveat');if(cav)cav.textContent='For the remaining '+(totalPlaces-all.length)+' places, this guide does not assert unchecked hours, prices or reservation policies. '+(all.length-withInfo.length)+' researched places had no confirmable information yet. Consult the venue before visiting.';
+ box.innerHTML=withInfo.sort((a,b)=>a.city.localeCompare(b.city)||a.p.name.localeCompare(b.p.name,'ja')).map(x=>'<button type="button" data-find-venue="'+ejHTML(x.p.name)+'" data-find-city="'+ejHTML(x.city)+'">'+ejHTML(x.rec.nameEn||x.p.name)+' <small>'+ejHTML(x.city)+'</small> ↗</button>').join('');
 }
 
 const EJ_ROUTES=[
- {id:"jimbocho",theme:"coffee",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Three invitations rather than a prescribed order.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
- {id:"shibuya",theme:"night",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three entries from our Shibuya music-bar collection. Follow the music rather than a fixed schedule. Confirm each venue individually before visiting.",stops:["Hi-Fi Disco Bar Chaos","MUSIC BAR BOUNCE","THE MUSIC BAR -CAVE SHIBUYA-"]},
- {id:"higashiyama",theme:"culture",city:"Kyoto",area:"Higashiyama",eyebrow:"KYOTO / STAGE, SHRINE, SWEETS",title:"Higashiyama in different registers",intro:"The temple, shrine, theater and sweet shop reveal distinct sides of eastern Kyoto. This is a thematic selection, not a verified one-day walking route.",stops:["清水寺","八坂神社","南座","甘味どころ ぎをん 小森"]},
- {id:"ueno",city:"Tokyo",area:"Ueno",theme:"culture",eyebrow:"TOKYO / MUSEUMS & OPEN AIR",title:"Ueno, beyond the museum doors",intro:"Three museums and a park from the address book. Visit sequence, admission and opening hours are not verified.",stops:["東京国立博物館","国立西洋美術館","東京都美術館","不忍池"]},
- {id:"kiyosumi",city:"Tokyo",area:"Kiyosumi-Shirakawa",theme:"coffee",eyebrow:"TOKYO / COFFEE & FOOD",title:"Kiyosumi, a slower morning",intro:"Two coffee addresses and a yoshoku stop, grouped for exploration rather than as a tested walking loop.",stops:["米本珈琲 清澄白河","First Crop Coffee Japan Roastery","実用洋食 七福"]},
- {id:"harajuku",city:"Tokyo",area:"Harajuku",theme:"culture",eyebrow:"TOKYO / SHRINE & STREETS",title:"Harajuku, different tempos",intro:"A shrine precinct, a shopping street and food stops. Check entrances and hours yourself.",stops:["明治神宮","竹下通り","瑞穂","THE GREAT BURGER"]},
- {id:"ebisu",city:"Tokyo",area:"Ebisu",theme:"night",eyebrow:"TOKYO / MUSIC",title:"Ebisu on the record",intro:"Music-focused venues from the guide. Opening times, entry and walking transfers are unconfirmed.",stops:["Spincoaster Music Bar Ebisu","ソウルソニックブギー恵比寿","SOUND BAR MOD'Z"]},
- {id:"koenji",city:"Tokyo",area:"Koenji",theme:"night",eyebrow:"TOKYO / FOOD & BARS",title:"Koenji, stay a little longer",intro:"Eating and drinking stops as a thematic shortlist. Not a checked evening itinerary.",stops:["中華料理 七面鳥","日本酒あさって","bar dop","立呑み きど藤"]},
- {id:"shinjuku",city:"Tokyo",area:"Shinjuku",theme:"coffee",eyebrow:"TOKYO / ALLEYS & FOOD",title:"Shinjuku, the smaller streets",intro:"An alley and food stops from the guide. Route order and business hours require checks.",stops:["新宿西口 思い出横丁","そば処かめや 新宿店","中華料理 岐阜屋","四文屋 思い出横丁店"]},
- {id:"namba",city:"Osaka",area:"Namba",theme:"food",eyebrow:"OSAKA / FOOD & CITY LIGHTS",title:"Namba, beyond the billboards",intro:"An iconic bridge, local food and yoshoku. The listed order is an editorial idea, not a verified walking itinerary.",stops:["戎橋","自由軒 難波本店","本家大たこ 道頓堀本店"]}
+ {id:"jimbocho",theme:"coffee",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Hours for all three are recorded from their own websites.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
+ {id:"shibuya",theme:"night",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three listening bars in rising order of lateness, from the station basement up into Maruyamacho. Only CAVE publishes its hours; confirm the other two before you go.",stops:["THE MUSIC BAR -CAVE SHIBUYA-","MUSIC BAR BOUNCE","Hi-Fi Disco Bar Chaos"]},
+ {id:"higashiyama",theme:"culture",city:"Kyoto",area:"Higashiyama",eyebrow:"KYOTO / STAGE, SHRINE, SWEETS",title:"Higashiyama in different registers",intro:"Temple, shrine, theatre and tearoom on a downhill line from Kiyomizu to the Shijo bridge. Gate times are official; the walk itself is map-checked, not walked.",stops:["清水寺","八坂神社","南座","甘味どころ ぎをん 小森"]},
+ {id:"ueno",city:"Tokyo",area:"Ueno",theme:"culture",eyebrow:"TOKYO / MUSEUMS & OPEN AIR",title:"Ueno, beyond the museum doors",intro:"Three museums and the pond inside one park. Admission, hours and closures are recorded from the museums' own pages; check Monday closures.",stops:["東京国立博物館","国立西洋美術館","東京都美術館","不忍池"]},
+ {id:"kiyosumi",city:"Tokyo",area:"Kiyosumi-Shirakawa",theme:"coffee",eyebrow:"TOKYO / COFFEE & FOOD",title:"Kiyosumi, a slower morning",intro:"Two coffee addresses and a yoshoku counter within 750 m. Published hours are thin here; one roastery's schedule differs between sources.",stops:["米本珈琲 清澄白河","First Crop Coffee Japan Roastery","実用洋食 七福"]},
+ {id:"harajuku",city:"Tokyo",area:"Harajuku",theme:"culture",eyebrow:"TOKYO / SHRINE & STREETS",title:"Harajuku, different tempos",intro:"Shrine at dawn pace, a daifuku shop that sells out by lunch, a burger counter, then the car-free street. The order follows each stop's time window.",stops:["明治神宮","瑞穂","THE GREAT BURGER","竹下通り"]},
+ {id:"ebisu",city:"Tokyo",area:"Ebisu",theme:"night",eyebrow:"TOKYO / MUSIC",title:"Ebisu on the record",intro:"Three small music bars within 900 m. Spincoaster publishes its hours; the other two could not be confirmed and should be treated as unconfirmed.",stops:["Spincoaster Music Bar Ebisu","ソウルソニックブギー恵比寿","SOUND BAR MOD'Z"]},
+ {id:"koenji",city:"Tokyo",area:"Koenji",theme:"night",eyebrow:"TOKYO / FOOD & BARS",title:"Koenji, stay a little longer",intro:"Dinner first at a diner that closes at 19:00, then a rum bar, a no-cover sake bar and a standing bar. Ordered by closing time, not by fame.",stops:["中華料理 七面鳥","bar dop","日本酒あさって","立呑み きど藤"]},
+ {id:"shinjuku",city:"Tokyo",area:"Shinjuku",theme:"coffee",eyebrow:"TOKYO / ALLEYS & FOOD",title:"Shinjuku, the smaller streets",intro:"One post-war alley, three counters. Everything is within 250 m; shop hours come from the alley association's own listings, some of them dated.",stops:["新宿西口 思い出横丁","そば処かめや 新宿店","中華料理 岐阜屋","四文屋 思い出横丁店"]},
+ {id:"namba",city:"Osaka",area:"Namba",theme:"food",eyebrow:"OSAKA / FOOD & CITY LIGHTS",title:"Namba, beyond the billboards",intro:"Century-old curry first (it closes at 20:00), the bridge as the neon comes on, takoyaki last. Three stops within 1.2 km whose hours line up in this order.",stops:["自由軒 難波本店","戎橋","本家大たこ 道頓堀本店"]}
 ];
 function ejHTML(x){return String(x).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;")}
 
@@ -1393,13 +1407,40 @@ function ejRouteGoogleMapsURL(route){
  return url.href;
 }
 
+const EJ_ROUTE_FIELD=(typeof window!=='undefined'&&window.EJ_ROUTE_FIELD_V1)||{routes:{},statusLabel:'DRAFT / UNVERIFIED WALKING ROUTE',legMethod:''};
+function ejMinutes(m){return Math.max(1,Math.round(m/80))}
+function ejDistance(m){return m>=1000?(Math.round(m/100)/10)+' km':m+' m'}
+function ejStopStatus(rec,type){const f=rec&&rec.fields.find(x=>x.t===type);if(!f||!f.v||f.stat==='unverified'||f.stat==='n-a')return 'unchecked';return f.stat}
+function ejRouteSummary(route,V){
+ const stops=route.stops.map(n=>DATA[route.city]?.places.find(p=>p.name===n)).filter(Boolean);
+ const recs=stops.map(p=>ejEssentialsFor(p));const total=stops.length;
+ const count=(type,ok)=>recs.filter(r=>ok.includes(ejStopStatus(r,type))).length;
+ const ident=V.stops.filter(x=>x.identity==='confirmed').length;
+ const meters=V.legs.reduce((a,l)=>a+l.m,0);
+ const items=[['Destinations matched to their map pins',ident+' of '+total],['Opening hours from an official source',count('hours',['official'])+' of '+total],['Opening hours from any dated source',count('hours',['official','secondary','conflict'])+' of '+total],['Step-free or access-needs information',count('accessibility',['official','secondary'])+' of '+total],['Walking distance, map estimate',ejDistance(meters)+' · about '+ejMinutes(meters)+' min'],['Walked on the ground for this guide','not yet']];
+ return '<dl class="ej-route-check" aria-label="Verification status"><div class="ej-route-check-head"><span>CHECKED SO FAR</span><span>'+ejHTML(V.version||EJ_ROUTE_FIELD.version||'')+'</span></div>'+items.map(([k,v])=>'<div><dt>'+ejHTML(k)+'</dt><dd>'+ejHTML(v)+'</dd></div>').join('')+'</dl>';
+}
+function ejRouteStop(route,V,name,index){
+ const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
+ const note=EJ_NOTES[name];const rec=ejEssentialsFor(p);const vs=V&&V.stops.find(x=>x.name===name);
+ const chipText={official:'official',secondary:'secondary',conflict:'sources disagree',unchecked:'unchecked'};
+ const chip=(label,type)=>{const st=ejStopStatus(rec,type);return '<span class="ej-chip ej-chip-'+st+'">'+label+': '+chipText[st]+'</span>'};
+ let leg='';
+ if(V&&index>0&&V.legs[index-1]){const l=V.legs[index-1];leg='<li class="ej-route-leg">↓ '+ejDistance(l.m)+' · about '+ejMinutes(l.m)+' min on foot · map estimate, not walked</li>';}
+ const shown=ejShownFields(rec);
+ return leg+'<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong>'+(rec&&rec.nameEn&&rec.nameEn!==p.name?'<em class="ej-route-en">'+ejHTML(rec.nameEn)+'</em>':'')+'<small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+(vs&&vs.identity==='confirmed'?' · map pin confirmed as “'+ejHTML(vs.mapsResolved)+'”':'')+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+(vs&&vs.note?'<p class="ej-route-idnote">'+ejHTML(vs.note)+'</p>':'')+'<div class="ej-chips">'+chip('Hours','hours')+chip('Access','access')+chip('Step-free','accessibility')+'</div>'+(shown.length?'<details class="ej-stop-details"><summary>Checked details &amp; sources <span aria-hidden="true">＋</span></summary><dl>'+EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('')+'</dl></details>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(rec&&rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official site ↗</a>':note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
+}
 function ejRenderRoutes(){
  const root=document.getElementById("ej-field-list");if(!root)return;
- root.innerHTML=EJ_ROUTES.map(route=>'<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>DRAFT / UNVERIFIED WALKING ROUTE</span></div><h3>'+ejHTML(route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p><ol class="ej-route-stops">'+route.stops.map((name,index)=>{
- const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
- const note=EJ_NOTES[name];
- return '<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong><small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
- }).join('')+'</ol><div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Preview stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div><p class="ej-route-caution">Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before traveling.</p></article>').join("");
+ root.innerHTML=EJ_ROUTES.map(route=>{
+  const V=EJ_ROUTE_FIELD.routes[route.id];
+  const label=V?EJ_ROUTE_FIELD.statusLabel:'DRAFT / UNVERIFIED WALKING ROUTE';
+  const brief=V?'<div class="ej-route-brief"><p><b>Why walk here</b>'+ejHTML(V.whyWalk)+'</p><p><b>Why these stops together</b>'+ejHTML(V.whyTogether)+'</p></div>':'';
+  const list=(title,items,withSrc)=>items&&items.length?'<div><h4>'+title+'</h4><ul>'+items.map(x=>withSrc?'<li>'+ejHTML(x.text)+' <a href="'+ejHTML(x.src)+'" target="_blank" rel="noopener noreferrer">Source ↗</a></li>':'<li>'+ejHTML(x)+'</li>').join('')+'</ul></div>':'';
+  const after=V?'<div class="ej-route-notes">'+list('Background, with sources',V.culture,true)+list('Getting around',V.transit,false)+list('Check before you go',V.checkBefore,false)+'</div>':'';
+  const caution=V?'Map-checked draft: each destination was matched to its Google Maps pin and distances were estimated on OpenStreetMap, but nobody has walked this sequence for the guide yet. '+ejHTML(V.orderNote)+' Confirm hours, access and transfers before traveling.':'Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before traveling.';
+  return '<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>'+ejHTML(label)+'</span></div><h3>'+ejHTML((V&&V.titleEn)||route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p>'+brief+(V?ejRouteSummary(route,V):'')+'<ol class="ej-route-stops">'+route.stops.map((name,index)=>ejRouteStop(route,V,name,index)).join('')+'</ol>'+after+'<div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Preview stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div><p class="ej-route-caution">'+caution+'</p></article>';
+ }).join("");
 }
 
 const TYPE_ORDER = ['Eat & Drink','See','Bathe','Shop','Do','Stay'];
@@ -1437,12 +1478,7 @@ function card(p) {
     <details class="ej-essentials"><summary>Visitor essentials <span aria-hidden="true">＋</span></summary><dl>
     <div><dt>Location</dt><dd>${ejHTML(p.area)} · ${ejHTML(ejCityForPlace(p))}</dd></div>
     <div><dt>Directions</dt><dd><a href="${ejHTML(p.url)}" target="_blank" rel="noopener noreferrer">Check Google Maps ↗</a></dd></div>
-    ${ejPracticalField(p,'fee','Admission / price')}
-    ${ejPracticalField(p,'hours','Opening hours')}
-    ${ejPracticalField(p,'access','Access')}
-    ${ejPracticalField(p,'reservation','Booking / tickets')}
-    ${!EJ_PRACTICAL[p.name] ? '<div><dt>Before you go</dt><dd>Prices, opening times, reservations and language support have not been checked. Verify with the venue before visiting.</dd></div>' : '<div><dt>Before you go</dt><dd>Official information was checked on the stated date, but may change. Confirm directly before travel.</dd></div>'}
-    ${ejPracticalCitation(p)}
+    ${ejEssentialsBlock(p)}
     ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
     </dl></details>
     <button type="button" class="ej-fav" data-fav="${encodeURIComponent(p.url)}" aria-pressed="${ejSaved.has(p.url) ? 'true':'false'}">${ejSaved.has(p.url) ? 'Saved ✓':'Save this place +'}</button>
@@ -1819,6 +1855,7 @@ cityTabsEl.addEventListener('click', e => {
 });
 
 ejRenderRoutes();
+ejRenderVisitorShortcuts();
 
 /* Integrated search and deep links — all filtering uses the 526-item source DATA. */
 const ejSearchBox=document.getElementById('ej-search');
@@ -1978,7 +2015,7 @@ function ejApplyRouteFilters(){
   const good=(ejRouteChoice==='all'||article.dataset.routeCity===ejRouteChoice||article.dataset.routeTheme===ejRouteChoice)&&(!ejRouteArea||article.dataset.routeArea===ejRouteArea);
   article.hidden=!good;if(good)n++;
  });
- document.getElementById('ej-route-status').textContent=n+' route ideas · verify walking order, times and opening hours';
+ document.getElementById('ej-route-status').textContent=n+' route ideas · map-checked drafts, not yet walked for the guide';
 }
 document.getElementById('ej-route-options').addEventListener('click',e=>{
  const b=e.target.closest('button[data-route-choice]');if(!b)return;
