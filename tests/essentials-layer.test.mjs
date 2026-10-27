@@ -112,3 +112,40 @@ test('ledger file matches a fresh rebuild of the data layer (no drift)',async()=
  assert.deepEqual(fresh.rows,ledger.rows,'run node scripts/build_research_ledger.mjs and commit data/research-ledger.json');
  const a={...fresh.summary,generated:''},b={...ledger.summary,generated:''};assert.deepEqual(a,b);
 });
+
+test('bulk-research integrity: every listing has a record; enums, dates, sources, conflicts and blanks are consistent',()=>{
+ const today=new Date().toISOString().slice(0,10);
+ assert.equal(ESS.records.length,526,'all 526 listings must have a record');
+ for(const r of ESS.records){
+  assert.ok(Array.isArray(r.fields)&&r.fields.length>=1,r.name+' has no fields');
+  if(r.website)assert.ok(/^https?:\/\//.test(r.website),r.name+' website');
+  for(const f of r.fields){
+   assert.ok(STATS.has(f.stat),r.name+' stat '+f.stat);assert.ok(TYPES.has(f.t),r.name+' type '+f.t);
+   assert.ok(DATE.test(f.chk)&&f.chk<=today,r.name+' chk '+f.chk);assert.equal(f.by,'manual-web',r.name);
+   if(f.stat==='unverified'||f.stat==='n-a'){assert.equal(f.v,'',r.name+' '+f.t+' must carry no value');assert.equal(f.src,'',r.name+' '+f.t+' must carry no source')}
+   else{assert.ok(f.v.length>0,r.name+' '+f.t+' empty value');assert.ok(/^https?:\/\//.test(f.src),r.name+' '+f.t+' src');assert.ok(SOURCE_TYPES.has(f.st),r.name+' st '+f.st)}
+   if(f.stat==='official')assert.ok(['official','government','tourism-board','association'].includes(f.st),r.name+' '+f.t+': official status needs an official-grade source');
+   if(f.stat==='conflict')assert.ok(typeof f.alt==='string'&&f.alt.length>0,r.name+' '+f.t+': conflict needs the alternative value');
+  }
+ }
+});
+test('generated visitor-essentials.js matches the canonical JSON (no drift)',()=>{
+ const canon=JSON.parse(readFileSync(new URL('data/visitor-essentials.json',root),'utf8'));
+ assert.deepEqual(JSON.parse(JSON.stringify(ESS)),canon,'run node scripts/build_essentials.mjs and commit data/visitor-essentials.js');
+});
+test('route legs: one leg per consecutive stop pair, every leg read on the Google Maps preview, disagreements flagged not corrected',()=>{
+ let legs=0,stops=0,flagged=0;
+ for(const [id,rt] of Object.entries(RV.routes)){
+  stops+=rt.stops.length;legs+=rt.legs.length;assert.equal(rt.legs.length,rt.stops.length-1,id+' leg count');
+  rt.legs.forEach((l,i)=>{
+   assert.equal(l.from,rt.stops[i].name,id+' leg '+i+' from');assert.equal(l.to,rt.stops[i+1].name,id+' leg '+i+' to');
+   assert.ok(l.m>0&&l.gmin>0&&DATE.test(l.gchk)&&l.src==='osrm'&&l.gsrc==='google-maps-walking-preview',id+' leg '+i);
+   const pace=l.m/l.gmin,osrmMin=Math.round(l.m/80);const off=l.m>=100&&(pace<55||pace>110||Math.abs(osrmMin-l.gmin)>=5); // legs under 100 m round to 1 min and are not judged
+   if(off){assert.ok(l.disc===true&&typeof l.discNote==='string'&&l.discNote.length>20,id+' leg '+i+' must be flagged');flagged++}
+   else assert.ok(!l.disc,id+' leg '+i+' flagged without reason');
+  });
+ }
+ assert.equal(stops,35);assert.equal(legs,25);assert.ok(flagged>=1);
+ assert.ok(html.includes('map figures disagree'),'page must surface flagged legs');
+ assert.ok(html.includes('Legs where distance and preview minutes disagree'));
+});
