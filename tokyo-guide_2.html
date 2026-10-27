@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tokyo Guide — Tetsuya's Picks</title>
+<title>Encounter Japan — Beyond the obvious</title>
+<meta name="description" content="Encounter Japan: an independent address book of 526 places across Japan — cafés, bars, temples, baths and walks — each with a direct Google Maps link and source-checked visitor essentials.">
+<meta property="og:site_name" content="Encounter Japan">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Encounter Japan — Beyond the obvious">
+<meta property="og:description" content="An independent address book, not a checklist: 526 places across Japan with map links, draft walking routes and source-checked visitor essentials.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Encounter Japan — Beyond the obvious">
+<meta name="twitter:description" content="An independent address book, not a checklist: 526 places across Japan with map links, draft walking routes and source-checked visitor essentials.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -540,6 +548,47 @@ footer small{width:100%;opacity:.7}
 .ej-route-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 22px;max-width:980px}.ej-route-notes h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:0 0 8px}.ej-route-notes ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.55;color:#222}.ej-route-notes li{margin-bottom:6px}.ej-route-notes a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none;font-size:11px;white-space:nowrap}
 .ej-visitor-legend{font-size:11px;color:#444;margin:10px 0 0;line-height:2.1}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
 @media(max-width:700px){.ej-route-brief,.ej-route-check,.ej-route-notes{grid-template-columns:1fr}.ej-ess-row,.ej-essentials dl>div.ej-ess-row{grid-template-columns:1fr}.ej-route-check dd{white-space:normal;text-align:right}.ej-chips,.ej-stop-details,.ej-route-leg,.ej-route-en{margin-left:0;padding-left:0}}
+
+/* 2026-10-27 traveller-first route cards, essentials entry, responsive fixes */
+.ej-mini{display:inline-block;max-width:100%}
+.ej-route-why{font-size:16px;line-height:1.65;max-width:620px;margin:0 0 20px;color:#222}
+.ej-route-facts{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 26px;margin:0 0 28px;font-size:13px;color:#333;max-width:720px}
+.ej-route-facts b{font-family:Impact,"Arial Black",sans-serif;font-weight:400;font-size:28px;letter-spacing:-.04em;margin-right:5px;color:#111}
+.ej-route-stop{border-top:1px solid #d9d9d9;padding:20px 0 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 24px;align-items:start}
+.ej-stop-main{display:flex;gap:16px;min-width:0}
+.ej-route-number{font-family:Impact,"Arial Black",sans-serif;font-weight:400;font-size:34px;line-height:.9;color:#ff5900;min-width:40px;margin:0}
+.ej-stop-body{min-width:0;flex:1}
+.ej-stop-body strong{font-size:20px;letter-spacing:-.02em}
+.ej-stop-body small,.ej-stop-body p,.ej-stop-body .ej-chips,.ej-stop-body .ej-route-en{margin-left:0}
+.ej-stop-key{font-size:13px;line-height:1.55;margin:9px 0 0;color:#222}
+.ej-stop-key .ej-key{display:block}.ej-stop-key .ej-key b{font-weight:900}.ej-stop-key .ej-key i{font-style:normal;color:#666;font-size:11px;margin-left:4px}
+.ej-key-conflict{color:#b23b00;font-weight:800}.ej-stop-key-none{color:#666}
+.ej-chips{margin-top:8px}.ej-chip{font-size:10px}
+.ej-route-leg{padding:7px 0 7px 56px;border-top:1px dashed #d4d4d4;font-size:12px;color:#444;font-weight:700}
+.ej-route-leg a{color:#111;font-weight:900;border-bottom:1px solid #ff5900;text-decoration:none}
+.ej-route-more,.ej-route-verification{margin:10px 0 0;border-top:1px solid #d9d9d9}
+.ej-route-more summary,.ej-route-verification summary,.ej-visitor-index summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;min-height:46px;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.ej-route-more summary::-webkit-details-marker,.ej-route-verification summary::-webkit-details-marker,.ej-visitor-index summary::-webkit-details-marker{display:none}
+.ej-route-more[open] summary span[aria-hidden],.ej-route-verification[open] summary span[aria-hidden],.ej-visitor-index[open] summary span[aria-hidden]{transform:rotate(45deg)}
+.ej-route-more summary span[aria-hidden],.ej-route-verification summary span[aria-hidden],.ej-visitor-index summary span[aria-hidden]{display:inline-block;color:#ff5900;transition:transform .15s}
+.ej-route-verification h4{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:18px 0 6px}
+.ej-route-verification .ej-route-check{margin:14px 0 0;max-width:none;border-width:1px}
+.ej-route-legs-verif{font-size:12px;line-height:1.6;color:#444;padding-left:18px;margin:0}.ej-route-legs-verif li{margin-bottom:6px}.ej-route-legs-verif span{color:#666}
+.ej-route-more .ej-route-brief{grid-template-columns:1fr;margin:12px 0 10px}
+.ej-ess-varies{display:block;font-weight:800;color:#b23b00;margin-bottom:2px}
+.ej-ess-conflict summary{cursor:pointer;font-size:11px;font-weight:800;color:#111;min-height:30px;display:flex;align-items:center}
+.ej-ess-conflict[open]{margin-top:4px}
+.ej-visitor-entry p{font-size:15px;line-height:1.6;margin:18px 0 0;max-width:560px}
+.ej-visitor-go{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.ej-visitor-go a,.ej-visitor-go button{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;font:900 13px/1.2 Arial,sans-serif;border:1px solid #111;background:#fff;color:#111;text-decoration:none;cursor:pointer;margin:0;border-radius:0}
+.ej-visitor-go a{background:#ff5900;border-color:#ff5900}
+.ej-visitor-index{border-top:1px solid #999;margin-top:6px}
+.ej-visitor-index .ej-visitor-shortcuts{max-height:380px;overflow:auto;padding:4px 0 12px}
+.ej-visitor-index-count{font-weight:700}
+@media(min-width:951px){.ej-field-notes{grid-template-columns:minmax(0,30%) minmax(0,67%);gap:3%}.ej-field-intro{position:sticky;top:24px;align-self:start}}
+@media(max-width:1000px){.ej-hero-main{width:60%}.ej-poster{width:36%;height:58%;top:24%;right:3%}.ej-mini{margin-left:0}.ej-after-title{max-width:44%;margin-left:4%}.ej-deck{width:auto}}
+@media(max-width:700px){.ej-route-stop{grid-template-columns:1fr;gap:8px}.ej-route-links{flex-direction:row;align-items:flex-start;margin-left:56px;min-width:0}.ej-route-leg{padding-left:0}.ej-route-number{font-size:28px;min-width:40px}.ej-route-facts b{font-size:24px}.ej-hero{height:auto;min-height:0;padding-bottom:64px}.ej-hero-main{position:static;width:auto;padding:76px 5% 0}.ej-after-title{max-width:100%;margin-top:26px}.ej-poster{position:relative;top:auto;right:auto;margin:28px 5% 0 auto;width:62%;height:300px;transform:rotate(3deg)}.ej-scroll{bottom:16px}}
+@media(max-width:360px){.ej-hero-main{padding-top:70px}.ej-hero h1{margin-top:34px}.ej-jp{display:inline-block;max-width:100%;font-size:14px;line-height:1.5}.ej-poster{margin:26px 4% 0 auto;width:68%;height:250px}}
 </style>
 </head>
 <body>
@@ -623,7 +672,7 @@ footer small{width:100%;opacity:.7}
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> read on the venue’s own site or a public authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> read on a booking site, directory or dated article · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> two sources differ, so both are shown · <b class="ej-stat">Not yet confirmed</b> we looked and found nothing reliable; it is not a “no”. Every line shows its source and the date it was read.</p><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> read on the venue’s own site or a public authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> read on a booking site, directory or dated article · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> two sources differ, so both are shown · <b class="ej-stat">Not yet confirmed</b> we looked and found nothing reliable; it is not a “no”. Every line shows its source and the date it was read.</p><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
  <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
@@ -1349,8 +1398,9 @@ function ejProvenance(f){
  parts.push(EJ_TIME_SENSITIVE.has(f.t)?'as checked '+ejHTML(f.chk)+' · may have changed':'checked '+ejHTML(f.chk));
  return '<span class="ej-field-provenance">'+parts.join(' · ')+'</span>';
 }
+const EJ_CONFLICT_LABEL={hours:'Hours',closed:'Closing days',fee:'Prices',reservation:'Booking details',payment:'Payment details',access:'Access details',address:'Address details',accessibility:'Step-free details',language:'Language support details',notice:'Notices'};
 function ejFieldRow(f){
- return '<div class="ej-ess-row" data-stat="'+ejHTML(f.stat)+'" data-field="'+ejHTML(f.t)+'"><dt>'+ejHTML(EJ_FIELD_LABEL[f.t]||f.t)+'</dt><dd>'+(f.stat==='conflict'?'<span class="ej-ess-varies">Varies by source — call or check before you go.</span><span class="ej-ess-alt">One source: '+ejHTML(f.v)+'</span><span class="ej-ess-alt">Another: '+ejHTML(f.alt||'')+'</span>':ejHTML(f.v))+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f)+'</dd></div>';
+ return '<div class="ej-ess-row" data-stat="'+ejHTML(f.stat)+'" data-field="'+ejHTML(f.t)+'"><dt>'+ejHTML(EJ_FIELD_LABEL[f.t]||f.t)+'</dt><dd>'+(f.stat==='conflict'?'<span class="ej-ess-varies">'+ejHTML(EJ_CONFLICT_LABEL[f.t]||((EJ_FIELD_LABEL[f.t]||f.t)+' details'))+' vary by source — please confirm before visiting.</span><details class="ej-ess-conflict"><summary>See both sources and dates</summary><span class="ej-ess-alt">One source: '+ejHTML(f.v)+'</span><span class="ej-ess-alt">Another: '+ejHTML(f.alt||'')+'</span>'+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f)+'</details>':ejHTML(f.v)+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f))+'</dd></div>';
 }
 function ejPracticalField(p,type){
  const rec=ejEssentialsFor(p);if(!rec)return '';
@@ -1377,7 +1427,8 @@ function ejRenderVisitorShortcuts(){
  const withInfo=all.filter(x=>ejShownFields(x.rec).length);
  const official=all.filter(x=>x.rec.fields.some(f=>f.stat==='official'&&f.v)).length;
  const sum=document.getElementById('ej-visitor-summary');if(sum)sum.textContent='Source-recorded visitor details for '+withInfo.length+' destinations ('+official+' with official sources) · '+all.length+' of '+totalPlaces+' places researched so far';
- const cav=document.getElementById('ej-info-caveat');if(cav)cav.textContent='For the remaining '+(totalPlaces-all.length)+' places, this guide does not assert unchecked hours, prices or reservation policies. '+(all.length-withInfo.length)+' researched places had no confirmable information yet. Consult the venue before visiting.';
+ const idx=document.getElementById('ej-visitor-index-count');if(idx)idx.textContent='('+withInfo.length+')';
+ const cav=document.getElementById('ej-info-caveat');if(cav)cav.textContent=(totalPlaces-all.length>0?'For the remaining '+(totalPlaces-all.length)+' places, this guide does not assert unchecked hours, prices or reservation policies. ':'Every place has been looked up at least once. ')+(all.length-withInfo.length)+' places had no confirmable information yet; for them nothing is assumed from the venue type. Consult the venue before visiting.';
  box.innerHTML=withInfo.sort((a,b)=>a.city.localeCompare(b.city)||a.p.name.localeCompare(b.p.name,'ja')).map(x=>'<button type="button" data-find-venue="'+ejHTML(x.p.name)+'" data-find-city="'+ejHTML(x.city)+'">'+ejHTML(x.rec.nameEn||x.p.name)+' <small>'+ejHTML(x.city)+'</small> ↗</button>').join('');
 }
 
@@ -1417,8 +1468,26 @@ function ejRouteSummary(route,V){
  const count=(type,ok)=>recs.filter(r=>ok.includes(ejStopStatus(r,type))).length;
  const ident=V.stops.filter(x=>x.identity==='confirmed').length;
  const meters=V.legs.reduce((a,l)=>a+l.m,0);
- const items=[['Destinations matched to their map pins',ident+' of '+total],['Opening hours from an official source',count('hours',['official'])+' of '+total],['Opening hours from any dated source',count('hours',['official','secondary','conflict'])+' of '+total],['Step-free or access-needs information',count('accessibility',['official','secondary'])+' of '+total],['Walking distance, map estimate',ejDistance(meters)+' · '+(V.legs.every(l=>l.gmin)?V.legs.reduce((a,l)=>a+l.gmin,0)+' min per Google Maps preview':'about '+ejMinutes(meters)+' min')],['Legs checked on the Google Maps walking preview',V.legs.filter(l=>l.gmin).length+' of '+V.legs.length],['Legs with a rough distance figure',V.legs.filter(l=>l.disc).length+' of '+V.legs.length+' (minutes re-read on Google Maps)'],['Walked on the ground for this guide','not yet']];
+ const items=[['Destinations matched to their map pins',ident+' of '+total],['Opening hours from an official source',count('hours',['official'])+' of '+total],['Opening hours from any dated source',count('hours',['official','secondary','conflict'])+' of '+total],['Step-free or access-needs information',count('accessibility',['official','secondary'])+' of '+total],['Distance on the map (OpenStreetMap routing)',ejDistance(meters)+(V.legs.some(l=>l.disc)?' · rough':'')],['Minutes on the Google Maps walking preview',V.legs.every(l=>l.gmin)?V.legs.reduce((a,l)=>a+l.gmin,0)+' min in total':'not read for every leg'],['Legs read on the Google Maps walking preview',V.legs.filter(l=>l.gmin).length+' of '+V.legs.length],['Legs with a rough distance figure',V.legs.filter(l=>l.disc).length+' of '+V.legs.length+' (minutes re-read on Google Maps)'],['Walked on the ground for this guide','not yet']];
  return '<dl class="ej-route-check" aria-label="Verification status"><div class="ej-route-check-head"><span>CHECKED SO FAR</span><span>'+ejHTML(V.version||EJ_ROUTE_FIELD.version||'')+'</span></div>'+items.map(([k,v])=>'<div><dt>'+ejHTML(k)+'</dt><dd>'+ejHTML(v)+'</dd></div>').join('')+'</dl>';
+}
+function ejLegDirURL(V,i){const a=V&&V.stops[i],b=V&&V.stops[i+1];if(!a||!b||a.lat==null||b.lat==null)return '';return 'https://www.google.com/maps/dir/?api=1&origin='+a.lat+','+a.lon+'&destination='+b.lat+','+b.lon+'&travelmode=walking';}
+function ejRouteTimeText(V){
+ if(!V||!V.legs.length)return 'walking time not confirmed';
+ if(!V.legs.every(l=>l.gmin))return 'walking time not confirmed';
+ const g=V.legs.reduce((a,l)=>a+l.gmin,0);
+ return (V.legs.some(l=>l.disc)?'roughly ':'about ')+g+' min of walking by map preview — not walked, allow extra';
+}
+function ejStopKeyLine(rec){
+ if(!rec)return '<p class="ej-stop-key ej-stop-key-none">Hours not confirmed — check before you go.</p>';
+ const pick=t=>rec.fields.find(f=>f.t===t&&(f.stat==='official'||f.stat==='secondary'||f.stat==='conflict'));
+ const parts=[];
+ for(const [t,label] of [['hours','Hours'],['closed','Closed']]){
+  const f=pick(t);if(!f)continue;
+  if(f.stat==='conflict')parts.push('<span class="ej-key ej-key-conflict">'+(t==='hours'?'Hours':'Closing days')+' vary by source — please confirm before visiting</span>');
+  else parts.push('<span class="ej-key"><b>'+label+'</b> '+ejHTML(f.v)+' <i>'+(f.stat==='official'?'official':'listed')+' · as checked '+ejHTML(f.chk)+'</i></span>');
+ }
+ return parts.length?'<p class="ej-stop-key">'+parts.join('')+'</p>':'<p class="ej-stop-key ej-stop-key-none">Hours not confirmed — check before you go.</p>';
 }
 function ejRouteStop(route,V,name,index){
  const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
@@ -1426,20 +1495,29 @@ function ejRouteStop(route,V,name,index){
  const chipText={official:'official',secondary:'listed',conflict:'confirm ahead',unchecked:'not confirmed'};
  const chip=(label,type)=>{const st=ejStopStatus(rec,type);return '<span class="ej-chip ej-chip-'+st+'">'+label+': '+chipText[st]+'</span>'};
  let leg='';
- if(V&&index>0&&V.legs[index-1]){const l=V.legs[index-1];leg='<li class="ej-route-leg">↓ '+ejDistance(l.m)+(l.gmin?' · Google Maps walking preview '+l.gmin+' min':' · about '+ejMinutes(l.m)+' min on foot')+' · map check only, not walked'+(l.disc?' · ⚠ distance is a rough estimate; minutes re-read on Google Maps '+ejHTML(l.gchk2||l.gchk)+(l.gpinFrom?'<small class="ej-route-pin">Map pins: '+ejHTML(l.gpinFrom)+' → '+ejHTML(l.gpinTo)+'. Gates and stairs not checked on foot.</small>':''):'')+'</li>';}
+ if(V&&index>0&&V.legs[index-1]){
+  const l=V.legs[index-1];const dir=ejLegDirURL(V,index-1);
+  leg='<li class="ej-route-leg">↓ '+(l.gmin?'≈ '+l.gmin+' min on the map preview':'about '+ejMinutes(l.m)+' min on the map')+(l.disc?' · distance unconfirmed':' · '+ejDistance(l.m))+' · not walked'+(dir?' · <a href="'+ejHTML(dir)+'" target="_blank" rel="noopener noreferrer">Directions ↗</a>':'')+'</li>';
+ }
  const shown=ejShownFields(rec);
- return leg+'<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong>'+(rec&&rec.nameEn&&rec.nameEn!==p.name?'<em class="ej-route-en">'+ejHTML(rec.nameEn)+'</em>':'')+'<small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+(vs&&vs.identity==='confirmed'?' · map pin confirmed as “'+ejHTML(vs.mapsResolved)+'”':'')+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+(vs&&vs.note?'<p class="ej-route-idnote">'+ejHTML(vs.note)+'</p>':'')+'<div class="ej-chips">'+chip('Hours','hours')+chip('Access','access')+chip('Step-free','accessibility')+'</div>'+(shown.length?'<details class="ej-stop-details"><summary>Checked details &amp; sources <span aria-hidden="true">＋</span></summary><dl>'+EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('')+'</dl></details>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(rec&&rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official site ↗</a>':note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
+ return leg+'<li class="ej-route-stop"><div class="ej-stop-main"><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><div class="ej-stop-body"><strong>'+ejHTML(p.name)+'</strong>'+(rec&&rec.nameEn&&rec.nameEn!==p.name?'<em class="ej-route-en">'+ejHTML(rec.nameEn)+'</em>':'')+'<small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+ejStopKeyLine(rec)+'<div class="ej-chips">'+chip('Hours','hours')+chip('Access','access')+chip('Step-free','accessibility')+'</div>'+(shown.length?'<details class="ej-stop-details"><summary>Checked details &amp; sources <span aria-hidden="true">＋</span></summary><dl>'+EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('')+'</dl></details>':'')+'</div></div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(rec&&rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official site ↗</a>':note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
+}
+function ejRouteVerification(route,V){
+ const stops=V.stops.map(s=>'<li>'+ejHTML(s.name)+' → map pin resolves to “'+ejHTML(s.mapsResolved||'?')+'”'+(s.identity==='confirmed'?' (confirmed)':'')+(s.note?' — '+ejHTML(s.note):'')+'</li>').join('');
+ const legs=V.legs.map(l=>'<li><b>'+ejHTML(l.from)+' → '+ejHTML(l.to)+'</b>: '+ejDistance(l.m)+' by OpenStreetMap routing'+(l.gmin?' · '+l.gmin+' min on the Google Maps walking preview (read '+ejHTML(l.gchk)+(l.gchk2?', again '+ejHTML(l.gchk2):'')+')':'')+(l.gpinFrom?' · pins: '+ejHTML(l.gpinFrom)+' → '+ejHTML(l.gpinTo):'')+(l.discNote?'<br><span>'+ejHTML(l.discNote)+'</span>':'')+'</li>').join('');
+ return '<details class="ej-route-verification"><summary>Route verification details <span aria-hidden="true">＋</span></summary>'+ejRouteSummary(route,V)+'<h4>How each stop was matched</h4><ul class="ej-route-legs-verif">'+stops+'</ul><h4>How each leg was measured</h4><ul class="ej-route-legs-verif">'+legs+'</ul><p class="ej-route-caution">Map-checked draft: '+ejHTML(V.orderNote)+' Nobody has walked this sequence for the guide; gates, stairs and crossings are unchecked. Confirm hours, access and transfers before travelling.</p></details>';
 }
 function ejRenderRoutes(){
  const root=document.getElementById("ej-field-list");if(!root)return;
  root.innerHTML=EJ_ROUTES.map(route=>{
   const V=EJ_ROUTE_FIELD.routes[route.id];
   const label=V?EJ_ROUTE_FIELD.statusLabel:'DRAFT / UNVERIFIED WALKING ROUTE';
-  const brief=V?'<div class="ej-route-brief"><p><b>Why walk here</b>'+ejHTML(V.whyWalk)+'</p><p><b>Why these stops together</b>'+ejHTML(V.whyTogether)+'</p></div>':'';
   const list=(title,items,withSrc)=>items&&items.length?'<div><h4>'+title+'</h4><ul>'+items.map(x=>withSrc?'<li>'+ejHTML(x.text)+' <a href="'+ejHTML(x.src)+'" target="_blank" rel="noopener noreferrer">Source ↗</a></li>':'<li>'+ejHTML(x)+'</li>').join('')+'</ul></div>':'';
-  const after=V?'<div class="ej-route-notes">'+list('Background, with sources',V.culture,true)+list('Getting around',V.transit,false)+list('Check before you go',V.checkBefore,false)+'</div>':'';
-  const caution=V?'Map-checked draft: each destination was matched to its Google Maps pin and distances were estimated on OpenStreetMap, but nobody has walked this sequence for the guide yet. '+ejHTML(V.orderNote)+' Confirm hours, access and transfers before traveling.':'Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before traveling.';
-  return '<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>'+ejHTML(label)+'</span></div><h3>'+ejHTML((V&&V.titleEn)||route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p>'+brief+(V?ejRouteSummary(route,V):'')+'<ol class="ej-route-stops">'+route.stops.map((name,index)=>ejRouteStop(route,V,name,index)).join('')+'</ol>'+after+'<div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Preview stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div><p class="ej-route-caution">'+caution+'</p></article>';
+  const meters=V?V.legs.reduce((a,l)=>a+l.m,0):0;
+  const facts=V?'<p class="ej-route-facts"><span><b>'+route.stops.length+'</b> stops</span><span><b>'+ejHTML(ejDistance(meters))+'</b> on the map'+(V.legs.some(l=>l.disc)?' (rough)':'')+'</span><span>'+ejHTML(ejRouteTimeText(V))+'</span></p>':'<p class="ej-route-facts"><span><b>'+route.stops.length+'</b> stops</span><span>distance and walking time not confirmed</span></p>';
+  const why=V?'<p class="ej-route-why">'+ejHTML(V.whyWalk)+'</p>':'';
+  const more=V?'<details class="ej-route-more"><summary>Before you go: hours, transit, background <span aria-hidden="true">＋</span></summary><div class="ej-route-brief"><p><b>Why these stops together</b>'+ejHTML(V.whyTogether)+'</p></div><div class="ej-route-notes">'+list('Check before you go',V.checkBefore,false)+list('Getting around',V.transit,false)+list('Background, with sources',V.culture,true)+'</div></details>':'<p class="ej-route-caution">Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before travelling.</p>';
+  return '<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>'+ejHTML(label)+'</span></div><h3>'+ejHTML((V&&V.titleEn)||route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p>'+why+facts+'<ol class="ej-route-stops">'+route.stops.map((name,index)=>ejRouteStop(route,V,name,index)).join('')+'</ol><div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Open all stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div>'+more+(V?ejRouteVerification(route,V):'')+'</article>';
  }).join("");
 }
 

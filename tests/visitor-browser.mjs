@@ -16,6 +16,8 @@ try{
    const dims=await page.evaluate(()=>({windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth}));
    assert.ok(dims.docWidth<=dims.windowWidth+1,'Horizontal overflow at '+width+': '+JSON.stringify(dims));
    assert.deepEqual(errors,[],'Script exceptions at '+width);
+   const hero=await page.evaluate(()=>{const r=s=>document.querySelector(s)?.getBoundingClientRect();const poster=r('.ej-poster'),mini=r('.ej-mini'),after=r('.ej-after-title'),jp=r('.ej-jp');const hit=(a,b)=>a&&b&&a.left<b.right-2&&a.right>b.left+2&&a.top<b.bottom-2&&a.bottom>b.top+2;return {miniOverPoster:hit(mini,poster),afterOverPoster:hit(after,poster),jpInside:jp&&jp.right<=innerWidth&&jp.left>=0,afterInside:after&&after.right<=innerWidth}});
+   assert.deepEqual(hero,{miniOverPoster:false,afterOverPoster:false,jpInside:true,afterInside:true},'Hero copy must not overlap the illustration at '+width+': '+JSON.stringify(hero));
    await page.screenshot({path:`${out}/${width}-top.png`,fullPage:false});
    await page.locator('#browse').scrollIntoViewIfNeeded();
    await page.screenshot({path:`${out}/${width}-search.png`,fullPage:false});
@@ -60,6 +62,8 @@ try{
       await page.locator('#ej-search').fill('南座');
       await page.locator('#ej-field-list .ej-route:not([hidden]) .ej-route-share').click();
       assert.equal(await page.locator('#ej-search').inputValue(),'南座','Route controls must not hijack search');
+      await page.locator('.ej-visitor-index').evaluate(d=>{d.open=true});
+      await page.locator('[data-find-venue="清水寺"]').evaluate(b=>b.scrollIntoView({block:'center',behavior:'instant'}));
       await page.locator('[data-find-venue="清水寺"]').click();
       await page.locator('.city-section.active .ej-essentials summary').first().click();
       assert.ok(await page.locator('.city-section.active .ej-field-provenance').count()>0,'Practical field must show individual source metadata');
@@ -79,10 +83,14 @@ try{
       await ueno.locator('.ej-stop-details summary').first().click();
       assert.ok(await ueno.locator('.ej-stop-details[open] .ej-field-provenance a[href^="https://"]').count()>0,'Stop details must cite a source');
       assert.ok((await page.locator('#fieldnotes').textContent()).includes('NOT FIELD-WALKED'));
+      const order=await ueno.evaluate(el=>{const s=el.querySelector('.ej-route-stop'),v=el.querySelector('.ej-route-verification');return {stopsFirst:!!(s&&v)&&!!(s.compareDocumentPosition(v)&Node.DOCUMENT_POSITION_FOLLOWING),verificationClosed:v&&!v.open,legHasDirections:!!el.querySelector('.ej-route-leg a[href*="maps/dir"]')}});
+      assert.deepEqual(order,{stopsFirst:true,verificationClosed:true,legHasDirections:true},'Route card must lead with stops and keep verification collapsed');
       await page.screenshot({path:`${out}/390-route-detail.png`,fullPage:false});
       // Visitor essentials shortcuts are generated from the data layer and reach a researched listing.
+      await page.locator('.ej-visitor-index').evaluate(d=>{d.open=true});
       const shortcuts=await page.locator('#ej-visitor-shortcuts button').count();
       assert.ok(shortcuts>=30,'Expected generated shortcuts for researched places, got '+shortcuts);
+      await page.locator('#ej-visitor-shortcuts button[data-find-venue="自由軒 難波本店"]').evaluate(b=>b.scrollIntoView({block:'center',behavior:'instant'}));
       await page.locator('#ej-visitor-shortcuts button[data-find-venue="自由軒 難波本店"]').click();
       await page.locator('.city-section.active .ej-essentials summary').first().click();
       const ess=page.locator('.city-section.active .ej-essentials[open]').first();
@@ -109,6 +117,7 @@ try{
      await page.locator('#visitor-info').evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
      await page.screenshot({path:`${out}/1280-visitor.png`,fullPage:false});
      // Keyboard: the first generated shortcut is reachable and operable by keyboard.
+     await page.locator('.ej-visitor-index').evaluate(d=>{d.open=true});
      await page.locator('#ej-visitor-shortcuts button').first().focus();
      await page.keyboard.press('Enter');
      assert.ok(await page.locator('.city-section.active .place-card').count()>=1);

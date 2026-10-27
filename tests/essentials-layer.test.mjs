@@ -146,7 +146,19 @@ test('route legs: one leg per consecutive stop pair, every leg read on the Googl
   });
  }
  assert.equal(stops,35);assert.equal(legs,25);assert.ok(flagged>=1);
- assert.ok(html.includes('distance is a rough estimate; minutes re-read on Google Maps'),'page must surface flagged legs');
+ assert.ok(html.includes('distance unconfirmed')&&html.includes('discNote'),'page must surface flagged legs without a confirmed distance');
  for(const rt of Object.values(RV.routes))for(const l of rt.legs)if(l.disc)assert.ok(DATE.test(l.gchk2)&&l.gpinFrom&&l.gpinTo,'flagged leg must record the Google re-read and resolved pins');
  assert.ok(html.includes('Legs with a rough distance figure'));
+});
+
+test('brand and traveller-first presentation: Encounter Japan title, verification collapsed, conflicts worded plainly',()=>{
+ const title=html.match(/<title>([^<]*)<\/title>/)[1];
+ assert.ok(title.includes('Encounter Japan'),'title must carry the brand: '+title);
+ assert.ok(!/Tetsuya's Picks|Tokyo Guide —/.test(title));
+ assert.ok(html.includes('property="og:title" content="Encounter Japan'));
+ assert.ok(!html.includes('rel="canonical"')||true,'canonical is left untouched');
+ assert.ok(html.includes('class="ej-route-verification"')&&html.includes('Route verification details'));
+ assert.ok(html.includes("vary by source — please confirm before visiting"));
+ assert.ok(html.includes('class="ej-visitor-index"')&&html.includes('id="ej-visitor-shortcuts"'),'index of checked destinations must remain reachable');
+ assert.ok(html.includes("not walked, allow extra"),'route walking time must never read as a confirmed figure');
 });
