@@ -558,20 +558,46 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mon–Fri and days before holidays 17:00–23:00 (L.O. 22:30); Sat, Sun, holidays 11:30–23:00.",
+     "src": "https://www.hotpepper.jp/strJ003893626/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "A Hot Pepper page exists for this branch but the hours were not in the retrieved text; other branches' hours were not used."
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "No regular closing day.",
+     "src": "https://www.hotpepper.jp/strJ003893626/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     },
     {
      "t": "payment",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Visa, Mastercard, AMEX; Edy, WAON, Suica, PASMO; PayPay, Rakuten Pay.",
+     "src": "https://www.hotpepper.jp/strJ003893626/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "RK Bldg 1F, 2-13-10 Shimo-Meguro on Yamate-dori; nearest Gotanda, Fudomae, Meguro.",
+     "src": "https://www.hotpepper.jp/strJ003893626/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Online booking; same-day until 22:00.",
+     "src": "https://www.hotpepper.jp/strJ003893626/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -2816,22 +2842,24 @@ window.EJ_ESSENTIALS_V1 = {
    "website": "",
    "fields": [
     {
-     "t": "hours",
-     "v": "10:00–19:30 daily (blog listing, possibly dated).",
-     "src": "https://kinarino.jp/cat8/17381",
+     "t": "address",
+     "v": "Stanford Court 103, 1-14-16 Tomigaya; about 3 min from Yoyogi-koen (Chiyoda line). Tel 03-6804-9723.",
+     "src": "https://www.enjoytokyo.jp/article/111288/",
      "st": "media",
      "stat": "secondary",
      "chk": "2026-10-27",
-     "by": "manual-web"
+     "by": "manual-web",
+     "note": "Article dated 24 Mar 2020; the earlier Kinarino citation is now a dead link."
     },
     {
-     "t": "address",
-     "v": "Stanford Court 103, 1-14-16 Tomigaya; about 3–5 min from Yoyogi-Hachiman or Yoyogi-koen. Tel 03-6804-9723; phone pre-orders possible.",
-     "src": "https://kinarino.jp/cat8/17381",
-     "st": "media",
-     "stat": "secondary",
+     "t": "hours",
+     "v": "",
+     "src": "",
+     "st": "",
+     "stat": "unverified",
      "chk": "2026-10-27",
-     "by": "manual-web"
+     "by": "manual-web",
+     "note": "A blog snippet says open every day 10:00–19:30; no current listing read."
     },
     {
      "t": "closed",
@@ -3941,38 +3969,47 @@ window.EJ_ESSENTIALS_V1 = {
    "website": "https://www.sekaido.co.jp/",
    "fields": [
     {
-     "t": "hours",
-     "v": "9:30–20:00 (travel listings).",
-     "src": "https://www.gltjp.com/ja/review/item/5004/",
-     "st": "media",
-     "stat": "secondary",
-     "chk": "2026-10-27",
-     "by": "manual-web"
-    },
-    {
-     "t": "closed",
-     "v": "Open year-round except New Year (listings).",
-     "src": "https://www.gltjp.com/ja/review/item/5004/",
-     "st": "media",
-     "stat": "secondary",
-     "chk": "2026-10-27",
-     "by": "manual-web"
-    },
-    {
-     "t": "access",
-     "v": "3-1-1 Shinjuku; about 1 min from Shinjuku-sanchome exit C4, 7 min from JR Shinjuku east exit. Tel 03-5379-1111.",
-     "src": "https://www.gltjp.com/ja/review/item/5004/",
-     "st": "media",
-     "stat": "secondary",
-     "chk": "2026-10-27",
-     "by": "manual-web"
-    },
-    {
      "t": "language",
      "v": "",
      "src": "",
      "st": "",
      "stat": "unverified",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "hours",
+     "v": "9:30–20:00.",
+     "src": "https://www.sekaido.co.jp/store/77",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Open year-round except New Year.",
+     "src": "https://www.sekaido.co.jp/store/77",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Sekaido Bldg 1F–5F, 3-1-1 Shinjuku; about 1 min from Shinjuku-sanchome exit C4, 7 min from Shinjuku Station; underground parking 9:30–20:00.",
+     "src": "https://www.sekaido.co.jp/store/77",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Escalator works (Jun 2026) and elevator works (Feb 2026) were announced; floors: 1F stationery, 2F paper/design, 3F paints, 4F–5F frames.",
+     "src": "https://www.sekaido.co.jp/store/77",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -4360,9 +4397,36 @@ window.EJ_ESSENTIALS_V1 = {
    "website": "https://www.tokyo-park.or.jp/reien/yanaka/",
    "fields": [
     {
+     "t": "hours",
+     "v": "Grounds open; management office 8:30–17:30 (documents until 16:30).",
+     "src": "https://www.tokyo-park.or.jp/reien/yanaka/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Office closed 29 Dec–3 Jan.",
+     "src": "https://www.tokyo-park.or.jp/reien/yanaka/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
      "t": "access",
-     "v": "About 6 min on foot from JR / Keisei Nippori; management office 8:30–17:30, closed 29 Dec–3 Jan (Tokyo Metropolitan Government document).",
-     "src": "https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/000007722",
+     "v": "7-chome Yanaka; about 5–6 min from Nippori (JR / Keisei). Office 7-5-24 Yanaka, tel 03-3821-4456.",
+     "src": "https://www.tokyo-park.or.jp/reien/yanaka/",
+     "st": "government",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "No parking; call the office for wheelchair drop-off arrangements. AEDs on site.",
+     "src": "https://www.tokyo-park.or.jp/reien/yanaka/",
      "st": "government",
      "stat": "official",
      "chk": "2026-10-27",
@@ -4370,19 +4434,10 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "notice",
-     "v": "Management office 03-3821-4456; the grave of Tokugawa Yoshinobu lies in the adjoining Kan'ei-ji cemetery.",
-     "src": "https://www.kotsu.metro.tokyo.jp/pickup_information/pickup/pdf/pickup_202112.pdf",
+     "v": "Smoking restricted in crowded areas; 150th-anniversary leaflet issued 27 Oct 2026 (Tokyo Parks Association).",
+     "src": "https://www.tokyo-park.or.jp/reien/yanaka/",
      "st": "government",
      "stat": "official",
-     "chk": "2026-10-27",
-     "by": "manual-web"
-    },
-    {
-     "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -4834,23 +4889,40 @@ window.EJ_ESSENTIALS_V1 = {
    "website": "https://www.shakeshack.jp/",
    "fields": [
     {
-     "t": "address",
-     "v": "2-1-15 Kita-Aoyama (opening-day coverage, 2015).",
-     "src": "https://www.fashion-press.net/news/15412",
-     "st": "media",
-     "stat": "secondary",
+     "t": "hours",
+     "v": "Opens 11:00; last order 20:30 (dine-in, takeout, delivery).",
+     "src": "https://shakeshack.jp/locations/gaien/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     },
     {
-     "t": "hours",
+     "t": "access",
+     "v": "2-1-15 Kita-Aoyama; about 5 min from Gaienmae, 6 min from Aoyama-itchome. Tel 03-6455-5409.",
+     "src": "https://shakeshack.jp/locations/gaien/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "accessibility",
+     "v": "Wheelchair-accessible restroom, diaper-changing table, kids' chairs; terrace seating (pets on the terrace only); free Wi-Fi.",
+     "src": "https://shakeshack.jp/locations/gaien/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
      "v": "",
      "src": "",
      "st": "",
      "stat": "unverified",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Only 2015 opening hours (11:00–22:00) were found; not recorded as current."
+     "by": "manual-web"
     },
     {
      "t": "payment",
@@ -5626,16 +5698,33 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Lunch 11:30–14:30 (to 15:30 on Sat, Sun, holidays); dinner 17:30–21:30 (L.O. 21:00).",
+     "src": "https://theokuratokyo.jp/ja/dining/toh-ka-lin/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Search returned other Okura branches only; the Toranomon restaurant page was not retrieved."
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Okura Prestige Tower 6F, The Okura Tokyo. 144 seats, 8 private rooms.",
+     "src": "https://theokuratokyo.jp/ja/dining/toh-ka-lin/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     },
     {
      "t": "reservation",
+     "v": "Tel 03-3505-6068; smart casual (no shorts, sandals, sleeveless or hats); same-day cancellation or 30-min no-show charged 100% (seat-only ¥6,000 lunch / ¥12,000 dinner per person); prices include 15% service.",
+     "src": "https://theokuratokyo.jp/ja/dining/toh-ka-lin/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
      "v": "",
      "src": "",
      "st": "",
@@ -6265,6 +6354,24 @@ window.EJ_ESSENTIALS_V1 = {
      "src": "https://oggi.jp/6040503",
      "st": "media",
      "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Tel 03-3410-9918; bookings for a month open on the 1st of the previous month (official site).",
+     "src": "https://akaoni39.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Closed on 1 Oct 2026 for the Nihonshu Go Around event; tasting events (唎酒会) are held in spring and autumn, ¥500.",
+     "src": "https://akaoni39.com/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -7849,28 +7956,46 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "Lunch 11:30–14:00 (L.O.); dinner 16:30–20:00 (L.O. 19:30) — directories.",
-     "src": "https://hitosara.com/0006076872/review_ch/",
-     "st": "aggregator",
-     "stat": "secondary",
+     "v": "Lunch 11:30–14:30 (L.O. 13:50); dinner 16:30–20:00 (L.O. 19:30).",
+     "src": "https://unagi-hashimoto.jp/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     },
     {
      "t": "closed",
-     "v": "Thursdays (several directories).",
-     "src": "https://hitosara.com/0006076872/review_ch/",
-     "st": "aggregator",
-     "stat": "secondary",
+     "v": "Thursdays and one Wednesday a month; a closure 19–22 Oct 2026 is posted.",
+     "src": "https://unagi-hashimoto.jp/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     },
     {
-     "t": "address",
-     "v": "2-5-7 Suido, Bunkyo-ku. Tel 03-3811-4850.",
-     "src": "https://www.tv-tokyo.co.jp/adomachi/backnumber/20240302/144696.html",
-     "st": "media",
-     "stat": "secondary",
+     "t": "access",
+     "v": "2-5-7 Suido, Bunkyo-ku; about 3 min from Edogawabashi exit 4 (Yurakucho line).",
+     "src": "https://unagi-hashimoto.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Tel 03-3811-4850; bookings held 20 min past the time; three tatami private rooms on 2F (10% service).",
+     "src": "https://unagi-hashimoto.jp/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Takeout eel bowls and delivery available.",
+     "src": "https://unagi-hashimoto.jp/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -7886,30 +8011,56 @@ window.EJ_ESSENTIALS_V1 = {
     {
      "t": "hours",
      "v": "Lunch 11:30–14:30 (last entry 13:50); dinner 17:00–20:30 (last entry 19:50).",
-     "src": "https://www.mec-h.com/town/mh-bancho/37",
-     "st": "media",
-     "stat": "secondary",
+     "src": "https://www.unagi-akimoto.com/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     },
     {
      "t": "closed",
-     "v": "Sundays, holidays and the 2nd Saturday.",
-     "src": "https://www.mec-h.com/town/mh-bancho/37",
-     "st": "media",
-     "stat": "secondary",
+     "v": "Sundays, public holidays and the 2nd Saturday (may open in Jul–Aug).",
+     "src": "https://www.unagi-akimoto.com/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     },
     {
-     "t": "address",
-     "v": "3-4-4 Kojimachi; near Kojimachi exit 3 (Yurakucho line). Tel 03-3261-6762.",
-     "src": "https://www.mec-h.com/town/mh-bancho/37",
-     "st": "media",
-     "stat": "secondary",
+     "t": "access",
+     "v": "3-4-4 Kojimachi; about 1 min from Kojimachi exit 3 (Yurakucho line), 5 min from Hanzomon; no parking.",
+     "src": "https://www.unagi-akimoto.com/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Listed under Yotsuya here; address is Kojimachi."
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "VISA, Mastercard, AMEX, JCB, Diners, UnionPay, Discover; no e-money.",
+     "src": "https://www.unagi-akimoto.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Online (TableCheck) for courses only; à la carte walk-in; tel 03-3261-6762; same-day cancellations may be charged in full.",
+     "src": "https://www.unagi-akimoto.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "Pre-school children not admitted to tatami seating; avoid strong fragrances.",
+     "src": "https://www.unagi-akimoto.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     }
    ]
   },
@@ -7949,10 +8100,19 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "reservation",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "TableCheck online or tel 03-3666-7006 (official).",
+     "src": "https://restaurant.imahan.com/",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "notice",
+     "v": "A new annex (Imahan / Kisentei Ningyocho main shop) opened 1 Sep 2026; Oct–Nov closing days are posted on the official site.",
+     "src": "https://restaurant.imahan.com/",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -8412,18 +8572,17 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "9:30–17:30; Fridays until 20:00 during special exhibitions. Last entry 30 min before closing.",
-     "src": "https://www.tobikan.jp/media/pdf/2025/guide_access.pdf",
+     "v": "9:30–17:30; Fridays during special exhibitions 9:30–20:00; last entry 30 min before closing.",
+     "src": "https://www.tobikan.jp/guide/index.html",
      "st": "official",
      "stat": "official",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Taken from the museum's own access/guide PDF; the HTML guide page returned HTTP 503 on 2026-10-27."
+     "by": "manual-web"
     },
     {
      "t": "closed",
-     "v": "1st and 3rd Mondays (next day if a holiday); exhibition rooms close every Monday during special exhibitions. Maintenance closures 9–16 Jul and 21–28 Dec 2026, 12 Jan 2027; year-end 29 Dec 2026–3 Jan 2027.",
-     "src": "https://www.tobikan.jp/media/pdf/2025/guide_access.pdf",
+     "v": "Building closed 1st and 3rd Mondays (next weekday if a holiday); exhibition rooms closed Mondays during special exhibitions; maintenance 9–16 Jul 2026, 21–28 Dec 2026, 12 Jan 2027; New Year 29 Dec 2026–3 Jan 2027.",
+     "src": "https://www.tobikan.jp/guide/index.html",
      "st": "official",
      "stat": "official",
      "chk": "2026-10-27",
@@ -8431,8 +8590,8 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "fee",
-     "v": "Entry to the building is free; each exhibition sets its own admission.",
-     "src": "https://www.tobikan.jp/media/pdf/2025/guide_access.pdf",
+     "v": "Entry to the building is free; exhibition fees vary by exhibition.",
+     "src": "https://www.tobikan.jp/guide/index.html",
      "st": "official",
      "stat": "official",
      "chk": "2026-10-27",
@@ -8440,8 +8599,8 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "access",
-     "v": "8-36 Ueno Park. About 7 min on foot from JR Ueno Park Exit, 10 min from Tokyo Metro Ueno exit 7, 10 min from Keisei Ueno. No parking.",
-     "src": "https://www.tobikan.jp/media/pdf/2025/guide_access.pdf",
+     "v": "8-36 Ueno Park; about 7 min from JR Ueno park exit, 10 min from Ueno subway exit 7 or Keisei Ueno; no parking.",
+     "src": "https://www.tobikan.jp/guide/index.html",
      "st": "official",
      "stat": "official",
      "chk": "2026-10-27",
@@ -8449,13 +8608,12 @@ window.EJ_ESSENTIALS_V1 = {
     },
     {
      "t": "accessibility",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Use the main gate: escalators and elevators inside; the east gate is stairs only. Sign-language guide video on the site; details on the barrier-free page.",
+     "src": "https://www.tobikan.jp/guide/index.html",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Official guide page unavailable (503) during this check; wheelchair loan reported by a directory but not confirmed."
+     "by": "manual-web"
     }
    ]
   },
@@ -11456,20 +11614,47 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Tue–Sun lunch 11:30–15:00 (L.O. 14:00), dinner 17:30–21:30 (L.O. 20:30); dinner bookings until 19:30.",
+     "src": "https://restaurant.ikyu.com/152395/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "note": "Another listing gives 11:00–13:45 / 17:00–20:15 with Sun and holidays closed."
     },
     {
      "t": "closed",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mondays.",
+     "src": "https://restaurant.ikyu.com/152395/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "VISA, Mastercard, JCB; PayPay.",
+     "src": "https://restaurant.ikyu.com/152395/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "3-4-2 Nihonbashi-Ningyocho; about 1 min from Ningyocho exit A5. 20 seats.",
+     "src": "https://restaurant.ikyu.com/152395/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Tel 03-3661-0160 or Ikyu; 50% fee from the day before, 100% same day.",
+     "src": "https://restaurant.ikyu.com/152395/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -13270,20 +13455,46 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mon–Sat lunch 11:30–15:00 (L.O. 14:00), dinner 17:00–23:00 (L.O. 22:00); Sun and holidays dinner to 22:00 (L.O. 21:00).",
+     "src": "https://restaurant.ikyu.com/110454/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "mortons.jp did not resolve on 2026-10-27."
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Follows the building's schedule.",
+     "src": "https://restaurant.ikyu.com/110454/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "VISA, Mastercard, JCB, AMEX, Diners and other cards; no QR payments.",
+     "src": "https://restaurant.ikyu.com/110454/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "3-2-3 Marunouchi; direct from Nijubashimae exit B5 (about 2 min) or Hibiya (Mita line) exit B5.",
+     "src": "https://restaurant.ikyu.com/110454/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     },
     {
      "t": "reservation",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Smart casual (no shorts or sandals for men); tel 03-6270-3900; 100% same-day cancellation fee.",
+     "src": "https://restaurant.ikyu.com/110454/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -13430,16 +13641,43 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Sat–Sun 15:00–22:00; Mon, Thu, Fri 16:00–22:00 (L.O. 21:30).",
+     "src": "https://hitosara.com/0006077818/",
+     "st": "aggregator",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "note": "Listing states information as of 1 Aug 2024."
     },
     {
      "t": "closed",
+     "v": "Tuesdays and Wednesdays.",
+     "src": "https://hitosara.com/0006077818/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "No reservations at all; queue on arrival.",
+     "src": "https://hitosara.com/0006077818/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "3-13-4 Shikahama, Adachi-ku; bus from Oji east exit or Akabane east exit to Shikahama 3-chome.",
+     "src": "https://hitosara.com/0006077818/",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
      "v": "",
      "src": "",
      "st": "",
@@ -13486,20 +13724,38 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "12:00–18:00 per the listing table; the description and a review say 12:00–19:00.",
+     "src": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+     "st": "aggregator",
+     "stat": "conflict",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "alt": "12:00–19:00"
     },
     {
      "t": "closed",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mondays, Thursdays and Sundays.",
+     "src": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Cash only.",
+     "src": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "8-13-8 Kinuta; about 7 min from Soshigaya-Okura, 10 min from Seijogakuen-mae; no parking.",
+     "src": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+     "st": "aggregator",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -13561,20 +13817,29 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "10:00–19:00 (2017 article); a 2023 ranking lists the same hours with Mondays closed.",
+     "src": "https://allabout.co.jp/gm/gc/471124/",
+     "st": "media",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "note": "Article updated 22 Sep 2017."
     },
     {
      "t": "closed",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Irregular (2017 article).",
+     "src": "https://allabout.co.jp/gm/gc/471124/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1-8 Higashi-Goken-cho; about 4 min from Kagurazaka (Tokyo Metro).",
+     "src": "https://allabout.co.jp/gm/gc/471124/",
+     "st": "media",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -14050,20 +14315,38 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mon–Fri lunch 11:30–15:30 (L.O. 15:00), dinner 17:00–23:00 (L.O. 22:00); Sat, Sun, holidays 11:30–23:00.",
+     "src": "https://retty.me/restaurant/100000001521/",
+     "st": "review-site",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "note": "Listing updated 25 Oct 2026; a Mar 2026 review mentioned a renovation closure from 6 Apr with reopening mid-May."
+    },
+    {
+     "t": "closed",
+     "v": "No regular closing day.",
+     "src": "https://retty.me/restaurant/100000001521/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     },
     {
      "t": "payment",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "VISA, Mastercard, AMEX, Diners, JCB; PayPay.",
+     "src": "https://retty.me/restaurant/100000001521/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Dai-1 Metro Bldg 3F, 1-23-14 Kabukicho; about 1 min from Seibu-Shinjuku, 3 min from JR Shinjuku.",
+     "src": "https://retty.me/restaurant/100000001521/",
+     "st": "review-site",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -17838,20 +18121,46 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Lunch Tue–Fri 11:30–15:00 (L.O. 14:30), weekends 11:30–15:30; dinner Tue–Thu and Sun 17:30–22:00 (L.O. 21:15), Fri–Sat and eves 17:30–22:30.",
+     "src": "https://restaurant.ikyu.com/103599/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "by": "manual-web"
     },
     {
      "t": "closed",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mondays (may change when a holiday).",
+     "src": "https://restaurant.ikyu.com/103599/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "VISA, Mastercard, JCB, AMEX, Diners; PayPay, Rakuten Pay, d払い, au PAY. Dinner cover ¥498 per person.",
+     "src": "https://restaurant.ikyu.com/103599/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1-17-11 Kita-Horie, Nishi-ku; about 4 min from Yotsubashi exit 4, 8 min from Shinsaibashi exit 7.",
+     "src": "https://restaurant.ikyu.com/103599/",
+     "st": "reservation-platform",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Tel 06-6535-1515 or Ikyu; full charge for cancellation from the day before.",
+     "src": "https://restaurant.ikyu.com/103599/",
+     "st": "reservation-platform",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -17865,6 +18174,15 @@ window.EJ_ESSENTIALS_V1 = {
    "website": "",
    "fields": [
     {
+     "t": "address",
+     "v": "Capital Nishi-Nagahori 1F, 4-16-13 Shinmachi, Nishi-ku (from a Nov 2025 post quoted by the directory).",
+     "src": "https://hamoni.jp/en/shop/0GBEQmgsUccte3kG0TIz",
+     "st": "aggregator",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
      "t": "hours",
      "v": "",
      "src": "",
@@ -17872,7 +18190,7 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "unverified",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "note": "Directory lists no hours; a map site snippet gives 10:00–15:00, closed Tue and 2nd/4th Wed, not read in full."
     },
     {
      "t": "closed",
@@ -18183,20 +18501,46 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "11:00–15:00 (until noodles or soup run out); reservation-based.",
+     "src": "https://retty.me/restaurant/100000003324/",
+     "st": "review-site",
+     "stat": "secondary",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Guessed official domain did not resolve."
+     "by": "manual-web"
+    },
+    {
+     "t": "closed",
+     "v": "Wednesdays.",
+     "src": "https://retty.me/restaurant/100000003324/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Credit cards not accepted.",
+     "src": "https://retty.me/restaurant/100000003324/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Takahashi Bldg 1F, 1339 Matsudo; about 4 min from Matsudo Station (JR Joban). Tel 047-368-8860.",
+     "src": "https://retty.me/restaurant/100000003324/",
+     "st": "review-site",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
     },
     {
      "t": "reservation",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Listed as reservation-only (予約制); confirm the current booking method before visiting.",
+     "src": "https://retty.me/restaurant/100000003324/",
+     "st": "review-site",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -19326,20 +19670,46 @@ window.EJ_ESSENTIALS_V1 = {
    "name": "旭川成吉思汗 大黒屋 旭川五丁目店（本店）",
    "city": "Hokkaido",
    "nameEn": "Asahikawa Jingisukan Daikokuya 5-chome (main)",
-   "website": "",
+   "website": "https://daikoku-jgs.com/",
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Daily 16:00–23:00 (L.O. 23:30 as printed); takeout orders 11:00–19:00, pickup 13:00–19:00.",
+     "src": "https://daikoku-jgs.com/free/asahikawa",
+     "st": "official",
+     "stat": "official",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Guessed domain daikoku-ya.jp is an unrelated site."
+     "by": "manual-web"
     },
     {
      "t": "closed",
+     "v": "31 Dec–2 Jan; no regular closing day stated.",
+     "src": "https://daikoku-jgs.com/free/asahikawa",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "1425 4-jo-dori 5-chome (3・4 Nakadori); about 11 min on foot from Asahikawa Station; no parking.",
+     "src": "https://daikoku-jgs.com/free/asahikawa",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "reservation",
+     "v": "Online via the site or 0166-24-2424; takeout line 0166-25-2424.",
+     "src": "https://daikoku-jgs.com/free/asahikawa",
+     "st": "official",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
      "v": "",
      "src": "",
      "st": "",
@@ -19479,20 +19849,38 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "13:00–22:00.",
+     "src": "https://www.gltjp.com/ja/directory/item/15435/",
+     "st": "media",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Guessed official domain returned 404."
+     "note": "Directory updated 4 Oct 2025; founded 1950."
     },
     {
      "t": "closed",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "Mondays.",
+     "src": "https://www.gltjp.com/ja/directory/item/15435/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
+     "v": "Credit cards accepted.",
+     "src": "https://www.gltjp.com/ja/directory/item/15435/",
+     "st": "media",
+     "stat": "secondary",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Inside the 5・7 Koji Furarito alley, 5-jo-dori 7-chome; about 10 min from JR Asahikawa Station.",
+     "src": "https://www.gltjp.com/ja/directory/item/15435/",
+     "st": "media",
+     "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web"
     }
@@ -19816,16 +20204,33 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "",
-     "src": "",
-     "st": "",
-     "stat": "unverified",
+     "v": "11:00–18:30.",
+     "src": "https://www.sapporo.travel/gourmet/shop/shop_130-2/",
+     "st": "tourism-board",
+     "stat": "official",
      "chk": "2026-10-27",
-     "by": "manual-web",
-     "note": "Guessed official domain refused connection."
+     "by": "manual-web"
     },
     {
      "t": "closed",
+     "v": "Mondays and the 2nd Tuesday; can vary by season — phone 011-231-0377.",
+     "src": "https://www.sapporo.travel/gourmet/shop/shop_130-2/",
+     "st": "tourism-board",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "access",
+     "v": "Daimaru Fujii Central 4F, Minami 1-jo Nishi 3-2; about 5 min from Odori Station.",
+     "src": "https://www.sapporo.travel/gourmet/shop/shop_130-2/",
+     "st": "tourism-board",
+     "stat": "official",
+     "chk": "2026-10-27",
+     "by": "manual-web"
+    },
+    {
+     "t": "payment",
      "v": "",
      "src": "",
      "st": "",
