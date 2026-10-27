@@ -146,6 +146,7 @@ test('route legs: one leg per consecutive stop pair, every leg read on the Googl
   });
  }
  assert.equal(stops,35);assert.equal(legs,25);assert.ok(flagged>=1);
- assert.ok(html.includes('map figures disagree'),'page must surface flagged legs');
- assert.ok(html.includes('Legs where distance and preview minutes disagree'));
+ assert.ok(html.includes('distance is a rough estimate; minutes re-read on Google Maps'),'page must surface flagged legs');
+ for(const rt of Object.values(RV.routes))for(const l of rt.legs)if(l.disc)assert.ok(DATE.test(l.gchk2)&&l.gpinFrom&&l.gpinTo,'flagged leg must record the Google re-read and resolved pins');
+ assert.ok(html.includes('Legs with a rough distance figure'));
 });

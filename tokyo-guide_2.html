@@ -536,7 +536,7 @@ footer small{width:100%;opacity:.7}
 .ej-ess-alt,.ej-ess-note{display:block;color:#555;font-size:11px;margin-top:4px}.ej-ess-alt{color:#b23b00}
 .ej-field-provenance{display:block;font-size:10.5px;color:#555;margin-top:5px;line-height:1.7}.ej-field-provenance a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none}.ej-field-provenance i{font-style:normal;color:#777}
 .ej-stat{display:inline-block;font-style:normal;font-size:9.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid #111;margin-right:4px;color:#111;background:#fff}
-.ej-stat-official{background:#ff5900;border-color:#ff5900}.ej-stat-conflict{border-style:dashed;color:#b23b00}
+.ej-stat-official{background:#ff5900;border-color:#ff5900}.ej-stat-conflict{border-style:dashed;color:#b23b00}.ej-ess-varies{display:block;font-weight:700;color:#b23b00;margin-bottom:2px}.ej-route-pin{display:block;font-size:11px;color:#555;margin-top:2px}.ej-visitor-legend{line-height:2}
 .ej-route-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 22px;max-width:980px}.ej-route-notes h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:0 0 8px}.ej-route-notes ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.55;color:#222}.ej-route-notes li{margin-bottom:6px}.ej-route-notes a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none;font-size:11px;white-space:nowrap}
 .ej-visitor-legend{font-size:11px;color:#444;margin:10px 0 0;line-height:2.1}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
 @media(max-width:700px){.ej-route-brief,.ej-route-check,.ej-route-notes{grid-template-columns:1fr}.ej-ess-row,.ej-essentials dl>div.ej-ess-row{grid-template-columns:1fr}.ej-route-check dd{white-space:normal;text-align:right}.ej-chips,.ej-stop-details,.ej-route-leg,.ej-route-en{margin-left:0;padding-left:0}}
@@ -623,7 +623,7 @@ footer small{width:100%;opacity:.7}
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span><span class="ej-stat ej-stat-secondary">Secondary source</span><span class="ej-stat ej-stat-conflict">Sources disagree</span> Unchecked items are listed as unconfirmed, never shown as facts.</p><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> read on the venue’s own site or a public authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> read on a booking site, directory or dated article · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> two sources differ, so both are shown · <b class="ej-stat">Not yet confirmed</b> we looked and found nothing reliable; it is not a “no”. Every line shows its source and the date it was read.</p><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
  <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
@@ -1339,7 +1339,7 @@ const EJ_PRACTICAL=Object.fromEntries(EJ_ESSENTIALS_DATA.map(r=>[r.name,r]));
 const EJ_FIELD_LABEL={hours:'Opening hours',closed:'Closed',fee:'Admission / price',reservation:'Booking / tickets',payment:'Payment',access:'Access',address:'Address',language:'Language',accessibility:'Step-free & access needs',notice:'Good to know',tip:'Worth knowing',website:'Website',name:'Official name'};
 const EJ_FIELD_ORDER=['hours','closed','fee','reservation','payment','access','address','accessibility','language','notice','tip'];
 const EJ_TIME_SENSITIVE=new Set(['hours','closed','fee','reservation','payment']);
-const EJ_STAT_LABEL={official:'Official source',secondary:'Secondary source',conflict:'Sources disagree'};
+const EJ_STAT_LABEL={official:'Official source',secondary:'Listed by directory or media',conflict:'Sources disagree — confirm ahead'};
 const EJ_SOURCE_TYPE={official:'official site',government:'public authority','tourism-board':'tourism board',association:'local association','reservation-platform':'official booking page',media:'media listing',aggregator:'directory listing','review-site':'review site',osm:'OpenStreetMap'};
 function ejShownFields(rec){return rec?rec.fields.filter(f=>f.v&&(f.stat==='official'||f.stat==='secondary'||f.stat==='conflict')):[]}
 function ejUncheckedTypes(rec){return rec?rec.fields.filter(f=>f.stat==='unverified').map(f=>EJ_FIELD_LABEL[f.t]||f.t):[]}
@@ -1350,7 +1350,7 @@ function ejProvenance(f){
  return '<span class="ej-field-provenance">'+parts.join(' · ')+'</span>';
 }
 function ejFieldRow(f){
- return '<div class="ej-ess-row" data-stat="'+ejHTML(f.stat)+'" data-field="'+ejHTML(f.t)+'"><dt>'+ejHTML(EJ_FIELD_LABEL[f.t]||f.t)+'</dt><dd>'+ejHTML(f.v)+(f.alt?'<span class="ej-ess-alt">Another source says: '+ejHTML(f.alt)+'</span>':'')+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f)+'</dd></div>';
+ return '<div class="ej-ess-row" data-stat="'+ejHTML(f.stat)+'" data-field="'+ejHTML(f.t)+'"><dt>'+ejHTML(EJ_FIELD_LABEL[f.t]||f.t)+'</dt><dd>'+(f.stat==='conflict'?'<span class="ej-ess-varies">Varies by source — call or check before you go.</span><span class="ej-ess-alt">One source: '+ejHTML(f.v)+'</span><span class="ej-ess-alt">Another: '+ejHTML(f.alt||'')+'</span>':ejHTML(f.v))+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f)+'</dd></div>';
 }
 function ejPracticalField(p,type){
  const rec=ejEssentialsFor(p);if(!rec)return '';
@@ -1417,16 +1417,16 @@ function ejRouteSummary(route,V){
  const count=(type,ok)=>recs.filter(r=>ok.includes(ejStopStatus(r,type))).length;
  const ident=V.stops.filter(x=>x.identity==='confirmed').length;
  const meters=V.legs.reduce((a,l)=>a+l.m,0);
- const items=[['Destinations matched to their map pins',ident+' of '+total],['Opening hours from an official source',count('hours',['official'])+' of '+total],['Opening hours from any dated source',count('hours',['official','secondary','conflict'])+' of '+total],['Step-free or access-needs information',count('accessibility',['official','secondary'])+' of '+total],['Walking distance, map estimate',ejDistance(meters)+' · '+(V.legs.every(l=>l.gmin)?V.legs.reduce((a,l)=>a+l.gmin,0)+' min per Google Maps preview':'about '+ejMinutes(meters)+' min')],['Legs checked on the Google Maps walking preview',V.legs.filter(l=>l.gmin).length+' of '+V.legs.length],['Legs where distance and preview minutes disagree',V.legs.filter(l=>l.disc).length+' of '+V.legs.length+' (flagged, not corrected)'],['Walked on the ground for this guide','not yet']];
+ const items=[['Destinations matched to their map pins',ident+' of '+total],['Opening hours from an official source',count('hours',['official'])+' of '+total],['Opening hours from any dated source',count('hours',['official','secondary','conflict'])+' of '+total],['Step-free or access-needs information',count('accessibility',['official','secondary'])+' of '+total],['Walking distance, map estimate',ejDistance(meters)+' · '+(V.legs.every(l=>l.gmin)?V.legs.reduce((a,l)=>a+l.gmin,0)+' min per Google Maps preview':'about '+ejMinutes(meters)+' min')],['Legs checked on the Google Maps walking preview',V.legs.filter(l=>l.gmin).length+' of '+V.legs.length],['Legs with a rough distance figure',V.legs.filter(l=>l.disc).length+' of '+V.legs.length+' (minutes re-read on Google Maps)'],['Walked on the ground for this guide','not yet']];
  return '<dl class="ej-route-check" aria-label="Verification status"><div class="ej-route-check-head"><span>CHECKED SO FAR</span><span>'+ejHTML(V.version||EJ_ROUTE_FIELD.version||'')+'</span></div>'+items.map(([k,v])=>'<div><dt>'+ejHTML(k)+'</dt><dd>'+ejHTML(v)+'</dd></div>').join('')+'</dl>';
 }
 function ejRouteStop(route,V,name,index){
  const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
  const note=EJ_NOTES[name];const rec=ejEssentialsFor(p);const vs=V&&V.stops.find(x=>x.name===name);
- const chipText={official:'official',secondary:'secondary',conflict:'sources disagree',unchecked:'unchecked'};
+ const chipText={official:'official',secondary:'listed',conflict:'confirm ahead',unchecked:'not confirmed'};
  const chip=(label,type)=>{const st=ejStopStatus(rec,type);return '<span class="ej-chip ej-chip-'+st+'">'+label+': '+chipText[st]+'</span>'};
  let leg='';
- if(V&&index>0&&V.legs[index-1]){const l=V.legs[index-1];leg='<li class="ej-route-leg">↓ '+ejDistance(l.m)+(l.gmin?' · Google Maps walking preview '+l.gmin+' min':' · about '+ejMinutes(l.m)+' min on foot')+' · map check only, not walked'+(l.disc?' · ⚠ map figures disagree, treat as rough':'')+'</li>';}
+ if(V&&index>0&&V.legs[index-1]){const l=V.legs[index-1];leg='<li class="ej-route-leg">↓ '+ejDistance(l.m)+(l.gmin?' · Google Maps walking preview '+l.gmin+' min':' · about '+ejMinutes(l.m)+' min on foot')+' · map check only, not walked'+(l.disc?' · ⚠ distance is a rough estimate; minutes re-read on Google Maps '+ejHTML(l.gchk2||l.gchk)+(l.gpinFrom?'<small class="ej-route-pin">Map pins: '+ejHTML(l.gpinFrom)+' → '+ejHTML(l.gpinTo)+'. Gates and stairs not checked on foot.</small>':''):'')+'</li>';}
  const shown=ejShownFields(rec);
  return leg+'<li class="ej-route-stop"><div><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><strong>'+ejHTML(p.name)+'</strong>'+(rec&&rec.nameEn&&rec.nameEn!==p.name?'<em class="ej-route-en">'+ejHTML(rec.nameEn)+'</em>':'')+'<small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+(vs&&vs.identity==='confirmed'?' · map pin confirmed as “'+ejHTML(vs.mapsResolved)+'”':'')+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+(vs&&vs.note?'<p class="ej-route-idnote">'+ejHTML(vs.note)+'</p>':'')+'<div class="ej-chips">'+chip('Hours','hours')+chip('Access','access')+chip('Step-free','accessibility')+'</div>'+(shown.length?'<details class="ej-stop-details"><summary>Checked details &amp; sources <span aria-hidden="true">＋</span></summary><dl>'+EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('')+'</dl></details>':'')+'</div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(rec&&rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official site ↗</a>':note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
 }
@@ -1560,13 +1560,16 @@ function ejMoodButtonState(){
 }
 
 const ejDiscovery={q:(new URLSearchParams(location.search).get('q')||'').trim()};
+/* Search: each word must match the name, English name, area, category or editorial note; common English words also match their Japanese or category spelling so “coffee” finds cafés and “temple” finds 寺. */
+const EJ_SEARCH_SYNONYMS={coffee:['café','cafe','珈琲','コーヒー','喫茶'],cafe:['café','喫茶','コーヒー','珈琲'],kissaten:['喫茶'],tea:['茶','café / tea'],ramen:['ラーメン','らーめん','らぁめん','中華そば','つけ麺','つけそば'],tsukemen:['つけ麺','つけそば'],noodle:['ramen','soba','ラーメン','そば','蕎麦'],noodles:['ramen','soba','ラーメン','そば','蕎麦'],sushi:['寿司','鮨','すし'],bar:['バー'],bars:['bar','バー'],temple:['寺','院'],temples:['temple','寺'],shrine:['神社','宮','稲荷'],shrines:['shrine','神社'],bakery:['パン','boulangerie','ベーカリー','bread'],bread:['パン','bakery'],onsen:['温泉','湯','sento','bath'],bath:['湯','温泉','銭湯','sento'],baths:['湯','温泉','銭湯','sento'],sento:['湯','銭湯'],sauna:['サウナ','sento'],yakitori:['焼鳥','焼き鳥','やき鳥'],yakiniku:['焼肉','ホルモン'],soba:['蕎麦','そば'],curry:['カレー'],burger:['バーガー'],burgers:['burger','バーガー'],izakaya:['居酒屋','酒場'],sake:['酒'],steak:['ステーキ'],thai:['タイ'],chinese:['中華'],tonkatsu:['とんかつ','トンカツ'],unagi:['うなぎ','鰻'],eel:['unagi','うなぎ','鰻'],gyoza:['餃子'],dumpling:['餃子','gyoza'],museum:['美術館','博物館'],museums:['museum','美術館','博物館'],park:['公園'],garden:['庭園','園'],market:['市場','商店街','横丁'],jingisukan:['ジンギスカン','成吉思汗'],lamb:['jingisukan','ジンギスカン','成吉思汗','ラム'],hotel:['ホテル'],sweets:['甘味','菓子','餅'],dessert:['sweets','甘味','菓子'],record:['music','レコード'],vinyl:['music','レコード'],jazz:['ジャズ'],kaiseki:['懐石','会席','割烹'],wagyu:['和牛','steak','yakiniku'],pizza:['ピザ','italian'],italian:['イタリアン'],french:['フレンチ','bistro'],wine:['ワイン'],beer:['ビール','craft'],castle:['城'],tower:['タワー','塔'],bridge:['橋'],street:['通り','商店街','横丁']};
+function ejSearchWords(q){const base=q.toLocaleLowerCase().normalize('NFKC').trim();const words=base.split(/\s+/).filter(Boolean);if(!words.length)return [];return words.map(w=>{const alts=new Set([w]);(EJ_SEARCH_SYNONYMS[w]||[]).forEach(s=>alts.add(s.toLocaleLowerCase().normalize('NFKC')));return [...alts]})}
 function applyFilters(cityKey, places, els) {
   const s = STATE[cityKey];
   let filtered = places;
   if (s.types.length) filtered = filtered.filter(p => s.types.includes(typeOf(p)));
   if (s.cats.length)  filtered = filtered.filter(p => s.cats.includes(p.cat));
   if (s.areas.length) filtered = filtered.filter(p => s.areas.includes(p.area));
-  if(ejDiscovery.q){const q=ejDiscovery.q.toLocaleLowerCase();filtered=filtered.filter(p=>[p.name,p.en||'',p.area,p.cat,EJ_NOTES[p.name]?.en||''].join(' ').toLocaleLowerCase().includes(q));}
+  if(ejDiscovery.q){const words=ejSearchWords(ejDiscovery.q);filtered=filtered.filter(p=>{const rec=ejEssentialsFor(p);const hay=[p.name,p.en||'',p.area,p.cat,EJ_NOTES[p.name]?.en||'',rec?.nameEn||''].join(' ').toLocaleLowerCase().normalize('NFKC');return words.every(alts=>alts.some(t=>hay.includes(t)))});}
   if(ejMood)filtered=filtered.filter(ejMoodMatches);
   if(ejSavedOnly)filtered=filtered.filter(p=>ejSaved.has(p.url));
 
@@ -1965,7 +1968,7 @@ function ejUpdateLocationControls(){
  ejAreaSelect.value=st.areas.length===1?st.areas[0]:'';
  const visible=document.querySelector('.city-section.active');const count=visible?.querySelectorAll('.place-card').length||0;
  const counter=document.getElementById('ej-discovery-count'),jump=document.getElementById('ej-jump-results');
- if(counter)counter.textContent=count+' matching places · '+city;
+ if(counter)counter.textContent=count+' matching place'+(count===1?'':'s')+' · '+city;
  if(jump){jump.textContent=count?'Explore '+count+' results ↓':'No matches — adjust filters ↑';jump.disabled=!count;}
  ejFilterMessage.textContent=(st.areas.length?st.areas.join(', '):'All neighborhoods')+' in '+city+(ejMood?' · '+ejMood.replaceAll('-',' '):'')+'. Search in Japanese or English; source details appear when available.';
 }
@@ -2040,6 +2043,8 @@ document.addEventListener('click',e=>{
  }
 });
 ejRestoreURL();
+/* Route deep links (#route-<id>): the cards are rendered by script, so the browser's own fragment jump finds nothing. Jump after state restore, instantly (the page's smooth scroll would otherwise be cancelled by later layout). */
+if(/^#route-[a-z0-9-]+$/.test(location.hash)){const ejJumpToRoute=()=>{const t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView({block:'start',behavior:'instant'})};ejJumpToRoute();setTimeout(ejJumpToRoute,400);window.addEventListener('load',()=>setTimeout(ejJumpToRoute,300),{once:true});}
 
 
 

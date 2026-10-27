@@ -5643,13 +5643,12 @@ window.EJ_ESSENTIALS_V1 = {
     {
      "t": "hours",
      "v": "19:00–2:00 daily, last order 1:00 (official site).",
-     "alt": "19:00–26:00, closed Sundays (bar's Instagram profile).",
      "src": "https://bar-dop.com/access.html",
      "st": "official",
-     "stat": "conflict",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "The official page itself says hours may differ and closures are announced on Instagram (@koenji_dop)."
+     "note": "The bar's Instagram profile shows 19:00–26:00 and Sundays closed; the official page says closures are announced on Instagram (@koenji_dop). Check there before a Sunday visit."
     },
     {
      "t": "closed",
@@ -6927,13 +6926,12 @@ window.EJ_ESSENTIALS_V1 = {
     {
      "t": "hours",
      "v": "Opens 20:00, closes 5:00 (official site).",
-     "alt": "Weekdays 20:00–5:00; Friday and Saturday 21:30–7:00 (bar's Instagram post).",
      "src": "https://modz.tokyo/",
      "st": "official",
-     "stat": "conflict",
+     "stat": "official",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "The official site also lists a September 2024 hours-change notice without its content; confirm the weekend schedule."
+     "note": "An Instagram post gives Friday–Saturday 21:30–7:00 and the site mentions a September 2024 hours change without detail; confirm the weekend schedule."
     },
     {
      "t": "closed",
@@ -8377,7 +8375,8 @@ window.EJ_ESSENTIALS_V1 = {
      "st": "media",
      "stat": "conflict",
      "chk": "2026-10-27",
-     "by": "manual-web"
+     "by": "manual-web",
+     "note": "Tabelog's Tuesday closure is a community edit from July 2024 and may be the Nishikinshi branch's day; the shop's own notice could not be found."
     },
     {
      "t": "tip",
@@ -13226,14 +13225,14 @@ window.EJ_ESSENTIALS_V1 = {
    "fields": [
     {
      "t": "hours",
-     "v": "Lunch weekdays 12:00–14:00 L.O., weekends and holidays 11:30–14:30 L.O.; dinner 17:00–23:00 (L.O. currently 20:00) — top of the official page.",
-     "alt": "Footer of the same page: lunch to 16:00 (L.O. 13:30), dinner 17:00–21:30 (L.O. 19:30).",
+     "v": "Reservation box: weekdays lunch 12:00–14:00 L.O., Sat/holidays 11:30–14:30 L.O.; dinner 17:00–23:00 (L.O. 21:00, temporarily 20:00).",
+     "alt": "Restaurant-information section of the same official page: lunch to 16:00 (L.O. 13:30), dinner 17:00–21:30 (L.O. 19:30).",
      "src": "https://www.ukai.co.jp/ginza/",
      "st": "official",
      "stat": "conflict",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "The official page shows two different tables; confirm by phone."
+     "note": "Both tables are on ukai.co.jp as of 2026-10-27; book by phone 03-3544-5252 and confirm the last order."
     },
     {
      "t": "reservation",
@@ -19569,7 +19568,8 @@ window.EJ_ESSENTIALS_V1 = {
      "st": "aggregator",
      "stat": "conflict",
      "chk": "2026-10-27",
-     "by": "manual-web"
+     "by": "manual-web",
+     "note": "Day-use may be unavailable when the hotel (WBF Grande Asahikawa) has group bookings; tel 0166-23-8000. Fee listed as ¥1,400–1,500 by directories."
     },
     {
      "t": "fee",
@@ -20792,7 +20792,7 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "conflict",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Not stated on the official page read."
+     "note": "Official site (read 2026-10-27) gives hours 10:00–21:00, last entry 20:30, open year-round, but does not print the fee on the page read."
     }
    ]
   },
