@@ -160,5 +160,6 @@ test('brand and traveller-first presentation: Encounter Japan title, verificatio
  assert.ok(html.includes('class="ej-route-verification"')&&html.includes('Route verification details'));
  assert.ok(html.includes("vary by source — please confirm before visiting"));
  assert.ok(html.includes('class="ej-visitor-index"')&&html.includes('id="ej-visitor-shortcuts"'),'index of checked destinations must remain reachable');
- assert.ok(html.includes("not walked, allow extra"),'route walking time must never read as a confirmed figure');
+ assert.ok(html.includes("not walked, allow extra")&&html.includes("so no total is given"),'route walking time must never read as a confirmed figure; flagged routes give no total');
+ assert.ok(!html.includes("researched so far"),'operating counts must not headline the essentials section');
 });
