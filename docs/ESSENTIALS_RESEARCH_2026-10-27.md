@@ -22,19 +22,36 @@ The page loads the two data files as plain scripts, so double-clicking `tokyo-gu
 
 Nothing is inferred from venue type. Google Maps category or hours were **not** used as a source.
 
-## Counts (2026-10-27, after batch 3 commit 37fc88b)
+## Counts (2026-10-27, after commit 6e5cfec)
 | Measure | Count |
 |---|---|
-| Listings processed (researched) | 371 of 526 (batch 1: 36 route stops + Tsutenkaku; batch 2: all 101 museums, temples, shrines, landmarks, parks, baths and venues; batch 3: 234 of 389 food, drink and shop listings) |
-| Records with at least one official field | 139 |
-| Records with secondary information only | 143 |
-| Records with nothing confirmable (every field unverified) | 89 — mostly small bars, izakaya and neighbourhood eateries whose official pages could not be reached (domain not found, 404, 429 rate limiting) or that have no web presence |
-| Fields recorded | 1,246 (official 451 · secondary 312 · conflict 31 · unverified 437 · not applicable 15) |
-| Official website found | 170 of 371 |
-| Records with a conflicting-source field | 30 (both values stored, shown as "Sources disagree") |
-| Not started | 155 (Tokyo 87, Hokkaido 28, Kyoto 21, Osaka 14, other prefectures 5 or fewer each) |
+| Listings researched (record in the data layer) | **526 of 526** |
+| Records with at least one official-source field | 150 |
+| Records with secondary sources only (dated media, directories, booking platforms, review sites, associations) | 233 |
+| Records with nothing confirmable (every field unverified, no value shown) | 143 — mostly small bars, izakaya and neighbourhood eateries with no web presence beyond Google Maps, plus 15 official sites that could not be read (429 rate-limit, 503, DNS or TLS failures) |
+| Records holding a conflict field (sources disagree; both values stored) | 34 |
+| Fields recorded | 1,768 (official 490 · secondary 637 · conflict 38 · unverified 588 · not applicable 15) |
+| Official website recorded | 174 |
+| Unique source URLs cited | 458 |
 
-Re-verification of the 36 batch-1 records on 2026-10-27: Yonemoto Coffee (official 7:30–20:00), MOD'Z (official, closed Sun) and bar dop (official 19:00–2:00) moved from unverified to official; Soul Sonic Boogie, Ootako, Kameya, First Crop and Spincoaster keep both disagreeing values as `conflict`; Tobikan's HTML guide was still 503 so its hours come from the museum's own access PDF; TNM now lists card/e-money payment and a security-screening notice; NMWA lists a 2027 collection closure; Kiyomizu's regular closing time (18:00 / 18:30) and Meiji Jingu's November gate times were added.
+### Coverage by item (records with a value / of which from an official source)
+| Item | Any source | Official |
+|---|---|---|
+| Opening hours | 288 | 105 |
+| Closing days | 199 | 59 |
+| Fees / admission | 68 | 44 |
+| Reservation | 76 | 37 |
+| Payment | 65 | 15 |
+| Access | 191 | 85 |
+| Accessibility / step-free | 28 | 26 |
+| English / language support | 10 | 10 |
+
+"526 researched" is not "526 complete": 383 records show at least one confirmed value; 143 show only "not yet confirmed" lines with the reason.
+
+### How the research was done
+Batch 1 (36 route stops + Tsutenkaku), batch 2 (101 museums, temples, shrines, landmarks, parks, baths, venues) and batch 3–4 (389 food, drink and shops) were each searched by name and area, then the best page found was opened and read before anything was recorded: official site > public authority / tourism board > booking platform (Ikyu, Hot Pepper, TableCheck, Hitosara, Gurunavi) > dated media or directory > review site. No value was taken from a search snippet alone and no official domain was guessed; where a guessed-domain attempt from an earlier pass failed, the record says so. Quality pass on 2026-10-27 re-read 22 records against official pages (Tokyo Metropolitan Art Museum guide, Okura Toh-Ka-Lin, Daikokuya Asahikawa, Unagi Akimoto, Hashimoto, Sekaido, Shake Shack Gaien, Yanaka Cemetery / Tokyo Parks Association, Sapporo Tourism Association for Aji no Sanpei) and replaced the two dead citations (Kinarino article, Toei 2021 PDF).
+
+Re-verification of the 36 batch-1 records on 2026-10-27: Yonemoto Coffee (official 7:30–20:00), MOD'Z (official, closed Sun) and bar dop (official 19:00–2:00) moved from unverified to official; Soul Sonic Boogie, Ootako, Kameya, First Crop and Spincoaster keep both disagreeing values as `conflict`; Tobikan's hours now come from the museum's HTML guide (read 2026-10-27) including 2026–27 maintenance closures.
 
 ## Flags for the owner
 | Place | Flag |
@@ -47,6 +64,10 @@ Re-verification of the 36 batch-1 records on 2026-10-27: Yonemoto Coffee (offici
 | 瑞穂 | Hours come from a 2022 article |
 | 本家大たこ 道頓堀本店 | Opening time differs between listings |
 | 自由軒 | Tempozan branch closed 27 Sep 2026 (the listed Namba shop is unaffected) |
+| 15 official sites unreadable on 2026-10-27 | peterluger.co.jp, steak.co.jp (Jackie's), ippodo-tea.co.jp (429); glico.com, daikakuji.or.jp, theobroma.co.jp (503); nodaiwa.co.jp, tomiokahachimangu.or.jp (connection refused); ryoanji.jp, sanjusangendo.jp, toyokawainari-tokyo.jp, kanda-matsuya.jp (TLS configuration); mortons.jp, shogunburger.com (domain gone); takashimaya.co.jp Kyoto hours page (timeout) — secondary values kept, flagged |
+| Area filed vs official address | 元祖らーめん大栄 (Kamigyo, filed Sakyo), にこみ鈴や and 花もも (Nakagyo, filed Kamigyo), 開運中華 慶修 (Tokiwadai, filed Kamiitabashi), malca and misola (Gaienmae / omakase, filed Omotesando-Aoyama café), ステーキハウス エメラルド (found in Kitanakagusuku, filed Onna) — listings left unchanged |
+| Secondary values older than 2021 | マザー (2020), 三ん寅 (2020), 中華屋 啓ちゃん (2019), パン・デ・フィロゾフ (2017), ドゥワンチャン (2019), 炭火焼肉 深山 (2020) — shown with their dates |
+| 鈴の湯 / 橘湯 / 今井湯 | Appear to be Kawasaki (Nakahara) bathhouses; the ward's Feb 2025 PDF lists their hours but could not be text-extracted here |
 | Wakiya 一笑美茶樓 | Official notice: temporarily closed for rebuilding from 16 Oct 2026 |
 | 道頓堀グリコサイン | Sign renewal works announced from Dec 2026 |
 | 東京ミッドタウン | Official notice: facility closure 21–23 Nov 2026 |
@@ -55,8 +76,11 @@ Re-verification of the 36 batch-1 records on 2026-10-27: Yonemoto Coffee (offici
 | 成蔵 / 不二 / étéco / BAKER Aoyagi / 分とく山 / 秋本 / 明寂 / おさめ / ASO | Official address is in a neighbouring area to the one the listing is filed under (南阿佐ヶ谷 / 池尻大橋 / 池ノ上 / 東北沢 / 南麻布 / 麹町 / 西麻布 / 目白 / 代官山); listing left unchanged, flagged for the owner |
 Apart from the Wakiya rebuilding closure above, no closure or relocation suspicion was found among the 371 researched listings; no listing was removed or edited.
 
-## Resuming the remaining 155
-1. `data/research-ledger.json` → take rows with `status:"not-started"`, lowest `batch` first (batch 2 is complete; the 155 left are all batch 3 food, drink and shop listings).
-2. For each: find the official site (search engine, then the venue's own SNS), read hours / closed days / fees / booking / payment / access / language / accessibility / notices; record one field per item with its URL and today's date; mark `unverified` where nothing is found and `conflict` where sources disagree.
-3. Put the records in a batch JSON and run `node scripts/add_essentials_records.mjs batch.json` (merges into `data/visitor-essentials.json`, regenerates `data/visitor-essentials.js` and the ledger), then `node --test tests/*.test.mjs tests/*smoke.mjs`.
-4. Never edit `const DATA`; never delete a listing — a suspected closure is a `flags` entry on the record.
+## What a human still has to do
+1. Phone or visit the 143 venues with nothing confirmable (list: ledger rows whose record has no valued field); most are small bars and izakaya in Tokyo (85), Hokkaido (17), Osaka (10), Kyoto (9).
+2. Re-open the 15 unreadable official sites from a normal browser and replace the secondary values.
+3. Decide the 34 conflict records (both values are shown to readers until an editor picks one).
+4. Walk the ten routes; the 12 legs flagged `disc` are where the map figures disagree most.
+5. Apply `docs/patches/0001-editorial-checks-data-triggers.patch` so CI also runs on `data/**` and `scripts/**` changes (needs the `workflow` scope; see PR body).
+
+To add or correct records: write a batch JSON, run `node scripts/add_essentials_records.mjs batch.json` (merges into `data/visitor-essentials.json`, regenerates `data/visitor-essentials.js` and the ledger), then `node --test tests/*.test.mjs tests/*smoke.mjs`. Never edit `const DATA`; never delete a listing — a suspected closure is a flag on the record.

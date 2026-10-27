@@ -8,14 +8,14 @@ Scope: the ten DRAFT routes (35 stops) in `tokyo-guide_2.html`. Machine-readable
 | ① Official name and address | Official site or association page where one exists; otherwise dated directory listing | Recorded per stop in `data/visitor-essentials.js` |
 | ② Google Maps URL points to the right venue | Each listing's **existing** Maps link was opened in a browser; the resolved place name and coordinates were recorded (`mapsResolved`, `lat`, `lon`) | 35/35 resolved to the intended venue |
 | ③ Same-name / moved / in-building confusion | Address compared with the official page; notes recorded (e.g. Santosham is 2F of the Komuro Bldg; Mizuho's Waseda namesake is unrelated; The Great Burger's Shibuya Stream branch is a different shop) | No mismatches found |
-| ④⑥ Walking route and distance | OSRM (OpenStreetMap foot profile) between the resolved coordinates; distance stored per leg; **all 24 legs** read on the Google Maps walking preview and the preview minutes stored as `gmin` / `gchk` | Map estimates only |
+| ④⑥ Walking route and distance | OSRM (OpenStreetMap foot profile) between the resolved coordinates; distance stored per leg; **all 25 legs** read on the Google Maps walking preview and the preview minutes stored as `gmin` / `gchk` | Map estimates only |
 | ⑤ Stop order | All permutations compared on OSRM distance, then opening windows applied | 4 routes reordered (below) |
 | ⑦ Steps, slopes, closures | Only what official pages state (Kiyomizu slopes and no-step route; Takeshita bollards 11:00–18:00; Kiyomizu street closure 8:00–19:00). Not surveyed. | Partial |
 | ⑧ Same-day feasibility by hours | Opening windows from the essentials layer | See per-route notes |
 | ⑨ Accessibility | Official statements only (Kiyomizu, Minamiza, NMWA, Meiji Jingu wheelchairs, Ueno Park parking) | 6 stops with official info |
 | ⑩ Editorial meaning | Written per route (`whyWalk`, `whyTogether`, `culture` with sources) | Done |
 
-**Nothing was walked on the ground.** Every route stays `fieldVerified:false` and is labelled “DRAFT · MAP-CHECKED · NOT FIELD-WALKED”. Google Maps was used manually through its normal web interface (one page per listing, one direction preview per leg: 24 previews); no scraping or unofficial API.
+**Nothing was walked on the ground.** Every route stays `fieldVerified:false` and is labelled “DRAFT · MAP-CHECKED · NOT FIELD-WALKED”. Google Maps was used manually through its normal web interface (one page per listing, one direction preview per leg: 25 previews); no scraping or unofficial API.
 
 Google Maps walking-preview minutes per leg (read from the preview, 2026-10-27): Jimbocho 9+3; Shibuya 14+3; Higashiyama 19+8+6; Ueno 6+6+11; Kiyosumi 1+5; Harajuku 21+2+10; Ebisu 4+6; Koenji 3+6+7; Shinjuku 1+1+1; Namba 6+3. Route cards show these minutes next to the OSRM distance, labelled as a map check only.
 
@@ -38,7 +38,11 @@ Google Maps walking-preview minutes per leg (read from the preview, 2026-10-27):
 ## Destination identification (35/35)
 Every stop's existing Google Maps link resolved to the expected venue. Resolved names are stored as `mapsResolved` (for example 三燈舎 → “Santosham”, ソウルソニックブギー恵比寿 → “BAR SOUL SONIC BOOGIE EBISU”, 米本珈琲 清澄白河 → “Yonemoto Coffee Flagship Store Kiyosumi-Shirakawa”). No listing URL was changed.
 
+## Leg re-check (2026-10-27)
+All 25 legs were compared: OSRM distance ÷ Google preview minutes. Twelve legs fall outside 55–110 m/min or differ by 5 min or more from an 80 m/min estimate and now carry `disc:true` with a note; the route card shows “⚠ map figures disagree, treat as rough” on those legs and a count in the “Checked so far” table. Nothing was corrected by hand. Flagged: Jimbocho MAIDENS→Mizuno; Higashiyama Kiyomizu→Yasaka, Yasaka→Minamiza; all three Ueno legs (museum pins sit inside large grounds); Kiyosumi Yonemoto→First Crop; all three Harajuku legs (Meiji Jingu pin is the inner shrine); Shinjuku Gifuya→Shimonya; Namba Jiyuken→Ebisubashi. Likely cause in every case: the Google Maps pin for a park, shrine or museum is far from the entrance actually used, so the OSRM path and the preview path differ. Slope, stairs and crossings were not assessed for any leg.
+
 ## Still open
 - On-foot verification of all ten sequences (stairs, crossings, night access, actual minutes).
-- Official hours for 18 of 35 stops (17 have official hours, 31 have hours from some source); accessibility information for 29 stops.
+- Official hours for 17 of 35 stops (31 have hours from some source); accessibility information for 29 of 35 stops.
+- The 12 flagged legs need a walk before the minutes are trusted.
 - A Japanese-speaking phone check for the eight small bars/shops with no web presence.
