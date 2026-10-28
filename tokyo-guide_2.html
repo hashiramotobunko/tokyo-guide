@@ -3,7 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tokyo Guide — Tetsuya's Picks</title>
+<title>Encounter Japan — Beyond the obvious</title>
+<meta name="description" content="Encounter Japan: an independent address book of 526 places across Japan — cafés, bars, temples, baths and walks — each with a direct Google Maps link and source-checked visitor essentials.">
+<link rel="canonical" href="https://hashiramotobunko.github.io/tokyo-guide/tokyo-guide_2.html">
+<meta property="og:site_name" content="Encounter Japan">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashiramotobunko.github.io/tokyo-guide/tokyo-guide_2.html">
+<meta property="og:title" content="Encounter Japan — Beyond the obvious">
+<meta property="og:description" content="An independent address book, not a checklist: 526 places across Japan with map links, draft walking routes and source-checked visitor essentials.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Encounter Japan — Beyond the obvious">
+<meta name="twitter:description" content="An independent address book, not a checklist: 526 places across Japan with map links, draft walking routes and source-checked visitor essentials.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -129,21 +139,577 @@
   .type-chip:hover { border-color: var(--black); }
   .type-chip.active { background: var(--black); color: var(--white); border-color: var(--black); }
   .type-chip.dimmed { opacity: 0.3; }
+
+/* Encounter Japan — experimental fashion art direction, feature branch only */
+:root{--ej-ink:#111;--ej-orange:#ff5900;--ej-paper:#fff;--ej-grey:#666}
+html{scroll-behavior:smooth}
+body{background:var(--ej-paper);color:var(--ej-ink);font-family:Arial,"Helvetica Neue","Hiragino Kaku Gothic ProN",sans-serif}
+.ej-header{background:#fff;color:#111;padding:0;overflow:clip}
+.ej-nav{height:88px;display:flex;align-items:center;gap:28px;max-width:1600px;margin:auto;padding:0 clamp(22px,5vw,88px);position:relative;z-index:10}
+.ej-wordmark{font-weight:900;font-size:clamp(25px,3vw,41px);letter-spacing:-.095em;color:#111;text-decoration:none;line-height:1;white-space:nowrap}
+.ej-wordmark span{color:var(--ej-orange)}.ej-wordmark small{font-size:10px;letter-spacing:.16em;margin-left:9px;vertical-align:middle}
+.ej-nav-note{margin-left:auto;font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:#777}
+.ej-nav-find{font-size:12px;font-weight:800;color:#111;text-decoration:none;border-bottom:2px solid var(--ej-orange);padding-bottom:7px;white-space:nowrap}
+.ej-hero{height:min(830px,calc(100svh - 88px));min-height:640px;position:relative;isolation:isolate;background:#fff;max-width:1920px;margin:auto}
+.ej-hero-main{position:absolute;inset:0 auto auto 4%;width:min(92%,1440px);z-index:2;padding-top:clamp(100px,12vh,160px);pointer-events:none}
+.ej-mini{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-left:7%;color:#333}
+.ej-hero h1{font-family:Impact,"Arial Black","Helvetica Neue",sans-serif;font-weight:900;font-size:clamp(102px,16vw,290px);letter-spacing:-.075em;line-height:.77;text-transform:uppercase;color:#111;margin-top:38px}
+.ej-hero h1 span{display:block;width:max-content;max-width:100%}
+.ej-line-one{position:relative;z-index:2}.ej-line-two{color:var(--ej-orange);transform:translateX(33%) rotate(-5deg);position:relative;z-index:4}
+.ej-line-three{transform:translateX(2%);position:relative;z-index:4}
+.ej-period{color:var(--ej-orange)}
+.ej-poster{position:absolute;width:35%;height:76%;right:3.2%;top:7.5%;background:#141414;color:#fff;z-index:1;transform:rotate(3deg);display:flex;flex-direction:column;justify-content:space-between;padding:25px;overflow:hidden}
+.ej-poster::before{content:"";position:absolute;left:-30%;right:-30%;top:42%;height:18%;background:var(--ej-orange);transform:rotate(-29deg)}
+.ej-poster-over{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(55px,7.4vw,140px);line-height:.76;letter-spacing:-.06em;z-index:1;margin-top:auto;transform:rotate(-8deg) translateY(-23px)}
+.ej-poster-small{font-size:11px;letter-spacing:.16em;line-height:1.4;position:relative;z-index:1}
+.ej-side-type{position:absolute;top:27%;left:-36px;writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.19em;font-weight:800;font-size:11px;z-index:3}
+.ej-after-title{margin:30px 0 0 8%;max-width:570px;position:relative;z-index:6}
+.ej-jp{font-size:18px;letter-spacing:.07em;font-weight:700;color:#111;padding:10px 13px 9px 0;background:#fff;display:table}
+.ej-deck{margin-top:6px;font-size:15px;line-height:1.5;width:340px;max-width:100%;background:#fff;padding:8px 9px 9px 0}
+.ej-scroll{position:absolute;right:5%;bottom:6%;z-index:6;color:#111;text-decoration:none;border-bottom:2px solid var(--ej-orange);font-size:12px;font-weight:800}
+.ej-intro{padding:100px 7% 130px;background:#fff;max-width:1700px;margin:auto}
+.ej-overline{font-size:11px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#111}
+.ej-intro-body{display:flex;justify-content:space-between;align-items:start;gap:7vw}
+.ej-intro-body>p{font-weight:900;line-height:.99;letter-spacing:-.06em;font-size:clamp(37px,6.4vw,116px);max-width:1140px}
+.ej-intro-num{font-size:clamp(68px,9vw,150px);line-height:.8;font-family:Impact,"Arial Black",sans-serif;color:var(--ej-orange);text-align:right;white-space:nowrap;transform:rotate(8deg)}
+.ej-intro-num small{display:block;font-family:Arial,sans-serif;color:#111;font-size:11px;letter-spacing:.11em;margin-top:15px;transform:rotate(-8deg)}
+.ej-trails{padding:70px max(24px,8%) 95px;background:#151515;color:#fff}
+.ej-trails-head{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.15em;font-weight:800;color:#aaa;margin-bottom:28px}
+.ej-trails-list{display:grid;grid-template-columns:1fr;gap:0}
+.ej-trail{appearance:none;background:transparent;border:0;border-bottom:1px solid #444;color:#fff;display:grid;grid-template-columns:55px 1fr 35px;align-items:center;text-align:left;padding:19px 0;cursor:pointer;gap:15px}
+.ej-trail>span:nth-child(2){font-size:clamp(37px,5.8vw,102px);font-weight:900;letter-spacing:-.072em;line-height:1.02}
+.ej-trail-index{font-weight:700;font-size:13px;color:var(--ej-orange)}
+.ej-trail>span:last-child{font-size:30px;color:var(--ej-orange);align-self:start}
+.ej-trail:hover>span:nth-child(2),.ej-trail:focus-visible>span:nth-child(2){font-style:italic;color:var(--ej-orange)}
+.ej-walks{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:145px max(24px,7%) 165px;background:#fff;max-width:1700px;margin:auto}
+.ej-walks-text h2{font-size:clamp(80px,10vw,160px);font-family:Impact,"Arial Black",sans-serif;line-height:.79;letter-spacing:-.075em;margin:46px 0 44px;text-transform:uppercase}
+.ej-walks-text h2 em{font-weight:900;color:var(--ej-orange);font-style:normal;margin-left:11%}
+.ej-walks-text>p:last-child{max-width:310px;font-size:15px;line-height:1.6}
+.ej-walks-cards{display:flex;flex-direction:column;gap:26px;padding-top:45px;align-items:flex-start}
+.ej-walk{border:2px solid #111;background:#fff;display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:30px;cursor:pointer;min-width:65%;min-height:170px;transition:transform .2s ease}
+.ej-walk small{font-size:10px;font-weight:800;letter-spacing:.15em}
+.ej-walk strong{font-size:clamp(35px,4vw,67px);letter-spacing:-.06em;line-height:1.1;margin:25px 0 12px}
+.ej-walk span{font-size:12px}
+.ej-walk:nth-child(1){align-self:flex-end;background:var(--ej-orange);transform:rotate(3deg);width:90%;margin-right:4%}
+.ej-walk:nth-child(2){transform:rotate(-5deg);width:70%}
+.ej-walk:nth-child(3){align-self:center;transform:rotate(2deg);width:83%}
+.ej-walk:hover,.ej-walk:focus-visible{transform:rotate(0deg) translateY(-6px)}
+.ej-browse{padding:100px max(20px,7%) 45px;background:#f5f5f2}
+.ej-browse-identity{display:flex;align-items:end;gap:6vw}
+.ej-browse-identity h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(95px,14vw,210px);line-height:.72;letter-spacing:-.065em;text-transform:uppercase;margin:20px 0 50px}
+.ej-browse-identity h2 em{font-style:normal;color:var(--ej-orange);margin-left:12%}
+.ej-search-label{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin:18px 0}
+.ej-search{display:block;width:min(920px,100%);font-family:inherit;font-size:clamp(18px,2.3vw,28px);padding:18px 4px;border:0;border-bottom:2px solid #111;border-radius:0;outline-offset:6px;background:transparent;color:#111}
+.ej-search::placeholder{color:#666}
+.city-tabs{display:flex;flex-wrap:wrap;gap:5px;margin-top:42px;padding-top:26px;border-top:1px solid #c5c5c5}
+.city-tab{border:1px solid #aaa;color:#222;background:transparent;font-size:12px;letter-spacing:.02em;padding:11px 15px;font-weight:800}
+.city-tab.active,.city-tab:hover{background:var(--ej-orange);border-color:var(--ej-orange);color:#111}
+main{max-width:100%;padding:65px max(20px,7%) 90px;background:#fff}
+.city-header{border:0;display:block;margin-bottom:35px}
+.city-name{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(66px,10vw,150px);letter-spacing:-.065em;text-transform:uppercase;line-height:1}
+.city-note{font-size:13px;margin-top:16px}
+.stats-bar{background:transparent;border:0;border-top:2px solid #111;border-bottom:1px solid #aaa;padding:20px 0;margin-bottom:30px}
+.stat-num{font-family:Impact,"Arial Black",sans-serif;font-size:38px;font-weight:800}
+.type-row{gap:7px}.type-chip{font-size:11px;padding:11px 13px;border:1px solid #999}.type-chip.active{background:#111}
+.filter-panel{border:0;background:transparent;grid-template-columns:1fr 1fr;gap:25px}
+.filter-col{padding:0}.filter-col+.filter-col{border:0}
+.filter-col-title{font-weight:800;color:#111}
+.chip{padding:8px 11px;background:transparent;border:1px solid #bbb}
+.chip.active{background:var(--ej-orange);border-color:var(--ej-orange);color:#111}
+.group-label{font-size:14px;color:#111;font-weight:850;margin:32px 0 18px}
+.place-grid{background:transparent;border:0;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px}
+.place-card{background:#fff;padding:22px 6px 28px;border-bottom:1px solid #222;min-height:145px;position:relative;transition:transform .2s}
+.place-card:nth-child(5n+2){transform:translateY(16px)}
+.place-card:nth-child(11n+4){transform:translateY(-9px)}
+.place-card:hover{background:#fff}.place-name{font-size:clamp(17px,1.7vw,27px);font-weight:900;letter-spacing:-.04em;line-height:1.2}
+.place-en{font-size:13px}.place-desc{font-size:13px;line-height:1.5}
+.place-tags{margin-top:14px}.tag-area,.tag-cat{font-size:11px;color:#444}
+.place-map{font-size:12px;font-weight:850;letter-spacing:0;color:#111;border-color:#111}
+.place-map:hover{color:var(--ej-orange);border-color:var(--ej-orange)}
+footer{background:#111;color:#eee;text-align:left;font-size:11px;padding:60px max(20px,7%);border:0}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--ej-orange);outline-offset:4px}
+@media(max-width:1000px){
+.ej-hero{height:690px;min-height:690px}.ej-hero h1{font-size:clamp(90px,14.3vw,150px)}
+.ej-hero-main{padding-top:125px}.ej-line-two{transform:translateX(22%) rotate(-4deg)}.ej-poster{width:42%;height:73%;top:10%}
+.ej-walks{grid-template-columns:1fr 1fr}.ej-walks-text h2{font-size:clamp(65px,10vw,100px)}
+.place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+.ej-nav{height:67px;padding:0 18px}.ej-wordmark{font-size:30px}.ej-nav-note{display:none}.ej-nav-find{margin-left:auto}
+.ej-hero{height:700px;min-height:700px}.ej-hero-main{padding:85px 0 0 5%;width:95%}.ej-hero h1{font-size:clamp(65px,14.2vw,105px);margin-top:45px;line-height:.85}
+.ej-line-two{transform:translateX(21%) rotate(-5deg)}.ej-line-three{transform:translateX(0)}
+.ej-poster{width:58%;height:310px;top:287px;right:6%;transform:rotate(4deg);padding:14px}
+.ej-poster-over{font-size:clamp(38px,10vw,72px);line-height:.8}
+.ej-after-title{margin:35px 0 0 0;max-width:70%}.ej-jp{font-size:13px}.ej-deck{font-size:13px;line-height:1.4}
+.ej-mini{font-size:9px;margin-left:0}.ej-scroll{bottom:30px;right:6%}.ej-side-type{display:none}
+.ej-intro{padding:75px 6% 75px}.ej-intro-body{display:block}.ej-intro-body>p{font-size:clamp(43px,8vw,75px)}.ej-intro-num{font-size:90px;margin:45px 0 0 auto}
+.ej-trails{padding:55px 6% 65px}.ej-trail{grid-template-columns:29px 1fr 20px;gap:10px}
+.ej-trail>span:nth-child(2){font-size:clamp(34px,8vw,55px)}.ej-trail>span:last-child{font-size:19px}
+.ej-walks{display:block;padding:85px 7% 110px}.ej-walks-text h2{font-size:clamp(78px,16vw,120px)}.ej-walks-cards{padding-top:55px}
+.ej-walk{min-height:150px}.ej-walk strong{font-size:45px}
+.ej-browse{padding:70px 6% 30px}.ej-browse-identity h2{font-size:clamp(90px,18vw,155px)}
+main{padding:50px 6% 70px}.city-name{font-size:clamp(66px,16vw,100px)}
+.place-grid{grid-template-columns:1fr}.place-card:nth-child(n){transform:none}
+.filter-panel{grid-template-columns:1fr;gap:22px}.filter-col+.filter-col{border:0}
+.stats-bar{gap:14px}.stat-num{font-size:32px}.city-note{font-size:12px}
+}
+@media(max-width:360px){
+.ej-hero{height:680px;min-height:680px}.ej-hero h1{font-size:clamp(55px,13.5vw,67px)}
+.ej-after-title{max-width:72%}.ej-poster{top:285px;width:57%;height:280px}
+.ej-wordmark small{display:none}
+.ej-browse-identity h2{font-size:78px}
+.ej-trail>span:nth-child(2){font-size:29px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+
+/* Encounter Japan V2 editorial overlay */
+.ej-story{position:relative;min-height:880px;background:#fff;padding:95px max(20px,7%) 110px;display:grid;grid-template-columns:57% 43%;align-items:center;overflow:hidden}
+.ej-story-photo{height:670px;width:100%;position:relative;transform:rotate(-2.5deg) translate(15px,5px);background:#ddd;z-index:1}
+.ej-story-photo img,.ej-second-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.ej-photo-credit{position:absolute;bottom:0;left:0;color:#fff;background:rgba(0,0,0,.8);text-decoration:none;padding:10px 14px;font-size:10px;line-height:1.2;max-width:100%}
+.ej-story-copy{position:relative;z-index:3;margin-left:-19%;align-self:center;padding-top:60px;pointer-events:none}
+.ej-story-copy h2{font-family:Impact,"Arial Black",Arial,sans-serif;font-weight:900;font-size:clamp(100px,11.3vw,230px);letter-spacing:-.08em;line-height:.79;color:#111;margin:35px 0 45px;text-shadow:2px 2px 0 #fff,-2px -2px 0 #fff}
+.ej-story-copy h2 i{font-style:normal;color:#ff5900;font-size:.74em;letter-spacing:-.09em}
+.ej-story-bottom{margin:10px 0 0 auto;max-width:380px;padding:24px 24px 24px 34px;background:#fff;pointer-events:auto}
+.ej-story-bottom p{font-size:16px;line-height:1.5}.ej-story-bottom a{display:inline-block;font-weight:900;margin-top:22px;text-decoration:none;border-bottom:2px solid #ff5900;font-size:13px}
+.ej-second-story{position:relative;padding:50px max(20px,7%) 150px;min-height:850px;overflow:hidden;background:#f3f2ef}
+.ej-second-photo{width:37%;height:650px;position:absolute;right:9%;top:65px;transform:rotate(5deg);background:#aaa}
+.ej-second-story>.ej-overline{position:relative;z-index:3;padding-top:90px}
+.ej-second-big{position:relative;z-index:3;font-family:Impact,"Arial Black",Arial,sans-serif;font-size:clamp(82px,10.5vw,195px);line-height:.78;letter-spacing:-.074em;font-weight:900;margin-top:35px;text-shadow:2px 2px #f3f2ef,-2px -2px #f3f2ef;pointer-events:none}
+.ej-second-big em{font-style:normal;color:#ff5900;font-size:.72em}
+.ej-second-foot{position:relative;z-index:3;font-size:16px;max-width:360px;line-height:1.55;background:#f3f2ef;padding:20px 15px 15px 0;margin:70px 0 0 12%}
+.ej-myedit{display:flex;justify-content:space-between;align-items:end;gap:35px;background:#151515;color:#fff;padding:75px max(20px,7%) 100px}
+.ej-myedit>div:first-child{max-width:660px}
+.ej-myedit h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(90px,11vw,180px);letter-spacing:-.075em;line-height:.78;margin:27px 0 30px}
+.ej-myedit h2 i{font-style:normal;color:#ff5900}
+.ej-myedit p{font-size:15px;line-height:1.5;max-width:350px}
+.ej-myedit .ej-overline{color:#eee}
+.ej-myedit-actions{display:flex;flex-direction:column;align-items:stretch;gap:12px;width:min(100%,340px)}
+#ej-fav-count{font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:15px}
+.ej-myedit-actions button{font-weight:900;font-size:14px;padding:16px 17px;background:transparent;color:#fff;border:1px solid #eee;text-align:left;cursor:pointer}
+.ej-myedit-actions button:hover,.ej-myedit-actions button[aria-pressed=true]{background:#ff5900;color:#111;border-color:#ff5900}
+.ej-share-status{font-size:11px;line-height:1.4;min-height:1em;color:#ddd}
+.ej-fav{margin-top:11px;border:1px solid #111;background:#fff;padding:7px 11px;font-weight:800;font-size:11px;text-align:left;cursor:pointer;min-height:34px}
+.ej-fav[aria-pressed=true]{background:#ff5900;border-color:#ff5900}
+.place-card[hidden],.group-block[hidden]{display:none!important}
+@media (max-width:1000px){
+.ej-story{grid-template-columns:58% 42%;min-height:680px}.ej-story-photo{height:500px}
+.ej-story-copy h2{font-size:clamp(75px,11vw,142px)}
+.ej-second-story{min-height:700px}.ej-second-photo{height:500px}
+}
+@media (max-width:700px){
+.ej-story{display:block;padding:45px 6% 70px;min-height:0}
+.ej-story-photo{width:85%;height:450px;margin-left:3%;transform:rotate(-3deg);z-index:1}
+.ej-story-copy{margin:-65px 0 0 5%;padding-top:0}
+.ej-story-copy h2{font-size:clamp(85px,17vw,145px);margin:22px 0 25px}
+.ej-story-copy h2 i{font-size:.68em}
+.ej-story-bottom{margin-left:2%;max-width:90%;padding:15px 18px 22px;background:#fff}
+.ej-second-story{min-height:830px;padding:40px 6% 70px}
+.ej-second-photo{top:45px;right:7%;width:74%;height:540px}
+.ej-second-story>.ej-overline{padding-top:370px}
+.ej-second-big{font-size:clamp(60px,13vw,95px);margin-top:18px}
+.ej-second-big em{font-size:.73em}
+.ej-second-foot{margin:38px 0 0 0;max-width:85%}
+.ej-myedit{display:block;padding:65px 6% 70px}
+.ej-myedit h2{font-size:clamp(85px,18vw,135px)}
+.ej-myedit-actions{margin-top:45px}
+}
+@media (max-width:360px){
+.ej-story-photo{height:390px}
+.ej-story-copy h2{font-size:78px}
+.ej-second-story{min-height:730px}.ej-second-photo{height:430px}
+.ej-second-story>.ej-overline{padding-top:290px}
+.ej-second-big{font-size:57px}
+}
+
+
+/* Source-backed field notes: asymmetric editorial treatment */
+.ej-field-notes{background:#fff;display:grid;grid-template-columns:40% 60%;gap:3%;padding:120px 7% 145px;border-top:1px solid #111}
+.ej-field-intro{position:sticky;top:35px;align-self:start}
+.ej-field-intro h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(98px,11vw,175px);letter-spacing:-.075em;line-height:.78;margin:45px 0}
+.ej-field-intro h2 em{font-style:normal;color:#ff5900}
+.ej-field-intro>p:not(.ej-overline){font-size:16px;line-height:1.65;max-width:350px;margin-bottom:25px}
+.ej-field-intro>a{color:#111;font-weight:900;text-decoration:none;border-bottom:2px solid #ff5900}
+.ej-field-list{min-width:0}
+.ej-route{padding:32px 0 58px;border-top:2px solid #111;margin-bottom:60px}
+.ej-route:nth-child(2){margin-left:8%}.ej-route:nth-child(3){margin-left:-5%}
+.ej-route-top{display:flex;gap:15px;justify-content:space-between;font-size:10px;line-height:1.4;font-weight:800;letter-spacing:.075em}
+.ej-route-top span:last-child{color:#df5200;text-align:right}
+.ej-route h3{font-size:clamp(36px,4.6vw,78px);font-weight:900;letter-spacing:-.06em;line-height:1.06;margin:32px 0 22px}
+.ej-route-intro{font-size:15px;line-height:1.65;max-width:550px;margin-bottom:24px}
+.ej-route-stops{list-style:none;padding:0}
+.ej-route-stop{border-top:1px solid #aaa;padding:17px 0;display:flex;gap:20px;justify-content:space-between}
+.ej-route-stop>div:first-child{min-width:0}
+.ej-route-number{font-weight:900;color:#ff5900;font-size:12px;margin-right:12px}
+.ej-route-stop strong{font-size:17px;font-weight:900}
+.ej-route-stop small{display:block;margin:8px 0 6px 27px;color:#555;font-size:11px}
+.ej-route-stop p{font-size:13px;line-height:1.5;margin:8px 0 0 27px;color:#333}
+.ej-route-links{display:flex;flex-direction:column;align-items:flex-end;min-width:110px;gap:12px}
+.ej-route-links a{color:#111;text-decoration:none;font-size:11px;font-weight:800;border-bottom:1px solid #ff5900}
+.ej-route-explore{padding:14px 22px;background:#ff5900;border:0;cursor:pointer;font-weight:900;margin-top:20px}
+.ej-editorial-desc{font-size:13px;line-height:1.5;color:#222;margin-top:9px}
+.ej-editorial-source{font-size:11px;font-weight:800;color:#555;text-decoration:none;border-bottom:1px solid #ff5900;margin-top:5px;align-self:start}
+@media(max-width:950px){.ej-field-notes{grid-template-columns:35% 65%;gap:2%;padding:80px 5%}.ej-field-intro h2{font-size:clamp(65px,9vw,105px)}.ej-route h3{font-size:clamp(33px,5vw,58px)}}
+@media(max-width:700px){.ej-field-notes{display:block;padding:60px 6% 70px}.ej-field-intro{position:static;margin-bottom:60px}.ej-field-intro h2{font-size:clamp(85px,17vw,125px);margin:25px 0}.ej-route:nth-child(n){margin-left:0;margin-bottom:25px;padding:30px 0}.ej-route h3{font-size:clamp(33px,8vw,58px)}.ej-route-top{display:block}.ej-route-top span{display:block}.ej-route-stop{display:block}.ej-route-links{flex-direction:row;align-items:flex-start;margin:15px 0 0 27px}}
+
+
+/* Encounter Japan editorial illustration edition: light, line, and atmosphere. */
+.ej-hero-art{overflow:hidden;box-shadow:18px 22px 0 #ff5900;transform:rotate(3deg);isolation:isolate}
+.ej-hero-art:before{display:none}
+.ej-hero-art img{width:100%;height:100%;object-fit:cover;object-position:58% 50%;display:block}
+.ej-hero-art figcaption{position:absolute;bottom:0;left:0;right:0;background:#111;color:#fff;font-size:10px;letter-spacing:.08em;line-height:1.25;padding:13px 15px;text-transform:uppercase;z-index:2}
+.ej-story-photo{transform:rotate(-3deg) translate(0,0)}
+.ej-story-photo img{object-position:50% 45%}
+.ej-second-photo img{object-position:50% 50%}
+.ej-photo-credit{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.07em;line-height:1.3;padding:10px 13px}
+.ej-walks-cards .ej-walk:nth-child(1){background:linear-gradient(90deg,rgba(245,242,226,.84),rgba(245,242,226,.9)),url("assets/editorial/day-bookshop.svg") 57% 31%/cover;color:#111}
+.ej-walks-cards .ej-walk:nth-child(2){background:linear-gradient(90deg,rgba(25,38,67,.74),rgba(25,38,67,.6)),url("assets/editorial/night-street.svg") 68% 45%/cover;color:#fff;border-color:#111}
+.ej-walks-cards .ej-walk:nth-child(3){background:#ffe5d0;color:#111}
+.ej-walks-cards .ej-walk strong{text-shadow:0 1px 0 rgba(255,255,255,.2)}
+.ej-nav-social{font-size:12px;font-weight:900;white-space:nowrap}
+.ej-nav-social a,.ej-footer-instagram a{color:inherit;text-decoration:none;border-bottom:2px solid #ff5900;padding-bottom:6px}
+footer{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:25px}
+footer small{width:100%;opacity:.7}
+@media(max-width:700px){
+ .ej-hero-art{box-shadow:9px 13px 0 #ff5900}
+ .ej-hero-art figcaption{padding:10px;font-size:9px}
+ .ej-nav-social{font-size:11px}
+ .ej-story-photo{height:min(85vw,470px)}
+}
+@media(max-width:360px){
+ .ej-hero-art figcaption{font-size:8px}
+ .ej-nav-social{display:none}
+}
+
+
+/* City-pop art direction / revision 03: bold cover composition, not a travel-directory grid */
+@media (min-width: 1001px) {
+ .ej-hero-art {
+   width: 48%;
+   right: 1.5%;
+   top: 9%;
+   height: 74%;
+   transform: rotate(-2.2deg);
+   box-shadow: 24px 28px 0 #ff5900;
+ }
+ .ej-hero-main { padding-top: clamp(110px, 13vh, 195px); z-index: 4; }
+ .ej-hero h1 { font-size: clamp(110px, 13.5vw, 233px); line-height: .78; }
+ .ej-line-one, .ej-line-two, .ej-line-three { text-shadow: 1.5px 1.5px 0 #fff, -1.5px -1.5px 0 #fff; }
+ .ej-after-title { position: relative; z-index: 6; margin-top: 26px; }
+ .ej-story-photo { width: 103%; margin-left: -2%; }
+ .ej-story-copy { transform: translate(-3%, 2%); }
+ .ej-second-photo { width: 44%; right: 3.5%; transform: rotate(-4deg); }
+ .ej-second-big { max-width: 77%; }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+ .ej-hero-art { width: 48%; right: 3%; top: 13%; height: 66%; transform: rotate(-3deg); }
+ .ej-hero-main { z-index: 4; }
+ .ej-hero h1 { font-size: clamp(92px, 13.2vw, 140px); }
+ .ej-second-big { max-width: 89%; }
+}
+@media (max-width: 700px) {
+ .ej-hero-art { top: 298px; right: 7%; width: 62%; height: 295px; transform: rotate(-3deg); box-shadow: 11px 13px 0 #ff5900; }
+ .ej-hero-main { z-index: 4; }
+ .ej-hero h1 { font-size: clamp(62px, 13.8vw, 101px); line-height: .84; }
+ .ej-hero-art img { object-position: 64% 47%; }
+ .ej-story-photo { width: 88%; }
+ .ej-second-photo { transform: rotate(-3deg); }
+}
+@media (max-width: 360px) {
+ .ej-hero-art { width: 60%; height: 264px; top: 296px; }
+ .ej-hero h1 { font-size: clamp(55px, 13vw, 66px); }
+}
+
+
+/* Four visitor tools, editorial but genuinely usable */
+.ej-feature-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:35px 7% 80px;background:#fff}
+.ej-feature-nav a{display:flex;flex-direction:column;gap:9px;min-width:0;color:#111;text-decoration:none;border-top:2px solid #111;padding:22px 12px 25px}
+.ej-feature-nav a:hover,.ej-feature-nav a:focus-visible{background:#ffe3d3}
+.ej-feature-nav small{font-size:10px;color:#f50;font-weight:900;letter-spacing:.08em}
+.ej-feature-nav strong{font-size:clamp(19px,2.2vw,35px);letter-spacing:-.055em;line-height:1.07}
+.ej-feature-nav span{font-size:12px;color:#666}
+.ej-visitor{display:grid;grid-template-columns:1fr 1fr;gap:7%;background:#f5f4f0;padding:115px 7%;color:#111}
+.ej-visitor h2{font:900 clamp(84px,11vw,180px)/.77 Impact,"Arial Black",sans-serif;letter-spacing:-.075em;margin:35px 0}
+.ej-visitor h2 em{font-style:normal;color:#ff5900}.ej-visitor-copy{padding-top:55px}
+.ej-visitor-copy>p{font-size:18px;line-height:1.55;max-width:600px}
+.ej-visitor-copy dl{margin-top:30px}.ej-visitor-copy dl>div{display:grid;grid-template-columns:35% 1fr;gap:14px;padding:20px 0;border-top:1px solid #999;font-size:13px;line-height:1.5}
+.ej-visitor-copy dt{font-weight:900}.ej-visitor-copy dd{margin:0;color:#444}
+.ej-visitor-copy>a{border-bottom:2px solid #ff5900;text-decoration:none;color:#111;font-weight:900;display:inline-block;margin-top:15px}
+.ej-discovery{padding:28px 0 38px}
+.ej-two-selects{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:min(850px,100%)}
+.ej-two-selects label{font-size:11px;font-weight:900;letter-spacing:.08em;display:block;text-transform:uppercase}
+.ej-two-selects select{margin-top:10px;display:block;width:100%;min-width:0;min-height:49px;padding:10px 12px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font-size:16px}
+#ej-filter-message{font-size:12px;color:#555;line-height:1.5;margin:20px 0 27px}
+.ej-mood{border-top:2px solid #111;padding:25px 0}
+.ej-mood-list,.ej-route-options{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0}
+.ej-mood-list button,.ej-route-options button{background:#fff;color:#111;border:1px solid #888;border-radius:0;cursor:pointer;padding:13px 17px;min-height:46px;font-size:13px;font-weight:900;text-align:left}
+.ej-mood-list button small{font-size:10px;font-weight:500;display:block;margin-top:7px}
+.ej-mood-list button[aria-pressed=true],.ej-route-options button[aria-pressed=true],.ej-mood-list button:hover,.ej-route-options button:hover{background:#ff5900;border-color:#ff5900}
+.ej-reset-all{background:transparent;border:0;border-bottom:2px solid #ff5900;cursor:pointer;padding:12px 0 4px;font-weight:900}
+.ej-route-options{margin:0 0 37px}
+.ej-route[hidden]{display:none!important}
+.ej-essentials{border-top:1px solid #aaa;margin-top:10px;font-size:12px;color:#111}
+.ej-essentials summary{display:flex;align-items:center;justify-content:space-between;cursor:pointer;min-height:46px;font-weight:850;list-style:none}
+.ej-essentials summary::-webkit-details-marker{display:none}
+.ej-essentials dl{margin:0 0 10px}.ej-essentials dl>div{display:grid;grid-template-columns:100px 1fr;border-top:1px dotted #bbb;padding:10px 0;gap:7px;line-height:1.5}
+.ej-essentials dt{font-weight:850}.ej-essentials dd{margin:0;color:#444}
+.ej-essentials a{color:#111;text-underline-offset:4px}
+@media(max-width:850px){.ej-feature-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.ej-visitor{grid-template-columns:1fr 1fr;gap:4%;padding:65px 5%}.ej-visitor h2{font-size:clamp(70px,10vw,105px)}}
+@media(max-width:700px){.ej-feature-nav{padding:15px 5% 48px}.ej-feature-nav a{padding:15px 5px}.ej-feature-nav strong{font-size:19px}.ej-visitor{display:block;padding:55px 6%}.ej-visitor-copy{padding-top:10px}.ej-visitor h2{font-size:clamp(44px,13vw,90px)}.ej-two-selects{grid-template-columns:1fr}.ej-visitor-copy dl>div{grid-template-columns:1fr}.ej-mood-list button{padding:12px}.ej-route-options button{padding:11px;font-size:12px}}
+
+
+/* Route planner controls */
+.ej-route-actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:22px 0}
+.ej-route-actions a,.ej-route-actions button{font-size:12px;line-height:1.4;font-weight:850;min-height:44px;padding:12px 15px;text-decoration:none;cursor:pointer;text-align:left}
+.ej-route-map{background:#ff5900;color:#111}
+.ej-route-actions .ej-route-explore{margin:0;background:#111;color:#fff}
+.ej-route-share{background:#fff;color:#111;border:1px solid #777}
+.ej-route-caution{font-size:11px;line-height:1.55;color:#555;max-width:640px}
+.ej-route-status{font-size:12px;color:#444;font-weight:850;margin:-10px 0 30px}
+@media(max-width:700px){.ej-route-actions{display:flex;flex-direction:column;align-items:stretch}.ej-route-actions>*{width:100%}}
+
+
+/* Practical visitor info sourced per venue, linked to the matching results */
+.ej-visitor-verified{margin:27px 0;padding:25px 0;border-top:2px solid #111}
+.ej-visitor-verified strong{font-size:16px;line-height:1.35}
+.ej-visitor-shortcuts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.ej-visitor-shortcuts button{background:#fff;color:#111;padding:11px 13px;border:1px solid #999;min-height:44px;font-size:12px;font-weight:850;cursor:pointer}
+.ej-visitor-shortcuts button:hover{background:#ff5900;border-color:#ff5900}
+.ej-visitor-verified .ej-info-caveat{font-size:12px;color:#555;line-height:1.55;margin-top:18px}
+
+
+.ej-route-neighborhood{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;display:block;margin:0 0 22px}
+.ej-route-neighborhood select{display:block;width:min(390px,100%);min-height:46px;margin-top:8px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font:500 16px Arial,sans-serif;padding:10px}
+
+.ej-feature-index{padding:42px 7% 58px;background:#fff;color:#111;border-top:2px solid #111}.ej-feature-label{font-size:11px;font-weight:900;letter-spacing:.13em;margin-bottom:24px}.ej-feature-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #111;border-bottom:1px solid #111}.ej-feature-links a{position:relative;color:#111;text-decoration:none;display:flex;flex-direction:column;min-height:175px;padding:22px 18px;border-right:1px solid #aaa}.ej-feature-links a:last-child{border:0}.ej-feature-links span{font-size:12px;font-weight:900;color:#e95000}.ej-feature-links strong{font-size:clamp(21px,2vw,32px);line-height:1.1;letter-spacing:-.05em;margin:21px 0 8px}.ej-feature-links small{font-size:12px;color:#555;line-height:1.4}.ej-feature-links b{position:absolute;right:12px;top:16px;color:#e95000}.ej-feature-links a:hover,.ej-feature-links a:focus-visible{background:#ffebdf}#browse,#fieldnotes,#visitor-info,#mood{scroll-margin-top:20px}@media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(2,minmax(0,1fr))}.ej-feature-links a{border-bottom:1px solid #aaa}.ej-feature-links a:nth-child(2){border-right:0}.ej-feature-links a:nth-child(n+3){border-bottom:0}}@media(max-width:520px){.ej-feature-index{padding:25px 5% 35px}.ej-feature-links a{min-height:147px;padding:16px 10px}.ej-feature-links strong{font-size:21px}.ej-feature-links small{font-size:11px}}
+/* Encounter Japan issue 002 — asymmetric editorial layout and functional discovery.
+   This layer never writes to or transforms the 526-record DATA source. */
+.ej-feature-links{grid-template-columns:repeat(12,minmax(0,1fr));border:0;gap:10px;align-items:stretch}
+.ej-feature-links a{min-height:154px;border:1px solid #111!important;padding:24px;transition:transform .2s ease,background .2s ease}
+.ej-feature-links a:nth-child(1){grid-column:span 5;background:#fff0e4;transform:translateY(-8px)}
+.ej-feature-links a:nth-child(2){grid-column:span 7;background:#f7f6f4}
+.ej-feature-links a:nth-child(3){grid-column:span 7;background:#101b31;color:#fff}
+.ej-feature-links a:nth-child(3) small{color:#e7b3a7}
+.ej-feature-links a:nth-child(4){grid-column:span 5;background:#ff5900;transform:translateY(9px)}
+.ej-feature-links a:nth-child(4) span,.ej-feature-links a:nth-child(4) b{color:#111}
+.ej-feature-links a:hover{transform:translate(0,-4px)!important;background:#ffe0c7}
+.ej-feature-index{border-bottom:0;padding-bottom:72px}
+.ej-mixtape{position:relative;display:grid;grid-template-columns:42% 1fr;background:#fce8d5;color:#111;margin:0 6% 90px;min-height:480px}
+.ej-mixtape-art{overflow:hidden;margin:35px 0 -26px 8%;background:#f56d45;transform:rotate(-2deg);box-shadow:14px 14px 0 #101b31}
+.ej-mixtape-art img{display:block;width:100%;height:100%;object-fit:cover;max-height:610px}
+.ej-mixtape-copy{padding:7% 8% 7% 14%;align-self:center;display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.ej-mixtape-copy h2{font-size:clamp(58px,8vw,140px);font-weight:950;letter-spacing:-.085em;line-height:.78;margin:0}
+.ej-mixtape-copy h2 em{color:#ff5900;font-style:normal}
+.ej-mixtape-copy p{max-width:430px;font-size:clamp(16px,2vw,22px);line-height:1.45;margin:12px 0}
+.ej-mixtape-copy a{color:#111;font-size:13px;font-weight:900;text-underline-offset:5px}
+.ej-mixtape-copy small{font-size:10px;letter-spacing:.07em;color:#56514f;margin-top:35px}
+.ej-field-art{width:min(460px,100%);margin:36px 0 0;transform:rotate(2deg);box-shadow:10px 10px 0 #ff5900}
+.ej-field-art img{display:block;width:100%;height:auto}
+.ej-field-art figcaption{font-size:10px;background:#101b31;color:#fff;padding:9px;letter-spacing:.06em}
+.ej-discovery-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:13px 0 5px;padding:14px 0;border-top:1px solid #111}
+.ej-discovery-feedback span{font-weight:900;font-size:15px}
+.ej-discovery-feedback button{border:0;background:#ff5900;color:#111;font:900 13px Arial,sans-serif;padding:12px 17px;min-height:44px;cursor:pointer}
+.ej-discovery-feedback button:disabled{background:#ddd;cursor:not-allowed}
+.ej-field-provenance{display:block;margin-top:7px;font-size:10px;line-height:1.5;color:#5e5e5e}
+.ej-field-provenance a{font-weight:900}
+.ej-route{scroll-margin-top:20px}
+.ej-route:nth-child(3n + 2){border-left:6px solid #ff5900}
+.ej-route:nth-child(3n + 1){border-left:6px solid #192a48}
+.ej-route:nth-child(3n){border-left:6px solid #f7b09c}
+.ej-route:has(a:focus-visible){outline:3px solid #ff5900;outline-offset:3px}
+@media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(12,minmax(0,1fr))}.ej-feature-links a:nth-child(n){grid-column:span 6;transform:none}.ej-mixtape{margin:0 5% 60px;grid-template-columns:45% 1fr}.ej-mixtape-copy h2{font-size:clamp(51px,8vw,86px)}}
+@media(max-width:600px){.ej-feature-index{padding:20px 5% 30px}.ej-feature-links{gap:8px}.ej-feature-links a:nth-child(n){grid-column:span 6;min-height:153px;padding:15px 12px}.ej-feature-links strong{font-size:19px}.ej-feature-links small{font-size:10px}.ej-mixtape{display:block;margin:10px 5% 65px}.ej-mixtape-art{margin:0 13% 0 5%;transform:translateY(-15px) rotate(-2deg);height:250px;box-shadow:8px 8px 0 #101b31}.ej-mixtape-copy{padding:23px 7% 37px}.ej-mixtape-copy h2{font-size:72px}.ej-mixtape-copy small{margin-top:13px}.ej-field-art{display:none}.ej-discovery-feedback{flex-direction:column;align-items:stretch}.ej-discovery-feedback button{width:100%}.ej-route{border-left-width:4px!important}}
+@media(prefers-reduced-motion:reduce){.ej-feature-links a{transition:none}.ej-feature-links a:hover{transform:none!important}}
+/* Keep filters and route cards in ONE second grid column; do not auto-place each child. */
+.ej-field-notes{grid-template-columns:minmax(0,39%) minmax(0,58%);gap:3%;align-items:start}
+.ej-field-intro{position:relative;top:auto;min-width:0}
+.ej-field-intro h2{font-size:clamp(58px,7vw,106px);margin:35px 0}
+.ej-field-content{min-width:0;max-width:100%}
+.ej-route{min-width:0}
+@media(max-width:950px){.ej-field-notes{grid-template-columns:minmax(0,34%) minmax(0,64%);gap:2%}.ej-field-intro h2{font-size:clamp(49px,6.7vw,76px)}}
+@media(max-width:700px){.ej-field-notes{display:block}.ej-field-intro{position:static}.ej-field-intro h2{font-size:clamp(70px,15vw,108px)}}
+.ej-route-brief{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;max-width:760px;margin:0 0 22px}
+.ej-route-brief p{font-size:14px;line-height:1.6;color:#222;margin:0}.ej-route-brief b{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin-bottom:6px}
+.ej-route-check{border:2px solid #111;padding:12px 16px 14px;margin:0 0 26px;max-width:640px;display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;font-size:12px}
+.ej-route-check>div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dotted #bbb;padding:6px 0}.ej-route-check dt{color:#333}.ej-route-check dd{margin:0;font-weight:900;white-space:nowrap}
+.ej-route-check-head{grid-column:1/-1;font-size:10px;letter-spacing:.1em;font-weight:900;color:#df5200;border:0!important;padding-bottom:2px!important}
+.ej-route-leg{list-style:none;font-size:11px;font-weight:800;color:#555;padding:5px 0 5px 27px;border-top:1px dashed #ccc}
+.ej-route-en{display:block;margin:4px 0 0 27px;font-size:12px;color:#444;font-style:normal}
+.ej-route-idnote{color:#555!important;font-size:12px!important}
+.ej-chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0 27px}
+.ej-chip{font-size:10px;font-weight:900;letter-spacing:.04em;padding:4px 8px;border:1px solid #111;background:#fff}
+.ej-chip-official{background:#ff5900;border-color:#ff5900}.ej-chip-conflict{border-style:dashed;color:#b23b00}.ej-chip-unchecked{color:#777;border-color:#bbb}
+.ej-stop-details{margin:10px 0 0 27px;font-size:12px;max-width:640px}.ej-stop-details summary{cursor:pointer;font-weight:850;min-height:40px;display:flex;align-items:center;gap:8px;list-style:none}.ej-stop-details summary::-webkit-details-marker{display:none}
+.ej-stop-details dl{margin:0}
+.ej-ess-row{display:grid;grid-template-columns:110px 1fr;gap:7px;border-top:1px dotted #bbb;padding:9px 0;line-height:1.5;font-size:12px}.ej-ess-row dt{font-weight:850}.ej-ess-row dd{margin:0;color:#333}
+.ej-ess-alt,.ej-ess-note{display:block;color:#555;font-size:11px;margin-top:4px}.ej-ess-alt{color:#b23b00}
+.ej-field-provenance{display:block;font-size:10.5px;color:#555;margin-top:5px;line-height:1.7}.ej-field-provenance a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none}.ej-field-provenance i{font-style:normal;color:#777}
+.ej-stat{display:inline-block;font-style:normal;font-size:9.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid #111;margin-right:4px;color:#111;background:#fff}
+.ej-stat-official{background:#ff5900;border-color:#ff5900}.ej-stat-conflict{border-style:dashed;color:#b23b00}.ej-ess-varies{display:block;font-weight:700;color:#b23b00;margin-bottom:2px}.ej-route-pin{display:block;font-size:11px;color:#555;margin-top:2px}.ej-visitor-legend{line-height:2}
+.ej-route-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 22px;max-width:980px}.ej-route-notes h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:0 0 8px}.ej-route-notes ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.55;color:#222}.ej-route-notes li{margin-bottom:6px}.ej-route-notes a{color:#111;font-weight:800;border-bottom:1px solid #ff5900;text-decoration:none;font-size:11px;white-space:nowrap}
+.ej-visitor-legend{font-size:11px;color:#444;margin:10px 0 0;line-height:2.1}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
+@media(max-width:700px){.ej-route-brief,.ej-route-check,.ej-route-notes{grid-template-columns:1fr}.ej-ess-row,.ej-essentials dl>div.ej-ess-row{grid-template-columns:1fr}.ej-route-check dd{white-space:normal;text-align:right}.ej-chips,.ej-stop-details,.ej-route-leg,.ej-route-en{margin-left:0;padding-left:0}}
+
+/* 2026-10-27 traveller-first route cards, essentials entry, responsive fixes */
+.ej-mini{display:inline-block;max-width:100%}
+.ej-route-why{font-size:16px;line-height:1.65;max-width:620px;margin:0 0 20px;color:#222}
+.ej-route-facts{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 26px;margin:0 0 28px;font-size:13px;color:#333;max-width:720px}
+.ej-route-facts b{font-family:Impact,"Arial Black",sans-serif;font-weight:400;font-size:28px;letter-spacing:-.04em;margin-right:5px;color:#111}.ej-fact-dist{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}.ej-fact-time{flex-basis:100%;font-size:13px;line-height:1.55;color:#333}.ej-fact-unconfirmed{color:#b23b00;font-weight:700}
+.ej-route-stop{border-top:1px solid #d9d9d9;padding:20px 0 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 24px;align-items:start}
+.ej-stop-main{display:flex;gap:16px;min-width:0}
+.ej-route-number{font-family:Impact,"Arial Black",sans-serif;font-weight:400;font-size:34px;line-height:.9;color:#ff5900;min-width:40px;margin:0}
+.ej-stop-body{min-width:0;flex:1}
+.ej-stop-body strong{font-size:20px;letter-spacing:-.02em}
+.ej-stop-body small,.ej-stop-body p,.ej-stop-body .ej-chips,.ej-stop-body .ej-route-en{margin-left:0}
+.ej-stop-key{font-size:13px;line-height:1.55;margin:9px 0 0;color:#222}
+.ej-stop-key .ej-key{display:block}.ej-stop-key .ej-key b{font-weight:900}.ej-stop-key .ej-key i{font-style:normal;color:#666;font-size:11px;margin-left:4px}
+.ej-key-conflict{color:#b23b00;font-weight:800}.ej-stop-key-none{color:#666}
+.ej-chips{margin-top:8px}.ej-chip{font-size:10px}
+.ej-route-leg{padding:7px 0 7px 56px;border-top:1px dashed #d4d4d4;font-size:12px;color:#444;font-weight:700}
+.ej-route-leg a{color:#111;font-weight:900;border-bottom:1px solid #ff5900;text-decoration:none}
+.ej-route-more,.ej-route-verification{margin:10px 0 0;border-top:1px solid #d9d9d9}
+.ej-route-more summary,.ej-route-verification summary,.ej-visitor-index summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;min-height:46px;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.ej-route-more summary::-webkit-details-marker,.ej-route-verification summary::-webkit-details-marker,.ej-visitor-index summary::-webkit-details-marker{display:none}
+.ej-route-more[open] summary span[aria-hidden],.ej-route-verification[open] summary span[aria-hidden],.ej-visitor-index[open] summary span[aria-hidden]{transform:rotate(45deg)}
+.ej-route-more summary span[aria-hidden],.ej-route-verification summary span[aria-hidden],.ej-visitor-index summary span[aria-hidden]{display:inline-block;color:#ff5900;transition:transform .15s}
+.ej-route-verification h4{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:18px 0 6px}
+.ej-route-verification .ej-route-check{margin:14px 0 0;max-width:none;border-width:1px}
+.ej-route-legs-verif{font-size:12px;line-height:1.6;color:#444;padding-left:18px;margin:0}.ej-route-legs-verif li{margin-bottom:6px}.ej-route-legs-verif span{color:#666}
+.ej-route-more .ej-route-brief{grid-template-columns:1fr;margin:12px 0 10px}
+.ej-ess-varies{display:block;font-weight:800;color:#b23b00;margin-bottom:2px}
+.ej-ess-conflict summary{cursor:pointer;font-size:11px;font-weight:800;color:#111;min-height:30px;display:flex;align-items:center}
+.ej-ess-conflict[open]{margin-top:4px}
+.ej-visitor-entry p{font-size:15px;line-height:1.6;margin:18px 0 0;max-width:560px}
+.ej-visitor-go{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.ej-visitor-go a,.ej-visitor-go button{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;font:900 13px/1.2 Arial,sans-serif;border:1px solid #111;background:#fff;color:#111;text-decoration:none;cursor:pointer;margin:0;border-radius:0}
+.ej-visitor-go a{background:#ff5900;border-color:#ff5900}
+.ej-visitor-index{border-top:1px solid #999;margin-top:6px}.ej-visitor-method{border-top:1px solid #999}.ej-visitor-method summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;min-height:46px;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.ej-visitor-method summary::-webkit-details-marker{display:none}.ej-visitor-method summary span[aria-hidden]{color:#ff5900}.ej-visitor-method p{font-size:13px;line-height:1.6;color:#444;margin:4px 0 14px}.ej-visitor-legend{font-size:12px}
+.ej-visitor-index .ej-visitor-shortcuts{max-height:380px;overflow:auto;padding:4px 0 12px}
+.ej-visitor-index-count{font-weight:700}
+@media(min-width:951px){.ej-field-notes{grid-template-columns:minmax(0,30%) minmax(0,67%);gap:3%}.ej-field-intro{position:sticky;top:24px;align-self:start}}
+@media(max-width:1000px){.ej-hero-main{width:60%}.ej-poster{width:36%;height:58%;top:24%;right:3%}.ej-mini{margin-left:0}.ej-after-title{max-width:44%;margin-left:4%}.ej-deck{width:auto}}
+@media(max-width:700px){.ej-route-stop{grid-template-columns:1fr;gap:8px}.ej-route-links{flex-direction:row;align-items:flex-start;margin-left:56px;min-width:0}.ej-route-leg{padding-left:0}.ej-route-number{font-size:28px;min-width:40px}.ej-route-facts b{font-size:24px}.ej-hero{height:auto;min-height:0;padding-bottom:64px}.ej-hero-main{position:static;width:auto;padding:76px 5% 0}.ej-after-title{max-width:100%;margin-top:26px}.ej-poster{position:relative;top:auto;right:auto;margin:28px 5% 0 auto;width:62%;height:300px;transform:rotate(3deg)}.ej-scroll{bottom:16px}}
+@media(max-width:360px){.ej-hero-main{padding-top:70px}.ej-hero h1{margin-top:34px}.ej-jp{display:inline-block;max-width:100%;font-size:14px;line-height:1.5}.ej-poster{margin:26px 4% 0 auto;width:68%;height:250px}}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="header-label">Personal Guide — Tokyo & Beyond</div>
-  <h1>Tetsuya's Picks<br><em>for Fellow Wanderers</em></h1>
-  <div class="header-meta">Curated from years of local knowledge &nbsp;·&nbsp; Updated October 2026</div>
-  <div class="city-tabs" id="cityTabs"></div>
-</header>
+<header class="ej-header">
+  <nav class="ej-nav" aria-label="Main navigation">
+    <a class="ej-wordmark" href="#top" aria-label="Encounter Japan — top">encounter<span>.</span><small>JAPAN</small></a>
+    <span class="ej-nav-note">Independent places / Japan</span>
+    <a class="ej-nav-find" href="#browse">Find a place <span aria-hidden="true">↗</span></a><span class="ej-nav-social" id="ej-nav-social" hidden></span>
+  </nav>
+  <section class="ej-hero" id="top" aria-labelledby="ej-hero-title">
+    <div class="ej-side-type" aria-hidden="true">TAKE ANOTHER LOOK</div>
+    <div class="ej-hero-main">
+      <p class="ej-mini">An independent address book. Not a checklist.</p>
+      <h1 id="ej-hero-title"><span class="ej-line-one">BEYOND</span><span class="ej-line-two">THE</span><span class="ej-line-three">OBVIOUS<span class="ej-period">.</span></span></h1>
+      <div class="ej-after-title">
+        <p class="ej-jp" lang="ja">誰もが知る定番の、その先へ。</p>
+        <p class="ej-deck">The places you remember aren't always the ones you planned to find.</p>
+      </div>
+    </div>
+    <figure class="ej-poster ej-hero-art"><img src="assets/editorial/night-street.svg" alt="An imagined Tokyo record-bar street at sunset, in original city-pop-inspired illustration" width="1440" height="1080" decoding="async"><figcaption>Editorial illustration · not an actual venue</figcaption></figure>
+    <a class="ej-scroll" href="#browse">See the places <span aria-hidden="true">↓</span></a>
+  </section>
+  <nav class="ej-feature-index" aria-label="Four ways to use the guide"><p class="ej-feature-label">USE THE GUIDE / FOUR WAYS IN</p><div class="ej-feature-links"><a href="#browse"><span>01</span><strong>Find a neighborhood</strong><small>Regions · areas · search</small><b>↗</b></a><a href="#fieldnotes"><span>02</span><strong>Take a walk</strong><small>Curated route ideas · draft</small><b>↗</b></a><a href="#visitor-info"><span>03</span><strong>Before you go</strong><small>Price · booking · access</small><b>↗</b></a><a href="#mood"><span>04</span><strong>Go by feeling</strong><small>Nightlife · coffee · culture</small><b>↗</b></a></div></nav><section class="ej-intro" aria-label="Explore the guide">
+    <p class="ej-overline">Make your own way</p>
+    <div class="ej-intro-body"><p>For the long lunches. The back streets. The small places that stay with you.</p><span class="ej-intro-num">526<br><small>SELECTED PLACES</small></span></div>
+  </section>
+  
+  
+<section class="ej-story" id="stories" aria-labelledby="ej-story-title">
+    <div class="ej-story-photo">
+      <img src="assets/editorial/day-bookshop.svg" alt="Original editorial illustration of an imagined Tokyo bookshop and café street, not a listed venue" loading="lazy" decoding="async" width="1040" height="1310">
+      <span class="ej-photo-credit">Editorial illustration · imagined Tokyo scene</span>
+    </div>
+    <div class="ej-story-copy">
+      <span class="ej-overline">01 / NOT THE POSTCARD</span>
+      <h2 id="ej-story-title">THE<br>BEST<br>PART<br>IS THE<br><i>DETOUR.</i></h2>
+      <div class="ej-story-bottom">
+        <p>The place you planned is only the beginning. A different street, a second stop, a reason to stay out a little longer.</p>
+        <a href="#browse">Find your own way <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="ej-second-story" aria-label="Street editorial">
+    <div class="ej-second-photo">
+      <img src="assets/editorial/rooftop-citypop.svg" loading="lazy" decoding="async" width="1440" height="1080" alt="Original city-pop-inspired illustration of an imagined Tokyo rooftop vinyl lounge overlooking the city; not an actual listed business">
+      <span class="ej-photo-credit">Editorial illustration · imagined Tokyo scene</span>
+    </div>
+    <p class="ej-overline">LOOK CLOSER / TOKYO</p>
+    <p class="ej-second-big">THE CITY<br>BETWEEN<br><em>DESTINATIONS.</em></p>
+    <p class="ej-second-foot">Not a top-ten list. A collection of real addresses worth looking at twice.</p>
+  </section>
+  <section class="ej-mixtape" aria-labelledby="ej-mixtape-title"><div class="ej-mixtape-art"><img src="assets/editorial/the-detour-issue.svg" loading="lazy" decoding="async" width="880" height="1040" alt="Original illustrated fictional record-shop interior with graphic vinyl and orange light; not a real shop"></div><div class="ej-mixtape-copy"><span class="ej-overline">ENCOUNTER / ISSUE 002</span><h2 id="ej-mixtape-title">GO<br>OFF<br><em>SCRIPT.</em></h2><p>An address can start a story. Take the long way, make a second stop, and leave room for what you did not expect.</p><a href="#fieldnotes">Browse the walking ideas ↗</a><small>Editorial illustration · imagined location</small></div></section>
+<section class="ej-trails" aria-label="Browse by interest">
+    <div class="ej-trails-head"><span>GO BY FEELING</span><span>01 / 03</span></div>
+    <div class="ej-trails-list">
+      <button class="ej-trail" type="button" data-explore-type="Eat & Drink"><span class="ej-trail-index">01</span><span>Eat your way through.</span><span aria-hidden="true">↗</span></button>
+      <button class="ej-trail" type="button" data-explore-type="See"><span class="ej-trail-index">02</span><span>Look a little closer.</span><span aria-hidden="true">↗</span></button>
+      <button class="ej-trail" type="button" data-explore-type="Shop"><span class="ej-trail-index">03</span><span>Find something different.</span><span aria-hidden="true">↗</span></button>
+    </div>
+  </section>
+  <section class="ej-walks" aria-label="Walking route ideas">
+    <div class="ej-walks-text"><span class="ej-overline">ON FOOT / IDEAS, NOT ITINERARIES</span><h2>Take the<br><em>long way.</em></h2><p>Neighborhood ideas from the guide. Stops, distances and opening hours have not been route-verified.</p></div>
+    <div class="ej-walks-cards">
+      <button type="button" class="ej-walk" data-walk-city="Tokyo" data-walk-area="Jimbocho"><small>DRAFT 01 / TOKYO</small><strong>Jimbocho</strong><span>Books, food, and wandering ↗</span></button>
+      <button type="button" class="ej-walk" data-walk-city="Tokyo" data-walk-area="Shibuya"><small>DRAFT 02 / TOKYO</small><strong>Shibuya</strong><span>The streets between stops ↗</span></button>
+      <button type="button" class="ej-walk" data-walk-city="Kyoto" data-walk-area=""><small>DRAFT 03 / KYOTO</small><strong>Kyoto</strong><span>Follow your own route ↗</span></button>
+    </div>
+  </section>
+  
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each route brings together real addresses from our guide. Every stop is matched to its map pin, distances are estimated on the map, and hours or access are cited where we found them. No route has been walked on the ground for the guide yet.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original city-pop abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+<button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
+<button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
+<button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
+<button type="button" data-route-choice="Osaka" aria-pressed="false">Osaka</button>
+<button type="button" data-route-choice="night" aria-pressed="false">Music & night</button>
+<button type="button" data-route-choice="coffee" aria-pressed="false">Food & coffee</button>
+<button type="button" data-route-choice="culture" aria-pressed="false">Art & heritage</button>
+<button type="button" data-route-choice="food" aria-pressed="false">Food-led walks</button>
+</div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · map-checked drafts</p><div class="ej-field-list" id="ej-field-list"></div></div></section>
 
+<section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
+ <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> the venue or an authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> with its date · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> both shown · <b class="ej-stat">Not yet confirmed</b> nothing reliable found</p><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><details class="ej-visitor-method"><summary>How this information was gathered <span aria-hidden="true">＋</span></summary><p id="ej-visitor-method-text"></p></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
+ <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
+ <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
+ <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
+ <a href="#browse">Check a place ↗</a></div>
+</section>
+<div class="ej-myedit" aria-live="polite">
+    <div><span class="ej-overline">MAKE IT YOURS</span><h2>YOUR<br><i>EDIT.</i></h2><p>Keep addresses you want to revisit. Saved in this browser, unless you choose to share.</p></div>
+    <div class="ej-myedit-actions"><span id="ej-fav-count">0 places saved</span><button id="ej-show-favs" type="button" aria-pressed="false">Show saved places ↗</button><button id="ej-share-favs" type="button">Share your edit ↗</button><span class="ej-share-status" id="ej-share-status" role="status"></span></div>
+  </div>
+  <div class="ej-browse" id="browse">
+    <div class="ej-browse-identity"><span class="ej-overline">THE ADDRESS BOOK</span><h2>Find<br>your<br><em>place.</em></h2></div>
+    <label class="ej-search-label" for="ej-search">Find a name, street or kind of place</label>
+    <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="Try Ueno, coffee or a Japanese name…" aria-label="Search places in the selected region">
+    
+<section class="ej-discovery" aria-label="Region, area and theme search">
+ <div class="ej-two-selects"><label>Region<select id="ej-region-select" aria-label="Region"></select></label><label>Neighborhood / area<select id="ej-area-select" aria-label="Neighborhood"></select></label></div>
+ <p id="ej-filter-message" aria-live="polite">Combine neighborhood, keyword and theme to find a place.</p>
+ <div class="ej-mood" id="mood"><p class="ej-overline">GO BY FEELING / EDITORIAL CATEGORIES</p><div class="ej-mood-list" id="ej-mood-list" role="group" aria-label="Themes">
+ <button type="button" data-mood="" aria-pressed="true">Everything</button>
+ <button type="button" data-mood="night" aria-pressed="false">After dark <small>Bars · music</small></button>
+ <button type="button" data-mood="coffee" aria-pressed="false">Coffee & something sweet <small>Cafés · bakeries</small></button>
+ <button type="button" data-mood="culture" aria-pressed="false">Art & heritage <small>Museums · temples</small></button>
+ <button type="button" data-mood="food" aria-pressed="false">Japanese food <small>Local food genres</small></button>
+ <button type="button" data-mood="shop" aria-pressed="false">Style & design <small>Shopping</small></button>
+ <button type="button" data-mood="slow" aria-pressed="false">Take it slow <small>Parks · baths</small></button>
+ </div></div><button id="ej-reset-all" class="ej-reset-all" type="button">Clear filters ↺</button><div class="ej-discovery-feedback"><span id="ej-discovery-count" role="status" aria-live="polite">Browse curated places</span><button type="button" id="ej-jump-results">See matching places ↓</button></div>
+</section>
+<div class="city-tabs" id="cityTabs" aria-label="Select region"></div>
+  </div>
+</header>
 <main id="mainContent"></main>
 
-<footer>All locations link directly to Google Maps &nbsp;·&nbsp; Compiled by Tetsuya Hashiramoto</footer>
-
+<footer><span>All locations link directly to Google Maps · Curated by Tetsuya Hashiramoto</span><span class="ej-footer-instagram" id="ej-footer-instagram" hidden></span><small>Illustrations are interpretive artworks, not photographs of the listed locations.</small></footer>
+<script src="data/visitor-essentials.js"></script>
+<script src="data/route-verification.js"></script>
 <script>
 // ============================================================
 // DATA
@@ -795,20 +1361,209 @@ const STATE = {};
 // RENDER CARD
 // ============================================================
 const CAT_TYPE = {"Activity": "Do", "Bakery": "Eat & Drink", "Bakery / Café": "Eat & Drink", "Bar": "Eat & Drink", "Bar / Music": "Eat & Drink", "Bar / Sake": "Eat & Drink", "Bar / Whisky": "Eat & Drink", "Bar / Wine": "Eat & Drink", "Burger": "Eat & Drink", "Café": "Eat & Drink", "Café / Hotel Bar": "Eat & Drink", "Café / Tea": "Eat & Drink", "Chinese": "Eat & Drink", "Chinese / Gyoza": "Eat & Drink", "Curry": "Eat & Drink", "Diner / Teishoku": "Eat & Drink", "Event Venue": "Do", "Hotel": "Stay", "Indian": "Eat & Drink", "Italian": "Eat & Drink", "Izakaya": "Eat & Drink", "Japanese": "Eat & Drink", "Jingisukan": "Eat & Drink", "Kaiseki": "Eat & Drink", "Landmark": "See", "Live House": "Eat & Drink", "Monument": "See", "Museum": "See", "Onsen": "Bathe", "Park & Garden": "See", "Ramen": "Eat & Drink", "Restaurant / Bar": "Eat & Drink", "Sento": "Bathe", "Shopping": "Shop", "Shopping Street": "Shop", "Shrine": "See", "Sightseeing": "See", "Soba": "Eat & Drink", "Steak": "Eat & Drink", "Street Food": "Eat & Drink", "Sukiyaki / Shabu": "Eat & Drink", "Sushi": "Eat & Drink", "Sweets": "Eat & Drink", "Temple": "See", "Temple / Shrine": "See", "Tempura": "Eat & Drink", "Thai": "Eat & Drink", "Tonkatsu": "Eat & Drink", "Tsukemen": "Eat & Drink", "Udon": "Eat & Drink", "Unagi": "Eat & Drink", "Yakiniku": "Eat & Drink", "Yakitori": "Eat & Drink", "Yoshoku": "Eat & Drink", "Bistro / French": "Eat & Drink"};
+
+/* Source-backed English introductions. These editorial notes do not mutate DATA. */
+const EJ_NOTES={
+ "MAIDENS SHOP JIMBOCHO":{en:"A fashion and vintage-focused outpost in Kanda Sarugakucho, with a coffee stand inside. Its concept brings contemporary designers together with older objects and clothing.",source:"https://maidens-shop.jp/2026/03/06/177/"},
+ "MIZUNO TOKYO":{en:"Mizuno’s flagship in Kanda-Ogawamachi brings together equipment and clothing for running, baseball, golf and many other sports.",source:"https://jpn.mizuno.com/shop/globalflag_tokyo_en"},
+ "三燈舎":{en:"Santosham is a South Indian kitchen centered on Kerala-style meals and tiffin. Its name is Malayalam for happiness.",source:"https://santosham.tokyo/about"},
+ "清水寺":{en:"At Kiyomizu-dera, the celebrated stage belongs to the temple’s religious life: a place of worship, not simply a viewpoint.",source:"https://www.kiyomizudera.or.jp/en/learn/"},
+ "南座":{en:"Minamiza is Kyoto’s historic theater, linked to centuries of kabuki performance and the city’s traditional performing arts.",source:"https://www.kyoto-kankou.or.jp/info_search/3696"},
+ "甘味どころ ぎをん 小森":{en:"Gion Komori serves traditional Japanese sweets in a machiya that was formerly a teahouse.",source:"https://www.kyoto-kankou.or.jp/info_search/7745"},
+ "東京国立博物館":{en:"Its story began with an exhibition in 1872; the museum moved to Ueno Park in 1882. The history of the museum is also a way into the history of Japan’s museum culture.",source:"https://www.tnm.jp/modules/r_free_page/index.php?id=143&lang=en"},
+ "国立西洋美術館":{en:"Come for the art, but look at the building too: Le Corbusier designed the museum’s main building, completed in 1959. The forecourt is part of that architectural story.",source:"https://www.nmwa.go.jp/en/about/building.html"},
+ "東京都美術館":{en:"Founded in 1926 as Japan’s first public art museum, this Ueno institution brings together special exhibitions and public-entry shows. Check the exhibition calendar to see what is on.",source:"https://www.tobikan.jp/en/"},
+ "明治神宮":{en:"Established in 1920, Meiji Jingu stands within a large forest in the middle of Tokyo. Its seasonal gate schedule is worth checking before setting out.",source:"https://www.meijijingu.or.jp/en/about/"}
+};
+
+/* Visitor essentials come from the independent data layer in data/visitor-essentials.js (window.EJ_ESSENTIALS_V1).
+   Every displayed value keeps its own source URL, source type, verification status and checked date.
+   Fields marked unverified carry no value and are never shown as facts. Records attach to the 526 listings
+   by city + Google Maps place id (ejPlaceKey), never by name alone, so same-name venues cannot collide. */
+const EJ_ESSENTIALS_META=(typeof window!=='undefined'&&window.EJ_ESSENTIALS_V1)||{version:'',records:[]};
+const EJ_ESSENTIALS_DATA=Array.isArray(EJ_ESSENTIALS_META.records)?EJ_ESSENTIALS_META.records:[];
+function ejPlaceKey(city,p){const m=String(p.url||'').match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/);return city+'|'+(m?m[1]:'name:'+p.name)}
+const EJ_ESSENTIALS_BY_KEY=Object.fromEntries(EJ_ESSENTIALS_DATA.map(r=>[r.key,r]));
+function ejEssentialsFor(p){return EJ_ESSENTIALS_BY_KEY[ejPlaceKey(ejCityForPlace(p),p)]||null}
+/* Name-keyed view kept for older checks; display always resolves through the place key. */
+const EJ_PRACTICAL=Object.fromEntries(EJ_ESSENTIALS_DATA.map(r=>[r.name,r]));
+const EJ_FIELD_LABEL={hours:'Opening hours',closed:'Closed',fee:'Admission / price',reservation:'Booking / tickets',payment:'Payment',access:'Access',address:'Address',language:'Language',accessibility:'Step-free & access needs',notice:'Good to know',tip:'Worth knowing',website:'Website',name:'Official name'};
+const EJ_FIELD_ORDER=['hours','closed','fee','reservation','payment','access','address','accessibility','language','notice','tip'];
+const EJ_TIME_SENSITIVE=new Set(['hours','closed','fee','reservation','payment']);
+const EJ_STAT_LABEL={official:'Official source',secondary:'Listed by directory or media',conflict:'Sources disagree — confirm ahead'};
+const EJ_SOURCE_TYPE={official:'official site',government:'public authority','tourism-board':'tourism board',association:'local association','reservation-platform':'official booking page',media:'media listing',aggregator:'directory listing','review-site':'review site',osm:'OpenStreetMap'};
+function ejShownFields(rec){return rec?rec.fields.filter(f=>f.v&&(f.stat==='official'||f.stat==='secondary'||f.stat==='conflict')):[]}
+function ejUncheckedTypes(rec){return rec?rec.fields.filter(f=>f.stat==='unverified').map(f=>EJ_FIELD_LABEL[f.t]||f.t):[]}
+function ejProvenance(f){
+ const parts=['<b class="ej-stat ej-stat-'+ejHTML(f.stat)+'">'+ejHTML(EJ_STAT_LABEL[f.stat]||f.stat)+'</b>'];
+ if(f.src)parts.push('<a href="'+ejHTML(f.src)+'" target="_blank" rel="noopener noreferrer">Source ↗</a>'+(EJ_SOURCE_TYPE[f.st]?' <i>'+ejHTML(EJ_SOURCE_TYPE[f.st])+'</i>':''));
+ parts.push(EJ_TIME_SENSITIVE.has(f.t)?'as checked '+ejHTML(f.chk)+' · may have changed':'checked '+ejHTML(f.chk));
+ return '<span class="ej-field-provenance">'+parts.join(' · ')+'</span>';
+}
+const EJ_CONFLICT_LABEL={hours:'Hours',closed:'Closing days',fee:'Prices',reservation:'Booking details',payment:'Payment details',access:'Access details',address:'Address details',accessibility:'Step-free details',language:'Language support details',notice:'Notices'};
+function ejFieldRow(f){
+ return '<div class="ej-ess-row" data-stat="'+ejHTML(f.stat)+'" data-field="'+ejHTML(f.t)+'"><dt>'+ejHTML(EJ_FIELD_LABEL[f.t]||f.t)+'</dt><dd>'+(f.stat==='conflict'?'<span class="ej-ess-varies">'+ejHTML(EJ_CONFLICT_LABEL[f.t]||((EJ_FIELD_LABEL[f.t]||f.t)+' details'))+' vary by source — please confirm before visiting.</span><details class="ej-ess-conflict"><summary>See both sources and dates</summary><span class="ej-ess-alt">One source: '+ejHTML(f.v)+'</span><span class="ej-ess-alt">Another: '+ejHTML(f.alt||'')+'</span>'+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f)+'</details>':ejHTML(f.v)+(f.note?'<span class="ej-ess-note">'+ejHTML(f.note)+'</span>':'')+ejProvenance(f))+'</dd></div>';
+}
+function ejPracticalField(p,type){
+ const rec=ejEssentialsFor(p);if(!rec)return '';
+ return ejShownFields(rec).filter(f=>f.t===type).map(ejFieldRow).join('');
+}
+function ejPracticalCitation(p){
+ const rec=ejEssentialsFor(p);if(!rec)return '';
+ const shown=ejShownFields(rec);const latest=rec.fields.map(f=>f.chk).sort().pop()||EJ_ESSENTIALS_META.version;
+ const unchecked=ejUncheckedTypes(rec);
+ return '<div class="ej-ess-row ej-ess-summary"><dt>Recorded source</dt><dd>'+(rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official visitor information ↗</a> · ':'')+shown.length+' checked item'+(shown.length===1?'':'s')+' · Checked '+ejHTML(latest)+(unchecked.length?'<span class="ej-ess-note">Not yet confirmed: '+ejHTML(unchecked.join(' · '))+'</span>':'')+'</dd></div>';
+}
+function ejEssentialsBlock(p){
+ const rec=ejEssentialsFor(p);
+ if(!rec)return '<div><dt>Before you go</dt><dd>Prices, opening times, reservations and language support have not been checked for this place. Verify with the venue before visiting.</dd></div>';
+ const shown=ejShownFields(rec);
+ const rows=EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('');
+ const status=shown.length?'<div><dt>Before you go</dt><dd>Each line below names its source and the date it was read. Time-sensitive details are shown as they stood on that date; reconfirm before travel.</dd></div>':'<div><dt>Before you go</dt><dd>We looked for official information on '+ejHTML(EJ_ESSENTIALS_META.version)+' and could not confirm hours, prices or access. Nothing is assumed from the venue type; check directly.</dd></div>';
+ return status+rows+ejPracticalCitation(p);
+}
+function ejRenderVisitorShortcuts(){
+ const box=document.getElementById('ej-visitor-shortcuts');if(!box)return;
+ const all=Object.entries(DATA).flatMap(([city,{places}])=>places.map(p=>({city,p,rec:ejEssentialsFor(p)}))).filter(x=>x.rec);
+ const totalPlaces=Object.values(DATA).reduce((a,c)=>a+c.places.length,0);
+ const withInfo=all.filter(x=>ejShownFields(x.rec).length);
+ const official=all.filter(x=>x.rec.fields.some(f=>f.stat==='official'&&f.v)).length;
+ const sum=document.getElementById('ej-visitor-summary');if(sum)sum.textContent='Hours, closing days, booking, payment and access — checked line by line, each with its source and the date we read it.';
+ const method=document.getElementById('ej-visitor-method-text');if(method)method.textContent='Every one of the '+totalPlaces+' places was looked up at least once ('+all.length+' have a record). '+withInfo.length+' show at least one confirmed line, '+official+' of them from an official source; '+(all.length-withInfo.length)+' had nothing confirmable. Official means the venue’s own site or a public authority; listed means a booking site, directory or dated article; where two sources disagree both are shown. Nothing is inferred from the kind of venue. Last research pass: '+(EJ_ESSENTIALS_META.version||'')+'.';
+ const idx=document.getElementById('ej-visitor-index-count');if(idx)idx.textContent='('+withInfo.length+')';
+ const cav=document.getElementById('ej-info-caveat');if(cav)cav.textContent='If a line says “Not yet confirmed”, we looked and found nothing reliable — ask the venue. Hours and prices change; reconfirm before you travel.';
+ box.innerHTML=withInfo.sort((a,b)=>a.city.localeCompare(b.city)||a.p.name.localeCompare(b.p.name,'ja')).map(x=>'<button type="button" data-find-venue="'+ejHTML(x.p.name)+'" data-find-city="'+ejHTML(x.city)+'">'+ejHTML(x.rec.nameEn||x.p.name)+' <small>'+ejHTML(x.city)+'</small> ↗</button>').join('');
+}
+
+const EJ_ROUTES=[
+ {id:"jimbocho",theme:"coffee",city:"Tokyo",area:"Jimbocho",eyebrow:"TOKYO / CLOTHES, SPORT, FOOD",title:"Jimbocho, beyond the bookshop",intro:"A different reading of Jimbocho: contemporary fashion, sporting goods and South Indian cooking. Hours for all three are recorded from their own websites.",stops:["MAIDENS SHOP JIMBOCHO","MIZUNO TOKYO","三燈舎"]},
+ {id:"shibuya",theme:"night",city:"Tokyo",area:"Shibuya",eyebrow:"TOKYO / MUSIC AFTER DARK",title:"Shibuya, tuned differently",intro:"Three listening bars in rising order of lateness, from the station basement up into Maruyamacho. Only CAVE publishes its hours; confirm the other two before you go.",stops:["THE MUSIC BAR -CAVE SHIBUYA-","MUSIC BAR BOUNCE","Hi-Fi Disco Bar Chaos"]},
+ {id:"higashiyama",theme:"culture",city:"Kyoto",area:"Higashiyama",eyebrow:"KYOTO / STAGE, SHRINE, SWEETS",title:"Higashiyama in different registers",intro:"Temple, shrine, theatre and tearoom on a downhill line from Kiyomizu to the Shijo bridge. Gate times are official; the walk itself is map-checked, not walked.",stops:["清水寺","八坂神社","南座","甘味どころ ぎをん 小森"]},
+ {id:"ueno",city:"Tokyo",area:"Ueno",theme:"culture",eyebrow:"TOKYO / MUSEUMS & OPEN AIR",title:"Ueno, beyond the museum doors",intro:"Three museums and the pond inside one park. Admission, hours and closures are recorded from the museums' own pages; check Monday closures.",stops:["東京国立博物館","国立西洋美術館","東京都美術館","不忍池"]},
+ {id:"kiyosumi",city:"Tokyo",area:"Kiyosumi-Shirakawa",theme:"coffee",eyebrow:"TOKYO / COFFEE & FOOD",title:"Kiyosumi, a slower morning",intro:"Two coffee addresses and a yoshoku counter within 750 m. Published hours are thin here; one roastery's schedule differs between sources.",stops:["米本珈琲 清澄白河","First Crop Coffee Japan Roastery","実用洋食 七福"]},
+ {id:"harajuku",city:"Tokyo",area:"Harajuku",theme:"culture",eyebrow:"TOKYO / SHRINE & STREETS",title:"Harajuku, different tempos",intro:"Shrine at dawn pace, a daifuku shop that sells out by lunch, a burger counter, then the car-free street. The order follows each stop's time window.",stops:["明治神宮","瑞穂","THE GREAT BURGER","竹下通り"]},
+ {id:"ebisu",city:"Tokyo",area:"Ebisu",theme:"night",eyebrow:"TOKYO / MUSIC",title:"Ebisu on the record",intro:"Three small music bars within 900 m. Spincoaster publishes its hours; the other two could not be confirmed and should be treated as unconfirmed.",stops:["Spincoaster Music Bar Ebisu","ソウルソニックブギー恵比寿","SOUND BAR MOD'Z"]},
+ {id:"koenji",city:"Tokyo",area:"Koenji",theme:"night",eyebrow:"TOKYO / FOOD & BARS",title:"Koenji, stay a little longer",intro:"Dinner first at a diner that closes at 19:00, then a rum bar, a no-cover sake bar and a standing bar. Ordered by closing time, not by fame.",stops:["中華料理 七面鳥","bar dop","日本酒あさって","立呑み きど藤"]},
+ {id:"shinjuku",city:"Tokyo",area:"Shinjuku",theme:"coffee",eyebrow:"TOKYO / ALLEYS & FOOD",title:"Shinjuku, the smaller streets",intro:"One post-war alley, three counters. Everything is within 250 m; shop hours come from the alley association's own listings, some of them dated.",stops:["新宿西口 思い出横丁","そば処かめや 新宿店","中華料理 岐阜屋","四文屋 思い出横丁店"]},
+ {id:"namba",city:"Osaka",area:"Namba",theme:"food",eyebrow:"OSAKA / FOOD & CITY LIGHTS",title:"Namba, beyond the billboards",intro:"Century-old curry first (it closes at 20:00), the bridge as the neon comes on, takoyaki last. Three stops within 1.2 km whose hours line up in this order.",stops:["自由軒 難波本店","戎橋","本家大たこ 道頓堀本店"]}
+];
+function ejHTML(x){return String(x).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;")}
+
+function ejRouteGoogleMapsURL(route){
+ const stops=route.stops.map(n=>DATA[route.city]?.places.find(p=>p.name===n)).filter(Boolean);
+ if(stops.length<2)return null;
+ const label=p=>[p.name,p.area,route.city,'Japan'].join(', ');
+ const url=new URL('https://www.google.com/maps/dir/');
+ url.searchParams.set('api','1');url.searchParams.set('travelmode','walking');
+ url.searchParams.set('origin',label(stops[0]));
+ url.searchParams.set('destination',label(stops[stops.length-1]));
+ if(stops.length>2)url.searchParams.set('waypoints',stops.slice(1,-1).map(label).join('|'));
+ return url.href;
+}
+
+const EJ_ROUTE_FIELD=(typeof window!=='undefined'&&window.EJ_ROUTE_FIELD_V1)||{routes:{},statusLabel:'DRAFT / UNVERIFIED WALKING ROUTE',legMethod:''};
+function ejMinutes(m){return Math.max(1,Math.round(m/80))}
+function ejDistance(m){return m>=1000?(Math.round(m/100)/10).toFixed(1)+'\u00a0km':m+'\u00a0m'}
+function ejStopStatus(rec,type){const f=rec&&rec.fields.find(x=>x.t===type);if(!f||!f.v||f.stat==='unverified'||f.stat==='n-a')return 'unchecked';return f.stat}
+function ejRouteSummary(route,V){
+ const stops=route.stops.map(n=>DATA[route.city]?.places.find(p=>p.name===n)).filter(Boolean);
+ const recs=stops.map(p=>ejEssentialsFor(p));const total=stops.length;
+ const count=(type,ok)=>recs.filter(r=>ok.includes(ejStopStatus(r,type))).length;
+ const ident=V.stops.filter(x=>x.identity==='confirmed').length;
+ const meters=V.legs.reduce((a,l)=>a+l.m,0);
+ const items=[['Destinations matched to their map pins',ident+' of '+total],['Opening hours from an official source',count('hours',['official'])+' of '+total],['Opening hours from any dated source',count('hours',['official','secondary','conflict'])+' of '+total],['Step-free or access-needs information',count('accessibility',['official','secondary'])+' of '+total],['Distance on the map (OpenStreetMap routing)',ejDistance(meters)+(V.legs.some(l=>l.disc)?' · rough':'')],['Minutes on the Google Maps walking preview',V.legs.every(l=>l.gmin)?V.legs.reduce((a,l)=>a+l.gmin,0)+' min summed'+(V.legs.some(l=>l.disc)?' — not a confirmed walking time':''):'not read for every leg'],['Legs read on the Google Maps walking preview',V.legs.filter(l=>l.gmin).length+' of '+V.legs.length],['Legs with a rough distance figure',V.legs.filter(l=>l.disc).length+' of '+V.legs.length+' (minutes re-read on Google Maps)'],['Walked on the ground for this guide','not yet']];
+ return '<dl class="ej-route-check" aria-label="Verification status"><div class="ej-route-check-head"><span>CHECKED SO FAR</span><span>'+ejHTML(V.version||EJ_ROUTE_FIELD.version||'')+'</span></div>'+items.map(([k,v])=>'<div><dt>'+ejHTML(k)+'</dt><dd>'+ejHTML(v)+'</dd></div>').join('')+'</dl>';
+}
+function ejLegDirURL(V,i){const a=V&&V.stops[i],b=V&&V.stops[i+1];if(!a||!b||a.lat==null||b.lat==null)return '';return 'https://www.google.com/maps/dir/?api=1&origin='+a.lat+','+a.lon+'&destination='+b.lat+','+b.lon+'&travelmode=walking';}
+function ejRouteTimeText(V){
+ if(!V||!V.legs.length||!V.legs.every(l=>l.gmin))return 'Walking time not confirmed.';
+ if(V.legs.some(l=>l.disc))return 'Walking time not confirmed: on this route the map distance and the map minutes disagree, so no total is given. Use the Directions link under each stop and allow extra time.';
+ const g=V.legs.reduce((a,l)=>a+l.gmin,0);
+ return 'About '+g+' min of walking by map preview — not walked, allow extra.';
+}
+function ejStopKeyLine(rec){
+ if(!rec)return '<p class="ej-stop-key ej-stop-key-none">Hours not confirmed — check before you go.</p>';
+ const pick=t=>rec.fields.find(f=>f.t===t&&(f.stat==='official'||f.stat==='secondary'||f.stat==='conflict'));
+ const parts=[];
+ for(const [t,label] of [['hours','Hours'],['closed','Closed']]){
+  const f=pick(t);if(!f)continue;
+  if(f.stat==='conflict')parts.push('<span class="ej-key ej-key-conflict">'+(t==='hours'?'Hours':'Closing days')+' vary by source — please confirm before visiting</span>');
+  else parts.push('<span class="ej-key"><b>'+label+'</b> '+ejHTML(f.v)+' <i>'+(f.stat==='official'?'official':'listed')+' · as checked '+ejHTML(f.chk)+'</i></span>');
+ }
+ return parts.length?'<p class="ej-stop-key">'+parts.join('')+'</p>':'<p class="ej-stop-key ej-stop-key-none">Hours not confirmed — check before you go.</p>';
+}
+function ejRouteStop(route,V,name,index){
+ const p=DATA[route.city]?.places.find(x=>x.name===name);if(!p)return '<li>Stop under review</li>';
+ const note=EJ_NOTES[name];const rec=ejEssentialsFor(p);const vs=V&&V.stops.find(x=>x.name===name);
+ const chipText={official:'official',secondary:'listed',conflict:'confirm ahead',unchecked:'not confirmed'};
+ const chip=(label,type)=>{const st=ejStopStatus(rec,type);return '<span class="ej-chip ej-chip-'+st+'">'+label+': '+chipText[st]+'</span>'};
+ let leg='';
+ if(V&&index>0&&V.legs[index-1]){
+  const l=V.legs[index-1];const dir=ejLegDirURL(V,index-1);
+  leg='<li class="ej-route-leg">↓ '+(l.gmin?'≈ '+l.gmin+' min on the map preview':'about '+ejMinutes(l.m)+' min on the map')+(l.disc?' · distance unconfirmed':' · '+ejDistance(l.m))+' · not walked'+(dir?' · <a href="'+ejHTML(dir)+'" target="_blank" rel="noopener noreferrer">Directions ↗</a>':'')+'</li>';
+ }
+ const shown=ejShownFields(rec);
+ return leg+'<li class="ej-route-stop"><div class="ej-stop-main"><span class="ej-route-number">'+String(index+1).padStart(2,"0")+'</span><div class="ej-stop-body"><strong>'+ejHTML(p.name)+'</strong>'+(rec&&rec.nameEn&&rec.nameEn!==p.name?'<em class="ej-route-en">'+ejHTML(rec.nameEn)+'</em>':'')+'<small>'+ejHTML(p.cat)+' / '+ejHTML(p.area)+'</small>'+(note?'<p>'+ejHTML(note.en)+'</p>':'')+ejStopKeyLine(rec)+'<div class="ej-chips">'+chip('Hours','hours')+chip('Access','access')+chip('Step-free','accessibility')+'</div>'+(shown.length?'<details class="ej-stop-details"><summary>Checked details &amp; sources <span aria-hidden="true">＋</span></summary><dl>'+EJ_FIELD_ORDER.flatMap(t=>shown.filter(f=>f.t===t).map(ejFieldRow)).join('')+'</dl></details>':'')+'</div></div><div class="ej-route-links"><a href="'+ejHTML(p.url)+'" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>'+(rec&&rec.website?'<a href="'+ejHTML(rec.website)+'" target="_blank" rel="noopener noreferrer">Official site ↗</a>':note?'<a href="'+ejHTML(note.source)+'" target="_blank" rel="noopener noreferrer">Official source ↗</a>':'')+'</div></li>';
+}
+function ejRouteVerification(route,V){
+ const stops=V.stops.map(s=>'<li>'+ejHTML(s.name)+' → map pin resolves to “'+ejHTML(s.mapsResolved||'?')+'”'+(s.identity==='confirmed'?' (confirmed)':'')+(s.note?' — '+ejHTML(s.note):'')+'</li>').join('');
+ const legs=V.legs.map(l=>'<li><b>'+ejHTML(l.from)+' → '+ejHTML(l.to)+'</b>: '+ejDistance(l.m)+' by OpenStreetMap routing'+(l.gmin?' · '+l.gmin+' min on the Google Maps walking preview (read '+ejHTML(l.gchk)+(l.gchk2?', again '+ejHTML(l.gchk2):'')+')':'')+(l.gpinFrom?' · pins: '+ejHTML(l.gpinFrom)+' → '+ejHTML(l.gpinTo):'')+(l.discNote?'<br><span>'+ejHTML(l.discNote)+'</span>':'')+'</li>').join('');
+ return '<details class="ej-route-verification"><summary>Route verification details <span aria-hidden="true">＋</span></summary>'+ejRouteSummary(route,V)+'<h4>How each stop was matched</h4><ul class="ej-route-legs-verif">'+stops+'</ul><h4>How each leg was measured</h4><ul class="ej-route-legs-verif">'+legs+'</ul><p class="ej-route-caution">Map-checked draft: '+ejHTML(V.orderNote)+' Nobody has walked this sequence for the guide; gates, stairs and crossings are unchecked. Confirm hours, access and transfers before travelling.</p></details>';
+}
+function ejRenderRoutes(){
+ const root=document.getElementById("ej-field-list");if(!root)return;
+ root.innerHTML=EJ_ROUTES.map(route=>{
+  const V=EJ_ROUTE_FIELD.routes[route.id];
+  const label=V?EJ_ROUTE_FIELD.statusLabel:'DRAFT / UNVERIFIED WALKING ROUTE';
+  const list=(title,items,withSrc)=>items&&items.length?'<div><h4>'+title+'</h4><ul>'+items.map(x=>withSrc?'<li>'+ejHTML(x.text)+' <a href="'+ejHTML(x.src)+'" target="_blank" rel="noopener noreferrer">Source ↗</a></li>':'<li>'+ejHTML(x)+'</li>').join('')+'</ul></div>':'';
+  const meters=V?V.legs.reduce((a,l)=>a+l.m,0):0;
+  const rough=V?V.legs.some(l=>l.disc):true;
+  const facts=V?'<p class="ej-route-facts"><span><b>'+route.stops.length+'</b> stops</span><span class="ej-fact-dist">'+(rough?'roughly ':'')+ejHTML(ejDistance(meters))+' on the map'+(rough?', rough estimate':'')+'</span><span class="ej-fact-time'+(rough?' ej-fact-unconfirmed':'')+'">'+ejHTML(ejRouteTimeText(V))+'</span></p>':'<p class="ej-route-facts"><span><b>'+route.stops.length+'</b> stops</span><span class="ej-fact-time ej-fact-unconfirmed">Distance and walking time not confirmed.</span></p>';
+  const why=V?'<p class="ej-route-why">'+ejHTML(V.whyWalk)+'</p>':'';
+  const more=V?'<details class="ej-route-more"><summary>Before you go: hours, transit, background <span aria-hidden="true">＋</span></summary><div class="ej-route-brief"><p><b>Why these stops together</b>'+ejHTML(V.whyTogether)+'</p></div><div class="ej-route-notes">'+list('Check before you go',V.checkBefore,false)+list('Getting around',V.transit,false)+list('Background, with sources',V.culture,true)+'</div></details>':'<p class="ej-route-caution">Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before travelling.</p>';
+  return '<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>'+ejHTML(label)+'</span></div><h3>'+ejHTML((V&&V.titleEn)||route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p>'+why+facts+'<ol class="ej-route-stops">'+route.stops.map((name,index)=>ejRouteStop(route,V,name,index)).join('')+'</ol><div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Open all stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div>'+more+(V?ejRouteVerification(route,V):'')+'</article>';
+ }).join("");
+}
+
 const TYPE_ORDER = ['Eat & Drink','See','Bathe','Shop','Do','Stay'];
 const TYPE_EMOJI = {'Eat & Drink':'\ud83c\udf74','See':'\u26e9\ufe0f','Bathe':'\u2668\ufe0f','Shop':'\ud83d\udecd\ufe0f','Do':'\ud83c\udfaf','Stay':'\ud83c\udfe8'};
 const typeOf = p => { const t = CAT_TYPE[p.cat]; if (!t) { console.warn('[tokyo-guide] Unknown category (treated as Eat & Drink):', p.cat, '-', p.name); return 'Eat & Drink'; } return t; };
 
+
+/* Saves only an address's existing Google Maps URL. No account, server or data collection. */
+const EJ_FAV_STORAGE_KEY='encounter-japan-saved-v1';
+let ejSaved=new Set();
+let ejSavedOnly=false;
+try{const v=JSON.parse(localStorage.getItem(EJ_FAV_STORAGE_KEY)||'[]');if(Array.isArray(v))ejSaved=new Set(v.filter(x=>typeof x==='string').slice(0,526));}catch(_){}
+function ejPersist(){
+ try{localStorage.setItem(EJ_FAV_STORAGE_KEY,JSON.stringify([...ejSaved]));}catch(_){}
+ const n=document.getElementById('ej-fav-count');if(n)n.textContent=ejSaved.size+' places saved';
+ document.querySelectorAll('.ej-fav').forEach(b=>{
+  let key;try{key=decodeURIComponent(b.dataset.fav)}catch(_){key=''}
+  const isSaved=ejSaved.has(key);b.setAttribute('aria-pressed',String(isSaved));
+  b.textContent=isSaved?'Saved ✓':'Save this place +';
+ });
+}
+
+function ejCityForPlace(p){return Object.keys(DATA).find(c=>DATA[c].places.includes(p))||"Japan";}
 function card(p) {
   return `<div class="place-card">
     <div class="place-name">${p.name}</div>
     ${p.en ? `<div class="place-en">${p.en}</div>` : ''}
     ${p.desc ? `<div class="place-desc">${p.desc}</div>` : ''}
+    ${EJ_NOTES[p.name] ? `<p class="ej-editorial-desc">${ejHTML(EJ_NOTES[p.name].en)}</p><a class="ej-editorial-source" href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">Official source ↗</a>` : ''}
     <div class="place-tags">
       <span class="tag-area">📍 ${p.area}</span>
       <span class="tag-cat">· ${p.cat}</span>
     </div>
-    <a class="place-map" href="${p.url}" target="_blank">${mapIcon} Open in Maps</a>
+    <a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>
+    <details class="ej-essentials"><summary>Visitor essentials <span aria-hidden="true">＋</span></summary><dl>
+    <div><dt>Location</dt><dd>${ejHTML(p.area)} · ${ejHTML(ejCityForPlace(p))}</dd></div>
+    <div><dt>Directions</dt><dd><a href="${ejHTML(p.url)}" target="_blank" rel="noopener noreferrer">Check Google Maps ↗</a></dd></div>
+    ${ejEssentialsBlock(p)}
+    ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
+    </dl></details>
+    <button type="button" class="ej-fav" data-fav="${encodeURIComponent(p.url)}" aria-pressed="${ejSaved.has(p.url) ? 'true':'false'}">${ejSaved.has(p.url) ? 'Saved ✓':'Save this place +'}</button>
   </div>`;
 }
 
@@ -816,7 +1571,7 @@ function card(p) {
 // RENDER CONTENT (grouped by sort key)
 // ============================================================
 function renderContent(places, sort, dir) {
-  if (!places.length) return `<div class="empty">No places match the selected filters.</div>`;
+  if (!places.length) return `<div class="empty">Nothing here yet. Try another neighborhood, theme or keyword; use “Clear filters” above to start fresh.</div>`;
 
   const mul = dir === 'asc' ? 1 : -1;
 
@@ -869,12 +1624,36 @@ function renderActiveTags(cityKey, el) {
 // ============================================================
 // MAIN FILTER + RENDER ENGINE
 // ============================================================
+
+/* All mood filters are derived from known, objective category fields only.
+   An "After dark" group does not assert individual venue opening times. */
+const EJ_MOOD_CATEGORIES={
+ night:/^(Bar|Bar \/|Izakaya|Live House|Restaurant \/ Bar)/,
+ coffee:/^(Café|Bakery|Sweets)/,
+ culture:/^(Museum|Temple|Shrine|Landmark|Monument|Sightseeing|Event Venue)/,
+ food:/^(Sushi|Soba|Ramen|Tsukemen|Udon|Unagi|Yakitori|Yakiniku|Tonkatsu|Tempura|Sukiyaki|Japanese|Kaiseki|Jingisukan|Diner \/ Teishoku|Yoshoku)/,
+ shop:/^(Shopping|Shopping Street)/,
+ slow:/^(Onsen|Sento|Park & Garden)/
+};
+let ejMood='';
+function ejMoodMatches(p){return !ejMood||Boolean(EJ_MOOD_CATEGORIES[ejMood]?.test(p.cat));}
+function ejMoodButtonState(){
+ document.querySelectorAll('[data-mood]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mood===ejMood)));
+}
+
+const ejDiscovery={q:(new URLSearchParams(location.search).get('q')||'').trim()};
+/* Search: each word must match the name, English name, area, category or editorial note; common English words also match their Japanese or category spelling so “coffee” finds cafés and “temple” finds 寺. */
+const EJ_SEARCH_SYNONYMS={coffee:['café','cafe','珈琲','コーヒー','喫茶'],cafe:['café','喫茶','コーヒー','珈琲'],kissaten:['喫茶'],tea:['茶','café / tea'],ramen:['ラーメン','らーめん','らぁめん','中華そば','つけ麺','つけそば'],tsukemen:['つけ麺','つけそば'],noodle:['ramen','soba','ラーメン','そば','蕎麦'],noodles:['ramen','soba','ラーメン','そば','蕎麦'],sushi:['寿司','鮨','すし'],bar:['バー'],bars:['bar','バー'],temple:['寺','院'],temples:['temple','寺'],shrine:['神社','宮','稲荷'],shrines:['shrine','神社'],bakery:['パン','boulangerie','ベーカリー','bread'],bread:['パン','bakery'],onsen:['温泉','湯','sento','bath'],bath:['湯','温泉','銭湯','sento'],baths:['湯','温泉','銭湯','sento'],sento:['湯','銭湯'],sauna:['サウナ','sento'],yakitori:['焼鳥','焼き鳥','やき鳥'],yakiniku:['焼肉','ホルモン'],soba:['蕎麦','そば'],curry:['カレー'],burger:['バーガー'],burgers:['burger','バーガー'],izakaya:['居酒屋','酒場'],sake:['酒'],steak:['ステーキ'],thai:['タイ'],chinese:['中華'],tonkatsu:['とんかつ','トンカツ'],unagi:['うなぎ','鰻'],eel:['unagi','うなぎ','鰻'],gyoza:['餃子'],dumpling:['餃子','gyoza'],museum:['美術館','博物館'],museums:['museum','美術館','博物館'],park:['公園'],garden:['庭園','園'],market:['市場','商店街','横丁'],jingisukan:['ジンギスカン','成吉思汗'],lamb:['jingisukan','ジンギスカン','成吉思汗','ラム'],hotel:['ホテル'],sweets:['甘味','菓子','餅'],dessert:['sweets','甘味','菓子'],record:['music','レコード'],vinyl:['music','レコード'],jazz:['ジャズ'],kaiseki:['懐石','会席','割烹'],wagyu:['和牛','steak','yakiniku'],pizza:['ピザ','italian'],italian:['イタリアン'],french:['フレンチ','bistro'],wine:['ワイン'],beer:['ビール','craft'],castle:['城'],tower:['タワー','塔'],bridge:['橋'],street:['通り','商店街','横丁']};
+function ejSearchWords(q){const base=q.toLocaleLowerCase().normalize('NFKC').trim();const words=base.split(/\s+/).filter(Boolean);if(!words.length)return [];return words.map(w=>{const alts=new Set([w]);(EJ_SEARCH_SYNONYMS[w]||[]).forEach(s=>alts.add(s.toLocaleLowerCase().normalize('NFKC')));return [...alts]})}
 function applyFilters(cityKey, places, els) {
   const s = STATE[cityKey];
   let filtered = places;
   if (s.types.length) filtered = filtered.filter(p => s.types.includes(typeOf(p)));
   if (s.cats.length)  filtered = filtered.filter(p => s.cats.includes(p.cat));
   if (s.areas.length) filtered = filtered.filter(p => s.areas.includes(p.area));
+  if(ejDiscovery.q){const words=ejSearchWords(ejDiscovery.q);filtered=filtered.filter(p=>{const rec=ejEssentialsFor(p);const hay=[p.name,p.en||'',p.area,p.cat,EJ_NOTES[p.name]?.en||'',rec?.nameEn||''].join(' ').toLocaleLowerCase().normalize('NFKC');return words.every(alts=>alts.some(t=>hay.includes(t)))});}
+  if(ejMood)filtered=filtered.filter(ejMoodMatches);
+  if(ejSavedOnly)filtered=filtered.filter(p=>ejSaved.has(p.url));
 
   // Update result count in stats bar
   els.countEl.textContent = `Showing ${filtered.length} of ${places.length}`;
@@ -884,6 +1663,7 @@ function applyFilters(cityKey, places, els) {
 
   els.contentEl.innerHTML = renderContent(filtered, s.sort, s.dir);
   renderActiveTags(cityKey, els.activeTagsEl);
+
 }
 
 function updateDimming(cityKey, allPlaces, filtered, els) {
@@ -920,6 +1700,7 @@ function updateDimming(cityKey, allPlaces, filtered, els) {
 // ============================================================
 // BUILD SECTIONS
 // ============================================================
+const ejViewRefs=Object.create(null);
 const cityTabsEl = document.getElementById('cityTabs');
 const mainEl = document.getElementById('mainContent');
 
@@ -1013,6 +1794,7 @@ Object.keys(DATA).forEach((city, idx) => {
     sortBtns:     [...sec.querySelectorAll(`#sort-${idx} .sort-btn`)],
   };
 
+  ejViewRefs[key]=els;
   // Initial render
   applyFilters(key, places, els);
 
@@ -1093,6 +1875,59 @@ Object.keys(DATA).forEach((city, idx) => {
   });
 });
 
+
+/* A small, private address-book layer: local favorites and explicit link sharing. */
+const ejAllPlaces=Object.values(DATA).flatMap(c=>c.places);
+const ejValidURLs=new Set(ejAllPlaces.map(p=>p.url));
+const ejURL=new URL(location.href);
+if(ejURL.searchParams.has('saved')){
+  const raw=ejURL.searchParams.get('saved')||'';
+  const compact=/^\d+(,\d+)*$/.test(raw);
+  const urls=compact?raw.split(',').slice(0,40).map(i=>ejAllPlaces[Number(i)]?.url):raw.split('|').filter(Boolean).slice(0,40).map(x=>{try{return decodeURIComponent(x)}catch(_){return ''}});
+  ejSaved=new Set(urls.filter(x=>ejValidURLs.has(x)));
+  ejPersist();
+}
+
+document.addEventListener('click',e=>{
+ const b=e.target.closest('.ej-fav');
+ if(b){
+   let url;try{url=decodeURIComponent(b.dataset.fav)}catch(_){return}
+   if(!ejValidURLs.has(url))return;
+   if(ejSaved.has(url))ejSaved.delete(url);else ejSaved.add(url);
+   ejPersist();
+   if(ejSavedOnly)ejRefreshAll();
+ }
+});
+function ejApplySavedFilter(){
+ document.querySelectorAll('.city-section').forEach(sec=>{
+   sec.querySelectorAll('.place-card').forEach(c=>{
+     const b=c.querySelector('.ej-fav');
+     let url='';try{url=decodeURIComponent(b?.dataset.fav||'')}catch(_){}
+     c.hidden=ejSavedOnly&&!ejSaved.has(url);
+   });
+   sec.querySelectorAll('.group-block').forEach(group=>{
+     group.hidden=ejSavedOnly&&![...group.querySelectorAll('.place-card')].some(c=>!c.hidden);
+   });
+ });
+}
+document.getElementById('ej-show-favs')?.addEventListener('click',e=>{
+ ejSavedOnly=!ejSavedOnly;
+ e.currentTarget.setAttribute('aria-pressed',String(ejSavedOnly));
+ e.currentTarget.textContent=ejSavedOnly?'Show all places ↗':'Show saved places ↗';
+ ejRefreshAll();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('ej-share-favs')?.addEventListener('click',async()=>{
+ const status=document.getElementById('ej-share-status');
+ const u=new URL(location.href);
+ if(ejSaved.size>40){status.textContent='Sharing is limited to 40 places. Please reduce the list.';return}
+ const positions=ejAllPlaces.flatMap((p,i)=>ejSaved.has(p.url)?[i]:[]);
+ u.searchParams.set('saved',positions.join(','));
+ // Current page URL is shared; it is not a standalone itinerary.
+ try{await navigator.clipboard.writeText(u.href);status.textContent='Link copied. Anyone with this link can open your saved list.'}
+ catch(_){status.textContent=u.href;}
+});
+ejPersist();
+
 // City tab switching
 cityTabsEl.addEventListener('click', e => {
   const tab = e.target.closest('.city-tab');
@@ -1103,6 +1938,209 @@ cityTabsEl.addEventListener('click', e => {
   const idx = [...cityTabsEl.children].indexOf(tab);
   document.getElementById('sec-' + idx).classList.add('active');
 });
+
+ejRenderRoutes();
+ejRenderVisitorShortcuts();
+
+/* Integrated search and deep links — all filtering uses the 526-item source DATA. */
+const ejSearchBox=document.getElementById('ej-search');
+let ejRestoring=false;
+function ejCurrentCity(){return document.querySelector('#cityTabs .city-tab.active')?.dataset.city||Object.keys(DATA)[0]}
+function ejChangeCity(city){const tab=[...cityTabsEl.querySelectorAll('.city-tab')].find(x=>x.dataset.city===city);if(tab){tab.click();return true}return false}
+function ejRefreshAll(){Object.entries(DATA).forEach(([city,v])=>{if(ejViewRefs[city])applyFilters(city,v.places,ejViewRefs[city]);})}
+function ejSyncURL(push=false){
+ if(ejRestoring)return;
+ const u=new URL(location.href),city=ejCurrentCity(),st=STATE[city];
+ for(const k of ['city','q','area','cat','type','sort','dir','mood'])u.searchParams.delete(k);
+ if(city!==Object.keys(DATA)[0])u.searchParams.set('city',city);
+ if(ejDiscovery.q)u.searchParams.set('q',ejDiscovery.q);
+ if(ejMood)u.searchParams.set('mood',ejMood);
+ if(st.areas.length)u.searchParams.set('area',st.areas.join('|'));
+ if(st.cats.length)u.searchParams.set('cat',st.cats.join('|'));
+ if(st.types.length)u.searchParams.set('type',st.types.join('|'));
+ if(st.sort!=='cat')u.searchParams.set('sort',st.sort);
+ if(st.dir!=='asc')u.searchParams.set('dir',st.dir);
+ const next=u.pathname+u.search+u.hash;
+ if(next!==location.pathname+location.search+location.hash)history[push?'pushState':'replaceState']({},'',next);
+}
+function ejRestoreURL(){
+ ejRestoring=true;
+ try{
+  const p=new URLSearchParams(location.search),city=DATA[p.get('city')]?p.get('city'):Object.keys(DATA)[0];
+  ejDiscovery.q=(p.get('q')||'').trim();ejSearchBox.value=ejDiscovery.q;
+  ejMood=Object.hasOwn(EJ_MOOD_CATEGORIES,p.get('mood'))?p.get('mood'):'';
+  ejMoodButtonState();
+  Object.values(STATE).forEach(st=>{st.areas=[];st.cats=[];st.types=[]});
+  const st=STATE[city],places=DATA[city].places;
+  const areas=new Set(places.map(p=>p.area)),cats=new Set(places.map(p=>p.cat));
+  st.areas=(p.get('area')||'').split('|').filter(v=>areas.has(v));
+  st.cats=(p.get('cat')||'').split('|').filter(v=>cats.has(v));
+  st.types=(p.get('type')||'').split('|').filter(v=>TYPE_ORDER.includes(v));
+  st.sort=['cat','area','name'].includes(p.get('sort'))?p.get('sort'):'cat';
+  st.dir=p.get('dir')==='desc'?'desc':'asc';
+  ejChangeCity(city);ejRefreshAll();ejUpdateLocationControls();
+  ejViewRefs[city]?.sortBtns.forEach(b=>{const a=b.dataset.sort===st.sort;b.classList.toggle('active',a);b.querySelector('.arr').textContent=a?(st.dir==='asc'?'↑':'↓'):'↕';});
+ }finally{ejRestoring=false}
+}
+function ejBrowseArea(city,area){
+ ejRestoring=true;
+ try{
+  if(!ejChangeCity(city))return;
+  const st=STATE[city];st.cats=[];st.types=[];st.areas=area?[area]:[];
+  ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;ejMood='';ejMoodButtonState();
+  const b=document.getElementById('ej-show-favs');
+  if(b){b.setAttribute('aria-pressed','false');b.textContent='Show saved places ↗';}
+  ejRefreshAll();
+ }finally{ejRestoring=false}
+ ejSyncURL(true);ejUpdateLocationControls();document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+}
+ejSearchBox.value=ejDiscovery.q;
+document.getElementById('ej-jump-results')?.addEventListener('click',()=>{
+ document.querySelector('.city-section.active .city-header')?.scrollIntoView({behavior:'smooth',block:'start'});
+});
+ejSearchBox.addEventListener('input',()=>{ejDiscovery.q=ejSearchBox.value.trim();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(false)});
+document.addEventListener('click',e=>{
+ if(ejRestoring)return;
+ if(e.target.closest('#cityTabs .city-tab,.type-chip,.chip[data-type],.clear-link,.sort-btn,.active-tag .x,.reset-all'))ejSyncURL(true);
+});
+document.querySelectorAll('[data-explore-type]').forEach(button=>button.addEventListener('click',()=>{
+ ejRestoring=true;
+ try{
+  ejChangeCity('Tokyo');
+  const st=STATE.Tokyo;st.types=[button.dataset.exploreType];st.areas=[];st.cats=[];
+  ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;
+  const b=document.getElementById('ej-show-favs');
+  if(b){b.setAttribute('aria-pressed','false');b.textContent='Show saved places ↗';}
+  ejRefreshAll();
+ }finally{ejRestoring=false}
+ ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+}));
+document.querySelectorAll('[data-find-venue]').forEach(button=>button.addEventListener('click',()=>{
+ const city=button.dataset.findCity,venue=button.dataset.findVenue;
+ if(!ejChangeCity(city))return;
+ ejDiscovery.q=venue;ejSearchBox.value=venue;ejMood='';ejSavedOnly=false;
+ const st=STATE[city];st.areas=[];st.cats=[];st.types=[];
+ ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+ document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+}));
+document.querySelectorAll('[data-walk-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.walkCity,button.dataset.walkArea)));
+document.querySelectorAll('button.ej-route-explore[data-route-city]').forEach(button=>button.addEventListener('click',()=>ejBrowseArea(button.dataset.routeCity,button.dataset.routeArea)));
+addEventListener('popstate',ejRestoreURL);
+
+/* Region + area dropdowns wired into the same filter state as the chips and share URL. */
+const ejRegionSelect=document.getElementById('ej-region-select');
+const ejAreaSelect=document.getElementById('ej-area-select');
+const ejFilterMessage=document.getElementById('ej-filter-message');
+function ejUpdateLocationControls(){
+ const city=ejCurrentCity();const st=STATE[city]||{areas:[]};
+ if(!ejRegionSelect.options.length){
+   Object.entries(DATA).forEach(([region,info])=>{
+     const o=new Option(region+' · '+info.places.length,region);
+     ejRegionSelect.add(o);
+   });
+ }
+ ejRegionSelect.value=city;
+ const areas=Array.from(new Set(DATA[city].places.map(p=>p.area))).sort((a,b)=>a.localeCompare(b,'en'));
+ ejAreaSelect.replaceChildren();
+ ejAreaSelect.add(new Option('Every neighborhood · '+DATA[city].places.length,''));
+ for(const area of areas){
+   const n=DATA[city].places.filter(p=>p.area===area).length;
+   ejAreaSelect.add(new Option(area+' · '+n,area));
+ }
+ ejAreaSelect.value=st.areas.length===1?st.areas[0]:'';
+ const visible=document.querySelector('.city-section.active');const count=visible?.querySelectorAll('.place-card').length||0;
+ const counter=document.getElementById('ej-discovery-count'),jump=document.getElementById('ej-jump-results');
+ if(counter)counter.textContent=count+' matching place'+(count===1?'':'s')+' · '+city;
+ if(jump){jump.textContent=count?'Explore '+count+' results ↓':'No matches — adjust filters ↑';jump.disabled=!count;}
+ ejFilterMessage.textContent=(st.areas.length?st.areas.join(', '):'All neighborhoods')+' in '+city+(ejMood?' · '+ejMood.replaceAll('-',' '):'')+'. Search in Japanese or English; source details appear when available.';
+}
+ejRegionSelect.addEventListener('change',()=>{
+ const city=ejRegionSelect.value;
+ if(!DATA[city])return;
+ ejRestoring=true;
+ try{
+  ejChangeCity(city);
+  STATE[city].areas=[];STATE[city].cats=[];STATE[city].types=[];
+  ejRefreshAll();ejUpdateLocationControls();
+ }finally{ejRestoring=false}
+ ejSyncURL(true);document.getElementById('browse')?.scrollIntoView({behavior:'smooth'});
+});
+ejAreaSelect.addEventListener('change',()=>{
+ const city=ejCurrentCity();
+ STATE[city].areas=ejAreaSelect.value?[ejAreaSelect.value]:[];
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+document.getElementById('ej-mood-list').addEventListener('click',e=>{
+ const button=e.target.closest('button[data-mood]');if(!button)return;
+ const next=button.dataset.mood;
+ if(next&&!EJ_MOOD_CATEGORIES[next])return;
+ ejMood=ejMood===next?'':next;
+ ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+document.getElementById('ej-reset-all').addEventListener('click',()=>{
+ const city=ejCurrentCity();const st=STATE[city];
+ st.areas=[];st.cats=[];st.types=[];st.sort='cat';st.dir='asc';
+ ejMood='';ejDiscovery.q='';ejSearchBox.value='';ejSavedOnly=false;
+ const fb=document.getElementById('ej-show-favs');
+ if(fb){fb.setAttribute('aria-pressed','false');fb.textContent='Show saved places ↗';}
+ ejMoodButtonState();ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+
+let ejRouteChoice='all',ejRouteArea='';
+const ejRouteAreaSelect=document.getElementById('ej-route-area');
+function ejApplyRouteFilters(){
+ const matching=EJ_ROUTES.filter(r=>ejRouteChoice==='all'||r.city===ejRouteChoice||r.theme===ejRouteChoice);
+ const areas=[...new Set(matching.map(r=>r.area))].sort();
+ ejRouteAreaSelect.replaceChildren(new Option('All neighborhoods ('+matching.length+')',''));
+ for(const area of areas)ejRouteAreaSelect.add(new Option(area,area));
+ if(!areas.includes(ejRouteArea))ejRouteArea='';
+ ejRouteAreaSelect.value=ejRouteArea;
+ let n=0;
+ document.querySelectorAll('#ej-field-list .ej-route').forEach(article=>{
+  const good=(ejRouteChoice==='all'||article.dataset.routeCity===ejRouteChoice||article.dataset.routeTheme===ejRouteChoice)&&(!ejRouteArea||article.dataset.routeArea===ejRouteArea);
+  article.hidden=!good;if(good)n++;
+ });
+ document.getElementById('ej-route-status').textContent=n+' route ideas · map-checked drafts, not yet walked for the guide';
+}
+document.getElementById('ej-route-options').addEventListener('click',e=>{
+ const b=e.target.closest('button[data-route-choice]');if(!b)return;
+ ejRouteChoice=b.dataset.routeChoice;
+ document.querySelectorAll('#ej-route-options button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+ ejApplyRouteFilters();
+});
+ejRouteAreaSelect.addEventListener('change',()=>{ejRouteArea=ejRouteAreaSelect.value;ejApplyRouteFilters()});
+ejApplyRouteFilters();
+
+document.addEventListener('click',e=>{
+ const button=e.target.closest('[data-share-route]');if(!button)return;
+ const url=new URL(location.href);url.hash='route-'+button.dataset.shareRoute;
+ if(navigator.clipboard?.writeText){
+  navigator.clipboard.writeText(url.href).then(()=>{button.textContent='Route link copied ✓'}).catch(()=>{location.hash=url.hash});
+ }else location.hash=url.hash;
+});
+document.addEventListener('click',e=>{
+ if(e.target.closest('#cityTabs .city-tab,.chip[data-type="area"],.clear-link,.active-tag,.reset-all')){
+  // Existing chip listeners have already updated STATE; this observer only refreshes dropdowns.
+  ejUpdateLocationControls();
+ }
+});
+ejRestoreURL();
+/* Route deep links (#route-<id>): the cards are rendered by script, so the browser's own fragment jump finds nothing. Jump after state restore, instantly (the page's smooth scroll would otherwise be cancelled by later layout). */
+if(/^#route-[a-z0-9-]+$/.test(location.hash)){const ejJumpToRoute=()=>{const t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView({block:'start',behavior:'instant'})};ejJumpToRoute();setTimeout(ejJumpToRoute,400);window.addEventListener('load',()=>setTimeout(ejJumpToRoute,300),{once:true});}
+
+
+
+/* Optional Instagram link: configure only after the owner supplies the actual profile URL. */
+const EJ_INSTAGRAM_URL = "";
+if(/^https:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9_.]+\/?$/.test(EJ_INSTAGRAM_URL)){
+ for(const id of ['ej-nav-social','ej-footer-instagram']){
+  const target=document.getElementById(id); if(!target)continue;
+  const link=document.createElement('a');link.href=EJ_INSTAGRAM_URL;link.target='_blank';
+  link.rel='noopener noreferrer';link.textContent='INSTAGRAM ↗';
+  target.appendChild(link);target.hidden=false;
+ }
+}
+
 </script>
 </body>
 </html>
