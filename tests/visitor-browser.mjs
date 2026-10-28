@@ -16,8 +16,18 @@ try{
    const dims=await page.evaluate(()=>({windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth}));
    assert.ok(dims.docWidth<=dims.windowWidth+1,'Horizontal overflow at '+width+': '+JSON.stringify(dims));
    assert.deepEqual(errors,[],'Script exceptions at '+width);
-   const hero=await page.evaluate(()=>{const r=s=>document.querySelector(s)?.getBoundingClientRect();const poster=r('.ej-poster'),mini=r('.ej-mini'),after=r('.ej-after-title'),jp=r('.ej-jp');const hit=(a,b)=>a&&b&&a.left<b.right-2&&a.right>b.left+2&&a.top<b.bottom-2&&a.bottom>b.top+2;return {miniOverPoster:hit(mini,poster),afterOverPoster:hit(after,poster),jpInside:jp&&jp.right<=innerWidth&&jp.left>=0,afterInside:after&&after.right<=innerWidth}});
-   assert.deepEqual(hero,{miniOverPoster:false,afterOverPoster:false,jpInside:true,afterInside:true},'Hero copy must not overlap the illustration at '+width+': '+JSON.stringify(hero));
+   // TAKE THE DETOUR: the headline is meant to run over the photograph; the reading copy is not, and must stay on paper and inside the viewport.
+   const hero=await page.evaluate(()=>{const r=s=>document.querySelector(s)?.getBoundingClientRect();
+    const photo=r('.td-hero-media'),title=r('.td-hero-title'),intro=r('.td-hero-intro'),jp=r('.td-jp');
+    const hit=(a,b)=>!!(a&&b&&a.left<b.right-2&&a.right>b.left+2&&a.top<b.bottom-2&&a.bottom>b.top+2);
+    const img=document.querySelector('.td-hero-media img');
+    return {titleOverPhoto:hit(title,photo),introInside:!!intro&&intro.right<=innerWidth+1&&intro.left>=-1,jpInside:!!jp&&jp.right<=innerWidth+1&&jp.left>=-1,photoLoaded:!!img&&img.naturalWidth>0,photoIsLocal:!!img&&!/^https?:/.test(img.getAttribute('src'))}});
+   assert.deepEqual(hero,{titleOverPhoto:true,introInside:true,jpInside:true,photoLoaded:true,photoIsLocal:true},'Hero composition at '+width+': '+JSON.stringify(hero));
+   // Every photograph on the page must really load — a fallback-only page is not a pass.
+   const photos=await page.evaluate(async()=>{const out=[];for(const img of document.querySelectorAll('img')){img.loading='eager';try{await img.decode()}catch(e){}out.push({src:img.getAttribute('src'),w:img.naturalWidth})}return out});
+   const broken=photos.filter(p=>!p.w);
+   assert.deepEqual(broken,[],'Images failed to load at '+width+': '+JSON.stringify(broken));
+   assert.ok(photos.filter(p=>/assets\/photos\//.test(p.src)).length>=4,'expected the four street photographs at '+width);
    await page.screenshot({path:`${out}/${width}-top.png`,fullPage:false});
    await page.locator('#browse').scrollIntoViewIfNeeded();
    await page.screenshot({path:`${out}/${width}-search.png`,fullPage:false});
@@ -121,8 +131,8 @@ try{
      await page.locator('#ej-visitor-shortcuts button').first().focus();
      await page.keyboard.press('Enter');
      assert.ok(await page.locator('.city-section.active .place-card').count()>=1);
-     await page.locator('.ej-mixtape').scrollIntoViewIfNeeded();
-     await page.locator('.ej-mixtape img').evaluate(async img=>{img.loading='eager';await img.decode();});
+     await page.locator('.td-spread').scrollIntoViewIfNeeded();
+     await page.locator('.td-spread img').first().evaluate(async img=>{img.loading='eager';await img.decode();});
      await page.screenshot({path:`${out}/1280-editorial.png`,fullPage:false});
    }
    await page.close();
