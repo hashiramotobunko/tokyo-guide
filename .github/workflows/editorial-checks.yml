@@ -2,8 +2,11 @@ name: Encounter Japan editorial checks
 on:
   pull_request:
     paths:
+      - 'index.html'
       - 'tokyo-guide_2.html'
       - 'tests/**'
+      - 'data/**'
+      - 'scripts/**'
       - 'assets/editorial/**'
       - '.github/workflows/editorial-checks.yml'
   workflow_dispatch:
@@ -17,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Check original data, source, routes and accessibility hooks
-        run: node --test tests/data-guard.test.mjs tests/four-core-features.test.mjs tests/four-features-smoke.mjs tests/editorial-smoke.mjs
+        run: node --test tests/data-guard.test.mjs tests/four-core-features.test.mjs tests/four-features-smoke.mjs tests/editorial-smoke.mjs tests/essentials-layer.test.mjs
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
