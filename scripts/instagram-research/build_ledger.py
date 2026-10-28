@@ -42,9 +42,35 @@ def stage2_weak(tid: str) -> list[dict]:
 
 COLUMNS = [
     "id", "live_order", "place_key", "name", "name_en", "region", "area", "cat",
-    "maps_url", "instagram_url", "instagram_username", "account_type",
+    "maps_url", "instagram_url", "instagram_username", "account_type", "basis",
     "evidence", "evidence_url", "checked_at", "status",
 ]
+
+# Stage 3 - the per-venue Instagram search. A handle here was found by searching
+# Instagram for the venue by name and place, and is recorded only when the
+# account's own profile text places it where this listing places it.
+STAGE3 = {r["id"]: r for r in json.loads((HERE / "stage3_found.json").read_text(encoding="utf-8"))} \
+    if (HERE / "stage3_found.json").exists() else {}
+
+
+def apply_stage3(row: dict) -> dict:
+    hit = STAGE3.get(row["id"])
+    if not hit or row["status"] != "NOT_FOUND":
+        return row
+    if hit["v"] == "V":
+        h = hit["h"]
+        row.update(
+            instagram_url=f"https://www.instagram.com/{h}/", instagram_username=h,
+            account_type=hit.get("t") or "store", basis="profile",
+            evidence=hit["note"], evidence_url=f"https://www.instagram.com/{h}/",
+            status="VERIFIED")
+    elif hit["v"] == "A":
+        row.update(basis="", evidence=hit["note"],
+                   evidence_url=f"https://www.instagram.com/{hit['h']}/" if hit.get("h") else "",
+                   status="AMBIGUOUS")
+    else:
+        row.update(evidence=hit["note"], evidence_url="")
+    return row
 
 
 def handle_set(t: dict) -> list[str]:
@@ -72,7 +98,7 @@ def build_row(t: dict) -> dict:
     row = {k: t.get(k, "") for k in ("id", "live_order", "place_key", "name", "name_en", "region", "area", "cat")}
     row["maps_url"] = t["maps_url"]
     row["checked_at"] = CHECKED
-    row.update(instagram_url="", instagram_username="", account_type="", evidence="", evidence_url="", status="")
+    row.update(instagram_url="", instagram_username="", account_type="", basis="", evidence="", evidence_url="", status="")
 
     hs = handle_set(t)
     stage1 = STAGE1.get(t["id"])
@@ -84,6 +110,7 @@ def build_row(t: dict) -> dict:
                 instagram_url=f"https://www.instagram.com/{handle}/",
                 instagram_username=handle,
                 account_type=acct,
+                basis="own-site",
                 evidence=f"Linked from the venue's own official site. {note}",
                 evidence_url=evidence_url_for(t, handle),
                 status="VERIFIED",
@@ -103,6 +130,7 @@ def build_row(t: dict) -> dict:
             instagram_url=f"https://www.instagram.com/{handle}/",
             instagram_username=handle,
             account_type="store",
+            basis="own-site",
             evidence="The venue's own official website links to this Instagram account.",
             evidence_url=evidence_url_for(t, handle),
             status="VERIFIED",
@@ -118,7 +146,8 @@ def build_row(t: dict) -> dict:
             ev = next((c["evidence_url"] for c in strong if c["handle"] == handle), "")
             row.update(
                 instagram_url=f"https://www.instagram.com/{handle}/", instagram_username=handle,
-                account_type=acct, evidence=f"Reached the venue's own site through a directory page already cited by the guide, and that site links this account. {note}",
+                account_type=acct, basis="own-site",
+                evidence=f"Reached the venue's own site through a directory page already cited by the guide, and that site links this account. {note}",
                 evidence_url=ev, status="VERIFIED")
         else:
             row.update(
@@ -131,7 +160,7 @@ def build_row(t: dict) -> dict:
         if len(hs2) == 1:
             row.update(
                 instagram_url=f"https://www.instagram.com/{hs2[0]}/", instagram_username=hs2[0],
-                account_type="store",
+                account_type="store", basis="own-site",
                 evidence="Reached the venue's own site through a directory page already cited by the guide; the venue's name appears on that page and it links this account.",
                 evidence_url=strong[0]["evidence_url"], status="VERIFIED")
         else:
@@ -168,7 +197,7 @@ def build_row(t: dict) -> dict:
 
 
 def main() -> int:
-    rows = [build_row(t) for t in TARGETS]
+    rows = [apply_stage3(build_row(t)) for t in TARGETS]
     assert len(rows) == 526, len(rows)
 
     # A handle claimed by more than one listing cannot be a branch-specific
@@ -188,7 +217,7 @@ def main() -> int:
 
     # data for the site: verified accounts only, keyed by city|place id
     site = {
-        f"{r['region']}|{r['place_key']}": {"u": r["instagram_username"], "t": r["account_type"]}
+        f"{r['region']}|{r['place_key'] or 'name:' + r['name']}": {"u": r["instagram_username"], "t": r["account_type"]}
         for r in rows if r["status"] == "VERIFIED" and r["instagram_username"]
     }
     (HERE / "instagram-links.json").write_text(json.dumps(site, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -196,8 +225,11 @@ def main() -> int:
     from collections import Counter
     st = Counter(r["status"] for r in rows)
     ac = Counter(r["account_type"] for r in rows if r["status"] == "VERIFIED")
+    ba = Counter(r["basis"] for r in rows if r["status"] == "VERIFIED")
     print(f"rows            : {len(rows)}")
     print(f"VERIFIED        : {st['VERIFIED']}  (store {ac['store']} / brand {ac['brand']})")
+    print(f"  by own-site link        : {ba['own-site']}")
+    print(f"  by the account's profile: {ba['profile']}")
     print(f"AMBIGUOUS       : {st['AMBIGUOUS']}")
     print(f"NOT_FOUND       : {st['NOT_FOUND']}")
     urls = [r["instagram_url"] for r in rows if r["instagram_url"]]

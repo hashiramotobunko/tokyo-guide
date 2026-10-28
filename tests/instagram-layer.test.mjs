@@ -46,7 +46,7 @@ test('the page data layer holds exactly the confirmed accounts, and no others', 
   const verified = ledger.filter(r => r.status === 'VERIFIED');
   assert.equal(Object.keys(site).length, verified.length);
   for (const r of verified) {
-    const entry = site[`${r.region}|${r.place_key}`];
+    const entry = site[`${r.region}|${r.place_key || 'name:' + r.name}`];
     assert.ok(entry, 'missing from data/instagram-links.js: ' + r.name);
     assert.equal(entry.u, r.instagram_username, r.name);
     assert.equal(entry.t, r.account_type, r.name);

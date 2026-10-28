@@ -16,11 +16,11 @@ MASTER = Path("/Users/hashiramototetsuya/Documents/Claude_新規事業/tokyo-gui
 OUT = HERE / "ENCOUNTER_JAPAN_526_INSTAGRAM.xlsx"
 
 MASTER_COLS = ["live_order", "region", "name", "en", "desc", "area", "cat", "url"]
-NEW_COLS = ["instagram_url", "instagram_username", "account_type", "status",
+NEW_COLS = ["instagram_url", "instagram_username", "account_type", "basis", "status",
             "evidence", "evidence_url", "checked_at"]
 WIDTHS = {"live_order": 10, "region": 12, "name": 34, "en": 26, "desc": 34, "area": 18,
           "cat": 16, "url": 44, "instagram_url": 38, "instagram_username": 24,
-          "account_type": 13, "status": 12, "evidence": 70, "evidence_url": 44, "checked_at": 12}
+          "account_type": 13, "basis": 12, "status": 12, "evidence": 70, "evidence_url": 44, "checked_at": 12}
 STATUS_FILL = {
     "VERIFIED": PatternFill("solid", fgColor="FFEADB"),
     "AMBIGUOUS": PatternFill("solid", fgColor="FFF6E0"),
@@ -72,15 +72,19 @@ def main() -> int:
     from collections import Counter
     st = Counter(r["status"] for r in ledger.values())
     ac = Counter(r["account_type"] for r in ledger.values() if r["status"] == "VERIFIED")
+    ba = Counter(r["basis"] for r in ledger.values() if r["status"] == "VERIFIED")
     rows = [
         ("Listings researched", 526),
         ("VERIFIED - official Instagram confirmed", st["VERIFIED"]),
+        ("   confirmed by a link on the venue's own website", ba["own-site"]),
+        ("   confirmed by the account's own profile (name + place)", ba["profile"]),
         ("   of which the venue's / branch's own account", ac["store"]),
         ("   of which a brand or operator account", ac["brand"]),
         ("AMBIGUOUS - candidate found, officiality not confirmable", st["AMBIGUOUS"]),
         ("NOT_FOUND - no candidate, reason recorded on the row", st["NOT_FOUND"]),
         ("", ""),
-        ("Rule for VERIFIED", "the account is linked from a page on the venue's own website"),
+        ("Rule for VERIFIED", "either the account is linked from a page on the venue's own website, or the account's own profile names this venue and places it where this guide places it"),
+        ("Venues still to search", "139 of the NOT_FOUND rows have not yet had the per-venue Instagram search run on them; their evidence line is from the website pass"),
         ("Why AMBIGUOUS exists", "an account is printed on a directory or media page, or several official accounts are linked and none is identifiably this venue's"),
         ("Why so many NOT_FOUND", "no official website is on record for the venue, and Instagram blocks unauthenticated profile reads, so no admissible evidence exists"),
         ("Checked on", next(iter(ledger.values()))["checked_at"]),

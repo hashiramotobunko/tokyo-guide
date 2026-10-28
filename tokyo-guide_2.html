@@ -1837,9 +1837,9 @@ function ejCityForPlace(p){return Object.keys(DATA).find(c=>DATA[c].places.inclu
 // place id already in the listing's URL, so DATA itself is never touched.
 function ejInstagram(p){
  if(typeof EJ_INSTAGRAM!=='object'||!EJ_INSTAGRAM)return null;
+ // a few listings link a Maps search rather than a pin, so they key on the name
  const id=(String(p.url).match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/)||[])[1];
- if(!id)return null;
- const hit=EJ_INSTAGRAM[ejCityForPlace(p)+'|'+id];
+ const hit=EJ_INSTAGRAM[ejCityForPlace(p)+'|'+(id||('name:'+p.name))];
  return hit&&hit.u?hit:null;
 }
 function ejInstagramLink(p){
