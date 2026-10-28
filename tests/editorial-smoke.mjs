@@ -10,6 +10,7 @@ import test from 'node:test';
 import './essentials-layer.test.mjs';
 const __dirname=dirname(fileURLToPath(import.meta.url));
 const source=readFileSync(resolve(__dirname,'../tokyo-guide_2.html'),'utf8');
+const entry=readFileSync(resolve(__dirname,'../index.html'),'utf8');
 const script=source.match(/<script>([\s\S]*?)<\/script>/)?.[1]||'';
 function declaration(name){
  const begin=source.indexOf('const '+name+'=');
@@ -39,6 +40,12 @@ function dataObject(){
 const data=vm.runInNewContext('('+dataObject()+')');
 const places=Object.values(data).flatMap(city=>city.places);
 test('source JS parses',()=>assert.doesNotThrow(()=>new vm.Script(script)));
+test('public canonical and social URL use the existing GitHub Pages site',()=>{
+ assert.ok(source.includes('<link rel="canonical" href="https://hashiramotobunko.github.io/tokyo-guide/tokyo-guide_2.html">'));
+ assert.ok(source.includes('<meta property="og:url" content="https://hashiramotobunko.github.io/tokyo-guide/tokyo-guide_2.html">'));
+ assert.ok(entry.includes('url=tokyo-guide_2.html'));
+ assert.ok(entry.includes("location.replace(new URL('tokyo-guide_2.html'"));
+});
 test('the full 526-place list remains available',()=>assert.equal(places.length,526));
 test('each original listing has a Maps link',()=>{
  assert.ok(places.every(p=>typeof p.name==='string'&&p.name&&/^https:\/\/www\.google\.com\/maps\//.test(p.url)));
