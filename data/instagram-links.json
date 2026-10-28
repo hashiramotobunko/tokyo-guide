@@ -595,20 +595,60 @@
   "u": "chukaya_keichan",
   "t": "store"
  },
+ "Tokyo|0x60188cbc6805e4db:0x3fb4682a3063ac6d": {
+  "u": "shikinharajuku",
+  "t": "store"
+ },
  "Tokyo|0x60188be0f0057f7f:0x860544467910fbde": {
   "u": "ginzaukaitei",
+  "t": "store"
+ },
+ "Tokyo|0x60188bd28536402d:0x45eca5f988b97909": {
+  "u": "peterluger_steakhouse_tokyo",
   "t": "store"
  },
  "Tokyo|0x60188bf0a5c49755:0xb895f0a82c46c467": {
   "u": "wolfgangssteakhouse_marunouchi",
   "t": "store"
  },
+ "Tokyo|0x60188b7812bdc8a3:0x1397f620b04764f2": {
+  "u": "benjaminsteakhouse_roppongi",
+  "t": "store"
+ },
+ "Tokyo|0x60188b4577605a27:0x6313d8af21dbdac": {
+  "u": "mortonsthesteakhousejpn",
+  "t": "store"
+ },
+ "Tokyo|0x60188b8e6fe82499:0xb7a44d6615614ae9": {
+  "u": "ruthschrisjp",
+  "t": "brand"
+ },
  "Tokyo|0x60188b9b1be6a227:0x1af11d57a187ac86": {
   "u": "bltsteak_roppongi",
   "t": "store"
  },
+ "Tokyo|0x60188db1887a4c61:0x26726daaaba4fcbc": {
+  "u": "think_tokyo",
+  "t": "store"
+ },
+ "Tokyo|0x6018ed3ffbe98d4f:0x93fed3f17ed186eb": {
+  "u": "parlour_ekoda",
+  "t": "store"
+ },
+ "Tokyo|0x6018eb4b503932fb:0x35961ed50a323f72": {
+  "u": "shimodaryu",
+  "t": "store"
+ },
  "Tokyo|0x60188cbed07bffff:0x855a87bbc8dd4869": {
   "u": "ultrakitchen.ltd",
+  "t": "store"
+ },
+ "Tokyo|0x60188dbf39c20935:0xc7a1a929260b1d88": {
+  "u": "khao.tokyo",
+  "t": "store"
+ },
+ "Tokyo|0x6018f4debfc0fc37:0x4916a136c0dea89f": {
+  "u": "mymot_thai",
   "t": "store"
  },
  "Tokyo|0x60188794d7b2b7cd:0x11c6d967aef27efe": {
@@ -635,6 +675,10 @@
   "u": "daihonzan_nanzenji",
   "t": "store"
  },
+ "Kyoto|0x6001a82a301cbaa7:0xe1ab173e46d78542": {
+  "u": "ryoanji_",
+  "t": "store"
+ },
  "Kyoto|0x600107d40a2b9b0b:0x106b8759906a2f2f": {
   "u": "nijojocastle",
   "t": "store"
@@ -643,17 +687,45 @@
   "u": "tofukuji_zen_temple",
   "t": "brand"
  },
+ "Kyoto|0x6001a9f5c1515dcf:0x95b9251e85d96323": {
+  "u": "daikakuji_official",
+  "t": "store"
+ },
  "Kyoto|0x600107ed7bf0e06d:0x5b26fec16c2eee1a": {
   "u": "kitano_tenmangu",
+  "t": "store"
+ },
+ "Kyoto|0x600108c03d0f278d:0x3f80dd5c373613e": {
+  "u": "kyoto_minamiza_theater",
   "t": "store"
  },
  "Kyoto|0x600109b8fdde170b:0xc505d1a97aa47168": {
   "u": "kamata_gosyominami",
   "t": "store"
  },
+ "Kyoto|0x600108bee658eef9:0xbb11a4283ab1ffad": {
+  "u": "aje_kyoto_hoso",
+  "t": "brand"
+ },
+ "Kyoto|0x600108b1f3db0001:0xa5ed2c875338968b": {
+  "u": "honke_daiichiasahi",
+  "t": "store"
+ },
  "Kyoto|0x600109fb6e64b019:0x8d7c3058f030a299": {
   "u": "ginzamusicbar",
   "t": "store"
+ },
+ "Kyoto|0x600108ba1add88f5:0xb51c556954ec8f8": {
+  "u": "umeyu_rakuen",
+  "t": "store"
+ },
+ "Kyoto|0x6001088c136aa771:0xd15e0ef5d39417d8": {
+  "u": "ippodotea",
+  "t": "brand"
+ },
+ "Kyoto|0x60010886b38bffff:0x18fc325f4363c800": {
+  "u": "lepetitmec",
+  "t": "brand"
  },
  "Kyoto|0x600107dffde338a9:0x7cd271f9b1519779": {
   "u": "tsuruya.yoshinobu_honten",
@@ -662,6 +734,18 @@
  "Kyoto|0x60010f85a550e185:0x6b532de4205ab12e": {
   "u": "tofukuji_zen_temple",
   "t": "brand"
+ },
+ "Kyoto|0x600107e0cfb15aeb:0x8ef67c9fae793d7": {
+  "u": "lepetitmec",
+  "t": "brand"
+ },
+ "Kyoto|0x600109c73726bf09:0xca6bb5368a6ea6cd": {
+  "u": "tenshino_warabi_kawaramachi",
+  "t": "store"
+ },
+ "Kyoto|0x600109ba395faed1:0xd0181aaa9468d594": {
+  "u": "doubletree.kyotohigashiyama",
+  "t": "store"
  },
  "Kyoto|0x600108562446b2bb:0x17026e2b02f706d9": {
   "u": "kyotouniversity.jp",
@@ -683,6 +767,22 @@
   "u": "shinumedasyokudougai",
   "t": "store"
  },
+ "Osaka|0x6000e0b547f41c7d:0x2cacd460417953ef": {
+  "u": "izakaya_nagahori",
+  "t": "store"
+ },
+ "Osaka|0x6000e6e17c310001:0x6a36912949aa1424": {
+  "u": "wonderment321",
+  "t": "store"
+ },
+ "Osaka|0x6000e0abfa6cff2f:0xf02ffcecd9932480": {
+  "u": "yakinikuhorumon_sora",
+  "t": "brand"
+ },
+ "Osaka|0x6000e74145514049:0x564e20b868fa0275": {
+  "u": "tabichef",
+  "t": "store"
+ },
  "Mie|0x60045a8448dc91ef:0xa4ae3d71f472dbc7": {
   "u": "isejingu.official",
   "t": "brand"
@@ -695,20 +795,64 @@
   "u": "isejingu.official",
   "t": "brand"
  },
+ "Chiba|0x601881e2495b5993:0x5c1d4d191b3e0290": {
+  "u": "kinmaidai",
+  "t": "store"
+ },
+ "Chiba|0x60187fd71b85a9d7:0xa461bfb6a86ba8b5": {
+  "u": "ayuthaya.gcp",
+  "t": "store"
+ },
  "Hyogo|0x60008ee3665f1021:0xba8bbfe616ad2b38": {
   "u": "kobebeef_mouriya_honten",
+  "t": "store"
+ },
+ "Hokkaido|0x5f0ae051659543b9:0x2be81415c4b44909": {
+  "u": "otarumasazushi",
   "t": "store"
  },
  "Hokkaido|0x5f0ae056acd5b259:0x3f492f2963581475": {
   "u": "ryuusuke_otaru",
   "t": "store"
  },
+ "Hokkaido|0x5f0ae0531d8e87d3:0x239b85174a784a3f": {
+  "u": "raku10_official",
+  "t": "store"
+ },
  "Hokkaido|0x5f0ce60c32cffe45:0x7d8e2f79c8c7fd9b": {
   "u": "daikokuya_asahikawa",
   "t": "store"
  },
+ "Hokkaido|0x5f0ce6110ddef21d:0x61dd14fd7bdaf12d": {
+  "u": "santouka_honten",
+  "t": "store"
+ },
  "Hokkaido|0x5f0b293b0e60d45b:0x2aa910932acb61e5": {
   "u": "hokudai_bg",
+  "t": "store"
+ },
+ "Hokkaido|0x5f0b298530a7cfd5:0x2ad2065307072ffd": {
+  "u": "tanukikoji_syotengai",
+  "t": "store"
+ },
+ "Hokkaido|0x5f0b2988b48e5197:0xaf340660bb2a485d": {
+  "u": "gurumanzu_ito",
+  "t": "store"
+ },
+ "Aichi|0x600371495f45fbb7:0xe6d97bb08a5e832c": {
+  "u": "tbz_kakuozan",
+  "t": "store"
+ },
+ "Ibaraki|0x60189dce1df7acab:0xeec6e3bca6c0703c": {
+  "u": "hamburger_big_smile",
+  "t": "store"
+ },
+ "Iwate|0x5f88a72bd14eb051:0x48969b05840fb20d": {
+  "u": "the_burger_hearts",
+  "t": "store"
+ },
+ "Miyazaki|0x3538b70f046af81b:0xb0df4ec1b2f7f624": {
+  "u": "raanmamuan",
   "t": "store"
  },
  "Nagano|0x5ff7cdd27c05c09b:0xa4a8d04af81faf05": {
@@ -718,5 +862,9 @@
  "Nagano|0x5ff7cdfd72cc68eb:0x8994a316bcdd9f23": {
   "u": "hakubahappoone",
   "t": "brand"
+ },
+ "Tochigi|0x601f4dab2c006dc7:0xff0a0559239a91da": {
+  "u": "yokokura_storehouse.un",
+  "t": "store"
  }
 }

@@ -1271,5 +1271,876 @@
   "h": "chukaya_keichan",
   "t": "store",
   "note": "The shop's own account; its profile places it five minutes from Ogikubo station's north exit on the Tenno-Hachiman-dori shopping street, matching this listing."
+ },
+ {
+  "id": "L027",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for this gate of the Imperial Palace; no account for it exists - the palace grounds are run by the Imperial Household Agency and the results were unrelated Kasumigaseki businesses."
+ },
+ {
+  "id": "L028",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for this gate of the Imperial Palace; no account for it exists, and the only name match was an unrelated takeaway service in Fukuoka's Otemon district."
+ },
+ {
+  "id": "L029",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for this avenue in Marunouchi; it is a public street with no account of its own and the results were nearby restaurants."
+ },
+ {
+  "id": "L030",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the station plaza; it is a public space with no account of its own and the results were shops inside and around the station."
+ },
+ {
+  "id": "L320",
+  "v": "A",
+  "h": "gurabar111",
+  "note": "An account named Restaurant Glover-tei exists, but its profile gives no address and nothing in it places the shop in Mitaka; a second account of the same name is a Nagasaki champon shop in Niigata, so neither could be established as this shop's."
+ },
+ {
+  "id": "L321",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Koiwa."
+ },
+ {
+  "id": "L322",
+  "v": "A",
+  "h": "chuukayasan_18",
+  "note": "An account named Chuka Juhachiban exists and matches the name and category, but its profile gives only opening hours and no location, so it could not be tied to the Nogata shop; the other name matches are in Chuo-ku, Osaka and Wakayama."
+ },
+ {
+  "id": "L323",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Uguisudani."
+ },
+ {
+  "id": "L324",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Kichijoji - the name matches were other Chinrai branches in Ariake, Hirai, Rokucho and Minami-Gyotoku."
+ },
+ {
+  "id": "L325",
+  "v": "V",
+  "h": "shikinharajuku",
+  "t": "store",
+  "note": "The account's own profile names the shop as the Harajuku main shop, gives its founding year of 1966 and states its delivery area as parts of Jingumae and Sendagaya, the neighbourhoods around Kita-Sando where this listing places it."
+ },
+ {
+  "id": "L327",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Shibakoen - the nearest name match, Munch A Burger, is a different name with no stated location."
+ },
+ {
+  "id": "L328",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Jimbocho - the name matches are burger shops in Semarang, Indonesia and Barcelona."
+ },
+ {
+  "id": "L331",
+  "v": "A",
+  "h": "",
+  "note": "The chain keeps separate branch accounts (Hokkaido, Okinawa and Miyakojima among them) but no account for the Shinjuku branch was found, and the brand-level account's profile gives no location, so none could be tied to this branch."
+ },
+ {
+  "id": "L332",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for it - the only related result is a steak restaurant opened by a chef who trained here."
+ },
+ {
+  "id": "L334",
+  "v": "V",
+  "h": "peterluger_steakhouse_tokyo",
+  "t": "store",
+  "note": "The account's own profile names this restaurant as the Tokyo branch of the New York steakhouse and gives its lunch and dinner hours; the brand's main account lists Tokyo among its locations and this is its only Japanese restaurant, though the profile does not print the Ebisu address itself."
+ },
+ {
+  "id": "L336",
+  "v": "A",
+  "h": "",
+  "note": "Several accounts of this steakhouse exist and two of them name the Ginza and Roppongi branches together in one profile; no account specific to the Ginza branch was found, so none is recorded."
+ },
+ {
+  "id": "L337",
+  "v": "V",
+  "h": "benjaminsteakhouse_roppongi",
+  "t": "store",
+  "note": "The account's own profile names this restaurant as the Roppongi branch and the Japanese flagship of the Manhattan steakhouse, and the chain keeps separate accounts for its Kioicho, Kyoto and Osaka branches."
+ },
+ {
+  "id": "L338",
+  "v": "V",
+  "h": "mortonsthesteakhousejpn",
+  "t": "store",
+  "note": "The account's own profile places the restaurant on the second floor of Nijubashi Square in Marunouchi, two minutes from exit B4 of Hibiya station, and names it the brand's first restaurant in Japan."
+ },
+ {
+  "id": "L339",
+  "v": "V",
+  "h": "ruthschrisjp",
+  "t": "brand",
+  "note": "The brand's own Japanese account; its profile names the New Orleans origin of 1965 and lists Tokyo and Osaka as its locations, and no account specific to the Toranomon restaurant exists, so this is recorded as the operator's account."
+ },
+ {
+  "id": "L341",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Akasaka or Akasaka-Mitsuke."
+ },
+ {
+  "id": "L342",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for it in Hongo - the only related result is a Yokohama restaurant supervised by this brand."
+ },
+ {
+  "id": "L343",
+  "v": "A",
+  "h": "sutaminaen",
+  "note": "An account carrying this restaurant's name and its proprietor's name exists and its profile gives opening hours and the Tuesday-Wednesday closing, but no address or area, so it could not be tied to the Shikahama shop."
+ },
+ {
+  "id": "L344",
+  "v": "A",
+  "h": "vanne_yoroniku",
+  "note": "The brand's account exists but its profile places the restaurant at Azabudai Hills, not Ebisu where this listing places it, so it was not recorded; the sibling accounts are the Kanda and Taipei restaurants."
+ },
+ {
+  "id": "L347",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bakery with its area; no account of its own was found - only its sister bistro in Kagurazaka, which names this bakery as its parent."
+ },
+ {
+  "id": "L349",
+  "v": "V",
+  "h": "think_tokyo",
+  "t": "store",
+  "note": "The account's own profile gives the shop's address as Ueno-Sakuragi Atari building 2, ground floor, Taito-ku, with its hours and Monday-Tuesday closing, matching this listing."
+ },
+ {
+  "id": "L351",
+  "v": "V",
+  "h": "parlour_ekoda",
+  "t": "store",
+  "note": "The account's own profile names the shop, gives its hours and Tuesday closing and names its sister shop Machino Parlour at Kotake-cho 2-40-4 in Nerima-ku, the neighbourhood adjoining Shin-Sakuradai where this listing places it; the profile does not print this shop's own address."
+ },
+ {
+  "id": "L352",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bakery with its area and category; no account found for this name in Takanawadai."
+ },
+ {
+  "id": "L353",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bakery with its area; no account found for this name in Kichijoji."
+ },
+ {
+  "id": "L354",
+  "v": "V",
+  "h": "shimodaryu",
+  "t": "store",
+  "note": "The account's own profile gives the bakery's address as Takashimadaira 7-26-4, Itabashi-ku, seven minutes from Takashimadaira station, the neighbourhood this listing places it in, together with its opening days and hours."
+ },
+ {
+  "id": "L356",
+  "v": "A",
+  "h": "bricolage_bread_and_company",
+  "note": "The bakery's brand account exists and gives its hours, but neither it nor the sibling coffee account states any location, so the account could not be placed in Roppongi."
+ },
+ {
+  "id": "L357",
+  "v": "V",
+  "h": "khao.tokyo",
+  "t": "store",
+  "note": "The account's own profile places the restaurant one minute from exit A4 of Jimbocho station, names it a Thai restaurant with an eight-seat counter and describes its monthly booking opening, matching this listing."
+ },
+ {
+  "id": "L359",
+  "v": "V",
+  "h": "mymot_thai",
+  "t": "store",
+  "note": "The account's own profile describes the shop's reservation-only monthly omakase menu of Thai regional cooking, and its sister daytime account names it as the Thai restaurant Mymot in Meguro, where this listing places it."
+ },
+ {
+  "id": "L363",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area; no account found for it in Kiba - the name matches are a ramen shop in Obu, Aichi and an izakaya in Kumagaya."
+ },
+ {
+  "id": "L364",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop and its Akihabara main branch; no account of its own was found, only a ramen writer's page listing the shop among his recommendations."
+ },
+ {
+  "id": "L366",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for it - the related shop Chuka Soba Katsumoto's account names only its Suidobashi main branch and no Kanda or Jimbocho branch."
+ },
+ {
+  "id": "L367",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Chitose-Funabashi."
+ },
+ {
+  "id": "L368",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Ochiai."
+ },
+ {
+  "id": "L370",
+  "v": "A",
+  "h": "ra_men_1.20",
+  "note": "An account with this shop's exact and distinctive name exists and its profile gives the opening days and hours, but it states no address or area, so it could not be placed in Higashi-Ogu."
+ },
+ {
+  "id": "L371",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Bubaigawara."
+ },
+ {
+  "id": "L372",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Sakurajosui - the results were two other ramen shops by that station."
+ },
+ {
+  "id": "L373",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Nakano-Fujimicho - the name matches are in Nagano, Kobe, Nagasaki and Osaka."
+ },
+ {
+  "id": "L374",
+  "v": "A",
+  "h": "men_fujisaki",
+  "note": "An account with this shop's exact name exists and its profile describes its own noodles and use of no chemical seasonings, but it states no address or area, so it could not be placed in Kameido."
+ },
+ {
+  "id": "L375",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Jujo."
+ },
+ {
+  "id": "L376",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Higashi-Nakano - the name match is a century-old eel restaurant at Yunotsuru onsen."
+ },
+ {
+  "id": "L377",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for it in Honmoku - the name match is a ramen shop in Ube, Yamaguchi."
+ },
+ {
+  "id": "L382",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the temple under both its names; it keeps no account of its own and the results were shops along its approach."
+ },
+ {
+  "id": "L387",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the temple with its ward; it keeps no account of its own - the only mention is an artist's post about an exhibition held there."
+ },
+ {
+  "id": "L388",
+  "v": "V",
+  "h": "ryoanji_",
+  "t": "store",
+  "note": "The temple's own account, marked official in its name; its profile gives the founding year of 1450 and its World Heritage listing among the cultural properties of ancient Kyoto, matching this listing."
+ },
+ {
+  "id": "L391",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the temple with its ward; it keeps no account of its own - the only related account belongs to a touring exhibition about the temple, and its sub-temple Kinkaku-ji keeps a separate account."
+ },
+ {
+  "id": "L393",
+  "v": "V",
+  "h": "daikakuji_official",
+  "t": "store",
+  "note": "The temple's own account, marked official in its name; its profile names it as the Shingon head temple formerly the Saga Imperial Palace, with 1200 years of history, matching this listing in Ukyo-ku."
+ },
+ {
+  "id": "L380",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for this neighbourhood of Sakyo-ku; it is a residential district with no account of its own and the results were local businesses."
+ },
+ {
+  "id": "L392",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bridge; it is a public structure with no account of its own and the results were ryokan and shops beside it."
+ },
+ {
+  "id": "L397",
+  "v": "V",
+  "h": "kyoto_minamiza_theater",
+  "t": "store",
+  "note": "The theatre's own account, marked official in its name; its profile names it as the theatre standing at the birthplace of kabuki with a history reaching back to the Keicho era, and a notice on the account places it at the east end of Shijo-Ohashi in Higashiyama-ku, where this listing places it."
+ },
+ {
+  "id": "L399",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area; no account found for it - the results were other shops near Ginkaku-ji."
+ },
+ {
+  "id": "L400",
+  "v": "V",
+  "h": "aje_kyoto_hoso",
+  "t": "brand",
+  "note": "The restaurant's own Kyoto account; its profile names its three Kyoto branches - Matsubara main shop, Kiyamachi-Donguri and Kita - and its three consecutive years in Tabelog's hundred best, but it is shared across the branches, so it is recorded as the operator's account rather than this branch's."
+ },
+ {
+  "id": "L403",
+  "v": "V",
+  "h": "honke_daiichiasahi",
+  "t": "store",
+  "note": "The account's own profile names the main shop, gives its founding year of 1947, places it five minutes' walk from Kyoto station in Shimogyo-ku where this listing places it, and gives its hours and Thursday closing."
+ },
+ {
+  "id": "L404",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its ward and category; no account found for this name in Sakyo-ku."
+ },
+ {
+  "id": "L405",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its ward and category; no account found for this name in Kamigyo-ku."
+ },
+ {
+  "id": "L407",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its ward and category; no account found for this name in Higashiyama-ku."
+ },
+ {
+  "id": "L408",
+  "v": "V",
+  "h": "umeyu_rakuen",
+  "t": "store",
+  "note": "The bathhouse's own account; its profile names it as a Kyoto sento heated with wood and fed by natural groundwater, run by Yutonami-sha, and gives its hours and Thursday closing. The profile names the city but not the ward."
+ },
+ {
+  "id": "L409",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bathhouse with its city; no account found for this name in Kyoto."
+ },
+ {
+  "id": "L410",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bathhouse and its Takatsuji branch; no account found for it."
+ },
+ {
+  "id": "L411",
+  "v": "V",
+  "h": "ippodotea",
+  "t": "brand",
+  "note": "The company's own account; its profile gives the Kyoto main shop's hours and its closing on the second Wednesday of the month, and states the firm has traded in Kyoto since 1717. It also covers the other shops, so it is recorded as the company's account."
+ },
+ {
+  "id": "L412",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city and its best-known sweet; no account of its own was found - the name match is a different mochi shop, Kouda Futaba."
+ },
+ {
+  "id": "L414",
+  "v": "V",
+  "h": "lepetitmec",
+  "t": "brand",
+  "note": "The bakery's own brand account; its profile describes it as a French-style bakery with shops in Kyoto, Tokyo and Osaka but names no branch, so it is recorded as the brand account shared by its Kyoto branches."
+ },
+ {
+  "id": "L416",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name near Marutamachi."
+ },
+ {
+  "id": "L421",
+  "v": "V",
+  "h": "lepetitmec",
+  "t": "brand",
+  "note": "The bakery's own brand account; its profile describes it as a French-style bakery with shops in Kyoto, Tokyo and Osaka but names no branch, so it is recorded as the brand account shared by its Kyoto branches."
+ },
+ {
+  "id": "L422",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Kyoto."
+ },
+ {
+  "id": "L423",
+  "v": "V",
+  "h": "tenshino_warabi_kawaramachi",
+  "t": "store",
+  "note": "The account's own profile names this branch, places it one minute from exit 1A of Kyoto-Kawaramachi station and two minutes from Gion-Shijo, and gives its daily hours of 12:00 to 21:00, matching this listing."
+ },
+ {
+  "id": "L424",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its ward and category; no account found for this name in Kita-ku."
+ },
+ {
+  "id": "L426",
+  "v": "V",
+  "h": "doubletree.kyotohigashiyama",
+  "t": "store",
+  "note": "The hotel's own account, naming it in both Japanese and English; its profile states the hotel opened in Kyoto in August 2023, matching this listing in Higashiyama-ku."
+ },
+ {
+  "id": "L428",
+  "v": "A",
+  "h": "yakiniku.yamachan.1122",
+  "note": "The only account tying this name to Kyoto is the proprietor's personal account, whose profile describes him as the owner of Yakiniku Yamachan in Kyoto and a wine sommelier; it is a personal account, not the restaurant's own, and gives no address, so it is not recorded."
+ },
+ {
+  "id": "L438",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for it in Namba."
+ },
+ {
+  "id": "L440",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Namba."
+ },
+ {
+  "id": "L441",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop and its Aioibashi branch; no account found for it - the name match at that bridge is a different restaurant, Ginza Zushi."
+ },
+ {
+  "id": "L442",
+  "v": "A",
+  "h": "sousakuteppanmiraku",
+  "note": "An account carrying this name as Sousaku Teppan Miraku exists and gives its lunch and dinner hours, but it states no address, so it could not be placed in Kita-ku; the other name match is in Yuzawa, Akita."
+ },
+ {
+  "id": "L443",
+  "v": "V",
+  "h": "izakaya_nagahori",
+  "t": "store",
+  "note": "The account's own profile gives the restaurant's address as Uemachi 1-3-9, Chuo-ku, Osaka with its telephone number, opening hours and Sunday, Monday and holiday closing, matching this listing."
+ },
+ {
+  "id": "L444",
+  "v": "V",
+  "h": "wonderment321",
+  "t": "store",
+  "note": "The account's own profile gives the venue's address as Awajicho 3-4-12, Chuo-ku, Osaka, floors 2 to 3 of the Sunplaza Awajicho building, with an Osaka telephone number, matching this listing."
+ },
+ {
+  "id": "L445",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Osaka."
+ },
+ {
+  "id": "L446",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its ward and category; no account found for this name in Kita-ku - the name matches are in Saitama, Kurume and Tokyo."
+ },
+ {
+  "id": "L447",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city and category; no account found for this name in Osaka."
+ },
+ {
+  "id": "L448",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Namba."
+ },
+ {
+  "id": "L449",
+  "v": "V",
+  "h": "yakinikuhorumon_sora",
+  "t": "brand",
+  "note": "The restaurant's own account; its profile gives the Tsuruhashi head shop's address as Shimoajihara-cho 1-10, Tennoji-ku, Osaka with its Tuesday closing, and also covers the Dotonbori branch, so it is recorded as the operator's account. The guide calls the shop the Tsuruhashi main shop and the profile calls it the Tsuruhashi head shop."
+ },
+ {
+  "id": "L450",
+  "v": "A",
+  "h": "sweetbasil2001",
+  "note": "The restaurant's own account exists and gives its telephone number, whose 06-6458 exchange covers the Fukushima area, but the profile prints no address, so the area could not be confirmed from the profile itself."
+ },
+ {
+  "id": "L451",
+  "v": "V",
+  "h": "tabichef",
+  "t": "store",
+  "note": "The account's own profile gives the restaurant's address as Tenjinbashi 6-2-5, Kita-ku, Osaka, in the Tenma area where this listing places it, with its hours and Sunday-Monday closing."
+ },
+ {
+  "id": "L452",
+  "v": "A",
+  "h": "",
+  "note": "The restaurant keeps an account for its Hanshin Umeda shop in Kita-ku, but no account was found for the Kitahorie main shop and no brand-level account exists, so none could be tied to this listing."
+ },
+ {
+  "id": "L454",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shrine with its city and its landmark rocks; it keeps no account of its own - the only name match is a restaurant beside a different pair of rocks in Itoshima, Fukuoka."
+ },
+ {
+  "id": "L459",
+  "v": "V",
+  "h": "kinmaidai",
+  "t": "store",
+  "note": "The account's own name places the shop in Nishifuna, the Nishi-Funabashi area where this listing places it, and its profile gives its lunch and dinner hours, Tuesday closing and no-reservation policy."
+ },
+ {
+  "id": "L460",
+  "v": "V",
+  "h": "ayuthaya.gcp",
+  "t": "store",
+  "note": "The account's own profile states that the restaurant trades in Funabashi, Chiba, where this listing places it."
+ },
+ {
+  "id": "L461",
+  "v": "A",
+  "h": "tomita.8860",
+  "note": "The only account carrying this shop's name is the proprietor Osamu Tomita's own account; it is a personal account rather than the shop's and gives no address, so it is not recorded."
+ },
+ {
+  "id": "L464",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant and its Kobe main shop; no account found for it - the name match is a teppanyaki restaurant serving Iga beef with no Kobe branch."
+ },
+ {
+  "id": "L465",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Ashiya - the name match is a Thai restaurant in Joetsu, Niigata."
+ },
+ {
+  "id": "L466",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and city; no account found for this name in Haruyoshi."
+ },
+ {
+  "id": "L467",
+  "v": "A",
+  "h": "genpukan1996",
+  "note": "The restaurant's own account exists but its profile lists only its Kashii branches, with no Chiyo branch, so no account could be tied to this listing."
+ },
+ {
+  "id": "L468",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Itoshima."
+ },
+ {
+  "id": "L469",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Otaru."
+ },
+ {
+  "id": "L470",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant and its Asuka branch; no account found for this name in Otaru."
+ },
+ {
+  "id": "L471",
+  "v": "A",
+  "h": "",
+  "note": "The chain keeps branch accounts for Mizonokuchi and Obihiro, and the Mizonokuchi profile names itself an offshoot of the Otaru main shop, but no account for the Otaru main shop itself was found."
+ },
+ {
+  "id": "L472",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Otaru."
+ },
+ {
+  "id": "L473",
+  "v": "V",
+  "h": "otarumasazushi",
+  "t": "store",
+  "note": "The restaurant's own account, named for the shop in Otaru; its Ginza branch keeps a separate account that describes itself as the Ginza branch, leaving this one as the Otaru shop's."
+ },
+ {
+  "id": "L474",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city and category; no account found for this name in Otaru."
+ },
+ {
+  "id": "L476",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Otaru."
+ },
+ {
+  "id": "L478",
+  "v": "V",
+  "h": "raku10_official",
+  "t": "store",
+  "note": "The account's own name places the izakaya in Otaru, Hokkaido and lists its oden, horumon and chuka soba, and its profile puts it on Miyako-dori ten minutes' walk from Otaru station with its hours and Monday closing."
+ },
+ {
+  "id": "L480",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Otaru."
+ },
+ {
+  "id": "L482",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its city and category; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L484",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its city and category; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L485",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L486",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bathhouse with its city; no account found for this name in Asahikawa - the name matches are bathhouses in Tokyo, Nagoya and Kyoto."
+ },
+ {
+  "id": "L487",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bathhouse with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L488",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bathhouse with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L489",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L491",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L492",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L493",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L494",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L495",
+  "v": "A",
+  "h": "ginneko.manager_matchan",
+  "note": "The only account found for this shop belongs to its manager; it places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is a personal account rather than the shop's own, so it is not recorded."
+ },
+ {
+  "id": "L496",
+  "v": "V",
+  "h": "santouka_honten",
+  "t": "store",
+  "note": "The account's own name identifies the Asahikawa main shop and its profile gives the founding year of 1988, the daily hours and items sold only at the main shop, matching this listing."
+ },
+ {
+  "id": "L497",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "L498",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city and category; no account found for this name in Sapporo."
+ },
+ {
+  "id": "L499",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its city; no account found for this name in Sapporo."
+ },
+ {
+  "id": "L502",
+  "v": "V",
+  "h": "tanukikoji_syotengai",
+  "t": "store",
+  "note": "The shopping street's own account, marked official in its name; its profile describes it as the historic arcade in central Sapporo dating from 1873 and gives its extent as Minami 2 and 3-jo Nishi 1 to 7-chome, Chuo-ku, matching this listing."
+ },
+ {
+  "id": "L504",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its region and category; no account found for this name in Hokkaido."
+ },
+ {
+  "id": "L505",
+  "v": "V",
+  "h": "gurumanzu_ito",
+  "t": "store",
+  "note": "The account's own profile gives the restaurant's address as Minami 3-jo Nishi 3-chome 8-2, Katsumi building ground floor, Chuo-ku, Sapporo, with its telephone number and Wednesday closing, matching this listing."
+ },
+ {
+  "id": "L507",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city and category; no account found for this name in Naha."
+ },
+ {
+  "id": "L508",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its village and category; no account found for this name in Onna - the name match is in Chatan."
+ },
+ {
+  "id": "L509",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Nagoya."
+ },
+ {
+  "id": "L510",
+  "v": "V",
+  "h": "tbz_kakuozan",
+  "t": "store",
+  "note": "The account's own handle names the Kakuozan shop and its profile describes it as a teriyaki burger specialist with its lunch and dinner hours and Wednesday closing, matching this listing."
+ },
+ {
+  "id": "L511",
+  "v": "V",
+  "h": "hamburger_big_smile",
+  "t": "store",
+  "note": "The account's own profile gives the shop's address as Togashira 2-3-11, Toride, Ibaraki, describes it as a small American roadside-style burger shop and gives its weekday and weekend hours, matching this listing."
+ },
+ {
+  "id": "L512",
+  "v": "V",
+  "h": "the_burger_hearts",
+  "t": "store",
+  "note": "The account's own profile describes the shop as a hamburger shop in Ofunato, Iwate, where this listing places it, and gives its hours of 11:30 to 19:00 and Monday closing."
+ },
+ {
+  "id": "L513",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city and category; no account found for this name in Yokosuka."
+ },
+ {
+  "id": "L514",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Minami-Rinkan."
+ },
+ {
+  "id": "L515",
+  "v": "A",
+  "h": "gorohachi_kumamoto0568",
+  "note": "An account for the restaurant's main shop exists and its profile describes a 75-year-old Kumamoto restaurant serving horse meat and local dishes, but it names no branch or address, so it could not be tied to the Suizenji shop."
+ },
+ {
+  "id": "L516",
+  "v": "V",
+  "h": "raanmamuan",
+  "t": "store",
+  "note": "The account's own profile places the restaurant on Haikara-dori two minutes' walk from Yamakataya in Miyazaki, gives its opening year of 2002 and describes the owner's training in Bangkok, matching this listing."
+ },
+ {
+  "id": "L517",
+  "v": "A",
+  "h": "",
+  "note": "Two accounts exist for facilities on this bathhouse's grounds in Hakuba - its car-stay park and its campsite - and both describe the spring's iron-rich water, but neither is the bathhouse's own account, so none is recorded."
+ },
+ {
+  "id": "L520",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its village and category; no account found for this name in Hakuba."
+ },
+ {
+  "id": "L521",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its village; no account found for this name in Hakuba - the name match is a yakiniku restaurant in Kanazawa."
+ },
+ {
+  "id": "L524",
+  "v": "V",
+  "h": "yokokura_storehouse.un",
+  "t": "store",
+  "note": "The account's own profile gives the restaurant's address as Yokokura 596-76, Oyama, Tochigi with its telephone number, Thursday closing and lunch and dinner hours; the guide records the area as Oyama written with a different first character."
+ },
+ {
+  "id": "L525",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bar with its city and category; no account found for this name in Toyama."
+ },
+ {
+  "id": "L425",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop's counter in this department store; the shop keeps no account of its own and the only related account is the department store's own food-hall account, not this shop's."
  }
 ]

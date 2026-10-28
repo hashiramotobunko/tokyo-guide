@@ -84,7 +84,7 @@ def main() -> int:
         ("NOT_FOUND - no candidate, reason recorded on the row", st["NOT_FOUND"]),
         ("", ""),
         ("Rule for VERIFIED", "either the account is linked from a page on the venue's own website, or the account's own profile names this venue and places it where this guide places it"),
-        ("Venues still to search", "139 of the NOT_FOUND rows have not yet had the per-venue Instagram search run on them; their evidence line is from the website pass"),
+        ("Per-venue search coverage", "all 338 listings that the website pass left unresolved have had the per-venue Instagram search run on them; every row carries either a result or the reason none could be established"),
         ("Why AMBIGUOUS exists", "an account is printed on a directory or media page, or several official accounts are linked and none is identifiably this venue's"),
         ("Why so many NOT_FOUND", "no official website is on record for the venue, and Instagram blocks unauthenticated profile reads, so no admissible evidence exists"),
         ("Checked on", next(iter(ledger.values()))["checked_at"]),
