@@ -709,6 +709,18 @@ body{background:var(--td-paper);color:var(--td-ink)}
 main{background:var(--td-paper)}
 .city-name{text-transform:uppercase}
 .place-card{background:transparent;border-bottom:1px solid var(--td-line)}
+/* Maps + Instagram, side by side, 44px targets so they stay easy to hit on a phone */
+.place-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:stretch}
+.place-links .place-map,.place-ig{margin-top:0;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:9px 15px;border:1.5px solid var(--td-ink);border-radius:40px;font-size:12px;font-weight:850;letter-spacing:.02em;text-transform:none;color:var(--td-ink);text-decoration:none;background:transparent;line-height:1.2}
+.place-links .place-map:hover,.place-links .place-map:focus-visible{background:var(--td-ink);color:var(--td-paper);border-color:var(--td-ink)}
+.place-links .place-map svg{width:13px;height:13px}
+.place-ig svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9}
+.place-ig svg .ig-dot{fill:currentColor;stroke:none}
+.place-ig small{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--td-muted);margin-left:2px}
+.place-ig:hover,.place-ig:focus-visible{background:var(--td-acid);border-color:var(--td-acid);color:#fff}
+.place-ig:hover small,.place-ig:focus-visible small{color:#fff}
+@media(max-width:700px){.place-links{gap:7px}.place-links .place-map,.place-ig{padding:9px 13px;font-size:11px}.place-ig small{display:none}}
+@media(max-width:360px){.place-links{flex-direction:column;align-items:stretch}.place-links .place-map,.place-ig{justify-content:center}}
 .chip{border-color:var(--td-line)}
 .ej-intro{background:var(--td-paper)}
 .ej-walks{background:var(--td-paper)}
@@ -982,6 +994,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   </div>
   <div class="td-wrap"><small>All locations link directly to Google Maps · Walking routes are DRAFT · MAP-CHECKED · NOT FIELD-WALKED · Visitor essentials show their source and the date they were checked.</small></div>
 </footer>
+<script src="data/instagram-links.js"></script>
 <script src="data/visitor-essentials.js"></script>
 <script src="data/route-verification.js"></script>
 <script>
@@ -1820,6 +1833,24 @@ function ejPersist(){
 }
 
 function ejCityForPlace(p){return Object.keys(DATA).find(c=>DATA[c].places.includes(p))||"Japan";}
+// Official Instagram for a listing, or null. Keyed by region + the Google Maps
+// place id already in the listing's URL, so DATA itself is never touched.
+function ejInstagram(p){
+ if(typeof EJ_INSTAGRAM!=='object'||!EJ_INSTAGRAM)return null;
+ const id=(String(p.url).match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/)||[])[1];
+ if(!id)return null;
+ const hit=EJ_INSTAGRAM[ejCityForPlace(p)+'|'+id];
+ return hit&&hit.u?hit:null;
+}
+function ejInstagramLink(p){
+ const ig=ejInstagram(p);
+ if(!ig)return '';
+ const label=ig.t==='brand'?'Brand account':'Official';
+ return '<a class="place-ig" href="https://www.instagram.com/'+ejHTML(ig.u)+'/" target="_blank" rel="noopener noreferrer"'
+  +' aria-label="Instagram of this place, @'+ejHTML(ig.u)+', opens in a new tab">'
+  +'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.35" class="ig-dot"/></svg>'
+  +'Instagram <span aria-hidden="true">↗</span><small>'+label+'</small></a>';
+}
 function card(p) {
   return `<div class="place-card">
     <div class="place-name">${p.name}</div>
@@ -1830,10 +1861,11 @@ function card(p) {
       <span class="tag-area">📍 ${p.area}</span>
       <span class="tag-cat">· ${p.cat}</span>
     </div>
-    <a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>
+    <div class="place-links"><a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>${ejInstagramLink(p)}</div>
     <details class="ej-essentials"><summary>Visitor essentials <span aria-hidden="true">＋</span></summary><dl>
     <div><dt>Location</dt><dd>${ejHTML(p.area)} · ${ejHTML(ejCityForPlace(p))}</dd></div>
     <div><dt>Directions</dt><dd><a href="${ejHTML(p.url)}" target="_blank" rel="noopener noreferrer">Check Google Maps ↗</a></dd></div>
+    ${ejInstagram(p) ? `<div><dt>Instagram</dt><dd><a href="https://www.instagram.com/${ejHTML(ejInstagram(p).u)}/" target="_blank" rel="noopener noreferrer">@${ejHTML(ejInstagram(p).u)} ↗</a> · ${ejInstagram(p).t === 'brand' ? 'brand or operator account' : "this venue's own account"} · linked from its official website</dd></div>` : ''}
     ${ejEssentialsBlock(p)}
     ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
     </dl></details>
