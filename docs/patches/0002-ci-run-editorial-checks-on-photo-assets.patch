@@ -1,0 +1,12 @@
+diff --git a/.github/workflows/editorial-checks.yml b/.github/workflows/editorial-checks.yml
+index f05ece8..5084dfd 100644
+--- a/.github/workflows/editorial-checks.yml
++++ b/.github/workflows/editorial-checks.yml
+@@ -8,6 +8,7 @@ on:
+       - 'data/**'
+       - 'scripts/**'
+       - 'assets/editorial/**'
++      - 'assets/photos/**'
+       - '.github/workflows/editorial-checks.yml'
+   workflow_dispatch:
+ jobs:

@@ -69,11 +69,26 @@ test('editorial sources and URL-navigation routines are present',()=>{
  assert.ok(source.includes('ej-editorial-source'));
 });
 
-test('city-pop visual asset references and captions',()=>{
- assert.ok(source.includes('assets/editorial/night-street.svg'));
- assert.ok(source.includes('assets/editorial/day-bookshop.svg'));
- assert.ok(source.includes('Editorial illustration'));
- assert.ok(!source.includes('commons.wikimedia.org'));
+// TAKE THE DETOUR (art direction v1): photographs lead the page, illustrations are supporting motifs.
+const PHOTOS=['shibuya','jimbocho','kyoto','osaka'];
+test('photography-led art direction: local photo files, no hotlinking',()=>{
+ for(const place of PHOTOS)assert.ok(source.includes('assets/photos/'+place+'-'),'missing photo reference: '+place);
+ const files=[...new Set([...source.matchAll(/assets\/photos\/[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp|avif)/g)].map(m=>m[0]))];
+ assert.ok(files.length>=4,'expected at least four photo files, found '+files.length);
+ for(const file of files)assert.ok(readFileSync(resolve(__dirname,'..',file)).length>10000,'missing or empty photo: '+file);
+ // every image is served from this repository: no external image host, no hotlinked Wikimedia file
+ for(const image of source.matchAll(/<img[^>]*\ssrc="([^"]+)"/g))assert.ok(!/^https?:/.test(image[1]),'external image src: '+image[1]);
+ assert.ok(!source.includes('upload.wikimedia.org'),'photos must be stored locally, not hotlinked');
+ assert.ok(!/url\(["']?https?:[^)]*\.(?:jpe?g|png|svg|webp|avif|gif)/i.test(source),'external image in CSS');
+});
+test('each photograph carries photographer, licence and the no-venue-claim caption',()=>{
+ for(const who of ['Giuseppe Milo','Olaf2','Andrea Schaffer','Ajay Suresh'])assert.ok(source.includes(who),'credit missing: '+who);
+ for(const licence of ['creativecommons.org/licenses/by/3.0/','creativecommons.org/licenses/by-sa/4.0/','creativecommons.org/licenses/by/2.0/'])assert.ok(source.includes(licence),'licence link missing: '+licence);
+ // the Commons file pages are linked as attribution, which is not the same as serving the image from there
+ assert.ok(source.includes('commons.wikimedia.org/wiki/File:'),'source file page not credited');
+ assert.ok(source.includes('NOT A LISTED VENUE'));
+ assert.ok(source.includes('NOT A SPECIFIC STORE'));
+ assert.ok(source.includes('never as proof of the current appearance of a listed venue'));
 });
 test('Instagram remains disabled without a real owner-supplied URL',()=>{
  assert.ok(source.includes('const EJ_INSTAGRAM_URL = ""'));
@@ -81,19 +96,23 @@ test('Instagram remains disabled without a real owner-supplied URL',()=>{
  assert.ok(source.includes('id="ej-footer-instagram" hidden'));
 });
 
-test('every linked original editorial image exists in the repository',()=>{
+test('every linked supporting illustration exists in the repository',()=>{
  const paths=[...new Set([...source.matchAll(new RegExp('assets/editorial/[A-Za-z0-9_.-]+[.](svg|png|jpg|webp|avif)','g'))].map(m=>m[0]))];
- assert.ok(paths.length>=3,'expected at least three illustrated scenes');
+ assert.ok(paths.length>=2,'expected the supporting illustrations to remain in the page');
  for(const path of paths){
   const file=resolve(__dirname,'..',path);
   assert.ok(readFileSync(file).length>100,'missing or empty image: '+path);
  }
 });
-test('editorial illustrations have image alt text',()=>{
+test('every image has alt text and illustrations stay labelled as illustrations',()=>{
  const images=[...source.matchAll(/<img[^>]+>/g)].map(m=>m[0]);
- assert.ok(images.length>=3);
+ assert.ok(images.length>=5);
  for(const image of images)assert.ok(image.includes('alt="'),'alt missing');
- assert.ok(source.includes('Editorial illustration'));
+ for(const image of images){
+  if(!image.includes('assets/editorial/'))continue;
+  assert.ok(/illustration/i.test(image),'an illustration must say so in its alt text: '+image.slice(0,90));
+ }
+ assert.ok(source.includes('original interpretive artworks, not photographs of the listed locations'));
 });
 test('Instagram link does not point to an invented profile',()=>{
  assert.ok(source.includes('const EJ_INSTAGRAM_URL = ""'));
