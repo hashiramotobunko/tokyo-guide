@@ -828,11 +828,15 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 /* THE IMAGINED CITY - the original illustrations back at full page scale */
 .td-dream{background:var(--td-sand);border-top:2px solid var(--td-ink);border-bottom:2px solid var(--td-ink);padding:96px 0 104px;margin:0 0 110px;overflow:hidden}
 .td-dream-in{width:var(--td-w);margin:auto}
-.td-dream-head{max-width:min(660px,100%);margin:0 0 clamp(30px,4.2vw,56px)}
+.td-dream-head{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);column-gap:clamp(26px,4vw,72px);align-items:start;margin:0 0 clamp(30px,4.2vw,56px)}
+.td-dream-head .td-no{grid-column:1;grid-row:1}
+.td-dream-head h2{grid-column:1;grid-row:2/4}
+.td-dream-head>p:not(.td-dream-note){grid-column:2;grid-row:2;margin:6px 0 0}
+.td-dream-head>.td-dream-note{grid-column:2;grid-row:3;align-self:start;margin-top:22px}
 .td-dream-head h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(56px,7.2vw,122px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase;margin:16px 0 0}
 .td-dream-head h2 em{font-style:normal;color:var(--td-acid)}
-.td-dream-head>p{font-size:17px;line-height:1.5;max-width:540px;margin:26px 0 0;letter-spacing:-.02em}
-.td-dream-note{font-size:12px;line-height:1.65;color:var(--td-muted);max-width:540px;margin:24px 0 0;padding-top:18px;border-top:1px solid var(--td-ink)}
+.td-dream-head>p:not(.td-dream-note){font-size:17px;line-height:1.5;max-width:520px;letter-spacing:-.02em}
+.td-dream-note{font-size:12px;line-height:1.65;color:var(--td-muted);max-width:520px;margin:22px 0 0;padding-top:18px;border-top:1px solid var(--td-ink)}
 .td-dream-art{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(20px,3vw,56px);align-items:start}
 .td-dream-fig{margin:0;position:relative;background:#fff;border:2px solid var(--td-ink);box-shadow:14px 14px 0 var(--td-acid)}
 .td-dream-fig img{display:block;width:100%;height:auto}
@@ -847,7 +851,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 .td-story-draw figcaption{font-size:10px;letter-spacing:.06em;line-height:1.5;padding:9px 11px;background:var(--td-sand);border-top:2px solid var(--td-ink);text-transform:uppercase}
 .td-story-draw-tag{position:absolute;top:-13px;right:-8px;background:var(--td-ink);color:var(--td-paper);font-size:10px;font-weight:900;letter-spacing:.09em;padding:6px 10px}
 /* an illustration in the practical pages, without crowding the information */
-@media(max-width:860px){.td-dream-art{grid-template-columns:1fr;gap:30px}.td-dream-fig-b{margin-top:0}}
+@media(max-width:860px){.td-dream-head{display:block}.td-dream-head>p:not(.td-dream-note){margin:24px 0 0}.td-dream-art{grid-template-columns:1fr;gap:30px}.td-dream-fig-b{margin-top:0}}
 @media(max-width:700px){.td-dream{padding:62px 0 66px;margin-bottom:72px}.td-dream-fig{box-shadow:9px 9px 0 var(--td-acid)}.td-dream-fig-b{box-shadow:-9px 9px 0 var(--td-ink)}.td-story-draw{max-width:none}}
 </style>
 </head>
@@ -900,7 +904,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <figure class="td-story-draw">
         <span class="td-story-draw-tag" aria-hidden="true">DRAWN, NOT SHOT</span>
         <img src="assets/editorial/bookshop-day.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo book-and-coffee street in daylight, with a bicycle at the kerb and a reader in the window. A drawing, not a photograph of a real shop.">
-        <figcaption>LEFT, THE PHOTOGRAPH: JIMBOCHO, 2025.<br>HERE, THE DRAWING: A BOOK STREET AS WE PICTURE IT — ORIGINAL ILLUSTRATION, NO REAL SHOP DEPICTED</figcaption>
+        <figcaption>A BOOK STREET AS WE PICTURE IT<br>ORIGINAL ILLUSTRATION</figcaption>
       </figure>
     </div>
     <span class="td-vert" aria-hidden="true">ENCOUNTER / BOOKS, PRINT &amp; THE LONG WAY HOME</span>
@@ -919,18 +923,18 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
         <span class="td-no">[02 / ILLUSTRATED]</span>
         <h2 id="td-dream-title" class="td-cond">THE CITY<br>WE <em>DRAW.</em></h2>
         <p>Between the photographs, the issue keeps its own invented Japan: a record bar at blue hour, a rooftop where the city goes soft at the edges. Drawn for this guide, in the spirit of late-Showa commercial art and the city-pop record sleeve.<span lang="ja" class="td-jp">写真が「いまの日本」を、絵が「私たちの想像する日本」を受けもちます。</span></p>
-        <p class="td-dream-note">These are original illustrations made for Encounter Japan, not photographs and not pictures of any listed place. The photographs elsewhere on this page are credited, licensed and dated in the credits below. No illustration is ever shown as the appearance of a venue in the address book.</p>
+        <p class="td-dream-note">These are original illustrations made for Encounter Japan, not photographs and not pictures of any listed place. No illustration is ever shown as the appearance of a venue in the address book.</p>
       </div>
       <div class="td-dream-art">
         <figure class="td-dream-fig">
-          <span class="td-dream-tag" aria-hidden="true">ILLUSTRATION / NO. 01</span>
+          <span class="td-dream-tag" aria-hidden="true">NO. 01</span>
           <img src="assets/editorial/tokyo-night.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo street on a rainy night, neon reflected on wet asphalt outside a record bar. A drawing, not a photograph of a real place.">
-          <figcaption><b>BLUE HOUR / IMAGINED TOKYO</b><br>ORIGINAL ILLUSTRATION FOR THIS ISSUE — NOT A PHOTOGRAPH, NOT A LISTED VENUE</figcaption>
+          <figcaption><b>BLUE HOUR / IMAGINED TOKYO</b><br>ORIGINAL ILLUSTRATION</figcaption>
         </figure>
         <figure class="td-dream-fig td-dream-fig-b">
-          <span class="td-dream-tag" aria-hidden="true">ILLUSTRATION / NO. 02</span>
+          <span class="td-dream-tag" aria-hidden="true">NO. 02</span>
           <img src="assets/editorial/rooftop-lounge.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined rooftop lounge at dusk, a turntable on the bar and the bay skyline beyond. A drawing, not a photograph of a real place.">
-          <figcaption><b>ROOFTOP / CITY POP</b><br>ORIGINAL ILLUSTRATION FOR THIS ISSUE — IMAGINED SKYLINE, NO REAL STORE DEPICTED</figcaption>
+          <figcaption><b>ROOFTOP / CITY POP</b><br>ORIGINAL ILLUSTRATION</figcaption>
         </figure>
       </div>
     </div>
