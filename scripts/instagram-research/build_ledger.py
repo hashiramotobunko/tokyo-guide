@@ -123,6 +123,28 @@ def apply_stage6(row: dict) -> dict:
     return row
 
 
+# Stage 7 - the final review of the 260 verified rows. Two kinds of correction:
+# rows whose recorded basis did not actually meet the bar are put back to
+# AMBIGUOUS, and rows confirmed from a page of the venue's own get that page as
+# their evidence URL instead of the Instagram URL.
+STAGE7 = {r["id"]: r for r in json.loads((HERE / "stage7_corrections.json").read_text(encoding="utf-8"))} \
+    if (HERE / "stage7_corrections.json").exists() else {}
+
+
+def apply_stage7(row: dict) -> dict:
+    fix = STAGE7.get(row["id"])
+    if not fix or row["status"] != "VERIFIED":
+        return row
+    if fix["action"] == "demote":
+        row.update(instagram_url="", account_type="", basis="", status="AMBIGUOUS",
+                   evidence=f"{fix['note']} 候補: {row['instagram_username']}",
+                   evidence_url=f"https://www.instagram.com/{row['instagram_username']}/")
+        row["instagram_username"] = ""
+    elif fix["action"] == "fix_evidence_url":
+        row.update(evidence_url=fix["evidence_url"], evidence=fix["note"])
+    return row
+
+
 def handle_set(t: dict) -> list[str]:
     hs = []
     r = STAGE1.get(t["id"])
@@ -247,7 +269,7 @@ def build_row(t: dict) -> dict:
 
 
 def main() -> int:
-    rows = [apply_stage6(apply_stage4(apply_stage3(build_row(t)))) for t in TARGETS]
+    rows = [apply_stage7(apply_stage6(apply_stage4(apply_stage3(build_row(t))))) for t in TARGETS]
     assert len(rows) == 526, len(rows)
 
     # A handle claimed by more than one listing cannot be a branch-specific

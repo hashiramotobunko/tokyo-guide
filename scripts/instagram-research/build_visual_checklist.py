@@ -257,8 +257,13 @@ def main() -> int:
     ws3.append(["うち 557件監査リストにのみ存在", len(only),
                 "監査リストが526件に追加した施設。公開サイトには出ていないため、確認結果は監査リスト側にのみ反映される"])
     ws3.append(["", "", ""])
-    ws3.append(["参考：526件台帳の現在の内訳", "", "VERIFIED 260／AMBIGUOUS 68／NOT_FOUND 198"])
-    ws3.append(["参考：557件監査リストの現在の内訳", "", "VERIFIED 268／AMBIGUOUS 74／NOT_FOUND 215"])
+    from collections import Counter as _C
+    led = _C(r["status"] for r in json.loads((HERE / "ledger.json").read_text(encoding="utf-8")))
+    aud = _C(str(r[I["Instagram判定"]]).split("（")[0] for r in body)
+    ws3.append(["参考：526件台帳の現在の内訳", "",
+                f"VERIFIED {led['VERIFIED']}／AMBIGUOUS {led['AMBIGUOUS']}／NOT_FOUND {led['NOT_FOUND']}"])
+    ws3.append(["参考：557件監査リストの現在の内訳", "",
+                f"VERIFIED {aud['VERIFIED']}／AMBIGUOUS {aud['AMBIGUOUS']}／NOT_FOUND {aud['NOT_FOUND']}"])
     ws3.append(["差の理由", "",
                 "557件は526件に31施設を加えた監査用の台帳で、重複掲載の行も含むため件数が一致しない。"
                 "公開サイトの掲載対象は526件のみ"])

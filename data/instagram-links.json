@@ -1,8 +1,4 @@
 {
- "Tokyo|0x60188cbd6947a727:0xfefe2077df059e06": {
-  "u": "emilia_jingumae",
-  "t": "store"
- },
  "Tokyo|0x60188f925edd74af:0x899f4228fb90af80": {
   "u": "chowa.kitasenju",
   "t": "store"
@@ -319,10 +315,6 @@
   "u": "waniwa0141",
   "t": "store"
  },
- "Tokyo|0x6018f3a605962f19:0x197fd6a21002571b": {
-  "u": "asatte_nihonshu",
-  "t": "store"
- },
  "Tokyo|0x6018f2880a6d8613:0xf88b6a71258c591": {
   "u": "mara_koenji",
   "t": "store"
@@ -515,10 +507,6 @@
   "u": "omoide_yokocho_official",
   "t": "store"
  },
- "Tokyo|0x60188ba4ac861705:0x2aaaf28a33dbc54": {
-  "u": "tetsuryu100",
-  "t": "store"
- },
  "Tokyo|0x60188b1f1e02ae2d:0xe7ce6e0bc4aa95be": {
   "u": "soba_daidai",
   "t": "store"
@@ -531,10 +519,6 @@
   "u": "myoujyaku",
   "t": "store"
  },
- "Tokyo|0x60188bebcee02321:0xe6bae90c9b1080cb": {
-  "u": "tablecheck_global",
-  "t": "store"
- },
  "Tokyo|0x60188afa311bb259:0x7ef4f764bf36e1ae": {
   "u": "bar_aliollie",
   "t": "store"
@@ -545,10 +529,6 @@
  },
  "Tokyo|0x60188afac3293197:0x86fb0563b596ab9d": {
   "u": "soregashi_official",
-  "t": "store"
- },
- "Tokyo|0x60188d918804255b:0x39102c0807b79bec": {
-  "u": "hifi_disco_bar_chaos",
   "t": "store"
  },
  "Tokyo|0x60188b14e1286bc3:0xbbc8a762fc95daef": {
@@ -581,10 +561,6 @@
  },
  "Tokyo|0x601889cff8911821:0x1ad8b9745ec9bf4": {
   "u": "yonemoto_coffee",
-  "t": "store"
- },
- "Tokyo|0x60188900727c9657:0x2b433b13ed06d66a": {
-  "u": "fccjp.roastery",
   "t": "store"
  },
  "Tokyo|0x601889178badde1d:0x5edbcad7b5afd579": {
