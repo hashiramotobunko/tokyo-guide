@@ -41,7 +41,7 @@ window.EJ_ESSENTIALS_V1 = {
    "name": "EMILIA",
    "city": "Tokyo",
    "nameEn": "EMILIA (Italian, Jingumae)",
-   "website": "https://www.instagram.com/emilia_jingumae",
+   "website": "",
    "fields": [
     {
      "t": "hours",
@@ -6216,7 +6216,7 @@ window.EJ_ESSENTIALS_V1 = {
    "name": "日本酒あさって",
    "city": "Tokyo",
    "nameEn": "Nihonshu Asatte",
-   "website": "https://www.instagram.com/asatte_nihonshu/",
+   "website": "",
    "fields": [
     {
      "t": "hours",
@@ -6226,7 +6226,7 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Instagram is the bar's own channel; year-end and temporary closures not listed."
+     "note": "No Instagram account could be confirmed as this bar's own from public information; year-end and temporary closures not listed."
     },
     {
      "t": "closed",
@@ -10301,7 +10301,7 @@ window.EJ_ESSENTIALS_V1 = {
    "name": "Hi-Fi Disco Bar Chaos",
    "city": "Tokyo",
    "nameEn": "Hi-Fi Disco Bar Chaos",
-   "website": "https://www.instagram.com/hifi_disco_bar_chaos/",
+   "website": "",
    "fields": [
     {
      "t": "hours",
@@ -10311,7 +10311,7 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "secondary",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "No official website; Instagram is the venue's own channel."
+     "note": "No official website was found, and no Instagram account could be confirmed as the venue's own from public information."
     },
     {
      "t": "address",
@@ -10891,7 +10891,7 @@ window.EJ_ESSENTIALS_V1 = {
    "name": "First Crop Coffee Japan Roastery",
    "city": "Tokyo",
    "nameEn": "First Crop Coffee Roastery",
-   "website": "https://www.instagram.com/fccjp.roastery/",
+   "website": "",
    "fields": [
     {
      "t": "hours",
@@ -10902,7 +10902,7 @@ window.EJ_ESSENTIALS_V1 = {
      "stat": "conflict",
      "chk": "2026-10-27",
      "by": "manual-web",
-     "note": "Listings are 1–2 years old; the roastery's Instagram is its own channel."
+     "note": "Listings are 1-2 years old; no Instagram account could be confirmed as the roastery's own from public information."
     },
     {
      "t": "closed",
