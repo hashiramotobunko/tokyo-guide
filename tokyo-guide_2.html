@@ -541,7 +541,9 @@ footer small{width:100%;opacity:.7}
 .ej-stat{display:inline-block;font-style:normal;font-size:9.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid #111;margin-right:4px;color:#111;background:#fff}
 .ej-stat-official{background:#ff5000;border-color:#ff5000}.ej-stat-conflict{border-style:dashed;color:#b23b00}.ej-ess-varies{display:block;font-weight:700;color:#b23b00;margin-bottom:2px}.ej-route-pin{display:block;font-size:11px;color:#555;margin-top:2px}.ej-visitor-legend{line-height:2}
 .ej-route-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 22px;max-width:980px}.ej-route-notes h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:0 0 8px}.ej-route-notes ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.55;color:#222}.ej-route-notes li{margin-bottom:6px}.ej-route-notes a{color:#111;font-weight:800;border-bottom:1px solid #ff5000;text-decoration:none;font-size:11px;white-space:nowrap}
-.ej-visitor-legend{font-size:11px;color:#444;margin:10px 0 0;line-height:2.1}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
+.ej-visitor-legend{list-style:none;font-size:11px;color:#444;margin:12px 0 0;padding:0;display:grid;gap:8px;line-height:1.5}
+.ej-visitor-legend li{display:grid;grid-template-columns:minmax(0,232px) minmax(0,1fr);gap:12px;align-items:center}
+.ej-visitor-legend .ej-stat{margin-right:0;justify-self:start}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
 @media(max-width:700px){.ej-route-brief,.ej-route-check,.ej-route-notes{grid-template-columns:1fr}.ej-ess-row,.ej-essentials dl>div.ej-ess-row{grid-template-columns:1fr}.ej-route-check dd{white-space:normal;text-align:right}.ej-chips,.ej-stop-details,.ej-route-leg,.ej-route-en{margin-left:0;padding-left:0}}
 
 /* 2026-10-27 traveller-first route cards, essentials entry, responsive fixes */
@@ -652,8 +654,8 @@ body{background:var(--td-paper);color:var(--td-ink)}
 .td-story-photo{height:620px;position:relative;background:var(--td-sand);overflow:hidden}
 .td-story-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 56%;filter:saturate(.88)}
 .td-story-num{position:absolute;bottom:-5px;left:-2px;color:#fff;font-size:clamp(80px,10vw,178px);line-height:.78;mix-blend-mode:screen;pointer-events:none}
-.td-img-caption{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:10px;color:var(--td-muted);line-height:1.5}
-.td-story-copy{padding-top:80px;max-width:540px}
+.td-img-caption{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:0 0 10px;color:var(--td-muted);line-height:1.5}
+.td-story-copy{grid-column:2;grid-row:1/3;padding-top:80px;max-width:540px}
 .td-story-copy h3{font-size:clamp(62px,8.6vw,139px);margin:20px 0 0;line-height:.84;text-transform:uppercase;letter-spacing:-.075em}
 .td-story-copy h3 em{font-style:normal;color:var(--td-acid)}
 .td-story-copy p{font-size:21px;line-height:1.42;max-width:445px;letter-spacing:-.025em;margin-top:26px}
@@ -828,31 +830,26 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 /* THE IMAGINED CITY - the original illustrations back at full page scale */
 .td-dream{background:var(--td-sand);border-top:2px solid var(--td-ink);border-bottom:2px solid var(--td-ink);padding:96px 0 104px;margin:0 0 110px;overflow:hidden}
 .td-dream-in{width:var(--td-w);margin:auto}
-.td-dream-head{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);column-gap:clamp(26px,4vw,72px);align-items:start;margin:0 0 clamp(30px,4.2vw,56px)}
+.td-dream-head{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);column-gap:clamp(26px,4vw,72px);align-items:end;margin:0 0 clamp(30px,4.2vw,56px)}
 .td-dream-head .td-no{grid-column:1;grid-row:1}
-.td-dream-head h2{grid-column:1;grid-row:2/4}
-.td-dream-head>p:not(.td-dream-note){grid-column:2;grid-row:2;margin:6px 0 0}
-.td-dream-head>.td-dream-note{grid-column:2;grid-row:3;align-self:start;margin-top:22px}
+.td-dream-head h2{grid-column:1;grid-row:2}
+.td-dream-head>p{grid-column:2;grid-row:2;margin:0 0 10px}
 .td-dream-head h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(56px,7.2vw,122px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase;margin:16px 0 0}
 .td-dream-head h2 em{font-style:normal;color:var(--td-acid)}
-.td-dream-head>p:not(.td-dream-note){font-size:17px;line-height:1.5;max-width:520px;letter-spacing:-.02em}
-.td-dream-note{font-size:12px;line-height:1.65;color:var(--td-muted);max-width:520px;margin:22px 0 0;padding-top:18px;border-top:1px solid var(--td-ink)}
+.td-dream-head>p{font-size:17px;line-height:1.5;max-width:520px;letter-spacing:-.02em}
 .td-dream-art{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(20px,3vw,56px);align-items:start}
 .td-dream-fig{margin:0;position:relative;background:#fff;border:2px solid var(--td-ink);box-shadow:14px 14px 0 var(--td-acid)}
 .td-dream-fig img{display:block;width:100%;height:auto}
-.td-dream-fig figcaption{font-size:10px;letter-spacing:.07em;line-height:1.5;background:var(--td-ink);color:var(--td-paper);padding:10px 12px;text-transform:uppercase}
-.td-dream-fig figcaption b{color:var(--td-acid)}
 .td-dream-fig-b{margin-top:clamp(40px,9vw,150px);box-shadow:-14px 14px 0 var(--td-ink)}
 .td-dream-tag{position:absolute;top:-14px;left:-10px;background:var(--td-acid);color:#fff;font-size:10px;font-weight:900;letter-spacing:.1em;padding:7px 11px;transform:rotate(-2deg)}
 .td-dream-fig-b .td-dream-tag{left:auto;right:-10px;background:var(--td-ink);transform:rotate(2deg)}
 /* the drawn counterpart beside the Jimbocho photograph */
-.td-story-draw{margin:36px 0 0;position:relative;background:#fff;border:2px solid var(--td-ink);max-width:400px}
+.td-story-col{grid-column:1;grid-row:1}
+.td-story-draw{grid-column:1;grid-row:2;justify-self:end;width:min(76%,432px);margin:clamp(-230px,-16vw,-120px) 0 0;position:relative;z-index:2;background:#fff;border:2px solid var(--td-ink);box-shadow:-14px 14px 0 var(--td-sand)}
 .td-story-draw img{display:block;width:100%;height:auto}
-.td-story-draw figcaption{font-size:10px;letter-spacing:.06em;line-height:1.5;padding:9px 11px;background:var(--td-sand);border-top:2px solid var(--td-ink);text-transform:uppercase}
-.td-story-draw-tag{position:absolute;top:-13px;right:-8px;background:var(--td-ink);color:var(--td-paper);font-size:10px;font-weight:900;letter-spacing:.09em;padding:6px 10px}
 /* an illustration in the practical pages, without crowding the information */
-@media(max-width:860px){.td-dream-head{display:block}.td-dream-head>p:not(.td-dream-note){margin:24px 0 0}.td-dream-art{grid-template-columns:1fr;gap:30px}.td-dream-fig-b{margin-top:0}}
-@media(max-width:700px){.td-dream{padding:62px 0 66px;margin-bottom:72px}.td-dream-fig{box-shadow:9px 9px 0 var(--td-acid)}.td-dream-fig-b{box-shadow:-9px 9px 0 var(--td-ink)}.td-story-draw{max-width:none}}
+@media(max-width:860px){.td-dream-head{display:block}.td-dream-head>p{margin:24px 0 0}.td-dream-art{grid-template-columns:1fr;gap:30px}.td-dream-fig-b{margin-top:0}}
+@media(max-width:700px){.ej-visitor-legend li{grid-template-columns:1fr;gap:3px}.td-story-draw{grid-column:1;grid-row:auto;width:100%;justify-self:stretch;margin:30px 0 0;box-shadow:none}.td-dream{padding:62px 0 66px;margin-bottom:72px}.td-dream-fig{box-shadow:9px 9px 0 var(--td-acid)}.td-dream-fig-b{box-shadow:-9px 9px 0 var(--td-ink)}.td-story-draw{max-width:none}}
 </style>
 </head>
 <body>
@@ -867,7 +864,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     <div class="td-hero-media">
       <img src="assets/photos/shibuya-1800.jpg" srcset="assets/photos/shibuya-900.jpg 900w, assets/photos/shibuya-1800.jpg 1800w" sizes="(max-width:700px) 100vw, 62vw" width="1800" height="766" alt="A Shibuya backstreet in Tokyo at night, lit by shop signs, photographed in December 2017" fetchpriority="high" decoding="async">
       <p class="td-eyebrow td-hero-coord">35° 39′ N / 139° 41′ E</p>
-      <span class="td-pic-tag">TOKYO, SHIBUYA / STREET PHOTOGRAPH, 2017<br>NEIGHBOURHOOD ATMOSPHERE — NOT A LISTED VENUE</span>
+      <span class="td-pic-tag">TOKYO, SHIBUYA / STREET PHOTOGRAPH, 2017</span>
     </div>
     <div class="td-hero-content">
       <p class="td-eyebrow td-hero-topnote">AN INDEPENDENT ADDRESS BOOK / NO. 001</p>
@@ -890,22 +887,20 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   
 <section class="td-wrap td-story" aria-label="Jimbocho place study">
     <div class="td-story-col">
+      <p class="td-img-caption">TOKYO / JIMBOCHO · STREET PHOTOGRAPH, 2025</p>
       <div class="td-story-photo">
         <img src="assets/photos/jimbocho-1400.jpg" srcset="assets/photos/jimbocho-700.jpg 700w, assets/photos/jimbocho-1400.jpg 1400w" sizes="(max-width:700px) 100vw, 55vw" width="1400" height="1217" loading="lazy" decoding="async" alt="Secondhand bookshop fronts on the book-district street in Jimbocho, Tokyo, photographed in April 2025">
         <div class="td-story-num td-cond" aria-hidden="true">01.</div>
       </div>
-      <p class="td-img-caption">TOKYO / JIMBOCHO · STREET PHOTOGRAPH, 2025 — A NEIGHBOURHOOD, NOT A VENUE PROFILE</p>
     </div>
+    <figure class="td-story-draw">
+                <img src="assets/editorial/bookshop-day.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo book-and-coffee street in daylight, with a bicycle at the kerb and a reader in the window. A drawing, not a photograph of a real shop.">
+              </figure>
     <div class="td-story-copy">
       <p class="td-eyebrow">Tokyo's book district · Place study 001</p>
       <h3 class="td-cond">LOST<br>IN THE<br><em>MARGINS.</em></h3>
       <p>In Jimbocho, a good afternoon still begins with the possibility of finding a book you weren't looking for.</p>
       <button type="button" data-walk-city="Tokyo" data-walk-area="Jimbocho">See the Jimbocho places <span aria-hidden="true">↗</span></button>
-      <figure class="td-story-draw">
-        <span class="td-story-draw-tag" aria-hidden="true">DRAWN, NOT SHOT</span>
-        <img src="assets/editorial/bookshop-day.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo book-and-coffee street in daylight, with a bicycle at the kerb and a reader in the window. A drawing, not a photograph of a real shop.">
-        <figcaption>A BOOK STREET AS WE PICTURE IT<br>ORIGINAL ILLUSTRATION</figcaption>
-      </figure>
     </div>
     <span class="td-vert" aria-hidden="true">ENCOUNTER / BOOKS, PRINT &amp; THE LONG WAY HOME</span>
   </section>
@@ -922,20 +917,17 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <div class="td-dream-head">
         <span class="td-no">[02 / ILLUSTRATED]</span>
         <h2 id="td-dream-title" class="td-cond">THE CITY<br>WE <em>DRAW.</em></h2>
-        <p>Between the photographs, the issue keeps its own invented Japan: a record bar at blue hour, a rooftop where the city goes soft at the edges. Drawn for this guide, in the spirit of late-Showa commercial art and the city-pop record sleeve.<span lang="ja" class="td-jp">写真が「いまの日本」を、絵が「私たちの想像する日本」を受けもちます。</span></p>
-        <p class="td-dream-note">These are original illustrations made for Encounter Japan, not photographs and not pictures of any listed place. No illustration is ever shown as the appearance of a venue in the address book.</p>
+        <p>Between the photographs, the issue keeps its own invented Japan.<span lang="ja" class="td-jp">写真が「いまの日本」を、絵が「私たちの想像する日本」を受けもちます。</span></p>
       </div>
       <div class="td-dream-art">
         <figure class="td-dream-fig">
           <span class="td-dream-tag" aria-hidden="true">NO. 01</span>
           <img src="assets/editorial/tokyo-night.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo street on a rainy night, neon reflected on wet asphalt outside a record bar. A drawing, not a photograph of a real place.">
-          <figcaption><b>BLUE HOUR / IMAGINED TOKYO</b><br>ORIGINAL ILLUSTRATION</figcaption>
-        </figure>
+                  </figure>
         <figure class="td-dream-fig td-dream-fig-b">
           <span class="td-dream-tag" aria-hidden="true">NO. 02</span>
           <img src="assets/editorial/rooftop-lounge.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined rooftop lounge at dusk, a turntable on the bar and the bay skyline beyond. A drawing, not a photograph of a real place.">
-          <figcaption><b>ROOFTOP / CITY POP</b><br>ORIGINAL ILLUSTRATION</figcaption>
-        </figure>
+                  </figure>
       </div>
     </div>
   </section>
@@ -978,7 +970,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> the venue or an authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> with its date · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> both shown · <b class="ej-stat">Not yet confirmed</b> nothing reliable found</p><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><details class="ej-visitor-method"><summary>How this information was gathered <span aria-hidden="true">＋</span></summary><p id="ej-visitor-method-text"></p></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><ul class="ej-visitor-legend"><li><span class="ej-stat ej-stat-official">Official source</span><span>the venue or an authority</span></li><li><span class="ej-stat ej-stat-secondary">Listed by directory or media</span><span>with its date</span></li><li><span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span><span>both shown</span></li><li><b class="ej-stat">Not yet confirmed</b><span>nothing reliable found</span></li></ul><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><details class="ej-visitor-method"><summary>How this information was gathered <span aria-hidden="true">＋</span></summary><p id="ej-visitor-method-text"></p></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
  <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
@@ -990,7 +982,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   </div>
   <div class="ej-browse" id="browse">
     <div class="td-browse-head"><h2 class="td-cond">FIND<br>YOUR<br><span class="td-acid">OWN.</span></h2><p class="td-subhead">Follow the feeling, not the ranking. The whole address book is here: <b>526 places</b> across 21 regions, each with its Google Maps pin and its source-checked visitor essentials.</p></div>
-    <div class="td-discovery-head"><p class="td-eyebrow td-acid">[02 / DISCOVER]</p><h3>Where shall we begin?</h3><p class="td-discovery-note">This is the whole address book, not a demo: every region, every neighbourhood, every listing, with its sources and its Google Maps pin.</p></div>
+    <div class="td-discovery-head"><p class="td-eyebrow td-acid">[02 / DISCOVER]</p><h3>Where shall we begin?</h3><p class="td-discovery-note">This is the whole address book: every region, every neighbourhood, every listing, with its sources and its Google Maps pin.</p></div>
     <label class="ej-search-label" for="ej-search">Find a name, street or kind of place</label>
     <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="Try Ueno, coffee or a Japanese name…" aria-label="Search places in the selected region">
     
