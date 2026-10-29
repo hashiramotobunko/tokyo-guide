@@ -113,7 +113,11 @@ try{
    }
    if(width===1280){
      await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
-     await page.locator('.ej-field-art img').evaluate(async img=>{img.loading='eager';await img.decode();});
+     // The approved city-pop artwork now lives in its own spread; make sure both plates decode.
+     await page.locator('#imagined').scrollIntoViewIfNeeded();
+     const plates=await page.locator('#imagined img').evaluateAll(async imgs=>{for(const img of imgs){img.loading='eager';await img.decode();}return imgs.filter(i=>i.naturalWidth>0).length;});
+     assert.equal(plates,2,'both plates of the illustrated spread must load');
+     await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
      const overlap=await page.evaluate(()=>{const left=document.querySelector('.ej-field-intro')?.getBoundingClientRect(),right=document.querySelector('.ej-field-content')?.getBoundingClientRect();return {leftRight:left?.right,rightLeft:right?.left}});
      assert.ok(overlap.leftRight<=overlap.rightLeft+1,'Route column overlaps the editorial intro: '+JSON.stringify(overlap));
      // Capture the start of the section, not whichever middle route Playwright scrolled to.

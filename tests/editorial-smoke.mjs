@@ -86,7 +86,9 @@ test('each photograph carries photographer, licence and the no-venue-claim capti
  for(const licence of ['creativecommons.org/licenses/by/3.0/','creativecommons.org/licenses/by-sa/4.0/','creativecommons.org/licenses/by/2.0/'])assert.ok(source.includes(licence),'licence link missing: '+licence);
  // the Commons file pages are linked as attribution, which is not the same as serving the image from there
  assert.ok(source.includes('commons.wikimedia.org/wiki/File:'),'source file page not credited');
- assert.ok(source.includes('NOT A LISTED VENUE'));
+ // the per-image notices were consolidated into the credits; the claim itself must survive
+ assert.ok(source.includes('Photographs are used for neighbourhood atmosphere'));
+ assert.ok(source.includes('original interpretive artworks, not photographs of the listed locations'));
  assert.ok(source.includes('NOT A SPECIFIC STORE'));
  assert.ok(source.includes('never as proof of the current appearance of a listed venue'));
 });

@@ -500,9 +500,6 @@ footer small{width:100%;opacity:.7}
 .ej-mixtape-copy p{max-width:430px;font-size:clamp(16px,2vw,22px);line-height:1.45;margin:12px 0}
 .ej-mixtape-copy a{color:#111;font-size:13px;font-weight:900;text-underline-offset:5px}
 .ej-mixtape-copy small{font-size:10px;letter-spacing:.07em;color:#56514f;margin-top:35px}
-.ej-field-art{width:min(460px,100%);margin:36px 0 0;transform:rotate(2deg);box-shadow:10px 10px 0 #ff5000}
-.ej-field-art img{display:block;width:100%;height:auto}
-.ej-field-art figcaption{font-size:10px;background:#101b31;color:#fff;padding:9px;letter-spacing:.06em}
 .ej-discovery-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:13px 0 5px;padding:14px 0;border-top:1px solid #111}
 .ej-discovery-feedback span{font-weight:900;font-size:15px}
 .ej-discovery-feedback button{border:0;background:#ff5000;color:#111;font:900 13px Arial,sans-serif;padding:12px 17px;min-height:44px;cursor:pointer}
@@ -515,7 +512,7 @@ footer small{width:100%;opacity:.7}
 .ej-route:nth-child(3n){border-left:6px solid #f7b09c}
 .ej-route:has(a:focus-visible){outline:3px solid #ff5000;outline-offset:3px}
 @media(max-width:850px){.ej-feature-links{grid-template-columns:repeat(12,minmax(0,1fr))}.ej-feature-links a:nth-child(n){grid-column:span 6;transform:none}.ej-mixtape{margin:0 5% 60px;grid-template-columns:45% 1fr}.ej-mixtape-copy h2{font-size:clamp(51px,8vw,86px)}}
-@media(max-width:600px){.ej-feature-index{padding:20px 5% 30px}.ej-feature-links{gap:8px}.ej-feature-links a:nth-child(n){grid-column:span 6;min-height:153px;padding:15px 12px}.ej-feature-links strong{font-size:19px}.ej-feature-links small{font-size:10px}.ej-mixtape{display:block;margin:10px 5% 65px}.ej-mixtape-art{margin:0 13% 0 5%;transform:translateY(-15px) rotate(-2deg);height:250px;box-shadow:8px 8px 0 #101b31}.ej-mixtape-copy{padding:23px 7% 37px}.ej-mixtape-copy h2{font-size:72px}.ej-mixtape-copy small{margin-top:13px}.ej-field-art{display:none}.ej-discovery-feedback{flex-direction:column;align-items:stretch}.ej-discovery-feedback button{width:100%}.ej-route{border-left-width:4px!important}}
+@media(max-width:600px){.ej-feature-index{padding:20px 5% 30px}.ej-feature-links{gap:8px}.ej-feature-links a:nth-child(n){grid-column:span 6;min-height:153px;padding:15px 12px}.ej-feature-links strong{font-size:19px}.ej-feature-links small{font-size:10px}.ej-mixtape{display:block;margin:10px 5% 65px}.ej-mixtape-art{margin:0 13% 0 5%;transform:translateY(-15px) rotate(-2deg);height:250px;box-shadow:8px 8px 0 #101b31}.ej-mixtape-copy{padding:23px 7% 37px}.ej-mixtape-copy h2{font-size:72px}.ej-mixtape-copy small{margin-top:13px}.ej-discovery-feedback{flex-direction:column;align-items:stretch}.ej-discovery-feedback button{width:100%}.ej-route{border-left-width:4px!important}}
 @media(prefers-reduced-motion:reduce){.ej-feature-links a{transition:none}.ej-feature-links a:hover{transform:none!important}}
 /* Keep filters and route cards in ONE second grid column; do not auto-place each child. */
 .ej-field-notes{grid-template-columns:minmax(0,39%) minmax(0,58%);gap:3%;align-items:start}
@@ -544,7 +541,9 @@ footer small{width:100%;opacity:.7}
 .ej-stat{display:inline-block;font-style:normal;font-size:9.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid #111;margin-right:4px;color:#111;background:#fff}
 .ej-stat-official{background:#ff5000;border-color:#ff5000}.ej-stat-conflict{border-style:dashed;color:#b23b00}.ej-ess-varies{display:block;font-weight:700;color:#b23b00;margin-bottom:2px}.ej-route-pin{display:block;font-size:11px;color:#555;margin-top:2px}.ej-visitor-legend{line-height:2}
 .ej-route-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 22px;max-width:980px}.ej-route-notes h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#df5200;margin:0 0 8px}.ej-route-notes ul{margin:0;padding-left:16px;font-size:12.5px;line-height:1.55;color:#222}.ej-route-notes li{margin-bottom:6px}.ej-route-notes a{color:#111;font-weight:800;border-bottom:1px solid #ff5000;text-decoration:none;font-size:11px;white-space:nowrap}
-.ej-visitor-legend{font-size:11px;color:#444;margin:10px 0 0;line-height:2.1}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
+.ej-visitor-legend{list-style:none;font-size:11px;color:#444;margin:12px 0 0;padding:0;display:grid;gap:8px;line-height:1.5}
+.ej-visitor-legend li{display:grid;grid-template-columns:minmax(0,232px) minmax(0,1fr);gap:12px;align-items:center}
+.ej-visitor-legend .ej-stat{margin-right:0;justify-self:start}.ej-visitor-shortcuts button small{display:inline;font-weight:600;color:#666;font-size:10px;margin:0 6px 0 4px}
 @media(max-width:700px){.ej-route-brief,.ej-route-check,.ej-route-notes{grid-template-columns:1fr}.ej-ess-row,.ej-essentials dl>div.ej-ess-row{grid-template-columns:1fr}.ej-route-check dd{white-space:normal;text-align:right}.ej-chips,.ej-stop-details,.ej-route-leg,.ej-route-en{margin-left:0;padding-left:0}}
 
 /* 2026-10-27 traveller-first route cards, essentials entry, responsive fixes */
@@ -654,9 +653,9 @@ body{background:var(--td-paper);color:var(--td-ink)}
 .td-story{position:relative;min-height:820px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(20px,5vw,88px);padding:20px 0 125px;align-items:start}
 .td-story-photo{height:620px;position:relative;background:var(--td-sand);overflow:hidden}
 .td-story-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 56%;filter:saturate(.88)}
-.td-story-num{position:absolute;bottom:-5px;left:-2px;color:#fff;font-size:clamp(80px,10vw,178px);line-height:.78;mix-blend-mode:screen;pointer-events:none}
-.td-img-caption{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:10px;color:var(--td-muted);line-height:1.5}
-.td-story-copy{padding-top:80px;max-width:540px}
+.td-story-num{position:absolute;top:10px;left:14px;color:#fff;font-size:clamp(72px,8vw,132px);line-height:.78;mix-blend-mode:screen;pointer-events:none}
+.td-img-caption{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:0 0 10px;color:var(--td-muted);line-height:1.5}
+.td-story-copy{grid-column:2;grid-row:1/3;align-self:center;max-width:540px}
 .td-story-copy h3{font-size:clamp(62px,8.6vw,139px);margin:20px 0 0;line-height:.84;text-transform:uppercase;letter-spacing:-.075em}
 .td-story-copy h3 em{font-style:normal;color:var(--td-acid)}
 .td-story-copy p{font-size:21px;line-height:1.42;max-width:445px;letter-spacing:-.025em;margin-top:26px}
@@ -709,6 +708,18 @@ body{background:var(--td-paper);color:var(--td-ink)}
 main{background:var(--td-paper)}
 .city-name{text-transform:uppercase}
 .place-card{background:transparent;border-bottom:1px solid var(--td-line)}
+/* Maps + Instagram, side by side, 44px targets so they stay easy to hit on a phone */
+.place-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:stretch}
+.place-links .place-map,.place-ig{margin-top:0;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:9px 15px;border:1.5px solid var(--td-ink);border-radius:40px;font-size:12px;font-weight:850;letter-spacing:.02em;text-transform:none;color:var(--td-ink);text-decoration:none;background:transparent;line-height:1.2}
+.place-links .place-map:hover,.place-links .place-map:focus-visible{background:var(--td-ink);color:var(--td-paper);border-color:var(--td-ink)}
+.place-links .place-map svg{width:13px;height:13px}
+.place-ig svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9}
+.place-ig svg .ig-dot{fill:currentColor;stroke:none}
+.place-ig small{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--td-muted);margin-left:2px}
+.place-ig:hover,.place-ig:focus-visible{background:var(--td-acid);border-color:var(--td-acid);color:#fff}
+.place-ig:hover small,.place-ig:focus-visible small{color:#fff}
+@media(max-width:700px){.place-links{gap:7px}.place-links .place-map,.place-ig{padding:9px 13px;font-size:11px}.place-ig small{display:none}}
+@media(max-width:360px){.place-links{flex-direction:column;align-items:stretch}.place-links .place-map,.place-ig{justify-content:center}}
 .chip{border-color:var(--td-line)}
 .ej-intro{background:var(--td-paper)}
 .ej-walks{background:var(--td-paper)}
@@ -743,7 +754,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
  .td-intro{padding:100px 0 95px}
  .td-story{min-height:auto}
  .td-story-photo{height:490px}
- .td-story-copy{padding-top:34px}
+ .td-story-copy{padding-top:0}
  .td-spread{padding:80px 0}
  .td-vert{right:-20px}
  .td-sticker{right:2px}
@@ -774,10 +785,10 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
  .td-intro{display:block;padding:75px 0 55px}
  .td-intro h2{font-size:clamp(41px,10vw,72px);margin-top:20px}
  .td-intro aside{margin:20px 0 0}
- .td-story{display:block;padding-bottom:85px}
+ .td-story{display:flex;flex-direction:column;padding-bottom:85px}
  .td-story-photo{height:460px}
- .td-story-num{font-size:23vw;bottom:-1px}
- .td-story-copy{padding-top:30px}
+ .td-story-num{font-size:19vw;top:8px}
+ .td-story-copy{order:-1;padding-top:0;margin:0 0 26px}
  .td-story-copy h3{font-size:clamp(69px,15vw,104px)}
  .td-story-copy p{font-size:18px}
  .td-vert{display:none}
@@ -815,6 +826,31 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
  .td-story-copy h3{font-size:17vw}
 }
 @media(prefers-reduced-motion:reduce){.td-marquee .td-items{animation:none}}
+
+/* THE IMAGINED CITY - the original illustrations back at full page scale */
+.td-dream{background:var(--td-sand);border-top:2px solid var(--td-ink);border-bottom:2px solid var(--td-ink);padding:96px 0 104px;margin:0 0 110px;overflow:hidden}
+.td-dream-in{width:var(--td-w);margin:auto}
+.td-dream-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);column-gap:clamp(20px,3vw,56px);align-items:end;margin:0;padding:0 0 clamp(16px,2vw,26px);border-bottom:2px solid var(--td-ink)}
+.td-dream-head .td-no{grid-column:1;grid-row:1}
+.td-dream-head h2{grid-column:1;grid-row:2}
+.td-dream-head>p{grid-column:2;grid-row:2;margin:0 0 10px}
+.td-dream-head h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(56px,7.2vw,122px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase;margin:16px 0 0}
+.td-dream-head h2 em{font-style:normal;color:var(--td-acid)}
+.td-dream-head>p{font-size:17px;line-height:1.5;max-width:520px;letter-spacing:-.02em}
+.td-dream-art{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(20px,3vw,56px);align-items:start;padding-top:clamp(40px,5vw,68px)}
+.td-dream-fig{margin:0;position:relative;background:#fff;border:2px solid var(--td-ink);box-shadow:12px 12px 0 -2px var(--td-sand),12px 12px 0 0 var(--td-acid)}
+.td-dream-fig img{display:block;width:100%;height:auto}
+.td-dream-fig:not(.td-dream-fig-b){margin-top:calc(-1 * clamp(18px,2.4vw,34px))}
+  .td-dream-fig-b{margin-top:clamp(40px,9vw,150px);box-shadow:-12px 12px 0 -2px var(--td-sand),-12px 12px 0 0 var(--td-ink)}
+.td-dream-tag{position:absolute;top:-14px;left:-10px;background:var(--td-acid);color:#fff;font-size:10px;font-weight:900;letter-spacing:.1em;padding:7px 11px;transform:rotate(-2deg)}
+.td-dream-fig-b .td-dream-tag{left:auto;right:-10px;background:var(--td-ink);transform:rotate(2deg)}
+/* the drawn counterpart beside the Jimbocho photograph */
+.td-story-col{grid-column:1;grid-row:1}
+.td-story-draw{grid-column:1;grid-row:2;justify-self:end;width:min(76%,432px);margin:clamp(-230px,-16vw,-120px) 0 0;position:relative;z-index:2;background:#fff;border:2px solid var(--td-ink);box-shadow:-12px 12px 0 -2px var(--td-paper),-12px 12px 0 0 var(--td-ink)}
+.td-story-draw img{display:block;width:100%;height:auto}
+/* an illustration in the practical pages, without crowding the information */
+@media(max-width:860px){.td-dream-head{display:block}.td-dream-head>p{margin:24px 0 0}.td-dream-art{grid-template-columns:1fr;gap:30px;padding-top:34px}.td-dream-fig:not(.td-dream-fig-b){margin-top:0}.td-dream-fig-b{margin-top:0}}
+@media(max-width:700px){.ej-visitor-legend li{grid-template-columns:1fr;gap:3px}.td-story-draw{grid-column:1;grid-row:auto;width:100%;justify-self:stretch;margin:30px 0 0;box-shadow:none}.td-dream{padding:62px 0 66px;margin-bottom:72px}.td-dream-fig{box-shadow:9px 9px 0 -2px var(--td-sand),9px 9px 0 0 var(--td-acid)}.td-dream-fig-b{box-shadow:-9px 9px 0 -2px var(--td-sand),-9px 9px 0 0 var(--td-ink)}.td-story-draw{max-width:none}}
 </style>
 </head>
 <body>
@@ -829,7 +865,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     <div class="td-hero-media">
       <img src="assets/photos/shibuya-1800.jpg" srcset="assets/photos/shibuya-900.jpg 900w, assets/photos/shibuya-1800.jpg 1800w" sizes="(max-width:700px) 100vw, 62vw" width="1800" height="766" alt="A Shibuya backstreet in Tokyo at night, lit by shop signs, photographed in December 2017" fetchpriority="high" decoding="async">
       <p class="td-eyebrow td-hero-coord">35° 39′ N / 139° 41′ E</p>
-      <span class="td-pic-tag">TOKYO, SHIBUYA / STREET PHOTOGRAPH, 2017<br>NEIGHBOURHOOD ATMOSPHERE — NOT A LISTED VENUE</span>
+      <span class="td-pic-tag">TOKYO, SHIBUYA / STREET PHOTOGRAPH, 2017</span>
     </div>
     <div class="td-hero-content">
       <p class="td-eyebrow td-hero-topnote">AN INDEPENDENT ADDRESS BOOK / NO. 001</p>
@@ -852,12 +888,15 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   
 <section class="td-wrap td-story" aria-label="Jimbocho place study">
     <div class="td-story-col">
+      <p class="td-img-caption">TOKYO / JIMBOCHO · STREET PHOTOGRAPH, 2025</p>
       <div class="td-story-photo">
         <img src="assets/photos/jimbocho-1400.jpg" srcset="assets/photos/jimbocho-700.jpg 700w, assets/photos/jimbocho-1400.jpg 1400w" sizes="(max-width:700px) 100vw, 55vw" width="1400" height="1217" loading="lazy" decoding="async" alt="Secondhand bookshop fronts on the book-district street in Jimbocho, Tokyo, photographed in April 2025">
         <div class="td-story-num td-cond" aria-hidden="true">01.</div>
       </div>
-      <p class="td-img-caption">TOKYO / JIMBOCHO · STREET PHOTOGRAPH, 2025 — A NEIGHBOURHOOD, NOT A VENUE PROFILE</p>
     </div>
+    <figure class="td-story-draw">
+                <img src="assets/editorial/bookshop-day.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo book-and-coffee street in daylight, with a bicycle at the kerb and a reader in the window. A drawing, not a photograph of a real shop.">
+              </figure>
     <div class="td-story-copy">
       <p class="td-eyebrow">Tokyo's book district · Place study 001</p>
       <h3 class="td-cond">LOST<br>IN THE<br><em>MARGINS.</em></h3>
@@ -874,9 +913,24 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <button class="ej-trail" type="button" data-explore-type="Shop"><span class="ej-trail-index">03</span><span>Find something different.</span><span aria-hidden="true">↗</span></button>
     </div>
   </section>
-  <section class="td-aside-art" aria-label="About the artwork">
-    <img src="assets/editorial/the-detour-issue.svg" width="880" height="1040" loading="lazy" decoding="async" alt="Original Encounter Japan illustration of an imagined record shop, used as a small supporting motif">
-    <p>The illustrated city-pop scenes from earlier issues stay on as small supporting motifs. From this issue on, the photographs carry the pages: real streets, named photographers, licences and dates in the credits below. An illustration is never shown as a photograph of a listed place.</p>
+  <section class="td-dream" id="imagined" aria-labelledby="td-dream-title">
+    <div class="td-dream-in">
+      <div class="td-dream-head">
+        <span class="td-no">[02 / ILLUSTRATED]</span>
+        <h2 id="td-dream-title" class="td-cond">THE CITY<br>WE <em>DRAW.</em></h2>
+        <p>Between the photographs, the issue keeps its own invented Japan.<span lang="ja" class="td-jp">写真が「いまの日本」を、絵が「私たちの想像する日本」を受けもちます。</span></p>
+      </div>
+      <div class="td-dream-art">
+        <figure class="td-dream-fig">
+          <span class="td-dream-tag" aria-hidden="true">NO. 01</span>
+          <img src="assets/editorial/tokyo-night.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo street on a rainy night, neon reflected on wet asphalt outside a record bar. A drawing, not a photograph of a real place.">
+                  </figure>
+        <figure class="td-dream-fig td-dream-fig-b">
+          <span class="td-dream-tag" aria-hidden="true">NO. 02</span>
+          <img src="assets/editorial/rooftop-lounge.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined rooftop lounge at dusk, a turntable on the bar and the bay skyline beyond. A drawing, not a photograph of a real place.">
+                  </figure>
+      </div>
+    </div>
   </section>
   <section class="td-spread" aria-labelledby="td-spread-title">
     <div class="td-wrap">
@@ -904,7 +958,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each route brings together real addresses from our guide. Every stop is matched to its map pin, distances are estimated on the map, and hours or access are cited where we found them. No route has been walked on the ground for the guide yet.</p><a href="#browse">Search all places ↗</a><figure class="ej-field-art"><img src="assets/editorial/after-hours-signal.svg" width="1200" height="820" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an abstract night skyline with a vinyl disc; not a real location"><figcaption>Imagined city / editorial illustration</figcaption></figure></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each route brings together real addresses from our guide. Every stop is matched to its map pin, distances are estimated on the map, and hours or access are cited where we found them. No route has been walked on the ground for the guide yet.</p><a href="#browse">Search all places ↗</a></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
 <button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
 <button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
 <button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
@@ -917,7 +971,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
  <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
- <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> the venue or an authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> with its date · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> both shown · <b class="ej-stat">Not yet confirmed</b> nothing reliable found</p><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><details class="ej-visitor-method"><summary>How this information was gathered <span aria-hidden="true">＋</span></summary><p id="ej-visitor-method-text"></p></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
+ <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><ul class="ej-visitor-legend"><li><span class="ej-stat ej-stat-official">Official source</span><span>the venue or an authority</span></li><li><span class="ej-stat ej-stat-secondary">Listed by directory or media</span><span>with its date</span></li><li><span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span><span>both shown</span></li><li><b class="ej-stat">Not yet confirmed</b><span>nothing reliable found</span></li></ul><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><details class="ej-visitor-method"><summary>How this information was gathered <span aria-hidden="true">＋</span></summary><p id="ej-visitor-method-text"></p></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
  <div><dt>Opening hours & language</dt><dd>Can change. Confirm directly before visiting; never assumed from venue type.</dd></div></dl>
@@ -929,7 +983,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   </div>
   <div class="ej-browse" id="browse">
     <div class="td-browse-head"><h2 class="td-cond">FIND<br>YOUR<br><span class="td-acid">OWN.</span></h2><p class="td-subhead">Follow the feeling, not the ranking. The whole address book is here: <b>526 places</b> across 21 regions, each with its Google Maps pin and its source-checked visitor essentials.</p></div>
-    <div class="td-discovery-head"><p class="td-eyebrow td-acid">[02 / DISCOVER]</p><h3>Where shall we begin?</h3><p class="td-discovery-note">This is the whole address book, not a demo: every region, every neighbourhood, every listing, with its sources and its Google Maps pin.</p></div>
+    <div class="td-discovery-head"><p class="td-eyebrow td-acid">[02 / DISCOVER]</p><h3>Where shall we begin?</h3><p class="td-discovery-note">This is the whole address book: every region, every neighbourhood, every listing, with its sources and its Google Maps pin.</p></div>
     <label class="ej-search-label" for="ej-search">Find a name, street or kind of place</label>
     <input class="ej-search" id="ej-search" type="search" autocomplete="off" placeholder="Try Ueno, coffee or a Japanese name…" aria-label="Search places in the selected region">
     
@@ -982,6 +1036,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   </div>
   <div class="td-wrap"><small>All locations link directly to Google Maps · Walking routes are DRAFT · MAP-CHECKED · NOT FIELD-WALKED · Visitor essentials show their source and the date they were checked.</small></div>
 </footer>
+<script src="data/instagram-links.js"></script>
 <script src="data/visitor-essentials.js"></script>
 <script src="data/route-verification.js"></script>
 <script>
@@ -1820,6 +1875,24 @@ function ejPersist(){
 }
 
 function ejCityForPlace(p){return Object.keys(DATA).find(c=>DATA[c].places.includes(p))||"Japan";}
+// Official Instagram for a listing, or null. Keyed by region + the Google Maps
+// place id already in the listing's URL, so DATA itself is never touched.
+function ejInstagram(p){
+ if(typeof EJ_INSTAGRAM!=='object'||!EJ_INSTAGRAM)return null;
+ // a few listings link a Maps search rather than a pin, so they key on the name
+ const id=(String(p.url).match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/)||[])[1];
+ const hit=EJ_INSTAGRAM[ejCityForPlace(p)+'|'+(id||('name:'+p.name))];
+ return hit&&hit.u?hit:null;
+}
+function ejInstagramLink(p){
+ const ig=ejInstagram(p);
+ if(!ig)return '';
+ const label=ig.t==='brand'?'Brand account':'Official';
+ return '<a class="place-ig" href="https://www.instagram.com/'+ejHTML(ig.u)+'/" target="_blank" rel="noopener noreferrer"'
+  +' aria-label="Instagram of this place, @'+ejHTML(ig.u)+', opens in a new tab">'
+  +'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.35" class="ig-dot"/></svg>'
+  +'Instagram <span aria-hidden="true">↗</span><small>'+label+'</small></a>';
+}
 function card(p) {
   return `<div class="place-card">
     <div class="place-name">${p.name}</div>
@@ -1830,10 +1903,11 @@ function card(p) {
       <span class="tag-area">📍 ${p.area}</span>
       <span class="tag-cat">· ${p.cat}</span>
     </div>
-    <a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>
+    <div class="place-links"><a class="place-map" href="${p.url}" target="_blank" rel="noopener noreferrer">${mapIcon} Open in Maps</a>${ejInstagramLink(p)}</div>
     <details class="ej-essentials"><summary>Visitor essentials <span aria-hidden="true">＋</span></summary><dl>
     <div><dt>Location</dt><dd>${ejHTML(p.area)} · ${ejHTML(ejCityForPlace(p))}</dd></div>
     <div><dt>Directions</dt><dd><a href="${ejHTML(p.url)}" target="_blank" rel="noopener noreferrer">Check Google Maps ↗</a></dd></div>
+    ${ejInstagram(p) ? `<div><dt>Instagram</dt><dd><a href="https://www.instagram.com/${ejHTML(ejInstagram(p).u)}/" target="_blank" rel="noopener noreferrer">@${ejHTML(ejInstagram(p).u)} ↗</a> · ${ejInstagram(p).t === 'brand' ? 'brand or operator account' : "this venue's own account"} · linked from its official website</dd></div>` : ''}
     ${ejEssentialsBlock(p)}
     ${EJ_NOTES[p.name] ? `<div><dt>Official information</dt><dd><a href="${ejHTML(EJ_NOTES[p.name].source)}" target="_blank" rel="noopener noreferrer">View source ↗</a></dd></div>` : ''}
     </dl></details>
