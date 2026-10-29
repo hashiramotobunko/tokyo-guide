@@ -73,6 +73,33 @@ def apply_stage3(row: dict) -> dict:
     return row
 
 
+# Stage 4 - the per-venue second pass over the rows left AMBIGUOUS. Same rule as
+# stage 3: a handle is recorded only when the account's own profile places the
+# venue where this listing places it, or when the brand's own account says which
+# of its accounts covers it.
+STAGE4 = {r["id"]: r for r in json.loads((HERE / "stage4_found.json").read_text(encoding="utf-8"))} \
+    if (HERE / "stage4_found.json").exists() else {}
+
+
+def apply_stage4(row: dict) -> dict:
+    hit = STAGE4.get(row["id"])
+    if not hit or row["status"] != "AMBIGUOUS":
+        return row
+    if hit["v"] == "V":
+        h = hit["h"]
+        row.update(
+            instagram_url=f"https://www.instagram.com/{h}/", instagram_username=h,
+            account_type=hit.get("t") or "store", basis="profile",
+            evidence=hit["note"], evidence_url=f"https://www.instagram.com/{h}/",
+            status="VERIFIED")
+    else:
+        # keep the row ambiguous, but record what the second pass found
+        row["evidence"] = f"{row['evidence']} {hit['note']}"
+        if hit.get("h"):
+            row["evidence_url"] = f"https://www.instagram.com/{hit['h']}/"
+    return row
+
+
 def handle_set(t: dict) -> list[str]:
     hs = []
     r = STAGE1.get(t["id"])
@@ -197,7 +224,7 @@ def build_row(t: dict) -> dict:
 
 
 def main() -> int:
-    rows = [apply_stage3(build_row(t)) for t in TARGETS]
+    rows = [apply_stage4(apply_stage3(build_row(t))) for t in TARGETS]
     assert len(rows) == 526, len(rows)
 
     # A handle claimed by more than one listing cannot be a branch-specific

@@ -109,7 +109,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account named イト I.To describes a French-based a la carte restaurant, but its profile text does not state Higashi-Nakano, so it could not be tied to this listing.",
+  "evidence": "An account named イト I.To describes a French-based a la carte restaurant, but its profile text does not state Higashi-Nakano, so it could not be tied to this listing. Second pass: the restaurant's own account was found and its profile describes its French-based a la carte cooking and private-hire minimum, but it states no address or area, so it could not be placed in Higashi-Nakano.",
   "evidence_url": "https://www.instagram.com/i.to_restaurant/",
   "status": "AMBIGUOUS"
  },
@@ -200,13 +200,13 @@
   "cat": "Diner / Teishoku",
   "maps_url": "https://www.google.com/maps/place/%E9%AF%96%E9%BB%92%E7%85%AE%E5%B0%82%E9%96%80%E5%BA%97+%E9%A3%9F%E5%A0%82%E6%96%B0+%E7%A5%9E%E4%BF%9D%E7%94%BA/data=!4m2!3m1!1s0x60188ddcc9fc2b7b:0x47e8e57c6ca38c8a",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: jimbocho_shokudou.arata",
-  "evidence_url": "https://hamoni.jp/en/shop/xE95RKbN1ajXXqTyT2r8",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/jimbocho_shokudou.arata/",
+  "instagram_username": "jimbocho_shokudou.arata",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the shop's address as Kanda-Sarugakucho 1-2-4, Chiyoda-ku - the block beside Jimbocho where this listing places it - names its mackerel speciality and gives its lunch-only hours and weekend closing.",
+  "evidence_url": "https://www.instagram.com/jimbocho_shokudou.arata/",
+  "status": "VERIFIED"
  },
  {
   "id": "L012",
@@ -375,7 +375,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account of this brand is the Ueno/Okachimachi branch's, whose profile gives the Ueno address; no account for the Harajuku branch was found, and the Ueno branch's account is not this branch's.",
+  "evidence": "The only account of this brand is the Ueno/Okachimachi branch's, whose profile gives the Ueno address; no account for the Harajuku branch was found, and the Ueno branch's account is not this branch's. Second pass: the brand keeps one account, whose profile gives only the Ueno shop's address and hours; no account for the Harajuku branch exists, so none could be tied to this listing.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -390,13 +390,13 @@
   "cat": "Tonkatsu",
   "maps_url": "https://www.google.com/maps/place/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4+%E3%81%82%E3%81%92%E7%A6%8F%EF%BC%88Tonkatsu+Agefuku%EF%BC%89/data=!4m2!3m1!1s0x60188ae4a2157c1f:0x53108000e616ac89",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: artsupply1971",
-  "evidence_url": "https://san-tatsu.jp/articles/244674/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/agefuku29/",
+  "instagram_username": "agefuku29",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name identifies the Gotanda shop where this listing places it, and its profile describes its sous-vide tonkatsu and the Yazawa Meat group that runs it.",
+  "evidence_url": "https://www.instagram.com/agefuku29/",
+  "status": "VERIFIED"
  },
  {
   "id": "L022",
@@ -470,7 +470,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: azabuen0818",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: azabuen0818 Second pass: no account was found under this restaurant's name; the nearest match is a differently named Azabu-Juban restaurant whose only account belongs to its manager.",
   "evidence_url": "https://www.makuake.com/project/azabu-en/",
   "status": "AMBIGUOUS"
  },
@@ -808,13 +808,13 @@
   "cat": "Izakaya",
   "maps_url": "https://www.google.com/maps/place/%E3%81%84%E3%81%96%E3%81%8B%E3%82%84+%E3%81%BB%E3%81%97%E3%81%90%E3%81%BF/data=!4m2!3m1!1s0x6018f49f4fcad591:0x469d70df557dfec7",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "The account found is the group's annex shop (shinkan, its third shop) in Sangenjaya, not identifiably this listing's shop; no account for this shop itself was found.",
-  "evidence_url": "https://www.instagram.com/izakaya_hoshigumi_shinkan/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/izakaya_hoshigumi/",
+  "instagram_username": "izakaya_hoshigumi",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile places the izakaya one minute from Sangenjaya station with 45 seats and a 20-person tatami room upstairs, and gives its weekday and weekend hours; the third branch keeps a separate account.",
+  "evidence_url": "https://www.instagram.com/izakaya_hoshigumi/",
+  "status": "VERIFIED"
  },
  {
   "id": "L044",
@@ -1169,13 +1169,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/BAKER+Aoyagi+%E3%83%99%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%A2%E3%82%AA%E3%83%A4%E3%82%AE/data=!4m2!3m1!1s0x6018f347559e5173:0x9783714320a7d338",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: baker_aoyagi, katayamachikako",
-  "evidence_url": "https://www.enjoytokyo.jp/article/201854/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/baker_aoyagi/",
+  "instagram_username": "baker_aoyagi",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the bakery's own account; its profile lists Higashi-Kitazawa and Yoyogi-Uehara as its locations, describes its high-hydration sourdough baking and gives its Wednesday-to-Saturday hours.",
+  "evidence_url": "https://www.instagram.com/baker_aoyagi/",
+  "status": "VERIFIED"
  },
  {
   "id": "L063",
@@ -1188,13 +1188,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/%C3%A9t%C3%A9co+bread/data=!4m2!3m1!1s0x6018f3afaaab9c1f:0xebc09730bba5ac06",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: eteco_bread",
-  "evidence_url": "https://gendai.media/articles/-/85279",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/eteco_bread/",
+  "instagram_username": "eteco_bread",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the bakery's address as Daizawa 2-42-7, Setagaya-ku, in the Shimokitazawa area where this listing places it, with its closing days and sell-out closing.",
+  "evidence_url": "https://www.instagram.com/eteco_bread/",
+  "status": "VERIFIED"
  },
  {
   "id": "L064",
@@ -1211,7 +1211,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: senrigaaan",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: senrigaaan Second pass: no account was found for this shop in Yoyogi-Uehara; the handle printed for it on a directory page belongs to a shop of the same name in Shiki, Saitama, so it was not recorded.",
   "evidence_url": "https://tabelog.com/tokyo/A1318/A131811/13099150/",
   "status": "AMBIGUOUS"
  },
@@ -1321,13 +1321,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/%E3%83%AB%E3%83%BB%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%AB/data=!4m2!3m1!1s0x6018f350700ffdfb:0xe018dd0b5eface13",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bondicoffeesandwiches, le_ressort",
-  "evidence_url": "https://www.timeout.jp/tokyo/ja/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0/%E3%83%AB%E3%83%BB%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%AB",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/le_ressort/",
+  "instagram_username": "le_ressort",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile places the bakery one minute from Komaba-Todaimae station on the Inokashira line and gives its hours of 9:00 to 17:00, matching this listing.",
+  "evidence_url": "https://www.instagram.com/le_ressort/",
+  "status": "VERIFIED"
  },
  {
   "id": "L071",
@@ -1363,8 +1363,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bakumatsucurry, ippukuandmatcha_uehara, sakaba_debayashi",
-  "evidence_url": "https://hamoni.jp/area/tokyo/shibuya/yoyogiuehara/shops",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bakumatsucurry, ippukuandmatcha_uehara, sakaba_debayashi Second pass: the bakery's own account was found and its profile gives the opening hours and closing days, but it states no address or area, so it could not be placed in Nishihara.",
+  "evidence_url": "https://www.instagram.com/katanebakery/",
   "status": "AMBIGUOUS"
  },
  {
@@ -1435,13 +1435,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/%E3%83%86%E3%82%B3%E3%83%8A+%E3%83%99%E3%83%BC%E3%82%B0%E3%83%AB+%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9/data=!4m2!3m1!1s0x6018f34c9cca8119:0x6ae961c52c1ada22",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: embed.js, tokyo_bagel",
-  "evidence_url": "https://macaro-ni.jp/26492?page=2",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/tecona_bagel_works/",
+  "instagram_username": "tecona_bagel_works",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name identifies the Yoyogi-Hachiman main shop and its profile gives its hours, its takeout-only service and its trading since 2009; this guide records the same shop under the adjoining neighbourhood name Tomigaya, which is where Yoyogi-Hachiman station stands. The Jiyugaoka and Kyodo shops keep separate accounts.",
+  "evidence_url": "https://www.instagram.com/tecona_bagel_works/",
+  "status": "VERIFIED"
  },
  {
   "id": "L077",
@@ -1458,8 +1458,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The only Instagram link on the page reached was rurubuplus, the publisher's own account. Seen: none",
-  "evidence_url": "",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The only Instagram link on the page reached was rurubuplus, the publisher's own account. Seen: none Second pass: an account under this shop's name was found and its profile gives the cafe and crepe hours and the whole-cake ordering, but it states no address or area, so it could not be placed in Yoyogi-Uehara.",
+  "evidence_url": "https://www.instagram.com/horn.tokyo/",
   "status": "AMBIGUOUS"
  },
  {
@@ -1477,7 +1477,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yomuno_official",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yomuno_official Second pass: no account was found under this restaurant's name in Nakameguro; the results were other steak and teppanyaki restaurants in the area.",
   "evidence_url": "https://yomuno.jp/posts/140259",
   "status": "AMBIGUOUS"
  },
@@ -1553,7 +1553,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: kinarino_official",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: kinarino_official Second pass: no account was found under this shop's name in Otowa; the handle printed for it on a directory page is the publisher's own.",
   "evidence_url": "https://kinarino.jp/cat8/28987",
   "status": "AMBIGUOUS"
  },
@@ -1591,7 +1591,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts both present themselves as this brand's Omotesando shop (amam_dacotan_omotesando and amam_dacotan_omotedando) and they give different addresses; neither could be established as the shop's own, so none is recorded.",
+  "evidence": "Two accounts both present themselves as this brand's Omotesando shop (amam_dacotan_omotesando and amam_dacotan_omotedando) and they give different addresses; neither could be established as the shop's own, so none is recorded. Second pass: two accounts present themselves as this brand's Omotesando shop under near-identical names, and both now give the same address at Kita-Aoyama 3-7-6; because nothing distinguishes which of the two is the shop's current account, neither is recorded. A third account belongs to the separate cafe and bake shop at Kita-Aoyama 3-6-23.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -1781,7 +1781,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The account found belongs to this operator's Keikeikaku branches near Kamata station, not to the main shop this listing records; no account for the main shop was found.",
+  "evidence": "The account found belongs to this operator's Keikeikaku branches near Kamata station, not to the main shop this listing records; no account for the main shop was found. Second pass: the brand keeps an account for its Keishinkaku branch, whose profile lists the Kamata branches, but no account was found for the main shop, so none could be tied to this listing.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -2047,8 +2047,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: pizzeriaciro.hgn",
-  "evidence_url": "https://macaro-ni.jp/91224?page=2",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: pizzeriaciro.hgn Second pass: the shop's own account was found and its profile gives the lunch and dinner hours, closing days and a Tokyo telephone number, but no address or area, so it could not be placed in Nakano.",
+  "evidence_url": "https://www.instagram.com/soba_yamasho/",
   "status": "AMBIGUOUS"
  },
  {
@@ -2100,13 +2100,13 @@
   "cat": "Sento",
   "maps_url": "https://www.google.com/maps/place/%E5%AF%BF%E6%B9%AF/data=!4m2!3m1!1s0x60188e9822404bfb:0x6f65f3c536670490",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: niftyonsen",
-  "evidence_url": "https://onsen.nifty.com/ueno-tokyo-onsen/onsen007554/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/kotobukiyu.ueno/",
+  "instagram_username": "kotobukiyu.ueno",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own handle names the Ueno bathhouse and its profile describes its open-air bath, bathing and sauna charges and hours of 11:00 to 25:30; the same-named bathhouse in Higashi-Yotsugi keeps a separate account.",
+  "evidence_url": "https://www.instagram.com/kotobukiyu.ueno/",
+  "status": "VERIFIED"
  },
  {
   "id": "L112",
@@ -2218,7 +2218,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The monument has no account of its own. The site links two Yasukuni Shrine accounts and neither is the statue's - left ambiguous rather than attributing the shrine's account to a monument. Candidates: yasukuni.official, yasukunijinja",
+  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The monument has no account of its own. The site links two Yasukuni Shrine accounts and neither is the statue's - left ambiguous rather than attributing the shrine's account to a monument. Candidates: yasukuni.official, yasukunijinja Second pass: the statue has no account of its own. The shrine whose grounds it stands in keeps one, but attributing the shrine's account to a monument would misrepresent it, so none is recorded.",
   "evidence_url": "https://www.yasukuni.or.jp/",
   "status": "AMBIGUOUS"
  },
@@ -2522,7 +2522,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Accounts reached are Meiji Kinenkan and the shrine's support association, neither of them the shrine's own account. Seen: meiji_kinenkan_official, meijijingu_sukeikai",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Accounts reached are Meiji Kinenkan and the shrine's support association, neither of them the shrine's own account. Seen: meiji_kinenkan_official, meijijingu_sukeikai Second pass: the shrine keeps no account of its own; the only official account in its name belongs to its wedding venue, Forest Terrace, so none is recorded for the shrine.",
   "evidence_url": "https://www.meijikinenkan.gr.jp/",
   "status": "AMBIGUOUS"
  },
@@ -2537,13 +2537,13 @@
   "cat": "Shrine",
   "maps_url": "https://www.google.com/maps/place/%EF%A8%9C%E5%9C%8B%E7%A5%9E%E7%A4%BE/data=!4m2!3m1!1s0x60188c680dae43d5:0xb5e754e6bf88ce90",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The shrine's own site links two accounts (yasukuni.official / yasukunijinja) and does not say which is current. Candidates: yasukuni.official, yasukunijinja",
-  "evidence_url": "https://www.yasukuni.or.jp/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/yasukuni.official/",
+  "instagram_username": "yasukuni.official",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: of the shrine's two accounts this one is the current official account - its profile names the shrine at Kudan in central Tokyo, gives Kudanshita, Ichigaya and Iidabashi as its nearest stations and states the number of souls enshrined since 1853, while the older account announced that its series had ended and that a new recognised account would follow.",
+  "evidence_url": "https://www.instagram.com/yasukuni.official/",
+  "status": "VERIFIED"
  },
  {
   "id": "L135",
@@ -2579,7 +2579,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Museum inside Yasukuni; its page links the shrine's two accounts, neither specific to the museum. Candidates: yasukuni.official, yasukunijinja",
+  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Museum inside Yasukuni; its page links the shrine's two accounts, neither specific to the museum. Candidates: yasukuni.official, yasukunijinja Second pass: the museum keeps no account of its own. The shrine it stands in has one, but it is the shrine's and not this museum's, so none is recorded.",
   "evidence_url": "https://www.yasukuni.or.jp/yusyukan/",
   "status": "AMBIGUOUS"
  },
@@ -2636,7 +2636,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the street were reached, not the shopping street's own. Seen: kanaya_brush_1914, takaso_demoandkitchen",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the street were reached, not the shopping street's own. Seen: kanaya_brush_1914, takaso_demoandkitchen Second pass: the shopping street keeps no account of its own; the association that runs it maintains an account for its annual tool fair, and the rest are individual member shops, so none is recorded for the street.",
   "evidence_url": "https://www.kanaya-brush.com/",
   "status": "AMBIGUOUS"
  },
@@ -2674,7 +2674,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: agora_jp, sensyuyatai",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: agora_jp, sensyuyatai Second pass: no account was found that carries this shop's name and places it anywhere; the handle printed for it on a directory page could not be confirmed on a profile.",
   "evidence_url": "https://retty.me/restaurant/100001538557/",
   "status": "AMBIGUOUS"
  },
@@ -2788,7 +2788,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only the hotel's and its sibling restaurants' accounts were reached, none of them this bar's. Seen: aoyamagrand, theriveroriental, thetokyorestaurant",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only the hotel's and its sibling restaurants' accounts were reached, none of them this bar's. Seen: aoyamagrand, theriveroriental, thetokyorestaurant Second pass: no account was found under this bar's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this bar's.",
   "evidence_url": "https://aoyamagrand.com/",
   "status": "AMBIGUOUS"
  },
@@ -2807,7 +2807,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts carry this name: one places itself in Minami-Aoyama and Nishi-Azabu, not Ginza, and the other gives no location. Neither could be tied to this listing.",
+  "evidence": "Two accounts carry this name: one places itself in Minami-Aoyama and Nishi-Azabu, not Ginza, and the other gives no location. Neither could be tied to this listing. Second pass: the account carrying this bar's name places itself in Minami-Aoyama and Nishi-Azabu, not Ginza where this listing places it, so it was not recorded.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -2845,7 +2845,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this exact name exists and describes a soba restaurant in a century-old townhouse, but its profile states no location, so it could not be tied to this listing's area.",
+  "evidence": "An account of this exact name exists and describes a soba restaurant in a century-old townhouse, but its profile states no location, so it could not be tied to this listing's area. Second pass: the restaurant's own account was found and its profile describes its hundred-year-old townhouse setting and its reservation-only course lunch, but it states no address or area, so it could not be placed in Ochiai.",
   "evidence_url": "https://www.instagram.com/sobaosame/",
   "status": "AMBIGUOUS"
  },
@@ -2902,7 +2902,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: savor_japan",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: savor_japan Second pass: no account was found under this shop's name in Koenji.",
   "evidence_url": "https://savorjapan.com/0020008536",
   "status": "AMBIGUOUS"
  },
@@ -3031,13 +3031,13 @@
   "cat": "Izakaya",
   "maps_url": "https://www.google.com/maps/place/%E8%B5%A4%E9%AC%BC/data=!4m2!3m1!1s0x6018f4992b2a2d07:0xd69b434e1331f004",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: oggi_mag",
-  "evidence_url": "https://oggi.jp/6040503",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/akaoni.sake.tokyo/",
+  "instagram_username": "akaoni.sake.tokyo",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the izakaya's address as Sangenjaya 2-15-3, Setagaya-ku with its weekday and weekend opening times and describes its sake-led menu, matching this listing; the Ikebukuro shop of the same name keeps a separate account.",
+  "evidence_url": "https://www.instagram.com/akaoni.sake.tokyo/",
+  "status": "VERIFIED"
  },
  {
   "id": "L161",
@@ -3168,7 +3168,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: 1973posy, tokyoweekender",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: 1973posy, tokyoweekender Second pass: no account was found for this venue in Setagaya; the handle printed for it on a media page could not be confirmed on any profile naming the venue.",
   "evidence_url": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/",
   "status": "AMBIGUOUS"
  },
@@ -3225,7 +3225,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists but states no location, and its handle points to a different district, so it could not be tied to this listing.",
+  "evidence": "An account of this name exists but states no location, and its handle points to a different district, so it could not be tied to this listing. Second pass: the only account carrying this name belongs to a yakitori shop in Kabukicho and gives no address, so it could not be tied to this listing in Yotsuya.",
   "evidence_url": "https://www.instagram.com/michishirube_kabuki/",
   "status": "AMBIGUOUS"
  },
@@ -3278,13 +3278,13 @@
   "cat": "Sweets",
   "maps_url": "https://www.google.com/maps/place/DOLCE+TACUBO+%E4%BB%A3%E5%AE%98%E5%B1%B1/data=!4m2!3m1!1s0x60188b589a78a3bd:0x2c8434769002deea",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: dolce_tacubo",
-  "evidence_url": "https://tabelog.com/tokyo/A1303/A130303/13266450/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/dolce_tacubo/",
+  "instagram_username": "dolce_tacubo",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the shop's address as Ebisu-Nishi 2-15-9, ground floor of Cerazza Daikanyama, names it as the pastry shop of the Daikanyama restaurant Tacubo and gives its hours of 11:00 until sold out.",
+  "evidence_url": "https://www.instagram.com/dolce_tacubo/",
+  "status": "VERIFIED"
  },
  {
   "id": "L174",
@@ -3681,7 +3681,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: inshokucom_journal",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: inshokucom_journal Second pass: no account was found under this bar's name in Suidobashi.",
   "evidence_url": "https://www.inshokuten.com/foodist/article/7089/lead/",
   "status": "AMBIGUOUS"
  },
@@ -3719,7 +3719,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account exists for a shop of nearly this name written with a different kana, but it states no location, so it could not be tied to this listing.",
+  "evidence": "An account exists for a shop of nearly this name written with a different kana, but it states no location, so it could not be tied to this listing. Second pass: no account was found for this shop in Edogawabashi; the name matches are a ramen shop in Fukaya, Saitama and a shop whose name is spelled differently.",
   "evidence_url": "https://www.instagram.com/piy0469/",
   "status": "AMBIGUOUS"
  },
@@ -3734,13 +3734,13 @@
   "cat": "Soba",
   "maps_url": "https://www.google.com/maps/place/%E7%A5%9E%E7%94%B0%E3%81%BE%E3%81%A4%E3%82%84+%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x60188c034b047343:0xa95734bae35ddf5f",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: chiyoda_city_pr",
-  "evidence_url": "https://visit-chiyoda.tokyo/app/spot/detail/359",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/kanda_matsuya/",
+  "instagram_username": "kanda_matsuya",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the restaurant's address as Kanda-Sudacho 1-13, Chiyoda-ku with its telephone number, its weekday and Saturday hours and its Sunday and Monday closing, matching this listing.",
+  "evidence_url": "https://www.instagram.com/kanda_matsuya/",
+  "status": "VERIFIED"
  },
  {
   "id": "L198",
@@ -3833,7 +3833,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: sobadokoro_kameya",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: sobadokoro_kameya Second pass: no account was found for this branch; the handle printed for it on a directory page could not be confirmed on a profile naming the shop or its Kanda branch.",
   "evidence_url": "https://retty.me/restaurant/100000053622/",
   "status": "AMBIGUOUS"
  },
@@ -4076,13 +4076,13 @@
   "cat": "Museum",
   "maps_url": "https://www.google.com/maps/place/%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8/data=!4m2!3m1!1s0x60188e8314d77d11:0x232fd618bd4977dd",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The museum's site links only tnm_ir_en / tnm_ir_kr (language-specific information accounts); the main museum account is not linked from it. Candidates: tnm_ir_en, tnm_ir_kr",
-  "evidence_url": "https://www.tnm.jp/modules/r_free_page/index.php?id=113&lang=en",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/tnm_pr/",
+  "instagram_username": "tnm_pr",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: this is the museum's own public-relations account, which presents its grounds, exhibitions and treasures; its English sibling account dates the museum to 1872 and names it the oldest museum of Asian art in Japan. The language-specific information accounts linked from the museum's site are separate.",
+  "evidence_url": "https://www.instagram.com/tnm_pr/",
+  "status": "VERIFIED"
  },
  {
   "id": "L216",
@@ -4783,7 +4783,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists for an Italian restaurant and bar, but its profile gives no address; only its telephone exchange points to this area, which is not enough to tie it to this listing.",
+  "evidence": "An account of this name exists for an Italian restaurant and bar, but its profile gives no address; only its telephone exchange points to this area, which is not enough to tie it to this listing. Second pass: the restaurant's own account was found and its profile describes its charcoal-grilled Italian cooking, hours and telephone number, whose 03-6420 exchange covers the Gotanda area, but the profile prints no address, so the area could not be confirmed from the profile itself.",
   "evidence_url": "https://www.instagram.com/vigo.tokyo/",
   "status": "AMBIGUOUS"
  },
@@ -4798,13 +4798,13 @@
   "cat": "Bar",
   "maps_url": "https://www.google.com/maps/place/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B6%E3%82%B9%E3%83%AA%E3%83%BC+%E8%A1%A8%E5%8F%82%E9%81%93/data=!4m2!3m1!1s0x60188d457a3c6ce9:0x6771342dd1a8194a",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bluethe3_omotesando",
-  "evidence_url": "https://www.timeout.jp/tokyo/ja/%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3/blue-the-three",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/bluethe3_omotesando/",
+  "instagram_username": "bluethe3_omotesando",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name and profile place the venue in Omotesando, give its 65 seats with private rooms, terrace and counter and list its weekday and weekend hours, matching this listing.",
+  "evidence_url": "https://www.instagram.com/bluethe3_omotesando/",
+  "status": "VERIFIED"
  },
  {
   "id": "L254",
@@ -4973,8 +4973,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: musicbarbounce",
-  "evidence_url": "https://www.timeout.com/tokyo/bars-and-pubs/music-bar-bounce",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: musicbarbounce Second pass: the bar's own account was found and its profile gives its music policy, opening hours and charges, but it states no address or area, so it could not be placed in Shibuya.",
+  "evidence_url": "https://www.instagram.com/musicbarbounce/",
   "status": "AMBIGUOUS"
  },
  {
@@ -5030,7 +5030,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Restaurant inside THE AOYAMA GRAND HOTEL. The hotel site links the hotel and two sibling restaurants, none of them this one. Candidates: aoyamagrand, theriveroriental, thetokyorestaurant",
+  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Restaurant inside THE AOYAMA GRAND HOTEL. The hotel site links the hotel and two sibling restaurants, none of them this one. Candidates: aoyamagrand, theriveroriental, thetokyorestaurant Second pass: no account was found under this restaurant's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this one's.",
   "evidence_url": "https://aoyamagrand.com/",
   "status": "AMBIGUOUS"
  },
@@ -5125,7 +5125,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this exact name exists but its profile states no location, so it could not be tied to this listing's area.",
+  "evidence": "An account of this exact name exists but its profile states no location, so it could not be tied to this listing's area. Second pass: an account under this restaurant's name was found but its profile carries no address, hours or other detail, so it could not be placed in Mita or Tamachi.",
   "evidence_url": "https://www.instagram.com/sobakiri_tokiwa/",
   "status": "AMBIGUOUS"
  },
@@ -5429,7 +5429,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: tablecheck_global",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: tablecheck_global Second pass: no account was found under this bar's name in Yoyogi-Hachiman.",
   "evidence_url": "https://www.tablecheck.com/en/1500-millecinquecento",
   "status": "AMBIGUOUS"
  },
@@ -5467,7 +5467,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists for a wine bar, but its profile states no location, so it could not be tied to this listing's area.",
+  "evidence": "An account of this name exists for a wine bar, but its profile states no location, so it could not be tied to this listing's area. Second pass: an account under this venue's name was found and its profile describes a wine bar with simple snacks and gives its late hours, but it states no address or area, so it could not be placed in Yoyogi-Hachiman; a pub of the same name in Monzen-Nakacho keeps a separate account.",
   "evidence_url": "https://www.instagram.com/__________ultimo/",
   "status": "AMBIGUOUS"
  },
@@ -5505,7 +5505,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: ittenbari_1",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: ittenbari_1 Second pass: no account of this restaurant's own was found; a Ningyocho izakaya's account names it among its sister shops, but that is not this restaurant's account and the handle printed for it on a directory page could not be confirmed.",
   "evidence_url": "https://tabelog.com/tokyo/A1302/A130204/13283307/",
   "status": "AMBIGUOUS"
  },
@@ -5562,8 +5562,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: nadoya.katte",
-  "evidence_url": "https://hamoni.jp/shop/oMcxtgqh9zINo2imrbyH",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: nadoya.katte Second pass: the stand's own account was found and its profile describes it as a single-origin coffee stand produced by nadoya with coffee supervised by Glitch, and gives its hours, but neither it nor the parent account states an address, so it could not be placed in Yoyogi-Uehara.",
+  "evidence_url": "https://www.instagram.com/nadoya.katte/",
   "status": "AMBIGUOUS"
  },
  {
@@ -5695,7 +5695,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: i2.cafe",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: i2.cafe Second pass: no account was found under this cafe's name in Omotesando or Minami-Aoyama.",
   "evidence_url": "https://tabelog.com/tokyo/A1306/A130602/13282796/",
   "status": "AMBIGUOUS"
  },
@@ -5733,7 +5733,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists and names the operating company in its profile, but it has almost no content and states no location, so it could not be tied to this listing.",
+  "evidence": "An account of this name exists and names the operating company in its profile, but it has almost no content and states no location, so it could not be tied to this listing. Second pass: no account was found for this restaurant in Aoyama; the name matches are unrelated businesses in Osaka, Arima, Hirakata and Taiwan.",
   "evidence_url": "https://www.instagram.com/kawakami.an/",
   "status": "AMBIGUOUS"
  },
@@ -5866,7 +5866,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts present themselves as this shop's owner and neither states the shop's address; one notes that an earlier account naming this shop and area was taken over, so no account could be confirmed as the shop's.",
+  "evidence": "Two accounts present themselves as this shop's owner and neither states the shop's address; one notes that an earlier account naming this shop and area was taken over, so no account could be confirmed as the shop's. Second pass: the two accounts carrying this shop's name both belong to its proprietor, and the newer one explains that the shop's earlier account was hijacked; neither is the shop's own account, so none is recorded.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -5938,13 +5938,13 @@
   "cat": "Chinese",
   "maps_url": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E5%BE%B3%E5%A4%A7/data=!4m2!3m1!1s0x6018edf99f201ac5:0x8f8e4224d4035559",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: chuka_tokudai",
-  "evidence_url": "https://retty.me/restaurant/100000145617/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/chuka_tokudai/",
+  "instagram_username": "chuka_tokudai",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the restaurant's address as Ogikubo 5-13-6, Suginami-ku on the Suzuran-dori side of Ogikubo station, with its telephone number, its weekday and Saturday hours and its closing days, matching this listing.",
+  "evidence_url": "https://www.instagram.com/chuka_tokudai/",
+  "status": "VERIFIED"
  },
  {
   "id": "L314",
@@ -6075,7 +6075,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account named Restaurant Glover-tei exists, but its profile gives no address and nothing in it places the shop in Mitaka; a second account of the same name is a Nagasaki champon shop in Niigata, so neither could be established as this shop's.",
+  "evidence": "An account named Restaurant Glover-tei exists, but its profile gives no address and nothing in it places the shop in Mitaka; a second account of the same name is a Nagasaki champon shop in Niigata, so neither could be established as this shop's. Second pass: the restaurant's own account was searched again with the city name; its profile still gives no address and nothing places the shop in Mitaka, so it is not recorded.",
   "evidence_url": "https://www.instagram.com/gurabar111/",
   "status": "AMBIGUOUS"
  },
@@ -6113,7 +6113,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account named Chuka Juhachiban exists and matches the name and category, but its profile gives only opening hours and no location, so it could not be tied to the Nogata shop; the other name matches are in Chuo-ku, Osaka and Wakayama.",
+  "evidence": "An account named Chuka Juhachiban exists and matches the name and category, but its profile gives only opening hours and no location, so it could not be tied to the Nogata shop; the other name matches are in Chuo-ku, Osaka and Wakayama. Second pass: the account carrying this shop's name gives its menu, hours and a large car park in its profile but no address, and the profile's car park does not match a Nogata shopfront, so it is not recorded.",
   "evidence_url": "https://www.instagram.com/chuukayasan_18/",
   "status": "AMBIGUOUS"
  },
@@ -6185,13 +6185,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AB%E3%83%87%E3%83%90%E3%83%A9%E3%83%B3/data=!4m2!3m1!1s0x60188bc94e7e0b17:0xefee4d3e47e50960",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: aldebaran_burger",
-  "evidence_url": "https://hamoni.jp/shop/l02XuMB9ohfc2eiVcxhG",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/aldebaran_burger/",
+  "instagram_username": "aldebaran_burger",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the shop's own account states that it reopened in Azabu-Juban on 8 November, and the chef's account dates the Roppongi shop from 2018 to 2022 and the Azabu-Juban restart to 8 November 2022, placing the shop where this listing places it.",
+  "evidence_url": "https://www.instagram.com/aldebaran_burger/",
+  "status": "VERIFIED"
  },
  {
   "id": "L327",
@@ -6242,13 +6242,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/Burger%20POLICE/data=!4m2!3m1!1s0x6018f53df314ef2b:0xe30804dd54fe68d",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Branch accounts linked are Kasukabe, Himonya and Shibuya; none names Toritsu-Daigaku, and guessing the nearest is not evidence. Candidates: burgerpolice_fckasukabe, burgerpolice_himonya, burgerpolice_shibuya",
-  "evidence_url": "https://burgerpolice.jp/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/burgerpolice_himonya/",
+  "instagram_username": "burgerpolice_himonya",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name identifies the Himonya shop - the neighbourhood that Toritsu-Daigaku station stands in, where this guide places it - and its profile gives its burger-bistro format, its weekday and weekend hours and its Wednesday closing. The chain's Kasukabe and Shibuya shops keep separate accounts.",
+  "evidence_url": "https://www.instagram.com/burgerpolice_himonya/",
+  "status": "VERIFIED"
  },
  {
   "id": "L330",
@@ -6261,13 +6261,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/THE%20GREAT%20BURGER/data=!4m2!3m1!1s0x60188ca428c01717:0x6d9cff4312428fd5",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Accounts reached belong to other businesses; none corresponds to this restaurant. Seen: atsushi_kurumata, jenniferseven_burgershop, jenniferseven_generalstore, lenoxhouse_sangubashi, lucky_alex_matsumizaka, the_great_burger, the_great_burger_stand, thelittlebakerytokyo, theteisyokushop, youknowwhat_yoyogiuehara",
-  "evidence_url": "http://www.the-great-burger.com/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/the_great_burger/",
+  "instagram_username": "the_great_burger",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: this is the restaurant's main account, which names its sibling stand and gives its weekday and weekend hours; both profiles are placed in Shibuya-ku, the ward that contains Jingumae where this listing places it, though neither prints the street address.",
+  "evidence_url": "https://www.instagram.com/the_great_burger/",
+  "status": "VERIFIED"
  },
  {
   "id": "L331",
@@ -6284,7 +6284,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The chain keeps separate branch accounts (Hokkaido, Okinawa and Miyakojima among them) but no account for the Shinjuku branch was found, and the brand-level account's profile gives no location, so none could be tied to this branch.",
+  "evidence": "The chain keeps separate branch accounts (Hokkaido, Okinawa and Miyakojima among them) but no account for the Shinjuku branch was found, and the brand-level account's profile gives no location, so none could be tied to this branch. Second pass: the chain's own accounts name a brand-level account and separate regional accounts for Hokkaido, Okinawa, Miyakojima and Vietnam, but none of them is placed in Shinjuku, so none could be tied to this branch.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -6375,13 +6375,13 @@
   "cat": "Steak",
   "maps_url": "https://www.google.com/maps/place/%E3%83%93%E3%83%95%E3%83%86%E3%82%AD%E3%81%AE%E3%82%AB%E3%83%AF%E3%83%A0%E3%83%A9%20%E9%8A%80%E5%BA%A7/data=!4m2!3m1!1s0x60188bef5a1f5e75:0xdf0184296a58fcb6",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several accounts of this steakhouse exist and two of them name the Ginza and Roppongi branches together in one profile; no account specific to the Ginza branch was found, so none is recorded.",
-  "evidence_url": "",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/bifuteki_kawamura_tokyo/",
+  "instagram_username": "bifuteki_kawamura_tokyo",
+  "account_type": "brand",
+  "basis": "profile",
+  "evidence": "Second pass: the chain's own Kansai account states in its profile that its Tokyo Ginza and Roppongi restaurants are covered by this account, and the brand account dates the firm to 1972 and lists the Ginza and Roppongi shops. It is shared between those two shops, so it is recorded as the operator's account.",
+  "evidence_url": "https://www.instagram.com/bifuteki_kawamura_tokyo/",
+  "status": "VERIFIED"
  },
  {
   "id": "L337",
@@ -6512,7 +6512,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account carrying this restaurant's name and its proprietor's name exists and its profile gives opening hours and the Tuesday-Wednesday closing, but no address or area, so it could not be tied to the Shikahama shop.",
+  "evidence": "An account carrying this restaurant's name and its proprietor's name exists and its profile gives opening hours and the Tuesday-Wednesday closing, but no address or area, so it could not be tied to the Shikahama shop. Second pass: searched again with the neighbourhood name; the account carrying this restaurant's and its proprietor's name still gives only its hours and closing days, with no address, so it could not be placed in Shikahama.",
   "evidence_url": "https://www.instagram.com/sutaminaen/",
   "status": "AMBIGUOUS"
  },
@@ -6531,7 +6531,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The brand's account exists but its profile places the restaurant at Azabudai Hills, not Ebisu where this listing places it, so it was not recorded; the sibling accounts are the Kanda and Taipei restaurants.",
+  "evidence": "The brand's account exists but its profile places the restaurant at Azabudai Hills, not Ebisu where this listing places it, so it was not recorded; the sibling accounts are the Kanda and Taipei restaurants. Second pass: searched again with the neighbourhood and the brand's other name; the account still places the restaurant at Azabudai Hills rather than Ebisu, so it was not recorded.",
   "evidence_url": "https://www.instagram.com/vanne_yoroniku/",
   "status": "AMBIGUOUS"
  },
@@ -6550,7 +6550,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: profite_sincerite",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: profite_sincerite Second pass: no account was found under this shop's name in Soshigaya-Okura.",
   "evidence_url": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
   "status": "AMBIGUOUS"
  },
@@ -6565,13 +6565,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/%E3%83%96%E3%83%BC%E3%83%A9%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AA%E3%83%BC%20%E3%82%B9%E3%83%89%E3%82%A6/data=!4m2!3m1!1s0x6018f37e87a9a139:0x844b061e70b15516",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: boulangerie.sudo, sakedeshi_cat",
-  "evidence_url": "https://tabelog.com/tokyo/A1317/A131709/13098861/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/boulangerie.sudo/",
+  "instagram_username": "boulangerie.sudo",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the bakery's address as Setagaya 4-chome, Setagaya-ku, directly in front of Shoin-Jinjamae station on the Setagaya line, with its telephone number and its Friday-to-Sunday opening, matching this listing.",
+  "evidence_url": "https://www.instagram.com/boulangerie.sudo/",
+  "status": "VERIFIED"
  },
  {
   "id": "L347",
@@ -6603,13 +6603,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%AB%20%E3%82%B6%E3%83%BB%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC/data=!4m2!3m1!1s0x60188be494b4c413:0x7217f50ecd1d80f3",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: centre_the_bakery",
-  "evidence_url": "https://retty.me/restaurant/100000843513/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/centre_the_bakery/",
+  "instagram_username": "centre_the_bakery",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name identifies the Ginza shop and its profile gives the address as Ginza 1-2-1, Chuo-ku, ground floor of the Tokyo Expressway Konya building, with its telephone number and its bread-selling hours.",
+  "evidence_url": "https://www.instagram.com/centre_the_bakery/",
+  "status": "VERIFIED"
  },
  {
   "id": "L349",
@@ -6641,13 +6641,13 @@
   "cat": "Bakery",
   "maps_url": "https://www.google.com/maps/place/%E3%81%97%E3%81%8B%E3%81%9F%E3%82%89%E3%82%80%E3%81%8B%E3%81%AA/data=!4m2!3m1!1s0x601889a8024ae8c5:0x2d138471fc8fcc82",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: 3ft.nacamera.official",
-  "evidence_url": "https://www.timeout.jp/tokyo/ja/ショッピング/shikatanakamjra",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/3ft.nakamura.official/",
+  "instagram_username": "3ft.nakamura.official",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile traces the shop from Wakayama through Kiyosumi to its present Kagurazaka shop, where this listing places it, and gives its reservation and walk-in selling hours, its Tuesday-Wednesday closing and its cashless-only payment.",
+  "evidence_url": "https://www.instagram.com/3ft.nakamura.official/",
+  "status": "VERIFIED"
  },
  {
   "id": "L351",
@@ -6759,7 +6759,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The bakery's brand account exists and gives its hours, but neither it nor the sibling coffee account states any location, so the account could not be placed in Roppongi.",
+  "evidence": "The bakery's brand account exists and gives its hours, but neither it nor the sibling coffee account states any location, so the account could not be placed in Roppongi. Second pass: searched again with the neighbourhood names; neither the bakery's account nor its sibling coffee account prints an address, so the shop could not be placed in Roppongi.",
   "evidence_url": "https://www.instagram.com/bricolage_bread_and_company/",
   "status": "AMBIGUOUS"
  },
@@ -6793,13 +6793,13 @@
   "cat": "Thai",
   "maps_url": "https://www.google.com/maps/place/BIANCHI/data=!4m2!3m1!1s0x60188b38c0b41d1b:0x71d504f42e5a2d7d",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bianchi_roppongi",
-  "evidence_url": "https://www.timeout.jp/tokyo/ja/レストラン/bianchi_roppongi",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/bianchi_roppongi/",
+  "instagram_username": "bianchi_roppongi",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own handle names the Roppongi restaurant and its profile describes its Thai-Chinese and Thai street-food menu reworked with Japanese ingredients, with its lunch and dinner hours and Sunday closing, matching this listing.",
+  "evidence_url": "https://www.instagram.com/bianchi_roppongi/",
+  "status": "VERIFIED"
  },
  {
   "id": "L359",
@@ -6835,7 +6835,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banthai_shinjyuku",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banthai_shinjyuku Second pass: no account was found under this restaurant's name in Shinjuku; the name match is a Thai restaurant in Joetsu, Niigata.",
   "evidence_url": "https://retty.me/restaurant/100000001521/",
   "status": "AMBIGUOUS"
  },
@@ -6854,8 +6854,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: hotatebiyori",
-  "evidence_url": "https://hamoni.jp/en/shop/IzggFE6SJ9U1fIuggVO6",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: hotatebiyori Second pass: the shop's own account was found and its profile describes its Sarufutsu scallops and Hokkaido wheat noodles, but it states no address or area, so it could not be placed in Akihabara.",
+  "evidence_url": "https://www.instagram.com/hotatebiyori/",
   "status": "AMBIGUOUS"
  },
  {
@@ -6926,13 +6926,13 @@
   "cat": "Tsukemen",
   "maps_url": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E8%95%8E%E9%BA%A6%20%E3%81%B2%E3%82%89%E4%BA%95/data=!4m2!3m1!1s0x6018e51f5f871375:0x5864b05e0f5774f6",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: men_channel00",
-  "evidence_url": "https://hamoni.jp/area/tokyo/fuchu/list/ramen",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/tyukasoba_hirai/",
+  "instagram_username": "tyukasoba_hirai",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the shop's address as Sakaecho 2-11-7, Fuchu, Tokyo with its hours, Tuesday closing and ticket-machine ordering, matching this listing; the Tamaplaza branch keeps a separate account.",
+  "evidence_url": "https://www.instagram.com/tyukasoba_hirai/",
+  "status": "VERIFIED"
  },
  {
   "id": "L366",
@@ -7006,8 +7006,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: medikasoba.kin_gyo",
-  "evidence_url": "https://retty.me/restaurant/100001646249/",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: medikasoba.kin_gyo Second pass: the shop's own account was found and its profile gives its hours and its two soup styles, but it states no address or area, so it could not be placed in Manganji.",
+  "evidence_url": "https://www.instagram.com/medikasoba.kin_gyo/",
   "status": "AMBIGUOUS"
  },
  {
@@ -7025,7 +7025,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account with this shop's exact and distinctive name exists and its profile gives the opening days and hours, but it states no address or area, so it could not be placed in Higashi-Ogu.",
+  "evidence": "An account with this shop's exact and distinctive name exists and its profile gives the opening days and hours, but it states no address or area, so it could not be placed in Higashi-Ogu. Second pass: searched again with the ward name; the shop's own account still gives only its opening days and hours, with no address, so it could not be placed in Higashi-Ogu.",
   "evidence_url": "https://www.instagram.com/ra_men_1.20/",
   "status": "AMBIGUOUS"
  },
@@ -7101,7 +7101,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account with this shop's exact name exists and its profile describes its own noodles and use of no chemical seasonings, but it states no address or area, so it could not be placed in Kameido.",
+  "evidence": "An account with this shop's exact name exists and its profile describes its own noodles and use of no chemical seasonings, but it states no address or area, so it could not be placed in Kameido. Second pass: searched again with the ward name; the shop's own account still gives only its own-noodle and no-additive claims, with no address, so it could not be placed in Kameido.",
   "evidence_url": "https://www.instagram.com/men_fujisaki/",
   "status": "AMBIGUOUS"
  },
@@ -7177,7 +7177,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: codies.burger",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: codies.burger Second pass: no account was found under this shop's name in Yokohama; the name match is a restaurant in Queensland, Australia.",
   "evidence_url": "https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci",
   "status": "AMBIGUOUS"
  },
@@ -7192,13 +7192,13 @@
   "cat": "Tsukemen",
   "maps_url": "https://www.google.com/maps/place/%E3%81%8F%E3%82%8A%E5%B1%B1/data=!4m2!3m1!1s0x60185ea47fa2565d:0xf3c5001ca3edaa5",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: kuriyama2022",
-  "evidence_url": "https://retty.me/restaurant/100000008489/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/kuriyama2022/",
+  "instagram_username": "kuriyama2022",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile places the shop five minutes' walk from Hakuraku station on the Tokyu Toyoko line, where this listing places it, and gives its weekday and weekend hours.",
+  "evidence_url": "https://www.instagram.com/kuriyama2022/",
+  "status": "VERIFIED"
  },
  {
   "id": "L380",
@@ -7496,13 +7496,13 @@
   "cat": "Temple",
   "maps_url": "https://www.google.com/maps/place/%E4%B8%89%E5%8D%81%E4%B8%89%E9%96%93%E5%A0%82/data=!4m2!3m1!1s0x600108ca8f9b80b3:0xaa2b01ebdb651688",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yokka_life",
-  "evidence_url": "https://www.veltra.com/jp/yokka/article/sanjusangen-do/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/sanjusangendo_temple/",
+  "instagram_username": "sanjusangendo_temple",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the temple's own account, which states in its profile that it is the official Instagram of Sanjusangendo in Kyoto, and its location record gives Sanjusangendo-mawari-cho 657 in Higashiyama-ku, where this listing places it.",
+  "evidence_url": "https://www.instagram.com/sanjusangendo_temple/",
+  "status": "VERIFIED"
  },
  {
   "id": "L396",
@@ -7515,13 +7515,13 @@
   "cat": "Temple",
   "maps_url": "https://www.google.com/maps/place/%E8%A5%BF%E6%9C%AC%E9%A1%98%E5%AF%BA%EF%BC%88%E9%BE%8D%E8%B0%B7%E5%B1%B1%E6%9C%AC%E9%A1%98%E5%AF%BA%EF%BC%89/data=!4m2!3m1!1s0x600108a75314e2a3:0xf4e42caa95cddc94",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The temple's site links two accounts (nishi.hongwanji / nishi_hongwanji) without saying which is current. Candidates: nishi.hongwanji, nishi_hongwanji",
-  "evidence_url": "https://www.hongwanji.kyoto/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/nishi_hongwanji/",
+  "instagram_username": "nishi_hongwanji",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: of the two accounts, this is the temple's own - its profile names it as Onishi-san, the temple itself, and states that it also runs the temple's official website, X and note accounts - while the other belongs to the Jodo Shinshu Honganji-ha denomination and posts its teachings and observances.",
+  "evidence_url": "https://www.instagram.com/nishi_hongwanji/",
+  "status": "VERIFIED"
  },
  {
   "id": "L397",
@@ -7614,8 +7614,8 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: roujina0627",
-  "evidence_url": "https://www.mec-h.com/town/mh-kyoto/79",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: roujina0627 Second pass: the restaurant's own account was found and its profile gives its lunch and dinner last orders, its Monday closing and its lack of parking, but it states no address or area, so it could not be placed in Nakagyo-ku.",
+  "evidence_url": "https://www.instagram.com/roujina0627/",
   "status": "AMBIGUOUS"
  },
  {
@@ -7633,7 +7633,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: warakumagazine",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: warakumagazine Second pass: no account was found under this restaurant's name in Nakagyo-ku; the nearest name match is a Chinese restaurant with no stated address.",
   "evidence_url": "https://intojapanwaraku.com/travel/254203/",
   "status": "AMBIGUOUS"
  },
@@ -7842,7 +7842,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banana_for_human_by_gorilla, berry._.button, hyde_and_away, kissa_me8, mimaruhotels, panelcafe_kyoto",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banana_for_human_by_gorilla, berry._.button, hyde_and_away, kissa_me8, mimaruhotels, panelcafe_kyoto Second pass: no account was found under this shop's name in Gion; the results were other Gion sweets shops.",
   "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
   "status": "AMBIGUOUS"
  },
@@ -7914,13 +7914,13 @@
   "cat": "Sightseeing",
   "maps_url": "https://www.google.com/maps/place/%E4%BA%AC%E9%83%BD%E4%BB%99%E6%B4%9E%E5%BE%A1%E6%89%80/data=!4m2!3m1!1s0x600108652e05500d:0xbb9ad3d40026f822",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: fun_japan_travel",
-  "evidence_url": "https://www.fun-japan.jp/tw/articles/8713",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/imperial_palaces_of_kyoto/",
+  "instagram_username": "imperial_palaces_of_kyoto",
+  "account_type": "brand",
+  "basis": "profile",
+  "evidence": "Second pass: this is the official account of the Imperial Household Agency's Kyoto office, and its profile states that it covers the Kyoto Imperial Palace, this Sento Imperial Palace, Katsura and Shugakuin, with their buildings, gardens and special openings. It is shared across those sites, so it is recorded as the operator's account.",
+  "evidence_url": "https://www.instagram.com/imperial_palaces_of_kyoto/",
+  "status": "VERIFIED"
  },
  {
   "id": "L418",
@@ -7933,13 +7933,13 @@
   "cat": "Sightseeing",
   "maps_url": "https://www.google.com/maps/place/%E4%BF%AE%E5%AD%A6%E9%99%A2%E9%9B%A2%E5%AE%AE/data=!4m2!3m1!1s0x600109c7d7660d4d:0x729e62296b00aae2",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: keihan_biostyle, keihan_railway, tenhachi_bu, watashimo_okeihan",
-  "evidence_url": "https://www.keihan.co.jp/kanei/spot/life.php",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/imperial_palaces_of_kyoto/",
+  "instagram_username": "imperial_palaces_of_kyoto",
+  "account_type": "brand",
+  "basis": "profile",
+  "evidence": "Second pass: this is the official account of the Imperial Household Agency's Kyoto office, and its profile states that it covers the Kyoto Imperial Palace, the Sento Imperial Palace, Katsura and this Shugakuin villa, with their buildings, gardens and special openings. It is shared across those sites, so it is recorded as the operator's account.",
+  "evidence_url": "https://www.instagram.com/imperial_palaces_of_kyoto/",
+  "status": "VERIFIED"
  },
  {
   "id": "L419",
@@ -7975,7 +7975,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yamamoto_kissa",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yamamoto_kissa Second pass: no account was found under this cafe's name in Higashiyama-ku; the nearest name match is a liquor shop near Sanjo.",
   "evidence_url": "https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn",
   "status": "AMBIGUOUS"
  },
@@ -8127,7 +8127,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account tying this name to Kyoto is the proprietor's personal account, whose profile describes him as the owner of Yakiniku Yamachan in Kyoto and a wine sommelier; it is a personal account, not the restaurant's own, and gives no address, so it is not recorded.",
+  "evidence": "The only account tying this name to Kyoto is the proprietor's personal account, whose profile describes him as the owner of Yakiniku Yamachan in Kyoto and a wine sommelier; it is a personal account, not the restaurant's own, and gives no address, so it is not recorded. Second pass: searched again with the ward name; the only account tying this name to Kyoto remains the proprietor's personal account, which gives no address, and the other name match is a restaurant in Ogaki, Gifu.",
   "evidence_url": "https://www.instagram.com/yakiniku.yamachan.1122/",
   "status": "AMBIGUOUS"
  },
@@ -8142,13 +8142,13 @@
   "cat": "Thai",
   "maps_url": "https://www.google.com/maps/place/MOT/data=!4m2!3m1!1s0x6001099a14cac049:0x5b513b5d35eb8893",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: leaf_kyoto, tom.kyoto",
-  "evidence_url": "https://www.leafkyoto.net/en/store/240508-kyoto-tom",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/mot_kyoto/",
+  "instagram_username": "mot_kyoto",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile names the restaurant as a Thai restaurant in Kyoto and the flagship of its sibling Mymot, which this guide also lists in Meguro; the profile names the city but not the Kuramaguchi neighbourhood.",
+  "evidence_url": "https://www.instagram.com/mot_kyoto/",
+  "status": "VERIFIED"
  },
  {
   "id": "L430",
@@ -8180,13 +8180,13 @@
   "cat": "Sightseeing",
   "maps_url": "https://www.google.com/maps/place/%E9%80%9A%E5%A4%A9%E9%96%A3/data=!4m2!3m1!1s0x6000e76077e042ff:0xe5cbcf56def44557",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The tower's site links two accounts (tsutenkaku_official / tsutenkakutower_official) without distinguishing them. Candidates: tsutenkaku_official, tsutenkakutower_official",
-  "evidence_url": "https://www.tsutenkaku.co.jp/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/tsutenkakutower_official/",
+  "instagram_username": "tsutenkakutower_official",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: of the tower's two accounts this is the current official one - the older account's profile points visitors to it by name - and its profile gives the tower's opening hours and last admission.",
+  "evidence_url": "https://www.instagram.com/tsutenkakutower_official/",
+  "status": "VERIFIED"
  },
  {
   "id": "L432",
@@ -8199,13 +8199,13 @@
   "cat": "Sightseeing",
   "maps_url": "https://www.google.com/maps/place/%E5%A4%A7%E9%98%AA%E5%9F%8E/data=!4m2!3m1!1s0x6000e0cd5c283afd:0xf01d07d5ca11e41",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Two park accounts were reached (osaka_castle_park / osakacastlepark.odekake) and the page does not say which is official. Seen: osaka_castle_park, osakacastlepark.odekake",
-  "evidence_url": "https://www.osakacastlepark.jp/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/osaka_castle_park/",
+  "instagram_username": "osaka_castle_park",
+  "account_type": "brand",
+  "basis": "profile",
+  "evidence": "Second pass: this is the castle park's own official account, posting its events, seasonal flowers and history; the other account found earlier is an outing guide, not the park's. It covers the whole park around the castle, so it is recorded as the operator's account.",
+  "evidence_url": "https://www.instagram.com/osaka_castle_park/",
+  "status": "VERIFIED"
  },
  {
   "id": "L433",
@@ -8241,7 +8241,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: timeoutosaka_jp",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: timeoutosaka_jp Second pass: the sign has no account of its own; the confectionery company that owns it runs product and shop accounts, and the Dotonbori traders' association account covers the whole street, so none is recorded.",
   "evidence_url": "https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126",
   "status": "AMBIGUOUS"
  },
@@ -8260,7 +8260,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the arcade were reached, not the arcade's own. Seen: tenjinbashi.ohagurumakou, tenjinbashi3choume",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the arcade were reached, not the arcade's own. Seen: tenjinbashi.ohagurumakou, tenjinbashi3choume Second pass: the arcade as a whole keeps no account; the only official account found belongs to its fourth block alone, so it was not recorded for this listing.",
   "evidence_url": "https://tenjin3.com/",
   "status": "AMBIGUOUS"
  },
@@ -8332,13 +8332,13 @@
   "cat": "Street Food",
   "maps_url": "https://www.google.com/maps/place/%E6%9C%AC%E5%AE%B6%E5%A4%A7%E3%81%9F%E3%81%93+%E9%81%93%E9%A0%93%E5%A0%80%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x6000e76532907553:0xb7a684d33dc9ceb2",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: eeyan_shotengai",
-  "evidence_url": "https://osaka-shotengai-info.com/shop/honke-otako-dotonbori/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/ootakodoutonbori/",
+  "instagram_username": "ootakodoutonbori",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name identifies the Dotonbori main shop where this listing places it, and its profile gives its founding in 1972 and its octopus, kushikatsu, okonomiyaki and yakisoba menu.",
+  "evidence_url": "https://www.instagram.com/ootakodoutonbori/",
+  "status": "VERIFIED"
  },
  {
   "id": "L440",
@@ -8393,7 +8393,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account carrying this name as Sousaku Teppan Miraku exists and gives its lunch and dinner hours, but it states no address, so it could not be placed in Kita-ku; the other name match is in Yuzawa, Akita.",
+  "evidence": "An account carrying this name as Sousaku Teppan Miraku exists and gives its lunch and dinner hours, but it states no address, so it could not be placed in Kita-ku; the other name match is in Yuzawa, Akita. Second pass: searched again by the fuller shop name; no account was found that places a restaurant of this name in Kita-ku, Osaka.",
   "evidence_url": "https://www.instagram.com/sousakuteppanmiraku/",
   "status": "AMBIGUOUS"
  },
@@ -8545,7 +8545,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The restaurant's own account exists and gives its telephone number, whose 06-6458 exchange covers the Fukushima area, but the profile prints no address, so the area could not be confirmed from the profile itself.",
+  "evidence": "The restaurant's own account exists and gives its telephone number, whose 06-6458 exchange covers the Fukushima area, but the profile prints no address, so the area could not be confirmed from the profile itself. Second pass: searched again with the ward name; the restaurant's own account still gives only its booking telephone number and website, with no address, so the Fukushima-ku location could not be confirmed from the profile.",
   "evidence_url": "https://www.instagram.com/sweetbasil2001/",
   "status": "AMBIGUOUS"
  },
@@ -8583,7 +8583,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The restaurant keeps an account for its Hanshin Umeda shop in Kita-ku, but no account was found for the Kitahorie main shop and no brand-level account exists, so none could be tied to this listing.",
+  "evidence": "The restaurant keeps an account for its Hanshin Umeda shop in Kita-ku, but no account was found for the Kitahorie main shop and no brand-level account exists, so none could be tied to this listing. Second pass: the only account for this restaurant places it in the basement of the Hanshin Umeda store in Kita-ku, with a sibling shop on the floor below, and not in Kitahorie where this listing places it.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -8598,13 +8598,13 @@
   "cat": "Tsukemen",
   "maps_url": "https://www.google.com/maps/place/%E3%82%AB%E3%83%89%E3%83%A4%E9%A3%9F%E5%A0%82%20%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x6000e654b4c6e1a1:0x4172414807ba515b",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: kadoya.shokudou",
-  "evidence_url": "https://hamoni.jp/en/shop/0GBEQmgsUccte3kG0TIz",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/kadoya.shokudou/",
+  "instagram_username": "kadoya.shokudou",
+  "account_type": "brand",
+  "basis": "profile",
+  "evidence": "Second pass: the restaurant's own official account; its profile lists its shops as the main shop - this listing - together with the Hanshin Umeda, Crysta Nagahori and Nishi-Umeda branches. It is shared across them, so it is recorded as the operator's account.",
+  "evidence_url": "https://www.instagram.com/kadoya.shokudou/",
+  "status": "VERIFIED"
  },
  {
   "id": "L454",
@@ -8693,13 +8693,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/R-S/data=!4m2!3m1!1s0x6018835b1fa5a1bf:0x7c69d9687d4bb5b2",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: rs.burger",
-  "evidence_url": "https://retty.me/restaurant/100000041162/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/rs.burger/",
+  "instagram_username": "rs.burger",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the shop's address as Koganehara 6-2-6, Matsudo, Chiba with its telephone number, and its takeaway counter keeps a separate account naming this one as its parent.",
+  "evidence_url": "https://www.instagram.com/rs.burger/",
+  "status": "VERIFIED"
  },
  {
   "id": "L459",
@@ -8754,7 +8754,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account carrying this shop's name is the proprietor Osamu Tomita's own account; it is a personal account rather than the shop's and gives no address, so it is not recorded.",
+  "evidence": "The only account carrying this shop's name is the proprietor Osamu Tomita's own account; it is a personal account rather than the shop's and gives no address, so it is not recorded. Second pass: searched again for a shop account; none exists - only the proprietor's own account and a ramen writer's page that lists the shop among his recommendations.",
   "evidence_url": "https://www.instagram.com/tomita.8860/",
   "status": "AMBIGUOUS"
  },
@@ -8773,7 +8773,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: briskstand, briskstand_asakusa",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: briskstand, briskstand_asakusa Second pass: the chain keeps accounts for its Matsusaka, Sapporo, Sakai, Okazaki, Kyoto, Ebisu, Omotesando, Himeji, Tokushima and Kabukicho shops, and those profiles refer to the Kobe main shop's reputation, but no account for the Kobe main shop itself was found.",
   "evidence_url": "https://brisk-stand.com/shoplist",
   "status": "AMBIGUOUS"
  },
@@ -8868,7 +8868,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The restaurant's own account exists but its profile lists only its Kashii branches, with no Chiyo branch, so no account could be tied to this listing.",
+  "evidence": "The restaurant's own account exists but its profile lists only its Kashii branches, with no Chiyo branch, so no account could be tied to this listing. Second pass: searched again with the ward name; the restaurant's own account still lists only its Kashii-area branches, and the sibling account gives no address, so neither could be tied to the Chiyo branch.",
   "evidence_url": "https://www.instagram.com/genpukan1996/",
   "status": "AMBIGUOUS"
  },
@@ -8944,7 +8944,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The chain keeps branch accounts for Mizonokuchi and Obihiro, and the Mizonokuchi profile names itself an offshoot of the Otaru main shop, but no account for the Otaru main shop itself was found.",
+  "evidence": "The chain keeps branch accounts for Mizonokuchi and Obihiro, and the Mizonokuchi profile names itself an offshoot of the Otaru main shop, but no account for the Otaru main shop itself was found. Second pass: the Mizonokuchi branch's account names itself an offshoot of the Otaru main shop and gives only its own address, and no account for the Otaru main shop was found.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -9016,13 +9016,13 @@
   "cat": "Sushi",
   "maps_url": "https://www.google.com/maps/place/%E4%BC%8A%E5%8B%A2%E9%AE%A8/data=!4m2!3m1!1s0x5f0ae1ad820b2659:0x40ae172fcc2430ff",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Linked accounts are the station branch and a separate standing-sushi shop; no account for this shop is identifiable. Candidates: edakan1005, isezushi_ekinakaten, tachigui_sushi_koise_shoten",
-  "evidence_url": "https://www.isezushi.com/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/ise_zushi/",
+  "instagram_username": "ise_zushi",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile dates the shop to 1967, describes its Edo-mae and Ezo-mae work and gives a telephone number in the 0134 Otaru dialling area; the station branch keeps its own separate account, leaving this one as the main shop's. The profile gives the telephone number rather than a street address.",
+  "evidence_url": "https://www.instagram.com/ise_zushi/",
+  "status": "VERIFIED"
  },
  {
   "id": "L476",
@@ -9092,13 +9092,13 @@
   "cat": "Bar / Sake",
   "maps_url": "https://www.google.com/maps/place/%E9%85%92%E5%87%A6+%E3%81%B5%E3%81%98%E3%82%8A%E3%82%93/data=!4m2!3m1!1s0x5f0ae0512eaea7c1:0x7c0e0d04e1153293",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: otaru_fujirin",
-  "evidence_url": "https://hamoni.jp/en/shop/gpw7xroHKSvqzQVpzoD66x0d5gAUuVHn",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/otaru_fujirin/",
+  "instagram_username": "otaru_fujirin",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name places the shop in Otaru and its profile gives the address as Inaho 2-11-2, Otaru with its telephone number and its stock of more than thirty sakes.",
+  "evidence_url": "https://www.instagram.com/otaru_fujirin/",
+  "status": "VERIFIED"
  },
  {
   "id": "L480",
@@ -9134,7 +9134,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: cotaruco",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: cotaruco Second pass: no account was found under this shop's name in Otaru.",
   "evidence_url": "https://www.cotaru.co/post/otaru-izakaya-guide",
   "status": "AMBIGUOUS"
  },
@@ -9172,7 +9172,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: freehouse_the_yeast, voyapon",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: freehouse_the_yeast, voyapon Second pass: no account was found under this bar's name in Asahikawa; the name matches are bars and breweries in the United States and Singapore.",
   "evidence_url": "https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/",
   "status": "AMBIGUOUS"
  },
@@ -9400,7 +9400,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account found for this shop belongs to its manager; it places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is a personal account rather than the shop's own, so it is not recorded.",
+  "evidence": "The only account found for this shop belongs to its manager; it places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is a personal account rather than the shop's own, so it is not recorded. Second pass: the manager's account places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is the manager's own account rather than the shop's, so it is not recorded - the same rule applied to the other proprietor-run accounts in this ledger.",
   "evidence_url": "https://www.instagram.com/ginneko.manager_matchan/",
   "status": "AMBIGUOUS"
  },
@@ -9510,13 +9510,13 @@
   "cat": "Landmark",
   "maps_url": "https://www.google.com/maps/place/%E5%8C%97%E6%B5%B7%E9%81%93%E5%BA%81/data=!4m2!3m1!1s0x5f0b299f007507ad:0xbb215d6e0de69db7",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Only akarenga_chousha_1888 is plausible, and the page also links unrelated accounts; not confirmable from this page alone. Candidates: akarenga_chousha_1888, house.h__, shiroikoibito_akarenga_",
-  "evidence_url": "https://www.hokkaido-redbrick.jp/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/akarenga_chousha_1888/",
+  "instagram_username": "akarenga_chousha_1888",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the building's own account; its profile gives the address as Kita 3-jo Nishi 6-chome 1, Chuo-ku, Sapporo with its opening hours and admission, and names it a nationally designated important cultural property, matching this listing.",
+  "evidence_url": "https://www.instagram.com/akarenga_chousha_1888/",
+  "status": "VERIFIED"
  },
  {
   "id": "L502",
@@ -9548,13 +9548,13 @@
   "cat": "Ramen",
   "maps_url": "https://www.google.com/maps/place/%E5%91%B3%E3%81%AE%E4%B8%89%E5%B9%B3/data=!4m2!3m1!1s0x5f0b2983480fffff:0x156c664dae55dc1",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: welcomesapporo",
-  "evidence_url": "https://www.sapporo.travel/gourmet/shop/shop_130-2/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/sapporoajinosanpei/",
+  "instagram_username": "sapporoajinosanpei",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own name places the shop in Sapporo and its profile dates it to 1950 in Susukino, recounts how its founder created miso ramen and gives its hours and Monday closing.",
+  "evidence_url": "https://www.instagram.com/sapporoajinosanpei/",
+  "status": "VERIFIED"
  },
  {
   "id": "L504",
@@ -9605,13 +9605,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%82%AB%E3%83%B3%E3%82%AC%E3%83%AB%E3%83%BC/data=!4m2!3m1!1s0x34e4ff6d24d3d969:0xff883e4d4931f447",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: icotto_official",
-  "evidence_url": "https://icotto.jp/restaurants/54032",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/captainkangaroo_okinawa/",
+  "instagram_username": "captainkangaroo_okinawa",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the shop's address as Sakimotobu 930-1, Motobu, Kunigami-gun, Okinawa with its telephone number, matching this listing; the Nago tacorice shop and the Tokyo branch keep separate accounts.",
+  "evidence_url": "https://www.instagram.com/captainkangaroo_okinawa/",
+  "status": "VERIFIED"
  },
  {
   "id": "L507",
@@ -9780,7 +9780,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account for the restaurant's main shop exists and its profile describes a 75-year-old Kumamoto restaurant serving horse meat and local dishes, but it names no branch or address, so it could not be tied to the Suizenji shop.",
+  "evidence": "An account for the restaurant's main shop exists and its profile describes a 75-year-old Kumamoto restaurant serving horse meat and local dishes, but it names no branch or address, so it could not be tied to the Suizenji shop. Second pass: searched again with the neighbourhood name; the account for the restaurant's main shop still gives no address or branch, so it could not be tied to the Suizenji shop.",
   "evidence_url": "https://www.instagram.com/gorohachi_kumamoto0568/",
   "status": "AMBIGUOUS"
  },
@@ -9818,7 +9818,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts exist for facilities on this bathhouse's grounds in Hakuba - its car-stay park and its campsite - and both describe the spring's iron-rich water, but neither is the bathhouse's own account, so none is recorded.",
+  "evidence": "Two accounts exist for facilities on this bathhouse's grounds in Hakuba - its car-stay park and its campsite - and both describe the spring's iron-rich water, but neither is the bathhouse's own account, so none is recorded. Second pass: searched again as a day-use bath; the only accounts on these grounds belong to the car-stay park and the campsite, not to the bathhouse itself, so none is recorded.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -9913,7 +9913,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The account reached (fullmarks_official) belongs to an unrelated business. Seen: fullmarks_official",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The account reached (fullmarks_official) belongs to an unrelated business. Seen: fullmarks_official Second pass: no account was found under this restaurant's name in Hakuba; the handle printed for it on a directory page belongs to an unrelated business.",
   "evidence_url": "https://www.full-marks.com/",
   "status": "AMBIGUOUS"
  },
@@ -9928,13 +9928,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/%E3%83%9F%E3%82%B5%E3%83%AD%E3%83%83%E3%82%BD/data=!4m2!3m1!1s0x356a943f9eb9f75d:0xcbfe30195a4fdb95",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: non.aldesuga.nanika",
-  "evidence_url": "https://tabelog.com/nagasaki/A4202/A420201/42000523/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/misa.rosso/",
+  "instagram_username": "misa.rosso",
+  "account_type": "store",
+  "basis": "profile",
+  "evidence": "Second pass: the account's own profile gives the shop's address as Mantoku-cho 2-15, Sasebo, Nagasaki with its hours, Tuesday closing and telephone number, and describes its house-made buns, matching this listing.",
+  "evidence_url": "https://www.instagram.com/misa.rosso/",
+  "status": "VERIFIED"
  },
  {
   "id": "L524",
@@ -9989,7 +9989,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: wez_kofu",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: wez_kofu Second pass: no account was found under this shop's name in Showa-cho, Yamanashi.",
   "evidence_url": "https://retty.me/restaurant/100001210103/",
   "status": "AMBIGUOUS"
  }
