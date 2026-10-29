@@ -827,6 +827,35 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
  .td-story-copy h3{font-size:17vw}
 }
 @media(prefers-reduced-motion:reduce){.td-marquee .td-items{animation:none}}
+
+/* THE IMAGINED CITY - the original illustrations back at full page scale */
+.td-dream{background:var(--td-sand);border-top:2px solid var(--td-ink);border-bottom:2px solid var(--td-ink);padding:96px 0 104px;margin:0 0 110px;overflow:hidden}
+.td-dream-in{width:var(--td-w);margin:auto;display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);gap:clamp(24px,4vw,72px);align-items:start}
+.td-dream-head h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(56px,7.2vw,122px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase;margin:16px 0 0}
+.td-dream-head h2 em{font-style:normal;color:var(--td-acid)}
+.td-dream-head>p{font-size:17px;line-height:1.5;max-width:430px;margin:26px 0 0;letter-spacing:-.02em}
+.td-dream-note{font-size:12px;line-height:1.65;color:var(--td-muted);max-width:430px;margin:24px 0 0;padding-top:18px;border-top:1px solid var(--td-ink)}
+.td-dream-art{display:grid;gap:clamp(20px,2.8vw,40px)}
+.td-dream-fig{margin:0;position:relative;background:#fff;border:2px solid var(--td-ink);box-shadow:14px 14px 0 var(--td-acid)}
+.td-dream-fig img{display:block;width:100%;height:auto}
+.td-dream-fig figcaption{font-size:10px;letter-spacing:.07em;line-height:1.5;background:var(--td-ink);color:var(--td-paper);padding:10px 12px;text-transform:uppercase}
+.td-dream-fig figcaption b{color:var(--td-acid)}
+.td-dream-fig-b{width:min(86%,820px);justify-self:end;box-shadow:-14px 14px 0 var(--td-ink)}
+.td-dream-tag{position:absolute;top:-14px;left:-10px;background:var(--td-acid);color:#fff;font-size:10px;font-weight:900;letter-spacing:.1em;padding:7px 11px;transform:rotate(-2deg)}
+.td-dream-fig-b .td-dream-tag{left:auto;right:-10px;background:var(--td-ink);transform:rotate(2deg)}
+/* the drawn counterpart beside the Jimbocho photograph */
+.td-story-draw{margin:36px 0 0;position:relative;background:#fff;border:2px solid var(--td-ink);max-width:440px}
+.td-story-draw img{display:block;width:100%;height:auto}
+.td-story-draw figcaption{font-size:10px;letter-spacing:.06em;line-height:1.5;padding:9px 11px;background:var(--td-sand);border-top:2px solid var(--td-ink);text-transform:uppercase}
+.td-story-draw-tag{position:absolute;top:-13px;right:-8px;background:var(--td-ink);color:var(--td-paper);font-size:10px;font-weight:900;letter-spacing:.09em;padding:6px 10px}
+/* an illustration in the practical pages, without crowding the information */
+.ej-visitor-art{margin:42px 0 0;position:relative;max-width:370px;border:2px solid #111;background:#fff}
+.ej-visitor-art img{display:block;width:100%;height:auto}
+.ej-visitor-art figcaption{font-size:10px;letter-spacing:.06em;line-height:1.5;padding:9px 11px;border-top:2px solid #111;color:#111;text-transform:uppercase}
+.ej-visitor-art-tag{position:absolute;top:-13px;left:-9px;background:#ff5000;color:#fff;font-size:10px;font-weight:900;letter-spacing:.09em;padding:6px 10px}
+@media(max-width:860px){.td-dream-in{grid-template-columns:1fr;gap:34px}.td-dream-fig-b{width:100%;justify-self:stretch}}
+@media(max-width:700px){.td-dream{padding:62px 0 66px;margin-bottom:72px}.td-dream-fig{box-shadow:9px 9px 0 var(--td-acid)}.td-dream-fig-b{box-shadow:-9px 9px 0 var(--td-ink)}.td-story-draw{max-width:none}.ej-visitor-art{max-width:none;margin-top:32px}}
+@media(max-width:600px){.ej-field-art{display:block;width:100%;margin:30px 0 0;transform:none;box-shadow:8px 8px 0 #ff5000}}
 </style>
 </head>
 <body>
@@ -875,6 +904,11 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <h3 class="td-cond">LOST<br>IN THE<br><em>MARGINS.</em></h3>
       <p>In Jimbocho, a good afternoon still begins with the possibility of finding a book you weren't looking for.</p>
       <button type="button" data-walk-city="Tokyo" data-walk-area="Jimbocho">See the Jimbocho places <span aria-hidden="true">↗</span></button>
+      <figure class="td-story-draw">
+        <span class="td-story-draw-tag" aria-hidden="true">DRAWN, NOT SHOT</span>
+        <img src="assets/editorial/day-bookshop.svg" width="1040" height="1310" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined bookshop corner with a reader and a bicycle on a sunny street. A drawing, not a photograph of a real shop.">
+        <figcaption>LEFT, THE PHOTOGRAPH: JIMBOCHO, 2025.<br>HERE, THE DRAWING: A BOOK STREET AS WE PICTURE IT — ORIGINAL ILLUSTRATION, NO REAL SHOP DEPICTED</figcaption>
+      </figure>
     </div>
     <span class="td-vert" aria-hidden="true">ENCOUNTER / BOOKS, PRINT &amp; THE LONG WAY HOME</span>
   </section>
@@ -886,9 +920,27 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <button class="ej-trail" type="button" data-explore-type="Shop"><span class="ej-trail-index">03</span><span>Find something different.</span><span aria-hidden="true">↗</span></button>
     </div>
   </section>
-  <section class="td-aside-art" aria-label="About the artwork">
-    <img src="assets/editorial/the-detour-issue.svg" width="880" height="1040" loading="lazy" decoding="async" alt="Original Encounter Japan illustration of an imagined record shop, used as a small supporting motif">
-    <p>The illustrated city-pop scenes from earlier issues stay on as small supporting motifs. From this issue on, the photographs carry the pages: real streets, named photographers, licences and dates in the credits below. An illustration is never shown as a photograph of a listed place.</p>
+  <section class="td-dream" id="imagined" aria-labelledby="td-dream-title">
+    <div class="td-dream-in">
+      <div class="td-dream-head">
+        <span class="td-no">[02 / ILLUSTRATED]</span>
+        <h2 id="td-dream-title" class="td-cond">THE CITY<br>WE <em>DRAW.</em></h2>
+        <p>Between the photographs, the issue keeps its own invented Japan: a record bar at blue hour, a rooftop where the city goes soft at the edges. Drawn for this guide, in the spirit of late-Showa commercial art and the city-pop record sleeve.<span lang="ja" class="td-jp">写真が「いまの日本」を、絵が「私たちの想像する日本」を受けもちます。</span></p>
+        <p class="td-dream-note">These are original illustrations made for Encounter Japan, not photographs and not pictures of any listed place. The photographs elsewhere on this page are credited, licensed and dated in the credits below. No illustration is ever shown as the appearance of a venue in the address book.</p>
+      </div>
+      <div class="td-dream-art">
+        <figure class="td-dream-fig">
+          <span class="td-dream-tag" aria-hidden="true">ILLUSTRATION / NO. 01</span>
+          <img src="assets/editorial/night-street.svg" width="1440" height="1080" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined Tokyo street at blue hour with a record-bar window and wet pavement. A drawing, not a photograph of a real place.">
+          <figcaption><b>BLUE HOUR / IMAGINED TOKYO</b><br>ORIGINAL ILLUSTRATION FOR THIS ISSUE — NOT A PHOTOGRAPH, NOT A LISTED VENUE</figcaption>
+        </figure>
+        <figure class="td-dream-fig td-dream-fig-b">
+          <span class="td-dream-tag" aria-hidden="true">ILLUSTRATION / NO. 02</span>
+          <img src="assets/editorial/rooftop-citypop.svg" width="1440" height="1080" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: an imagined rooftop lounge at sunset with a turntable and a distant skyline. A drawing, not a photograph of a real place.">
+          <figcaption><b>ROOFTOP / CITY POP</b><br>ORIGINAL ILLUSTRATION FOR THIS ISSUE — IMAGINED SKYLINE, NO REAL STORE DEPICTED</figcaption>
+        </figure>
+      </div>
+    </div>
   </section>
   <section class="td-spread" aria-labelledby="td-spread-title">
     <div class="td-wrap">
@@ -928,7 +980,12 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 </div><label class="ej-route-neighborhood">Neighborhood <select id="ej-route-area" aria-label="Filter walking routes by neighborhood"><option value="">All neighborhoods</option></select></label><p id="ej-route-status" class="ej-route-status" role="status">10 neighborhood route ideas · map-checked drafts</p><div class="ej-field-list" id="ej-field-list"></div></div></section>
 
 <section class="ej-visitor" id="visitor-info" aria-labelledby="ej-visitor-title">
- <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2></div>
+ <div><p class="ej-overline">THE PRACTICAL SIDE</p><h2 id="ej-visitor-title">GOOD TO<br><em>KNOW.</em></h2>
+ <figure class="ej-visitor-art">
+   <span class="ej-visitor-art-tag" aria-hidden="true">ILLUSTRATION / NO. 03</span>
+   <img src="assets/editorial/the-detour-issue.svg" width="880" height="1040" loading="lazy" decoding="async" alt="Original Encounter Japan illustration: the interior of an imagined record shop in citrus light. A drawing, not a photograph of a real shop.">
+   <figcaption>THE DETOUR ISSUE / IMAGINED RECORD SHOP<br>ORIGINAL ILLUSTRATION — THE PRACTICAL NOTES BESIDE IT ARE SOURCE-CHECKED FACTS</figcaption>
+ </figure></div>
  <div class="ej-visitor-copy"><p>Every place has a direct Google Maps link for directions. Open <b>Visitor essentials</b> on any listing for its location, source links and information status.</p><div class="ej-visitor-verified"><strong id="ej-visitor-summary">Source-recorded visitor details</strong><p class="ej-visitor-legend"><span class="ej-stat ej-stat-official">Official source</span> the venue or an authority · <span class="ej-stat ej-stat-secondary">Listed by directory or media</span> with its date · <span class="ej-stat ej-stat-conflict">Sources disagree — confirm ahead</span> both shown · <b class="ej-stat">Not yet confirmed</b> nothing reliable found</p><div class="ej-visitor-entry"><p>Looking for one place? Search by name, street or kind of place, or start from a region — the checked details sit inside each listing under <b>Visitor essentials</b>.</p><div class="ej-visitor-go"><a href="#browse">Search all places ↗</a><button type="button" class="ej-route-explore" data-route-city="Tokyo" data-route-area="">Tokyo</button><button type="button" class="ej-route-explore" data-route-city="Kyoto" data-route-area="">Kyoto</button><button type="button" class="ej-route-explore" data-route-city="Osaka" data-route-area="">Osaka</button><button type="button" class="ej-route-explore" data-route-city="Hokkaido" data-route-area="">Hokkaido</button></div></div><details class="ej-visitor-index"><summary>Index of every destination with checked information <span id="ej-visitor-index-count"></span> <span aria-hidden="true">＋</span></summary><div class="ej-visitor-shortcuts" id="ej-visitor-shortcuts"></div></details><details class="ej-visitor-method"><summary>How this information was gathered <span aria-hidden="true">＋</span></summary><p id="ej-visitor-method-text"></p></details><p class="ej-info-caveat" id="ej-info-caveat">For places without a record, this guide does not assert unchecked hours, prices or reservation policies. Consult the venue before visiting.</p></div>
  <dl><div><dt>Find your way</dt><dd>Use the existing Google Maps link to check the route and current access.</dd></div>
  <div><dt>Prices & reservations</dt><dd>Information is shown only when independently checked. Otherwise, confirm with the venue.</dd></div>
