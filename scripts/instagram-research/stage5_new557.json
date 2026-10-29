@@ -1,0 +1,219 @@
+[
+ {
+  "id": "557:L001",
+  "name": "日本橋 高直",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its area; no account found for this name in Nihonbashi. The audit list also records this venue as closed for relocation from 1 August 2026."
+ },
+ {
+  "id": "557:L019",
+  "name": "酒井商会",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for it in Shibuya - the name match is a car dealer in Nagano."
+ },
+ {
+  "id": "557:L075",
+  "name": "PATH",
+  "v": "A",
+  "h": "path_restaurant_",
+  "note": "The restaurant's own account was found and its profile gives its hours, its Monday-Tuesday closing and its suspended dinner service, but it states no address or area, so it could not be placed in Yoyogi-Hachiman."
+ },
+ {
+  "id": "557:L172",
+  "name": "やきとり 児玉",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop with its area and category; no account found for this name in Setagaya."
+ },
+ {
+  "id": "557:L187",
+  "name": "ひちょう",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Omotesando."
+ },
+ {
+  "id": "557:L195",
+  "name": "京料理 阿うん",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area; no account found for this name in Yoyogi-Uehara."
+ },
+ {
+  "id": "557:L200",
+  "name": "シンスケ",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the izakaya with its area; no account found for this name in Yushima."
+ },
+ {
+  "id": "557:L221",
+  "name": "桃花林 (New Otani)",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its hotel; no account found for it - the name belongs to a restaurant of another hotel group, and the New Otani restaurants that keep accounts are others."
+ },
+ {
+  "id": "557:L235",
+  "name": "虎ノ門ヒルズ",
+  "v": "V",
+  "h": "toranomonhillsofficial",
+  "t": "store",
+  "note": "The complex's own account, marked official in its name in both Japanese and English, posting its food, art, entertainment and culture news; its cafe, hotel and TOKYO NODE keep separate accounts."
+ },
+ {
+  "id": "557:L277",
+  "name": "會水庵",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the tea house with its area; no account found for this name in Akasaka."
+ },
+ {
+  "id": "557:L283",
+  "name": "The Cream of the Crop Coffee",
+  "v": "A",
+  "h": "thecreamofthecropcoffee",
+  "note": "The roaster's own account was found and its profile describes its daily in-house roasting, but it states no address or area, so it could not be placed in Kiyosumi-Shirakawa."
+ },
+ {
+  "id": "557:L286",
+  "name": "うどん家族 小進庵",
+  "v": "V",
+  "h": "udonkoshinan",
+  "t": "store",
+  "note": "The account's own profile gives the shop's address as Miyoshi 4-8-3, Koto-ku with Kiyosumi-Shirakawa as its nearest station, names the fourth-generation owner and dates the business to 1907 as a soba shop before its change to udon in June 2022."
+ },
+ {
+  "id": "557:L329",
+  "name": "中華 丸善",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Musashisakai."
+ },
+ {
+  "id": "557:L339",
+  "name": "珉珉",
+  "v": "A",
+  "h": "minmin._.official",
+  "note": "The brand's own account was found and its profile dates the business to 1953 and calls it the original gyoza shop, but it names no branch or address, so it could not be tied to the Akasaka shop."
+ },
+ {
+  "id": "557:L347",
+  "name": "かわむら",
+  "v": "A",
+  "h": "",
+  "note": "The search surfaced the Kobe chain Bifteki no Kawamura, whose brand account lists a Ginza branch, but this listing's Google Maps pin is a different place from the one this guide holds for that branch, so it may be the separate Ginza steak restaurant of the same name; which of the two this row denotes could not be established, so no account is recorded."
+ },
+ {
+  "id": "557:L357",
+  "name": "ステーキハウス ハマ",
+  "v": "A",
+  "h": "",
+  "note": "The restaurant keeps an account for its Ginza branch, whose profile places it on Namiki-dori in Ginza and dates it to 1971, but no account for a Shibakoen branch was found, so none could be tied to this listing."
+ },
+ {
+  "id": "557:L362",
+  "name": "SATOブリアン 本店",
+  "v": "V",
+  "h": "satoburi_official",
+  "t": "brand",
+  "note": "The restaurant's own account; its profile names it the Instagram of Sato Briand in Asagaya and describes its selected wagyu. The group runs several shops in Asagaya under this one account, so it is recorded as the operator's account."
+ },
+ {
+  "id": "557:L363",
+  "name": "炭火焼肉 なかはら",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its area and category; no account found for this name in Ichigaya."
+ },
+ {
+  "id": "557:L371",
+  "name": "Comme'N TOKYO 本店",
+  "v": "V",
+  "h": "comme_n",
+  "t": "store",
+  "note": "The account's own profile gives the main shop's address as Okusawa 7-18-5, Setagaya-ku with its daily hours of 7:00 to 18:00; Okusawa 7-chome is the block beside Kuhonbutsu station, where this listing places it. The gluten-free shop, the stand and the Azabudai Hills branch keep separate accounts."
+ },
+ {
+  "id": "557:L372",
+  "name": "VIRON 渋谷店",
+  "v": "V",
+  "h": "viron_shibuya",
+  "t": "store",
+  "note": "The account's own name identifies the Shibuya branch where this listing places it, and its profile describes its French brasserie service through breakfast, lunch, cafe and dinner."
+ },
+ {
+  "id": "557:L376",
+  "name": "パンのペリカン",
+  "v": "A",
+  "h": "",
+  "note": "The bakery itself keeps no account; the account found belongs to its sibling cafe, Pelican Cafe, opened in August 2017, so it was not recorded for the bakery."
+ },
+ {
+  "id": "557:L481",
+  "name": "一升びん 本店",
+  "v": "V",
+  "h": "isshobin",
+  "t": "brand",
+  "note": "The restaurant's own official account; its profile names the main shop as one of Tabelog's hundred best, describes its whole-animal buying of Matsusaka beef and its founding miso sauce, and states that the group runs fifteen shops in the Tokai area, so it is recorded as the operator's account."
+ },
+ {
+  "id": "557:L522",
+  "name": "奥泉 中国茶とおかゆ",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city and its speciality; no account found for this name in Asahikawa."
+ },
+ {
+  "id": "557:L531",
+  "name": "札幌つけ麺 風曄堂",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the shop by this name; no account found. A Sapporo tsukemen shop called Furaido is written with a different character, and the two were not treated as the same shop."
+ },
+ {
+  "id": "557:L537",
+  "name": "チョッパーズ",
+  "v": "V",
+  "h": "choppers_burger.and.cafe_",
+  "t": "store",
+  "note": "The account's own profile gives the shop's address in Kotesashi-cho, Tokorozawa, Saitama by the south exit of Kotesashi station, with its seating, hours, Thursday-Friday closing and parking, matching this listing."
+ },
+ {
+  "id": "557:L538",
+  "name": "狼煙 〜NOROSHI〜",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its city; no account found for this name in Saitama - the name matches are in Naha, Nishi-Funabashi, Higashi-Yamato, Yamato and Nagano."
+ },
+ {
+  "id": "557:L545",
+  "name": "郷の湯",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the bathhouse with its village; no account found for this name in Hakuba - the name match is an onsen in Shirakawa-go, Gifu."
+ },
+ {
+  "id": "557:L546",
+  "name": "白馬姫川温泉 竜神の湯",
+  "v": "A",
+  "h": "",
+  "note": "The hotel that carries the Hakuba-Himekawa spring's name keeps an account, but its profile names its day-use bath Tenjin-no-yu rather than this one, so it could not be tied to this listing."
+ },
+ {
+  "id": "557:L552",
+  "name": "SANFERMO PIZZA ET BBQ",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its village; no account found for it in Hakuba - the name matches are pizzerias in Italy."
+ },
+ {
+  "id": "557:L554",
+  "name": "バーンタイ",
+  "v": "N",
+  "h": "",
+  "note": "Searched Instagram for the restaurant with its town and category; no account found for this name in Karuizawa - the name match is a Thai restaurant in Joetsu, Niigata."
+ }
+]
