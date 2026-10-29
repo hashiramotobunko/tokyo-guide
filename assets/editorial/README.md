@@ -1,15 +1,24 @@
-# Encounter Japan — original editorial vector artwork
+# Encounter Japan — original editorial artwork
 
-The Draft PR uses three original, self-contained SVG visual interpretations of urban Japan. The approach borrows general ideas from late-Showa commercial illustration and city-pop-era visual culture, but does **not** copy a single known artist's composition, technique or signature.
+The page carries three original city-pop illustrations, approved by the owner on 2026-10-23 and placed on the page on 2026-10-29. They are AI-generated artworks made for this guide; the approach borrows general ideas from late-Showa commercial illustration and city-pop-era visual culture, but does **not** copy a single known artist's composition, technique or signature.
 
-| Asset | Editorial subject | Intended use |
-|---|---|---|
-| `night-street.svg` | Imaginary Tokyo record-bar street at dusk | Homepage hero / Tokyo night theme |
-| `day-bookshop.svg` | Imaginary books-and-coffee street | Books, culture, daytime editorial feature |
-| `rooftop-citypop.svg` | Imaginary city rooftop lounge with skyline and vinyl | Second visual feature |
+| Asset | 960 × 1200 | Generated from | Where it appears |
+|---|---|---|---|
+| `tokyo-night.webp` | 227 KB | `雨の東京_ムーンライトレコードバー.png` | "THE CITY WE DRAW." — the large plate |
+| `rooftop-lounge.webp` | 154 KB | `夕暮れのシティポップ_ルーフトップ.png` | "THE CITY WE DRAW." — the offset second plate |
+| `bookshop-day.webp` | 263 KB | `本とコーヒーの東京散歩.png` | Beside the Jimbocho street photograph, as its drawn counterpart |
 
-**These are artworks, not photographs of listed shops.** The page must label them visibly as editorial illustration, and the alt text must not state or imply a venue's actual appearance. No Google Maps imagery, restaurant-owned photos, third-party logos, album-art reproductions or exact storefront facsimiles are embedded.
+Provenance: recovered from `ENCOUNTER_JAPAN_NEW_CHAT_HANDOFF_2026-10-25.zip` →
+`references/optimized_raster_assets_not_in_github.zip`, which carries the original
+`ASSET_MANIFEST.json` with each file's source name, dimensions and SHA-256. That package
+is the optimized form of the owner-approved set described in the 2026-10-23 implementation
+note as `ENCOUNTER_JAPAN_CITYPOP_TESTED_PREVIEW_2026-10-23.zip`.
 
-The owner approved a separate set of high-resolution AI-generated city-pop images visible in the local reviewed artifact `ENCOUNTER_JAPAN_CITYPOP_TESTED_PREVIEW_2026-10-23.zip`. They are **not the same art as the SVGs above** and have not been uploaded to GitHub via this connector; do not claim otherwise.
+**These are artworks, not photographs of listed shops.** Each one is visibly labelled as an
+illustration on the page, and no alt text states or implies a venue's actual appearance. No
+Google Maps imagery, venue-owned photographs, third-party logos, album-art reproductions or
+storefront facsimiles are embedded.
 
-When replacing SVGs with optimized high-resolution WebP/JPEG/AVIF, retain source attribution, alt text, image aspect/size, crop review, mobile loading QA and clear illustrations-vs-real-store distinction. Avoid copying individual Showa illustrators.
+The five vector drafts that stood in for this artwork until 2026-10-29 (`night-street.svg`,
+`day-bookshop.svg`, `rooftop-citypop.svg`, `the-detour-issue.svg`, `after-hours-signal.svg`)
+were removed when the approved artwork arrived. They remain in the Git history.
