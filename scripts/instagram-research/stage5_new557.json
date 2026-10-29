@@ -18,7 +18,7 @@
   "name": "PATH",
   "v": "A",
   "h": "path_restaurant_",
-  "note": "The restaurant's own account was found and its profile gives its hours, its Monday-Tuesday closing and its suspended dinner service, but it states no address or area, so it could not be placed in Yoyogi-Hachiman."
+  "note": "The restaurant's own account was found and its profile gives its hours, its Monday-Tuesday closing and its suspended dinner service, but it states no address or area, so it could not be placed in Yoyogi-Hachiman. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1318/A131810/13190786/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands."
  },
  {
   "id": "557:L172",
@@ -75,7 +75,7 @@
   "name": "The Cream of the Crop Coffee",
   "v": "A",
   "h": "thecreamofthecropcoffee",
-  "note": "The roaster's own account was found and its profile describes its daily in-house roasting, but it states no address or area, so it could not be placed in Kiyosumi-Shirakawa."
+  "note": "The roaster's own account was found and its profile describes its daily in-house roasting, but it states no address or area, so it could not be placed in Kiyosumi-Shirakawa. Third pass: the audit list adds an address for this row (東京都江東区白河4-5-4) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands."
  },
  {
   "id": "557:L286",
@@ -97,21 +97,21 @@
   "name": "珉珉",
   "v": "A",
   "h": "minmin._.official",
-  "note": "The brand's own account was found and its profile dates the business to 1953 and calls it the original gyoza shop, but it names no branch or address, so it could not be tied to the Akasaka shop."
+  "note": "The brand's own account was found and its profile dates the business to 1953 and calls it the original gyoza shop, but it names no branch or address, so it could not be tied to the Akasaka shop. Third pass: the audit list adds an address for this row (東京都港区赤坂8-7-4) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands."
  },
  {
   "id": "557:L347",
   "name": "かわむら",
   "v": "A",
   "h": "",
-  "note": "The search surfaced the Kobe chain Bifteki no Kawamura, whose brand account lists a Ginza branch, but this listing's Google Maps pin is a different place from the one this guide holds for that branch, so it may be the separate Ginza steak restaurant of the same name; which of the two this row denotes could not be established, so no account is recorded."
+  "note": "The search surfaced the Kobe chain Bifteki no Kawamura, whose brand account lists a Ginza branch, but this listing's Google Maps pin is a different place from the one this guide holds for that branch, so it may be the separate Ginza steak restaurant of the same name; which of the two this row denotes could not be established, so no account is recorded. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1301/A130101/13016506/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands."
  },
  {
   "id": "557:L357",
   "name": "ステーキハウス ハマ",
   "v": "A",
   "h": "",
-  "note": "The restaurant keeps an account for its Ginza branch, whose profile places it on Namiki-dori in Ginza and dates it to 1971, but no account for a Shibakoen branch was found, so none could be tied to this listing."
+  "note": "The restaurant keeps an account for its Ginza branch, whose profile places it on Namiki-dori in Ginza and dates it to 1971, but no account for a Shibakoen branch was found, so none could be tied to this listing. Third pass: the venue's own site recorded by the audit list (https://www.steakhousehama.co.jp/shop/) could not be reached, so no link on a page of its own could be checked and the second-pass verdict stands."
  },
  {
   "id": "557:L362",
@@ -149,7 +149,7 @@
   "name": "パンのペリカン",
   "v": "A",
   "h": "",
-  "note": "The bakery itself keeps no account; the account found belongs to its sibling cafe, Pelican Cafe, opened in August 2017, so it was not recorded for the bakery."
+  "note": "The bakery itself keeps no account; the account found belongs to its sibling cafe, Pelican Cafe, opened in August 2017, so it was not recorded for the bakery. Third pass: the audit list adds an address for this row (東京都台東区寿4-7-4) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands."
  },
  {
   "id": "557:L481",
@@ -198,9 +198,11 @@
  {
   "id": "557:L546",
   "name": "白馬姫川温泉 竜神の湯",
-  "v": "A",
-  "h": "",
-  "note": "The hotel that carries the Hakuba-Himekawa spring's name keeps an account, but its profile names its day-use bath Tenjin-no-yu rather than this one, so it could not be tied to this listing."
+  "v": "V",
+  "h": "hakubagoryuofficial",
+  "note": "Third pass: the operator's own site carries this bath's page at the Hakuba Goryu Escal Plaza address that the audit list records for it, and that page links this account, so it is recorded as the operator's account.",
+  "t": "brand",
+  "b": "own-site"
  },
  {
   "id": "557:L552",

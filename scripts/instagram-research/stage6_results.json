@@ -1,0 +1,1518 @@
+[
+ {
+  "id": "L027",
+  "name": "麻布苑",
+  "pages_tried": [
+   {
+    "url": "https://www.makuake.com/project/azabu-en/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://d1h20jgietq515.cloudfront.net/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://dev.visualwebsiteoptimizer.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://lp-mk-2.makuake.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://mkhelp.makuake.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "azabuen0818",
+    "evidence_url": "https://www.makuake.com/project/azabu-en/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L066",
+  "name": "千里眼",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1318/A131811/13099150/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://senrigaaan.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "senrigaaan",
+    "evidence_url": "https://tabelog.com/tokyo/A1318/A131811/13099150/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L075",
+  "name": "PATH",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1318/A131810/13190786/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://award.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://l.instagram.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "path_restaurant_",
+    "evidence_url": "https://tabelog.com/tokyo/A1318/A131810/13190786/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L081",
+  "name": "ステーキハウス鉄板焼 不二",
+  "pages_tried": [
+   {
+    "url": "https://map.yahoo.co.jp/v3/place/Mu-gOcG3d52",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://yomuno.jp/posts/140259",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://www.lycorp.co.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://privacy.lycorp.co.jp/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://support.yahoo-net.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://mdata.tv/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yplace.yahoo.co.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://assets.yomuno.jp/",
+    "status": 403,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "yomuno_official",
+    "evidence_url": "https://yomuno.jp/posts/140259",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L085",
+  "name": "群林堂",
+  "pages_tried": [
+   {
+    "url": "https://kinarino.jp/cat8/28987",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://kinarino.k-img.com/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://mall.kinarino.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "http://www.wagashi.or.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "http://www.suikoudou.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.d-suzumeya.com/",
+    "status": "ConnectError",
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "http://tokyo-mise.jp/",
+    "status": "ConnectError",
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "kinarino_official",
+    "evidence_url": "https://kinarino.jp/cat8/28987",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L111",
+  "name": "手打ちそば 山商",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1319/A131901/13302780/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://award.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "alwaysudon",
+    "evidence_url": "https://tabelog.com/tokyo/A1319/A131901/13302780/",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "soba_yamasho",
+    "evidence_url": "https://tabelog.com/tokyo/A1319/A131901/13302780/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L120",
+  "name": "大村益次郎像",
+  "pages_tried": [
+   {
+    "url": "https://www.yasukuni.or.jp/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site",
+    "name_on_page": false
+   },
+   {
+    "handle": "yasukunijinja",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site",
+    "name_on_page": false
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L136",
+  "name": "明治神宮",
+  "pages_tried": [
+   {
+    "url": "https://www.meijikinenkan.gr.jp/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "meiji_kinenkan_official",
+    "evidence_url": "https://www.meijikinenkan.gr.jp/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L139",
+  "name": "遊就館",
+  "pages_tried": [
+   {
+    "url": "https://www.yasukuni.or.jp/yusyukan/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/yusyukan/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L142",
+  "name": "かっぱ橋道具街",
+  "pages_tried": [
+   {
+    "url": "https://www.kanaya-brush.com/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kanaya_brush_1914",
+    "evidence_url": "https://www.kanaya-brush.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L144",
+  "name": "タイごはん 泉州屋台",
+  "pages_tried": [
+   {
+    "url": "https://retty.me/restaurant/100001538557/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://ximg.retty.me/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.twitter.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://business.paypay.ne.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corp.retty.me/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://retty.news/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://inforetty.zendesk.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "sensyuyatai",
+    "evidence_url": "https://retty.me/restaurant/100001538557/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L150",
+  "name": "The Top.",
+  "pages_tried": [
+   {
+    "url": "https://aoyamagrand.com/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "aoyamagrand",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   },
+   {
+    "handle": "theriveroriental",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   },
+   {
+    "handle": "thetokyorestaurant",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L156",
+  "name": "酒坐愛次郎",
+  "pages_tried": [
+   {
+    "url": "https://savorjapan.com/0020008536",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://cn.savorjapan.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://tw.savorjapan.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://kr.savorjapan.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://alxc.addlv.smt.docomo.ne.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://jp.pinterest.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://japantravel.navitime.com/",
+    "status": 403,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "savor_japan",
+    "evidence_url": "https://savorjapan.com/0020008536",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L170",
+  "name": "JazzHaus POSY",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://use.typekit.net/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://scripts.mediavine.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "tokyoweekender",
+    "evidence_url": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "1973posy",
+    "evidence_url": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L201",
+  "name": "水道橋 スタンドヒーロー",
+  "pages_tried": [
+   {
+    "url": "https://www.inshokuten.com/foodist/article/7089/lead/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://www.inuki-info.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://gourmet-baito-chan.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.tenpodesign.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://job.inshokuten.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.af-mark.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "http://www.synchro-food.co.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "inshokucom_journal",
+    "evidence_url": "https://www.inshokuten.com/foodist/article/7089/lead/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L209",
+  "name": "そば処かめや 神田東口店",
+  "pages_tried": [
+   {
+    "url": "https://retty.me/restaurant/100000053622/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://ximg.retty.me/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.twitter.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://business.paypay.ne.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corp.retty.me/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://retty.news/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://inforetty.zendesk.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "sobadokoro_kameya",
+    "evidence_url": "https://retty.me/restaurant/100000053622/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L274",
+  "name": "THE BELCOMO",
+  "pages_tried": [
+   {
+    "url": "https://aoyamagrand.com/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "aoyamagrand",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   },
+   {
+    "handle": "theriveroriental",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   },
+   {
+    "handle": "thetokyorestaurant",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L298",
+  "name": "ミレチンクエチェント(1500)",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1318/A131810/13269639/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://www.tablecheck.com/en/1500-millecinquecento",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://job.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "1500_millecinquecento",
+    "evidence_url": "https://tabelog.com/tokyo/A1318/A131810/13269639/",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "tablecheck_global",
+    "evidence_url": "https://www.tablecheck.com/en/1500-millecinquecento",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L302",
+  "name": "一天張",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1302/A130204/13283307/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://itten-bari.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://job.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "ittenbari_1",
+    "evidence_url": "https://tabelog.com/tokyo/A1302/A130204/13283307/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L313",
+  "name": "i2 cafe",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1306/A130602/13282796/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://job.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "i2.cafe",
+    "evidence_url": "https://tabelog.com/tokyo/A1306/A130602/13282796/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L347",
+  "name": "かわむら",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1301/A130101/13016506/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://award.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": []
+ },
+ {
+  "id": "L357",
+  "name": "ステーキハウス ハマ",
+  "pages_tried": [
+   {
+    "url": "https://www.steakhousehama.co.jp/shop/",
+    "status": "ConnectError",
+    "role": "own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": []
+ },
+ {
+  "id": "L364",
+  "name": "ラトリエ ドゥ プレジール",
+  "pages_tried": [
+   {
+    "url": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://hamoni.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://hamoni-pro.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corporate.hamoni.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://forms.gle/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://docs.google.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "hamoni_jp",
+    "evidence_url": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "profite_sincerite",
+    "evidence_url": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L382",
+  "name": "バンタイ",
+  "pages_tried": [
+   {
+    "url": "https://retty.me/restaurant/100000001521/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://ximg.retty.me/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.twitter.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://ban-thai.studio.site/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://business.paypay.ne.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corp.retty.me/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://retty.news/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "banthai_shinjyuku",
+    "evidence_url": "https://retty.me/restaurant/100000001521/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L396",
+  "name": "麺 ふじさき",
+  "pages_tried": [
+   {
+    "url": "https://tabelog.com/tokyo/A1312/A131202/13276443/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://tblg.k-img.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://yoyaku.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://award.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://help.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://owner.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://magazine.tabelog.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": []
+ },
+ {
+  "id": "L400",
+  "name": "コディーズ",
+  "pages_tried": [
+   {
+    "url": "https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://hamoni.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://hamoni-pro.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corporate.hamoni.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://forms.gle/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://docs.google.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "codies.burger",
+    "evidence_url": "https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "hamoni_jp",
+    "evidence_url": "https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L425",
+  "name": "そば 酒 まつもと",
+  "pages_tried": [
+   {
+    "url": "https://intojapanwaraku.com/travel/254203/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://unpkg.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://use.fontawesome.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://codoc.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.shogakukan.co.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://shogakukan.tameshiyo.me/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://skygarden.shogakukan.co.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "warakumagazine",
+    "evidence_url": "https://intojapanwaraku.com/travel/254203/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L436",
+  "name": "甘味どころ ぎをん 小森",
+  "pages_tried": [
+   {
+    "url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://hamoni.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://hamoni-pro.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corporate.hamoni.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://forms.gle/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://docs.google.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "hamoni_jp",
+    "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "panelcafe_kyoto",
+    "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "kissa_me8",
+    "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "hyde_and_away",
+    "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "banana_for_human_by_gorilla",
+    "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "berry._.button",
+    "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L443",
+  "name": "やまもと喫茶",
+  "pages_tried": [
+   {
+    "url": "https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://hamoni.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://hamoni-pro.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corporate.hamoni.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://forms.gle/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://docs.google.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "yamamoto_kissa",
+    "evidence_url": "https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "hamoni_jp",
+    "evidence_url": "https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L457",
+  "name": "グリコサイン",
+  "pages_tried": [
+   {
+    "url": "https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://media.timeout.com/",
+    "status": 404,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://micro.rubiconproject.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.timeout.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.pinterest.co.uk/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://mainichi.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "timeoutosaka_jp",
+    "evidence_url": "https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L458",
+  "name": "天神橋筋商店街",
+  "pages_tried": [
+   {
+    "url": "https://tenjin3.com/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tenjinbashi3choume",
+    "evidence_url": "https://tenjin3.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L486",
+  "name": "BRISK STAND 神戸本店",
+  "pages_tried": [
+   {
+    "url": "https://brisk-stand.com/shoplist",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "briskstand",
+    "evidence_url": "https://brisk-stand.com/shoplist",
+    "method": "linked-from-own-site",
+    "name_on_page": false
+   },
+   {
+    "handle": "briskstand_asakusa",
+    "evidence_url": "https://brisk-stand.com/shoplist",
+    "method": "linked-from-own-site",
+    "name_on_page": false
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L505",
+  "name": "がつや しまざき",
+  "pages_tried": [
+   {
+    "url": "https://www.cotaru.co/post/otaru-izakaya-guide",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://static.wixstatic.com/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://static.parastorage.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.rentalcycle.cotaru.co/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://rentalcycle.cotaru.co/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "cotaruco",
+    "evidence_url": "https://www.cotaru.co/post/otaru-izakaya-guide",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L507",
+  "name": "-Freehouse-THE YEAST",
+  "pages_tried": [
+   {
+    "url": "https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://use.typekit.net/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://res.cloudinary.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://maps.googleapis.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://accounts.google.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://store.voyapon.com/",
+    "status": 403,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "freehouse_the_yeast",
+    "evidence_url": "https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "voyapon",
+    "evidence_url": "https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ },
+ {
+  "id": "L546",
+  "name": "白馬姫川温泉 竜神の湯",
+  "pages_tried": [
+   {
+    "url": "https://www.hakubaescal.com/shokubutsuen/spa/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "hakubagoryuofficial",
+    "evidence_url": "https://www.hakubaescal.com/shokubutsuen/spa/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L553",
+  "name": "炭火焼肉 深山",
+  "pages_tried": [
+   {
+    "url": "https://www.full-marks.com/",
+    "status": 200,
+    "role": "own-site"
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "fullmarks_official",
+    "evidence_url": "https://www.full-marks.com/",
+    "method": "linked-from-own-site",
+    "name_on_page": true
+   }
+  ],
+  "weak_candidates": []
+ },
+ {
+  "id": "L558",
+  "name": "中華蕎麦うえず",
+  "pages_tried": [
+   {
+    "url": "https://retty.me/restaurant/100001210103/",
+    "status": 200,
+    "role": "directory"
+   },
+   {
+    "url": "https://ximg.retty.me/",
+    "status": 403,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://www.twitter.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://sites.google.com/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://business.paypay.ne.jp/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://corp.retty.me/",
+    "status": 200,
+    "role": "candidate-own-site"
+   },
+   {
+    "url": "https://retty.news/",
+    "status": 200,
+    "role": "candidate-own-site"
+   }
+  ],
+  "candidates": [],
+  "weak_candidates": [
+   {
+    "handle": "i.shige_tabearuki",
+    "evidence_url": "https://retty.me/restaurant/100001210103/",
+    "method": "printed-on-directory-page"
+   },
+   {
+    "handle": "wez_kofu",
+    "evidence_url": "https://retty.me/restaurant/100001210103/",
+    "method": "printed-on-directory-page"
+   }
+  ]
+ }
+]

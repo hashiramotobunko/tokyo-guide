@@ -109,7 +109,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account named イト I.To describes a French-based a la carte restaurant, but its profile text does not state Higashi-Nakano, so it could not be tied to this listing. Second pass: the restaurant's own account was found and its profile describes its French-based a la carte cooking and private-hire minimum, but it states no address or area, so it could not be placed in Higashi-Nakano.",
+  "evidence": "An account named イト I.To describes a French-based a la carte restaurant, but its profile text does not state Higashi-Nakano, so it could not be tied to this listing. Second pass: the restaurant's own account was found and its profile describes its French-based a la carte cooking and private-hire minimum, but it states no address or area, so it could not be placed in Higashi-Nakano. Third pass: the audit list adds neither an address nor a source page for this row, so there was nothing new to check and the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/i.to_restaurant/",
   "status": "AMBIGUOUS"
  },
@@ -375,7 +375,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account of this brand is the Ueno/Okachimachi branch's, whose profile gives the Ueno address; no account for the Harajuku branch was found, and the Ueno branch's account is not this branch's. Second pass: the brand keeps one account, whose profile gives only the Ueno shop's address and hours; no account for the Harajuku branch exists, so none could be tied to this listing.",
+  "evidence": "The only account of this brand is the Ueno/Okachimachi branch's, whose profile gives the Ueno address; no account for the Harajuku branch was found, and the Ueno branch's account is not this branch's. Second pass: the brand keeps one account, whose profile gives only the Ueno shop's address and hours; no account for the Harajuku branch exists, so none could be tied to this listing. Third pass: the audit list adds neither an address nor a source page for this row, so there was nothing new to check and the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -470,7 +470,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: azabuen0818 Second pass: no account was found under this restaurant's name; the nearest match is a differently named Azabu-Juban restaurant whose only account belongs to its manager.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: azabuen0818 Second pass: no account was found under this restaurant's name; the nearest match is a differently named Azabu-Juban restaurant whose only account belongs to its manager. Third pass: read the sources the audit list records for this row (https://www.makuake.com/project/azabu-en/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.makuake.com/project/azabu-en/",
   "status": "AMBIGUOUS"
  },
@@ -1211,7 +1211,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: senrigaaan Second pass: no account was found for this shop in Yoyogi-Uehara; the handle printed for it on a directory page belongs to a shop of the same name in Shiki, Saitama, so it was not recorded.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: senrigaaan Second pass: no account was found for this shop in Yoyogi-Uehara; the handle printed for it on a directory page belongs to a shop of the same name in Shiki, Saitama, so it was not recorded. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1318/A131811/13099150/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://tabelog.com/tokyo/A1318/A131811/13099150/",
   "status": "AMBIGUOUS"
  },
@@ -1363,7 +1363,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bakumatsucurry, ippukuandmatcha_uehara, sakaba_debayashi Second pass: the bakery's own account was found and its profile gives the opening hours and closing days, but it states no address or area, so it could not be placed in Nishihara.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: bakumatsucurry, ippukuandmatcha_uehara, sakaba_debayashi Second pass: the bakery's own account was found and its profile gives the opening hours and closing days, but it states no address or area, so it could not be placed in Nishihara. Third pass: the audit list adds an address for this row (渋谷区西原1-7-5) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/katanebakery/",
   "status": "AMBIGUOUS"
  },
@@ -1458,7 +1458,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The only Instagram link on the page reached was rurubuplus, the publisher's own account. Seen: none Second pass: an account under this shop's name was found and its profile gives the cafe and crepe hours and the whole-cake ordering, but it states no address or area, so it could not be placed in Yoyogi-Uehara.",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The only Instagram link on the page reached was rurubuplus, the publisher's own account. Seen: none Second pass: an account under this shop's name was found and its profile gives the cafe and crepe hours and the whole-cake ordering, but it states no address or area, so it could not be placed in Yoyogi-Uehara. Third pass: the audit list adds an address for this row (渋谷区上原1-2-1) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/horn.tokyo/",
   "status": "AMBIGUOUS"
  },
@@ -1477,7 +1477,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yomuno_official Second pass: no account was found under this restaurant's name in Nakameguro; the results were other steak and teppanyaki restaurants in the area.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yomuno_official Second pass: no account was found under this restaurant's name in Nakameguro; the results were other steak and teppanyaki restaurants in the area. Third pass: read the sources the audit list records for this row (https://map.yahoo.co.jp/v3/place/Mu-gOcG3d52, https://yomuno.jp/posts/140259) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://yomuno.jp/posts/140259",
   "status": "AMBIGUOUS"
  },
@@ -1553,7 +1553,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: kinarino_official Second pass: no account was found under this shop's name in Otowa; the handle printed for it on a directory page is the publisher's own.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: kinarino_official Second pass: no account was found under this shop's name in Otowa; the handle printed for it on a directory page is the publisher's own. Third pass: read the sources the audit list records for this row (https://kinarino.jp/cat8/28987) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://kinarino.jp/cat8/28987",
   "status": "AMBIGUOUS"
  },
@@ -1591,7 +1591,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts both present themselves as this brand's Omotesando shop (amam_dacotan_omotesando and amam_dacotan_omotedando) and they give different addresses; neither could be established as the shop's own, so none is recorded. Second pass: two accounts present themselves as this brand's Omotesando shop under near-identical names, and both now give the same address at Kita-Aoyama 3-7-6; because nothing distinguishes which of the two is the shop's current account, neither is recorded. A third account belongs to the separate cafe and bake shop at Kita-Aoyama 3-6-23.",
+  "evidence": "Two accounts both present themselves as this brand's Omotesando shop (amam_dacotan_omotesando and amam_dacotan_omotedando) and they give different addresses; neither could be established as the shop's own, so none is recorded. Second pass: two accounts present themselves as this brand's Omotesando shop under near-identical names, and both now give the same address at Kita-Aoyama 3-7-6; because nothing distinguishes which of the two is the shop's current account, neither is recorded. A third account belongs to the separate cafe and bake shop at Kita-Aoyama 3-6-23. Third pass: the audit list adds an address for this row (港区北青山3-7-6) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -1781,7 +1781,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The account found belongs to this operator's Keikeikaku branches near Kamata station, not to the main shop this listing records; no account for the main shop was found. Second pass: the brand keeps an account for its Keishinkaku branch, whose profile lists the Kamata branches, but no account was found for the main shop, so none could be tied to this listing.",
+  "evidence": "The account found belongs to this operator's Keikeikaku branches near Kamata station, not to the main shop this listing records; no account for the main shop was found. Second pass: the brand keeps an account for its Keishinkaku branch, whose profile lists the Kamata branches, but no account was found for the main shop, so none could be tied to this listing. Third pass: the audit list adds an address for this row (大田区蒲田4-24-14) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -2047,7 +2047,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: pizzeriaciro.hgn Second pass: the shop's own account was found and its profile gives the lunch and dinner hours, closing days and a Tokyo telephone number, but no address or area, so it could not be placed in Nakano.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: pizzeriaciro.hgn Second pass: the shop's own account was found and its profile gives the lunch and dinner hours, closing days and a Tokyo telephone number, but no address or area, so it could not be placed in Nakano. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1319/A131901/13302780/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/soba_yamasho/",
   "status": "AMBIGUOUS"
  },
@@ -2218,7 +2218,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The monument has no account of its own. The site links two Yasukuni Shrine accounts and neither is the statue's - left ambiguous rather than attributing the shrine's account to a monument. Candidates: yasukuni.official, yasukunijinja Second pass: the statue has no account of its own. The shrine whose grounds it stands in keeps one, but attributing the shrine's account to a monument would misrepresent it, so none is recorded.",
+  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. The monument has no account of its own. The site links two Yasukuni Shrine accounts and neither is the statue's - left ambiguous rather than attributing the shrine's account to a monument. Candidates: yasukuni.official, yasukunijinja Second pass: the statue has no account of its own. The shrine whose grounds it stands in keeps one, but attributing the shrine's account to a monument would misrepresent it, so none is recorded. Third pass: read the sources the audit list records for this row (https://www.yasukuni.or.jp/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.yasukuni.or.jp/",
   "status": "AMBIGUOUS"
  },
@@ -2522,7 +2522,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Accounts reached are Meiji Kinenkan and the shrine's support association, neither of them the shrine's own account. Seen: meiji_kinenkan_official, meijijingu_sukeikai Second pass: the shrine keeps no account of its own; the only official account in its name belongs to its wedding venue, Forest Terrace, so none is recorded for the shrine.",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Accounts reached are Meiji Kinenkan and the shrine's support association, neither of them the shrine's own account. Seen: meiji_kinenkan_official, meijijingu_sukeikai Second pass: the shrine keeps no account of its own; the only official account in its name belongs to its wedding venue, Forest Terrace, so none is recorded for the shrine. Third pass: read the sources the audit list records for this row (https://www.meijikinenkan.gr.jp/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.meijikinenkan.gr.jp/",
   "status": "AMBIGUOUS"
  },
@@ -2579,7 +2579,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Museum inside Yasukuni; its page links the shrine's two accounts, neither specific to the museum. Candidates: yasukuni.official, yasukunijinja Second pass: the museum keeps no account of its own. The shrine it stands in has one, but it is the shrine's and not this museum's, so none is recorded.",
+  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Museum inside Yasukuni; its page links the shrine's two accounts, neither specific to the museum. Candidates: yasukuni.official, yasukunijinja Second pass: the museum keeps no account of its own. The shrine it stands in has one, but it is the shrine's and not this museum's, so none is recorded. Third pass: read the sources the audit list records for this row (https://www.yasukuni.or.jp/yusyukan/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.yasukuni.or.jp/yusyukan/",
   "status": "AMBIGUOUS"
  },
@@ -2636,7 +2636,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the street were reached, not the shopping street's own. Seen: kanaya_brush_1914, takaso_demoandkitchen Second pass: the shopping street keeps no account of its own; the association that runs it maintains an account for its annual tool fair, and the rest are individual member shops, so none is recorded for the street.",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the street were reached, not the shopping street's own. Seen: kanaya_brush_1914, takaso_demoandkitchen Second pass: the shopping street keeps no account of its own; the association that runs it maintains an account for its annual tool fair, and the rest are individual member shops, so none is recorded for the street. Third pass: read the sources the audit list records for this row (https://www.kanaya-brush.com/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.kanaya-brush.com/",
   "status": "AMBIGUOUS"
  },
@@ -2674,7 +2674,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: agora_jp, sensyuyatai Second pass: no account was found that carries this shop's name and places it anywhere; the handle printed for it on a directory page could not be confirmed on a profile.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: agora_jp, sensyuyatai Second pass: no account was found that carries this shop's name and places it anywhere; the handle printed for it on a directory page could not be confirmed on a profile. Third pass: read the sources the audit list records for this row (https://retty.me/restaurant/100001538557/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://retty.me/restaurant/100001538557/",
   "status": "AMBIGUOUS"
  },
@@ -2788,7 +2788,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only the hotel's and its sibling restaurants' accounts were reached, none of them this bar's. Seen: aoyamagrand, theriveroriental, thetokyorestaurant Second pass: no account was found under this bar's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this bar's.",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only the hotel's and its sibling restaurants' accounts were reached, none of them this bar's. Seen: aoyamagrand, theriveroriental, thetokyorestaurant Second pass: no account was found under this bar's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this bar's. Third pass: read the sources the audit list records for this row (https://aoyamagrand.com/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://aoyamagrand.com/",
   "status": "AMBIGUOUS"
  },
@@ -2807,7 +2807,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts carry this name: one places itself in Minami-Aoyama and Nishi-Azabu, not Ginza, and the other gives no location. Neither could be tied to this listing. Second pass: the account carrying this bar's name places itself in Minami-Aoyama and Nishi-Azabu, not Ginza where this listing places it, so it was not recorded.",
+  "evidence": "Two accounts carry this name: one places itself in Minami-Aoyama and Nishi-Azabu, not Ginza, and the other gives no location. Neither could be tied to this listing. Second pass: the account carrying this bar's name places itself in Minami-Aoyama and Nishi-Azabu, not Ginza where this listing places it, so it was not recorded. Third pass: the audit list adds an address for this row (東京都港区南青山6-6-21 グロービル青山 B1) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -2845,7 +2845,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this exact name exists and describes a soba restaurant in a century-old townhouse, but its profile states no location, so it could not be tied to this listing's area. Second pass: the restaurant's own account was found and its profile describes its hundred-year-old townhouse setting and its reservation-only course lunch, but it states no address or area, so it could not be placed in Ochiai.",
+  "evidence": "An account of this exact name exists and describes a soba restaurant in a century-old townhouse, but its profile states no location, so it could not be tied to this listing's area. Second pass: the restaurant's own account was found and its profile describes its hundred-year-old townhouse setting and its reservation-only course lunch, but it states no address or area, so it could not be placed in Ochiai. Third pass: searched Instagram for the address the audit list records (東京都新宿区下落合3-21-5); no profile prints it, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/sobaosame/",
   "status": "AMBIGUOUS"
  },
@@ -2902,7 +2902,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: savor_japan Second pass: no account was found under this shop's name in Koenji.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: savor_japan Second pass: no account was found under this shop's name in Koenji. Third pass: read the sources the audit list records for this row (https://savorjapan.com/0020008536) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://savorjapan.com/0020008536",
   "status": "AMBIGUOUS"
  },
@@ -3168,7 +3168,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: 1973posy, tokyoweekender Second pass: no account was found for this venue in Setagaya; the handle printed for it on a media page could not be confirmed on any profile naming the venue.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: 1973posy, tokyoweekender Second pass: no account was found for this venue in Setagaya; the handle printed for it on a media page could not be confirmed on any profile naming the venue. Third pass: read the sources the audit list records for this row (https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/",
   "status": "AMBIGUOUS"
  },
@@ -3225,7 +3225,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists but states no location, and its handle points to a different district, so it could not be tied to this listing. Second pass: the only account carrying this name belongs to a yakitori shop in Kabukicho and gives no address, so it could not be tied to this listing in Yotsuya.",
+  "evidence": "An account of this name exists but states no location, and its handle points to a different district, so it could not be tied to this listing. Second pass: the only account carrying this name belongs to a yakitori shop in Kabukicho and gives no address, so it could not be tied to this listing in Yotsuya. Third pass: the audit list adds an address for this row (東京都新宿区荒木町3-1) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/michishirube_kabuki/",
   "status": "AMBIGUOUS"
  },
@@ -3681,7 +3681,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: inshokucom_journal Second pass: no account was found under this bar's name in Suidobashi.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: inshokucom_journal Second pass: no account was found under this bar's name in Suidobashi. Third pass: read the sources the audit list records for this row (https://www.inshokuten.com/foodist/article/7089/lead/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.inshokuten.com/foodist/article/7089/lead/",
   "status": "AMBIGUOUS"
  },
@@ -3719,7 +3719,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account exists for a shop of nearly this name written with a different kana, but it states no location, so it could not be tied to this listing. Second pass: no account was found for this shop in Edogawabashi; the name matches are a ramen shop in Fukaya, Saitama and a shop whose name is spelled differently.",
+  "evidence": "An account exists for a shop of nearly this name written with a different kana, but it states no location, so it could not be tied to this listing. Second pass: no account was found for this shop in Edogawabashi; the name matches are a ramen shop in Fukaya, Saitama and a shop whose name is spelled differently. Third pass: the audit list adds an address for this row (東京都文京区関口1-48-48 イシダビル 1F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/piy0469/",
   "status": "AMBIGUOUS"
  },
@@ -3833,7 +3833,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: sobadokoro_kameya Second pass: no account was found for this branch; the handle printed for it on a directory page could not be confirmed on a profile naming the shop or its Kanda branch.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: sobadokoro_kameya Second pass: no account was found for this branch; the handle printed for it on a directory page could not be confirmed on a profile naming the shop or its Kanda branch. Third pass: read the sources the audit list records for this row (https://retty.me/restaurant/100000053622/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://retty.me/restaurant/100000053622/",
   "status": "AMBIGUOUS"
  },
@@ -4783,7 +4783,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists for an Italian restaurant and bar, but its profile gives no address; only its telephone exchange points to this area, which is not enough to tie it to this listing. Second pass: the restaurant's own account was found and its profile describes its charcoal-grilled Italian cooking, hours and telephone number, whose 03-6420 exchange covers the Gotanda area, but the profile prints no address, so the area could not be confirmed from the profile itself.",
+  "evidence": "An account of this name exists for an Italian restaurant and bar, but its profile gives no address; only its telephone exchange points to this area, which is not enough to tie it to this listing. Second pass: the restaurant's own account was found and its profile describes its charcoal-grilled Italian cooking, hours and telephone number, whose 03-6420 exchange covers the Gotanda area, but the profile prints no address, so the area could not be confirmed from the profile itself. Third pass: the audit list adds an address for this row (東京都品川区西五反田1-4-8 202) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/vigo.tokyo/",
   "status": "AMBIGUOUS"
  },
@@ -4973,7 +4973,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: musicbarbounce Second pass: the bar's own account was found and its profile gives its music policy, opening hours and charges, but it states no address or area, so it could not be placed in Shibuya.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: musicbarbounce Second pass: the bar's own account was found and its profile gives its music policy, opening hours and charges, but it states no address or area, so it could not be placed in Shibuya. Third pass: the audit list adds an address for this row (東京都渋谷区道玄坂2-19-12 東洋道玄坂ビル2F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/musicbarbounce/",
   "status": "AMBIGUOUS"
  },
@@ -5030,7 +5030,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Restaurant inside THE AOYAMA GRAND HOTEL. The hotel site links the hotel and two sibling restaurants, none of them this one. Candidates: aoyamagrand, theriveroriental, thetokyorestaurant Second pass: no account was found under this restaurant's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this one's.",
+  "evidence": "Several official accounts are linked from the site and none is identifiable as this venue's. Restaurant inside THE AOYAMA GRAND HOTEL. The hotel site links the hotel and two sibling restaurants, none of them this one. Candidates: aoyamagrand, theriveroriental, thetokyorestaurant Second pass: no account was found under this restaurant's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this one's. Third pass: read the sources the audit list records for this row (https://aoyamagrand.com/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://aoyamagrand.com/",
   "status": "AMBIGUOUS"
  },
@@ -5125,7 +5125,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this exact name exists but its profile states no location, so it could not be tied to this listing's area. Second pass: an account under this restaurant's name was found but its profile carries no address, hours or other detail, so it could not be placed in Mita or Tamachi.",
+  "evidence": "An account of this exact name exists but its profile states no location, so it could not be tied to this listing's area. Second pass: an account under this restaurant's name was found but its profile carries no address, hours or other detail, so it could not be placed in Mita or Tamachi. Third pass: searched Instagram for the address the audit list records (東京都港区三田2-6-13 コート三田); no profile prints it, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/sobakiri_tokiwa/",
   "status": "AMBIGUOUS"
  },
@@ -5429,7 +5429,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: tablecheck_global Second pass: no account was found under this bar's name in Yoyogi-Hachiman.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: tablecheck_global Second pass: no account was found under this bar's name in Yoyogi-Hachiman. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1318/A131810/13269639/, https://www.tablecheck.com/en/1500-millecinquecento) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.tablecheck.com/en/1500-millecinquecento",
   "status": "AMBIGUOUS"
  },
@@ -5467,7 +5467,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists for a wine bar, but its profile states no location, so it could not be tied to this listing's area. Second pass: an account under this venue's name was found and its profile describes a wine bar with simple snacks and gives its late hours, but it states no address or area, so it could not be placed in Yoyogi-Hachiman; a pub of the same name in Monzen-Nakacho keeps a separate account.",
+  "evidence": "An account of this name exists for a wine bar, but its profile states no location, so it could not be tied to this listing's area. Second pass: an account under this venue's name was found and its profile describes a wine bar with simple snacks and gives its late hours, but it states no address or area, so it could not be placed in Yoyogi-Hachiman; a pub of the same name in Monzen-Nakacho keeps a separate account. Third pass: the audit list adds an address for this row (東京都渋谷区西原3-24-1 アムール代々木上原104) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/__________ultimo/",
   "status": "AMBIGUOUS"
  },
@@ -5505,7 +5505,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: ittenbari_1 Second pass: no account of this restaurant's own was found; a Ningyocho izakaya's account names it among its sister shops, but that is not this restaurant's account and the handle printed for it on a directory page could not be confirmed.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: ittenbari_1 Second pass: no account of this restaurant's own was found; a Ningyocho izakaya's account names it among its sister shops, but that is not this restaurant's account and the handle printed for it on a directory page could not be confirmed. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1302/A130204/13283307/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://tabelog.com/tokyo/A1302/A130204/13283307/",
   "status": "AMBIGUOUS"
  },
@@ -5562,7 +5562,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: nadoya.katte Second pass: the stand's own account was found and its profile describes it as a single-origin coffee stand produced by nadoya with coffee supervised by Glitch, and gives its hours, but neither it nor the parent account states an address, so it could not be placed in Yoyogi-Uehara.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: nadoya.katte Second pass: the stand's own account was found and its profile describes it as a single-origin coffee stand produced by nadoya with coffee supervised by Glitch, and gives its hours, but neither it nor the parent account states an address, so it could not be placed in Yoyogi-Uehara. Third pass: searched Instagram for the address the audit list records (東京都渋谷区西原3-19-3); no profile prints it, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/nadoya.katte/",
   "status": "AMBIGUOUS"
  },
@@ -5695,7 +5695,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: i2.cafe Second pass: no account was found under this cafe's name in Omotesando or Minami-Aoyama.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: i2.cafe Second pass: no account was found under this cafe's name in Omotesando or Minami-Aoyama. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1306/A130602/13282796/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://tabelog.com/tokyo/A1306/A130602/13282796/",
   "status": "AMBIGUOUS"
  },
@@ -5733,7 +5733,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account of this name exists and names the operating company in its profile, but it has almost no content and states no location, so it could not be tied to this listing. Second pass: no account was found for this restaurant in Aoyama; the name matches are unrelated businesses in Osaka, Arima, Hirakata and Taiwan.",
+  "evidence": "An account of this name exists and names the operating company in its profile, but it has almost no content and states no location, so it could not be tied to this listing. Second pass: no account was found for this restaurant in Aoyama; the name matches are unrelated businesses in Osaka, Arima, Hirakata and Taiwan. Third pass: the audit list adds an address for this row (東京都港区北青山2-14-4 the ARGYLE aoyama 2F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/kawakami.an/",
   "status": "AMBIGUOUS"
  },
@@ -5866,7 +5866,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts present themselves as this shop's owner and neither states the shop's address; one notes that an earlier account naming this shop and area was taken over, so no account could be confirmed as the shop's. Second pass: the two accounts carrying this shop's name both belong to its proprietor, and the newer one explains that the shop's earlier account was hijacked; neither is the shop's own account, so none is recorded.",
+  "evidence": "Two accounts present themselves as this shop's owner and neither states the shop's address; one notes that an earlier account naming this shop and area was taken over, so no account could be confirmed as the shop's. Second pass: the two accounts carrying this shop's name both belong to its proprietor, and the newer one explains that the shop's earlier account was hijacked; neither is the shop's own account, so none is recorded. Third pass: the audit list adds an address for this row (東京都新宿区山吹町362 プレステージ362) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -6075,7 +6075,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account named Restaurant Glover-tei exists, but its profile gives no address and nothing in it places the shop in Mitaka; a second account of the same name is a Nagasaki champon shop in Niigata, so neither could be established as this shop's. Second pass: the restaurant's own account was searched again with the city name; its profile still gives no address and nothing places the shop in Mitaka, so it is not recorded.",
+  "evidence": "An account named Restaurant Glover-tei exists, but its profile gives no address and nothing in it places the shop in Mitaka; a second account of the same name is a Nagasaki champon shop in Niigata, so neither could be established as this shop's. Second pass: the restaurant's own account was searched again with the city name; its profile still gives no address and nothing places the shop in Mitaka, so it is not recorded. Third pass: the audit list adds an address for this row (東京都三鷹市下連雀3-25-8) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/gurabar111/",
   "status": "AMBIGUOUS"
  },
@@ -6113,7 +6113,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account named Chuka Juhachiban exists and matches the name and category, but its profile gives only opening hours and no location, so it could not be tied to the Nogata shop; the other name matches are in Chuo-ku, Osaka and Wakayama. Second pass: the account carrying this shop's name gives its menu, hours and a large car park in its profile but no address, and the profile's car park does not match a Nogata shopfront, so it is not recorded.",
+  "evidence": "An account named Chuka Juhachiban exists and matches the name and category, but its profile gives only opening hours and no location, so it could not be tied to the Nogata shop; the other name matches are in Chuo-ku, Osaka and Wakayama. Second pass: the account carrying this shop's name gives its menu, hours and a large car park in its profile but no address, and the profile's car park does not match a Nogata shopfront, so it is not recorded. Third pass: the audit list adds an address for this row (東京都中野区大和町2-2-2) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/chuukayasan_18/",
   "status": "AMBIGUOUS"
  },
@@ -6284,7 +6284,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The chain keeps separate branch accounts (Hokkaido, Okinawa and Miyakojima among them) but no account for the Shinjuku branch was found, and the brand-level account's profile gives no location, so none could be tied to this branch. Second pass: the chain's own accounts name a brand-level account and separate regional accounts for Hokkaido, Okinawa, Miyakojima and Vietnam, but none of them is placed in Shinjuku, so none could be tied to this branch.",
+  "evidence": "The chain keeps separate branch accounts (Hokkaido, Okinawa and Miyakojima among them) but no account for the Shinjuku branch was found, and the brand-level account's profile gives no location, so none could be tied to this branch. Second pass: the chain's own accounts name a brand-level account and separate regional accounts for Hokkaido, Okinawa, Miyakojima and Vietnam, but none of them is placed in Shinjuku, so none could be tied to this branch. Third pass: the audit list adds an address for this row (東京都新宿区歌舞伎町1-15-12) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -6512,7 +6512,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account carrying this restaurant's name and its proprietor's name exists and its profile gives opening hours and the Tuesday-Wednesday closing, but no address or area, so it could not be tied to the Shikahama shop. Second pass: searched again with the neighbourhood name; the account carrying this restaurant's and its proprietor's name still gives only its hours and closing days, with no address, so it could not be placed in Shikahama.",
+  "evidence": "An account carrying this restaurant's name and its proprietor's name exists and its profile gives opening hours and the Tuesday-Wednesday closing, but no address or area, so it could not be tied to the Shikahama shop. Second pass: searched again with the neighbourhood name; the account carrying this restaurant's and its proprietor's name still gives only its hours and closing days, with no address, so it could not be placed in Shikahama. Third pass: the audit list adds an address for this row (東京都足立区鹿浜3-13-4) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/sutaminaen/",
   "status": "AMBIGUOUS"
  },
@@ -6531,7 +6531,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The brand's account exists but its profile places the restaurant at Azabudai Hills, not Ebisu where this listing places it, so it was not recorded; the sibling accounts are the Kanda and Taipei restaurants. Second pass: searched again with the neighbourhood and the brand's other name; the account still places the restaurant at Azabudai Hills rather than Ebisu, so it was not recorded.",
+  "evidence": "The brand's account exists but its profile places the restaurant at Azabudai Hills, not Ebisu where this listing places it, so it was not recorded; the sibling accounts are the Kanda and Taipei restaurants. Second pass: searched again with the neighbourhood and the brand's other name; the account still places the restaurant at Azabudai Hills rather than Ebisu, so it was not recorded. Third pass: the audit list adds an address for this row (東京都渋谷区恵比寿1-11-5 GEMS恵比寿8F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/vanne_yoroniku/",
   "status": "AMBIGUOUS"
  },
@@ -6550,7 +6550,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: profite_sincerite Second pass: no account was found under this shop's name in Soshigaya-Okura.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: profite_sincerite Second pass: no account was found under this shop's name in Soshigaya-Okura. Third pass: read the sources the audit list records for this row (https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks",
   "status": "AMBIGUOUS"
  },
@@ -6759,7 +6759,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The bakery's brand account exists and gives its hours, but neither it nor the sibling coffee account states any location, so the account could not be placed in Roppongi. Second pass: searched again with the neighbourhood names; neither the bakery's account nor its sibling coffee account prints an address, so the shop could not be placed in Roppongi.",
+  "evidence": "The bakery's brand account exists and gives its hours, but neither it nor the sibling coffee account states any location, so the account could not be placed in Roppongi. Second pass: searched again with the neighbourhood names; neither the bakery's account nor its sibling coffee account prints an address, so the shop could not be placed in Roppongi. Third pass: the audit list adds an address for this row (東京都港区六本木6-15-1 六本木ヒルズけやき坂テラス1F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/bricolage_bread_and_company/",
   "status": "AMBIGUOUS"
  },
@@ -6835,7 +6835,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banthai_shinjyuku Second pass: no account was found under this restaurant's name in Shinjuku; the name match is a Thai restaurant in Joetsu, Niigata.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banthai_shinjyuku Second pass: no account was found under this restaurant's name in Shinjuku; the name match is a Thai restaurant in Joetsu, Niigata. Third pass: read the sources the audit list records for this row (https://retty.me/restaurant/100000001521/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://retty.me/restaurant/100000001521/",
   "status": "AMBIGUOUS"
  },
@@ -6854,7 +6854,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: hotatebiyori Second pass: the shop's own account was found and its profile describes its Sarufutsu scallops and Hokkaido wheat noodles, but it states no address or area, so it could not be placed in Akihabara.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: hotatebiyori Second pass: the shop's own account was found and its profile describes its Sarufutsu scallops and Hokkaido wheat noodles, but it states no address or area, so it could not be placed in Akihabara. Third pass: searched Instagram for the address the audit list records (東京都千代田区神田佐久間町2-25); no profile prints it, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/hotatebiyori/",
   "status": "AMBIGUOUS"
  },
@@ -7006,7 +7006,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: medikasoba.kin_gyo Second pass: the shop's own account was found and its profile gives its hours and its two soup styles, but it states no address or area, so it could not be placed in Manganji.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: medikasoba.kin_gyo Second pass: the shop's own account was found and its profile gives its hours and its two soup styles, but it states no address or area, so it could not be placed in Manganji. Third pass: the audit list adds an address for this row (東京都日野市石田2-9-1) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/medikasoba.kin_gyo/",
   "status": "AMBIGUOUS"
  },
@@ -7025,7 +7025,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account with this shop's exact and distinctive name exists and its profile gives the opening days and hours, but it states no address or area, so it could not be placed in Higashi-Ogu. Second pass: searched again with the ward name; the shop's own account still gives only its opening days and hours, with no address, so it could not be placed in Higashi-Ogu.",
+  "evidence": "An account with this shop's exact and distinctive name exists and its profile gives the opening days and hours, but it states no address or area, so it could not be placed in Higashi-Ogu. Second pass: searched again with the ward name; the shop's own account still gives only its opening days and hours, with no address, so it could not be placed in Higashi-Ogu. Third pass: the audit list adds an address for this row (東京都荒川区東尾久2-19-10 西脇ビル1F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/ra_men_1.20/",
   "status": "AMBIGUOUS"
  },
@@ -7101,7 +7101,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account with this shop's exact name exists and its profile describes its own noodles and use of no chemical seasonings, but it states no address or area, so it could not be placed in Kameido. Second pass: searched again with the ward name; the shop's own account still gives only its own-noodle and no-additive claims, with no address, so it could not be placed in Kameido.",
+  "evidence": "An account with this shop's exact name exists and its profile describes its own noodles and use of no chemical seasonings, but it states no address or area, so it could not be placed in Kameido. Second pass: searched again with the ward name; the shop's own account still gives only its own-noodle and no-additive claims, with no address, so it could not be placed in Kameido. Third pass: read the sources the audit list records for this row (https://tabelog.com/tokyo/A1312/A131202/13276443/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/men_fujisaki/",
   "status": "AMBIGUOUS"
  },
@@ -7177,7 +7177,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: codies.burger Second pass: no account was found under this shop's name in Yokohama; the name match is a restaurant in Queensland, Australia.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: codies.burger Second pass: no account was found under this shop's name in Yokohama; the name match is a restaurant in Queensland, Australia. Third pass: read the sources the audit list records for this row (https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci",
   "status": "AMBIGUOUS"
  },
@@ -7614,7 +7614,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: roujina0627 Second pass: the restaurant's own account was found and its profile gives its lunch and dinner last orders, its Monday closing and its lack of parking, but it states no address or area, so it could not be placed in Nakagyo-ku.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: roujina0627 Second pass: the restaurant's own account was found and its profile gives its lunch and dinner last orders, its Monday closing and its lack of parking, but it states no address or area, so it could not be placed in Nakagyo-ku. Third pass: the audit list adds an address for this row (京都府京都市中京区丸屋町691) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/roujina0627/",
   "status": "AMBIGUOUS"
  },
@@ -7633,7 +7633,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: warakumagazine Second pass: no account was found under this restaurant's name in Nakagyo-ku; the nearest name match is a Chinese restaurant with no stated address.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: warakumagazine Second pass: no account was found under this restaurant's name in Nakagyo-ku; the nearest name match is a Chinese restaurant with no stated address. Third pass: read the sources the audit list records for this row (https://intojapanwaraku.com/travel/254203/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://intojapanwaraku.com/travel/254203/",
   "status": "AMBIGUOUS"
  },
@@ -7842,7 +7842,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banana_for_human_by_gorilla, berry._.button, hyde_and_away, kissa_me8, mimaruhotels, panelcafe_kyoto Second pass: no account was found under this shop's name in Gion; the results were other Gion sweets shops.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: banana_for_human_by_gorilla, berry._.button, hyde_and_away, kissa_me8, mimaruhotels, panelcafe_kyoto Second pass: no account was found under this shop's name in Gion; the results were other Gion sweets shops. Third pass: read the sources the audit list records for this row (https://hamoni.jp/area/kyoto/list/cafe-kissaten) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://hamoni.jp/area/kyoto/list/cafe-kissaten",
   "status": "AMBIGUOUS"
  },
@@ -7975,7 +7975,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yamamoto_kissa Second pass: no account was found under this cafe's name in Higashiyama-ku; the nearest name match is a liquor shop near Sanjo.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: yamamoto_kissa Second pass: no account was found under this cafe's name in Higashiyama-ku; the nearest name match is a liquor shop near Sanjo. Third pass: read the sources the audit list records for this row (https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn",
   "status": "AMBIGUOUS"
  },
@@ -8127,7 +8127,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account tying this name to Kyoto is the proprietor's personal account, whose profile describes him as the owner of Yakiniku Yamachan in Kyoto and a wine sommelier; it is a personal account, not the restaurant's own, and gives no address, so it is not recorded. Second pass: searched again with the ward name; the only account tying this name to Kyoto remains the proprietor's personal account, which gives no address, and the other name match is a restaurant in Ogaki, Gifu.",
+  "evidence": "The only account tying this name to Kyoto is the proprietor's personal account, whose profile describes him as the owner of Yakiniku Yamachan in Kyoto and a wine sommelier; it is a personal account, not the restaurant's own, and gives no address, so it is not recorded. Second pass: searched again with the ward name; the only account tying this name to Kyoto remains the proprietor's personal account, which gives no address, and the other name match is a restaurant in Ogaki, Gifu. Third pass: the audit list adds an address for this row (京都府京都市中京区蛸屋町157-11) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/yakiniku.yamachan.1122/",
   "status": "AMBIGUOUS"
  },
@@ -8241,7 +8241,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: timeoutosaka_jp Second pass: the sign has no account of its own; the confectionery company that owns it runs product and shop accounts, and the Dotonbori traders' association account covers the whole street, so none is recorded.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: timeoutosaka_jp Second pass: the sign has no account of its own; the confectionery company that owns it runs product and shop accounts, and the Dotonbori traders' association account covers the whole street, so none is recorded. Third pass: read the sources the audit list records for this row (https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126",
   "status": "AMBIGUOUS"
  },
@@ -8256,13 +8256,13 @@
   "cat": "Shopping",
   "maps_url": "https://www.google.com/maps/place/%E5%A4%A9%E7%A5%9E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97/data=!4m2!3m1!1s0x6000e6b952436f4d:0x92f854ad19b70657",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. Only accounts of individual shops in the arcade were reached, not the arcade's own. Seen: tenjinbashi.ohagurumakou, tenjinbashi3choume Second pass: the arcade as a whole keeps no account; the only official account found belongs to its fourth block alone, so it was not recorded for this listing.",
-  "evidence_url": "https://tenjin3.com/",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/tenjinbashi3choume/",
+  "instagram_username": "tenjinbashi3choume",
+  "account_type": "brand",
+  "basis": "own-site",
+  "evidence": "Third pass: the arcade's own site, tenjin3.com, which titles itself the official site of the Tenjinbashisuji arcade, links this account from a page that names the arcade. The account is the third-block association's, and the guide's listing covers the whole arcade from the first to the seventh block, so it is recorded as the shared association account rather than a single shop's.",
+  "evidence_url": "https://www.instagram.com/tenjinbashi3choume/",
+  "status": "VERIFIED"
  },
  {
   "id": "L436",
@@ -8393,7 +8393,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account carrying this name as Sousaku Teppan Miraku exists and gives its lunch and dinner hours, but it states no address, so it could not be placed in Kita-ku; the other name match is in Yuzawa, Akita. Second pass: searched again by the fuller shop name; no account was found that places a restaurant of this name in Kita-ku, Osaka.",
+  "evidence": "An account carrying this name as Sousaku Teppan Miraku exists and gives its lunch and dinner hours, but it states no address, so it could not be placed in Kita-ku; the other name match is in Yuzawa, Akita. Second pass: searched again by the fuller shop name; no account was found that places a restaurant of this name in Kita-ku, Osaka. Third pass: the audit list adds an address for this row (大阪市北区角田町9-25 新梅田食道街) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/sousakuteppanmiraku/",
   "status": "AMBIGUOUS"
  },
@@ -8545,7 +8545,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The restaurant's own account exists and gives its telephone number, whose 06-6458 exchange covers the Fukushima area, but the profile prints no address, so the area could not be confirmed from the profile itself. Second pass: searched again with the ward name; the restaurant's own account still gives only its booking telephone number and website, with no address, so the Fukushima-ku location could not be confirmed from the profile.",
+  "evidence": "The restaurant's own account exists and gives its telephone number, whose 06-6458 exchange covers the Fukushima area, but the profile prints no address, so the area could not be confirmed from the profile itself. Second pass: searched again with the ward name; the restaurant's own account still gives only its booking telephone number and website, with no address, so the Fukushima-ku location could not be confirmed from the profile. Third pass: the audit list adds an address for this row (大阪市北区大淀南1-11-9 2F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/sweetbasil2001/",
   "status": "AMBIGUOUS"
  },
@@ -8583,7 +8583,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The restaurant keeps an account for its Hanshin Umeda shop in Kita-ku, but no account was found for the Kitahorie main shop and no brand-level account exists, so none could be tied to this listing. Second pass: the only account for this restaurant places it in the basement of the Hanshin Umeda store in Kita-ku, with a sibling shop on the floor below, and not in Kitahorie where this listing places it.",
+  "evidence": "The restaurant keeps an account for its Hanshin Umeda shop in Kita-ku, but no account was found for the Kitahorie main shop and no brand-level account exists, so none could be tied to this listing. Second pass: the only account for this restaurant places it in the basement of the Hanshin Umeda store in Kita-ku, with a sibling shop on the floor below, and not in Kitahorie where this listing places it. Third pass: the audit list adds an address for this row (大阪市西区北堀江1-17-11) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -8754,7 +8754,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account carrying this shop's name is the proprietor Osamu Tomita's own account; it is a personal account rather than the shop's and gives no address, so it is not recorded. Second pass: searched again for a shop account; none exists - only the proprietor's own account and a ramen writer's page that lists the shop among his recommendations.",
+  "evidence": "The only account carrying this shop's name is the proprietor Osamu Tomita's own account; it is a personal account rather than the shop's and gives no address, so it is not recorded. Second pass: searched again for a shop account; none exists - only the proprietor's own account and a ramen writer's page that lists the shop among his recommendations. Third pass: the audit list adds an address for this row (千葉県松戸市松戸1339 高橋ビル1F) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/tomita.8860/",
   "status": "AMBIGUOUS"
  },
@@ -8769,13 +8769,13 @@
   "cat": "Burger",
   "maps_url": "https://www.google.com/maps/place/BRISK%20STAND%20%E7%A5%9E%E6%88%B8%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x60008fef7bf32f5b:0x65304885c8f69bf4",
   "checked_at": "2026-10-29",
-  "instagram_url": "",
-  "instagram_username": "",
-  "account_type": "",
-  "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: briskstand, briskstand_asakusa Second pass: the chain keeps accounts for its Matsusaka, Sapporo, Sakai, Okazaki, Kyoto, Ebisu, Omotesando, Himeji, Tokushima and Kabukicho shops, and those profiles refer to the Kobe main shop's reputation, but no account for the Kobe main shop itself was found.",
-  "evidence_url": "https://brisk-stand.com/shoplist",
-  "status": "AMBIGUOUS"
+  "instagram_url": "https://www.instagram.com/briskstand/",
+  "instagram_username": "briskstand",
+  "account_type": "brand",
+  "basis": "own-site",
+  "evidence": "Third pass: the chain's own site links this brand account from its shop-list page. The second pass established that no account exists for the Kobe main shop itself, so the brand account is recorded as the operator's.",
+  "evidence_url": "https://www.instagram.com/briskstand/",
+  "status": "VERIFIED"
  },
  {
   "id": "L463",
@@ -8868,7 +8868,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The restaurant's own account exists but its profile lists only its Kashii branches, with no Chiyo branch, so no account could be tied to this listing. Second pass: searched again with the ward name; the restaurant's own account still lists only its Kashii-area branches, and the sibling account gives no address, so neither could be tied to the Chiyo branch.",
+  "evidence": "The restaurant's own account exists but its profile lists only its Kashii branches, with no Chiyo branch, so no account could be tied to this listing. Second pass: searched again with the ward name; the restaurant's own account still lists only its Kashii-area branches, and the sibling account gives no address, so neither could be tied to the Chiyo branch. Third pass: the audit list adds an address for this row (福岡県福岡市博多区千代3-48-9) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/genpukan1996/",
   "status": "AMBIGUOUS"
  },
@@ -8944,7 +8944,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The chain keeps branch accounts for Mizonokuchi and Obihiro, and the Mizonokuchi profile names itself an offshoot of the Otaru main shop, but no account for the Otaru main shop itself was found. Second pass: the Mizonokuchi branch's account names itself an offshoot of the Otaru main shop and gives only its own address, and no account for the Otaru main shop was found.",
+  "evidence": "The chain keeps branch accounts for Mizonokuchi and Obihiro, and the Mizonokuchi profile names itself an offshoot of the Otaru main shop, but no account for the Otaru main shop itself was found. Second pass: the Mizonokuchi branch's account names itself an offshoot of the Otaru main shop and gives only its own address, and no account for the Otaru main shop was found. Third pass: the audit list adds an address for this row (北海道小樽市花園1-10-7) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -9134,7 +9134,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: cotaruco Second pass: no account was found under this shop's name in Otaru.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: cotaruco Second pass: no account was found under this shop's name in Otaru. Third pass: read the sources the audit list records for this row (https://www.cotaru.co/post/otaru-izakaya-guide) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.cotaru.co/post/otaru-izakaya-guide",
   "status": "AMBIGUOUS"
  },
@@ -9172,7 +9172,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: freehouse_the_yeast, voyapon Second pass: no account was found under this bar's name in Asahikawa; the name matches are bars and breweries in the United States and Singapore.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: freehouse_the_yeast, voyapon Second pass: no account was found under this bar's name in Asahikawa; the name matches are bars and breweries in the United States and Singapore. Third pass: read the sources the audit list records for this row (https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/",
   "status": "AMBIGUOUS"
  },
@@ -9400,7 +9400,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "The only account found for this shop belongs to its manager; it places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is a personal account rather than the shop's own, so it is not recorded. Second pass: the manager's account places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is the manager's own account rather than the shop's, so it is not recorded - the same rule applied to the other proprietor-run accounts in this ledger.",
+  "evidence": "The only account found for this shop belongs to its manager; it places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is a personal account rather than the shop's own, so it is not recorded. Second pass: the manager's account places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is the manager's own account rather than the shop's, so it is not recorded - the same rule applied to the other proprietor-run accounts in this ledger. Third pass: the audit list adds an address for this row (北海道旭川市5条通7丁目 5・7小路ふらりーと) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/ginneko.manager_matchan/",
   "status": "AMBIGUOUS"
  },
@@ -9780,7 +9780,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An account for the restaurant's main shop exists and its profile describes a 75-year-old Kumamoto restaurant serving horse meat and local dishes, but it names no branch or address, so it could not be tied to the Suizenji shop. Second pass: searched again with the neighbourhood name; the account for the restaurant's main shop still gives no address or branch, so it could not be tied to the Suizenji shop.",
+  "evidence": "An account for the restaurant's main shop exists and its profile describes a 75-year-old Kumamoto restaurant serving horse meat and local dishes, but it names no branch or address, so it could not be tied to the Suizenji shop. Second pass: searched again with the neighbourhood name; the account for the restaurant's main shop still gives no address or branch, so it could not be tied to the Suizenji shop. Third pass: the audit list adds an address for this row (熊本県熊本市中央区水前寺公園4-21) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "https://www.instagram.com/gorohachi_kumamoto0568/",
   "status": "AMBIGUOUS"
  },
@@ -9818,7 +9818,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Two accounts exist for facilities on this bathhouse's grounds in Hakuba - its car-stay park and its campsite - and both describe the spring's iron-rich water, but neither is the bathhouse's own account, so none is recorded. Second pass: searched again as a day-use bath; the only accounts on these grounds belong to the car-stay park and the campsite, not to the bathhouse itself, so none is recorded.",
+  "evidence": "Two accounts exist for facilities on this bathhouse's grounds in Hakuba - its car-stay park and its campsite - and both describe the spring's iron-rich water, but neither is the bathhouse's own account, so none is recorded. Second pass: searched again as a day-use bath; the only accounts on these grounds belong to the car-stay park and the campsite, not to the bathhouse itself, so none is recorded. Third pass: the audit list adds an address for this row (長野県北安曇郡白馬村北城9549-8) but no source page, and the candidate account's profile prints no address to compare it with, so the second-pass verdict stands.",
   "evidence_url": "",
   "status": "AMBIGUOUS"
  },
@@ -9913,7 +9913,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The account reached (fullmarks_official) belongs to an unrelated business. Seen: fullmarks_official Second pass: no account was found under this restaurant's name in Hakuba; the handle printed for it on a directory page belongs to an unrelated business.",
+  "evidence": "Reached a site through a directory page, but no account there corresponds to this venue. The account reached (fullmarks_official) belongs to an unrelated business. Seen: fullmarks_official Second pass: no account was found under this restaurant's name in Hakuba; the handle printed for it on a directory page belongs to an unrelated business. Third pass: read the sources the audit list records for this row (https://www.full-marks.com/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://www.full-marks.com/",
   "status": "AMBIGUOUS"
  },
@@ -9989,7 +9989,7 @@
   "instagram_username": "",
   "account_type": "",
   "basis": "",
-  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: wez_kofu Second pass: no account was found under this shop's name in Showa-cho, Yamanashi.",
+  "evidence": "An Instagram account is printed for this venue on a directory or media page, but it could not be confirmed on a page of the venue's own: no official website is on record and Instagram blocks unauthenticated profile reads. Printed: wez_kofu Second pass: no account was found under this shop's name in Showa-cho, Yamanashi. Third pass: read the sources the audit list records for this row (https://retty.me/restaurant/100001210103/) and followed the outbound links that could be the venue's own site; no page of the venue's own carries an Instagram link, so the second-pass verdict stands.",
   "evidence_url": "https://retty.me/restaurant/100001210103/",
   "status": "AMBIGUOUS"
  }

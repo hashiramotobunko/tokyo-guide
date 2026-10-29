@@ -887,6 +887,10 @@
   "u": "discover_osaka",
   "t": "store"
  },
+ "Osaka|0x6000e6b952436f4d:0x92f854ad19b70657": {
+  "u": "tenjinbashi3choume",
+  "t": "brand"
+ },
  "Osaka|0x6000e6dba42a1cef:0xa135ef22a79f6eb2": {
   "u": "osakatemmangu.official",
   "t": "store"
@@ -942,6 +946,10 @@
  "Chiba|0x60187fd71b85a9d7:0xa461bfb6a86ba8b5": {
   "u": "ayuthaya.gcp",
   "t": "store"
+ },
+ "Hyogo|0x60008fef7bf32f5b:0x65304885c8f69bf4": {
+  "u": "briskstand",
+  "t": "brand"
  },
  "Hyogo|0x60008ee3665f1021:0xba8bbfe616ad2b38": {
   "u": "kobebeef_mouriya_honten",

@@ -100,6 +100,29 @@ def apply_stage4(row: dict) -> dict:
     return row
 
 
+# Stage 6 - a third pass over the rows still ambiguous, reading the sources the
+# 557-row Maps audit list records per row. A handle is recorded only when a page of
+# the venue's own (or its operator's) links it, which is the stage-1 basis.
+STAGE6 = {r["ledger_id"]: r for r in json.loads((HERE / "stage6_found.json").read_text(encoding="utf-8"))} \
+    if (HERE / "stage6_found.json").exists() else {}
+
+
+def apply_stage6(row: dict) -> dict:
+    hit = STAGE6.get(row["id"])
+    if not hit or row["status"] != "AMBIGUOUS":
+        return row
+    if hit["v"] == "V":
+        h = hit["h"]
+        row.update(
+            instagram_url=f"https://www.instagram.com/{h}/", instagram_username=h,
+            account_type=hit.get("t") or "store", basis=hit.get("b") or "profile",
+            evidence=hit["note"], evidence_url=f"https://www.instagram.com/{h}/",
+            status="VERIFIED")
+    else:
+        row["evidence"] = f"{row['evidence']} {hit['note']}"
+    return row
+
+
 def handle_set(t: dict) -> list[str]:
     hs = []
     r = STAGE1.get(t["id"])
@@ -224,7 +247,7 @@ def build_row(t: dict) -> dict:
 
 
 def main() -> int:
-    rows = [apply_stage4(apply_stage3(build_row(t))) for t in TARGETS]
+    rows = [apply_stage6(apply_stage4(apply_stage3(build_row(t)))) for t in TARGETS]
     assert len(rows) == 526, len(rows)
 
     # A handle claimed by more than one listing cannot be a branch-specific
