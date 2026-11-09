@@ -1,4 +1,4 @@
-# Encounter Japan — original editorial artwork
+# Shakedown Street — original editorial artwork
 
 The page carries three original city-pop illustrations, approved by the owner on 2026-10-23 and placed on the page on 2026-10-29. They are AI-generated artworks made for this guide; the approach borrows general ideas from late-Showa commercial illustration and city-pop-era visual culture, but does **not** copy a single known artist's composition, technique or signature.
 
