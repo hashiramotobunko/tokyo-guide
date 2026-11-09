@@ -851,6 +851,65 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 /* an illustration in the practical pages, without crowding the information */
 @media(max-width:860px){.td-dream-head{display:block}.td-dream-head>p{margin:24px 0 0}.td-dream-art{grid-template-columns:1fr;gap:30px;padding-top:34px}.td-dream-fig:not(.td-dream-fig-b){margin-top:0}.td-dream-fig-b{margin-top:0}}
 @media(max-width:700px){.ej-visitor-legend li{grid-template-columns:1fr;gap:3px}.td-story-draw{grid-column:1;grid-row:auto;width:100%;justify-self:stretch;margin:30px 0 0;box-shadow:none}.td-dream{padding:62px 0 66px;margin-bottom:72px}.td-dream-fig{box-shadow:9px 9px 0 -2px var(--td-sand),9px 9px 0 0 var(--td-acid)}.td-dream-fig-b{box-shadow:-9px 9px 0 -2px var(--td-sand),-9px 9px 0 0 var(--td-ink)}.td-story-draw{max-width:none}}
+
+/* Brand/editorial pass — Shakedown Street is a point of view, not a rename. */
+.td-manifesto{background:var(--td-ink);color:var(--td-paper);overflow:hidden;border-block:1px solid var(--td-ink)}
+.td-manifesto-in{width:var(--td-w);margin:auto;min-height:470px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:7vw;align-items:center;position:relative;padding:80px 0}
+.td-manifesto-word{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(88px,13.5vw,218px);line-height:.68;letter-spacing:-.08em;text-transform:uppercase;margin:0;transform:translateX(-.04em)}
+.td-manifesto-word span{display:block;color:var(--td-acid);padding-left:14%}
+.td-manifesto-copy{align-self:end;padding-bottom:10px}
+.td-manifesto-copy .td-eyebrow{color:var(--td-acid)}
+.td-manifesto-copy p:not(.td-eyebrow){font-size:clamp(18px,1.8vw,25px);line-height:1.35;letter-spacing:-.035em;margin:24px 0 28px;max-width:430px}
+.td-manifesto-copy a{color:var(--td-paper);font-size:12px;font-weight:900;text-decoration:none;border-bottom:2px solid var(--td-acid);padding-bottom:6px}
+.ej-feature-index{padding-top:54px;padding-bottom:68px}
+.ej-feature-links{grid-template-columns:1.55fr .85fr 1.08fr .72fr;align-items:start}
+.ej-feature-links a:nth-child(2),.ej-feature-links a:nth-child(4){margin-top:38px}
+.ej-feature-links a{min-height:155px;border-top:3px solid var(--td-ink);border-bottom:0;padding:16px 4px 0}
+.ej-feature-links a strong{font-size:clamp(20px,2vw,31px);line-height:1.02;letter-spacing:-.055em}
+.td-story-draw{width:min(83%,470px);border:0;box-shadow:none;transform:rotate(2.5deg);margin-top:clamp(-250px,-18vw,-135px)}
+.td-story-draw:before{content:"DRAWN / NOT SHOT";position:absolute;top:-18px;right:-12px;background:var(--td-acid);color:#fff;font-size:9px;font-weight:900;letter-spacing:.12em;padding:8px 10px;z-index:2;transform:rotate(-2deg)}
+.td-dream{background:var(--td-ink);color:var(--td-paper);border-color:var(--td-ink);padding:105px 0 125px}
+.td-dream-head{grid-template-columns:minmax(0,1.45fr) minmax(0,.55fr);border-color:#5e5d57}
+.td-dream-head>p{color:#cecdc5}
+.td-dream-art{grid-template-columns:minmax(0,1.58fr) minmax(240px,.58fr);gap:0;position:relative;padding-top:72px}
+.td-dream-fig,.td-dream-fig-b{border:0;box-shadow:none;background:transparent;margin:0}
+.td-dream-fig:not(.td-dream-fig-b){margin:0;width:88%}
+.td-dream-fig-b{margin:22% 0 0 -24%;z-index:2;transform:rotate(3deg);align-self:start}
+.td-dream-fig-b:after{content:"STAY HUNGRY.";position:absolute;left:-36px;bottom:20px;background:var(--td-acid);color:#fff;padding:12px 15px;font-size:12px;font-weight:900;letter-spacing:.1em;transform:rotate(-4deg)}
+.td-dream-tag{top:12px;left:12px;transform:none}
+.td-dream-fig-b .td-dream-tag{right:12px;top:12px;transform:none}
+.ej-field-notes{grid-template-columns:34% 66%;gap:4%;padding-inline:6%}
+.ej-field-intro h2{font-size:clamp(88px,9.5vw,158px)}
+.ej-field-content{min-width:0}
+.ej-field-list{counter-reset:route}
+.ej-route{counter-increment:route;position:relative;padding-top:50px;overflow:visible}
+.ej-route:before{content:counter(route,decimal-leading-zero);position:absolute;right:0;top:12px;color:var(--td-acid);font-family:Impact,"Arial Black",sans-serif;font-size:clamp(58px,7vw,108px);line-height:.75;letter-spacing:-.06em;opacity:.2;pointer-events:none}
+.ej-route:nth-child(2n){margin-left:7%}.ej-route:nth-child(3n){margin-left:-3%}
+.ej-route h3{max-width:82%;margin-top:42px}
+.ej-route-intro{font-size:16px;max-width:640px}
+.ej-route-why{display:grid;grid-template-columns:112px minmax(0,1fr);gap:20px;max-width:700px;margin:26px 0 32px;padding:20px 0;border-block:1px solid var(--td-line)}
+.ej-route-why b{font-size:10px;line-height:1.4;letter-spacing:.14em;text-transform:uppercase;color:var(--td-acid)}
+.ej-route-why p{font-size:19px;line-height:1.5;letter-spacing:-.025em;margin:0;color:var(--td-ink)}
+.td-ending .td-endrow{align-items:center}
+.td-end-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.td-ending .td-end-actions a:last-child{background:#fff;color:var(--td-acid)}
+.td-foot-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px}
+.td-foot-links a{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:860px){
+ .td-manifesto-in{grid-template-columns:1fr;gap:50px;min-height:0}.td-manifesto-copy{max-width:560px}
+ .ej-feature-links{grid-template-columns:1fr 1fr}.ej-feature-links a:nth-child(n){margin-top:0}
+ .td-dream-art{grid-template-columns:minmax(0,1.35fr) minmax(210px,.65fr)}
+ .ej-field-notes{grid-template-columns:31% 69%;gap:3%;padding-inline:4%}
+}
+@media(max-width:700px){
+ .td-manifesto-in{padding:64px 0}.td-manifesto-word{font-size:clamp(82px,25vw,132px)}.td-manifesto-copy{align-self:auto}
+ .ej-feature-links{grid-template-columns:1fr}.ej-feature-links a{min-height:0;padding-bottom:24px}.ej-feature-links a:nth-child(n){margin:0}
+ .td-story-draw{width:84%;align-self:flex-end;transform:rotate(2deg);margin-top:-52px;z-index:2}
+ .td-dream-head{display:block}.td-dream-art{display:block;padding-top:42px}.td-dream-fig:not(.td-dream-fig-b){width:90%}.td-dream-fig-b{width:58%;margin:-22% 0 0 auto;transform:rotate(3deg)}.td-dream-fig-b:after{left:-22px;font-size:10px}
+ .ej-field-notes{display:block;padding:70px 6%}.ej-field-intro{position:static}.ej-field-intro h2{font-size:clamp(75px,20vw,118px)}
+ .ej-route:nth-child(n){margin-left:0}.ej-route h3{max-width:88%}.ej-route-why{grid-template-columns:1fr;gap:8px}.ej-route-why p{font-size:17px}
+ .td-end-actions{justify-content:flex-start}
+}
 </style>
 </head>
 <body>
@@ -858,7 +917,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 <header class="ej-header">
   <nav class="ej-nav" aria-label="Main navigation">
     <a class="ej-wordmark" href="#top" aria-label="Encounter Japan — top">encounter<span>.</span><small>JAPAN</small></a>
-    <span class="ej-nav-note">AN INDEPENDENT ADDRESS BOOK<br>THE DETOUR ISSUE / 2026</span><div class="td-navlinks"><a href="#stories">Stories</a><a href="#browse">Discover</a><a href="#fieldnotes">Walks</a></div>
+    <span class="ej-nav-note">AN INDEPENDENT CULTURE &amp; DISCOVERY GUIDE<br>THE DETOUR ISSUE / 2026</span><div class="td-navlinks"><a href="#stories">Stories</a><a href="#browse">Discover</a><a href="#fieldnotes">Walks</a><a href="about.html">About</a></div>
     <a class="ej-nav-find" href="#browse">Find a detour <span aria-hidden="true">↗</span></a><span class="ej-nav-social" id="ej-nav-social" hidden></span>
   </nav>
   <section class="td-hero" id="top" aria-labelledby="td-hero-title">
@@ -868,17 +927,23 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <span class="td-pic-tag">TOKYO, SHIBUYA / STREET PHOTOGRAPH, 2017</span>
     </div>
     <div class="td-hero-content">
-      <p class="td-eyebrow td-hero-topnote">AN INDEPENDENT ADDRESS BOOK / NO. 001</p>
+      <p class="td-eyebrow td-hero-topnote">AN INDEPENDENT CULTURE &amp; DISCOVERY GUIDE / NO. 001</p>
       <h1 id="td-hero-title" class="td-cond td-hero-title"><span class="td-l1">TAKE</span><span class="td-l2">THE</span><span class="td-l3">DETOUR.</span></h1>
       <div class="td-hero-foot">
-        <p class="td-hero-intro">Famous sights have their place. We're interested in the street just around the corner.<span lang="ja" class="td-jp">定番の、その先へ。曲がった先に、知らない日本がある。</span></p>
+        <p class="td-hero-intro">Famous sights have their place. We're interested in the street just around the corner — and the people who see it differently.<span lang="ja" class="td-jp">定番の、その先へ。曲がった先に、知らない日本がある。</span></p>
         <a class="td-hero-link" href="#stories">Open the issue <span aria-hidden="true">↓</span></a>
       </div>
     </div>
     <span class="td-side-mark" aria-hidden="true">ENCOUNTER JAPAN — A CITY IS NEVER A CHECKLIST</span>
   </section>
-  <div class="td-marquee" aria-hidden="true"><div class="td-items">BOOKSHOPS <b>✳</b> ALLEYS <b>✳</b> GOOD COFFEE <b>✳</b> LONG WALKS <b>✳</b> AFTER DARK <b>✳</b> TOKYO <b>✳</b> KYOTO <b>✳</b> OSAKA <b>✳</b> BOOKSHOPS <b>✳</b> ALLEYS <b>✳</b> GOOD COFFEE <b>✳</b> LONG WALKS <b>✳</b> AFTER DARK <b>✳</b> TOKYO <b>✳</b> KYOTO <b>✳</b> OSAKA <b>✳</b> </div></div>
-  <nav class="ej-feature-index" aria-label="Four ways to use the guide"><p class="ej-feature-label">USE THE GUIDE / FOUR WAYS IN</p><div class="ej-feature-links"><a href="#browse"><span>01</span><strong>Find a neighborhood</strong><small>Regions · areas · search</small><b>↗</b></a><a href="#fieldnotes"><span>02</span><strong>Take a walk</strong><small>Curated route ideas · draft</small><b>↗</b></a><a href="#visitor-info"><span>03</span><strong>Before you go</strong><small>Price · booking · access</small><b>↗</b></a><a href="#mood"><span>04</span><strong>Go by feeling</strong><small>Nightlife · coffee · culture</small><b>↗</b></a></div></nav>
+  <div class="td-marquee" aria-hidden="true"><div class="td-items">STAY CURIOUS <b>✳</b> TAKE THE DETOUR <b>✳</b> BOOKSHOPS <b>✳</b> ALLEYS <b>✳</b> GOOD COFFEE <b>✳</b> LONG WALKS <b>✳</b> AFTER DARK <b>✳</b> STAY HUNGRY <b>✳</b> STAY CURIOUS <b>✳</b> TAKE THE DETOUR <b>✳</b> BOOKSHOPS <b>✳</b> ALLEYS <b>✳</b> GOOD COFFEE <b>✳</b> LONG WALKS <b>✳</b> AFTER DARK <b>✳</b> STAY HUNGRY <b>✳</b> </div></div>
+  <section class="td-manifesto" aria-labelledby="td-manifesto-title">
+    <div class="td-manifesto-in">
+      <h2 id="td-manifesto-title" class="td-manifesto-word">SHAKEDOWN<span>STREET.</span></h2>
+      <div class="td-manifesto-copy"><p class="td-eyebrow">A WAY OF LOOKING / NOT A RENAME</p><p>The good street is rarely the one handed to you. It appears when someone else's curiosity changes the way you see a city you thought you knew.</p><a href="about.html">Read what we believe ↗</a></div>
+    </div>
+  </section>
+  <nav class="ej-feature-index" aria-label="Four ways to use the guide"><p class="ej-feature-label">FOUR WAYS IN / NOT A CHECKLIST</p><div class="ej-feature-links"><a href="#stories"><span>01</span><strong>Read a point of view</strong><small>People · streets · culture</small><b>↗</b></a><a href="#fieldnotes"><span>02</span><strong>Follow the thread</strong><small>10 editorial route ideas</small><b>↗</b></a><a href="#mood"><span>03</span><strong>Go by feeling</strong><small>Nightlife · coffee · culture</small><b>↗</b></a><a href="#visitor-info"><span>04</span><strong>Check the facts</strong><small>Maps · sources · access</small><b>↗</b></a></div></nav>
 <section class="td-wrap td-intro" id="stories" aria-label="Editorial opening">
     <span class="td-no">[01 / EDITORIAL]</span>
     <h2>Places are the beginning.<br>Not the whole story<span class="td-acid">.</span></h2>
@@ -958,7 +1023,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     </div>
   </section>
   
-  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">LOSE<br>THE<br><em>LIST.</em></h2><p>Each route brings together real addresses from our guide. Every stop is matched to its map pin, distances are estimated on the map, and hours or access are cited where we found them. No route has been walked on the ground for the guide yet.</p><a href="#browse">Search all places ↗</a></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
+  <section class="ej-field-notes" id="fieldnotes" aria-labelledby="ej-field-title"><div class="ej-field-intro"><p class="ej-overline">FIELD NOTES / CURATED ROUTE IDEAS</p><h2 id="ej-field-title">FOLLOW<br>THE<br><em>THREAD.</em></h2><p>Each route starts with a point of view: why these places belong together and what kind of day they make. The stops, map links and source-checked details come next. All ten are map-checked drafts, not field-walked routes.</p><a href="#browse">Search all places ↗</a></div><div class="ej-field-content"><div id="ej-route-options" class="ej-route-options" role="group" aria-label="Filter walking route ideas">
 <button type="button" data-route-choice="all" aria-pressed="true">All routes</button>
 <button type="button" data-route-choice="Tokyo" aria-pressed="false">Tokyo</button>
 <button type="button" data-route-choice="Kyoto" aria-pressed="false">Kyoto</button>
@@ -1009,8 +1074,8 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     <p class="td-eyebrow">BEYOND THE OBVIOUS / THE DETOUR ISSUE</p>
     <h2 id="td-ending-title" class="td-cond td-outline">THERE<br>IS<br>MORE.</h2>
     <div class="td-endrow">
-      <p>Encounter Japan connects the pleasure of discovery with the practical details that make a day out possible.</p>
-      <a href="#top">Back to the beginning ↑</a>
+      <p>Encounter Japan connects the pleasure of discovery with the practical details that make a day out possible. Stay curious. Stay hungry.</p>
+      <div class="td-end-actions"><a href="about.html">About the idea ↗</a><a href="#top">Back to the beginning ↑</a></div>
     </div>
   </div>
 </section>
@@ -1021,6 +1086,7 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
       <strong>encounter<span class="td-acid">.</span> JAPAN</strong>
       <p>An independent address book: 526 places across Japan, each linking directly to Google Maps. Curated by Tetsuya Hashiramoto.</p>
       <p>Photographs are used for neighbourhood atmosphere — never as proof of the current appearance of a listed venue. The illustrated scenes are original interpretive artworks, not photographs of the listed locations.</p>
+      <nav class="td-foot-links" aria-label="Footer navigation"><a href="about.html">About</a><a href="#stories">Stories</a><a href="#fieldnotes">Walks</a><a href="#browse">Discover</a></nav>
       <span class="ej-footer-instagram" id="ej-footer-instagram" hidden></span>
     </div>
     <div>
@@ -1848,7 +1914,7 @@ function ejRenderRoutes(){
   const meters=V?V.legs.reduce((a,l)=>a+l.m,0):0;
   const rough=V?V.legs.some(l=>l.disc):true;
   const facts=V?'<p class="ej-route-facts"><span><b>'+route.stops.length+'</b> stops</span><span class="ej-fact-dist">'+(rough?'roughly ':'')+ejHTML(ejDistance(meters))+' on the map'+(rough?', rough estimate':'')+'</span><span class="ej-fact-time'+(rough?' ej-fact-unconfirmed':'')+'">'+ejHTML(ejRouteTimeText(V))+'</span></p>':'<p class="ej-route-facts"><span><b>'+route.stops.length+'</b> stops</span><span class="ej-fact-time ej-fact-unconfirmed">Distance and walking time not confirmed.</span></p>';
-  const why=V?'<p class="ej-route-why">'+ejHTML(V.whyWalk)+'</p>':'';
+  const why=V?'<div class="ej-route-why"><b>Why this walk</b><p>'+ejHTML(V.whyWalk)+'</p></div>':'';
   const more=V?'<details class="ej-route-more"><summary>Before you go: hours, transit, background <span aria-hidden="true">＋</span></summary><div class="ej-route-brief"><p><b>Why these stops together</b>'+ejHTML(V.whyTogether)+'</p></div><div class="ej-route-notes">'+list('Check before you go',V.checkBefore,false)+list('Getting around',V.transit,false)+list('Background, with sources',V.culture,true)+'</div></details>':'<p class="ej-route-caution">Unverified walking sequence. Confirm the exact venues, transfers, access and current hours before travelling.</p>';
   return '<article class="ej-route" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'" data-route-theme="'+ejHTML(route.theme)+'" id="route-'+ejHTML(route.id)+'"><div class="ej-route-top"><span>'+ejHTML(route.eyebrow)+'</span><span>'+ejHTML(label)+'</span></div><h3>'+ejHTML((V&&V.titleEn)||route.title)+'</h3><p class="ej-route-intro">'+ejHTML(route.intro)+'</p>'+why+facts+'<ol class="ej-route-stops">'+route.stops.map((name,index)=>ejRouteStop(route,V,name,index)).join('')+'</ol><div class="ej-route-actions"><a class="ej-route-map" href="'+ejHTML(ejRouteGoogleMapsURL(route)||"#")+'" target="_blank" rel="noopener noreferrer">Open all stops on Google Maps ↗</a><button type="button" class="ej-route-explore" data-route-city="'+ejHTML(route.city)+'" data-route-area="'+ejHTML(route.area)+'">Browse '+ejHTML(route.area)+' ↗</button><button type="button" class="ej-route-share" data-share-route="'+ejHTML(route.id)+'">Copy route link ↗</button></div>'+more+(V?ejRouteVerification(route,V):'')+'</article>';
  }).join("");

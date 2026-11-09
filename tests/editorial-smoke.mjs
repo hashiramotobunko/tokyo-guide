@@ -11,6 +11,7 @@ import './essentials-layer.test.mjs';
 const __dirname=dirname(fileURLToPath(import.meta.url));
 const source=readFileSync(resolve(__dirname,'../tokyo-guide_2.html'),'utf8');
 const entry=readFileSync(resolve(__dirname,'../index.html'),'utf8');
+const about=readFileSync(resolve(__dirname,'../about.html'),'utf8');
 const script=source.match(/<script>([\s\S]*?)<\/script>/)?.[1]||'';
 function declaration(name){
  const begin=source.indexOf('const '+name+'=');
@@ -47,6 +48,14 @@ test('public canonical and social URL use the existing GitHub Pages site',()=>{
  assert.ok(entry.includes("location.replace(new URL('tokyo-guide_2.html'"));
 });
 test('the full 526-place list remains available',()=>assert.equal(places.length,526));
+test('About carries the agreed philosophy without renaming the site or overstating future features',()=>{
+ assert.ok(source.includes('href="about.html"'));
+ assert.ok(about.includes('<title>About — Encounter Japan</title>'));
+ assert.ok(about.includes('SHAKEDOWN<span>STREET.</span>'));
+ assert.ok(about.includes('STAY CURIOUS.<span>STAY HUNGRY.</span>'));
+ assert.ok(about.includes('That is a direction, not a feature we pretend already exists.'));
+ assert.ok(!about.includes('<title>Shakedown Street'));
+});
 test('each original listing has a Maps link',()=>{
  assert.ok(places.every(p=>typeof p.name==='string'&&p.name&&/^https:\/\/www\.google\.com\/maps\//.test(p.url)));
 });
