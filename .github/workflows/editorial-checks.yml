@@ -12,7 +12,9 @@ on:
   workflow_dispatch:
 jobs:
   static-qa:
-    runs-on: ubuntu-latest
+    # Playwright 1.56.1 does not provide Chromium for Ubuntu 26.04.
+    # Pin the runner so GitHub's ubuntu-latest migration cannot break browser QA.
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
