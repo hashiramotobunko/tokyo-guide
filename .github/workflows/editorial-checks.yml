@@ -8,6 +8,7 @@ on:
       - 'data/**'
       - 'scripts/**'
       - 'assets/editorial/**'
+      - 'assets/photos/**'
       - '.github/workflows/editorial-checks.yml'
   workflow_dispatch:
 jobs:
