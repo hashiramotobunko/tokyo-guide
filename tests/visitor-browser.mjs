@@ -146,7 +146,11 @@ try{
    const about=await page.evaluate(async()=>{
      const images=[];
      for(const img of document.querySelectorAll('img')){try{await img.decode()}catch(e){}images.push({src:img.getAttribute('src'),w:img.naturalWidth,alt:img.getAttribute('alt')})}
-     return {windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth,title:document.querySelector('h1')?.textContent?.replace(/\s+/g,' ').trim(),images};
+     const offenders=[...document.querySelectorAll('body *')].map(el=>{
+       const rect=el.getBoundingClientRect();
+       return {tag:el.tagName.toLowerCase(),className:String(el.className||''),left:Math.round(rect.left),right:Math.round(rect.right),width:Math.round(rect.width),scrollWidth:el.scrollWidth,clientWidth:el.clientWidth};
+     }).filter(item=>item.left < -1 || item.right > innerWidth+1 || item.scrollWidth > item.clientWidth+1).slice(0,12);
+     return {windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth,title:document.querySelector('h1')?.textContent?.replace(/\s+/g,' ').trim(),images,offenders};
    });
    assert.ok(about.docWidth<=about.windowWidth+1,'About horizontal overflow at '+width+': '+JSON.stringify(about));
    assert.match(about.title,/THE SAME.*CITY.*ANOTHER WORLD/,'About statement missing at '+width);
