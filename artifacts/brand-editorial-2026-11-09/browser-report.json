@@ -1,0 +1,52 @@
+{
+  "320": {
+    "overflow": false,
+    "errors": [],
+    "regionOptions": 21,
+    "about": {
+      "overflow": false,
+      "images": 2
+    }
+  },
+  "390": {
+    "overflow": false,
+    "errors": [],
+    "regionOptions": 21,
+    "interactions": {
+      "japaneseSearch": 1,
+      "nightResult": 73,
+      "kyotoHigashiyama": 11,
+      "visitorEssentials": true,
+      "fieldProvenance": true,
+      "routeFilter": true,
+      "routeCardDoesNotHijackSearch": true
+    },
+    "dataLayer": {
+      "legs": 3,
+      "shortcuts": 383,
+      "officialRows": true
+    },
+    "about": {
+      "overflow": false,
+      "images": 2
+    }
+  },
+  "768": {
+    "overflow": false,
+    "errors": [],
+    "regionOptions": 21,
+    "about": {
+      "overflow": false,
+      "images": 2
+    }
+  },
+  "1280": {
+    "overflow": false,
+    "errors": [],
+    "regionOptions": 21,
+    "about": {
+      "overflow": false,
+      "images": 2
+    }
+  }
+}

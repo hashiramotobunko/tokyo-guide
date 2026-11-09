@@ -11,6 +11,7 @@ import './essentials-layer.test.mjs';
 const __dirname=dirname(fileURLToPath(import.meta.url));
 const source=readFileSync(resolve(__dirname,'../tokyo-guide_2.html'),'utf8');
 const entry=readFileSync(resolve(__dirname,'../index.html'),'utf8');
+const about=readFileSync(resolve(__dirname,'../about.html'),'utf8');
 const script=source.match(/<script>([\s\S]*?)<\/script>/)?.[1]||'';
 function declaration(name){
  const begin=source.indexOf('const '+name+'=');
@@ -47,6 +48,20 @@ test('public canonical and social URL use the existing GitHub Pages site',()=>{
  assert.ok(entry.includes("location.replace(new URL('tokyo-guide_2.html'"));
 });
 test('the full 526-place list remains available',()=>assert.equal(places.length,526));
+test('About carries the agreed Shakedown Street name and philosophy without overstating future features',()=>{
+ assert.ok(source.includes('href="about.html"'));
+ assert.ok(about.includes('<title>About — Shakedown Street</title>'));
+ assert.ok(about.includes('SHAKEDOWN<span>STREET.</span>'));
+ assert.ok(about.includes('STAY CURIOUS.<span>STAY HUNGRY.</span>'));
+ assert.ok(about.includes('That is a direction, not a feature we pretend already exists.'));
+ assert.ok(source.includes('<title>Shakedown Street — Take the detour</title>'));
+ assert.ok(about.includes('This is our name and our editorial attitude'));
+ assert.ok(!source.includes('Encounter Japan'));
+ assert.ok(!about.includes('Encounter Japan'));
+ assert.ok(!entry.includes('Encounter Japan'));
+ assert.ok(!source.includes('encounter<span>'));
+ assert.ok(!about.includes('encounter<span>'));
+});
 test('each original listing has a Maps link',()=>{
  assert.ok(places.every(p=>typeof p.name==='string'&&p.name&&/^https:\/\/www\.google\.com\/maps\//.test(p.url)));
 });
@@ -86,7 +101,9 @@ test('each photograph carries photographer, licence and the no-venue-claim capti
  for(const licence of ['creativecommons.org/licenses/by/3.0/','creativecommons.org/licenses/by-sa/4.0/','creativecommons.org/licenses/by/2.0/'])assert.ok(source.includes(licence),'licence link missing: '+licence);
  // the Commons file pages are linked as attribution, which is not the same as serving the image from there
  assert.ok(source.includes('commons.wikimedia.org/wiki/File:'),'source file page not credited');
- assert.ok(source.includes('NOT A LISTED VENUE'));
+ // the per-image notices were consolidated into the credits; the claim itself must survive
+ assert.ok(source.includes('Photographs are used for neighbourhood atmosphere'));
+ assert.ok(source.includes('original interpretive artworks, not photographs of the listed locations'));
  assert.ok(source.includes('NOT A SPECIFIC STORE'));
  assert.ok(source.includes('never as proof of the current appearance of a listed venue'));
 });

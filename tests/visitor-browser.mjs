@@ -3,7 +3,8 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import assert from 'node:assert/strict';
 
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
-const out='artifacts/screenshots';
+const out='artifacts/brand-editorial-2026-11-09';
+const baseURL=process.env.EJ_TEST_BASE_URL||'http://127.0.0.1:8765';
 mkdirSync(out,{recursive:true});
 const report={};
 try{
@@ -11,7 +12,7 @@ try{
    const page=await browser.newPage({viewport:{width,height:860},deviceScaleFactor:1});
    const errors=[];
    page.on('pageerror',err=>errors.push(err.message));
-   await page.goto('http://127.0.0.1:8765/tokyo-guide_2.html',{waitUntil:'domcontentloaded'});
+   await page.goto(baseURL+'/tokyo-guide_2.html',{waitUntil:'domcontentloaded'});
    await page.waitForFunction(() => document.querySelectorAll('#ej-region-select option').length >= 15);
    const dims=await page.evaluate(()=>({windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth}));
    assert.ok(dims.docWidth<=dims.windowWidth+1,'Horizontal overflow at '+width+': '+JSON.stringify(dims));
@@ -113,7 +114,13 @@ try{
    }
    if(width===1280){
      await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
-     await page.locator('.ej-field-art img').evaluate(async img=>{img.loading='eager';await img.decode();});
+     // The approved city-pop artwork now lives in its own spread; make sure both plates decode.
+     await page.locator('#imagined').scrollIntoViewIfNeeded();
+     const plates=await page.locator('#imagined img').evaluateAll(async imgs=>{for(const img of imgs){img.loading='eager';await img.decode();}return imgs.filter(i=>i.naturalWidth>0).length;});
+     assert.equal(plates,2,'both plates of the illustrated spread must load');
+     await page.locator('#imagined').evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+     await page.screenshot({path:`${out}/1280-illustrated.png`,fullPage:false});
+     await page.locator('#fieldnotes').scrollIntoViewIfNeeded();
      const overlap=await page.evaluate(()=>{const left=document.querySelector('.ej-field-intro')?.getBoundingClientRect(),right=document.querySelector('.ej-field-content')?.getBoundingClientRect();return {leftRight:left?.right,rightLeft:right?.left}});
      assert.ok(overlap.leftRight<=overlap.rightLeft+1,'Route column overlaps the editorial intro: '+JSON.stringify(overlap));
      // Capture the start of the section, not whichever middle route Playwright scrolled to.
@@ -135,8 +142,23 @@ try{
      await page.locator('.td-spread img').first().evaluate(async img=>{img.loading='eager';await img.decode();});
      await page.screenshot({path:`${out}/1280-editorial.png`,fullPage:false});
    }
+   await page.goto(baseURL+'/about.html',{waitUntil:'domcontentloaded'});
+   const about=await page.evaluate(async()=>{
+     const images=[];
+     for(const img of document.querySelectorAll('img')){try{await img.decode()}catch(e){}images.push({src:img.getAttribute('src'),w:img.naturalWidth,alt:img.getAttribute('alt')})}
+     const offenders=[...document.querySelectorAll('body *')].map(el=>{
+       const rect=el.getBoundingClientRect();
+       return {tag:el.tagName.toLowerCase(),className:String(el.className||''),left:Math.round(rect.left),right:Math.round(rect.right),width:Math.round(rect.width),scrollWidth:el.scrollWidth,clientWidth:el.clientWidth};
+     }).filter(item=>item.left < -1 || item.right > innerWidth+1 || item.scrollWidth > item.clientWidth+1).slice(0,12);
+     return {windowWidth:innerWidth,docWidth:document.documentElement.scrollWidth,title:document.querySelector('h1')?.textContent?.replace(/\s+/g,' ').trim(),images,offenders};
+   });
+   assert.ok(about.docWidth<=about.windowWidth+1,'About horizontal overflow at '+width+': '+JSON.stringify(about));
+   assert.match(about.title,/THE SAME.*CITY.*ANOTHER WORLD/,'About statement missing at '+width);
+   assert.ok(about.images.every(img=>img.w>0&&img.alt),'About image failed or lacks alt text at '+width+': '+JSON.stringify(about.images));
+   report[width].about={overflow:false,images:about.images.length};
+   if(width===390||width===1280)await page.screenshot({path:`${out}/${width}-about.png`,fullPage:false});
    await page.close();
  }
- writeFileSync('artifacts/browser-report.json',JSON.stringify(report,null,2));
+ writeFileSync(out+'/browser-report.json',JSON.stringify(report,null,2));
  console.log(JSON.stringify(report,null,2));
 }finally{await browser.close()}

@@ -1,4 +1,4 @@
-name: Encounter Japan editorial checks
+name: Shakedown Street editorial checks
 on:
   pull_request:
     paths:
@@ -8,11 +8,14 @@ on:
       - 'data/**'
       - 'scripts/**'
       - 'assets/editorial/**'
+      - 'assets/photos/**'
       - '.github/workflows/editorial-checks.yml'
   workflow_dispatch:
 jobs:
   static-qa:
-    runs-on: ubuntu-latest
+    # Playwright 1.56.1 does not provide Chromium for Ubuntu 26.04.
+    # Pin the runner so GitHub's ubuntu-latest migration cannot break browser QA.
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
@@ -38,7 +41,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: encounter-japan-browser-review
+          name: shakedown-street-browser-review
           path: artifacts/
           retention-days: 7
           if-no-files-found: ignore

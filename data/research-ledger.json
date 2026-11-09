@@ -16,8 +16,8 @@
   },
   "processed": 526,
   "withOfficialField": 150,
-  "officialSiteFound": 174,
-  "generated": "2026-10-27"
+  "officialSiteFound": 170,
+  "generated": "2026-10-29"
  },
  "rows": [
   {
@@ -54,7 +54,7 @@
    "fieldsSecondary": 4,
    "fieldsConflict": 0,
    "fieldsUnverified": 1,
-   "officialSiteFound": true,
+   "officialSiteFound": false,
    "flags": [],
    "notes": ""
   },
@@ -3013,7 +3013,7 @@
    "fieldsSecondary": 4,
    "fieldsConflict": 0,
    "fieldsUnverified": 1,
-   "officialSiteFound": true,
+   "officialSiteFound": false,
    "flags": [],
    "notes": ""
   },
@@ -4961,7 +4961,7 @@
    "fieldsSecondary": 3,
    "fieldsConflict": 0,
    "fieldsUnverified": 2,
-   "officialSiteFound": true,
+   "officialSiteFound": false,
    "flags": [],
    "notes": ""
   },
@@ -5229,7 +5229,7 @@
    "fieldsSecondary": 2,
    "fieldsConflict": 1,
    "fieldsUnverified": 1,
-   "officialSiteFound": true,
+   "officialSiteFound": false,
    "flags": [],
    "notes": ""
   },
