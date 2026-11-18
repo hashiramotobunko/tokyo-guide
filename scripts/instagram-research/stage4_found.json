@@ -1,0 +1,709 @@
+[
+ {
+  "id": "L006",
+  "v": "A",
+  "h": "i.to_restaurant",
+  "note": "Second pass: the restaurant's own account was found and its profile describes its French-based a la carte cooking and private-hire minimum, but it states no address or area, so it could not be placed in Higashi-Nakano."
+ },
+ {
+  "id": "L011",
+  "v": "V",
+  "h": "jimbocho_shokudou.arata",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the shop's address as Kanda-Sarugakucho 1-2-4, Chiyoda-ku - the block beside Jimbocho where this listing places it - names its mackerel speciality and gives its lunch-only hours and weekend closing."
+ },
+ {
+  "id": "L020",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the brand keeps one account, whose profile gives only the Ueno shop's address and hours; no account for the Harajuku branch exists, so none could be tied to this listing."
+ },
+ {
+  "id": "L021",
+  "v": "V",
+  "h": "agefuku29",
+  "t": "store",
+  "note": "Second pass: the account's own name identifies the Gotanda shop where this listing places it, and its profile describes its sous-vide tonkatsu and the Yazawa Meat group that runs it."
+ },
+ {
+  "id": "L025",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this restaurant's name; the nearest match is a differently named Azabu-Juban restaurant whose only account belongs to its manager."
+ },
+ {
+  "id": "L043",
+  "v": "V",
+  "h": "izakaya_hoshigumi",
+  "t": "store",
+  "note": "Second pass: the account's own profile places the izakaya one minute from Sangenjaya station with 45 seats and a 20-person tatami room upstairs, and gives its weekday and weekend hours; the third branch keeps a separate account."
+ },
+ {
+  "id": "L062",
+  "v": "V",
+  "h": "baker_aoyagi",
+  "t": "store",
+  "note": "Second pass: the bakery's own account; its profile lists Higashi-Kitazawa and Yoyogi-Uehara as its locations, describes its high-hydration sourdough baking and gives its Wednesday-to-Saturday hours."
+ },
+ {
+  "id": "L063",
+  "v": "V",
+  "h": "eteco_bread",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the bakery's address as Daizawa 2-42-7, Setagaya-ku, in the Shimokitazawa area where this listing places it, with its closing days and sell-out closing."
+ },
+ {
+  "id": "L064",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found for this shop in Yoyogi-Uehara; the handle printed for it on a directory page belongs to a shop of the same name in Shiki, Saitama, so it was not recorded."
+ },
+ {
+  "id": "L070",
+  "v": "V",
+  "h": "le_ressort",
+  "t": "store",
+  "note": "Second pass: the account's own profile places the bakery one minute from Komaba-Todaimae station on the Inokashira line and gives its hours of 9:00 to 17:00, matching this listing."
+ },
+ {
+  "id": "L072",
+  "v": "A",
+  "h": "katanebakery",
+  "note": "Second pass: the bakery's own account was found and its profile gives the opening hours and closing days, but it states no address or area, so it could not be placed in Nishihara."
+ },
+ {
+  "id": "L076",
+  "v": "V",
+  "h": "tecona_bagel_works",
+  "t": "store",
+  "note": "Second pass: the account's own name identifies the Yoyogi-Hachiman main shop and its profile gives its hours, its takeout-only service and its trading since 2009; this guide records the same shop under the adjoining neighbourhood name Tomigaya, which is where Yoyogi-Hachiman station stands. The Jiyugaoka and Kyodo shops keep separate accounts."
+ },
+ {
+  "id": "L077",
+  "v": "A",
+  "h": "horn.tokyo",
+  "note": "Second pass: an account under this shop's name was found and its profile gives the cafe and crepe hours and the whole-cake ordering, but it states no address or area, so it could not be placed in Yoyogi-Uehara."
+ },
+ {
+  "id": "L078",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this restaurant's name in Nakameguro; the results were other steak and teppanyaki restaurants in the area."
+ },
+ {
+  "id": "L082",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Otowa; the handle printed for it on a directory page is the publisher's own."
+ },
+ {
+  "id": "L084",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: two accounts present themselves as this brand's Omotesando shop under near-identical names, and both now give the same address at Kita-Aoyama 3-7-6; because nothing distinguishes which of the two is the shop's current account, neither is recorded. A third account belongs to the separate cafe and bake shop at Kita-Aoyama 3-6-23."
+ },
+ {
+  "id": "L094",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the brand keeps an account for its Keishinkaku branch, whose profile lists the Kamata branches, but no account was found for the main shop, so none could be tied to this listing."
+ },
+ {
+  "id": "L108",
+  "v": "A",
+  "h": "soba_yamasho",
+  "note": "Second pass: the shop's own account was found and its profile gives the lunch and dinner hours, closing days and a Tokyo telephone number, but no address or area, so it could not be placed in Nakano."
+ },
+ {
+  "id": "L111",
+  "v": "V",
+  "h": "kotobukiyu.ueno",
+  "t": "store",
+  "note": "Second pass: the account's own handle names the Ueno bathhouse and its profile describes its open-air bath, bathing and sauna charges and hours of 11:00 to 25:30; the same-named bathhouse in Higashi-Yotsugi keeps a separate account."
+ },
+ {
+  "id": "L133",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the shrine keeps no account of its own; the only official account in its name belongs to its wedding venue, Forest Terrace, so none is recorded for the shrine."
+ },
+ {
+  "id": "L117",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the statue has no account of its own. The shrine whose grounds it stands in keeps one, but attributing the shrine's account to a monument would misrepresent it, so none is recorded."
+ },
+ {
+  "id": "L134",
+  "v": "V",
+  "h": "yasukuni.official",
+  "t": "store",
+  "note": "Second pass: of the shrine's two accounts this one is the current official account - its profile names the shrine at Kudan in central Tokyo, gives Kudanshita, Ichigaya and Iidabashi as its nearest stations and states the number of souls enshrined since 1853, while the older account announced that its series had ended and that a new recognised account would follow."
+ },
+ {
+  "id": "L136",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the museum keeps no account of its own. The shrine it stands in has one, but it is the shrine's and not this museum's, so none is recorded."
+ },
+ {
+  "id": "L139",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the shopping street keeps no account of its own; the association that runs it maintains an account for its annual tool fair, and the rest are individual member shops, so none is recorded for the street."
+ },
+ {
+  "id": "L148",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the account carrying this bar's name places itself in Minami-Aoyama and Nishi-Azabu, not Ginza where this listing places it, so it was not recorded."
+ },
+ {
+  "id": "L150",
+  "v": "A",
+  "h": "sobaosame",
+  "note": "Second pass: the restaurant's own account was found and its profile describes its hundred-year-old townhouse setting and its reservation-only course lunch, but it states no address or area, so it could not be placed in Ochiai."
+ },
+ {
+  "id": "L153",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Koenji."
+ },
+ {
+  "id": "L160",
+  "v": "V",
+  "h": "akaoni.sake.tokyo",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the izakaya's address as Sangenjaya 2-15-3, Setagaya-ku with its weekday and weekend opening times and describes its sake-led menu, matching this listing; the Ikebukuro shop of the same name keeps a separate account."
+ },
+ {
+  "id": "L167",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found for this venue in Setagaya; the handle printed for it on a media page could not be confirmed on any profile naming the venue."
+ },
+ {
+  "id": "L170",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the only account carrying this name belongs to a yakitori shop in Kabukicho and gives no address, so it could not be tied to this listing in Yotsuya."
+ },
+ {
+  "id": "L173",
+  "v": "V",
+  "h": "dolce_tacubo",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the shop's address as Ebisu-Nishi 2-15-9, ground floor of Cerazza Daikanyama, names it as the pastry shop of the Daikanyama restaurant Tacubo and gives its hours of 11:00 until sold out."
+ },
+ {
+  "id": "L141",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found that carries this shop's name and places it anywhere; the handle printed for it on a directory page could not be confirmed on a profile."
+ },
+ {
+  "id": "L194",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this bar's name in Suidobashi."
+ },
+ {
+  "id": "L196",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found for this shop in Edogawabashi; the name matches are a ramen shop in Fukaya, Saitama and a shop whose name is spelled differently."
+ },
+ {
+  "id": "L197",
+  "v": "V",
+  "h": "kanda_matsuya",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the restaurant's address as Kanda-Sudacho 1-13, Chiyoda-ku with its telephone number, its weekday and Saturday hours and its Sunday and Monday closing, matching this listing."
+ },
+ {
+  "id": "L202",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found for this branch; the handle printed for it on a directory page could not be confirmed on a profile naming the shop or its Kanda branch."
+ },
+ {
+  "id": "L215",
+  "v": "V",
+  "h": "tnm_pr",
+  "t": "store",
+  "note": "Second pass: this is the museum's own public-relations account, which presents its grounds, exhibitions and treasures; its English sibling account dates the museum to 1872 and names it the oldest museum of Asian art in Japan. The language-specific information accounts linked from the museum's site are separate."
+ },
+ {
+  "id": "L253",
+  "v": "V",
+  "h": "bluethe3_omotesando",
+  "t": "store",
+  "note": "Second pass: the account's own name and profile place the venue in Omotesando, give its 65 seats with private rooms, terrace and counter and list its weekday and weekend hours, matching this listing."
+ },
+ {
+  "id": "L262",
+  "v": "A",
+  "h": "musicbarbounce",
+  "note": "Second pass: the bar's own account was found and its profile gives its music policy, opening hours and charges, but it states no address or area, so it could not be placed in Shibuya."
+ },
+ {
+  "id": "L270",
+  "v": "A",
+  "h": "sobakiri_tokiwa",
+  "note": "Second pass: an account under this restaurant's name was found but its profile carries no address, hours or other detail, so it could not be placed in Mita or Tamachi."
+ },
+ {
+  "id": "L286",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this bar's name in Yoyogi-Hachiman."
+ },
+ {
+  "id": "L147",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this bar's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this bar's."
+ },
+ {
+  "id": "L265",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this restaurant's name in Aoyama; only the hotel it sits in and its sibling restaurants keep accounts, and none of them is this one's."
+ },
+ {
+  "id": "L252",
+  "v": "A",
+  "h": "vigo.tokyo",
+  "note": "Second pass: the restaurant's own account was found and its profile describes its charcoal-grilled Italian cooking, hours and telephone number, whose 03-6420 exchange covers the Gotanda area, but the profile prints no address, so the area could not be confirmed from the profile itself."
+ },
+ {
+  "id": "L288",
+  "v": "A",
+  "h": "__________ultimo",
+  "note": "Second pass: an account under this venue's name was found and its profile describes a wine bar with simple snacks and gives its late hours, but it states no address or area, so it could not be placed in Yoyogi-Hachiman; a pub of the same name in Monzen-Nakacho keeps a separate account."
+ },
+ {
+  "id": "L290",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account of this restaurant's own was found; a Ningyocho izakaya's account names it among its sister shops, but that is not this restaurant's account and the handle printed for it on a directory page could not be confirmed."
+ },
+ {
+  "id": "L293",
+  "v": "A",
+  "h": "nadoya.katte",
+  "note": "Second pass: the stand's own account was found and its profile describes it as a single-origin coffee stand produced by nadoya with coffee supervised by Glitch, and gives its hours, but neither it nor the parent account states an address, so it could not be placed in Yoyogi-Uehara."
+ },
+ {
+  "id": "L300",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this cafe's name in Omotesando or Minami-Aoyama."
+ },
+ {
+  "id": "L302",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found for this restaurant in Aoyama; the name matches are unrelated businesses in Osaka, Arima, Hirakata and Taiwan."
+ },
+ {
+  "id": "L309",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the two accounts carrying this shop's name both belong to its proprietor, and the newer one explains that the shop's earlier account was hijacked; neither is the shop's own account, so none is recorded."
+ },
+ {
+  "id": "L313",
+  "v": "V",
+  "h": "chuka_tokudai",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the restaurant's address as Ogikubo 5-13-6, Suginami-ku on the Suzuran-dori side of Ogikubo station, with its telephone number, its weekday and Saturday hours and its closing days, matching this listing."
+ },
+ {
+  "id": "L320",
+  "v": "A",
+  "h": "gurabar111",
+  "note": "Second pass: the restaurant's own account was searched again with the city name; its profile still gives no address and nothing places the shop in Mitaka, so it is not recorded."
+ },
+ {
+  "id": "L322",
+  "v": "A",
+  "h": "chuukayasan_18",
+  "note": "Second pass: the account carrying this shop's name gives its menu, hours and a large car park in its profile but no address, and the profile's car park does not match a Nogata shopfront, so it is not recorded."
+ },
+ {
+  "id": "L326",
+  "v": "V",
+  "h": "aldebaran_burger",
+  "t": "store",
+  "note": "Second pass: the shop's own account states that it reopened in Azabu-Juban on 8 November, and the chef's account dates the Roppongi shop from 2018 to 2022 and the Azabu-Juban restart to 8 November 2022, placing the shop where this listing places it."
+ },
+ {
+  "id": "L329",
+  "v": "V",
+  "h": "burgerpolice_himonya",
+  "t": "store",
+  "note": "Second pass: the account's own name identifies the Himonya shop - the neighbourhood that Toritsu-Daigaku station stands in, where this guide places it - and its profile gives its burger-bistro format, its weekday and weekend hours and its Wednesday closing. The chain's Kasukabe and Shibuya shops keep separate accounts."
+ },
+ {
+  "id": "L330",
+  "v": "V",
+  "h": "the_great_burger",
+  "t": "store",
+  "note": "Second pass: this is the restaurant's main account, which names its sibling stand and gives its weekday and weekend hours; both profiles are placed in Shibuya-ku, the ward that contains Jingumae where this listing places it, though neither prints the street address."
+ },
+ {
+  "id": "L345",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Soshigaya-Okura."
+ },
+ {
+  "id": "L346",
+  "v": "V",
+  "h": "boulangerie.sudo",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the bakery's address as Setagaya 4-chome, Setagaya-ku, directly in front of Shoin-Jinjamae station on the Setagaya line, with its telephone number and its Friday-to-Sunday opening, matching this listing."
+ },
+ {
+  "id": "L348",
+  "v": "V",
+  "h": "centre_the_bakery",
+  "t": "store",
+  "note": "Second pass: the account's own name identifies the Ginza shop and its profile gives the address as Ginza 1-2-1, Chuo-ku, ground floor of the Tokyo Expressway Konya building, with its telephone number and its bread-selling hours."
+ },
+ {
+  "id": "L350",
+  "v": "V",
+  "h": "3ft.nakamura.official",
+  "t": "store",
+  "note": "Second pass: the account's own profile traces the shop from Wakayama through Kiyosumi to its present Kagurazaka shop, where this listing places it, and gives its reservation and walk-in selling hours, its Tuesday-Wednesday closing and its cashless-only payment."
+ },
+ {
+  "id": "L356",
+  "v": "A",
+  "h": "bricolage_bread_and_company",
+  "note": "Second pass: searched again with the neighbourhood names; neither the bakery's account nor its sibling coffee account prints an address, so the shop could not be placed in Roppongi."
+ },
+ {
+  "id": "L358",
+  "v": "V",
+  "h": "bianchi_roppongi",
+  "t": "store",
+  "note": "Second pass: the account's own handle names the Roppongi restaurant and its profile describes its Thai-Chinese and Thai street-food menu reworked with Japanese ingredients, with its lunch and dinner hours and Sunday closing, matching this listing."
+ },
+ {
+  "id": "L360",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this restaurant's name in Shinjuku; the name match is a Thai restaurant in Joetsu, Niigata."
+ },
+ {
+  "id": "L361",
+  "v": "A",
+  "h": "hotatebiyori",
+  "note": "Second pass: the shop's own account was found and its profile describes its Sarufutsu scallops and Hokkaido wheat noodles, but it states no address or area, so it could not be placed in Akihabara."
+ },
+ {
+  "id": "L365",
+  "v": "V",
+  "h": "tyukasoba_hirai",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the shop's address as Sakaecho 2-11-7, Fuchu, Tokyo with its hours, Tuesday closing and ticket-machine ordering, matching this listing; the Tamaplaza branch keeps a separate account."
+ },
+ {
+  "id": "L369",
+  "v": "A",
+  "h": "medikasoba.kin_gyo",
+  "note": "Second pass: the shop's own account was found and its profile gives its hours and its two soup styles, but it states no address or area, so it could not be placed in Manganji."
+ },
+ {
+  "id": "L378",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Yokohama; the name match is a restaurant in Queensland, Australia."
+ },
+ {
+  "id": "L379",
+  "v": "V",
+  "h": "kuriyama2022",
+  "t": "store",
+  "note": "Second pass: the account's own profile places the shop five minutes' walk from Hakuraku station on the Tokyu Toyoko line, where this listing places it, and gives its weekday and weekend hours."
+ },
+ {
+  "id": "L395",
+  "v": "V",
+  "h": "sanjusangendo_temple",
+  "t": "store",
+  "note": "Second pass: the temple's own account, which states in its profile that it is the official Instagram of Sanjusangendo in Kyoto, and its location record gives Sanjusangendo-mawari-cho 657 in Higashiyama-ku, where this listing places it."
+ },
+ {
+  "id": "L396",
+  "v": "V",
+  "h": "nishi_hongwanji",
+  "t": "store",
+  "note": "Second pass: of the two accounts, this is the temple's own - its profile names it as Onishi-san, the temple itself, and states that it also runs the temple's official website, X and note accounts - while the other belongs to the Jodo Shinshu Honganji-ha denomination and posts its teachings and observances."
+ },
+ {
+  "id": "L401",
+  "v": "A",
+  "h": "roujina0627",
+  "note": "Second pass: the restaurant's own account was found and its profile gives its lunch and dinner last orders, its Monday closing and its lack of parking, but it states no address or area, so it could not be placed in Nakagyo-ku."
+ },
+ {
+  "id": "L402",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this restaurant's name in Nakagyo-ku; the nearest name match is a Chinese restaurant with no stated address."
+ },
+ {
+  "id": "L413",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Gion; the results were other Gion sweets shops."
+ },
+ {
+  "id": "L417",
+  "v": "V",
+  "h": "imperial_palaces_of_kyoto",
+  "t": "brand",
+  "note": "Second pass: this is the official account of the Imperial Household Agency's Kyoto office, and its profile states that it covers the Kyoto Imperial Palace, this Sento Imperial Palace, Katsura and Shugakuin, with their buildings, gardens and special openings. It is shared across those sites, so it is recorded as the operator's account."
+ },
+ {
+  "id": "L418",
+  "v": "V",
+  "h": "imperial_palaces_of_kyoto",
+  "t": "brand",
+  "note": "Second pass: this is the official account of the Imperial Household Agency's Kyoto office, and its profile states that it covers the Kyoto Imperial Palace, the Sento Imperial Palace, Katsura and this Shugakuin villa, with their buildings, gardens and special openings. It is shared across those sites, so it is recorded as the operator's account."
+ },
+ {
+  "id": "L420",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this cafe's name in Higashiyama-ku; the nearest name match is a liquor shop near Sanjo."
+ },
+ {
+  "id": "L429",
+  "v": "V",
+  "h": "mot_kyoto",
+  "t": "store",
+  "note": "Second pass: the account's own profile names the restaurant as a Thai restaurant in Kyoto and the flagship of its sibling Mymot, which this guide also lists in Meguro; the profile names the city but not the Kuramaguchi neighbourhood."
+ },
+ {
+  "id": "L431",
+  "v": "V",
+  "h": "tsutenkakutower_official",
+  "t": "store",
+  "note": "Second pass: of the tower's two accounts this is the current official one - the older account's profile points visitors to it by name - and its profile gives the tower's opening hours and last admission."
+ },
+ {
+  "id": "L432",
+  "v": "V",
+  "h": "osaka_castle_park",
+  "t": "brand",
+  "note": "Second pass: this is the castle park's own official account, posting its events, seasonal flowers and history; the other account found earlier is an outing guide, not the park's. It covers the whole park around the castle, so it is recorded as the operator's account."
+ },
+ {
+  "id": "L435",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the arcade as a whole keeps no account; the only official account found belongs to its fourth block alone, so it was not recorded for this listing."
+ },
+ {
+  "id": "L439",
+  "v": "V",
+  "h": "ootakodoutonbori",
+  "t": "store",
+  "note": "Second pass: the account's own name identifies the Dotonbori main shop where this listing places it, and its profile gives its founding in 1972 and its octopus, kushikatsu, okonomiyaki and yakisoba menu."
+ },
+ {
+  "id": "L434",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the sign has no account of its own; the confectionery company that owns it runs product and shop accounts, and the Dotonbori traders' association account covers the whole street, so none is recorded."
+ },
+ {
+  "id": "L453",
+  "v": "V",
+  "h": "kadoya.shokudou",
+  "t": "brand",
+  "note": "Second pass: the restaurant's own official account; its profile lists its shops as the main shop - this listing - together with the Hanshin Umeda, Crysta Nagahori and Nishi-Umeda branches. It is shared across them, so it is recorded as the operator's account."
+ },
+ {
+  "id": "L458",
+  "v": "V",
+  "h": "rs.burger",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the shop's address as Koganehara 6-2-6, Matsudo, Chiba with its telephone number, and its takeaway counter keeps a separate account naming this one as its parent."
+ },
+ {
+  "id": "L462",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the chain keeps accounts for its Matsusaka, Sapporo, Sakai, Okazaki, Kyoto, Ebisu, Omotesando, Himeji, Tokushima and Kabukicho shops, and those profiles refer to the Kobe main shop's reputation, but no account for the Kobe main shop itself was found."
+ },
+ {
+  "id": "L475",
+  "v": "V",
+  "h": "ise_zushi",
+  "t": "store",
+  "note": "Second pass: the account's own profile dates the shop to 1967, describes its Edo-mae and Ezo-mae work and gives a telephone number in the 0134 Otaru dialling area; the station branch keeps its own separate account, leaving this one as the main shop's. The profile gives the telephone number rather than a street address."
+ },
+ {
+  "id": "L479",
+  "v": "V",
+  "h": "otaru_fujirin",
+  "t": "store",
+  "note": "Second pass: the account's own name places the shop in Otaru and its profile gives the address as Inaho 2-11-2, Otaru with its telephone number and its stock of more than thirty sakes."
+ },
+ {
+  "id": "L481",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Otaru."
+ },
+ {
+  "id": "L483",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this bar's name in Asahikawa; the name matches are bars and breweries in the United States and Singapore."
+ },
+ {
+  "id": "L501",
+  "v": "V",
+  "h": "akarenga_chousha_1888",
+  "t": "store",
+  "note": "Second pass: the building's own account; its profile gives the address as Kita 3-jo Nishi 6-chome 1, Chuo-ku, Sapporo with its opening hours and admission, and names it a nationally designated important cultural property, matching this listing."
+ },
+ {
+  "id": "L503",
+  "v": "V",
+  "h": "sapporoajinosanpei",
+  "t": "store",
+  "note": "Second pass: the account's own name places the shop in Sapporo and its profile dates it to 1950 in Susukino, recounts how its founder created miso ramen and gives its hours and Monday closing."
+ },
+ {
+  "id": "L506",
+  "v": "V",
+  "h": "captainkangaroo_okinawa",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the shop's address as Sakimotobu 930-1, Motobu, Kunigami-gun, Okinawa with its telephone number, matching this listing; the Nago tacorice shop and the Tokyo branch keep separate accounts."
+ },
+ {
+  "id": "L515",
+  "v": "A",
+  "h": "gorohachi_kumamoto0568",
+  "note": "Second pass: searched again with the neighbourhood name; the account for the restaurant's main shop still gives no address or branch, so it could not be tied to the Suizenji shop."
+ },
+ {
+  "id": "L517",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: searched again as a day-use bath; the only accounts on these grounds belong to the car-stay park and the campsite, not to the bathhouse itself, so none is recorded."
+ },
+ {
+  "id": "L522",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this restaurant's name in Hakuba; the handle printed for it on a directory page belongs to an unrelated business."
+ },
+ {
+  "id": "L523",
+  "v": "V",
+  "h": "misa.rosso",
+  "t": "store",
+  "note": "Second pass: the account's own profile gives the shop's address as Mantoku-cho 2-15, Sasebo, Nagasaki with its hours, Tuesday closing and telephone number, and describes its house-made buns, matching this listing."
+ },
+ {
+  "id": "L526",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: no account was found under this shop's name in Showa-cho, Yamanashi."
+ },
+ {
+  "id": "L331",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the chain's own accounts name a brand-level account and separate regional accounts for Hokkaido, Okinawa, Miyakojima and Vietnam, but none of them is placed in Shinjuku, so none could be tied to this branch."
+ },
+ {
+  "id": "L336",
+  "v": "V",
+  "h": "bifuteki_kawamura_tokyo",
+  "t": "brand",
+  "note": "Second pass: the chain's own Kansai account states in its profile that its Tokyo Ginza and Roppongi restaurants are covered by this account, and the brand account dates the firm to 1972 and lists the Ginza and Roppongi shops. It is shared between those two shops, so it is recorded as the operator's account."
+ },
+ {
+  "id": "L343",
+  "v": "A",
+  "h": "sutaminaen",
+  "note": "Second pass: searched again with the neighbourhood name; the account carrying this restaurant's and its proprietor's name still gives only its hours and closing days, with no address, so it could not be placed in Shikahama."
+ },
+ {
+  "id": "L344",
+  "v": "A",
+  "h": "vanne_yoroniku",
+  "note": "Second pass: searched again with the neighbourhood and the brand's other name; the account still places the restaurant at Azabudai Hills rather than Ebisu, so it was not recorded."
+ },
+ {
+  "id": "L370",
+  "v": "A",
+  "h": "ra_men_1.20",
+  "note": "Second pass: searched again with the ward name; the shop's own account still gives only its opening days and hours, with no address, so it could not be placed in Higashi-Ogu."
+ },
+ {
+  "id": "L374",
+  "v": "A",
+  "h": "men_fujisaki",
+  "note": "Second pass: searched again with the ward name; the shop's own account still gives only its own-noodle and no-additive claims, with no address, so it could not be placed in Kameido."
+ },
+ {
+  "id": "L428",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: searched again with the ward name; the only account tying this name to Kyoto remains the proprietor's personal account, which gives no address, and the other name match is a restaurant in Ogaki, Gifu."
+ },
+ {
+  "id": "L442",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: searched again by the fuller shop name; no account was found that places a restaurant of this name in Kita-ku, Osaka."
+ },
+ {
+  "id": "L450",
+  "v": "A",
+  "h": "sweetbasil2001",
+  "note": "Second pass: searched again with the ward name; the restaurant's own account still gives only its booking telephone number and website, with no address, so the Fukushima-ku location could not be confirmed from the profile."
+ },
+ {
+  "id": "L452",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the only account for this restaurant places it in the basement of the Hanshin Umeda store in Kita-ku, with a sibling shop on the floor below, and not in Kitahorie where this listing places it."
+ },
+ {
+  "id": "L461",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: searched again for a shop account; none exists - only the proprietor's own account and a ramen writer's page that lists the shop among his recommendations."
+ },
+ {
+  "id": "L467",
+  "v": "A",
+  "h": "genpukan1996",
+  "note": "Second pass: searched again with the ward name; the restaurant's own account still lists only its Kashii-area branches, and the sibling account gives no address, so neither could be tied to the Chiyo branch."
+ },
+ {
+  "id": "L471",
+  "v": "A",
+  "h": "",
+  "note": "Second pass: the Mizonokuchi branch's account names itself an offshoot of the Otaru main shop and gives only its own address, and no account for the Otaru main shop was found."
+ },
+ {
+  "id": "L495",
+  "v": "A",
+  "h": "ginneko.manager_matchan",
+  "note": "Second pass: the manager's account places the shop in the 5-7 Koji Furarito lane at 5-jo-dori 7-chome, Asahikawa and dates it to 1950, but it is the manager's own account rather than the shop's, so it is not recorded - the same rule applied to the other proprietor-run accounts in this ledger."
+ }
+]

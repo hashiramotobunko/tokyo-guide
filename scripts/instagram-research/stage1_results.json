@@ -1,0 +1,4045 @@
+[
+ {
+  "id": "L010",
+  "pages_tried": [
+   {
+    "url": "https://santosham.tokyo/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "santosham3",
+    "evidence_url": "https://santosham.tokyo/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L026",
+  "pages_tried": [
+   {
+    "url": "https://www.env.go.jp/garden/kokyogaien/",
+    "status": 200
+   },
+   {
+    "url": "https://www.env.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L027",
+  "pages_tried": [
+   {
+    "url": "https://www.env.go.jp/garden/kokyogaien/",
+    "status": 200
+   },
+   {
+    "url": "https://www.env.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L028",
+  "pages_tried": [
+   {
+    "url": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kunaicho.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L031",
+  "pages_tried": [
+   {
+    "url": "https://maidens-shop.jp/store-info/",
+    "status": 200
+   },
+   {
+    "url": "https://maidens-shop.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "maidens_shop",
+    "evidence_url": "https://maidens-shop.jp/store-info/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "maidensshop_women",
+    "evidence_url": "https://maidens-shop.jp/store-info/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "maidensshop_jimbocho",
+    "evidence_url": "https://maidens-shop.jp/store-info/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "the_store_by_maidens",
+    "evidence_url": "https://maidens-shop.jp/store-info/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "maidens_shop",
+    "evidence_url": "https://maidens-shop.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "maidensshop_women",
+    "evidence_url": "https://maidens-shop.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "maidensshop_jimbocho",
+    "evidence_url": "https://maidens-shop.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "the_store_by_maidens",
+    "evidence_url": "https://maidens-shop.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L037",
+  "pages_tried": [
+   {
+    "url": "https://www.celestinehotels.jp/tokyo-shiba/",
+    "status": 200
+   },
+   {
+    "url": "https://www.celestinehotels.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.celestinehotels.jp/tokyo-shiba/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "thecelestinehotels",
+    "evidence_url": "https://www.celestinehotels.jp/tokyo-shiba/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thecelestinehotels",
+    "evidence_url": "https://www.celestinehotels.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thecelestinehotels",
+    "evidence_url": "https://www.celestinehotels.jp/tokyo-shiba/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L047",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-rc.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L048",
+  "pages_tried": [
+   {
+    "url": "https://www.kyudo.jp/schedule/chuoshinsa/overview.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kyudo.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kyudo.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "ankf0522",
+    "evidence_url": "https://www.kyudo.jp/schedule/chuoshinsa/overview.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "ankf0522",
+    "evidence_url": "https://www.kyudo.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "ankf0522",
+    "evidence_url": "https://www.kyudo.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L049",
+  "pages_tried": [
+   {
+    "url": "https://www.meijijingu.or.jp/shiseikan/",
+    "status": 200
+   },
+   {
+    "url": "https://www.meijijingu.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.meijijingu.or.jp/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L050",
+  "pages_tried": [
+   {
+    "url": "https://nyc.niye.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "orisen_event",
+    "evidence_url": "https://nyc.niye.go.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L051",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/yoyogi/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/park/yoyogi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L054",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/yoyogi/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/park/yoyogi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L058",
+  "pages_tried": [
+   {
+    "url": "https://fuglencoffee.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "fuglencoffee_tokyo",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglentokyo",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglenasakusa",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglenhanegikoen",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglensangubashi",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglenkyoto",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglenfukuoka",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "fuglenkeyakidori_",
+    "evidence_url": "https://fuglencoffee.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L066",
+  "pages_tried": [
+   {
+    "url": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.u-tokyo.ac.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "utokyo_pr",
+    "evidence_url": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "utokyo_pr",
+    "evidence_url": "https://www.u-tokyo.ac.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L067",
+  "pages_tried": [
+   {
+    "url": "https://page.line.me/269hgxmm",
+    "status": 200
+   },
+   {
+    "url": "https://page.line.me/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "bondicafenakameguro",
+    "evidence_url": "https://page.line.me/269hgxmm",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "bondicafehiroo",
+    "evidence_url": "https://page.line.me/269hgxmm",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "bondicoffeesandwiches",
+    "evidence_url": "https://page.line.me/269hgxmm",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "bondicoffeesandwicheskomazawa",
+    "evidence_url": "https://page.line.me/269hgxmm",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L068",
+  "pages_tried": [
+   {
+    "url": "https://www.seikotei.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L069",
+  "pages_tried": [
+   {
+    "url": "https://www.city.meguro.tokyo.jp/shougaigakushuu/bunkasports/rekishibunkazai/kyumaeda.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.city.meguro.tokyo.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L073",
+  "pages_tried": [
+   {
+    "url": "https://www.montblancstyle.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kuriya_farmer",
+    "evidence_url": "https://www.montblancstyle.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "inishie_waguriyamontblancstyle",
+    "evidence_url": "https://www.montblancstyle.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L074",
+  "pages_tried": [
+   {
+    "url": "https://www.theobroma.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "theobroma_japan",
+    "evidence_url": "https://www.theobroma.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "theobroma_koji_tsuchiya",
+    "evidence_url": "https://www.theobroma.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "gelateria_theobroma",
+    "evidence_url": "https://www.theobroma.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "cacaostore_official",
+    "evidence_url": "https://www.theobroma.co.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L084",
+  "pages_tried": [
+   {
+    "url": "https://page.line.me/342pphob",
+    "status": 200
+   },
+   {
+    "url": "https://page.line.me/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L087",
+  "pages_tried": [
+   {
+    "url": "https://waketoku.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L089",
+  "pages_tried": [
+   {
+    "url": "https://gyoza-yoshiko.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "gyoza445",
+    "evidence_url": "https://gyoza-yoshiko.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L090",
+  "pages_tried": [
+   {
+    "url": "https://gyoza-yoshiko.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "gyoza445",
+    "evidence_url": "https://gyoza-yoshiko.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L098",
+  "pages_tried": [
+   {
+    "url": "https://toyo-bunko.or.jp/museum/",
+    "status": 200
+   },
+   {
+    "url": "https://toyo-bunko.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "toyo_bunko",
+    "evidence_url": "https://toyo-bunko.or.jp/museum/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "toyo_bunko",
+    "evidence_url": "https://toyo-bunko.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L099",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/rikugien/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/park/rikugien/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L100",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L101",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-dome.co.jp/dome/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-dome.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-dome.co.jp/dome/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyodome1988_",
+    "evidence_url": "https://www.tokyo-dome.co.jp/dome/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyodomecity_official",
+    "evidence_url": "https://www.tokyo-dome.co.jp/dome/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyodomecity_official",
+    "evidence_url": "https://www.tokyo-dome.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyodome1988_",
+    "evidence_url": "https://www.tokyo-dome.co.jp/dome/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyodomecity_official",
+    "evidence_url": "https://www.tokyo-dome.co.jp/dome/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L102",
+  "pages_tried": [
+   {
+    "url": "https://jns-e.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "mufg_stadium",
+    "evidence_url": "https://jns-e.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "themusicstadium_official",
+    "evidence_url": "https://jns-e.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L103",
+  "pages_tried": [
+   {
+    "url": "https://www.sekaido.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.sekaido.co.jp/store/77",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "sekaido_official",
+    "evidence_url": "https://www.sekaido.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "sekaido_official",
+    "evidence_url": "https://www.sekaido.co.jp/store/77",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L104",
+  "pages_tried": [
+   {
+    "url": "https://www.hyatt.com/park-hyatt/tyoph-park-hyatt-tokyo",
+    "status": 403
+   },
+   {
+    "url": "https://www.hyatt.com/",
+    "status": 403
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L105",
+  "pages_tried": [
+   {
+    "url": "https://www.hilton.com/en/hotels/tyohitw-hilton-tokyo/",
+    "status": 403
+   },
+   {
+    "url": "https://www.hilton.com/",
+    "status": 403
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L109",
+  "pages_tried": [
+   {
+    "url": "https://matsumoto-yu.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "matsumotoyu1010",
+    "evidence_url": "https://matsumoto-yu.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L110",
+  "pages_tried": [
+   {
+    "url": "https://www.aqua-higashinakano1010.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "aqua_higashinakano",
+    "evidence_url": "https://www.aqua-higashinakano1010.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L112",
+  "pages_tried": [
+   {
+    "url": "https://bunkayokusen1010.com/",
+    "status": "ConnectError"
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L113",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-park.or.jp/reien/yanaka/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/reien/yanaka/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L114",
+  "pages_tried": [
+   {
+    "url": "https://museum.geidai.ac.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://museum.geidai.ac.jp/information/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "geidai_museum",
+    "evidence_url": "https://museum.geidai.ac.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "geidai_museum",
+    "evidence_url": "https://museum.geidai.ac.jp/information/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L115",
+  "pages_tried": [
+   {
+    "url": "https://museum.geidai.ac.jp/information/",
+    "status": 200
+   },
+   {
+    "url": "https://museum.geidai.ac.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "geidai_museum",
+    "evidence_url": "https://museum.geidai.ac.jp/information/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "geidai_museum",
+    "evidence_url": "https://museum.geidai.ac.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L116",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/ueno/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/park/ueno/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyo_parks",
+    "evidence_url": "https://www.tokyo-park.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L117",
+  "pages_tried": [
+   {
+    "url": "https://www.yasukuni.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.yasukuni.or.jp/precincts/",
+    "status": 200
+   },
+   {
+    "url": "https://www.yasukuni.or.jp/access.html",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukunijinja",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/precincts/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/access.html",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L118",
+  "pages_tried": [
+   {
+    "url": "https://www.env.go.jp/garden/kokyogaien/",
+    "status": 200
+   },
+   {
+    "url": "https://www.env.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L121",
+  "pages_tried": [
+   {
+    "url": "https://www.hiejinja.net/",
+    "status": 200
+   },
+   {
+    "url": "https://www.hiejinja.net/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "hiejinja",
+    "evidence_url": "https://www.hiejinja.net/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hiejinja",
+    "evidence_url": "https://www.hiejinja.net/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L122",
+  "pages_tried": [
+   {
+    "url": "https://toyokawainari-tokyo.jp/",
+    "status": "ConnectError"
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L123",
+  "pages_tried": [
+   {
+    "url": "https://www.toraya-group.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "toraya.confectionery",
+    "evidence_url": "https://www.toraya-group.co.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L124",
+  "pages_tried": [
+   {
+    "url": "https://www.jingu-stadium.com/",
+    "status": 200
+   },
+   {
+    "url": "https://www.jingu-stadium.com/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "jingu_stadiumpr",
+    "evidence_url": "https://www.jingu-stadium.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "jingu_stadiumpr",
+    "evidence_url": "https://www.jingu-stadium.com/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L125",
+  "pages_tried": [
+   {
+    "url": "https://www.shakeshack.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://shakeshack.jp/locations/gaien/",
+    "status": 200
+   },
+   {
+    "url": "https://shakeshack.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "shakeshackjpn",
+    "evidence_url": "https://www.shakeshack.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "shakeshackjpn",
+    "evidence_url": "https://shakeshack.jp/locations/gaien/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "shakeshackjpn",
+    "evidence_url": "https://shakeshack.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L126",
+  "pages_tried": [
+   {
+    "url": "http://www.royal-gardencafe.com/store-menu/aoyama.html",
+    "status": 200
+   },
+   {
+    "url": "http://www.royal-gardencafe.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "royalgardencafe",
+    "evidence_url": "http://www.royal-gardencafe.com/store-menu/aoyama.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "royalgardencafe",
+    "evidence_url": "http://www.royal-gardencafe.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L129",
+  "pages_tried": [
+   {
+    "url": "https://www.takeshita-street.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L130",
+  "pages_tried": [
+   {
+    "url": "https://togojinja.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://togojinja.or.jp/access",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "togoshrine",
+    "evidence_url": "https://togojinja.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "togoshrine",
+    "evidence_url": "https://togojinja.or.jp/access",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L131",
+  "pages_tried": [
+   {
+    "url": "https://togojinja.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://togojinja.or.jp/access",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "togoshrine",
+    "evidence_url": "https://togojinja.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "togoshrine",
+    "evidence_url": "https://togojinja.or.jp/access",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L132",
+  "pages_tried": [
+   {
+    "url": "https://togojinja.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://togojinja.or.jp/access",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "togoshrine",
+    "evidence_url": "https://togojinja.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "togoshrine",
+    "evidence_url": "https://togojinja.or.jp/access",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L133",
+  "pages_tried": [
+   {
+    "url": "https://www.meijijingu.or.jp/en/",
+    "status": 200
+   },
+   {
+    "url": "https://www.meijijingu.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.meijijingu.or.jp/en/visit/",
+    "status": 200
+   },
+   {
+    "url": "https://www.meijijingu.or.jp/access/",
+    "status": 200
+   },
+   {
+    "url": "https://www.meijijingu.or.jp/en/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L134",
+  "pages_tried": [
+   {
+    "url": "https://www.yasukuni.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.yasukuni.or.jp/precincts/",
+    "status": 200
+   },
+   {
+    "url": "https://www.yasukuni.or.jp/access.html",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukunijinja",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/precincts/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/access.html",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L135",
+  "pages_tried": [
+   {
+    "url": "https://www.city.koto.lg.jp/103020/bunkasports/bunka/minzoku/6359.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.city.koto.lg.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "koto_city_official",
+    "evidence_url": "https://www.city.koto.lg.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L136",
+  "pages_tried": [
+   {
+    "url": "https://www.yasukuni.or.jp/yusyukan/",
+    "status": 200
+   },
+   {
+    "url": "https://www.yasukuni.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/yusyukan/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukuni.official",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yasukunijinja",
+    "evidence_url": "https://www.yasukuni.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L138",
+  "pages_tried": [
+   {
+    "url": "http://www.tomiokahachimangu.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L139",
+  "pages_tried": [
+   {
+    "url": "https://www.kappabashi.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L140",
+  "pages_tried": [
+   {
+    "url": "https://www.asakusa-nakamise.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L142",
+  "pages_tried": [
+   {
+    "url": "https://bar-dop.com/",
+    "status": 200
+   },
+   {
+    "url": "https://bar-dop.com/access.html",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L143",
+  "pages_tried": [
+   {
+    "url": "https://theokuratokyo.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://theokuratokyo.jp/ja/dining/toh-ka-lin/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "theokuratokyo",
+    "evidence_url": "https://theokuratokyo.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "theokuratokyo",
+    "evidence_url": "https://theokuratokyo.jp/ja/dining/toh-ka-lin/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L144",
+  "pages_tried": [
+   {
+    "url": "https://www.moj.go.jp/housei/tosho-tenji/housei06_00026.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.moj.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L145",
+  "pages_tried": [
+   {
+    "url": "https://jpn.mizuno.com/shop/globalflag_tokyo_en",
+    "status": 200
+   },
+   {
+    "url": "https://jpn.mizuno.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L160",
+  "pages_tried": [
+   {
+    "url": "https://akaoni39.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L172",
+  "pages_tried": [
+   {
+    "url": "https://store.bluebottlecoffee.jp/pages/daikanyama",
+    "status": 200
+   },
+   {
+    "url": "https://store.bluebottlecoffee.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L175",
+  "pages_tried": [
+   {
+    "url": "https://bar.spincoaster.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "spincoastermusicbar",
+    "evidence_url": "https://bar.spincoaster.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "spincoastermusicbarebisu",
+    "evidence_url": "https://bar.spincoaster.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "spincoastermusicbarkagurazaka",
+    "evidence_url": "https://bar.spincoaster.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L177",
+  "pages_tried": [
+   {
+    "url": "https://modz.tokyo/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "modz_ebisu",
+    "evidence_url": "https://modz.tokyo/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": [
+   "https://www.instagram.com/modz_ebisu/"
+  ]
+ },
+ {
+  "id": "L180",
+  "pages_tried": [
+   {
+    "url": "https://www.hiramatsurestaurant.jp/aso/",
+    "status": 200
+   },
+   {
+    "url": "https://www.hiramatsurestaurant.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "ristorante_aso",
+    "evidence_url": "https://www.hiramatsurestaurant.jp/aso/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hiramatsu_restaurant",
+    "evidence_url": "https://www.hiramatsurestaurant.jp/aso/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hiramatsu_restaurant",
+    "evidence_url": "https://www.hiramatsurestaurant.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L181",
+  "pages_tried": [
+   {
+    "url": "https://uds-hotels.com/en/all-day-place",
+    "status": 200
+   },
+   {
+    "url": "https://uds-hotels.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "alldayplace_shibuya",
+    "evidence_url": "https://uds-hotels.com/en/all-day-place",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "good.cheese.good.pizza",
+    "evidence_url": "https://uds-hotels.com/en/all-day-place",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "mikkellertokyo",
+    "evidence_url": "https://uds-hotels.com/en/all-day-place",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "aboutlifecoffeebrewers",
+    "evidence_url": "https://uds-hotels.com/en/all-day-place",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "uds_hotels_official",
+    "evidence_url": "https://uds-hotels.com/en/all-day-place",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "uds_hotels_official",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yuensapporo",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yuenshinjuku",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "muji_hotel",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hamacho_hotel_tokyo",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "alldayplace_shibuya",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yuenbetteidaita",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "soki_atami",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "soki_kanazawa",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hotelkanrakyoto",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "anteroom_kyoto",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "anteroom_naha",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "strata_naha",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hotel_locus",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "the.rescape",
+    "evidence_url": "https://uds-hotels.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L182",
+  "pages_tried": [
+   {
+    "url": "https://www.tworooms.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tworooms.tokyo",
+    "evidence_url": "https://www.tworooms.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L184",
+  "pages_tried": [
+   {
+    "url": "https://aoyamagrand.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "aoyamagrand",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "theriveroriental",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thetokyorestaurant",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L197",
+  "pages_tried": [
+   {
+    "url": "https://www.kanda-matsuya.jp/",
+    "status": "ConnectError"
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L205",
+  "pages_tried": [
+   {
+    "url": "https://www.nodaiwa.co.jp/",
+    "status": "ConnectError"
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L206",
+  "pages_tried": [
+   {
+    "url": "https://unagi-hashimoto.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L207",
+  "pages_tried": [
+   {
+    "url": "https://www.unagi-akimoto.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L208",
+  "pages_tried": [
+   {
+    "url": "https://www.imahan.com/",
+    "status": 200
+   },
+   {
+    "url": "https://restaurant.imahan.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "ningyocho_imahan_official",
+    "evidence_url": "https://www.imahan.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L209",
+  "pages_tried": [
+   {
+    "url": "https://www.newotani.co.jp/tokyo/restaurant/okahan/",
+    "status": 200
+   },
+   {
+    "url": "https://www.newotani.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "hotelnewotanitokyo",
+    "evidence_url": "https://www.newotani.co.jp/tokyo/restaurant/okahan/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hotelnewotanitokyo",
+    "evidence_url": "https://www.newotani.co.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L211",
+  "pages_tried": [
+   {
+    "url": "https://theokuratokyo.jp/dining/yamazato/",
+    "status": 200
+   },
+   {
+    "url": "https://theokuratokyo.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "theokuratokyo",
+    "evidence_url": "https://theokuratokyo.jp/dining/yamazato/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "theokuratokyo",
+    "evidence_url": "https://theokuratokyo.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L212",
+  "pages_tried": [
+   {
+    "url": "https://www.sisen.jp/shop/akasaka/",
+    "status": 200
+   },
+   {
+    "url": "https://www.sisen.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "chensmapotofu",
+    "evidence_url": "https://www.sisen.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L215",
+  "pages_tried": [
+   {
+    "url": "https://www.tnm.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tnm.jp/modules/r_free_page/index.php?id=113&lang=en",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tnm_ir_kr",
+    "evidence_url": "https://www.tnm.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tnm_ir_en",
+    "evidence_url": "https://www.tnm.jp/modules/r_free_page/index.php?id=113&lang=en",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L216",
+  "pages_tried": [
+   {
+    "url": "https://www.nmwa.go.jp/en/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nmwa.go.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nmwa.go.jp/en/visit/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nmwa.go.jp/en/visit/accessibility.html",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "nmwatokyo",
+    "evidence_url": "https://www.nmwa.go.jp/en/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "nmwatokyo",
+    "evidence_url": "https://www.nmwa.go.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "nmwatokyo",
+    "evidence_url": "https://www.nmwa.go.jp/en/visit/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "nmwatokyo",
+    "evidence_url": "https://www.nmwa.go.jp/en/visit/accessibility.html",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L217",
+  "pages_tried": [
+   {
+    "url": "https://www.tobikan.jp/en/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tobikan.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tobikan.jp/guide/index.html",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyometropolitanartmuseum",
+    "evidence_url": "https://www.tobikan.jp/en/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tokyometropolitanartmuseum",
+    "evidence_url": "https://www.tobikan.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L218",
+  "pages_tried": [
+   {
+    "url": "https://www.kahaku.go.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kahaku.go.jp/riyou/nyukan-annai/index.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kahaku.go.jp/riyou/access.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kahaku.go.jp/riyou/kannai-guide/accessibility.html",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L219",
+  "pages_tried": [
+   {
+    "url": "https://www.nact.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nact.jp/information/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nact.jp/information/access/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nact.jp/information/barrierfree/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "thenationalartcentertokyo",
+    "evidence_url": "https://www.nact.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thenationalartcentertokyo",
+    "evidence_url": "https://www.nact.jp/information/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thenationalartcentertokyo",
+    "evidence_url": "https://www.nact.jp/information/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thenationalartcentertokyo",
+    "evidence_url": "https://www.nact.jp/information/barrierfree/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L220",
+  "pages_tried": [
+   {
+    "url": "https://www.edo-tokyo-museum.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.edo-tokyo-museum.or.jp/information/hours/",
+    "status": 200
+   },
+   {
+    "url": "https://www.edo-tokyo-museum.or.jp/information/guide/",
+    "status": 200
+   },
+   {
+    "url": "https://www.edo-tokyo-museum.or.jp/information/access/",
+    "status": 200
+   },
+   {
+    "url": "https://www.edo-tokyo-museum.or.jp/information/accessibility/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "edotokyomuseum",
+    "evidence_url": "https://www.edo-tokyo-museum.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "edotokyomuseum",
+    "evidence_url": "https://www.edo-tokyo-museum.or.jp/information/hours/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "edotokyomuseum",
+    "evidence_url": "https://www.edo-tokyo-museum.or.jp/information/guide/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "edotokyomuseum",
+    "evidence_url": "https://www.edo-tokyo-museum.or.jp/information/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "edotokyomuseum",
+    "evidence_url": "https://www.edo-tokyo-museum.or.jp/information/accessibility/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L221",
+  "pages_tried": [
+   {
+    "url": "https://www.sumo.or.jp/KokugikanSumoMuseum/",
+    "status": 200
+   },
+   {
+    "url": "https://www.sumo.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://sumo.or.jp/pdf/sumo_museum/260111_leaflet.pdf",
+    "status": 200
+   },
+   {
+    "url": "https://sumo.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "sumokyokai",
+    "evidence_url": "https://www.sumo.or.jp/KokugikanSumoMuseum/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "sumokyokai",
+    "evidence_url": "https://www.sumo.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "sumokyokai",
+    "evidence_url": "https://sumo.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L222",
+  "pages_tried": [
+   {
+    "url": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kunaicho.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L223",
+  "pages_tried": [
+   {
+    "url": "https://www.kandamyoujin.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kandamyoujin.or.jp/access/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kandamyoujin.or.jp/sanpai/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kandamyoujin",
+    "evidence_url": "https://www.kandamyoujin.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyoujin_edocco",
+    "evidence_url": "https://www.kandamyoujin.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyojin.bridal",
+    "evidence_url": "https://www.kandamyoujin.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyoujin",
+    "evidence_url": "https://www.kandamyoujin.or.jp/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyoujin_edocco",
+    "evidence_url": "https://www.kandamyoujin.or.jp/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyojin.bridal",
+    "evidence_url": "https://www.kandamyoujin.or.jp/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyoujin",
+    "evidence_url": "https://www.kandamyoujin.or.jp/sanpai/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyoujin_edocco",
+    "evidence_url": "https://www.kandamyoujin.or.jp/sanpai/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kandamyojin.bridal",
+    "evidence_url": "https://www.kandamyoujin.or.jp/sanpai/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L224",
+  "pages_tried": [
+   {
+    "url": "https://kaneiji.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://kaneiji.jp/access",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L225",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-midtown.com/jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-midtown.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tokyomidtown_official",
+    "evidence_url": "https://www.tokyo-midtown.com/jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L226",
+  "pages_tried": [
+   {
+    "url": "https://azabudai-hills.com/",
+    "status": 200
+   },
+   {
+    "url": "https://azabudai-hills.com/information/index.html",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "azabudaihillsofficial",
+    "evidence_url": "https://azabudai-hills.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "azabudaihillsofficial",
+    "evidence_url": "https://azabudai-hills.com/information/index.html",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L227",
+  "pages_tried": [
+   {
+    "url": "https://honto.jp/store/detail_1572000_14HB310.html",
+    "status": 200
+   },
+   {
+    "url": "https://honto.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "marunouchi_maruzen",
+    "evidence_url": "https://honto.jp/store/detail_1572000_14HB310.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "marunouchi_washo",
+    "evidence_url": "https://honto.jp/store/detail_1572000_14HB310.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "marunouchi_bungu",
+    "evidence_url": "https://honto.jp/store/detail_1572000_14HB310.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "maruzen_marunouchi_gallery",
+    "evidence_url": "https://honto.jp/store/detail_1572000_14HB310.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hontojp",
+    "evidence_url": "https://honto.jp/store/detail_1572000_14HB310.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hontojp",
+    "evidence_url": "https://honto.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L228",
+  "pages_tried": [
+   {
+    "url": "https://www.waseda.jp/top/access/waseda-campus",
+    "status": 200
+   },
+   {
+    "url": "https://www.waseda.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "waseda_university",
+    "evidence_url": "https://www.waseda.jp/top/access/waseda-campus",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "waseda_university",
+    "evidence_url": "https://www.waseda.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L229",
+  "pages_tried": [
+   {
+    "url": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.u-tokyo.ac.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "utokyo_pr",
+    "evidence_url": "https://www.u-tokyo.ac.jp/ja/about/campus-guide/public02_05.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "utokyo_pr",
+    "evidence_url": "https://www.u-tokyo.ac.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L234",
+  "pages_tried": [
+   {
+    "url": "https://www.keio.ac.jp/ja/maps/mita.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.keio.ac.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "keio_university",
+    "evidence_url": "https://www.keio.ac.jp/ja/maps/mita.html",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "keio_university",
+    "evidence_url": "https://www.keio.ac.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L235",
+  "pages_tried": [
+   {
+    "url": "https://bar.spincoaster.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "spincoastermusicbar",
+    "evidence_url": "https://bar.spincoaster.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "spincoastermusicbarebisu",
+    "evidence_url": "https://bar.spincoaster.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "spincoastermusicbarkagurazaka",
+    "evidence_url": "https://bar.spincoaster.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L236",
+  "pages_tried": [
+   {
+    "url": "https://shinjuku-omoide.com/shop/gifuya",
+    "status": 200
+   },
+   {
+    "url": "https://shinjuku-omoide.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L237",
+  "pages_tried": [
+   {
+    "url": "https://shinjuku-omoide.com/shop/kameya",
+    "status": 200
+   },
+   {
+    "url": "https://shinjuku-omoide.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L238",
+  "pages_tried": [
+   {
+    "url": "https://shinjuku-omoide.com/shop/shimonya",
+    "status": 200
+   },
+   {
+    "url": "https://shinjuku-omoide.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L239",
+  "pages_tried": [
+   {
+    "url": "https://en.shinjuku-omoide.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "omoide_yokocho_official",
+    "evidence_url": "https://en.shinjuku-omoide.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L241",
+  "pages_tried": [
+   {
+    "url": "https://www.yomoda-soba.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L248",
+  "pages_tried": [
+   {
+    "url": "https://rockbarbauhaus.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "bauhaus.tokyo",
+    "evidence_url": "https://rockbarbauhaus.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L250",
+  "pages_tried": [
+   {
+    "url": "https://www.tablecheck.com/ja/hikarimono",
+    "status": 200
+   },
+   {
+    "url": "https://www.tablecheck.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tablecheck_global",
+    "evidence_url": "https://www.tablecheck.com/ja/hikarimono",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tablecheck_global",
+    "evidence_url": "https://www.tablecheck.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L263",
+  "pages_tried": [
+   {
+    "url": "https://the-musicbar.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "the_music_bar",
+    "evidence_url": "https://the-musicbar.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L265",
+  "pages_tried": [
+   {
+    "url": "https://aoyamagrand.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "aoyamagrand",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "theriveroriental",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "thetokyorestaurant",
+    "evidence_url": "https://aoyamagrand.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L268",
+  "pages_tried": [
+   {
+    "url": "https://www.wakiya.co.jp/restaurants/ichiemi/",
+    "status": 200
+   },
+   {
+    "url": "https://www.wakiya.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.wakiya.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "wakiya_ichiemi",
+    "evidence_url": "https://www.wakiya.co.jp/restaurants/ichiemi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wakiya_ichiemi",
+    "evidence_url": "https://www.wakiya.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wakiya_ichiemi",
+    "evidence_url": "https://www.wakiya.co.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L272",
+  "pages_tried": [
+   {
+    "url": "https://www.yonemoto-coffee.com/page/introduction",
+    "status": 200
+   },
+   {
+    "url": "https://www.yonemoto-coffee.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "yonemoto_coffee",
+    "evidence_url": "https://www.yonemoto-coffee.com/page/introduction",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "yonemoto_coffee",
+    "evidence_url": "https://www.yonemoto-coffee.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L289",
+  "pages_tried": [
+   {
+    "url": "https://asakusa-mizuguchi.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L305",
+  "pages_tried": [
+   {
+    "url": "https://a10club.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "a10_ebisu",
+    "evidence_url": "https://a10club.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L306",
+  "pages_tried": [
+   {
+    "url": "https://www.tonkatsu-nagi.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tonkatsu.nagi_official",
+    "evidence_url": "https://www.tonkatsu-nagi.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L310",
+  "pages_tried": [
+   {
+    "url": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kunaicho.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L311",
+  "pages_tried": [
+   {
+    "url": "https://www.tokyo-zoo.net/zoo/ueno/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tokyo-zoo.net/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L312",
+  "pages_tried": [
+   {
+    "url": "https://www.kurosawagakki.com/sh_ocha/index.html",
+    "status": 200
+   },
+   {
+    "url": "https://www.kurosawagakki.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kurosawa_ekimae",
+    "evidence_url": "https://www.kurosawagakki.com/sh_ocha/index.html",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L329",
+  "pages_tried": [
+   {
+    "url": "https://burgerpolice.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "burgerpolice_himonya",
+    "evidence_url": "https://burgerpolice.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "burgerpolice_fckasukabe",
+    "evidence_url": "https://burgerpolice.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "burgerpolice_shibuya",
+    "evidence_url": "https://burgerpolice.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L333",
+  "pages_tried": [
+   {
+    "url": "https://www.ukai.co.jp/ginza/",
+    "status": 200
+   },
+   {
+    "url": "https://www.ukai.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "ginzaukaitei",
+    "evidence_url": "https://www.ukai.co.jp/ginza/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L335",
+  "pages_tried": [
+   {
+    "url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "status": 200
+   },
+   {
+    "url": "https://wolfgangssteakhouse.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "wolfgangssteakhousejapan",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_roppongi",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangssteakhouse_marunouchi",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_takanawa",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_aoyama",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_teppan",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_osaka",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_fukuoka",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangswaikiki",
+    "evidence_url": "https://wolfgangssteakhouse.jp/marunouchi/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangssteakhousejapan",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_roppongi",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangssteakhouse_marunouchi",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_takanawa",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_aoyama",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_teppan",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_osaka",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangs_steakhouse_fukuoka",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "wolfgangswaikiki",
+    "evidence_url": "https://wolfgangssteakhouse.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L336",
+  "pages_tried": [
+   {
+    "url": "https://www.bifteck.co.jp/restaurant/ginza/",
+    "status": 200
+   },
+   {
+    "url": "https://www.bifteck.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L337",
+  "pages_tried": [
+   {
+    "url": "https://benjaminsteakhouse.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L339",
+  "pages_tried": [
+   {
+    "url": "https://ruthschris.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L340",
+  "pages_tried": [
+   {
+    "url": "https://bltsteak.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "bltsteak_roppongi",
+    "evidence_url": "https://bltsteak.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "queens.steakburger",
+    "evidence_url": "https://bltsteak.co.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L355",
+  "pages_tried": [
+   {
+    "url": "https://ultrakitchen.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "ultrakitchen.ltd",
+    "evidence_url": "https://ultrakitchen.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L362",
+  "pages_tried": [
+   {
+    "url": "https://www.menya-itto.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "menyaitto",
+    "evidence_url": "https://www.menya-itto.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L381",
+  "pages_tried": [
+   {
+    "url": "https://www.shokoku-ji.jp/kinkakuji/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shokoku-ji.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shokoku-ji.jp/kinkakuji/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "rokuonji_kinkakuji.official",
+    "evidence_url": "https://www.shokoku-ji.jp/kinkakuji/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L382",
+  "pages_tried": [
+   {
+    "url": "https://www.shokoku-ji.jp/ginkakuji/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shokoku-ji.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shokoku-ji.jp/ginkakuji/guide/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L383",
+  "pages_tried": [
+   {
+    "url": "https://www.kiyomizudera.or.jp/en/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kiyomizudera.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kiyomizudera.or.jp/news/open-hour.php",
+    "status": 200
+   },
+   {
+    "url": "https://www.kiyomizudera.or.jp/en/visit/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kiyomizudera.or.jp/en/faq/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "feel_kiyomizudera",
+    "evidence_url": "https://www.kiyomizudera.or.jp/en/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "feel_kiyomizudera",
+    "evidence_url": "https://www.kiyomizudera.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "feel_kiyomizudera",
+    "evidence_url": "https://www.kiyomizudera.or.jp/news/open-hour.php",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "feel_kiyomizudera",
+    "evidence_url": "https://www.kiyomizudera.or.jp/en/visit/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "feel_kiyomizudera",
+    "evidence_url": "https://www.kiyomizudera.or.jp/en/faq/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L384",
+  "pages_tried": [
+   {
+    "url": "https://www.chion-in.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.chion-in.or.jp/guide/",
+    "status": 200
+   },
+   {
+    "url": "https://www.chion-in.or.jp/guide/access.php",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "chion_in",
+    "evidence_url": "https://www.chion-in.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "chion_in",
+    "evidence_url": "https://www.chion-in.or.jp/guide/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "chion_in",
+    "evidence_url": "https://www.chion-in.or.jp/guide/access.php",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L385",
+  "pages_tried": [
+   {
+    "url": "https://www.yasaka-jinja.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.yasaka-jinja.or.jp/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kyotogionyasaka",
+    "evidence_url": "https://www.yasaka-jinja.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kyotogionyasaka",
+    "evidence_url": "https://www.yasaka-jinja.or.jp/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L386",
+  "pages_tried": [
+   {
+    "url": "https://www.nanzenji.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.nanzenji.or.jp/about_rinzaishu/visit",
+    "status": 200
+   },
+   {
+    "url": "https://nanzenji.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "daihonzan_nanzenji",
+    "evidence_url": "https://www.nanzenji.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "daihonzan_nanzenji",
+    "evidence_url": "https://www.nanzenji.or.jp/about_rinzaishu/visit",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "daihonzan_nanzenji",
+    "evidence_url": "https://nanzenji.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L388",
+  "pages_tried": [
+   {
+    "url": "https://www.ryoanji.jp/",
+    "status": "ConnectError"
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L389",
+  "pages_tried": [
+   {
+    "url": "https://nijo-jocastle.city.kyoto.lg.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "nijojocastle",
+    "evidence_url": "https://nijo-jocastle.city.kyoto.lg.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L390",
+  "pages_tried": [
+   {
+    "url": "https://tofukuji.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://tofukuji.jp/guide/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tofukuji_zen_temple",
+    "evidence_url": "https://tofukuji.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tofukuji_zen_temple",
+    "evidence_url": "https://tofukuji.jp/guide/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L391",
+  "pages_tried": [
+   {
+    "url": "https://www.shokoku-ji.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L393",
+  "pages_tried": [
+   {
+    "url": "https://www.daikakuji.or.jp/",
+    "status": 503
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L394",
+  "pages_tried": [
+   {
+    "url": "https://kitanotenmangu.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://kitanotenmangu.or.jp/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kitano_tenmangu",
+    "evidence_url": "https://kitanotenmangu.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kitano_tenmangu",
+    "evidence_url": "https://kitanotenmangu.or.jp/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L395",
+  "pages_tried": [
+   {
+    "url": "https://www.sanjusangendo.jp/",
+    "status": "ConnectError"
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L396",
+  "pages_tried": [
+   {
+    "url": "https://www.hongwanji.kyoto/",
+    "status": 200
+   },
+   {
+    "url": "https://www.hongwanji.kyoto/visit/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "nishi.hongwanji",
+    "evidence_url": "https://www.hongwanji.kyoto/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "nishi_hongwanji",
+    "evidence_url": "https://www.hongwanji.kyoto/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "nishi_hongwanji",
+    "evidence_url": "https://www.hongwanji.kyoto/visit/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L397",
+  "pages_tried": [
+   {
+    "url": "https://www.shochiku.co.jp/play/theater/minamiza/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shochiku.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shochiku.co.jp/play/theater/minamiza/map/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shochiku.co.jp/play/accessibility/",
+    "status": 200
+   },
+   {
+    "url": "https://www.shochiku.co.jp/play/theater/minamiza/facility/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L403",
+  "pages_tried": [
+   {
+    "url": "https://www.honke-daiichiasahi.com/shop.html",
+    "status": 403
+   },
+   {
+    "url": "https://www.honke-daiichiasahi.com/",
+    "status": 403
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L406",
+  "pages_tried": [
+   {
+    "url": "https://ginzamusicbar.com/ginza-music-bar-kyoto",
+    "status": 200
+   },
+   {
+    "url": "https://ginzamusicbar.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "ginzamusicbar",
+    "evidence_url": "https://ginzamusicbar.com/ginza-music-bar-kyoto",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "ginzamusicbar",
+    "evidence_url": "https://ginzamusicbar.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L414",
+  "pages_tried": [
+   {
+    "url": "https://lepetitmec.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L415",
+  "pages_tried": [
+   {
+    "url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "status": 200
+   },
+   {
+    "url": "https://www.tsuruyayoshinobu.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tsuruya.yoshinobu_wagashi",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_tokyo",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruyayoshinobu.factory",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_honten",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tubaracafe",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_irodori_",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/shop/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_wagashi",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_tokyo",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruyayoshinobu.factory",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_honten",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tubaracafe",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsuruya.yoshinobu_irodori_",
+    "evidence_url": "https://www.tsuruyayoshinobu.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L417",
+  "pages_tried": [
+   {
+    "url": "https://sankan.kunaicho.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L418",
+  "pages_tried": [
+   {
+    "url": "https://sankan.kunaicho.go.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L419",
+  "pages_tried": [
+   {
+    "url": "https://tofukuji.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://tofukuji.jp/guide/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tofukuji_zen_temple",
+    "evidence_url": "https://tofukuji.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tofukuji_zen_temple",
+    "evidence_url": "https://tofukuji.jp/guide/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L421",
+  "pages_tried": [
+   {
+    "url": "https://lepetitmec.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L427",
+  "pages_tried": [
+   {
+    "url": "https://www.kyoto-u.ac.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.kyoto-u.ac.jp/sites/default/files/inline-files/KU2026_page_90_94-036c0c25556bb346146c2d57a2f037c0.pdf",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kyotouniversity.jp",
+    "evidence_url": "https://www.kyoto-u.ac.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L430",
+  "pages_tried": [
+   {
+    "url": "https://menya-takei.com/shop/",
+    "status": 200
+   },
+   {
+    "url": "https://menya-takei.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "menya_takei",
+    "evidence_url": "https://menya-takei.com/shop/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "menya_takei",
+    "evidence_url": "https://menya-takei.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L431",
+  "pages_tried": [
+   {
+    "url": "https://www.tsutenkaku.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tsutenkaku.co.jp/annai/",
+    "status": 200
+   },
+   {
+    "url": "https://www.tsutenkaku.co.jp/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "tsutenkaku_official",
+    "evidence_url": "https://www.tsutenkaku.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsutenkakutower_official",
+    "evidence_url": "https://www.tsutenkaku.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsutenkaku_official",
+    "evidence_url": "https://www.tsutenkaku.co.jp/annai/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsutenkakutower_official",
+    "evidence_url": "https://www.tsutenkaku.co.jp/annai/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsutenkaku_official",
+    "evidence_url": "https://www.tsutenkaku.co.jp/access/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tsutenkakutower_official",
+    "evidence_url": "https://www.tsutenkaku.co.jp/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L432",
+  "pages_tried": [
+   {
+    "url": "https://www.osakacastle.net/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L433",
+  "pages_tried": [
+   {
+    "url": "https://osaka-info.jp/experience/ja/osaka/spot/551",
+    "status": 200
+   },
+   {
+    "url": "https://osaka-info.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "discover_osaka",
+    "evidence_url": "https://osaka-info.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L434",
+  "pages_tried": [
+   {
+    "url": "https://www.glico.com/",
+    "status": 403
+   },
+   {
+    "url": "https://www.glico.com/assets/files/20141023+NR%E3%82%B0%E3%83%AA%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E7%82%B9%E7%81%AF%E5%BC%8F__1.pdf",
+    "status": 403
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L435",
+  "pages_tried": [
+   {
+    "url": "https://www.tenjin123.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L436",
+  "pages_tried": [
+   {
+    "url": "https://osakatemmangu.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "osakatemmangu.official",
+    "evidence_url": "https://osakatemmangu.or.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L438",
+  "pages_tried": [
+   {
+    "url": "https://www.jiyuken.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.jiyuken.co.jp/international/english.html",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L441",
+  "pages_tried": [
+   {
+    "url": "http://masamuneya.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L454",
+  "pages_tried": [
+   {
+    "url": "https://futamiokitamajinja.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://futamiokitamajinja.or.jp/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L455",
+  "pages_tried": [
+   {
+    "url": "https://www.isejingu.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.isejingu.or.jp/visit/",
+    "status": 200
+   },
+   {
+    "url": "https://www.isejingu.or.jp/access/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/visit/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/access/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L456",
+  "pages_tried": [
+   {
+    "url": "https://www.isejingu.or.jp/about/outerbetsugu/",
+    "status": 200
+   },
+   {
+    "url": "https://www.isejingu.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.isejingu.or.jp/visit/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/about/outerbetsugu/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/visit/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L457",
+  "pages_tried": [
+   {
+    "url": "https://www.isejingu.or.jp/about/outerbetsugu/",
+    "status": 200
+   },
+   {
+    "url": "https://www.isejingu.or.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.isejingu.or.jp/visit/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/about/outerbetsugu/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "isejingu.official",
+    "evidence_url": "https://www.isejingu.or.jp/visit/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L462",
+  "pages_tried": [
+   {
+    "url": "https://brisk-stand.com/shoplist",
+    "status": 200
+   },
+   {
+    "url": "https://brisk-stand.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L463",
+  "pages_tried": [
+   {
+    "url": "https://www.mouriya.co.jp/head",
+    "status": 200
+   },
+   {
+    "url": "https://www.mouriya.co.jp/",
+    "status": 200
+   },
+   {
+    "url": "https://www.mouriya.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "kobebeef_mouriya",
+    "evidence_url": "https://www.mouriya.co.jp/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kobebeef_mouriya_honten",
+    "evidence_url": "https://www.mouriya.co.jp/head",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kobebeef_mouriya",
+    "evidence_url": "https://www.mouriya.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kobebeef_mouriya_honten",
+    "evidence_url": "https://www.mouriya.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kobebeef_mouriya",
+    "evidence_url": "https://www.mouriya.co.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "kobebeef_mouriya_honten",
+    "evidence_url": "https://www.mouriya.co.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L464",
+  "pages_tried": [
+   {
+    "url": "https://misono.org/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L473",
+  "pages_tried": [
+   {
+    "url": "https://www.masazushi.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L475",
+  "pages_tried": [
+   {
+    "url": "https://www.isezushi.com/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "isezushi_ekinakaten",
+    "evidence_url": "https://www.isezushi.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "edakan1005",
+    "evidence_url": "https://www.isezushi.com/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "tachigui_sushi_koise_shoten",
+    "evidence_url": "https://www.isezushi.com/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L490",
+  "pages_tried": [
+   {
+    "url": "https://daikoku-jgs.com/",
+    "status": 200
+   },
+   {
+    "url": "https://daikoku-jgs.com/free/asahikawa",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "daikokuya_asahikawa",
+    "evidence_url": "https://daikoku-jgs.com/free/asahikawa",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L496",
+  "pages_tried": [
+   {
+    "url": "https://www.santouka.co.jp/shop-jp/hokkaido/area01-001/",
+    "status": 200
+   },
+   {
+    "url": "https://www.santouka.co.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L500",
+  "pages_tried": [
+   {
+    "url": "https://www.hokudai.ac.jp/fsc/bg/",
+    "status": 200
+   },
+   {
+    "url": "https://www.hokudai.ac.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "hokudai_bg",
+    "evidence_url": "https://www.hokudai.ac.jp/fsc/bg/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hokkaidounivpr",
+    "evidence_url": "https://www.hokudai.ac.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L501",
+  "pages_tried": [
+   {
+    "url": "https://www.hokkaido-redbrick.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "shiroikoibito_akarenga_",
+    "evidence_url": "https://www.hokkaido-redbrick.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "house.h__",
+    "evidence_url": "https://www.hokkaido-redbrick.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "akarenga_chousha_1888",
+    "evidence_url": "https://www.hokkaido-redbrick.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L502",
+  "pages_tried": [
+   {
+    "url": "https://www.tanukikoji.or.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [],
+  "seed_instagram": []
+ },
+ {
+  "id": "L518",
+  "pages_tried": [
+   {
+    "url": "https://hakuba-happo-onsen.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "happy.happoone",
+    "evidence_url": "https://hakuba-happo-onsen.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hakubahappoone",
+    "evidence_url": "https://hakuba-happo-onsen.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ },
+ {
+  "id": "L519",
+  "pages_tried": [
+   {
+    "url": "https://hakuba-happo-onsen.jp/",
+    "status": 200
+   }
+  ],
+  "candidates": [
+   {
+    "handle": "happy.happoone",
+    "evidence_url": "https://hakuba-happo-onsen.jp/",
+    "method": "linked-from-own-site"
+   },
+   {
+    "handle": "hakubahappoone",
+    "evidence_url": "https://hakuba-happo-onsen.jp/",
+    "method": "linked-from-own-site"
+   }
+  ],
+  "seed_instagram": []
+ }
+]

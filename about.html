@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Shakedown Street</title>
+  <meta name="description" content="Why Shakedown Street exists: an independent culture and discovery platform exploring Japan through people, places, stories and maps.">
+  <link rel="canonical" href="https://hashiramotobunko.github.io/tokyo-guide/about.html">
+  <meta property="og:site_name" content="Shakedown Street">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hashiramotobunko.github.io/tokyo-guide/about.html">
+  <meta property="og:title" content="About — Shakedown Street">
+  <meta property="og:description" content="The same city. Another world. Read the thinking behind Shakedown Street.">
+  <style>
+    *{box-sizing:border-box}
+    :root{--paper:#faf9f5;--ink:#151513;--acid:#ff5000;--muted:#68675f;--line:#d8d6ce;--sand:#e7e3d9;--w:min(1510px,calc(100% - 104px))}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .cond{font-family:Impact,"Arial Black","Helvetica Neue",sans-serif;font-weight:900;letter-spacing:-.065em}
+    .eyebrow{font-size:10px;line-height:1.5;font-weight:900;letter-spacing:.17em;text-transform:uppercase}
+    .acid{color:var(--acid)}
+    .wrap{width:var(--w);margin-inline:auto}
+    .nav{height:88px;width:var(--w);margin:auto;display:flex;align-items:center;gap:30px;border-bottom:1px solid var(--line)}
+    .wordmark{font-size:32px;font-weight:900;letter-spacing:-.075em;text-decoration:none;white-space:nowrap}
+    .wordmark span{color:var(--acid)}
+    .wordmark small{font-size:9px;letter-spacing:.18em;margin-left:6px}
+    .nav-note{margin-left:auto;text-align:right;color:var(--muted)}
+    .nav-links{display:flex;gap:25px;align-items:center}
+    .nav-links a{font-size:12px;font-weight:900;text-decoration:none}
+    .nav-links a[aria-current="page"]{border-bottom:3px solid var(--acid);padding-bottom:5px}
+    .nav-cta{background:var(--ink);color:#fff;border-radius:30px;padding:13px 18px!important}
+    .hero{min-height:830px;position:relative;overflow:hidden;padding:76px 0 90px}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(450px,1.18fr);gap:6vw;align-items:start}
+    .hero-copy{position:relative;z-index:3;padding-top:22px}
+    .hero h1{font-size:clamp(92px,11vw,176px);line-height:.72;text-transform:uppercase;margin:28px 0 36px;transform:translateX(-.035em)}
+    .hero h1 span{display:block;color:var(--acid);padding-left:12%}
+    .hero h1 em{display:block;color:var(--paper);-webkit-text-stroke:2px var(--ink);font-style:normal;white-space:nowrap}
+    .hero-lead{font-size:clamp(21px,2.1vw,31px);line-height:1.25;letter-spacing:-.035em;max-width:570px;margin:0}
+    .hero-media{position:relative;height:660px}
+    .hero-photo{position:absolute;inset:0 0 9% 5%;overflow:hidden;background:#111}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(1.08)}
+    .hero-photo:after{content:"NEIGHBOURHOOD PHOTOGRAPH / SHIBUYA, 2017";position:absolute;right:0;bottom:0;background:var(--acid);color:#fff;padding:13px 16px;font-size:9px;font-weight:900;letter-spacing:.12em}
+    .hero-art{position:absolute;width:38%;right:-2%;bottom:0;transform:rotate(3deg);box-shadow:-11px 11px 0 var(--paper)}
+    .hero-art:before{content:"DRAWN / NOT SHOT";position:absolute;left:-12px;top:-12px;z-index:2;background:var(--ink);color:#fff;padding:8px 10px;font-size:9px;font-weight:900;letter-spacing:.1em}
+    .hero-side{position:absolute;left:16px;top:48%;writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;font-weight:900;letter-spacing:.16em}
+    .statement{background:var(--acid);color:#fff;padding:92px 0}
+    .statement-grid{display:grid;grid-template-columns:.68fr 1.32fr;gap:8vw;align-items:start}
+    .statement h2{font-size:clamp(72px,9vw,144px);line-height:.78;text-transform:uppercase;margin:0}
+    .statement-copy{font-size:clamp(21px,2.5vw,37px);line-height:1.26;letter-spacing:-.035em;max-width:860px}
+    .statement-copy p{margin:0 0 28px}
+    .manifesto{padding:145px 0 120px}
+    .manifesto-top{display:grid;grid-template-columns:.34fr .66fr;gap:8vw;border-top:4px solid var(--ink);padding-top:34px}
+    .manifesto h2{font-size:clamp(58px,8vw,128px);line-height:.78;text-transform:uppercase;margin:0}
+    .manifesto-copy{font-size:20px;line-height:1.62;max-width:780px}
+    .manifesto-copy p{margin:0 0 30px}
+    .manifesto-copy p:first-child{font-size:28px;line-height:1.35;letter-spacing:-.03em}
+    .shakedown{background:var(--ink);color:var(--paper);padding:120px 0 130px;overflow:hidden}
+    .shake-head{display:grid;grid-template-columns:1.35fr .65fr;gap:5vw;align-items:end;border-bottom:1px solid #5a5954;padding-bottom:42px}
+    .shake-head h2{font-size:clamp(86px,13.3vw,214px);line-height:.68;text-transform:uppercase;margin:0;transform:translateX(-.04em)}
+    .shake-head h2 span{display:block;color:var(--acid);padding-left:15%}
+    .shake-head p{font-size:19px;line-height:1.48;color:#d0cfc9;margin:0 0 4px;max-width:430px}
+    .shake-body{display:grid;grid-template-columns:.72fr 1.28fr;gap:7vw;padding-top:70px}
+    .shake-body blockquote{font-size:clamp(32px,4.2vw,67px);line-height:1.02;letter-spacing:-.045em;margin:0;color:var(--acid)}
+    .shake-copy{font-size:18px;line-height:1.65;max-width:700px}
+    .shake-copy p{margin:0 0 28px}
+    .elements{padding:140px 0 150px;overflow:hidden}
+    .elements-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;border-bottom:3px solid var(--ink);padding-bottom:25px}
+    .elements-head h2{font-size:clamp(68px,9vw,142px);line-height:.78;text-transform:uppercase;margin:0}
+    .elements-head p{max-width:330px;font-size:16px;line-height:1.5;margin:0}
+    .elements-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:0 7vw;padding-top:72px}
+    .element{border-top:1px solid var(--ink);padding:22px 0 58px;position:relative}
+    .element:nth-child(2){margin-top:120px}.element:nth-child(3){grid-column:1/3;width:70%;margin-left:auto}.element:nth-child(4){grid-column:1;width:55%}
+    .element-no{font-size:11px;color:var(--acid);font-weight:900;letter-spacing:.12em}
+    .element h3{font-size:clamp(54px,7vw,112px);line-height:.8;text-transform:uppercase;margin:18px 0 24px}
+    .element p{font-size:18px;line-height:1.55;max-width:560px;margin:0}
+    .promise{background:var(--sand);padding:120px 0}
+    .promise-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:8vw}
+    .promise h2{font-size:clamp(64px,8.5vw,135px);line-height:.77;text-transform:uppercase;margin:0}
+    .promise-copy{font-size:20px;line-height:1.6;max-width:760px}
+    .promise-copy p{margin:0 0 28px}
+    .close{background:var(--acid);color:#fff;padding:105px 0 95px}
+    .close h2{font-size:clamp(84px,14.6vw,232px);line-height:.74;text-transform:uppercase;margin:0;letter-spacing:-.085em}
+    .close h2 span{display:block;color:var(--ink);padding-left:12%}
+    .close-row{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:55px}
+    .close-row p{font-size:20px;line-height:1.35;max-width:560px;margin:0}
+    .close-row a{border:2px solid #fff;padding:15px 20px;text-decoration:none;font-size:12px;font-weight:900}
+    footer{padding:62px 0 48px}
+    .foot{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+    .foot strong{font-size:28px;letter-spacing:-.07em}
+    .foot p{font-size:12px;line-height:1.6;color:var(--muted);margin:16px 0 0;max-width:580px}
+    .foot nav{display:flex;justify-content:flex-end;gap:22px;flex-wrap:wrap}
+    .foot nav a{font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+    @media(max-width:950px){
+      :root{--w:min(100% - 64px,1250px)}.nav-note{display:none}.hero-grid{grid-template-columns:.78fr 1.22fr;gap:2vw}.hero h1{font-size:10.8vw}.hero-media{height:580px}
+      .statement-grid,.manifesto-top,.shake-body,.promise-grid{grid-template-columns:1fr;gap:50px}.shake-head{grid-template-columns:1fr}.shake-head p{margin-left:auto}.elements-grid{gap:0 4vw}
+    }
+    @media(max-width:700px){
+      :root{--w:calc(100% - 36px)}.nav{height:70px;gap:12px}.wordmark{font-size:25px}.nav-links a:not(.nav-cta){display:none}.nav-cta{font-size:10px;margin-left:auto}.nav-links{margin-left:auto}.hero{padding:38px 0 70px;min-height:0}.hero-grid{display:flex;flex-direction:column}.hero-copy{order:2;padding-top:45px;min-width:0;width:100%}.hero h1{font-size:clamp(54px,17.5vw,72px);margin-top:16px}.hero h1 em{white-space:normal;-webkit-text-stroke:1.3px var(--ink)}.hero-lead{font-size:20px}.hero-media{height:520px;width:100%}.hero-photo{inset:0 0 5% 0}.hero-art{width:47%;right:-3%}.hero-side{display:none}
+      .statement,.shakedown,.elements,.promise{padding:76px 0}.statement-grid,.manifesto-top,.promise-grid{grid-template-columns:minmax(0,1fr)}.statement-grid{gap:35px}.statement h2{font-size:20vw}.manifesto{padding:85px 0}.manifesto-copy{font-size:17px}.manifesto-copy p:first-child{font-size:23px}.shake-head h2{font-size:22vw}.shake-head p{font-size:16px}.shake-body blockquote{font-size:10vw}.shake-copy{font-size:17px}.elements-head{display:block}.elements-head p{margin-top:25px}.elements-grid{display:block;padding-top:45px}.element:nth-child(n){width:auto;margin:0}.element h3{font-size:18vw}.element p{font-size:17px}.promise h2{font-size:16.5vw}.promise-copy{font-size:17px}.close{padding:75px 0}.close h2{font-size:21vw}.close-row{display:block}.close-row a{display:inline-block;margin-top:30px}.foot{display:block}.foot nav{justify-content:flex-start;margin-top:30px}
+    }
+    @media(max-width:360px){
+      .wordmark small{display:none}.nav-cta{padding:11px 14px!important}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="wordmark" href="tokyo-guide_2.html">shakedown<span>.</span><small>STREET</small></a>
+    <span class="nav-note eyebrow">AN INDEPENDENT CULTURE &amp; DISCOVERY GUIDE<br>ABOUT / 001</span>
+    <div class="nav-links"><a href="tokyo-guide_2.html#stories">Stories</a><a href="tokyo-guide_2.html#fieldnotes">Walks</a><a href="about.html" aria-current="page">About</a><a class="nav-cta" href="tokyo-guide_2.html#browse">Find a detour ↗</a></div>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="about-title">
+      <span class="hero-side">SHAKEDOWN STREET / ABOUT THE IDEA / 2026</span>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow acid">ABOUT SHAKEDOWN STREET / BEYOND THE OBVIOUS</p>
+          <h1 id="about-title" class="cond">THE SAME<span>CITY.</span><em>ANOTHER WORLD.</em></h1>
+          <p class="hero-lead">A city is never just one story. Change the person looking at it, and a familiar street becomes something new.</p>
+        </div>
+        <div class="hero-media">
+          <div class="hero-photo"><img src="assets/photos/shibuya-1800.jpg" srcset="assets/photos/shibuya-900.jpg 900w, assets/photos/shibuya-1800.jpg 1800w" sizes="(max-width:700px) 100vw, 58vw" width="1800" height="766" alt="A Shibuya backstreet in Tokyo at night, photographed in December 2017"></div>
+          <figure class="hero-art"><img src="assets/editorial/bookshop-day.webp" width="960" height="1200" alt="Original Shakedown Street illustration of an imagined Tokyo book-and-coffee street; not a photograph of a real shop"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-labelledby="statement-title">
+      <div class="wrap statement-grid">
+        <h2 id="statement-title" class="cond">BEYOND<br>THE<br>OBVIOUS.</h2>
+        <div class="statement-copy"><p>Walk through the same neighbourhood with a photographer, a musician, an architect, or someone who has lived there for decades, and you will discover entirely different worlds.</p><p>A familiar street becomes something new when seen through someone else's eyes.</p></div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="wrap manifesto-top">
+        <div><p class="eyebrow acid">WHAT THIS IS / AND ISN'T</p><h2 class="cond">A GUIDE<br>IS ONLY<br>THE START.</h2></div>
+        <div class="manifesto-copy">
+          <p>Shakedown Street is an independent culture and discovery platform exploring Japan through the people, places, and stories that give its cities character.</p>
+          <p>We are interested in more than famous landmarks and popular restaurants. We are curious about the little bookshop down a side street, the café someone has visited for thirty years, the music that fills a neighbourhood at night, and the new generation of people reshaping the places they call home.</p>
+          <p>We believe that the old and the new are equally worth discovering. A city does not lose its character simply because it changes. Its stories continue to grow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="shakedown" aria-labelledby="shakedown-title">
+      <div class="wrap">
+        <div class="shake-head"><h2 id="shakedown-title" class="cond">SHAKEDOWN<span>STREET.</span></h2><p>This is our name and our editorial attitude: look again, turn the corner, follow what catches your attention.</p></div>
+        <div class="shake-body"><blockquote class="cond">THE CITY DOESN'T NEED TO BE NEW. YOUR WAY OF SEEING IT DOES.</blockquote><div class="shake-copy"><p>“Shakedown Street” means the good street is not always the one already framed for you. It is found through movement, curiosity, and another person's way of looking.</p><p>That idea shapes what we publish: not a ranking of the most famous places, but a collection of personal perspectives, cultural stories, and maps that make discovery tangible.</p><p>Read about someone's favourite neighbourhood. Follow a route through the places they love. Find a corner of Japan you never knew existed.</p></div></div>
+      </div>
+    </section>
+
+    <section class="elements" aria-labelledby="elements-title">
+      <div class="wrap">
+        <div class="elements-head"><h2 id="elements-title" class="cond">FOUR<br>WAYS IN.</h2><p>The platform joins the pleasure of reading with the usefulness of a map. Neither side is complete on its own.</p></div>
+        <div class="elements-grid">
+          <article class="element"><span class="element-no">01 / PEOPLE</span><h3 class="cond">A POINT<br>OF VIEW.</h3><p>A city changes depending on who is looking. The person, their memory, their taste, and their reasons for returning are part of the story.</p></article>
+          <article class="element"><span class="element-no">02 / PLACES</span><h3 class="cond acid">REAL<br>ADDRESSES.</h3><p>Bookshops, bars, baths, temples, cafés, streets, and the ordinary corners between them. Places are the beginning, not the whole story.</p></article>
+          <article class="element"><span class="element-no">03 / CULTURE</span><h3 class="cond">WHAT<br>CONNECTS THEM.</h3><p>Music, architecture, food, fashion, craft, literature, history, and daily life are not separate categories. A neighbourhood is where they meet.</p></article>
+          <article class="element"><span class="element-no">04 / MAPS</span><h3 class="cond">MAKE IT<br>TANGIBLE.</h3><p>Every listed place keeps its Google Maps link. Routes turn a story into a possible day out, while sources make clear what has — and has not — been checked.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise" aria-labelledby="promise-title">
+      <div class="wrap promise-grid">
+        <div><p class="eyebrow acid">WHERE THIS CAN GO</p><h2 id="promise-title" class="cond">A LIVING<br>ARCHIVE<br>OF CURIOSITY.</h2></div>
+        <div class="promise-copy"><p>As this platform grows, we want it to become a place where people who live in Japan and people who visit can share their own ways of seeing it.</p><p>That is a direction, not a feature we pretend already exists. For now, the work begins with edited stories, ten map-checked draft routes, and 526 places whose practical information is shown with its source and status.</p><p>You do not have to be planning a trip to enjoy the journey. Sometimes, discovering how someone else sees a place is an adventure in itself.</p></div>
+      </div>
+    </section>
+
+    <section class="close" aria-labelledby="close-title">
+      <div class="wrap"><p class="eyebrow">THERE IS ALWAYS MORE TO DISCOVER</p><h2 id="close-title" class="cond">STAY CURIOUS.<span>STAY HUNGRY.</span></h2><div class="close-row"><p>Take the long way. Read the small sign. Walk one street farther than you planned.</p><a href="tokyo-guide_2.html">Open Shakedown Street ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot"><div><strong>shakedown<span class="acid">.</span> STREET</strong><p>The Shibuya photograph is by Giuseppe Milo, 2017, CC BY 3.0, cropped and resized. The illustrated scene is an original interpretive artwork and does not depict a listed venue.</p></div><nav aria-label="Footer navigation"><a href="tokyo-guide_2.html#stories">Stories</a><a href="tokyo-guide_2.html#fieldnotes">Walks</a><a href="tokyo-guide_2.html#browse">Discover</a><a href="about.html">About</a></nav></div>
+  </footer>
+</body>
+</html>

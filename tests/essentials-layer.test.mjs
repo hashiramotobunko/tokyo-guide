@@ -151,11 +151,11 @@ test('route legs: one leg per consecutive stop pair, every leg read on the Googl
  assert.ok(html.includes('Legs with a rough distance figure'));
 });
 
-test('brand and traveller-first presentation: Encounter Japan title, verification collapsed, conflicts worded plainly',()=>{
+test('brand and traveller-first presentation: Shakedown Street title, verification collapsed, conflicts worded plainly',()=>{
  const title=html.match(/<title>([^<]*)<\/title>/)[1];
- assert.ok(title.includes('Encounter Japan'),'title must carry the brand: '+title);
+ assert.ok(title.includes('Shakedown Street'),'title must carry the brand: '+title);
  assert.ok(!/Tetsuya's Picks|Tokyo Guide —/.test(title));
- assert.ok(html.includes('property="og:title" content="Encounter Japan'));
+ assert.ok(html.includes('property="og:title" content="Shakedown Street'));
  assert.ok(!html.includes('rel="canonical"')||true,'canonical is left untouched');
  assert.ok(html.includes('class="ej-route-verification"')&&html.includes('Route verification details'));
  assert.ok(html.includes("vary by source — please confirm before visiting"));

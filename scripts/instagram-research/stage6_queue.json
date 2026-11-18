@@ -1,0 +1,337 @@
+[
+ {
+  "id": "L027",
+  "name": "麻布苑",
+  "sources": [
+   "https://www.makuake.com/project/azabu-en/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L025）"
+ },
+ {
+  "id": "L066",
+  "name": "千里眼",
+  "sources": [
+   "https://tabelog.com/tokyo/A1318/A131811/13099150/"
+  ],
+  "addr": "渋谷区駒場（正しいラーメン店のID未照合）",
+  "join": "ledger: Google Maps place id（L064）"
+ },
+ {
+  "id": "L075",
+  "name": "PATH",
+  "sources": [
+   "https://tabelog.com/tokyo/A1318/A131810/13190786/"
+  ],
+  "addr": "渋谷区富ヶ谷1-44-2",
+  "join": "今回の新規個別調査"
+ },
+ {
+  "id": "L081",
+  "name": "ステーキハウス鉄板焼 不二",
+  "sources": [
+   "https://map.yahoo.co.jp/v3/place/Mu-gOcG3d52",
+   "https://yomuno.jp/posts/140259"
+  ],
+  "addr": "目黒区東山3-13-17",
+  "join": "ledger: Google Maps place id（L078）"
+ },
+ {
+  "id": "L085",
+  "name": "群林堂",
+  "sources": [
+   "https://kinarino.jp/cat8/28987"
+  ],
+  "addr": "文京区音羽2-1-2",
+  "join": "ledger: Google Maps place id（L082）"
+ },
+ {
+  "id": "L111",
+  "name": "手打ちそば 山商",
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131901/13302780/"
+  ],
+  "addr": "東京都中野区東中野4-27-31",
+  "join": "ledger: Google Maps place id（L108）"
+ },
+ {
+  "id": "L120",
+  "name": "大村益次郎像",
+  "sources": [
+   "https://www.yasukuni.or.jp/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L117）"
+ },
+ {
+  "id": "L136",
+  "name": "明治神宮",
+  "sources": [
+   "https://www.meijikinenkan.gr.jp/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L133）"
+ },
+ {
+  "id": "L139",
+  "name": "遊就館",
+  "sources": [
+   "https://www.yasukuni.or.jp/yusyukan/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L136）"
+ },
+ {
+  "id": "L142",
+  "name": "かっぱ橋道具街",
+  "sources": [
+   "https://www.kanaya-brush.com/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L139）"
+ },
+ {
+  "id": "L144",
+  "name": "タイごはん 泉州屋台",
+  "sources": [
+   "https://retty.me/restaurant/100001538557/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L141）"
+ },
+ {
+  "id": "L150",
+  "name": "The Top.",
+  "sources": [
+   "https://aoyamagrand.com/"
+  ],
+  "addr": "",
+  "join": "ledger: Google Maps place id（L147）"
+ },
+ {
+  "id": "L156",
+  "name": "酒坐愛次郎",
+  "sources": [
+   "https://savorjapan.com/0020008536"
+  ],
+  "addr": "東京都杉並区高円寺南4-28-7 Jビル 2F",
+  "join": "ledger: Google Maps place id（L153）"
+ },
+ {
+  "id": "L170",
+  "name": "JazzHaus POSY",
+  "sources": [
+   "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/jazz-house-posy-shimokitazawa-listening-bar/"
+  ],
+  "addr": "東京都世田谷区代沢5-6-14",
+  "join": "ledger: Google Maps place id（L167）"
+ },
+ {
+  "id": "L201",
+  "name": "水道橋 スタンドヒーロー",
+  "sources": [
+   "https://www.inshokuten.com/foodist/article/7089/lead/"
+  ],
+  "addr": "東京都千代田区神田三崎町2-21-9",
+  "join": "ledger: Google Maps place id（L194）"
+ },
+ {
+  "id": "L209",
+  "name": "そば処かめや 神田東口店",
+  "sources": [
+   "https://retty.me/restaurant/100000053622/"
+  ],
+  "addr": "東京都千代田区鍛冶町2-7-3",
+  "join": "ledger: Google Maps place id（L202）"
+ },
+ {
+  "id": "L274",
+  "name": "THE BELCOMO",
+  "sources": [
+   "https://aoyamagrand.com/"
+  ],
+  "addr": "東京都港区北青山2-14-4 THE AOYAMA GRAND HOTEL 4F",
+  "join": "ledger: Google Maps place id（L265）"
+ },
+ {
+  "id": "L298",
+  "name": "ミレチンクエチェント(1500)",
+  "sources": [
+   "https://tabelog.com/tokyo/A1318/A131810/13269639/",
+   "https://www.tablecheck.com/en/1500-millecinquecento"
+  ],
+  "addr": "東京都渋谷区元代々木町4-2",
+  "join": "ledger: Google Maps place id（L286）"
+ },
+ {
+  "id": "L302",
+  "name": "一天張",
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130204/13283307/"
+  ],
+  "addr": "東京都中央区日本橋人形町2-2-8",
+  "join": "ledger: Google Maps place id（L290）"
+ },
+ {
+  "id": "L313",
+  "name": "i2 cafe",
+  "sources": [
+   "https://tabelog.com/tokyo/A1306/A130602/13282796/"
+  ],
+  "addr": "東京都港区南青山3-9-1",
+  "join": "ledger: Google Maps place id（L300）"
+ },
+ {
+  "id": "L347",
+  "name": "かわむら",
+  "sources": [
+   "https://tabelog.com/tokyo/A1301/A130101/13016506/"
+  ],
+  "addr": "東京都中央区銀座7-3-16",
+  "join": "今回の新規個別調査"
+ },
+ {
+  "id": "L357",
+  "name": "ステーキハウス ハマ",
+  "sources": [
+   "https://www.steakhousehama.co.jp/shop/"
+  ],
+  "addr": "東京都港区六本木7-2-10",
+  "join": "今回の新規個別調査"
+ },
+ {
+  "id": "L364",
+  "name": "ラトリエ ドゥ プレジール",
+  "sources": [
+   "https://hamoni.jp/area/tokyo/setagaya/soshigayaokura/list/bread-snacks"
+  ],
+  "addr": "東京都世田谷区砧8-13-8 ジベ成城1F",
+  "join": "ledger: Google Maps place id（L345）"
+ },
+ {
+  "id": "L382",
+  "name": "バンタイ",
+  "sources": [
+   "https://retty.me/restaurant/100000001521/"
+  ],
+  "addr": "東京都新宿区歌舞伎町1-23-14 第1メトロビル3F",
+  "join": "ledger: Google Maps place id（L360）"
+ },
+ {
+  "id": "L396",
+  "name": "麺 ふじさき",
+  "sources": [
+   "https://tabelog.com/tokyo/A1312/A131202/13276443/"
+  ],
+  "addr": "東京都江東区亀戸2-8-11 アドリーム亀戸1F",
+  "join": "ledger: Google Maps place id（L374）"
+ },
+ {
+  "id": "L400",
+  "name": "コディーズ",
+  "sources": [
+   "https://hamoni.jp/shop/awcH71yjDLr8uLhA4bci"
+  ],
+  "addr": "神奈川県横浜市中区新山下1-5-7",
+  "join": "ledger: Google Maps place id（L378）"
+ },
+ {
+  "id": "L425",
+  "name": "そば 酒 まつもと",
+  "sources": [
+   "https://intojapanwaraku.com/travel/254203/"
+  ],
+  "addr": "京都府京都市中京区中之町577 柳小路はちべー長屋",
+  "join": "ledger: Google Maps place id（L402）"
+ },
+ {
+  "id": "L436",
+  "name": "甘味どころ ぎをん 小森",
+  "sources": [
+   "https://hamoni.jp/area/kyoto/list/cafe-kissaten"
+  ],
+  "addr": "京都府京都市東山区元吉町61",
+  "join": "ledger: Google Maps place id（L413）"
+ },
+ {
+  "id": "L443",
+  "name": "やまもと喫茶",
+  "sources": [
+   "https://hamoni.jp/shop/0M8ZOjJZxJfxlLCdqUCn"
+  ],
+  "addr": "京都府京都市東山区石橋町307-2",
+  "join": "ledger: Google Maps place id（L420）"
+ },
+ {
+  "id": "L457",
+  "name": "グリコサイン",
+  "sources": [
+   "https://www.timeout.jp/osaka/ja/news/osakas-iconic-glico-sign-is-being-removed-for-renovations-102126"
+  ],
+  "addr": "大阪市中央区道頓堀1-10-4（メーカー公式表記）",
+  "join": "ledger: Google Maps place id（L434）"
+ },
+ {
+  "id": "L458",
+  "name": "天神橋筋商店街",
+  "sources": [
+   "https://tenjin3.com/"
+  ],
+  "addr": "大阪市北区天神橋1丁目〜7丁目",
+  "join": "ledger: Google Maps place id（L435）"
+ },
+ {
+  "id": "L486",
+  "name": "BRISK STAND 神戸本店",
+  "sources": [
+   "https://brisk-stand.com/shoplist"
+  ],
+  "addr": "兵庫県神戸市中央区元町通5-4-8 三木ビル1F",
+  "join": "ledger: Google Maps place id（L462）"
+ },
+ {
+  "id": "L505",
+  "name": "がつや しまざき",
+  "sources": [
+   "https://www.cotaru.co/post/otaru-izakaya-guide"
+  ],
+  "addr": "北海道小樽市稲穂2-14-2",
+  "join": "ledger: Google Maps place id（L481）"
+ },
+ {
+  "id": "L507",
+  "name": "-Freehouse-THE YEAST",
+  "sources": [
+   "https://voyapon.com/spot-details/ChIJ9fJvfvbnDF8RVgzeZ4mY7AE/"
+  ],
+  "addr": "北海道旭川市6条通8-37-5",
+  "join": "ledger: Google Maps place id（L483）"
+ },
+ {
+  "id": "L546",
+  "name": "白馬姫川温泉 竜神の湯",
+  "sources": [
+   "https://www.hakubaescal.com/shokubutsuen/spa/"
+  ],
+  "addr": "長野県北安曇郡白馬村神城22184-10",
+  "join": "今回の新規個別調査"
+ },
+ {
+  "id": "L553",
+  "name": "炭火焼肉 深山",
+  "sources": [
+   "https://www.full-marks.com/"
+  ],
+  "addr": "長野県北安曇郡白馬村北城5612-3",
+  "join": "ledger: Google Maps place id（L522）"
+ },
+ {
+  "id": "L558",
+  "name": "中華蕎麦うえず",
+  "sources": [
+   "https://retty.me/restaurant/100001210103/"
+  ],
+  "addr": "山梨県中巨摩郡昭和町清水新居59-1（サンシャイン平岩103）",
+  "join": "ledger: Google Maps place id（L526）"
+ }
+]

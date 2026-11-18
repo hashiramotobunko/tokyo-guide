@@ -1,0 +1,122 @@
+{
+ "320": {
+  "art": [
+   {
+    "f": "bookshop-day.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "280x350"
+   },
+   {
+    "f": "tokyo-night.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "280x350"
+   },
+   {
+    "f": "rooftop-lounge.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "280x350"
+   }
+  ],
+  "photos": 4,
+  "overlap": 0,
+  "overflow": false,
+  "ig": 254,
+  "maps": 1122,
+  "regions": 21,
+  "routes": 8,
+  "errors": []
+ },
+ "390": {
+  "art": [
+   {
+    "f": "bookshop-day.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "350x438"
+   },
+   {
+    "f": "tokyo-night.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "350x438"
+   },
+   {
+    "f": "rooftop-lounge.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "350x438"
+   }
+  ],
+  "photos": 4,
+  "overlap": 0,
+  "overflow": false,
+  "ig": 254,
+  "maps": 1122,
+  "regions": 21,
+  "routes": 8,
+  "errors": []
+ },
+ "768": {
+  "art": [
+   {
+    "f": "bookshop-day.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "262x328"
+   },
+   {
+    "f": "tokyo-night.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "700x875"
+   },
+   {
+    "f": "rooftop-lounge.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "700x875"
+   }
+  ],
+  "photos": 4,
+  "overlap": 0,
+  "overflow": false,
+  "ig": 254,
+  "maps": 1122,
+  "regions": 21,
+  "routes": 8,
+  "errors": []
+ },
+ "1280": {
+  "art": [
+   {
+    "f": "bookshop-day.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "396x495"
+   },
+   {
+    "f": "tokyo-night.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "657x822"
+   },
+   {
+    "f": "rooftop-lounge.webp",
+    "loaded": true,
+    "natural": "960x1200",
+    "shown": "472x590"
+   }
+  ],
+  "photos": 4,
+  "overlap": 0,
+  "overflow": false,
+  "ig": 254,
+  "maps": 1122,
+  "regions": 21,
+  "routes": 8,
+  "errors": []
+ }
+}
