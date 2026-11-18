@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import './genre-illustrations.test.mjs';
 
 const html = readFileSync(new URL('../tokyo-guide_2.html', import.meta.url), 'utf8');
 

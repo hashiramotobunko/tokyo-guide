@@ -916,7 +916,27 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
 .ej-quick-find label{display:grid;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .ej-quick-find select{width:100%;min-width:0;padding:12px 36px 12px 12px;border:1px solid #777;border-radius:0;background:#faf9f5;color:#151513;font:600 14px Arial,sans-serif;cursor:pointer}
 .ej-quick-find select:focus-visible{outline:3px solid #ff5000;outline-offset:2px}
-@media(max-width:600px){.ej-quick-find{grid-template-columns:1fr;padding:14px;gap:12px}}
+.ej-genre-art{margin:22px 0 28px;border-block:2px solid var(--td-ink);padding:18px 0 20px}
+.ej-genre-art-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:13px}
+.ej-genre-art-head h3{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(27px,3.2vw,48px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase}
+.ej-genre-art-head p{max-width:460px;color:var(--td-muted);font-size:12px;line-height:1.5}
+.ej-genre-art-clear{appearance:none;border:0;border-bottom:2px solid var(--td-acid);background:transparent;color:var(--td-ink);font:900 11px/1.2 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:0 0 5px;cursor:pointer;white-space:nowrap}
+.ej-genre-art-clear:focus-visible{outline:3px solid var(--td-acid);outline-offset:4px}
+.ej-genre-art-list{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(150px,17vw,220px);gap:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;padding:2px 2px 13px;scrollbar-color:var(--td-acid) var(--td-sand)}
+.ej-genre-art-card{appearance:none;display:grid;grid-template-rows:auto 1fr;width:100%;padding:0;border:1px solid var(--td-ink);background:#fff;color:var(--td-ink);text-align:left;cursor:pointer;scroll-snap-align:start;font-family:Arial,sans-serif;transition:transform .16s,box-shadow .16s,opacity .16s}
+.ej-genre-art-card:hover{transform:translateY(-3px);box-shadow:5px 5px 0 var(--td-ink)}
+.ej-genre-art-card:focus-visible{outline:4px solid var(--td-acid);outline-offset:2px}
+.ej-genre-art-card[aria-pressed="true"]{background:var(--td-ink);color:#fff;box-shadow:6px 6px 0 var(--td-acid)}
+.ej-genre-art-card:disabled{cursor:not-allowed;opacity:.32;filter:grayscale(1)}
+.ej-genre-art-card:disabled:hover{transform:none;box-shadow:none}
+.ej-genre-art-card img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;background:var(--td-sand)}
+.ej-genre-art-label{display:flex;align-items:start;justify-content:space-between;gap:8px;padding:11px 10px 12px;font-size:12px;font-weight:900;line-height:1.2}
+.ej-genre-art-count{color:var(--td-acid);font-size:11px;white-space:nowrap}
+@media(max-width:600px){
+ .ej-quick-find{grid-template-columns:1fr;padding:14px;gap:12px}
+ .ej-genre-art{margin-top:18px}.ej-genre-art-head{align-items:start}.ej-genre-art-head p{display:none}
+ .ej-genre-art-list{grid-auto-columns:min(45vw,178px);gap:8px}
+}
 </style>
 </head>
 <body>
@@ -1065,6 +1085,10 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
   <label>What are you looking for?<select id="ej-genre-select" aria-label="Choose a specific genre"><option value="">All genres</option></select></label>
   <label>Browse results by<select id="ej-sort-select" aria-label="Group and sort places"><option value="cat:asc">Genre A–Z</option><option value="area:asc">Neighborhood A–Z</option><option value="name:asc">Name A–Z</option><option value="name:desc">Name Z–A</option></select></label>
  </div>
+ <section class="ej-genre-art" aria-labelledby="ej-genre-art-title">
+  <div class="ej-genre-art-head"><div><p class="ej-overline">32 ILLUSTRATED WAYS IN</p><h3 id="ej-genre-art-title">Pick by appetite.</h3></div><p>Original illustrated scenes from the Shakedown Street archive. Choose a card to filter this region; unavailable genres are dimmed.</p><button class="ej-genre-art-clear" id="ej-genre-art-clear" type="button">Show every genre</button></div>
+  <div class="ej-genre-art-list" id="ej-genre-art-list" role="list" aria-label="Illustrated genre filters"></div>
+ </section>
  <p id="ej-filter-message" aria-live="polite">Combine neighborhood, keyword and theme to find a place.</p>
  <div class="ej-mood" id="mood"><p class="ej-overline">GO BY FEELING / EDITORIAL CATEGORIES</p><div class="ej-mood-list" id="ej-mood-list" role="group" aria-label="Themes">
  <button type="button" data-mood="" aria-pressed="true">Everything</button>
@@ -2458,10 +2482,29 @@ const ejAreaSelect=document.getElementById('ej-area-select');
 const ejFilterMessage=document.getElementById('ej-filter-message');
 const ejGenreSelect=document.getElementById('ej-genre-select');
 const ejSortSelect=document.getElementById('ej-sort-select');
+const ejGenreArtList=document.getElementById('ej-genre-art-list');
+// Box folder 437537990018: each approved illustration maps to one exact source-data category.
+const EJ_GENRE_ART=[
+ ['Activity','activity'],['Bakery','bakery'],['Bistro / French','bistro-french'],['Burger','burger'],
+ ['Italian','italian'],['Japanese','japanese'],['Jingisukan','jingisukan'],['Kaiseki','kaiseki'],
+ ['Landmark','landmark'],['Monument','monument'],['Onsen','onsen'],['Park & Garden','park-garden'],
+ ['Restaurant / Bar','restaurant-bar'],['Bar / Sake','sake-bar'],['Sento','sento'],['Shopping Street','shopping-street'],
+ ['Shopping','shopping'],['Shrine','shrine'],['Sightseeing','sightseeing'],['Steak','steak'],
+ ['Sukiyaki / Shabu','sukiyaki'],['Sweets','sweets'],['Café / Tea','tea-cafe'],['Diner / Teishoku','teishoku'],
+ ['Thai','thai'],['Tonkatsu','tonkatsu'],['Unagi','unagi'],['Bar / Whisky','whisky-bar'],
+ ['Bar / Wine','wine-bar'],['Yakiniku','yakiniku'],['Yakitori','yakitori'],['Yoshoku','yoshoku']
+];
+function ejRenderGenreArt(){
+ const city=ejCurrentCity(),st=STATE[city],places=DATA[city].places;
+ const counts=new Map();for(const place of places)counts.set(place.cat,(counts.get(place.cat)||0)+1);
+ ejGenreArtList.innerHTML=EJ_GENRE_ART.map(([category,slug])=>{
+  const count=counts.get(category)||0,active=st.cats.length===1&&st.cats[0]===category;
+  return '<button class="ej-genre-art-card" type="button" role="listitem" data-genre="'+ejHTML(category)+'" aria-pressed="'+active+'" aria-label="'+ejHTML(category)+', '+count+' place'+(count===1?'':'s')+' in '+ejHTML(city)+'"'+(count?'':' disabled')+'><img src="assets/genres/'+slug+'.webp" width="960" height="1200" loading="lazy" decoding="async" alt="" aria-hidden="true"><span class="ej-genre-art-label"><span>'+ejHTML(category)+'</span><span class="ej-genre-art-count">'+count+'</span></span></button>';
+ }).join('');
+}
 function ejSyncQuickFind(){
  const city=ejCurrentCity(),st=STATE[city];
  const categories=[...new Set(DATA[city].places.map(p=>p.cat))].sort((a,b)=>a.localeCompare(b,'en'));
- const oldValue=ejGenreSelect.value;
  ejGenreSelect.replaceChildren(new Option('All genres · '+DATA[city].places.length,''));
  for(const category of categories){
   const count=DATA[city].places.filter(p=>p.cat===category).length;
@@ -2471,6 +2514,7 @@ function ejSyncQuickFind(){
  ejGenreSelect.value=st.cats.length===1?st.cats[0]:'';
  ejSortSelect.value=st.sort+':'+st.dir;
  if(!ejSortSelect.value)ejSortSelect.value='cat:asc';
+ ejRenderGenreArt();
 }
 ejGenreSelect.addEventListener('change',()=>{
  const city=ejCurrentCity();
@@ -2487,6 +2531,16 @@ ejSortSelect.addEventListener('change',()=>{
   b.classList.toggle('active',active);
   b.querySelector('.arr').textContent=active?(dir==='asc'?'↑':'↓'):'↕';
  });
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+ejGenreArtList.addEventListener('click',event=>{
+ const button=event.target.closest('button[data-genre]');if(!button||button.disabled)return;
+ const city=ejCurrentCity(),category=button.dataset.genre,st=STATE[city];
+ st.cats=st.cats.length===1&&st.cats[0]===category?[]:[category];
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+document.getElementById('ej-genre-art-clear').addEventListener('click',()=>{
+ const city=ejCurrentCity();STATE[city].cats=[];
  ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
 });
 function ejUpdateLocationControls(){

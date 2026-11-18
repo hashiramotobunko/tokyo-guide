@@ -29,12 +29,21 @@ try{
    const broken=photos.filter(p=>!p.w);
    assert.deepEqual(broken,[],'Images failed to load at '+width+': '+JSON.stringify(broken));
    assert.ok(photos.filter(p=>/assets\/photos\//.test(p.src)).length>=4,'expected the four street photographs at '+width);
+   assert.equal(photos.filter(p=>/assets\/genres\//.test(p.src)).length,32,'expected all 32 illustrated genre cards at '+width);
    await page.screenshot({path:`${out}/${width}-top.png`,fullPage:false});
    await page.locator('#browse').scrollIntoViewIfNeeded();
    await page.screenshot({path:`${out}/${width}-search.png`,fullPage:false});
    report[width]={overflow:false,errors:[],regionOptions:await page.locator('#ej-region-select option').count()};
    assert.ok(report[width].regionOptions>=15);
    if(width===390){
+      assert.equal(await page.locator('#ej-genre-art-list .ej-genre-art-card').count(),32);
+      await page.locator('#ej-genre-art-list .ej-genre-art-card[data-genre="Tonkatsu"]').click();
+      assert.equal(await page.locator('#ej-genre-select').inputValue(),'Tonkatsu');
+      assert.ok(await page.locator('.city-section.active .place-card').count()>0);
+      assert.ok(await page.locator('.city-section.active .place-card').evaluateAll(cards=>cards.every(card=>card.textContent.includes('Tonkatsu'))));
+      assert.equal(new URL(page.url()).searchParams.get('cat'),'Tonkatsu');
+      await page.locator('#ej-genre-art-clear').click();
+      assert.equal(await page.locator('#ej-genre-select').inputValue(),'');
       await page.locator('#ej-search').fill('多賀野');
       const shown=await page.locator('.city-section.active .place-card').count();
       assert.match(await page.locator('#ej-discovery-count').textContent(),/1 matching place/);
