@@ -910,6 +910,13 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
  .ej-route:nth-child(n){margin-left:0}.ej-route h3{max-width:88%}.ej-route-why{grid-template-columns:1fr;gap:8px}.ej-route-why p{font-size:17px}
  .td-end-actions{justify-content:flex-start}
 }
+
+/* The quick finder stays simple even when a region has dozens of detailed chips. */
+.ej-quick-find{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0;padding:18px;background:#fff;border:2px solid #111}
+.ej-quick-find label{display:grid;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.ej-quick-find select{width:100%;min-width:0;padding:12px 36px 12px 12px;border:1px solid #777;border-radius:0;background:#faf9f5;color:#151513;font:600 14px Arial,sans-serif;cursor:pointer}
+.ej-quick-find select:focus-visible{outline:3px solid #ff5000;outline-offset:2px}
+@media(max-width:600px){.ej-quick-find{grid-template-columns:1fr;padding:14px;gap:12px}}
 </style>
 </head>
 <body>
@@ -1054,6 +1061,10 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     
 <section class="ej-discovery" aria-label="Region, area and theme search">
  <div class="ej-two-selects"><label>Region<select id="ej-region-select" aria-label="Region"></select></label><label>Neighborhood / area<select id="ej-area-select" aria-label="Neighborhood"></select></label></div>
+ <div class="ej-quick-find" aria-label="Quick place finder">
+  <label>What are you looking for?<select id="ej-genre-select" aria-label="Choose a specific genre"><option value="">All genres</option></select></label>
+  <label>Browse results by<select id="ej-sort-select" aria-label="Group and sort places"><option value="cat:asc">Genre A–Z</option><option value="area:asc">Neighborhood A–Z</option><option value="name:asc">Name A–Z</option><option value="name:desc">Name Z–A</option></select></label>
+ </div>
  <p id="ej-filter-message" aria-live="polite">Combine neighborhood, keyword and theme to find a place.</p>
  <div class="ej-mood" id="mood"><p class="ej-overline">GO BY FEELING / EDITORIAL CATEGORIES</p><div class="ej-mood-list" id="ej-mood-list" role="group" aria-label="Themes">
  <button type="button" data-mood="" aria-pressed="true">Everything</button>
@@ -2445,6 +2456,39 @@ addEventListener('popstate',ejRestoreURL);
 const ejRegionSelect=document.getElementById('ej-region-select');
 const ejAreaSelect=document.getElementById('ej-area-select');
 const ejFilterMessage=document.getElementById('ej-filter-message');
+const ejGenreSelect=document.getElementById('ej-genre-select');
+const ejSortSelect=document.getElementById('ej-sort-select');
+function ejSyncQuickFind(){
+ const city=ejCurrentCity(),st=STATE[city];
+ const categories=[...new Set(DATA[city].places.map(p=>p.cat))].sort((a,b)=>a.localeCompare(b,'en'));
+ const oldValue=ejGenreSelect.value;
+ ejGenreSelect.replaceChildren(new Option('All genres · '+DATA[city].places.length,''));
+ for(const category of categories){
+  const count=DATA[city].places.filter(p=>p.cat===category).length;
+  ejGenreSelect.add(new Option(category+' · '+count,category));
+ }
+ // Multiple chip selections remain visible below; the quick selector is for one genre.
+ ejGenreSelect.value=st.cats.length===1?st.cats[0]:'';
+ ejSortSelect.value=st.sort+':'+st.dir;
+ if(!ejSortSelect.value)ejSortSelect.value='cat:asc';
+}
+ejGenreSelect.addEventListener('change',()=>{
+ const city=ejCurrentCity();
+ STATE[city].cats=ejGenreSelect.value?[ejGenreSelect.value]:[];
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+ejSortSelect.addEventListener('change',()=>{
+ const city=ejCurrentCity(),st=STATE[city];
+ const [sort,dir]=ejSortSelect.value.split(':');
+ if(!['cat','area','name'].includes(sort)||!['asc','desc'].includes(dir))return;
+ st.sort=sort;st.dir=dir;
+ ejViewRefs[city]?.sortBtns.forEach(b=>{
+  const active=b.dataset.sort===sort;
+  b.classList.toggle('active',active);
+  b.querySelector('.arr').textContent=active?(dir==='asc'?'↑':'↓'):'↕';
+ });
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
 function ejUpdateLocationControls(){
  const city=ejCurrentCity();const st=STATE[city]||{areas:[]};
  if(!ejRegionSelect.options.length){
@@ -2454,6 +2498,7 @@ function ejUpdateLocationControls(){
    });
  }
  ejRegionSelect.value=city;
+ ejSyncQuickFind();
  const areas=Array.from(new Set(DATA[city].places.map(p=>p.area))).sort((a,b)=>a.localeCompare(b,'en'));
  ejAreaSelect.replaceChildren();
  ejAreaSelect.add(new Option('Every neighborhood · '+DATA[city].places.length,''));
@@ -2533,7 +2578,7 @@ document.addEventListener('click',e=>{
  }else location.hash=url.hash;
 });
 document.addEventListener('click',e=>{
- if(e.target.closest('#cityTabs .city-tab,.chip[data-type="area"],.clear-link,.active-tag,.reset-all')){
+ if(e.target.closest('#cityTabs .city-tab,.chip[data-type="area"],.chip[data-type="cat"],.clear-link,.active-tag,.reset-all,.sort-btn')){
   // Existing chip listeners have already updated STATE; this observer only refreshes dropdowns.
   ejUpdateLocationControls();
  }
