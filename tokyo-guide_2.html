@@ -987,6 +987,17 @@ body,.ej-header{background:var(--td-paper);color:var(--td-ink)}
 .place-ig:hover,.place-ig:focus-visible{background:var(--td-navy);border-color:var(--td-navy);color:var(--td-paper)}
 button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#2f6fae}
 footer{background:var(--td-navy);color:var(--td-paper)}
+/* Mobile type safety: preserve the poster scale without letting lines collide. */
+@media(max-width:700px){
+ .td-hero-title{top:86px;left:0;font-size:clamp(60px,17vw,96px);line-height:.88;letter-spacing:-.065em;white-space:normal}
+ .td-hero-title span{white-space:nowrap}
+ .td-hero-title .td-l2{padding-left:8px}
+ .td-hero-title .td-l3{-webkit-text-stroke:1px var(--td-ink)}
+ .td-hero-foot{top:auto;bottom:30px}
+ .td-manifesto-word{font-size:clamp(70px,22vw,112px);line-height:.88;letter-spacing:-.06em;transform:none;white-space:normal}
+ .td-manifesto-word span{padding-left:8%}
+ .td-browse-head h2{font-size:clamp(64px,17vw,112px);line-height:.84;letter-spacing:-.07em}
+}
 </style>
 </head>
 <body>
