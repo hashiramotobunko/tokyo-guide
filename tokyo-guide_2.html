@@ -937,6 +937,28 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
  .ej-genre-art{margin-top:18px}.ej-genre-art-head{align-items:start}.ej-genre-art-head p{display:none}
  .ej-genre-art-list{grid-auto-columns:min(45vw,178px);gap:8px}
 }
+
+/* --- magazine genre atlas ---------------------------------- */
+.td-genre-atlas{background:var(--td-navy);color:var(--td-paper);padding:82px max(5.5vw,28px) 88px;position:relative;overflow:hidden}
+.td-genre-atlas:before{content:"02 / THE ADDRESS BOOK";position:absolute;right:28px;top:30px;color:var(--td-acid);font:900 10px/1 Arial,sans-serif;letter-spacing:.18em}
+.td-genre-atlas-in{max-width:1510px;margin:0 auto}
+.td-genre-atlas-kicker{color:var(--td-acid);font:900 11px/1.3 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.td-genre-atlas h2{font:900 clamp(64px,10vw,150px)/.78 Impact,"Arial Black",sans-serif;letter-spacing:-.075em;text-transform:uppercase;margin:22px 0 24px;max-width:900px}
+.td-genre-atlas h2 em{color:var(--td-acid);font-style:normal}
+.td-genre-atlas-intro{display:flex;justify-content:space-between;gap:36px;align-items:end;border-bottom:1px solid rgba(250,249,245,.35);padding-bottom:28px;margin-bottom:28px}
+.td-genre-atlas-intro p{max-width:440px;margin:0;color:#d8d8d1;font-size:15px;line-height:1.55}
+.td-genre-atlas-intro strong{display:block;color:var(--td-paper);font-size:28px;line-height:1;margin-bottom:8px}
+.td-genre-atlas-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.td-genre-atlas-list .ej-genre-art-card{background:var(--td-paper);color:var(--td-ink);border-color:var(--td-paper);min-width:0}
+.td-genre-atlas-list .ej-genre-art-card:hover{box-shadow:6px 6px 0 var(--td-acid)}
+.td-genre-atlas-list .ej-genre-art-card[aria-pressed="true"]{background:var(--td-acid);color:var(--td-ink);box-shadow:6px 6px 0 var(--td-paper)}
+.td-genre-atlas-list .ej-genre-art-card img{aspect-ratio:4/3}
+.td-genre-atlas-list .ej-genre-art-label{padding:12px 12px 14px;font-size:13px}
+.td-genre-atlas-list .ej-genre-art-count{color:var(--td-acid)}
+.td-genre-atlas-list .ej-genre-art-card[aria-pressed="true"] .ej-genre-art-count{color:var(--td-ink)}
+.td-genre-atlas-list .ej-genre-art-card:disabled{opacity:.55}
+@media(max-width:900px){.td-genre-atlas{padding-inline:5%}.td-genre-atlas-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.td-genre-atlas{padding-top:64px;padding-bottom:66px}.td-genre-atlas:before{right:5%;top:22px}.td-genre-atlas h2{font-size:clamp(60px,18vw,104px);margin-top:18px}.td-genre-atlas-intro{display:block}.td-genre-atlas-intro p{font-size:14px}.td-genre-atlas-intro strong{font-size:24px;margin-top:20px}.td-genre-atlas-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.td-genre-atlas-list .ej-genre-art-card img{aspect-ratio:1/1}.td-genre-atlas-list .ej-genre-art-label{font-size:11px;padding:10px 9px 11px}}
 </style>
 </head>
 <body>
@@ -971,6 +993,14 @@ footer small{display:block;color:var(--td-muted);margin-top:42px;font-size:11px;
     </div>
   </section>
   <nav class="ej-feature-index" aria-label="Four ways to use the guide"><p class="ej-feature-label">FOUR WAYS IN / NOT A CHECKLIST</p><div class="ej-feature-links"><a href="#stories"><span>01</span><strong>Read a point of view</strong><small>People · streets · culture</small><b>↗</b></a><a href="#fieldnotes"><span>02</span><strong>Follow the thread</strong><small>10 editorial route ideas</small><b>↗</b></a><a href="#mood"><span>03</span><strong>Go by feeling</strong><small>Nightlife · coffee · culture</small><b>↗</b></a><a href="#visitor-info"><span>04</span><strong>Check the facts</strong><small>Maps · sources · access</small><b>↗</b></a></div></nav>
+  <section class="td-genre-atlas" id="genre-atlas" aria-labelledby="td-genre-atlas-title">
+    <div class="td-genre-atlas-in">
+      <p class="td-genre-atlas-kicker">THE ILLUSTRATED INDEX / 32 WAYS IN</p>
+      <h2 id="td-genre-atlas-title">FIND IT<br>BY <em>FEELING.</em></h2>
+      <div class="td-genre-atlas-intro"><p><strong>526 places. 32 doors.</strong>Every illustrated card is a real guide category, connected to the source-checked address book below. Start with a mood, then take the long way.</p><p>Choose any card to open that genre in the guide. Counts change with the selected region.</p></div>
+      <div class="td-genre-atlas-list" id="ej-genre-atlas-list" role="list" aria-label="All illustrated genre filters"></div>
+    </div>
+  </section>
 <section class="td-wrap td-intro" id="stories" aria-label="Editorial opening">
     <span class="td-no">[01 / EDITORIAL]</span>
     <h2>Places are the beginning.<br>Not the whole story<span class="td-acid">.</span></h2>
@@ -2483,6 +2513,7 @@ const ejFilterMessage=document.getElementById('ej-filter-message');
 const ejGenreSelect=document.getElementById('ej-genre-select');
 const ejSortSelect=document.getElementById('ej-sort-select');
 const ejGenreArtList=document.getElementById('ej-genre-art-list');
+const ejGenreAtlasList=document.getElementById('ej-genre-atlas-list');
 // Box folder 437537990018: each approved illustration maps to one exact source-data category.
 const EJ_GENRE_ART=[
  ['Activity','activity'],['Bakery','bakery'],['Bistro / French','bistro-french'],['Burger','burger'],
@@ -2497,10 +2528,12 @@ const EJ_GENRE_ART=[
 function ejRenderGenreArt(){
  const city=ejCurrentCity(),st=STATE[city],places=DATA[city].places;
  const counts=new Map();for(const place of places)counts.set(place.cat,(counts.get(place.cat)||0)+1);
- ejGenreArtList.innerHTML=EJ_GENRE_ART.map(([category,slug])=>{
+ const cards=EJ_GENRE_ART.map(([category,slug])=>{
   const count=counts.get(category)||0,active=st.cats.length===1&&st.cats[0]===category;
   return '<button class="ej-genre-art-card" type="button" role="listitem" data-genre="'+ejHTML(category)+'" aria-pressed="'+active+'" aria-label="'+ejHTML(category)+', '+count+' place'+(count===1?'':'s')+' in '+ejHTML(city)+'"'+(count?'':' disabled')+'><img src="assets/genres/'+slug+'.webp" width="960" height="1200" loading="lazy" decoding="async" alt="" aria-hidden="true"><span class="ej-genre-art-label"><span>'+ejHTML(category)+'</span><span class="ej-genre-art-count">'+count+'</span></span></button>';
  }).join('');
+ if(ejGenreArtList)ejGenreArtList.innerHTML=cards;
+ if(ejGenreAtlasList)ejGenreAtlasList.innerHTML=cards;
 }
 function ejSyncQuickFind(){
  const city=ejCurrentCity(),st=STATE[city];
@@ -2538,6 +2571,13 @@ ejGenreArtList.addEventListener('click',event=>{
  const city=ejCurrentCity(),category=button.dataset.genre,st=STATE[city];
  st.cats=st.cats.length===1&&st.cats[0]===category?[]:[category];
  ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+});
+ejGenreAtlasList?.addEventListener('click',event=>{
+ const button=event.target.closest('button[data-genre]');if(!button||button.disabled)return;
+ const city=ejCurrentCity(),category=button.dataset.genre,st=STATE[city];
+ st.cats=st.cats.length===1&&st.cats[0]===category?[]:[category];
+ ejRefreshAll();ejUpdateLocationControls();ejSyncURL(true);
+ document.getElementById('browse')?.scrollIntoView({behavior:'smooth',block:'start'});
 });
 document.getElementById('ej-genre-art-clear').addEventListener('click',()=>{
  const city=ejCurrentCity();STATE[city].cats=[];
